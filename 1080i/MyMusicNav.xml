@@ -43,49 +43,7 @@
           <texture background="true" fallback="DefaultFile.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
         </control>
-		<!--<control type="group" description="Songs and videos">
-          <visible>Container.Content(songs) | Container.Content(musicvideos)</visible>
-          <posx>60</posx>
-          <posy>400</posy>
-          <control type="label" description="Title Label">
-            <posy>186</posy>
-            <width>540</width>
-			<shadowcolor>Black</shadowcolor>
-            <textcolor>White2</textcolor>
-            <include>Genre500Commons</include>
-            <label>$INFO[ListItem.Artist]</label>
-          </control>
-          <control type="grouplist" description="Labels">
-            <posx>0</posx>
-            <posy>264</posy>
-            <width>540</width>
-            <height>500</height>
-            <itemgap>24</itemgap>
-            <orientation>vertical</orientation>
-            <control type="label" description="Type label 1">
-              <width>540</width>
-              <height>30</height>
-              <shadowcolor>Black</shadowcolor>
-			  <label>$INFO[ListItem.FileExtension,[COLOR=Grey]$LOCALIZE[564]:[/COLOR]  ]</label>
-            </control>
-            <control type="label" description="Genre label 2">
-              <width>540</width>
-              <height>30</height>
-              <shadowcolor>Black</shadowcolor>
-			  <label>$INFO[ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR]  ]</label>
-            </control>
-            <control type="label" description="Album label 3">
-              <width>540</width>
-              <height>30</height>
-              <label>$INFO[ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR]  ]</label>
-            </control>
-            <control type="label" description="Duration label 3">
-              <width>540</width>
-              <height>30</height>
-              <label>$INFO[ListItem.Duration,[COLOR=Grey]$LOCALIZE[180]:[/COLOR]  ]</label>
-            </control>
-          </control>
-        </control>-->
+		
 	</control>	
 	<!-- BIGLIST 52 -->
 	<control type="group" description="52 MediaInfo">

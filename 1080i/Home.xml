@@ -4,8 +4,8 @@
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin)</onload>
-  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,shelf)</onload>
-  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Shelf.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
   <controls>
     <control type="multiimage">
       <include>Dimensions_Fullscreen</include>
@@ -213,7 +213,7 @@
             <visible>Skin.HasSetting(plexbmc)</visible>
             <label>Channels</label>
 			<thumb>special://skin/backgrounds/Channels.jpg</thumb>
-            <onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall&quot;)</onclick>
+            <onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall&quot;,return)</onclick>
           </item>
           <item id="49" description="Queue">
             <visible>Skin.HasSetting(plexbmc)</visible>
@@ -225,7 +225,7 @@
           <item id="21" description="Custom1">
             <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.1.Path)]</onclick>
           </item>
           <item id="1" description="Pictures">
@@ -238,7 +238,7 @@
           <item id="22" description="Custom2">
             <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.2.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.2.Path)]</onclick>
           </item>
           <item id="2" description="Addons">
@@ -250,7 +250,7 @@
           <item id="23" description="Custom3">
             <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.3.Path)]</onclick>
           </item>
           <item id="3" description="Videos">
@@ -264,7 +264,7 @@
           <item id="24" description="Custom2">
             <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.4.Path)]</onclick>
           </item>
           <item id="4" description="MyMovies">
@@ -292,13 +292,13 @@
           <item id="25" description="Custom 5">
             <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.5.Path)]</onclick>
           </item>
           <item id="26" description="Custom 6">
             <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.6.Path)]</onclick>
           </item>
           <item id="300" description="Live TV">
@@ -316,25 +316,25 @@
           <item id="27" description="Custom 7">
             <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.7.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.7.Path)]</onclick>
           </item>
           <item id="28" description="Custom 8">
             <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
           </item>
           <item id="29" description="Custom 9">
             <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.9.Path)]</onclick>
           </item>
           <item id="30" description="Custom 10">
             <visible>!IsEmpty(Skin.String(CustomHome.10.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.10.Label)]</label>
-            <thumb fallback="special://skin/backgrounds/DefaultBG.jpg">$INFO[Skin.String(CustomHome.10.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.10.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.10.Path)]</onclick>
           </item>
           <item id="8" description="DVD">

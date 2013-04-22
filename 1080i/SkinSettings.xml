@@ -358,7 +358,7 @@
                 <item id="12">
                   <label>571</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(Default.Background)]</thumb>
                 </item>
                 <item id="1">
@@ -439,70 +439,70 @@
                   <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.1.Background)]</thumb>
                 </item>
                 <item id="22">
                   <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.2.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.2.Background)]</thumb>
                 </item>
                 <item id="23">
                   <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.3.Background)]</thumb>
                 </item>
                 <item id="24">
                   <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.4.Background)]</thumb>
                 </item>
                 <item id="25">
                   <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.5.Background)]</thumb>
                 </item>
                 <item id="26">
                   <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.6.Background)]</thumb>
                 </item>
                 <item id="27">
                   <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.7.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.7.Background)]</thumb>
                 </item>
                 <item id="28">
                   <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.8.Background)]</thumb>
                 </item>
                 <item id="29">
                   <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.9.Background)]</thumb>
                 </item>
                 <item id="30">
                   <visible>!IsEmpty(Skin.String(CustomHome.30.Path))</visible>
                   <label>$INFO[Skin.String(CustomHome.30.Label)]</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/DefaultBG.jpg</icon>
+                  <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.30.Background)]</thumb>
                 </item>
               </content>
