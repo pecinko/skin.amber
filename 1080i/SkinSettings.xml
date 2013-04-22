@@ -606,16 +606,16 @@
             </focusedlayout>
             <content>
               <item id="1" description="Enable Recently Added">
-                <visible>!Skin.HasSetting(Show.RecentlyAdded)</visible>
-                <label>$LOCALIZE[513] - $LOCALIZE[31328]</label>
-                <label2>$LOCALIZE[106]</label2>
-                <onclick>Skin.ToggleSetting(Show.RecentlyAdded)</onclick>
-              </item>
-              <item id="1" description="Enable Recently Added">
-                <visible>Skin.HasSetting(Show.RecentlyAdded)</visible>
+                <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
                 <label>$LOCALIZE[513] - $LOCALIZE[31328]</label>
                 <label2>$LOCALIZE[107]</label2>
-                <onclick>Skin.Reset(Show.RecentlyAdded)</onclick>
+                <onclick>Skin.ToggleSetting(Hide.RecentlyAdded)</onclick>
+              </item>
+              <item id="1" description="Enable Recently Added">
+                <visible>Skin.HasSetting(Hide.RecentlyAdded)</visible>
+                <label>$LOCALIZE[513] - $LOCALIZE[31328]</label>
+                <label2>$LOCALIZE[106]</label2>
+                <onclick>Skin.Reset(Hide.RecentlyAdded)</onclick>
               </item>
               <item id="2" description="Enable Addons">
                 <visible>!Skin.HasSetting(Show.Addons)</visible>

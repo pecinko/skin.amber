@@ -14,6 +14,156 @@
       <align>top</align>
 	  <onup>300</onup>
       <ondown>300</ondown>
+	  <control type="label" id="210" description="Top Label">
+        <visible>Control.IsVisible(211)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>ShelfTopLabel</include>
+        <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="panel" id="211" description="TOP Shortcuts">
+        <visible>Skin.HasSetting(Show.Addons)</visible> 
+		<onleft>211</onleft>
+        <onright>211</onright>
+		<onup>300</onup>
+	    <ondown>300</ondown>
+        <include>RA_Commons_Music</include>
+        <content>
+          <item id="1" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.1.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.1.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.1.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="2" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.2.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.2.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.2.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.2.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="3" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.3.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.3.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.3.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.3.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="4" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.4.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.4.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.4.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.4.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="5" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.5.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.5.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.5.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="6" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.6.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.6.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.6.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.6.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="7" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.7.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.7.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.7.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.7.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="8" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.8.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.8.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.8.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.8.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="9" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.9.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.9.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.9.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.9.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+          <item id="10" description="Addons">
+            <visible>!IsEmpty(Skin.String(ShelfAddons.10.Label))</visible>
+            <label>$INFO[system.addontitle(Skin.String(ShelfAddons.10.Label))]</label>
+            <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.10.Label))]</thumb>
+            <onclick>RunAddon($INFO[Skin.String(ShelfAddons.10.Label)])</onclick>
+            <property name="ItemType">$LOCALIZE[111]</property>
+          </item>
+		  <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.1.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.1.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.1.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.2.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.2.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.2.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.2.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.3.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.3.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.3.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.3.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.4.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.4.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.4.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.4.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.5.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.5.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.5.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.5.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.6.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.6.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.6.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.6.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.7.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.7.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.7.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.7.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.8.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.8.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.8.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.8.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+        </content>
+      </control>
 	  <control type="label" id="310" description="Top Label">
         <visible>Control.IsVisible(311)</visible>
         <include>VisibleFadeEffect</include>
@@ -21,7 +171,8 @@
         <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="311" description="TOP Shortcuts">
-        <visible>[Library.HasContent(Movies) | Skin.HasSetting(plexbmc)]</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		<visible>[Library.HasContent(Movies) | Skin.HasSetting(plexbmc)]</visible>
         <onleft>311</onleft>
         <onright>311</onright>
 		<onup>300</onup>
@@ -197,7 +348,8 @@
         <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="411" description="TOP Shortcuts">
-        <visible>[Library.HasContent(TVShows) | Skin.HasSetting(plexbmc)]</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		<visible>[Library.HasContent(TVShows) | Skin.HasSetting(plexbmc)]</visible>
         <onleft>411</onleft>
         <onright>411</onright>
 		<onup>300</onup>
@@ -413,7 +565,8 @@
         <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="511" description="TOP Shortcuts">
-        <visible>[Library.HasContent(Music) | Skin.HasSetting(plexbmc)]</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		<visible>[Library.HasContent(Music) | Skin.HasSetting(plexbmc)]</visible>
         <onleft>511</onleft>
         <onright>511</onright>
 		<onup>300</onup>

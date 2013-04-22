@@ -150,7 +150,7 @@
             <include>SquareThumb</include>
           </control>
           <control type="label">
-            <posx>180</posx>
+            <posx>156</posx>
             <posy>321</posy>
             <width>340</width>
             <height>45</height>
