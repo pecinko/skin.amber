@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog">
+  <defaultcontrol always="true">450</defaultcontrol>
+  <coordinates>
+    <system>1</system>
+    <posx>0</posx>
+    <posy>0</posy>
+  </coordinates>
+  <include>OpenClose</include>
+  <controls>
+    <include>DimBG</include>
+	<control type="group" description="Content">
+	<animation type="WindowOpen">
+            <effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="400" />
+            <effect type="fade" start="0" end="100" time="250"/>
+        </animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="200"/>
+		</animation>
+    <control type="image" description="BG">
+      <posx>337</posx>
+      <posy>251</posy>
+      <width>1271</width>
+      <height>432</height>
+      <texture border="23">dialogs/FavsBG.png</texture>
+    </control>
+    <control type="label" description="Header">
+      <posx>370</posx>
+      <posy>265</posy>
+      <width>600</width>
+      <height>60</height>
+      <textcolor>Orange</textcolor>
+      <label>$LOCALIZE[1036]</label>
+      <align>left</align>
+      <aligny>center</aligny>
+    </control>
+    <control type="list" id="450">
+      <posx>988</posx>
+      <posy>294</posy>
+      <width>600</width>
+      <height>359</height>
+      <onright>60</onright>
+      <onup>450</onup>
+      <ondown>450</ondown>
+      <pagecontrol>60</pagecontrol>
+      <scrolltime>0</scrolltime>
+      <itemlayout height="60">
+        <control type="label">
+          <posx>20</posx>
+          <posy>0</posy>
+          <width>540</width>
+          <height>60</height>
+          <font>MainLabel</font>
+          <info>ListItem.Label</info>
+        </control>
+      </itemlayout>
+      <focusedlayout height="60">
+        <control type="image">
+          <visible>Control.HasFocus(450)</visible>
+          <include>VisibleFadeEffect</include>
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>580</width>
+          <height>60</height>
+          <texture border="2">common/ButtonFO.png</texture>
+        </control>
+        <control type="label">
+          <posx>20</posx>
+          <posy>0</posy>
+          <width>540</width>
+          <height>60</height>
+          <textcolor>White2</textcolor>
+          <font>MainLabel</font>
+          <info>ListItem.Label</info>
+        </control>
+      </focusedlayout>
+    </control>
+    <control type="image">
+      <description>Thumb</description>
+      <posx>598</posx>
+      <posy>287</posy>
+      <width>372</width>
+      <height>372</height>
+      <texture fallback="DefaultShortcut.png" background="true">$INFO[Container(450).Listitem.Icon]</texture>
+      <include>Icon_Fade</include>
+      <aspectratio>keep</aspectratio>
+      <bordertexture border="3">thumbs/ThumbBorder3.png</bordertexture>
+      <bordersize>1</bordersize>
+    </control>
+    <control type="label" description="ItemCount">
+      <posx>370</posx>
+      <posy>612</posy>
+      <width>315</width>
+      <height>60</height>
+      <font>ItemCount</font>
+      <align>left</align>
+      <textcolor>Grey2</textcolor>
+      <label>$INFO[Container(450).NumItems,, $LOCALIZE[31025]]</label>
+    </control>
+    <control type="scrollbar" id="60">
+      <posx>1578</posx>
+      <posy>220</posy>
+      <width>36</width>
+      <height>480</height>
+      <texturesliderbackground>-</texturesliderbackground>
+      <texturesliderbar>-</texturesliderbar>
+      <texturesliderbarfocus>-</texturesliderbarfocus>
+      <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+      <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+      <showonepage>false</showonepage>
+      <orientation>vertical</orientation>
+      <onleft>450</onleft>
+      <onright>-</onright>
+    </control>
+	</control>
+  </controls>
+</window>

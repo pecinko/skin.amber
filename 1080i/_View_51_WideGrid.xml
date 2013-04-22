@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="View_51_WideGrid">
+    <control type="group" description="Wide Grid">
+      <visible>Control.IsVisible(51)</visible>
+      <control type="panel" id="51" description="Wide Grid">
+        <viewtype label="Wide Grid">Wide Grid</viewtype>
+        <visible>container.content(TVshows)</visible>
+		<posx>60</posx>
+        <posy>90</posy>
+        <width>1800</width>
+        <height>1090</height>
+        <orientation>vertical</orientation>
+        <onleft>9000</onleft>
+        <onright>60</onright>
+        <onup>51</onup>
+        <ondown>51</ondown>
+        <preloaditems>4</preloaditems>
+        <pagecontrol>60</pagecontrol>
+        <scrolltime>400</scrolltime>
+        <itemlayout condition="Window.IsActive(MyPics.xml)" height="440" width="450">
+          <control type="image">
+            <posx>15</posx>
+            <posy>28</posy>
+            <width>420</width>
+            <height>312</height>
+            <include>ThumbBorderInside</include>
+          </control>
+		  <control type="image">
+            <posx>15</posx>
+            <posy>28</posy>
+            <width>420</width>
+            <height>312</height>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <aspectratio>keep</aspectratio>
+          </control>
+        </itemlayout>
+        <focusedlayout condition="Window.IsActive(MyPics.xml)" height="440" width="450">
+          <control type="image">
+            <posx>15</posx>
+            <posy>28</posy>
+            <width>420</width>
+            <height>312</height>
+            <include>ThumbBorderInside</include>
+          </control>
+		  <control type="image">
+            <posx>15</posx>
+            <posy>28</posy>
+            <width>420</width>
+            <height>312</height>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <aspectratio>keep</aspectratio>
+          </control>
+          <control type="image">
+            <posx>15</posx>
+            <posy>28</posy>
+            <width>420</width>
+            <height>312</height>
+            <texture border="28">img/Frame.png</texture>
+            <bordersize>-30</bordersize>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="label">
+            <posx>225</posx>
+            <posy>360</posy>
+            <width>450</width>
+            <height>40</height>
+            <textcolor>Orange</textcolor>
+            <align>center</align>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+        </focusedlayout>
+		<!--<itemlayout condition="![Container.content(TVShows) | Window.IsActive(MyPics.xml)]" height="220" width="900">
+          <control type="image">
+            <posx>30</posx>
+            <posy>12</posy>
+            <width>840</width>
+            <height>153</height>
+            <include>ThumbBorderInside</include>
+          </control>
+		  <control type="image">
+            <posx>30</posx>
+            <posy>12</posy>
+            <width>840</width>
+            <height>153</height>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <aspectratio>keep</aspectratio>
+          </control>
+        </itemlayout>
+        <focusedlayout condition="![Container.content(TVShows) | Window.IsActive(MyPics.xml)]" height="220" width="900">
+          <control type="image">
+            <posx>30</posx>
+            <posy>12</posy>
+            <width>840</width>
+            <height>153</height>
+            <include>ThumbBorderInside</include>
+          </control>
+		  <control type="image">
+            <posx>30</posx>
+            <posy>12</posy>
+            <width>840</width>
+            <height>153</height>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <aspectratio>keep</aspectratio>
+          </control>
+          <control type="image">
+            <posx>30</posx>
+            <posy>12</posy>
+            <width>840</width>
+            <height>153</height>
+            <texture border="28">img/Frame.png</texture>
+            <bordersize>-30</bordersize>
+            <aspectratio>stretch</aspectratio>
+          </control>
+          <control type="label">
+            <posx>450</posx>
+            <posy>176</posy>
+            <width>900</width>
+            <height>45</height>
+            <textcolor>Orange</textcolor>
+            <align>center</align>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+        </focusedlayout>-->
+      </control>
+	  <control type="image" description="Bottom fade">
+        <posx>0</posx>
+        <posy>1020</posy>
+        <width>1920</width>
+        <height>60</height>
+        <texture>img/Gradient.png</texture>
+        <aspectratio>stretch</aspectratio>
+      </control>
+      <control type="image">
+        <visible>Control.HasFocus(60)</visible>
+        <include>VisibleFadeEffect</include>
+        <posx>28r</posx>
+        <posy>360</posy>
+        <height>700</height>
+        <width>36</width>
+        <aspectratio>stretch</aspectratio>
+        <texture>OSD/LineScroll2.png</texture>
+      </control>
+      <control type="scrollbar" id="60">
+        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+        <posx>20r</posx>
+        <posy>360</posy>
+        <width>36</width>
+        <height>700</height>
+        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbar>-</texturesliderbar>
+        <texturesliderbarfocus>-</texturesliderbarfocus>
+        <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+        <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+        <showonepage>false</showonepage>
+        <orientation>vertical</orientation>
+        <onleft>51</onleft>
+        <onright>9000</onright>
+      </control>
+    </control>
+  </include>
+</includes>

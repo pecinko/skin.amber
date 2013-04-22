@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="View_59_Showcase">
+    <control type="group" description="Showcase">
+      <visible>Control.IsVisible(59)</visible>
+      <control type="image">
+        <visible>Container.content(movies) | Container.content(seasons) | Container.content(tvshows)</visible>
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>showcase/ShowcaseStageInfo.png</texture>
+      </control>
+      <control type="image">
+        <visible>![Container.content(movies) | Container.content(seasons) | Container.content(tvshows)]</visible>
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>showcase/ShowcaseStageLowInfo.png</texture>
+      </control>
+      <control type="fixedlist" id="59">
+        <animation effect="slide" start="0,0" end="0,-30" time="0" condition="![Container.content(movies) | Container.content(seasons) | Container.content(tvshows)]" reversible="true">Conditional</animation>
+        <posx>-69</posx>
+        <posy>489</posy>
+        <width>2058</width>
+        <height>660</height>
+        <onleft>59</onleft>
+        <onright>59</onright>
+        <onup>9000</onup>
+        <ondown>60</ondown>
+        <viewtype label="Showcase">Showcase</viewtype>
+        <pagecontrol>60</pagecontrol>
+        <orientation>horizontal</orientation>
+        <scrolltime>250</scrolltime>
+        <focusposition>3</focusposition>
+        <movement>2</movement>
+        <preloaditems>4</preloaditems>
+        <itemlayout height="660" width="294" condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(Tvshows)">
+          <control type="image">
+            <include>MovieShowcaseThumbMain</include>
+          </control>
+          <control type="image">
+            <description>Glass overlay</description>
+            <include>MovieShowcaseGlassOverlay</include>
+          </control>
+          <control type="image">
+            <include>MovieShowcaseThumbReflection</include>
+          </control>
+        </itemlayout>
+        <focusedlayout height="660" width="294" condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(Tvshows)">
+          <control type="group">
+            <animation effect="zoom" easing="out" start="100" end="115" time="350" delay="0" center="147,330">Focus</animation>
+            <animation effect="zoom" easing="in" start="115" end="100" time="250" delay="0" center="147,330">UnFocus</animation>
+            <control type="image">
+              <include>MovieShowcaseThumbMain</include>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MovieShowcaseGlassOverlay</include>
+            </control>
+            <control type="image">
+              <animation effect="fade" start="100" end="50" time="350">Focus</animation>
+              <animation effect="fade" start="50" end="100" time="150">UnFocus</animation>
+              <include>MovieShowcaseThumbReflection</include>
+            </control>
+          </control>
+        </focusedlayout>
+        <itemlayout height="660" width="294">
+          <control type="image">
+            <include>MusicShowcaseThumbMain</include>
+            <info>ListItem.Icon</info>
+          </control>
+          <control type="image">
+            <description>Glass overlay</description>
+            <include>MusicShowcaseGlassOverlayMain</include>
+          </control>
+          <control type="image">
+            <include>MusicShowcaseThumbReflectionMain</include>
+            <info>ListItem.Icon</info>
+          </control>
+        </itemlayout>
+        <focusedlayout height="660" width="294">
+          <control type="group">
+            <animation effect="zoom" start="100" end="120" center="147,390" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+            <animation effect="zoom" start="120" end="100" center="147,390" time="400" easing="out" reversible="false" tween="cubic">Unfocus</animation>
+            <control type="image">
+              <include>MusicShowcaseThumbMain</include>
+              <info>ListItem.Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayMain</include>
+            </control>
+            <control type="image">
+              <include>MusicShowcaseThumbReflectionMain</include>
+              <info>ListItem.Icon</info>
+            </control>
+          </control>
+        </focusedlayout>
+      </control>
+      <control type="group" description="Metadata">
+        <animation effect="slide" start="0,0" end="0,57" time="0" condition="![Container.content(movies) | Container.content(seasons) | Container.content(tvshows)]" reversible="true">Conditional</animation>
+        <control type="group" description="All but pics">
+		<visible>!Window.IsActive(MyPics.xml)</visible>
+		<control type="image" description="FA">
+          <posx>1049</posx>
+          <posy>120</posy>
+          <width>731</width>
+          <height>404</height>
+          <include>Fanart_Fade</include>
+          <texture background="true">$VAR[Fanart.Art]</texture>
+        </control>
+        <control type="image" description="FA BG">
+          <posx>1049</posx>
+          <posy>120</posy>
+          <width>731</width>
+          <height>404</height>
+          <texture border="3">thumbs/CoverOverlay0.png</texture>
+        </control>
+        </control>
+		<control type="image" description="Pictures FA">
+        <visible>Window.IsActive(MyPics.xml)</visible>
+		  <posx>1049</posx>
+          <posy>120</posy>
+          <width>731</width>
+          <height>404</height>
+          <include>Fanart_Fade</include>
+		  <aspectratio>keep</aspectratio>
+		  <include>ThumbBorder</include>
+          <texture background="true">$VAR[Pictures.Art]</texture>
+        </control>
+		<control type="group" description="Media info">
+          <visible>![Container.Content(songs) | container.content(musicvideos)]</visible>
+          <posx>144</posx>
+          <posy>36</posy>
+          <control type="label" description="Title">
+            <posy>82</posy>
+            <width>780</width>
+            <textcolor>Orange</textcolor>
+            <include>Genre500Commons</include>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Genre">
+            <posy>142</posy>
+            <width>780</width>
+            <font>Details</font>
+            <include>Genre500Commons</include>
+            <label>$VAR[Genres]</label>
+          </control>
+          <control type="label" description="Details">
+            <posy>180</posy>
+            <height>33</height>
+            <width>780</width>
+            <font>Details</font>
+            <include>Genre500Commons</include>
+            <label>$VAR[500TopLabel]</label>
+          </control>
+          <control type="textbox" description="Plot51">
+            <visible>Window.IsActive(MyVideoNav.xml)</visible>
+            <posx>0</posx>
+            <posy>264</posy>
+            <width>780</width>
+            <height>230</height>
+            <include>Plot51Commons</include>
+            <label>$VAR[Plots]</label>
+          </control>
+          <control type="textbox" description="Plot51">
+            <visible>!Window.IsActive(MyVideoNav.xml)</visible>
+            <posx>0</posx>
+            <posy>264</posy>
+            <width>780</width>
+            <height>230</height>
+            <include>Plot51Commons</include>
+            <label>$VAR[Plots]</label>
+          </control>
+        </control>
+        <control type="group" description="Songs and videos">
+          <visible>Container.Content(songs) | Container.Content(musicvideos)</visible>
+          <posx>144</posx>
+          <posy>36</posy>
+          <control type="label" description="Title Label">
+            <posy>82</posy>
+            <width>780</width>
+            <wrapmultiline>true</wrapmultiline>
+            <height>60</height>
+            <textcolor>Orange</textcolor>
+            <include>Genre500Commons</include>
+            <label>$INFO[ListItem.Title]</label>
+          </control>
+          <control type="label" description="Title Label">
+            <posy>186</posy>
+            <width>780</width>
+            <textcolor>White2</textcolor>
+            <include>Genre500Commons</include>
+            <label>$INFO[ListItem.Artist]</label>
+          </control>
+          <control type="grouplist" description="Labels">
+            <posx>0</posx>
+            <posy>264</posy>
+            <width>780</width>
+            <height>500</height>
+            <itemgap>24</itemgap>
+            <orientation>vertical</orientation>
+            <control type="label" description="Type label 1">
+              <width>780</width>
+              <height>30</height>
+              <label>$INFO[ListItem.FileExtension,[COLOR=Grey]$LOCALIZE[564]:[/COLOR]  ]</label>
+            </control>
+            <control type="label" description="Genre label 2">
+              <width>780</width>
+              <height>30</height>
+              <label>$INFO[ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR]  ]</label>
+            </control>
+            <control type="label" description="Album label 3">
+              <width>780</width>
+              <height>30</height>
+              <label>$INFO[ListItem.Album,[COLOR=Grey]$LOCALIZE[558]:[/COLOR]  ]</label>
+            </control>
+            <control type="label" description="Duration label 3">
+              <width>780</width>
+              <height>30</height>
+              <label>$INFO[ListItem.Duration,[COLOR=Grey]$LOCALIZE[180]:[/COLOR]  ]</label>
+            </control>
+          </control>
+        </control>
+      </control>
+      <!--<control type="image" description="Studios">
+          <visible>![IsEmpty(ListItem.Studio) | Container.content(Movies)]</visible>
+          <posx>0</posx>
+          <posy>558</posy>
+          <height>70</height>
+          <width>400</width>
+          <aspectratio align="left">keep</aspectratio>
+          <texture>$INFO[Listitem.studio,badges/studios/,.png]</texture>
+        </control>-->
+      <control type="grouplist" description="Left Flags">
+	  <visible>!ListItem.IsFolder</visible>
+        <posx>30</posx>
+        <posy>1017</posy>
+        <width min="90" max="450">auto</width>
+        <height>45</height>
+        <itemgap>30</itemgap>
+        <orientation>horizontal</orientation>
+        <align>left</align>
+        <aligny>center</aligny>
+        <control type="image">
+          <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+          <height>45</height>
+          <width>90</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>IntegerGreaterThan(ListItem.VideoResolution,710)</visible>
+          <height>45</height>
+          <width>90</width>
+          <posx>0</posx>
+          <posy>0</posy>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>container.content(albums) | container.content(songs)</visible>
+          <height>45</height>
+          <width>174</width>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.StarRating]</texture>
+        </control>
+      </control>
+      <control type="grouplist" description="Right Flags">
+	  <visible>!ListItem.IsFolder</visible>
+        <posx>1440</posx>
+        <posy>1017</posy>
+        <width min="90" max="450">auto</width>
+        <height>45</height>
+        <itemgap>30</itemgap>
+        <orientation>horizontal</orientation>
+        <align>right</align>
+        <aligny>center</aligny>
+        <control type="image">
+          <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+          <height>45</height>
+          <width>90</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+          <height>45</height>
+          <width>90</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+        </control>
+        <control type="label">
+          <visible>container.content(albums) | container.content(songs)</visible>
+          <height>45</height>
+          <width>90</width>
+          <font>Volume</font>
+          <align>right</align>
+          <label>$INFO[ListItem.Year]</label>
+        </control>
+      </control>
+      <control type="group" description="Bottom title">
+        <posy>990</posy>
+        <control type="label" description="Title Label">
+          <posx>460</posx>
+          <posy>30</posy>
+          <width>1000</width>
+          <height>36</height>
+          <align>center</align>
+          <textcolor>White2</textcolor>
+          <font>InfoTitle</font>
+          <label>$INFO[ListItem.Label]</label>
+        </control>
+      </control>
+      <control type="image">
+        <visible>Control.HasFocus(60)</visible>
+        <include>VisibleFadeEffect</include>
+        <posx>291</posx>
+        <posy>1048</posy>
+        <height>36</height>
+        <width>1338</width>
+        <aspectratio>stretch</aspectratio>
+        <texture>OSD/LineScroll2H.png</texture>
+      </control>
+      <control type="scrollbar" id="60">
+        <animation effect="slide" start="0,0" end="0,-8" time="150">Focus</animation>
+        <animation effect="slide" start="0,-8" end="0,0" time="300">UnFocus</animation>
+        <posx>291</posx>
+        <posy>1056</posy>
+        <width>1338</width>
+        <height>36</height>
+        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbar>-</texturesliderbar>
+        <texturesliderbarfocus>-</texturesliderbarfocus>
+        <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+        <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+        <showonepage>false</showonepage>
+        <orientation>horizontal</orientation>
+        <onup>59</onup>
+        <onright>-</onright>
+      </control>
+    </control>
+  </include>
+</includes>
