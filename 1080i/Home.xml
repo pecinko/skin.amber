@@ -4,7 +4,7 @@
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin)</onload>
-  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Shelf.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
   <controls>
     <control type="multiimage">
@@ -28,14 +28,16 @@
           <texture border="0,0,0,12">home/NavbarGlass.png</texture>
         </control>
         <control type="image" description="Shelf BG">
-          <posx>760</posx>
+          <visible>Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		  <posx>760</posx>
           <posy>644</posy>
           <width>400</width>
           <height>50</height>
           <texture border="39,0,39,0">home/HomeTopNav2.png</texture>
         </control>
         <control type="label" description="Shelf label">
-          <posx>760</posx>
+          <visible>Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		  <posx>760</posx>
           <posy>644</posy>
           <width>400</width>
           <height>50</height>
@@ -80,7 +82,7 @@
         <onleft>300</onleft>
         <onright>300</onright>
         <ondown>9001</ondown>
-        <onup>ActivateWindow(1112)</onup>
+        <onup condition="Skin.HasSetting(Shelf.Favs) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)">ActivateWindow(1112)</onup>
         <pagecontrol>-</pagecontrol>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
         <focusposition>2</focusposition>

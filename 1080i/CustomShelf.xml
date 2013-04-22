@@ -14,6 +14,92 @@
       <align>top</align>
 	  <onup>300</onup>
       <ondown>300</ondown>
+	  <control type="label" id="110" description="Top Label">
+        <visible>Control.IsVisible(111)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>ShelfTopLabel</include>
+        <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
+      </control>
+	  <control type="panel" id="111" description="TOP Shortcuts">
+        <visible>Skin.HasSetting(Shelf.Favs) + IntegerGreaterThan(Container(111).NumItems,0)</visible> 
+		<onleft>111</onleft>
+        <onright>111</onright>
+		<onup>300</onup>
+	    <ondown>300</ondown>
+        <include>RA_Commons_Music</include>
+        <content>
+          <item id="1" description="Favs">
+            <visible>Skin.String(ShelfFavs.1.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.1.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.1.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.1.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="2" description="Favs">
+            <visible>Skin.String(ShelfFavs.2.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.2.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.2.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.2.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="3" description="Favs">
+            <visible>Skin.String(ShelfFavs.3.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.3.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.3.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.3.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="4" description="Favs">
+            <visible>Skin.String(ShelfFavs.4.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.4.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.4.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.4.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="5" description="Favs">
+            <visible>Skin.String(ShelfFavs.5.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.5.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.5.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.5.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="6" description="Favs">
+            <visible>Skin.String(ShelfFavs.6.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.6.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.6.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.6.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="7" description="Favs">
+            <visible>Skin.String(ShelfFavs.7.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.7.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.7.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.7.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="8" description="Favs">
+            <visible>Skin.String(ShelfFavs.8.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.8.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.8.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.8.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="9" description="Favs">
+            <visible>Skin.String(ShelfFavs.9.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.9.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.9.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.9.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+          <item id="10" description="Favs">
+            <visible>Skin.String(ShelfFavs.10.Label)</visible>
+            <label>$INFO[Skin.String(ShelfFavs.10.Label)]</label>
+            <thumb>$INFO[Skin.String(ShelfFavs.10.Icon)]</thumb>
+            <onclick>$INFO[Skin.String(ShelfFavs.10.Path)]</onclick>
+            <property name="ItemType">$LOCALIZE[1036]</property>
+          </item>
+	    </content>
+      </control>
 	  <control type="label" id="210" description="Top Label">
         <visible>Control.IsVisible(211)</visible>
         <include>VisibleFadeEffect</include>
@@ -21,7 +107,7 @@
         <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="211" description="TOP Shortcuts">
-        <visible>Skin.HasSetting(Show.Addons)</visible> 
+        <visible>Skin.HasSetting(Shelf.Addons) + IntegerGreaterThan(Container(211).NumItems,0)</visible> 
 		<onleft>211</onleft>
         <onright>211</onright>
 		<onup>300</onup>
@@ -171,7 +257,7 @@
         <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="311" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(311).NumItems,0)</visible>
 		<visible>[Library.HasContent(Movies) | Skin.HasSetting(plexbmc)]</visible>
         <onleft>311</onleft>
         <onright>311</onright>
@@ -348,7 +434,7 @@
         <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="411" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(411).NumItems,0)</visible>
 		<visible>[Library.HasContent(TVShows) | Skin.HasSetting(plexbmc)]</visible>
         <onleft>411</onleft>
         <onright>411</onright>
@@ -565,7 +651,7 @@
         <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="511" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(511).NumItems,0)</visible>
 		<visible>[Library.HasContent(Music) | Skin.HasSetting(plexbmc)]</visible>
         <onleft>511</onleft>
         <onright>511</onright>

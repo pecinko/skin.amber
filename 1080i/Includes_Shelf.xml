@@ -23,7 +23,7 @@
     <posx>60</posx>
     <posy>84</posy>
     <width>1860</width>
-    <height>396</height>
+    <height>390</height>
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
     <itemlayout height="380" width="257">
@@ -115,7 +115,7 @@
     <posx>72</posx>
     <posy>84</posy>
     <width>1860</width>
-    <height>420</height>
+    <height>390</height>
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
     <itemlayout height="380" width="360">
