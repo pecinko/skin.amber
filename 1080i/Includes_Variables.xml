@@ -165,7 +165,10 @@
 	<!--<value condition="[Container.Content(tvshows) | !ListItem.IsFolder] + !IsEmpty(ListItem.Rating)]">$INFO[ListItem.Rating,badges/,.png]</value>
 	<value condition="[Container.Content(tvshows) | !ListItem.IsFolder] + IsEmpty(ListItem.Rating)">badges/0.0.png</value>-->
   </variable>
-  
+  <variable name="PVROverlay" description="PVR Overlay image">
+    <value condition="ListItem.IsRecording">OverlayRecording.png</value>
+    <value condition="ListItem.HasTimer">OverlayTimer.png</value>
+  </variable>
   <variable name="Default.Art" description="Calculate BG to show">
     <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
 	<value>special://skin/backgrounds/default/</value>
@@ -177,6 +180,10 @@
   <variable name="Weather.Art" description="Calculate BG to show">
     <value condition="!IsEmpty(Skin.String(Weather.Background))">$INFO[Skin.String(Weather.Background)]</value>
 	<value>special://skin/backgrounds/Weather.jpg</value>
+  </variable>
+  <variable name="Pvr.Art" description="Calculate BG to show">
+    <value condition="!IsEmpty(Skin.String(Pvr.Background))">$INFO[Skin.String(Pvr.Background)]</value>
+	<value>special://skin/backgrounds/default</value>
   </variable>
   <variable name="Pictures.Art" description="Calculate BG to show">
     <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>

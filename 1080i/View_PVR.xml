@@ -9,24 +9,38 @@
     <midtexture>img/ItemBG2.png</midtexture>
     <info>ListItem.Progress</info>
   </include>
+  <include name="RecOverlay">
+    <control type="image">
+      <posx>930</posx>
+      <posy>0</posy>
+      <width>18</width>
+      <height>99</height>
+      <texture>OverlayRecording.png</texture>
+      <aspectratio>keep</aspectratio>
+      <visible>ListItem.IsRecording</visible>
+    </control>
+  </include>
   <include name="LiveTVChannelView">
-    <control type="group" description="Left Panel TV Channels group">
+    <control type="group" description="TV Channels group">
       <visible>Control.IsVisible(11)</visible>
       <include>VisibleFadeEffect</include>
-       <control type="group" description="Channel info">
+      <control type="group" description="INFO">
         <posx>60</posx>
         <posy>480</posy>
         <control type="label" description="Title above progress">
-          <posy>0</posy>
-          <width>762</width>
+          <posy>-12</posy>
+          <width>660</width>
           <font>InfoTitle</font>
           <textcolor>Orange</textcolor>
+		  <aligny>center</aligny>
+		  <height>60</height>
+		  <wrapmultiline>true</wrapmultiline>
           <label>$INFO[Container(11).ListItem.Title]</label>
         </control>
         <control type="textbox" description="Plot Value for TV">
           <posx>0</posx>
           <posy>69</posy>
-          <width>758</width>
+          <width>660</width>
           <height>390</height>
           <align>justify</align>
           <pagecontrol>-</pagecontrol>
@@ -35,353 +49,360 @@
         <control type="label">
           <visible>Container(11).ListItem.HasEpg</visible>
           <posy>480</posy>
-		  <width>758</width>
+          <width>660</width>
           <height>36</height>
           <font>Details</font>
-		  <label>[COLOR=Grey]$LOCALIZE[142] [/COLOR]$INFO[Container(11).ListItem.StartTime,, / ]$INFO[Container(11).ListItem.EndTime]</label>
+          <label>[COLOR=Grey]$LOCALIZE[142] [/COLOR]$INFO[Container(11).ListItem.StartTime,, / ]$INFO[Container(11).ListItem.EndTime]</label>
         </control>
         <control type="label">
           <posy>520</posy>
-          <width>758</width>
+          <width>660</width>
           <height>36</height>
-		  <font>Details</font>
-		  <label>[COLOR=Grey]$LOCALIZE[19031]: [/COLOR]$INFO[Container(11).ListItem.NextTitle]</label>
+          <font>Details</font>
+          <label>[COLOR=Grey]$LOCALIZE[19031]: [/COLOR]$INFO[Container(11).ListItem.NextTitle]</label>
         </control>
       </control>
-        <control type="panel" id="11">
-          <posx>1040</posx>
+      <control type="list" id="11" description="CHANNELS">
+        <posx>940</posx>
         <posy>445</posy>
-        <width>860</width>
+        <width>980</width>
         <height>594</height>
-          <onleft>9000</onleft>
-          <onright>70</onright>
-          <onup>11</onup>
-          <ondown>11</ondown>
-          <pagecontrol>70</pagecontrol>
-          <viewtype label="537">Big List 11</viewtype>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
-          <itemlayout width="860" height="99">
-            <control type="image">
+        <onleft>9000</onleft>
+        <onright>70</onright>
+        <onup>11</onup>
+        <ondown>11</ondown>
+        <pagecontrol>70</pagecontrol>
+        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        <itemlayout height="99">
+          <control type="image">
             <posx>0</posx>
             <posy>0</posy>
             <height>99</height>
-            <width>860</width>
+            <width>960</width>
             <texture flipy="true" border="3">list/ListNF.png</texture>
           </control>
-		  <control type="label">
-				<posx>700</posx>
-              <height>99</height>
-              <width>80</width>
-              <textcolor>White2</textcolor>
-              <align>center</align>
-              <aligny>center</aligny>
-              <label>$INFO[ListItem.Progress]</label>
-            </control> 
-            <control type="label" description="Number">
-              <posx>40</posx>
-              <height>99</height>
-              <width>80</width>
-              <align>center</align>
-              <aligny>center</aligny>
-              <info>ListItem.ChannelNumber</info>
-            </control>
-			<control type="image">
-              <posx>80</posx>
-              <posy>0</posy>
-              <width>18</width>
-              <height>99</height>
-              <texture>OverlayRecording.png</texture>
-              <aspectratio>keep</aspectratio>
-              <visible>ListItem.IsRecording</visible>
-            </control>
-            <control type="label" description="Main Label">
-              <posx>112</posx>
-			  <height>73</height>
-              <width>736</width>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-              <posx>112</posx>
-			  <posy>63</posy>
-              <height>30</height>
-              <font>ListDetails</font>
-			  <width>736</width>
-              <label>$INFO[ListItem.Title]</label>
-            </control>
-            
-          </itemlayout>
-          <focusedlayout width="860" height="99">
-            <control type="image">
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<info>ListItem.ChannelNumber</info>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Title]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="99">
+          <control type="image">
             <posx>0</posx>
             <posy>0</posy>
             <height>99</height>
-            <width>860</width>
+            <width>980</width>
             <texture flipy="true" border="3">list/ListNF.png</texture>
           </control>
-		  <control type="image">
+          <control type="image">
             <posx>0</posx>
             <posy>3</posy>
-            <width>860</width>
+            <width>980</width>
             <height>96</height>
             <texture>list/ListFO.png</texture>
           </control>
-		  <control type="label">
-				<posx>700</posx>
-              <height>99</height>
-              <width>80</width>
-              <textcolor>White2</textcolor>
-              <align>center</align>
-              <aligny>center</aligny>
-              <info>ListItem.Progress</info>
-            </control>            
-            <control type="label" description="Number">
-              <posx>40</posx>
-              <height>99</height>
-              <width>80</width>
-              <textcolor>White2</textcolor>
-              <align>center</align>
-              <aligny>center</aligny>
-              <info>ListItem.ChannelNumber</info>
-            </control>
-            <control type="image">
-              <posx>80</posx>
-              <posy>0</posy>
-              <width>18</width>
-              <height>99</height>
-              <texture>OverlayRecording.png</texture>
-              <aspectratio>keep</aspectratio>
-              <visible>ListItem.IsRecording</visible>
-            </control>
-            <control type="label" description="Main Label">
-              <posx>112</posx>
-			  <height>73</height>
-              <width>736</width>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-              <posx>112</posx>
-			  <posy>63</posy>
-              <height>30</height>
-              <font>ListDetails</font>
-			  <width>736</width>
-              <label>$INFO[ListItem.Title]</label>
-            </control>
-          </focusedlayout>
-        </control>
-      <control type="scrollbar" id="70">
-        <visible>false</visible>
-		<posx>39r</posx>
-        <posy>135</posy>
-        <height>870</height>
-        <onleft>11</onleft>
-        <onright>32</onright>
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<info>ListItem.ChannelNumber</info>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <label>$INFO[ListItem.Title]</label>
+          </control>
+        </focusedlayout>
       </control>
     </control>
   </include>
   <include name="LiveRadioChannelView">
-    <control type="group" description="Left Panel Radio Channels group">
+    <control type="group" description="Radio group">
       <visible>Control.IsVisible(12)</visible>
       <include>VisibleFadeEffect</include>
-      <control type="group">
-        <posx>112</posx>
-        <posy>120</posy>
-        <visible>Control.IsVisible(12)</visible>
-        <include>VisibleFadeEffect</include>
-        <control type="image">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>759</width>
-          <height>429</height>
-          <texture fallback="special://skin/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
-          <include>VisibleFadeEffect</include>
-          <visible>!Player.HasVideo</visible>
-        </control>
-        <control type="videowindow">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>759</width>
-          <height>429</height>
-          <visible>Player.HasVideo</visible>
-          <animation effect="slide" start="0,0" end="-3000,0" time="0">WindowClose</animation>
-        </control>
-        <control type="image">
-          <posx>-2</posx>
-          <posy>-2</posy>
-          <width>762</width>
-          <height>432</height>
-          <texture border="3">img/CoverOverlay0.png</texture>
-        </control>
-        <control type="label">
-          <posy>-48</posy>
-          <font>size15</font>
-          <width>758</width>
-          <textcolor>Grey</textcolor>
-          <include>Genre51Commons</include>
-          <label>$INFO[VideoPlayer.Title,$LOCALIZE[31023]: ]</label>
-        </control>
-      </control>
-      <control type="group">
-        <posx>112</posx>
-        <posy>609</posy>
+      <control type="group" description="INFO">
+        <posx>60</posx>
+        <posy>480</posy>
         <control type="label" description="Title above progress">
-          <posy>0</posy>
-          <width>762</width>
-          <font>size22B</font>
-          <textcolor>White2</textcolor>
-          <include>Genre51Commons</include>
+          <posy>-12</posy>
+          <width>660</width>
+          <font>InfoTitle</font>
+          <textcolor>Orange</textcolor>
+		  <aligny>center</aligny>
+		  <height>60</height>
+		  <wrapmultiline>true</wrapmultiline>
           <label>$INFO[Container(12).ListItem.Title]</label>
         </control>
         <control type="textbox" description="Plot Value for TV">
           <posx>0</posx>
-          <posy>57</posy>
-          <width>758</width>
-          <height>252</height>
-          <font>size20</font>
-          <textcolor>Silver</textcolor>
+          <posy>69</posy>
+          <width>660</width>
+          <height>390</height>
           <align>justify</align>
-          <aligny>bottom</aligny>
-          <autoscroll delay="8000" time="4300" repeat="10000">true</autoscroll>
           <pagecontrol>-</pagecontrol>
           <label>$INFO[Container(12).ListItem.Plot]</label>
         </control>
         <control type="label">
           <visible>Container(12).ListItem.HasEpg</visible>
-          <posy>336</posy>
-          <include>Genre51Commons</include>
-          <label>$LOCALIZE[142] [COLOR=White]$INFO[Container(12).ListItem.StartTime,, / ]$INFO[Container(12).ListItem.EndTime][/COLOR]</label>
+          <posy>480</posy>
+          <width>660</width>
+          <height>36</height>
+          <font>Details</font>
+          <label>[COLOR=Grey]$LOCALIZE[142] [/COLOR]$INFO[Container(12).ListItem.StartTime,, / ]$INFO[Container(12).ListItem.EndTime]</label>
         </control>
         <control type="label">
-          <posy>381</posy>
-          <textcolor>White</textcolor>
-          <include>Genre51Commons</include>
-          <label>$INFO[Container(12).ListItem.NextTitle,[COLOR=White]$LOCALIZE[19031]: [/COLOR]]</label>
+          <posy>520</posy>
+          <width>660</width>
+          <height>36</height>
+          <font>Details</font>
+          <label>[COLOR=Grey]$LOCALIZE[19031]: [/COLOR]$INFO[Container(12).ListItem.NextTitle]</label>
         </control>
       </control>
-      <control type="group" description="Slider and List">
-        <include>LargeListItemCount</include>
-        <posx>1020</posx>
-        <posy>141</posy>
-        <control type="fixedlist" id="12">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>802</width>
-          <height>888</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">70</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
-          <onup>11</onup>
-          <ondown>11</ondown>
-          <pagecontrol>71</pagecontrol>
-          <viewtype label="537">Big List 12</viewtype>
-          <focusposition>3</focusposition>
-          <movement>4</movement>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
-          <itemlayout width="802" height="111">
-            <control type="progress">
-              <include>TVProgress</include>
-            </control>
-            <control type="image" description="Logo">
-              <posx>705</posx>
-              <posy>14</posy>
-              <height>84</height>
-              <width>84</width>
-              <texture>$INFO[ListItem.Thumb]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="label" description="Number">
-              <posx>46</posx>
-              <posy>9</posy>
-              <height>93</height>
-              <width>93</width>
-              <textcolor>White</textcolor>
-              <align>center</align>
-              <aligny>center</aligny>
-              <font>size22</font>
-              <scroll>false</scroll>
-              <info>ListItem.ChannelNumber</info>
-            </control>
-            <control type="label" description="Main Label">
-              <posx>123</posx>
-              <width>552</width>
-              <include>51MainLabel</include>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-              <posx>123</posx>
-              <width>552</width>
-              <include>51Label2</include>
-              <label>$INFO[ListItem.Title]</label>
-            </control>
-            <control type="image">
-              <posx>90</posx>
-              <posy>0</posy>
-              <width>18</width>
-              <height>111</height>
-              <texture>OverlayRecording.png</texture>
-              <aspectratio>keep</aspectratio>
-              <visible>ListItem.IsRecording</visible>
-            </control>
-          </itemlayout>
-          <focusedlayout width="802" height="111">
-            <control type="progress">
-              <include>TVProgress</include>
-            </control>
-            <control type="image" description="Logo">
-              <posx>705</posx>
-              <posy>14</posy>
-              <height>84</height>
-              <width>84</width>
-              <texture>$INFO[ListItem.Thumb]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="label" description="Number">
-              <posx>46</posx>
-              <posy>9</posy>
-              <height>93</height>
-              <width>93</width>
-              <textcolor>White2</textcolor>
-              <align>center</align>
-              <aligny>center</aligny>
-              <font>size22</font>
-              <info>ListItem.ChannelNumber</info>
-            </control>
-            <control type="label" description="Main Label">
-              <posx>123</posx>
-              <width>552</width>
-              <include>51MainLabelFO</include>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-              <posx>123</posx>
-              <width>552</width>
-              <include>51Label2FO</include>
-              <label>$INFO[ListItem.Title]</label>
-            </control>
-            <control type="image">
-              <posx>90</posx>
-              <posy>0</posy>
-              <width>18</width>
-              <height>111</height>
-              <texture>OverlayRecording.png</texture>
-              <aspectratio>keep</aspectratio>
-              <visible>ListItem.IsRecording</visible>
-            </control>
-          </focusedlayout>
-        </control>
-        <include>LargeListSlider</include>
-      </control>
-      <include>LargeListFade</include>
-      <control type="scrollbar" id="71">
-        <posx>39r</posx>
-        <posy>135</posy>
-        <height>870</height>
-        <onleft>11</onleft>
-        <onright>32</onright>
+      <control type="list" id="12" description="RADIO">
+        <posx>940</posx>
+        <posy>445</posy>
+        <width>980</width>
+        <height>594</height>
+        <onleft>9000</onleft>
+        <onright>70</onright>
+        <onup>12</onup>
+        <ondown>12</ondown>
+        <pagecontrol>70</pagecontrol>
+        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        <itemlayout height="99">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>99</height>
+            <width>960</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
+          </control>
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<info>ListItem.ChannelNumber</info>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+			<scroll>false</scroll>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Title]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="99">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>99</height>
+            <width>980</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>3</posy>
+            <width>980</width>
+            <height>96</height>
+            <texture>list/ListFO.png</texture>
+          </control>
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<info>ListItem.ChannelNumber</info>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <label>$INFO[ListItem.Title]</label>
+          </control>
+        </focusedlayout>
       </control>
     </control>
   </include>
   <include name="LiveTVRecordingsView">
-    <control type="group">
+    <control type="group" description="TV Channels group">
+      <visible>Control.IsVisible(13)</visible>
+      <include>VisibleFadeEffect</include>
+      <control type="group" description="INFO">
+        <posx>60</posx>
+        <posy>480</posy>
+        <control type="label" description="Title above progress">
+          <posy>-12</posy>
+          <width>660</width>
+          <font>InfoTitle</font>
+          <textcolor>Orange</textcolor>
+		  <aligny>center</aligny>
+		  <height>60</height>
+		  <wrapmultiline>true</wrapmultiline>
+          <label>$INFO[Container(13).ListItem.Title]</label>
+        </control>
+        <control type="textbox" description="Plot Value for TV">
+          <posx>0</posx>
+          <posy>69</posy>
+          <width>660</width>
+          <height>390</height>
+          <align>justify</align>
+          <pagecontrol>-</pagecontrol>
+          <label>$INFO[Container(13).ListItem.Plot]</label>
+        </control>
+        <control type="label">
+          <posy>520</posy>
+          <width>660</width>
+          <height>36</height>
+          <font>Details</font>
+          <label>[COLOR=Grey]$LOCALIZE[2050]: [/COLOR]$INFO[Container(13).ListItem.Duration]</label>
+        </control>
+      </control>
+      <control type="list" id="13" description="CHANNELS">
+        <posx>940</posx>
+        <posy>445</posy>
+        <width>980</width>
+        <height>594</height>
+        <onleft>9000</onleft>
+        <onright>70</onright>
+        <onup>13</onup>
+        <ondown>13</ondown>
+        <pagecontrol>70</pagecontrol>
+        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        <itemlayout height="99">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>99</height>
+            <width>980</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
+          </control>
+          <include>RecOverlay</include>
+          <control type="image" description="Thumb">
+            <posx>9</posx>
+			<posy>12</posy>
+            <height>74</height>
+            <width>74</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<texture fallback="DefaultFile.png">$INFO[ListItem.thumb]</texture>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>99</posx>
+            <height>60</height>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>99</posx>
+            <posy>50</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Date]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="99">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>99</height>
+            <width>980</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>3</posy>
+            <width>980</width>
+            <height>96</height>
+            <texture>list/ListFO.png</texture>
+          </control>
+          <include>RecOverlay</include>
+          <control type="image" description="Thumb">
+            <posx>9</posx>
+			<posy>12</posy>
+            <height>74</height>
+            <width>74</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<texture fallback="DefaultFile.png">$INFO[ListItem.thumb]</texture>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>99</posx>
+            <height>60</height>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>99</posx>
+            <posy>50</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Date]</label>
+          </control>
+        </focusedlayout>
+      </control>
+    </control>
+	<!--<control type="group">
       <visible>Control.IsVisible(13)</visible>
       <control type="group" description="Recordings">
         <include>VisibleFadeEffect</include>
@@ -499,7 +520,7 @@
           <onright>32</onright>
         </control>
       </control>
-    </control>
+    </control>-->
   </include>
   <include name="EPGTimelineView">
     <control type="group">
@@ -507,223 +528,178 @@
       <visible>Control.IsVisible(10)</visible>
       <include>VisibleFadeEffect</include>
       <control type="epggrid" id="10" description="EPG Grid">
-        <posx>105</posx>
+        <posx>60</posx>
         <posy>420</posy>
-        <width>1710</width>
-        <height>400</height>
+        <width>1800</width>
+        <height>546</height>
         <pagecontrol>10</pagecontrol>
         <scrolltime>350</scrolltime>
         <timeblocks>20</timeblocks>
-        <rulerunit>12</rulerunit>
+        <rulerunit>6</rulerunit>
         <onleft>31</onleft>
         <onright>31</onright>
         <onup>10</onup>
         <ondown>10</ondown>
-		<onback>50</onback>
-        <rulerlayout height="66" width="60">
+        <onback>50</onback>
+        <rulerlayout height="80" width="60">
           <control type="image" id="1" description="Header row">
             <width>60</width>
-            <height>44</height>
+            <height>80</height>
             <posx>0</posx>
             <posy>0</posy>
             <texture>-</texture>
           </control>
           <control type="label" id="2">
-            <posx>0</posx>
+            <posx>10</posx>
             <posy>0</posy>
-            <width>57</width>
-            <height>44</height>
+            <width>58</width>
+            <height>80</height>
             <aligny>center</aligny>
             <align>left</align>
+			<font>Details</font>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </rulerlayout>
         <channellayout height="78" width="420">
           <control type="image" id="1" description="Column 1">
             <posx>0</posx>
-            <posy>3</posy>
-            <width>405</width>
-            <height>72</height>
+            <posy>0</posy>
+            <width>420</width>
+            <height>78</height>
             <bordersize>1</bordersize>
-            <texture>img/ItemBG.png</texture>
+            <texture>img/BlackDotT.png</texture>
           </control>
           <control type="label">
-            <posx>36</posx>
+            <posx>35</posx>
             <posy>0</posy>
-            <width>72</width>
+            <width>70</width>
             <height>78</height>
-            <font>size18</font>
+            <font>Details</font>
             <align>center</align>
-            <aligny>center</aligny>
-            <textcolor>Grey</textcolor>
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" id="1" description="Column 1 selected">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>78</posx>
-            <width>246</width>
-            <height>78</height>
-            <font>size18</font>
-            <textcolor>Grey</textcolor>
-            <aligny>center</aligny>
-            <align>left</align>
-            <label>[B]$INFO[ListItem.ChannelName][/B]</label>
-          </control>
-          <control type="label" id="1" description="Column 1 selected">
-            <visible>IsEmpty(ListItem.Thumb)</visible>
-            <posx>78</posx>
+            <posx>80</posx>
             <width>300</width>
             <height>78</height>
-            <font>size18</font>
-            <textcolor>Grey</textcolor>
-            <aligny>center</aligny>
-            <align>left</align>
-            <label>[B]$INFO[ListItem.ChannelName][/B]</label>
-          </control>
-          <control type="image">
-            <posx>348</posx>
-            <posy>0</posy>
-            <width>48</width>
-            <height>78</height>
-            <aspectratio align="center" aligny="center">keep</aspectratio>
-            <texture>$INFO[ListItem.Thumb]</texture>
+            <font>Details</font>
+            <label>$INFO[ListItem.ChannelName]</label>
           </control>
         </channellayout>
         <focusedchannellayout height="78" width="420">
           <control type="image" id="1" description="Column 1">
             <posx>0</posx>
-            <posy>3</posy>
-            <width>405</width>
-            <height>72</height>
-            <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-            <bordersize>1</bordersize>
-            <texture>img/ItemBG2.png</texture>
-          </control>
-          <control type="label">
-            <posx>36</posx>
             <posy>0</posy>
-            <width>72</width>
+            <width>420</width>
             <height>78</height>
-            <font>size18</font>
+			<bordersize>1</bordersize>
+            <texture>img/BlackDotT.png</texture>
+          </control>
+          <control type="label" description="Column 1 FO">
+            <posx>35</posx>
+            <posy>0</posy>
+            <width>70</width>
+            <height>78</height>
+            <font>Details</font>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>Blue</textcolor>
+            <textcolor>White2</textcolor>
             <info>ListItem.ChannelNumber</info>
           </control>
-          <control type="label" id="1" description="Column 1 selected">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>78</posx>
-            <width>246</width>
-            <height>78</height>
-            <font>size18</font>
-            <textcolor>Blue</textcolor>
-            <aligny>center</aligny>
-            <align>left</align>
-            <label>[B]$INFO[ListItem.ChannelName][/B]</label>
-          </control>
-          <control type="label" id="1" description="Column 1 selected">
-            <visible>IsEmpty(ListItem.Thumb)</visible>
-            <posx>78</posx>
+          <control type="label" id="1" description="Column 1 Focused">
+            <posx>80</posx>
             <width>300</width>
             <height>78</height>
-            <font>size18</font>
-            <textcolor>Blue</textcolor>
+            <font>Details</font>
+            <textcolor>White2</textcolor>
             <aligny>center</aligny>
             <align>left</align>
-            <label>[B]$INFO[ListItem.ChannelName][/B]</label>
-          </control>
-          <control type="image">
-            <posx>348</posx>
-            <posy>0</posy>
-            <width>48</width>
-            <height>78</height>
-            <aspectratio align="center" aligny="center">keep</aspectratio>
-            <texture>$INFO[ListItem.Thumb]</texture>
+            <label>$INFO[ListItem.ChannelName]</label>
           </control>
         </focusedchannellayout>
         <itemlayout height="78" width="60">
           <control type="image" id="2" description="Row">
-            <posx>1</posx>
-            <posy>3</posy>
-            <width>57</width>
-            <height>72</height>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>60</width>
+            <height>78</height>
             <bordersize>1</bordersize>
-            <texture>img/ItemBG.png</texture>
+            <texture>img/BlackDotT.png</texture>
           </control>
           <control type="label" id="1">
-            <posx>8</posx>
+            <posx>9</posx>
             <posy>0</posy>
             <width>45</width>
             <height>78</height>
-            <font>size18</font>
-            <aligny>center</aligny>
+            <font>Details</font>
             <scroll>false</scroll>
-			<align>left</align>
-            <textcolor>Grey</textcolor>
             <info>ListItem.Label</info>
           </control>
           <control type="image">
-            <posx>8</posx>
-            <posy>48</posy>
-            <width>15</width>
-            <height>30</height>
+            <posx>9</posx>
+            <posy>58</posy>
+            <width>14</width>
+            <height>14</height>
             <texture>$VAR[PVROverlay]</texture>
             <aspectratio>keep</aspectratio>
           </control>
         </itemlayout>
         <focusedlayout height="78" width="60">
-          <control type="image" id="2" description="row">
-            <posx>1</posx>
-            <posy>3</posy>
-            <width>57</width>
-            <height>72</height>
-            <texture border="3">img/ButtonFO.png</texture>
+          <control type="image" id="2" description="Row">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>60</width>
+            <height>78</height>
+            <texture border="5">img/FrameSlim.png</texture>
+			<bordertexture>img/BlackDotT.png</bordertexture>
           </control>
-          <control type="label" id="1">
-            <posx>8</posx>
+		  <control type="label" id="1">
+            <posx>9</posx>
             <posy>0</posy>
             <width>45</width>
             <height>78</height>
-            <font>size18</font>
+            <font>Details</font>
             <textcolor>White2</textcolor>
-            <aligny>center</aligny>
-            <align>left</align>
             <info>ListItem.Label</info>
           </control>
           <control type="image">
-            <posx>8</posx>
-            <posy>48</posy>
-            <width>15</width>
-            <height>30</height>
-            <texture>$VAR[PVROverlay]</texture>
+            <posx>9</posx>
+            <posy>58</posy>
+            <width>14</width>
+            <height>14</height>
+			<texture>$VAR[PVROverlay]</texture>
             <aspectratio>keep</aspectratio>
           </control>
         </focusedlayout>
       </control>
-      <control type="image" description="Bottom split">
-        <posx>105</posx>
-        <posy>994</posy>
-        <width>1710</width>
-        <height>1</height>
+	  <control type="image" description="Top split">
+        <posx>60</posx>
+        <posy>483</posy>
+        <width>1800</width>
+        <height>2</height>
         <texture>img/LineST.png</texture>
       </control>
-      <control type="image" description="Overlay">
-        <posx>69</posx>
-        <posy>942</posy>
-        <width>18</width>
-        <height>45</height>
-        <texture>$VAR[PVROverlay]</texture>
-        <aspectratio>keep</aspectratio>
+	  <control type="group">
+      <posx>60</posx>
+	  <posy>1008</posy>
+	  <control type="image" description="Bottom split">
+        <posx>0</posx>
+        <posy>-9</posy>
+        <width>1800</width>
+        <height>2</height>
+        <texture>img/LineST.png</texture>
       </control>
       <control type="label">
-        <posx>105</posx>
-        <posy>1000</posy>
-        <width>1710</width>
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1740</width>
         <height>40</height>
         <aligny>center</aligny>
         <align>left</align>
+		<scroll>false</scroll>
         <label>[COLOR=Orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Duration,  -  ,  -  ]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
       </control>
+	  </control>
     </control>
   </include>
   <include name="LiveTVTimersView">
@@ -731,7 +707,171 @@
       <description>Timers group</description>
       <visible>Control.IsVisible(14)</visible>
       <include>VisibleFadeEffect</include>
-      <control type="group">
+      <control type="list" id="14" description="Timers">
+        <posx>60</posx>
+        <posy>490</posy>
+        <width>1800</width>
+        <height>546</height>
+        <scrolltime>350</scrolltime>
+        <onleft>31</onleft>
+        <onright>31</onright>
+        <onup>14</onup>
+        <ondown>14</ondown>
+        <itemlayout height="78">
+          <control type="image" description="Row">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1800</width>
+            <height>78</height>
+            <bordersize>3</bordersize>
+            <texture>img/BlackDotT.png</texture>
+          </control>
+          <control type="label" description="Timer label">
+            <posx>10</posx>
+            <posy>0</posy>
+            <width>480</width>
+            <height>78</height>
+            <scroll>false</scroll>
+            <info>ListItem.Label</info>
+          </control>
+		  <control type="label" description="Date">
+            <posx>510</posx>
+            <posy>0</posy>
+            <width>580</width>
+            <height>78</height>
+            <scroll>false</scroll>
+            <info>ListItem.Date</info>
+          </control>
+		  <control type="label" description="Channel label">
+            <posx>1110</posx>
+            <posy>0</posy>
+            <width>380</width>
+            <height>78</height>
+            <scroll>false</scroll>
+            <info>ListItem.ChannelName</info>
+          </control>
+		  <control type="label" description="Comment">
+            <posx>1510</posx>
+            <posy>0</posy>
+            <width>280</width>
+            <height>78</height>
+            <scroll>false</scroll>
+			<font>ListDetails</font>
+            <info>ListItem.Comment</info>
+          </control>
+        </itemlayout>
+        <focusedlayout height="78">
+          <control type="image" description="Row">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1800</width>
+            <height>78</height>
+            <texture border="5">img/FrameSlim.png</texture>
+			<bordertexture>img/BlackDotT.png</bordertexture>
+          </control>
+		  <control type="label" description="Timer label">
+            <posx>10</posx>
+            <posy>0</posy>
+            <width>480</width>
+            <height>78</height>
+            <scroll>false</scroll>
+            <info>ListItem.Label</info>
+          </control>
+		  <control type="label" description="Date">
+            <posx>510</posx>
+            <posy>0</posy>
+            <width>580</width>
+            <height>78</height>
+            <scroll>false</scroll>
+            <info>ListItem.Date</info>
+          </control>
+		  <control type="label" description="Channel label">
+            <posx>1110</posx>
+            <posy>0</posy>
+            <width>380</width>
+            <height>78</height>
+            <scroll>false</scroll>
+            <info>ListItem.ChannelName</info>
+          </control>
+		  <control type="label" description="Comment">
+            <posx>1510</posx>
+            <posy>0</posy>
+            <width>280</width>
+            <height>78</height>
+            <font>ListDetails</font>
+            <scroll>false</scroll>
+            <info>ListItem.Comment</info>
+          </control>
+        </focusedlayout>
+      </control>
+	  <control type="group" description="Header">
+	   <posx>60</posx>
+	   <posy>430</posy>
+	  <control type="image" description="split">
+        <posx>0</posx>
+        <posy>39</posy>
+        <width>1800</width>
+        <height>2</height>
+        <texture>img/LineST.png</texture>
+      </control>
+	   <control type="label">
+          <description>Title header label</description>
+          <posx>20</posx>
+          <posy>0</posy>
+          <width>450</width>
+          <height>30</height>
+          <label>369</label>
+        </control>
+		<control type="label">
+          <description>Schedule Time header label</description>
+          <posx>520</posx>
+          <posy>0</posy>
+          <width>550</width>
+          <height>30</height>
+          <label>31501</label>
+        </control>
+	  <control type="label">
+          <description>Channel header label</description>
+          <posx>1120</posx>
+          <posy>0</posy>
+          <width>380</width>
+          <height>30</height>
+          <label>19029</label>
+        </control>
+       
+        
+        <control type="label">
+          <description>Status header label</description>
+          <posx>1520</posx>
+          <posy>0</posy>
+          <width>280</width>
+          <height>30</height>
+          <label>126</label>
+        </control>
+	  </control>
+	  <control type="group" description="Footer">
+      <posx>60</posx>
+	  <posy>1008</posy>
+	  <control type="image" description="Bottom split">
+        <posx>0</posx>
+        <posy>-9</posy>
+        <width>1800</width>
+        <height>2</height>
+        <texture>img/LineST.png</texture>
+      </control>
+      <control type="label">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1740</width>
+        <height>40</height>
+        <aligny>center</aligny>
+        <align>left</align>
+		<scroll>false</scroll>
+        <label>[COLOR=Orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Duration,  -  ,  -  ]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
+      </control>
+	  </control>
+	</control>
+	<!--<control type="group">
         <posx>120</posx>
         <posy>90</posy>
         <control type="label">
@@ -958,16 +1098,7 @@
             </control>
           </focusedlayout>
         </control>
-        <control type="scrollbar" id="74">
-          <posx>1658</posx>
-          <posy>75</posy>
-          <width>9</width>
-          <height>720</height>
-          <onleft>14</onleft>
-          <onright>35</onright>
-          <showonepage>false</showonepage>
-          <orientation>vertical</orientation>
-        </control>
+        
         <control type="label">
           <description>Next timer date</description>
           <posx>82</posx>
@@ -981,8 +1112,7 @@
           <label>$INFO[PVR.NextTimer]</label>
           <visible>PVR.HasTimer</visible>
         </control>
-      </control>
-    </control>
+      </control>-->
   </include>
   <include name="LiveTVSearchView">
     <control type="group">
@@ -998,7 +1128,7 @@
           <posy>30</posy>
           <width>375</width>
           <height>30</height>
-          <font>size18</font>
+          <font>Details</font>
           <align>center</align>
           <aligny>center</aligny>
           <label>19148</label>
@@ -1009,7 +1139,7 @@
           <posy>30</posy>
           <width>525</width>
           <height>30</height>
-          <font>size18</font>
+          <font>Details</font>
           <align>left</align>
           <aligny>center</aligny>
           <label>369</label>
@@ -1020,7 +1150,7 @@
           <posy>30</posy>
           <width>450</width>
           <height>30</height>
-          <font>size18</font>
+          <font>Details</font>
           <align>right</align>
           <aligny>center</aligny>
           <label>21820</label>
@@ -1031,7 +1161,7 @@
           <posy>30</posy>
           <width>210</width>
           <height>30</height>
-          <font>size18</font>
+          <font>Details</font>
           <align>center</align>
           <aligny>center</aligny>
           <label>126</label>
@@ -1250,404 +1380,244 @@
     </control>
   </include>
   <include name="LiveTVGuideChannelView">
-    <control type="group">
-      <description>TV Guide Channel</description>
+    <control type="group" description="TV Channels group">
       <visible>Control.IsVisible(15)</visible>
       <include>VisibleFadeEffect</include>
-      <control type="group">
-        <posx>105</posx>
-        <posy>105</posy>
-        <control type="label" description="Channel">
-          <posx>15</posx>
-          <posy>6</posy>
-          <width>900</width>
-          <height>45</height>
-          <font>size22B</font>
-          <textcolor>White2</textcolor>
-          <align>left</align>
-          <aligny>center</aligny>
-          <label>$INFO[ListItem.ChannelName]  [COLOR=Grey]$INFO[ListItem.ChannelNumber,(,)][/COLOR]</label>
+      <control type="group" description="INFO">
+        <posx>60</posx>
+        <posy>480</posy>
+        <control type="label" description="Title above progress">
+          <posy>-12</posy>
+          <width>660</width>
+          <font>InfoTitle</font>
+          <textcolor>Orange</textcolor>
+		  <aligny>center</aligny>
+		  <height>60</height>
+		  <wrapmultiline>true</wrapmultiline>
+          <label>$INFO[Container(15).ListItem.Title]</label>
         </control>
-        <control type="image">
-          <posx>1335</posx>
-          <posy>-6</posy>
-          <width>360</width>
-          <height>57</height>
-          <aspectratio align="right">keep</aspectratio>
-          <aligny>center</aligny>
-          <texture>$INFO[ListItem.Thumb]</texture>
-        </control>
-        <control type="group">
+        <control type="textbox" description="Plot Value for TV">
           <posx>0</posx>
-          <posy>0</posy>
-          <control type="group" description="Slider and List">
-            <include>LargeListItemCount</include>
-            <posx>0</posx>
-            <posy>60</posy>
-            <control type="fixedlist" id="15">
-              <posx>0</posx>
-              <posy>0</posy>
-              <width>1702</width>
-              <height>882</height>
-              <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-              <onright condition="Skin.HasSetting(Scrollbars_Active)">75</onright>
-              <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
-              <onup>15</onup>
-              <ondown>15</ondown>
-              <pagecontrol>75</pagecontrol>
-              <focusposition>3</focusposition>
-              <movement>3</movement>
-              <scrolltime tween="sine" easing="inout">280</scrolltime>
-              <itemlayout width="1702" height="126">
-                <control type="progress">
-                  <posx>0</posx>
-                  <posy>8</posy>
-                  <height>111</height>
-                  <width>1702</width>
-                  <include>TVProgress</include>
-                </control>
-                <control type="label" description="Number">
-                  <posx>128</posx>
-                  <posy>6</posy>
-                  <height>63</height>
-                  <width>255</width>
-                  <textcolor>Grey</textcolor>
-                  <align>center</align>
-                  <aligny>center</aligny>
-                  <font>size15</font>
-                  <label>$INFO[ListItem.Duration,$LOCALIZE[31978]: ]</label>
-                </control>
-                <control type="label" description="Date">
-                  <posx>128</posx>
-                  <posy>57</posy>
-                  <height>63</height>
-                  <width>255</width>
-                  <textcolor>Grey</textcolor>
-                  <align>center</align>
-                  <aligny>center</aligny>
-                  <font>size15</font>
-                  <label>$INFO[ListItem.Label2]</label>
-                </control>
-                <control type="image">
-                  <posx>267</posx>
-                  <posy>0</posy>
-                  <width>18</width>
-                  <height>126</height>
-                  <aspectratio>keep</aspectratio>
-                  <texture>$VAR[PVROverlay]</texture>
-                </control>
-                <control type="label" description="Main Label">
-                  <posy>6</posy>
-                  <posx>315</posx>
-                  <height>63</height>
-                  <width>1350</width>
-                  <font>size22</font>
-                  <include>51MainLabel</include>
-                  <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="label" description="Label2">
-                  <posy>57</posy>
-                  <posx>315</posx>
-                  <height>63</height>
-                  <width>1350</width>
-                  <include>51Label2</include>
-                  <label fallback="31979">$INFO[ListItem.Plot]</label>
-                </control>
-              </itemlayout>
-              <focusedlayout width="1702" height="126">
-                <control type="progress">
-                  <posx>0</posx>
-                  <posy>8</posy>
-                  <height>111</height>
-                  <width>1702</width>
-                  <include>TVProgress</include>
-                </control>
-                <control type="label" description="Number">
-                  <posx>128</posx>
-                  <posy>6</posy>
-                  <height>63</height>
-                  <width>255</width>
-                  <textcolor>White2</textcolor>
-                  <align>center</align>
-                  <aligny>center</aligny>
-                  <font>size15</font>
-                  <label>$INFO[ListItem.Duration,$LOCALIZE[31978]: ]</label>
-                </control>
-                <control type="label" description="Date">
-                  <posx>128</posx>
-                  <posy>57</posy>
-                  <height>63</height>
-                  <width>255</width>
-                  <textcolor>White2</textcolor>
-                  <align>center</align>
-                  <aligny>center</aligny>
-                  <font>size15</font>
-                  <label>$INFO[ListItem.Label2]</label>
-                </control>
-                <control type="image">
-                  <posx>267</posx>
-                  <posy>0</posy>
-                  <width>18</width>
-                  <height>126</height>
-                  <aspectratio>keep</aspectratio>
-                  <texture>$VAR[PVROverlay]</texture>
-                </control>
-                <control type="label" description="Main Label">
-                  <posy>6</posy>
-                  <posx>315</posx>
-                  <height>63</height>
-                  <width>1350</width>
-                  <font>size22</font>
-                  <include>51MainLabelFO</include>
-                  <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="label" description="Label2">
-                  <posy>57</posy>
-                  <posx>315</posx>
-                  <height>63</height>
-                  <width>1350</width>
-                  <include>51Label2FO</include>
-                  <label fallback="31979">$INFO[ListItem.Plot]</label>
-                </control>
-              </focusedlayout>
-            </control>
-            <control type="image">
-              <visible>Container.HasPrevious</visible>
-              <animation effect="fade" time="200">VisibleChange</animation>
-              <posx>0</posx>
-              <posy>0</posy>
-              <height>81</height>
-              <width>1920</width>
-              <texture flipy="true">img/DefaultGradient.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <animation effect="fade" time="200">VisibleChange</animation>
-              <visible>Container.HasNext</visible>
-              <posx>0</posx>
-              <posy>810</posy>
-              <height>81</height>
-              <width>1920</width>
-              <texture>img/DefaultGradient.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="group" description="Slider">
-              <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
-              <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
-              <control type="image">
-                <animation effect="fade" time="100">VisibleChange</animation>
-                <posx>-24</posx>
-                <posy>366</posy>
-                <width>1749</width>
-                <height>153</height>
-                <texture border="26">img/Slider5.png</texture>
-                <aspectratio>stretch</aspectratio>
-              </control>
-              <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-378" time="180" easing="inout" reversible="true">Conditional</animation>
-              <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-252" time="180" easing="inout" reversible="true">Conditional</animation>
-              <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-126" time="180" easing="inout" reversible="true">Conditional</animation>
-              <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
-              <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,126" time="180" easing="inout" reversible="true">Conditional</animation>
-              <animation condition="Container.Position(5)" effect="slide" start="0,0" end="0,252" time="180" easing="inout" reversible="true">Conditional</animation>
-              <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,378" time="180" easing="inout" reversible="true">Conditional</animation>
-              <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,504" time="180" easing="inout" reversible="true">Conditional</animation>
-            </control>
-          </control>
-          <control type="scrollbar" id="75">
-            <posx>1755</posx>
-            <posy>90</posy>
-            <width>9</width>
-            <height>750</height>
-            <onleft>16</onleft>
-            <onright>31</onright>
-            <showonepage>false</showonepage>
-            <orientation>vertical</orientation>
-          </control>
+          <posy>69</posy>
+          <width>660</width>
+          <height>390</height>
+          <align>justify</align>
+          <pagecontrol>-</pagecontrol>
+          <label>$INFO[Container(15).ListItem.Plot]</label>
         </control>
+        <control type="label">
+          <posy>520</posy>
+          <width>660</width>
+          <height>36</height>
+          <font>Details</font>
+          <label>[COLOR=Grey]$LOCALIZE[2050]: [/COLOR]$INFO[Container(15).ListItem.Duration]</label>
+        </control>
+      </control>
+      <control type="list" id="15" description="CHANNELS">
+        <posx>940</posx>
+        <posy>445</posy>
+        <width>980</width>
+        <height>594</height>
+        <onleft>9000</onleft>
+        <onright>70</onright>
+        <onup>15</onup>
+        <ondown>15</ondown>
+        <pagecontrol>70</pagecontrol>
+        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        <itemlayout height="99">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>99</height>
+            <width>860</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
+          </control>
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<info>ListItem.ChannelNumber</info>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="99">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>99</height>
+            <width>980</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>3</posy>
+            <width>980</width>
+            <height>96</height>
+            <texture>list/ListFO.png</texture>
+          </control>
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<info>ListItem.ChannelNumber</info>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+          </control>
+        </focusedlayout>
       </control>
     </control>
   </include>
+  
   <include name="LiveTVGuideNowNextView">
-    <!-- ## OK ## -->
-    <control type="group">
-      <description>TV Guide Now/Next</description>
+    <control type="group" description="TV Channels group">
       <visible>Control.IsVisible(16)</visible>
       <include>VisibleFadeEffect</include>
-      <control type="group">
-        <posx>105</posx>
-        <posy>90</posy>
-        <control type="group" description="Slider and List">
-          <include>LargeListItemCount</include>
+      <control type="group" description="INFO">
+        <posx>60</posx>
+        <posy>480</posy>
+        <control type="label" description="Title above progress">
+          <posy>-12</posy>
+          <width>660</width>
+          <font>InfoTitle</font>
+          <textcolor>Orange</textcolor>
+		  <aligny>center</aligny>
+		  <height>60</height>
+		  <wrapmultiline>true</wrapmultiline>
+          <label>$INFO[Container(16).ListItem.Title]</label>
+        </control>
+        <control type="textbox" description="Plot Value for TV">
           <posx>0</posx>
-          <posy>60</posy>
-          <control type="fixedlist" id="16">
+          <posy>69</posy>
+          <width>660</width>
+          <height>390</height>
+          <align>justify</align>
+          <pagecontrol>-</pagecontrol>
+          <label>$INFO[Container(16).ListItem.Plot]</label>
+        </control>
+        <control type="label">
+          <posy>520</posy>
+          <width>660</width>
+          <height>36</height>
+          <font>Details</font>
+          <label>[COLOR=Grey]$LOCALIZE[2050]: [/COLOR]$INFO[Container(16).ListItem.Duration]</label>
+        </control>
+      </control>
+      <control type="list" id="16" description="CHANNELS">
+        <posx>940</posx>
+        <posy>445</posy>
+        <width>980</width>
+        <height>594</height>
+        <onleft>9000</onleft>
+        <onright>70</onright>
+        <onup>16</onup>
+        <ondown>16</ondown>
+        <pagecontrol>70</pagecontrol>
+        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        <itemlayout height="99">
+          <control type="image">
             <posx>0</posx>
             <posy>0</posy>
-            <width>1702</width>
-            <height>888</height>
-            <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-            <onright condition="Skin.HasSetting(Scrollbars_Active)">70</onright>
-            <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
-            <onup>11</onup>
-            <ondown>11</ondown>
-            <pagecontrol>76</pagecontrol>
-            <focusposition>3</focusposition>
-            <movement>4</movement>
-            <scrolltime tween="sine" easing="inout">280</scrolltime>
-            <itemlayout width="1702" height="111">
-              <control type="image">
-                <posx>0</posx>
-                <posy>8</posy>
-                <height>96</height>
-                <width>1702</width>
-                <texture>img/ItemBG.png</texture>
-              </control>
-              <control type="label" description="Number">
-                <posx>68</posx>
-                <posy>12</posy>
-                <height>46</height>
-                <width>135</width>
-                <textcolor>White2</textcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>size15</font>
-                <label>$INFO[ListItem.StartTime]</label>
-              </control>
-              <control type="label" description="Number">
-                <posx>68</posx>
-                <posy>51</posy>
-                <height>46</height>
-                <width>135</width>
-                <textcolor>White2</textcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>size15</font>
-                <label>$INFO[ListItem.EndTime]</label>
-              </control>
-              <control type="image">
-                <posx>132</posx>
-                <posy>0</posy>
-                <width>21</width>
-                <height>111</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$VAR[PVROverlay]</texture>
-              </control>
-              <control type="label" description="Main Label">
-                <posx>165</posx>
-                <width>1425</width>
-                <font>size22</font>
-                <include>51MainLabel</include>
-                <label>[COLOR=Grey2]$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, • ]</label>
-              </control>
-              <control type="label" description="Label2">
-                <posx>165</posx>
-                <width>1425</width>
-                <include>51Label2</include>
-                <label fallback="31979">$INFO[ListItem.Plot]</label>
-              </control>
-              <control type="image">
-                <posx>1620</posx>
-                <posy>18</posy>
-                <width>75</width>
-                <height>75</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.Thumb]</texture>
-              </control>
-            </itemlayout>
-            <focusedlayout width="1702" height="111">
-              <control type="image">
-                <posx>0</posx>
-                <posy>8</posy>
-                <height>96</height>
-                <width>1702</width>
-                <texture>img/ItemBG.png</texture>
-              </control>
-              <control type="label" description="Number">
-                <posx>68</posx>
-                <posy>12</posy>
-                <height>46</height>
-                <width>135</width>
-                <textcolor>White2</textcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>size15</font>
-                <label>$INFO[ListItem.StartTime]</label>
-              </control>
-              <control type="label" description="Number">
-                <posx>68</posx>
-                <posy>51</posy>
-                <height>46</height>
-                <width>135</width>
-                <textcolor>White2</textcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>size15</font>
-                <label>$INFO[ListItem.EndTime]</label>
-              </control>
-              <control type="image">
-                <posx>132</posx>
-                <posy>0</posy>
-                <width>21</width>
-                <height>111</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$VAR[PVROverlay]</texture>
-              </control>
-              <control type="label" description="Main Label">
-                <posx>165</posx>
-                <width>1425</width>
-                <font>size22</font>
-                <include>51MainLabelFO</include>
-                <label>[COLOR=Grey2]$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, • ]</label>
-              </control>
-              <control type="label" description="Label2">
-                <posx>165</posx>
-                <width>1425</width>
-                <include>51Label2FO</include>
-                <label fallback="31979">$INFO[ListItem.Plot]</label>
-              </control>
-              <control type="image">
-                <posx>1620</posx>
-                <posy>18</posy>
-                <width>75</width>
-                <height>75</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.Thumb]</texture>
-              </control>
-            </focusedlayout>
+            <height>99</height>
+            <width>980</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
           </control>
-          <control type="group" description="Slider">
-            <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
-            <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
-            <control type="image">
-                <animation effect="fade" time="100">VisibleChange</animation>
-                <posx>-24</posx>
-                <posy>315</posy>
-                <width>1749</width>
-                <height>144</height>
-                <texture border="26">img/Slider5.png</texture>
-                <aspectratio>stretch</aspectratio>
-              </control>
-            <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container.Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+            <aligny>center</aligny>
+			<info>ListItem.ChannelNumber</info>
           </control>
-        </control>
-        <control type="scrollbar" id="76">
-          <posx>1755</posx>
-          <posy>90</posy>
-          <width>12</width>
-          <height>750</height>
-          <onleft>16</onleft>
-          <onright>31</onright>
-          <showonepage>false</showonepage>
-          <orientation>vertical</orientation>
-        </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="99">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>99</height>
+            <width>980</width>
+            <texture flipy="true" border="3">list/ListNF.png</texture>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>3</posy>
+            <width>980</width>
+            <height>96</height>
+            <texture>list/ListFO.png</texture>
+          </control>
+          <include>RecOverlay</include>
+          <control type="label" description="Number">
+            <posx>40</posx>
+            <height>99</height>
+            <width>80</width>
+            <align>center</align>
+           <info>ListItem.ChannelNumber</info>
+          </control>
+          <control type="label" description="Main Label">
+            <posx>90</posx>
+            <height>73</height>
+            <width>800</width>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="label" description="Label2">
+            <posx>90</posx>
+            <posy>63</posy>
+            <height>30</height>
+            <font>ListDetails</font>
+            <width>800</width>
+            <label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+          </control>
+        </focusedlayout>
       </control>
     </control>
   </include>

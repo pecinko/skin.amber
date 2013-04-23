@@ -306,8 +306,8 @@
           <item id="300" description="Live TV">
             <visible>System.GetBool(pvrmanager.enabled)</visible>
             <label>19020</label>
-            <thumb fallback="special://skin/backgrounds/Network.jpg">$INFO[Skin.String(LiveTV.Background)]</thumb>
-            <onclick>ActivateWindowAndFocus(PVR, 50)</onclick>
+            <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
+            <onclick>ActivateWindowAndFocus(PVR, 11)</onclick>
           </item>
           <item id="7" description="Favorites">
             <visible>!Skin.HasSetting(Favourites.Hide)</visible>

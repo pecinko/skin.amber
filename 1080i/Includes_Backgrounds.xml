@@ -43,6 +43,12 @@
         <imagepath background="true">$VAR[Fanart.Art]</imagepath>
       </control>
   </include>
+  <include name="Pvr_Art">
+  <control type="multiimage">
+    <include>BG.Defaults</include>
+    <imagepath background="true">$VAR[Pvr.Art]</imagepath>
+   </control>
+  </include>
   <include name="Pictures_Art">
   <control type="multiimage">
     <include>BG.Defaults</include>
