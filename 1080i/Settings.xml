@@ -108,10 +108,10 @@
               <label>13000</label>
               <onclick>activatewindow(SystemSettings)</onclick>
             </item>
-            <item id="1" description="Skin options">
-              <label>166</label>
-              <onclick>activatewindow(SkinSettings)</onclick>
-            </item>
+			<item id="10" description="PVR">
+            <label>PVR</label>
+            <onclick>activateWindow(PVRSettings)</onclick>
+          </item>
             <!--<item id="10" description="Profiles">
             <label>13200</label>
             <onclick>ActivateWindow(Profiles)</onclick>
@@ -132,7 +132,7 @@
         <posy>180</posy>
         <control type="panel" id="300">
           <posx>0</posx>
-          <posy>180</posy>
+          <posy>120</posy>
           <width>411</width>
           <height>780</height>
           <onleft>9000</onleft>
@@ -175,10 +175,10 @@
             </control>
           </focusedlayout>
           <content>
-            <!--<item id="2" description="Media Sources">
-              <label>20094</label>
-              <onclick>activatewindow(1115)</onclick>
-            </item>-->
+            <item id="1" description="Skin options">
+              <label>166</label>
+              <onclick>activatewindow(SkinSettings)</onclick>
+            </item>
             <item id="6" description="Addons">
             <label>24001</label>
             <onclick>activatewindow(AddonBrowser,root)</onclick>
