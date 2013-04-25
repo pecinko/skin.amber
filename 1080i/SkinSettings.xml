@@ -222,7 +222,7 @@
                 <label>$LOCALIZE[24020] - $LOCALIZE[513]</label>
                 <onclick>ActivateWindow(1116)</onclick>
               </item>-->
-              <item id="4" description="Scrollbars">
+              <!--<item id="4" description="Scrollbars">
                 <visible>Skin.HasSetting(Scrollbars_Active)</visible>
                 <label>$LOCALIZE[31999]</label>
                 <label2>$LOCALIZE[31998]</label2>
@@ -233,7 +233,7 @@
                 <label>$LOCALIZE[31999]</label>
                 <label2>$LOCALIZE[31997]</label2>
                 <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
-              </item>
+              </item>-->
               <!-- <item id="5" description="Options dialog">
                 <visible>Skin.HasSetting(ViewOptions_Hide)</visible>
                 <label>$LOCALIZE[31996]</label>
@@ -355,7 +355,7 @@
                 </control>
               </focusedlayout>
               <content>
-                <item id="12">
+                <item id="0">
                   <label>571</label>
                   <onclick>Control.Move(9003,-1)</onclick>
                   <icon>special://skin/backgrounds/default/default.jpg</icon>
@@ -418,7 +418,7 @@
                 <item id="9">
                   <label>5</label>
                   <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/System.jpg</icon>
+                  <icon>special://skin/backgrounds/Settings.jpg</icon>
                   <thumb>$INFO[Skin.String(Settings.Background)]</thumb>
                 </item>
                 <item id="10">
@@ -434,6 +434,13 @@
                   <onclick>Control.Move(9003,-1)</onclick>
                   <icon>special://skin/backgrounds/Quit.jpg</icon>
                   <thumb>$INFO[Skin.String(Quit.Background)]</thumb>
+                </item>
+				<item id="12">
+                  <visible>System.GetBool(pvrmanager.enabled)</visible>
+                  <label>PVR</label>
+                  <onclick>Control.Move(9003,-1)</onclick>
+                  <icon>special://skin/backgrounds/Pvr.jpg</icon>
+                  <thumb>$INFO[Skin.String(Pvr.Background)]</thumb>
                 </item>
                 <item id="21">
                   <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
@@ -498,13 +505,6 @@
                   <icon>special://skin/backgrounds/default/default.jpg</icon>
                   <thumb>$INFO[Skin.String(CustomHome.9.Background)]</thumb>
                 </item>
-                <item id="30">
-                  <visible>!IsEmpty(Skin.String(CustomHome.30.Path))</visible>
-                  <label>$INFO[Skin.String(CustomHome.30.Label)]</label>
-                  <onclick>Control.Move(9003,-1)</onclick>
-                  <icon>special://skin/backgrounds/default/default.jpg</icon>
-                  <thumb>$INFO[Skin.String(CustomHome.30.Background)]</thumb>
-                </item>
               </content>
             </control>
             <control type="image">
@@ -544,7 +544,8 @@
                 <posy>0</posy>
                 <width>322</width>
                 <label>31113</label>
-                <onclick condition="Container(9003).HasFocus(1)">Skin.SetImage(Videos.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(0)">Skin.SetImage(Default.Background)</onclick>
+				<onclick condition="Container(9003).HasFocus(1)">Skin.SetImage(Videos.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(2)">Skin.SetImage(Movies.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(3)">Skin.SetImage(TVShows.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(4)">Skin.SetImage(Music.Background)</onclick>
@@ -555,7 +556,7 @@
                 <onclick condition="Container(9003).HasFocus(9)">Skin.SetImage(Settings.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(10)">Skin.SetImage(DVD.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(11)">Skin.SetImage(Quit.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(12)">Skin.SetImage(Default.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(12)">Skin.SetImage(Pvr.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(21)">Skin.SetImage(CustomHome.1.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(22)">Skin.SetImage(CustomHome.2.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(23)">Skin.SetImage(CustomHome.3.Background)</onclick>
@@ -565,7 +566,6 @@
                 <onclick condition="Container(9003).HasFocus(27)">Skin.SetImage(CustomHome.7.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(28)">Skin.SetImage(CustomHome.8.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(29)">Skin.SetImage(CustomHome.9.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(30)">Skin.SetImage(CustomHome.10.Background)</onclick>
                 <onleft>9003</onleft>
                 <onup>302</onup>
                 <ondown>301</ondown>
@@ -575,7 +575,8 @@
                 <posy>60</posy>
                 <width>322</width>
                 <label>31114</label>
-                <onclick condition="Container(9003).HasFocus(1)">Skin.SetPath(Videos.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(0)">Skin.SetPath(Default.Background)</onclick>
+				<onclick condition="Container(9003).HasFocus(1)">Skin.SetPath(Videos.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(2)">Skin.SetPath(Movies.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(3)">Skin.SetPath(TVShows.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(4)">Skin.SetPath(Music.Background)</onclick>
@@ -586,7 +587,7 @@
                 <onclick condition="Container(9003).HasFocus(9)">Skin.SetPath(Settings.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(10)">Skin.SetPath(DVD.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(11)">Skin.SetPath(Quit.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(12)">Skin.SetPath(Default.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(12)">Skin.SetPath(Pvr.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(21)">Skin.SetPath(CustomHome.1.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(22)">Skin.SetPath(CustomHome.2.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(23)">Skin.SetPath(CustomHome.3.Background)</onclick>
@@ -596,7 +597,6 @@
                 <onclick condition="Container(9003).HasFocus(27)">Skin.SetPath(CustomHome.7.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(28)">Skin.SetPath(CustomHome.8.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(29)">Skin.SetPath(CustomHome.9.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(30)">Skin.SetPath(CustomHome.10.Background)</onclick>
                 <onleft>9003</onleft>
                 <onup>300</onup>
                 <ondown>302</ondown>
@@ -606,7 +606,8 @@
                 <posy>120</posy>
                 <width>322</width>
                 <label>571</label>
-                <onclick condition="Container(9003).HasFocus(1)">Skin.Reset(Videos.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(0)">Skin.Reset(Default.Background)</onclick>
+				<onclick condition="Container(9003).HasFocus(1)">Skin.Reset(Videos.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(3)">Skin.Reset(TVShows.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
@@ -617,7 +618,7 @@
                 <onclick condition="Container(9003).HasFocus(9)">Skin.Reset(Settings.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(10)">Skin.Reset(DVD.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(11)">Skin.Reset(Quit.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(12)">Skin.Reset(Default.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(12)">Skin.Reset(Pvr.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(21)">Skin.Reset(CustomHome.1.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(22)">Skin.Reset(CustomHome.2.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(23)">Skin.Reset(CustomHome.3.Background)</onclick>
@@ -627,7 +628,6 @@
                 <onclick condition="Container(9003).HasFocus(27)">Skin.Reset(CustomHome.7.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(28)">Skin.Reset(CustomHome.8.Background)</onclick>
                 <onclick condition="Container(9003).HasFocus(29)">Skin.Reset(CustomHome.9.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(30)">Skin.Reset(CustomHome.10.Background)</onclick>
                 <onleft>9003</onleft>
                 <onup>301</onup>
                 <ondown>300</ondown>
@@ -986,14 +986,14 @@
 			<thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
             <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
           </item>
-		  <item id="23" description="CustomHome1">
+		  <item id="23" description="CustomHome.3">
             <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
             <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.3.Label)][/COLOR]</label>
             <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
 			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>
           </item>
-		  <item id="23" description="CustomHome1">
+		  <item id="23" description="CustomHome.3">
             <visible>IsEmpty(Skin.String(CustomHome.3.Path))</visible>
             <label>$LOCALIZE[504]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
@@ -1013,13 +1013,13 @@
 			<thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
             <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
           </item>
-		  <item id="24" description="CustomHome4">
+		  <item id="24" description="CustomHome.4">
             <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>
           </item>
-		  <item id="24" description="CustomHome4">
+		  <item id="24" description="CustomHome.4">
             <visible>IsEmpty(Skin.String(CustomHome.4.Path))</visible>
             <label>$LOCALIZE[504]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
@@ -1106,6 +1106,12 @@
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
            	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>
           </item>
+		 <!-- <item id="300" description="PVR">
+            <visible>System.GetBool(pvrmanager.enabled)</visible>
+            <label>PVR</label>
+            <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
+            <onclick>ActivateWindowAndFocus(PVR, 11)</onclick>
+          </item>-->
 		  <item id="7" description="Favorites">
             <visible>!Skin.HasSetting(Favourites.Hide)</visible>
             <label>[COLOR=Orange]$LOCALIZE[1036][/COLOR]</label>
