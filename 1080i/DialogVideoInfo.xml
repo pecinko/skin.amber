@@ -65,7 +65,7 @@
       <posy>0</posy>
       <width>729</width>
       <height>1080</height>
-      <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+      <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
       <aspectratio>keep</aspectratio>
     </control>
     <control type="image">

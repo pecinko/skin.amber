@@ -49,7 +49,7 @@
             <height>460</height>
             <include>Icon_Fade</include>
             <include>ThumbBorder</include>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <aspectratio aligny="top">keep</aspectratio>
           </control>
         </control>

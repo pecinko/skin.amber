@@ -84,7 +84,7 @@
         <width>351</width>
         <height>351</height>
         <aspectratio>scale</aspectratio>
-        <texture>$INFO[Container(52).ListItem.Icon]</texture>
+        <texture fallback="unknown-user.png">$INFO[Container(52).ListItem.thumb]</texture>
       </control>
       <control type="button" id="11" description="Quit xbmc">
         <animation effect="fade" start="100" end="60" time="0" condition="!Control.HasFocus(11)">Conditional</animation>

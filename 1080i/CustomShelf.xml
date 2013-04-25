@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="1112">
-    <backgroundcolor>0xff1b1b1b</backgroundcolor>
+    
 <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
   <controls>

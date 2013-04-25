@@ -30,7 +30,7 @@
     <posy>18</posy>
     <width>279</width>
     <height>414</height>
-    <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+    <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
     <include>ThumbBorder</include>
     <aspectratio>scale</aspectratio>
   </include>
@@ -44,7 +44,15 @@
   <include name="View_55_BigPanel">
     <control type="group" description="Big Panel">
       <visible>Control.IsVisible(55)</visible>
-      <control type="group" description="Container and frame">
+      <control type="image" description="fa overlay">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayFS.png</texture>
+      </control>
+	  <control type="group" description="Container and frame">
         <control type="panel" id="55" description="Big Panel">
           <viewtype label="Big Panel">Big Panel</viewtype>
           <posx>810</posx>
@@ -110,7 +118,7 @@
               <posy>10</posy>
               <width>333</width>
               <height>270</height>
-              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
               <include>ThumbBorder</include>
 			  <aspectratio>scale</aspectratio>
             </control>
@@ -148,7 +156,7 @@
               <posy>10</posy>
               <width>333</width>
               <height>270</height>
-              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
               <include>ThumbBorder</include>
 			  <aspectratio>scale</aspectratio>
             </control>
@@ -195,7 +203,7 @@
               <posy>12</posy>
               <width>350</width>
               <height>276</height>
-              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
               <bordertexture border="25">img/FrameNF.png</bordertexture>
               <bordersize>27</bordersize>
 			  <aspectratio>keep</aspectratio>
@@ -217,7 +225,7 @@
               <posy>12</posy>
               <width>350</width>
               <height>276</height>
-              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
               <bordertexture border="25">img/Frame.png</bordertexture>
               <bordersize>27</bordersize>
 			  <aspectratio>keep</aspectratio>

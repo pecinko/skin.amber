@@ -5,7 +5,7 @@
     <posy>15</posy>
     <width>222</width>
     <height>321</height>
-    <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+    <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
     <include>ThumbBorder</include>
     <aspectratio>scale</aspectratio>
   </include>
@@ -22,7 +22,7 @@
     <posy>42</posy>
     <width>260</width>
     <height>260</height>
-    <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+    <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
     <include>ThumbBorder</include>
     <aspectratio aligny="top">scale</aspectratio>
   </include>
@@ -100,7 +100,7 @@
               <posy>42</posy>
               <width>348</width>
               <height>260</height>
-              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
               <include>ThumbBorder</include>
 			  <aspectratio>scale</aspectratio>
             </control>
@@ -121,7 +121,7 @@
               <posy>42</posy>
               <width>348</width>
               <height>260</height>
-              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
               <include>ThumbBorder</include>
 			  <aspectratio>scale</aspectratio>
             </control>

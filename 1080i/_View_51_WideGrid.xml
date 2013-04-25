@@ -31,7 +31,7 @@
             <posy>28</posy>
             <width>420</width>
             <height>312</height>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <aspectratio>keep</aspectratio>
           </control>
         </itemlayout>
@@ -48,7 +48,7 @@
             <posy>28</posy>
             <width>420</width>
             <height>312</height>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <aspectratio>keep</aspectratio>
           </control>
           <control type="image">
@@ -83,7 +83,7 @@
             <posy>12</posy>
             <width>840</width>
             <height>153</height>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <aspectratio>keep</aspectratio>
           </control>
         </itemlayout>
@@ -100,7 +100,7 @@
             <posy>12</posy>
             <width>840</width>
             <height>153</height>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <aspectratio>keep</aspectratio>
           </control>
           <control type="image">

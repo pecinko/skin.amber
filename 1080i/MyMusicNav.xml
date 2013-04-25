@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <backgroundcolor>0xff1b1b1b</backgroundcolor>
+  
   <defaultcontrol always="true">50</defaultcontrol>
   <include>OpenClose</include>
   <controls>
@@ -40,7 +40,7 @@
           <width>555</width>
           <height>555</height>
           <include>Icon_Fade</include>
-          <texture background="true" fallback="DefaultFile.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.Thumb]</texture>
+          <texture background="true" fallback="DefaultFile.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
           <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
         </control>
 		
@@ -146,7 +146,7 @@
           <width>420</width>
           <height>420</height>
           <include>Icon_Fade</include>
-          <texture background="true" fallback="DefaultFolder.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.Thumb]</texture>
+          <texture background="true" fallback="DefaultFolder.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
           <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
         </control>
 	</control>

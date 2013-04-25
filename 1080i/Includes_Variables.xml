@@ -28,8 +28,8 @@
 	<value condition="container.content(tvshows) + Skin.HasSetting(52_TV_UseFanart)">$INFO[ListItem.Art(fanart)]</value>
 	<value condition="container.content(episodes) + Skin.HasSetting(52_Episodes_UseFanart)">$INFO[ListItem.Art(fanart)]</value>
 	<value condition="container.content(albums) + Skin.HasSetting(52_Albums_UseFanart) + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-	<value condition="container.content(albums) + Skin.HasSetting(52_Albums_UseFanart) + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Thumb]</value>
-    <value>$INFO[ListItem.Thumb]</value>
+	<value condition="container.content(albums) + Skin.HasSetting(52_Albums_UseFanart) + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.thumb]</value>
+    <value>$INFO[ListItem.thumb]</value>
   </variable>
   <variable name="LibraryStats" description="Home page library statistics">
     <value condition="IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + Container(300).HasFocus(3)">[COLOR=Grey3]$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count),.,   ] [/COLOR]$LOCALIZE[16101]$INFO[Window(Home).Property(MusicVideos.Unwatched),.]</value>
@@ -186,7 +186,8 @@
 	<value>special://skin/backgrounds/default</value>
   </variable>
   <variable name="Pictures.Art" description="Calculate BG to show">
-    <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+    <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+	<value condition="!container.content(addons) + !IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
 	<value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
 	<value>special://skin/backgrounds/default/</value>
   </variable>

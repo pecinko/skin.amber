@@ -29,7 +29,15 @@
   <include name="View_52_BigList">
     <control type="group" description="Large Infolist2">
       <visible>Control.IsVisible(52)</visible>
-      <control type="panel" id="52">
+      <control type="image" description="fa overlay">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+       <texture>common/OverlayFS.png</texture>
+      </control>
+	  <control type="panel" id="52">
 		<viewtype label="Large List">Large List</viewtype>
         <posx>1048</posx>
         <posy>246</posy>
@@ -203,7 +211,7 @@
             <height>84</height>
             <width>84</width>
             <aspectratio>scale</aspectratio>
-			<texture fallback="DefaultFolder.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.Thumb]</texture>
+			<texture fallback="DefaultFolder.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
 			
           </control>
           <control type="label">
@@ -248,7 +256,7 @@
             <height>84</height>
             <width>84</width>
             <aspectratio>scale</aspectratio>
-			<texture fallback="DefaultFolder.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.Thumb]</texture>
+			<texture fallback="DefaultFolder.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
 			
           </control>
           <control type="label">

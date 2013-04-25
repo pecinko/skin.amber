@@ -108,7 +108,7 @@
           <width>720</width>
           <height>720</height>
           <include>Icon_Fade</include>
-          <texture background="true" diffuse="img/Reflection1Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+          <texture background="true" diffuse="img/Reflection1Long.png" flipy="true">$INFO[ListItem.thumb]</texture>
           <aspectratio aligny="top">keep</aspectratio>
         </control>
         <control type="image" description="Thumb">
@@ -127,7 +127,7 @@
           <height>720</height>
           <include>Icon_Fade</include>
           <bordertexture border="4">img/CoverOverlay1.png</bordertexture>
-          <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
+          <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
       </control>
@@ -379,7 +379,7 @@
             <width>495</width>
             <height>729</height>
             <include>Icon_Fade</include>
-            <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+            <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.thumb]</texture>
             <aspectratio aligny="top">scale</aspectratio>
           </control>
           <control type="image" description="Thumb">
@@ -738,7 +738,7 @@
           <width>621</width>
           <height>720</height>
           <include>Icon_Fade</include>
-          <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+          <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.thumb]</texture>
           <aspectratio aligny="top">keep</aspectratio>
         </control>
         <control type="image" description="Thumb">
@@ -757,7 +757,7 @@
           <height>720</height>
           <include>Icon_Fade</include>
           <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-          <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
+          <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
       </control>-->
@@ -1401,7 +1401,7 @@
               <posy>264</posy>
               <width>255</width>
               <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -2195,7 +2195,7 @@
               <posy>264</posy>
               <width>255</width>
               <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">

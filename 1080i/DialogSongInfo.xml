@@ -172,7 +172,7 @@
           <aspectratio align="right" aligny="top">keep</aspectratio>
           <bordertexture border="4">img/CoverOverlay0.png</bordertexture>
           <bordersize>2</bordersize>
-          <texture fallback="DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+          <texture fallback="DefaultVideo.png">$INFO[ListItem.thumb]</texture>
         </control>
       </control>
       <control type="group" description="Top info">

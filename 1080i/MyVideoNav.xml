@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <backgroundcolor>0xff1b1b1b</backgroundcolor>
   <defaultcontrol always="true">50</defaultcontrol>
   <include>OpenClose</include>
   <controls>
@@ -118,7 +117,7 @@
           <width>429</width>
           <height>621</height>
           <include>Icon_Fade</include>
-          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
           <include>ThumbBorder</include>
           <aspectratio aligny="bottom">scale</aspectratio>
         </control>
@@ -129,7 +128,7 @@
           <width>570</width>
           <height>621</height>
           <include>Icon_Fade</include>
-          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
           <include>ThumbBorder</include>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
@@ -140,7 +139,7 @@
           <width>550</width>
           <height>550</height>
           <include>Icon_Fade</include>
-          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
           <include>ThumbBorder</include>
           <aspectratio aligny="top">scale</aspectratio>
         </control>
@@ -156,7 +155,7 @@
             <width>470</width>
             <height>600</height>
             <include>Icon_Fade</include>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <include>ThumbBorder</include>
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
@@ -167,7 +166,7 @@
             <width>636</width>
             <height>360</height>
             <include>Icon_Fade</include>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <include>ThumbBorder</include>
             <aspectratio>scale</aspectratio>
           </control>
@@ -232,7 +231,7 @@
             <width>720</width>
             <height>384</height>
             <include>Icon_Fade</include>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <include>ThumbBorder</include>
             <aspectratio>scale</aspectratio>
           </control>
@@ -285,7 +284,7 @@
             <width>580</width>
             <height>480</height>
             <include>Icon_Fade</include>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
             <include>ThumbBorder</include>
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
