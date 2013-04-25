@@ -4,7 +4,7 @@
   <backgroundcolor>0</backgroundcolor>
   <controls>
     <include>Settings_Art</include>
-	<include>Time</include>
+    <include>Time</include>
     <control type="image">
       <include>OpenClose</include>
       <posx>36</posx>
@@ -17,7 +17,7 @@
       <include>OpenClose</include>
       <control type="image">
         <visible>Container(9000).HasFocus(3)</visible>
-       <include>VisibleFadeEffect</include>
+        <include>VisibleFadeEffect</include>
         <posx>390r</posx>
         <posy>60</posy>
         <width>354</width>
@@ -27,6 +27,7 @@
       <control type="group">
         <posx>66</posx>
         <posy>150</posy>
+		<!-- 9000 Left panel -->
         <control type="list" id="9000">
           <posx>0</posx>
           <posy>0</posy>
@@ -76,8 +77,12 @@
               <label>128</label>
               <onclick>-</onclick>
             </item>
+            <item id="2" description="Home screen categories">
+              <label>$LOCALIZE[513]</label>
+              <onclick>-</onclick>
+            </item>
             <item id="3">
-              <label>31102</label>
+              <label>33069</label>
               <onclick>-</onclick>
             </item>
             <item id="4">
@@ -87,6 +92,7 @@
           </content>
         </control>
         <control type="group" id="9010">
+          <!--9000 1-->
           <control type="panel" id="9001">
             <visible>Container(9000).HasFocus(1)</visible>
             <posx>324</posx>
@@ -212,10 +218,10 @@
                 <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
                 <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
               </item>
-              <item id="8" description="Home screen categories">
+              <!--<item id="8" description="Home screen categories">
                 <label>$LOCALIZE[24020] - $LOCALIZE[513]</label>
                 <onclick>ActivateWindow(1116)</onclick>
-              </item>
+              </item>-->
               <item id="4" description="Scrollbars">
                 <visible>Skin.HasSetting(Scrollbars_Active)</visible>
                 <label>$LOCALIZE[31999]</label>
@@ -228,18 +234,18 @@
                 <label2>$LOCALIZE[31997]</label2>
                 <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
               </item>
-              <item id="5" description="Options dialog">
+              <!-- <item id="5" description="Options dialog">
                 <visible>Skin.HasSetting(ViewOptions_Hide)</visible>
                 <label>$LOCALIZE[31996]</label>
                 <label2>$LOCALIZE[1223]</label2>
                 <onclick>Skin.ToggleSetting(ViewOptions_Hide)</onclick>
-              </item>
-              <item id="5" description="Options dialog">
-                <visible>!Skin.HasSetting(ViewOptions_Hide)</visible>
-                <label>$LOCALIZE[31996]</label>
-                <label2>$LOCALIZE[305]</label2>
-                <onclick>Skin.ToggleSetting(ViewOptions_Hide)</onclick>
-              </item>
+              </item>-->
+              <!--<item id="5" description="Options dialog">
+					<visible>!Skin.HasSetting(ViewOptions_Hide)</visible>
+					<label>$LOCALIZE[31996]</label>
+					<label2>$LOCALIZE[305]</label2>
+					<onclick>Skin.ToggleSetting(ViewOptions_Hide)</onclick>
+				  </item>-->
               <!-- <item id="7" description="Additional view modes">
             <visible>Skin.HasSetting(AddViews)</visible>
 			<label>31993</label>
@@ -282,6 +288,7 @@
               </item>
             </content>
           </control>
+          <!--9000 3-->
           <control type="group">
             <posx>324</posx>
             <posy>-69</posy>
@@ -527,6 +534,107 @@
               <label fallback="571">$INFO[Container(9003).ListItem.Thumb]</label>
             </control>
           </control>
+          <control type="group">
+            <posx>1467</posx>
+            <posy>0</posy>
+            <control type="group">
+              <visible>Container(9000).HasFocus(3)</visible>
+              <control type="button" id="300">
+                <description>Single Image button</description>
+                <posy>0</posy>
+                <width>322</width>
+                <label>31113</label>
+                <onclick condition="Container(9003).HasFocus(1)">Skin.SetImage(Videos.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(2)">Skin.SetImage(Movies.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(3)">Skin.SetImage(TVShows.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(4)">Skin.SetImage(Music.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(5)">Skin.SetImage(Pictures.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(6)">Skin.SetImage(Favourites.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(7)">Skin.SetImage(Weather.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(8)">Skin.SetImage(Addons.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(9)">Skin.SetImage(Settings.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(10)">Skin.SetImage(DVD.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(11)">Skin.SetImage(Quit.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(12)">Skin.SetImage(Default.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(21)">Skin.SetImage(CustomHome.1.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(22)">Skin.SetImage(CustomHome.2.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(23)">Skin.SetImage(CustomHome.3.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(24)">Skin.SetImage(CustomHome.4.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(25)">Skin.SetImage(CustomHome.5.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(26)">Skin.SetImage(CustomHome.6.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(27)">Skin.SetImage(CustomHome.7.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(28)">Skin.SetImage(CustomHome.8.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(29)">Skin.SetImage(CustomHome.9.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(30)">Skin.SetImage(CustomHome.10.Background)</onclick>
+                <onleft>9003</onleft>
+                <onup>302</onup>
+                <ondown>301</ondown>
+              </control>
+              <control type="button" id="301">
+                <description>Multi Image button</description>
+                <posy>60</posy>
+                <width>322</width>
+                <label>31114</label>
+                <onclick condition="Container(9003).HasFocus(1)">Skin.SetPath(Videos.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(2)">Skin.SetPath(Movies.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(3)">Skin.SetPath(TVShows.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(4)">Skin.SetPath(Music.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(5)">Skin.SetPath(Pictures.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(6)">Skin.SetPath(Favourites.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(7)">Skin.SetPath(Weather.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(8)">Skin.SetPath(Addons.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(9)">Skin.SetPath(Settings.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(10)">Skin.SetPath(DVD.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(11)">Skin.SetPath(Quit.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(12)">Skin.SetPath(Default.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(21)">Skin.SetPath(CustomHome.1.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(22)">Skin.SetPath(CustomHome.2.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(23)">Skin.SetPath(CustomHome.3.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(24)">Skin.SetPath(CustomHome.4.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(25)">Skin.SetPath(CustomHome.5.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(26)">Skin.SetPath(CustomHome.6.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(27)">Skin.SetPath(CustomHome.7.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(28)">Skin.SetPath(CustomHome.8.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(29)">Skin.SetPath(CustomHome.9.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(30)">Skin.SetPath(CustomHome.10.Background)</onclick>
+                <onleft>9003</onleft>
+                <onup>300</onup>
+                <ondown>302</ondown>
+              </control>
+              <control type="button" id="302">
+                <description>Default Image button</description>
+                <posy>120</posy>
+                <width>322</width>
+                <label>571</label>
+                <onclick condition="Container(9003).HasFocus(1)">Skin.Reset(Videos.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(3)">Skin.Reset(TVShows.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(5)">Skin.Reset(Pictures.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(7)">Skin.Reset(Weather.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(8)">Skin.Reset(Addons.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(9)">Skin.Reset(Settings.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(10)">Skin.Reset(DVD.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(11)">Skin.Reset(Quit.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(12)">Skin.Reset(Default.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(21)">Skin.Reset(CustomHome.1.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(22)">Skin.Reset(CustomHome.2.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(23)">Skin.Reset(CustomHome.3.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(24)">Skin.Reset(CustomHome.4.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(25)">Skin.Reset(CustomHome.5.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(26)">Skin.Reset(CustomHome.6.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(27)">Skin.Reset(CustomHome.7.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(28)">Skin.Reset(CustomHome.8.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(29)">Skin.Reset(CustomHome.9.Background)</onclick>
+                <onclick condition="Container(9003).HasFocus(30)">Skin.Reset(CustomHome.10.Background)</onclick>
+                <onleft>9003</onleft>
+                <onup>301</onup>
+                <ondown>300</ondown>
+              </control>
+            </control>
+          </control>
+          <!--9000 4-->
           <control type="panel" id="9004">
             <visible>Container(9000).HasFocus(4)</visible>
             <posx>324</posx>
@@ -682,7 +790,7 @@
                 <label2>$INFO[Skin.String(ShelfAddons.10.Label)]</label2>
                 <onclick>Skin.SetAddon(ShelfAddons.10.Label,xbmc.python.pluginsource)</onclick>
               </item>
-			  <item id="2" description="Enable Favs">
+              <item id="2" description="Enable Favs">
                 <visible>!Skin.HasSetting(Shelf.Favs)</visible>
                 <label>[COLOR=Orange]$LOCALIZE[1036][/COLOR]</label>
                 <label2>$LOCALIZE[106]</label2>
@@ -698,7 +806,7 @@
                 <visible>Skin.HasSetting(Shelf.Favs)</visible>
                 <label>$LOCALIZE[1036] 1</label>
                 <label2>$INFO[Skin.String(ShelfFavs.1.Label)]</label2>
-				<onclick>RunScript(script.favourites,changetitle=true&amp;property=ShelfFavs.1)</onclick>
+                <onclick>RunScript(script.favourites,changetitle=true&amp;property=ShelfFavs.1)</onclick>
               </item>
               <item id="4" description="FAVS">
                 <visible>Skin.HasSetting(Shelf.Favs)</visible>
@@ -756,105 +864,337 @@
               </item>
             </content>
           </control>
-          <control type="group">
-            <posx>1467</posx>
+		  <!-- 9000 2 -->
+		  <control type="panel" id="9002">
+            <visible>Container(9000).HasFocus(2)</visible>
+            <posx>324</posx>
             <posy>0</posy>
-            <control type="group">
-              <visible>Container(9000).HasFocus(3)</visible>
-              <control type="button" id="300">
-                <description>Single Image button</description>
+            <width>1467</width>
+            <height>780</height>
+            <onleft>9000</onleft>
+            <onright>60</onright>
+            <onup>9002</onup>
+            <ondown>9002</ondown>
+            <pagecontrol>-</pagecontrol>
+            <scrolltime>280</scrolltime>
+            <itemlayout width="1467" height="50">
+              <control type="image">
+                <posx>0</posx>
                 <posy>0</posy>
-                <width>322</width>
-                <label>31113</label>
-                <onclick condition="Container(9003).HasFocus(1)">Skin.SetImage(Videos.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(2)">Skin.SetImage(Movies.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(3)">Skin.SetImage(TVShows.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(4)">Skin.SetImage(Music.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(5)">Skin.SetImage(Pictures.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(6)">Skin.SetImage(Favourites.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(7)">Skin.SetImage(Weather.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(8)">Skin.SetImage(Addons.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(9)">Skin.SetImage(Settings.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(10)">Skin.SetImage(DVD.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(11)">Skin.SetImage(Quit.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(12)">Skin.SetImage(Default.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(21)">Skin.SetImage(CustomHome.1.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(22)">Skin.SetImage(CustomHome.2.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(23)">Skin.SetImage(CustomHome.3.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(24)">Skin.SetImage(CustomHome.4.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(25)">Skin.SetImage(CustomHome.5.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(26)">Skin.SetImage(CustomHome.6.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(27)">Skin.SetImage(CustomHome.7.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(28)">Skin.SetImage(CustomHome.8.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(29)">Skin.SetImage(CustomHome.9.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(30)">Skin.SetImage(CustomHome.10.Background)</onclick>
-                <onleft>9003</onleft>
-                <onup>302</onup>
-                <ondown>301</ondown>
+                <height>50</height>
+                <width>1467</width>
+                <texture border="3" flipy="true">list/ListNF.png</texture>
               </control>
-              <control type="button" id="301">
-                <description>Multi Image button</description>
-                <posy>60</posy>
-                <width>322</width>
-                <label>31114</label>
-                <onclick condition="Container(9003).HasFocus(1)">Skin.SetPath(Videos.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(2)">Skin.SetPath(Movies.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(3)">Skin.SetPath(TVShows.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(4)">Skin.SetPath(Music.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(5)">Skin.SetPath(Pictures.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(6)">Skin.SetPath(Favourites.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(7)">Skin.SetPath(Weather.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(8)">Skin.SetPath(Addons.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(9)">Skin.SetPath(Settings.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(10)">Skin.SetPath(DVD.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(11)">Skin.SetPath(Quit.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(12)">Skin.SetPath(Default.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(21)">Skin.SetPath(CustomHome.1.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(22)">Skin.SetPath(CustomHome.2.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(23)">Skin.SetPath(CustomHome.3.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(24)">Skin.SetPath(CustomHome.4.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(25)">Skin.SetPath(CustomHome.5.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(26)">Skin.SetPath(CustomHome.6.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(27)">Skin.SetPath(CustomHome.7.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(28)">Skin.SetPath(CustomHome.8.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(29)">Skin.SetPath(CustomHome.9.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(30)">Skin.SetPath(CustomHome.10.Background)</onclick>
-                <onleft>9003</onleft>
-                <onup>300</onup>
-                <ondown>302</ondown>
+              <control type="label" description="Label 2">
+                <posx>30r</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>600</width>
+                <font>ListDetails</font>
+                <align>right</align>
+                <scroll>false</scroll>
+                <label fallback="31993">$INFO[ListItem.Label2]</label>
               </control>
-              <control type="button" id="302">
-                <description>Default Image button</description>
-                <posy>120</posy>
-                <width>322</width>
-                <label>571</label>
-                <onclick condition="Container(9003).HasFocus(1)">Skin.Reset(Videos.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(3)">Skin.Reset(TVShows.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(5)">Skin.Reset(Pictures.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(7)">Skin.Reset(Weather.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(8)">Skin.Reset(Addons.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(9)">Skin.Reset(Settings.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(10)">Skin.Reset(DVD.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(11)">Skin.Reset(Quit.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(12)">Skin.Reset(Default.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(21)">Skin.Reset(CustomHome.1.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(22)">Skin.Reset(CustomHome.2.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(23)">Skin.Reset(CustomHome.3.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(24)">Skin.Reset(CustomHome.4.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(25)">Skin.Reset(CustomHome.5.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(26)">Skin.Reset(CustomHome.6.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(27)">Skin.Reset(CustomHome.7.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(28)">Skin.Reset(CustomHome.8.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(29)">Skin.Reset(CustomHome.9.Background)</onclick>
-                <onclick condition="Container(9003).HasFocus(30)">Skin.Reset(CustomHome.10.Background)</onclick>
-                <onleft>9003</onleft>
-                <onup>301</onup>
-                <ondown>300</ondown>
+              <control type="label" description="Main Label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>930</width>
+                <scroll>false</scroll>
+                <label>$INFO[ListItem.Label]</label>
               </control>
-            </control>
+            </itemlayout>
+            <focusedlayout width="1467" height="50">
+              <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>1467</width>
+                <texture border="2">common/ButtonFO.png</texture>
+              </control>
+              <control type="label" description="Label 2">
+                <posx>30r</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>600</width>
+                <font>ListDetails</font>
+                <align>right</align>
+                <scroll>false</scroll>
+                <label fallback="31993">$INFO[ListItem.Label2]</label>
+              </control>
+              <control type="label" description="Main Label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>50</height>
+                <width>930</width>
+                <scroll>false</scroll>
+                <label>$INFO[ListItem.Label]</label>
+              </control>
+            </focusedlayout>
+            <content>
+          <item id="21" description="CustomHome1">
+            <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.1.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.1)</onclick>
+          </item>
+		  <item id="21" description="CustomHome1">
+            <visible>IsEmpty(Skin.String(CustomHome.1.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.1)</onclick>
+          </item>
+		  <item id="1" description="Pictures">
+            <visible>!Skin.HasSetting(Pictures.Hide)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[1][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
+          </item>
+		  <item id="1" description="Pictures">
+            <visible>Skin.HasSetting(Pictures.Hide)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[1][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+			<onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
+          </item>
+		  <item id="22" description="CustomHome2">
+            <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.2.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.2)</onclick>
+          </item>
+		  <item id="22" description="CustomHome2">
+            <visible>IsEmpty(Skin.String(CustomHome.2.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.2)</onclick>
+          </item>
+		  <item id="2" description="Addons">
+            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[24001][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
+          </item>
+		  <item id="2" description="Addons">
+            <visible>Skin.HasSetting(Addons.Hide)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[24001][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
+          </item>
+		  <item id="23" description="CustomHome1">
+            <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.3.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>
+          </item>
+		  <item id="23" description="CustomHome1">
+            <visible>IsEmpty(Skin.String(CustomHome.3.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>
+          </item>
+		  <item id="3" description="Videos">
+            <visible>!Skin.HasSetting(Videos.Hide)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[3][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
+          </item>
+		  <item id="3" description="Videos">
+            <visible>Skin.HasSetting(Videos.Hide)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[3][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
+          </item>
+		  <item id="24" description="CustomHome4">
+            <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
+            <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>
+          </item>
+		  <item id="24" description="CustomHome4">
+            <visible>IsEmpty(Skin.String(CustomHome.4.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>
+          </item>
+		  <item id="4" description="MyMovies">
+            <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[20342][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
+          </item>
+		  <item id="4" description="MyMovies">
+            <visible>Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[20342][/COLOR]</label>
+			<label2>$LOCALIZE[1223]</label2>
+            <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
+          </item>
+		  <item id="25" description="CustomHome.5">
+            <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.5.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.5)</onclick>
+          </item>
+		  <item id="25" description="CustomHome.5">
+            <visible>IsEmpty(Skin.String(CustomHome.5.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.5)</onclick>
+          </item>
+		  <item id="5" description="MyTV">
+            <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[20343][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
+          </item>
+		  <item id="5" description="MyTV">
+            <visible>Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[20343][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
+          </item>
+		  <item id="26" description="CustomHome.6">
+            <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.6.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.6)</onclick>
+          </item>
+		  <item id="26" description="CustomHome.6">
+            <visible>IsEmpty(Skin.String(CustomHome.6.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.6)</onclick>
+          </item>
+		  <item id="6" description="Music">
+            <visible>!Skin.HasSetting(Music.Hide)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[2][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
+          </item>
+		  <item id="6" description="Music">
+            <visible>Skin.HasSetting(Music.Hide)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[2][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
+          </item>
+		  <item id="27" description="CustomHome.7">
+            <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.7.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>
+          </item>
+		  <item id="27" description="CustomHome.7">
+            <visible>IsEmpty(Skin.String(CustomHome.7.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>
+          </item>
+		  <item id="7" description="Favorites">
+            <visible>!Skin.HasSetting(Favourites.Hide)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[1036][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
+          </item>
+		  <item id="7" description="Favorites">
+            <visible>Skin.HasSetting(Favourites.Hide)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[1036][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
+          </item>
+		  <item id="28" description="CustomHome.8">
+            <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.8.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>
+          </item>
+		  <item id="28" description="CustomHome.8">
+            <visible>IsEmpty(Skin.String(CustomHome.8.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>
+          </item>
+		  <item id="29" description="CustomHome.9">
+            <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.9.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
+            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.9)</onclick>
+          </item>
+		  <item id="29" description="CustomHome.9">
+            <visible>IsEmpty(Skin.String(CustomHome.9.Path))</visible>
+            <label>$LOCALIZE[504]</label>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
+           	<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.9)</onclick>
+          </item>
+		  <item id="8" description="DVD">
+            <visible>!Skin.HasSetting(DVD.Hide)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[427][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
+          </item>
+		  <item id="8" description="DVD">
+            <visible>Skin.HasSetting(DVD.Hide)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[427][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
+          </item>
+          <item id="9" description="Player">
+            <visible>!Skin.HasSetting(Player.Hide)</visible>
+			 <label>[COLOR=Orange]$LOCALIZE[16003][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$VAR[Player.Art]</thumb>
+            <onclick>Skin.ToggleSetting(Player.Hide)</onclick>
+          </item>
+		  <item id="9" description="Player">
+            <visible>Skin.HasSetting(Player.Hide)</visible>
+			 <label>[COLOR=Grey]$LOCALIZE[16003][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/default/default.jpg">$VAR[Player.Art]</thumb>
+            <onclick>Skin.ToggleSetting(Player.Hide)</onclick>
+          </item>
+          <item id="10" description="Settings">
+            <label>5</label>
+            <label2>$LOCALIZE[31293]</label2>
+			<thumb fallback="special://skin/backgrounds/System.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+			<onclick>Notification($LOCALIZE[416],,6,DefaultIconWarning.png)</onclick>
+          </item>
+          <item id="11" description="Quit">
+            <visible>!Skin.HasSetting(Quit.Hide)</visible>
+            <label>[COLOR=Orange]$LOCALIZE[13009][/COLOR]</label>
+			<label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+            <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
+          </item>
+		  <item id="11" description="Quit">
+            <visible>Skin.HasSetting(Quit.Hide)</visible>
+            <label>[COLOR=Grey]$LOCALIZE[13009][/COLOR]</label>
+            <label2>$LOCALIZE[1223]</label2>
+			<thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+            <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
+          </item>
+        </content>
           </control>
         </control>
       </control>

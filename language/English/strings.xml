@@ -50,7 +50,7 @@
   <string id="31061">Current Selected</string>
   
   <!-- Skin Settings labels -->
-  <string id="31100">  (click to assign item from favourites)</string>
+  <string id="31100">  - Customizable: Click to assign item from favourites</string>
   <string id="31101">Home screen options</string>
   <string id="31102">Background</string>
   <string id="31103">Show "Paused" in picture slide show</string>
@@ -183,7 +183,7 @@
   <string id="31290">Show Fanart in music playing window</string>
   <string id="31291">Add-on manager</string>
   <string id="31292">items</string>
-  <string id="31293">   click to assign (or to clear assigned item)</string>
+  <string id="31293">Can not be customized</string>
   <string id="31294">  (go to currently playing audio/video)</string>
   <string id="31295">   click to change section label</string>
   <string id="31296">Sections</string>
@@ -196,7 +196,7 @@
   <string id="31996">View options dialog</string>
   <string id="31995">Video files</string>
   <string id="31994">Music files</string>
-  <string id="31993">Grid &amp; Fanart view modes</string>
+  <string id="31993">Not used - click to customize</string>
   <string id="31992">Banner (wide) thumbs</string>
   <string id="31991">Poster view modes</string>
   <string id="31990">Home menus customizer</string>
