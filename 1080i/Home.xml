@@ -11,7 +11,7 @@
       <include>Dimensions_Fullscreen</include>
       <timeperimage>8000</timeperimage>
       <fadetime>400</fadetime>
-      <imagepath background="true">$INFO[Container(300).ListItem.Thumb]</imagepath>
+      <imagepath background="true">$INFO[Container(300).ListItem.thumb]</imagepath>
       <randomize>true</randomize>
       <aspectratio aligny="top">scale</aspectratio>
     </control>
@@ -144,7 +144,6 @@
             <label2>$INFO[Window(Home).Property(plexbmc.2.subtitle)]</label2>
             <thumb>$INFO[Window(Home).Property(plexbmc.2.art)]</thumb>
             <onclick>$INFO[Window(Home).Property(plexbmc.2.path)]</onclick>
-            <thumb>$INFO[Window(Home).Property(plexbmc.2.art)]</thumb>
             <property name="type">$INFO[Window(Home).Property(plexbmc.2.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.2.partialpath)]</property>
           </item>

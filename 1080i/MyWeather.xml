@@ -185,7 +185,6 @@
             <height>45</height>
             <width>150</width>
             <align>right</align>
-            <height>30</height>
             <font>size24B</font>
             
             <label>$INFO[Window.Property(Day0.LowTemp)] / $INFO[Window.Property(Day0.HighTemp)]</label>
@@ -223,7 +222,6 @@
             <height>45</height>
             <width>150</width>
             <align>right</align>
-            <height>30</height>
             <font>size24B</font>
             
             <label>$INFO[Window.Property(Day1.LowTemp)] / $INFO[Window.Property(Day1.HighTemp)]</label>

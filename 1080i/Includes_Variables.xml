@@ -158,9 +158,9 @@
     <value>$INFO[ListItem.Year]</value>
   </variable>-->
   <variable name="Stars" description="Star Rating">
-    <value condition="[Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml) | SubString(Container.FolderPath,videodb://3/,left)] + !IsEmpty(ListItem.StarRating)]">$INFO[ListItem.StarRating]</value>
-    <value condition="[Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml) | SubString(Container.FolderPath,videodb://3/,left)] + IsEmpty(ListItem.StarRating) +!Container.Content(addons)]">badges/0.0.png</value>
-	<value condition="!IsEmpty(ListItem.Rating)]">$INFO[ListItem.Rating,badges/,.png]</value>
+    <value condition="[Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml) | SubString(Container.FolderPath,videodb://3/,left)] + !IsEmpty(ListItem.StarRating)">$INFO[ListItem.StarRating]</value>
+    <value condition="[Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml) | SubString(Container.FolderPath,videodb://3/,left)] + IsEmpty(ListItem.StarRating) + !Container.Content(addons)">badges/0.0.png</value>
+	<value condition="!IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/,.png]</value>
 	<value condition="IsEmpty(ListItem.Rating) + !IsEmpty(ListItem.Title)">badges/0.0.png</value>
 	<!--<value condition="[Container.Content(tvshows) | !ListItem.IsFolder] + !IsEmpty(ListItem.Rating)]">$INFO[ListItem.Rating,badges/,.png]</value>
 	<value condition="[Container.Content(tvshows) | !ListItem.IsFolder] + IsEmpty(ListItem.Rating)">badges/0.0.png</value>-->

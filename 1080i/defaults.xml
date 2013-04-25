@@ -44,7 +44,7 @@
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <pagecontrol>61</pagecontrol>
-    <pulseonselect></pulseonselect>
+    <pulseonselect>false</pulseonselect>
     <autoscroll delay="6000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
   </default>
   <default type="image">
@@ -108,8 +108,7 @@
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
 	<alttexturefocus border="2">common/ButtonFO.png</alttexturefocus>
     <alttexturenofocus border="3">common/ButtonNF.png</alttexturenofocus>
-	<aligny>center</aligny>
-    <pulseonselect>false</pulseonselect>
+	<pulseonselect>false</pulseonselect>
   </default>
   <default type="radiobutton">
     <posx>0</posx>

@@ -26,7 +26,7 @@
       <posx>21</posx>
       <posy>39</posy>
       <width>420</width>
-	  <height max="900">auto</height>
+	  <height>auto</height>
       <itemgap>3</itemgap>
     </control>
     <control type="button" id="1000" description="Buttons">

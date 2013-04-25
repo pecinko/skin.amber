@@ -11,8 +11,7 @@
 	  <posy>48</posy>
 	  <width>1920</width>
       <height>1032</height>
-      <align>top</align>
-	  <onup>300</onup>
+      <onup>300</onup>
       <ondown>300</ondown>
 	  <control type="label" id="110" description="Top Label">
         <visible>Control.IsVisible(111)</visible>

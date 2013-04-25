@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <include name="TVProgress">
-    <posx>0</posx>
-    <posy>6</posy>
-    <width>860</width>
-    <height>87</height>
-    <texturebg>-</texturebg>
-    <midtexture>img/ItemBG2.png</midtexture>
-    <info>ListItem.Progress</info>
-  </include>
   <include name="RecOverlay">
     <control type="image">
       <posx>930</posx>

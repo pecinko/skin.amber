@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <include name="BigPanelBannerThumb">
-    <posx>21</posx>
-    <posy>21</posy>
-    <width>1002</width>
-    <height>201</height>
-    <texture background="true">$VAR[Banner]</texture>
-    <include>ThumbBorder</include>
-    <aspectratio>keep</aspectratio>
-  </include>
-  <include name="BigPanelBannerOverlay">
-    <posx>21</posx>
-    <posy>21</posy>
-    <width>1002</width>
-    <height>201</height>
-    <texture border="25">img/Frame.png</texture>
-    <bordersize>-18</bordersize>
-  </include>
   <include name="BigPanelPosterOverlay">
     <posx>36</posx>
     <posy>18</posy>

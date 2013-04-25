@@ -118,7 +118,6 @@
             <width>1275</width>
             <height>120</height>
             <label>$INFO[VideoPlayer.Plot]</label>
-            <align>jistify</align>
             <autoscroll>false</autoscroll>
             <font>InfoPlot</font>
           </control>
