@@ -18,14 +18,6 @@
     <aligny>center</aligny>
     <textcolor>Grey</textcolor>
   </include>
-  <include name="List52Overlay">
-    <posx>50r</posx>
-    <posy>0</posy>
-    <height>72</height>
-    <width>24</width>
-    <aspectratio>keep</aspectratio>
-    <texture>$VAR[Overlay]</texture>
-  </include>
   <include name="View_52_BigList">
     <control type="group" description="Large Infolist2">
       <visible>Control.IsVisible(52)</visible>
@@ -37,7 +29,7 @@
         <aspectratio>stretch</aspectratio>
        <texture>common/OverlayFS.png</texture>
       </control>
-	  <control type="panel" id="52">
+	  <control type="list" id="52">
 		<viewtype label="Large List">Large List</viewtype>
         <posx>1048</posx>
         <posy>246</posy>
@@ -65,9 +57,7 @@
             <include>List52Label2</include>
             <label>$VAR[52_Label2]</label>
           </control>
-          <control type="image">
-            <include>List52Overlay</include>
-          </control>
+          <include>ListWatchedOverlay</include>
         </itemlayout>
         <focusedlayout condition="container.content(Movies) | container.content(TVShows) | [container.content(episodes) + !Skin.HasSetting(52_Episodes_UseFanart)]" height="72" width="870">
           <control type="image">
@@ -94,9 +84,7 @@
             <include>List52Label2</include>
             <label>$VAR[52_Label2]</label>
           </control>
-          <control type="image">
-            <include>List52Overlay</include>
-          </control>
+          <include>ListWatchedOverlay</include>
         </focusedlayout>
         <itemlayout condition="container.content(episodes) + Skin.HasSetting(52_Episodes_UseFanart)" height="99" width="870">
           <control type="image">

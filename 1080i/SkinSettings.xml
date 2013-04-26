@@ -1015,7 +1015,8 @@
           </item>
 		  <item id="24" description="CustomHome.4">
             <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
-            <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
+            <label>[COLOR=Orange]$INFO[Skin.String(CustomHome.4.Label)][/COLOR]</label>
+            <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>
           </item>

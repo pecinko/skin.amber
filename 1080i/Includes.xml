@@ -20,8 +20,6 @@
   <include file="View_56_BannerList.xml" />
   <include file="View_57_58_59_Showcase.xml" />
   <include file="View_PVR.xml" />
-  
-  
   <include name="VisibleFadeEffect">
     <animation effect="fade" time="200">Visible</animation>
     <animation effect="fade" time="200">Hidden</animation>
@@ -75,7 +73,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>common/DimBG.png</texture>
-     </control>
+    </control>
   </include>
   <include name="Dimensions_Fullscreen">
     <posx>0</posx>
@@ -87,37 +85,37 @@
     <control type="group">
       <control type="image">
         <visible>!Window.IsActive(home)</visible>
-		<posx>0</posx>
+        <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
         <height>48</height>
         <texture>common/TimePanel2.png</texture>
       </control>
-	  <control type="image">
+      <control type="image">
         <visible>Window.IsActive(home)</visible>
-		<posx>600r</posx>
+        <posx>600r</posx>
         <posy>0</posy>
         <width>600</width>
         <height>90</height>
         <texture border="100,0,0,0" flipy="true">common/TimePanel.png</texture>
-	  </control>
-	  <control type="label">
-		<posx>50</posx>
+      </control>
+      <control type="label">
+        <posx>24</posx>
         <posy>0</posy>
         <width>1200</width>
         <height>40</height>
         <font>Details</font>
-		<label>$VAR[GlobalHeadings]</label>
+        <label>$VAR[GlobalHeadings]</label>
       </control>
-	  <control type="label">
-        <posx>50r</posx>
+      <control type="label">
+        <posx>24r</posx>
         <posy>0</posy>
         <width>500</width>
         <height>40</height>
         <align>right</align>
-		<font>Details</font>
-		<textcolor>White</textcolor>
-		<shadowcolor>ShadowDark</shadowcolor>
+        <font>Details</font>
+        <textcolor>White</textcolor>
+        <shadowcolor>ShadowDark</shadowcolor>
         <label>$VAR[Time]</label>
       </control>
     </control>
@@ -142,15 +140,22 @@
       <texture>img/BlackDot.png</texture>
     </control>
   </include>
-  
-	<include name="ListWatchedOverlay">
-   <control type="image">
-        <posx>1155</posx>
-        <width>24</width>
-        <height>72</height>
-        <texture>$VAR[Overlay]</texture>
-        <aspectratio>keep</aspectratio>
-      </control>
+  <include name="Stars">
+    <height>24</height>
+    <width>174</width>
+    <aspectratio align="left">keep</aspectratio>
+    <colordiffuse>Silver</colordiffuse>
+    <texture>$VAR[Stars]</texture>
+  </include>
+  <include name="ListWatchedOverlay">
+    <control type="image">
+      <posx>52r</posx>
+      <posy>2</posy>
+      <width>22</width>
+      <height>72</height>
+      <texture>$VAR[Overlay]</texture>
+      <aspectratio aligny="center">keep</aspectratio>
+    </control>
   </include>
   <include name="ThumbBorder">
     <bordertexture border="10">thumbs/Border.png</bordertexture>
@@ -162,7 +167,7 @@
   </include>
   <include name="EpisodeThumb">
     <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/EpisodeDiffuse.png">$INFO[ListItem.thumb]</texture>
-	<aspectratio scalediffuse="false">scale</aspectratio>
+    <aspectratio scalediffuse="false">scale</aspectratio>
   </include>
   <include name="EpisodeThumbBG">
     <bordersize>-18</bordersize>
@@ -174,7 +179,7 @@
   </include>
   <include name="SquareThumb">
     <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
-	<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
   </include>
   <include name="SquareThumbBG">
     <bordersize>-16</bordersize>
@@ -186,7 +191,7 @@
   </include>
   <include name="PosterThumb">
     <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/PosterDiffuse.png">$INFO[ListItem.thumb]</texture>
-	<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
   </include>
   <include name="PosterThumbBG">
     <bordersize>-15</bordersize>
@@ -214,45 +219,6 @@
     <align>left</align>
     <textcolor>Grey</textcolor>
     <animation effect="fade" time="200">VisibleChange</animation>
-  </include>
-  <include name="51MainLabel">
-    <posx>128</posx>
-    <posy>12</posy>
-    <height>50</height>
-    <width>720</width>
-    <textcolor>White</textcolor>
-    <aligny>center</aligny>
-    <font>size24</font>
-    <scroll>false</scroll>
-  </include>
-  <include name="51MainLabelFO">
-    <posx>128</posx>
-    <posy>12</posy>
-    <height>50</height>
-    <width>720</width>
-    <textcolor>White2</textcolor>
-    <aligny>center</aligny>
-    <font>size24</font>
-  </include>
-  <include name="51Label2">
-    <posx>128</posx>
-    <posy>63</posy>
-    <height>33</height>
-    <width>720</width>
-    <font>size18</font>
-    <textcolor>Grey</textcolor>
-    <scroll>false</scroll>
-    <align>left</align>
-  </include>
-  <include name="51Label2FO">
-    <animation effect="fade" time="300" start="50" end="100" delay="200">Focus</animation>
-    <posx>128</posx>
-    <posy>63</posy>
-    <height>33</height>
-    <width>720</width>
-    <font>size18</font>
-    <textcolor>White2</textcolor>
-    <align>left</align>
   </include>
   <include name="9000Buttons">
     <width>444</width>
@@ -303,37 +269,70 @@
     <onright>50</onright>
     <onup>9000</onup>
     <ondown>9000</ondown>
+	<onback>50</onback>
     <scrolltime>200</scrolltime>
     <orientation>vertical</orientation>
-    <control type="label" id="9149">
+    <control type="label" id="9140">
       <textcolor>Orange</textcolor>
       <textoffsetx>10</textoffsetx>
       <align>left</align>
       <include>9000ViewButtons</include>
       <label>$LOCALIZE[582]</label>
     </control>
-	<control type="button" id="2" description="Views">
+    <!--<control type="button" id="2" description="Views">
           <texturenofocus>-</texturenofocus>
           <include>9000ViewButtons</include>
-        </control>
-	<!--	<control type="radiobutton" id="9150" description="View 50">
+        </control>-->
+    <control type="radiobutton" id="9145" description="View 50">
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(50)</onclick>
       <selected>Control.IsVisible(50)</selected>
       <label>535</label>
     </control>
-    <control type="radiobutton" id="9151" description="View 56">
+    <control type="radiobutton" id="9146" description="View 56">
       <visible>Container.Content(TVShows)</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(56)</onclick>
       <selected>Control.IsVisible(56)</selected>
       <label>Banner List</label>
     </control>
-	<control type="radiobutton" id="9152" description="View 52">
+    <control type="radiobutton" id="9147" description="View 52">
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(52)</onclick>
       <selected>Control.IsVisible(52)</selected>
       <label>537</label>
+    </control>
+    <control type="radiobutton" id="9148" description="View 52 Movies">
+      <visible>Control.IsVisible(52) + Container.Content(Movies)</visible>
+      <font>ListDetails</font>
+      <include>9000SysButtons</include>
+      <onclick>Skin.ToggleSetting(52_Movies_UseFanart)</onclick>
+      <selected>Skin.HasSetting(52_Movies_UseFanart)</selected>
+      <label>- $LOCALIZE[20445]</label>
+    </control>
+    <control type="radiobutton" id="9149" description="View 52 TV">
+      <visible>Control.IsVisible(52) + Container.Content(TVShows)</visible>
+      <font>ListDetails</font>
+      <include>9000SysButtons</include>
+      <onclick>Skin.ToggleSetting(52_TV_UseFanart)</onclick>
+      <selected>Skin.HasSetting(52_TV_UseFanart)</selected>
+      <label>- $LOCALIZE[20445]</label>
+    </control>
+    <control type="radiobutton" id="9150" description="View 52 Episodes">
+      <visible>Control.IsVisible(52) + Container.Content(Episodes)</visible>
+      <font>ListDetails</font>
+      <include>9000SysButtons</include>
+      <onclick>Skin.ToggleSetting(52_Episodes_UseFanart)</onclick>
+      <selected>Skin.HasSetting(52_Episodes_UseFanart)</selected>
+      <label>- $LOCALIZE[20445]</label>
+    </control>
+    <control type="radiobutton" id="9151" description="View 52 Episodes">
+      <visible>Control.IsVisible(52) + Container.Content(Albums)</visible>
+      <font>ListDetails</font>
+      <include>9000SysButtons</include>
+      <onclick>Skin.ToggleSetting(52_Albums_UseFanart)</onclick>
+      <selected>Skin.HasSetting(52_Albums_UseFanart)</selected>
+      <label>- $LOCALIZE[20445]</label>
     </control>
     <control type="radiobutton" id="9153" description="View 51">
       <include>9000ViewButtons</include>
@@ -348,92 +347,65 @@
       <label>Low List</label>
     </control>
     <control type="radiobutton" id="9155" description="View 53">
-      <visible>!Control.IsActive(50)</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(53)</onclick>
       <selected>Control.IsVisible(53)</selected>
       <label>536</label>
     </control>
+    <control type="radiobutton" id="9156" description="View 53 Banners">
+      <visible>Control.IsVisible(53) + Container.Content(TVShows)</visible>
+      <font>ListDetails</font>
+      <include>9000SysButtons</include>
+      <onclick>Skin.ToggleSetting(53_UseBanners)</onclick>
+      <selected>Skin.HasSetting(53_UseBanners)</selected>
+      <label>- $LOCALIZE[31992]</label>
+    </control>
     <control type="radiobutton" id="9157" description="View 55 BigPanel">
       <visible>![Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml)]</visible>
-	  <include>9000ViewButtons</include>
+      <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(55)</onclick>
       <selected>Control.IsVisible(55)</selected>
       <label>Big Panel</label>
     </control>
-	<control type="radiobutton" id="9158" description="View 57">
+    <control type="radiobutton" id="9158" description="View 57">
       <visible>container.content(episodes)</visible>
-	  <include>9000ViewButtons</include>
+      <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(57)</onclick>
       <selected>Control.IsVisible(57)</selected>
       <label>20445</label>
     </control>
-	<control type="radiobutton" id="9159" description="View 58">
+    <control type="radiobutton" id="9159" description="View 58">
       <visible>![container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
-	  <include>9000ViewButtons</include>
+      <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(58)</onclick>
       <selected>Control.IsVisible(58)</selected>
       <label>20445</label>
     </control>
     <control type="radiobutton" id="9160" description="View 59">
-	  <visible>[container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
+      <visible>[container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(59)</onclick>
       <selected>Control.IsVisible(59)</selected>
       <label>20445</label>
-    </control>-->
-	<control type="label" id="9161">
+    </control>
+    <control type="label" id="9161">
       <visible>Control.IsVisible(9162) | Control.IsVisible(9163) | Control.IsVisible(9164) | Control.IsVisible(9165) | Control.IsVisible(9166) | Control.IsVisible(9167)</visible>
-	  <textcolor>Orange</textcolor>
+      <textcolor>Orange</textcolor>
       <textoffsetx>10</textoffsetx>
       <align>left</align>
       <include>9000ViewButtons</include>
       <label>$LOCALIZE[14018]</label>
     </control>
-		<control type="radiobutton" id="9162" description="View 52 Movies">
-		  <visible>Control.IsVisible(52) + Container.Content(Movies)</visible>
-		  <include>9000SysButtons</include>
-		  <onclick>Skin.ToggleSetting(52_Movies_UseFanart)</onclick>
-		  <selected>Skin.HasSetting(52_Movies_UseFanart)</selected>
-		  <label>$LOCALIZE[20445]</label>
-		</control>
-		<control type="radiobutton" id="9163" description="View 52 TV">
-		  <visible>Control.IsVisible(52) + Container.Content(TVShows)</visible>
-		  <include>9000SysButtons</include>
-		  <onclick>Skin.ToggleSetting(52_TV_UseFanart)</onclick>
-		  <selected>Skin.HasSetting(52_TV_UseFanart)</selected>
-		  <label>$LOCALIZE[20445]</label>
-		</control>
-		<control type="radiobutton" id="9164" description="View 52 Episodes">
-		  <visible>Control.IsVisible(52) + Container.Content(Episodes)</visible>
-		  <include>9000SysButtons</include>
-		  <onclick>Skin.ToggleSetting(52_Episodes_UseFanart)</onclick>
-		  <selected>Skin.HasSetting(52_Episodes_UseFanart)</selected>
-		  <label>$LOCALIZE[20445]</label>
-		</control>
-		<control type="radiobutton" id="9165" description="View 52 Episodes">
-		  <visible>Control.IsVisible(52) + Container.Content(Albums)</visible>
-		  <include>9000SysButtons</include>
-		  <onclick>Skin.ToggleSetting(52_Albums_UseFanart)</onclick>
-		  <selected>Skin.HasSetting(52_Albums_UseFanart)</selected>
-		  <label>$LOCALIZE[20445]</label>
-		</control>
-		<control type="radiobutton" id="9166" description="View 53 Banners">
-		  <visible>Control.IsVisible(53) + Container.Content(TVShows)</visible>
-		  <include>9000SysButtons</include>
-		  <onclick>Skin.ToggleSetting(53_UseBanners)</onclick>
-		  <selected>Skin.HasSetting(53_UseBanners)</selected>
-		  <label>$LOCALIZE[31992]</label>
-		</control>
-		<!--<control type="radiobutton" id="9167" description="Info list toggle">
+    
+    <!--<control type="radiobutton" id="9167" description="Info list toggle">
 		  <visible>Control.IsVisible(50)</visible>
 		  <include>9000SysButtons</include>
 		  <onclick>Skin.ToggleSetting(50_NoInfo)</onclick>
 		  <selected>Skin.HasSetting(50_NoInfo)</selected>
 		  <label>$LOCALIZE[31974]</label>
 		</control>-->
-		
-   <control type="label" id="9180">
+    
+    <control type="label" id="9180">
       <textcolor>Orange</textcolor>
       <align>left</align>
       <textoffsetx>10</textoffsetx>
@@ -543,70 +515,70 @@
     <timeperimage>6000</timeperimage>
     <randomize>true</randomize>
     <fadetime>400</fadetime>
-	<aspectratio>scale</aspectratio>
-	<animation type="WindowOpen">
-        <effect type="fade" start="0" end="100" time="400"/>
-      </animation>
-      <animation type="WindowClose">
-        <effect type="fade" start="100" end="0" time="200" delay="700"/>
-      </animation>
+    <aspectratio>scale</aspectratio>
+    <animation type="WindowOpen">
+      <effect type="fade" start="0" end="100" time="400"/>
+    </animation>
+    <animation type="WindowClose">
+      <effect type="fade" start="100" end="0" time="200" delay="700"/>
+    </animation>
   </include>
   <include name="Default_Art">
-  <control type="multiimage">
-    <include>BG.Defaults</include>
-    <imagepath background="true">$VAR[Default.Art]</imagepath>
-   </control>
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Default.Art]</imagepath>
+    </control>
   </include>
   <include name="Settings_Art">
-  <control type="multiimage">
-    <include>BG.Defaults</include>
-    <imagepath background="true">$VAR[Settings.Art]</imagepath>
-   </control>
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Settings.Art]</imagepath>
+    </control>
   </include>
   <include name="Fanart_Art">
-     <control type="multiimage" description="FA">
-        <visible>![Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(53)]</visible>
-		<include>VisibleFadeEffect</include>
-		<posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <timeperimage>6000</timeperimage>
-        <randomize>true</randomize>
-        <fadetime>400</fadetime>
-        <aspectratio>scale</aspectratio>
-        <imagepath background="true">$VAR[Fanart.Art]</imagepath>
-      </control>
-	  <control type="multiimage" description="FA">
-        <visible>Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(53)</visible>
-		<include>VisibleFadeEffect</include>
-		<posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <timeperimage>6000</timeperimage>
-        <randomize>true</randomize>
-        <fadetime>400</fadetime>
-        <aspectratio>scale</aspectratio>
-        <imagepath background="true">$VAR[Default.Art]</imagepath>
-      </control>
+    <control type="multiimage" description="FA">
+      <visible>![Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(53)]</visible>
+      <include>VisibleFadeEffect</include>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <timeperimage>6000</timeperimage>
+      <randomize>true</randomize>
+      <fadetime>400</fadetime>
+      <aspectratio>scale</aspectratio>
+      <imagepath background="true">$VAR[Fanart.Art]</imagepath>
+    </control>
+    <control type="multiimage" description="FA">
+      <visible>Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(53)</visible>
+      <include>VisibleFadeEffect</include>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <timeperimage>6000</timeperimage>
+      <randomize>true</randomize>
+      <fadetime>400</fadetime>
+      <aspectratio>scale</aspectratio>
+      <imagepath background="true">$VAR[Default.Art]</imagepath>
+    </control>
   </include>
   <include name="Pvr_Art">
-  <control type="multiimage">
-    <include>BG.Defaults</include>
-    <imagepath background="true">$VAR[Pvr.Art]</imagepath>
-   </control>
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Pvr.Art]</imagepath>
+    </control>
   </include>
   <include name="Pictures_Art">
-  <control type="multiimage">
-    <include>BG.Defaults</include>
-    <imagepath background="true">$VAR[Pictures.Art]</imagepath>
-   </control>
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Pictures.Art]</imagepath>
+    </control>
   </include>
   <include name="Weather_Art">
-  <control type="multiimage">
-    <include>BG.Defaults</include>
-    <imagepath background="true">$VAR[Weather.Art]</imagepath>
-   </control>
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Weather.Art]</imagepath>
+    </control>
   </include>
- </includes>
+</includes>

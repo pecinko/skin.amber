@@ -37,14 +37,7 @@
               <width>660</width>
               <label>$INFO[ListItem.Label]</label>
             </control>
-			<control type="image">
-            <posx>672</posx>
-            <posy>2</posy>
-            <width>24</width>
-            <height>72</height>
-            <texture>$VAR[Overlay]</texture>
-            <aspectratio>keep</aspectratio>
-          </control>
+			<include>ListWatchedOverlay</include>
           </itemlayout>
           <focusedlayout height="72" width="720">
             <control type="image" description="BG">
@@ -65,14 +58,7 @@
               <textcolor>White2</textcolor>
 			  <label>$INFO[ListItem.Label]</label>
             </control>
-			<control type="image">
-            <posx>672</posx>
-            <posy>2</posy>
-            <width>24</width>
-            <height>72</height>
-            <texture>$VAR[Overlay]</texture>
-            <aspectratio>keep</aspectratio>
-          </control>
+			<include>ListWatchedOverlay</include>
           </focusedlayout>
         </control>
       <control type="group" description="Banners only">
@@ -110,11 +96,7 @@
 			<control type="image" description="Stars">
               <posx>-6</posx>
               <posy>464</posy>
-              <height>25</height>
-              <width>174</width>
-              <aspectratio align="left">keep</aspectratio>
-              <colordiffuse>Silver</colordiffuse>
-              <texture>$VAR[Stars]</texture>
+              <include>Stars</include>
             </control>
           </control>
         </control>

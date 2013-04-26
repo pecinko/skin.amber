@@ -25,7 +25,7 @@
           <posy>480</posy>
           <width>555</width>
           <height>555</height>
-          <bordersize>-30</bordersize>
+          <bordersize>-29</bordersize>
           <texture>thumbs/SquareBG_NF.png</texture>
 		  <aspectratio>scale</aspectratio>
         </control>
@@ -109,10 +109,7 @@
         <control type="image" description="Stars">
           <posx>-4</posx>
           <posy>410</posy>
-          <height>25</height>
-          <width>800</width>
-          <aspectratio>keep</aspectratio>
-          <texture>$VAR[Stars]</texture>
+          <include>Stars</include>
         </control>
         <control type="image" description="HD badge">
           <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>

@@ -77,7 +77,14 @@
             <width>495</width>
             <height>52</height>
             <font>size20</font>
-            <include>51MainLabel</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
+    <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
@@ -87,7 +94,14 @@
             <width>495</width>
             <height>45</height>
             <font>size20</font>
-            <include>51Label2</include>
+            <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>Grey</textcolor>
+    <scroll>false</scroll>
+    <align>left</align>
             <label>$INFO[ListItem.Label2]</label>
           </control>
           <control type="label">
@@ -97,7 +111,14 @@
             <width>555</width>
             <height>52</height>
             <font>size20</font>
-            <include>51MainLabel</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
+    <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
@@ -107,7 +128,14 @@
             <width>555</width>
             <height>45</height>
             <font>size20</font>
-            <include>51Label2</include>
+            <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>Grey</textcolor>
+    <scroll>false</scroll>
+    <align>left</align>
             <label>$INFO[ListItem.Label2]</label>
           </control>
           <control type="image">
@@ -166,7 +194,13 @@
             <width>495</width>
             <height>52</height>
             <font>size20</font>
-            <include>51MainLabelFO</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White2</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
@@ -176,7 +210,14 @@
             <width>495</width>
             <height>45</height>
             <font>size20</font>
-            <include>51Label2FO</include>
+            <animation effect="fade" time="300" start="50" end="100" delay="200">Focus</animation>
+    <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>White2</textcolor>
+    <align>left</align>
             <label>$INFO[ListItem.Label2]</label>
           </control>
           <control type="label">
@@ -186,7 +227,13 @@
             <width>555</width>
             <height>52</height>
             <font>size20</font>
-            <include>51MainLabelFO</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White2</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
@@ -196,7 +243,14 @@
             <width>555</width>
             <height>45</height>
             <font>size20</font>
-            <include>51Label2FO</include>
+            <animation effect="fade" time="300" start="50" end="100" delay="200">Focus</animation>
+    <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>White2</textcolor>
+    <align>left</align>
             <label>$INFO[ListItem.Label2]</label>
           </control>
           <control type="image">

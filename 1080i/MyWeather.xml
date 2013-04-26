@@ -4,15 +4,16 @@
   <include>OpenClose</include>
   <controls>
     <include>Weather_Art</include>
-    <control type="image" description="weather">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>common/HalfListOverlay.png</texture>
-      <animation condition="true" effect="fade" start="100" end="88" time="0" reversible="false">Conditional</animation>
-    </control>
-    <control type="group" description="Bottom NAV">
+    <control type="image" description="fa overlay">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayList.png</texture>
+      </control>
+    <include>Time</include>
+	<control type="group" description="Bottom NAV">
       <posy>0</posy>
       <posx>0</posx>
       <control type="image">
@@ -435,6 +436,6 @@
         <orientation>vertical</orientation>
       </control>
     </control>
-	<include>Time</include>
+	
   </controls>
 </window>

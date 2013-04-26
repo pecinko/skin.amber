@@ -76,7 +76,14 @@
             <width>495</width>
             <height>75</height>
             <font>size22</font>
-            <include>51MainLabel</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
+    <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>
@@ -124,7 +131,13 @@
             <width>495</width>
             <height>75</height>
             <font>size22</font>
-            <include>51MainLabelFO</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White2</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </focusedlayout>

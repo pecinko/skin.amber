@@ -64,28 +64,56 @@
             <visible>!IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>555</width>
-            <include>51MainLabel</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
+    <scroll>false</scroll>
             <label>$INFO[ListItem.Label]$INFO[ListItem.ChannelNumber, (,)]</label>
           </control>
           <control type="label" description="Main Label">
             <visible>IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>735</width>
-            <include>51MainLabel</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
+    <scroll>false</scroll>
             <label>$INFO[ListItem.Label]$INFO[ListItem.ChannelNumber, (,)]</label>
           </control>
           <control type="label" description="Label2">
             <visible>!IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>555</width>
-            <include>51Label2</include>
+            <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>Grey</textcolor>
+    <scroll>false</scroll>
+    <align>left</align>
             <label>$INFO[ListItem.Property(ClientName)]</label>
           </control>
           <control type="label" description="Label2">
             <visible>IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>735</width>
-            <include>51Label2</include>
+            <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>Grey</textcolor>
+    <scroll>false</scroll>
+    <align>left</align>
             <label>$INFO[ListItem.Property(ClientName)]</label>
           </control>
         </itemlayout>
@@ -103,28 +131,54 @@
             <visible>!IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>555</width>
-            <include>51MainLabelFO</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White2</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
             <label>$INFO[ListItem.Label]$INFO[ListItem.ChannelNumber, (,)]</label>
           </control>
           <control type="label" description="Main Label">
             <visible>IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>735</width>
-            <include>51MainLabelFO</include>
+            <posx>128</posx>
+    <posy>12</posy>
+    <height>50</height>
+    <width>720</width>
+    <textcolor>White2</textcolor>
+    <aligny>center</aligny>
+    <font>size24</font>
             <label>$INFO[ListItem.Label]$INFO[ListItem.ChannelNumber, (,)]</label>
           </control>
           <control type="label" description="Label2">
             <visible>!IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>555</width>
-            <include>51Label2FO</include>
+            <animation effect="fade" time="300" start="50" end="100" delay="200">Focus</animation>
+    <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>White2</textcolor>
+    <align>left</align>
             <label>$INFO[ListItem.Property(ClientName)]</label>
           </control>
           <control type="label" description="Label2">
             <visible>IsEmpty(ListItem.Icon)</visible>
             <posx>30</posx>
             <width>735</width>
-            <include>51Label2FO</include>
+            <animation effect="fade" time="300" start="50" end="100" delay="200">Focus</animation>
+    <posx>128</posx>
+    <posy>63</posy>
+    <height>33</height>
+    <width>720</width>
+    <font>size18</font>
+    <textcolor>White2</textcolor>
+    <align>left</align>
             <label>$INFO[ListItem.Property(ClientName)]</label>
           </control>
         </focusedlayout>
