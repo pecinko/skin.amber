@@ -242,7 +242,7 @@
     <disabledcolor>Grey</disabledcolor>
   </include>
   <include name="9000Commons" description="Regular BG">
-    <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
+    <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
     <animation type="Visible">
       <effect type="fade" start="0" end="100" time="250" />
       <effect type="slide" tween="circle" easing="out" start="0,0" end="500,0" time="350" />
