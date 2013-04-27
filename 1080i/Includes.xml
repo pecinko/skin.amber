@@ -360,42 +360,50 @@
       <selected>Skin.HasSetting(53_UseBanners)</selected>
       <label>- $LOCALIZE[31992]</label>
     </control>
-    <control type="radiobutton" id="9157" description="View 55 BigPanel">
+	<control type="radiobutton" id="9157" description="View 53 Bigger">
+      <visible>Control.IsVisible(53) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | container.content(movies) | container.content(seasons)]</visible>
+      <font>ListDetails</font>
+      <include>9000SysButtons</include>
+      <onclick>Skin.ToggleSetting(53_BigGrid)</onclick>
+      <selected>Skin.HasSetting(53_BigGrid)</selected>
+      <label>$LOCALIZE[491]</label>
+    </control>
+    <control type="radiobutton" id="9158" description="View 55 BigPanel">
       <visible>![Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml)]</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(55)</onclick>
       <selected>Control.IsVisible(55)</selected>
       <label>Big Panel</label>
     </control>
-    <control type="radiobutton" id="9158" description="View 57">
+    <control type="radiobutton" id="9159" description="View 57">
       <visible>container.content(episodes)</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(57)</onclick>
       <selected>Control.IsVisible(57)</selected>
       <label>20445</label>
     </control>
-    <control type="radiobutton" id="9159" description="View 58">
+    <control type="radiobutton" id="9160" description="View 58">
       <visible>![container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(58)</onclick>
       <selected>Control.IsVisible(58)</selected>
       <label>20445</label>
     </control>
-    <control type="radiobutton" id="9160" description="View 59">
+    <control type="radiobutton" id="9161" description="View 59">
       <visible>[container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(59)</onclick>
       <selected>Control.IsVisible(59)</selected>
       <label>20445</label>
     </control>
-    <control type="label" id="9161">
+    <!--<control type="label" id="9162">
       <visible>Control.IsVisible(9162) | Control.IsVisible(9163) | Control.IsVisible(9164) | Control.IsVisible(9165) | Control.IsVisible(9166) | Control.IsVisible(9167)</visible>
       <textcolor>Orange</textcolor>
       <textoffsetx>10</textoffsetx>
       <align>left</align>
       <include>9000ViewButtons</include>
       <label>$LOCALIZE[14018]</label>
-    </control>
+    </control>-->
     
     <!--<control type="radiobutton" id="9167" description="Info list toggle">
 		  <visible>Control.IsVisible(50)</visible>
