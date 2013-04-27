@@ -19,7 +19,8 @@
         <posx>45</posx>
         <posy>0</posy>
         <width>780</width>
-        <font>size24B</font>
+        <font>InfoTitle</font>
+		<textcolor>Orange</textcolor>
         <align>center</align>
       </control>
       <control type="grouplist" id="5" description="Control Area">
@@ -35,32 +36,21 @@
       </control>
       <control type="button" id="7">
         <description>Default Button</description>
-        <texturenofocus>-</texturenofocus>
-        <font>size22</font>
-        <align>left</align>
-        <height>66</height>
+        <font>Details</font>
       </control>
       <control type="radiobutton" id="8">
         <description>Default RadioButton</description>
-        <texturenofocus>-</texturenofocus>
-        <align>left</align>
-        <font>size22</font>
-        <height>66</height>
+        <font>Details</font>
       </control>
       <control type="spincontrolex" id="9">
         <description>Default spincontrolex</description>
-        <texturenofocus>-</texturenofocus>
-        <align>left</align>
-        <font>size22</font>
-        <height>66</height>
+        <font>Details</font>
         <reverse>yes</reverse>
       </control>
       <control type="sliderex" id="10">
         <description>Default Slider</description>
-        <texturenofocus>-</texturenofocus>
         <align>left</align>
-        <font>size22</font>
-        <height>66</height>
+        <font>Details</font>
       </control>
     </control>
   </controls>

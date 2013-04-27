@@ -22,6 +22,7 @@
         <aspectratio>stretch</aspectratio>
         <texture>common/OverlayList.png</texture>
       </control>
+	  <include>Time</include>
     <control type="group" id="50">
       <include>OpenClose</include>
       <include>EPGTimelineView</include>
