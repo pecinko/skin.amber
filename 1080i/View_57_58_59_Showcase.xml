@@ -147,11 +147,12 @@
           <posy>546</posy>
           <control type="label" description="Title Label">
             <posy>81</posy>
-            <width>900</width>
+            <width>1360</width>
             <height>60</height>
             <textcolor>White2</textcolor>
             <font>InfoTitle</font>
-            <label>$INFO[ListItem.Label]</label>
+            <scroll>false</scroll>
+			<label>$INFO[ListItem.Label]</label>
           </control>
           <control type="image" description="Watched Overlay">
             <visible>Container.Content(Movies)</visible>
@@ -165,14 +166,14 @@
           <control type="label" description="Details">
             <posy>148</posy>
             <height>33</height>
-            <width>900</width>
+            <width>1200</width>
             <font>Details</font>
             <label>$VAR[Details]</label>
           </control>
           <control type="label" description="Genre">
             <posy>189</posy>
             <height>33</height>
-            <width>900</width>
+            <width>1200</width>
             <font>Details</font>
             <label>$INFO[ListItem.Genre]</label>
           </control>
