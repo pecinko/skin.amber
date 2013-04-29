@@ -37,7 +37,7 @@
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
-          <itemlayout condition="Container.Content(Movies) | container.content(TVshows) | container.content(seasons)" height="350" width="290">
+          <itemlayout condition="Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)" height="350" width="290">
             <control type="image">
             <include>MovieShowcaseBG</include>
           </control>
@@ -45,7 +45,7 @@
             <include>MovieShowcaseThumb</include>
           </control>
           </itemlayout>
-          <focusedlayout condition="Container.Content(Movies) | container.content(TVshows) | container.content(seasons)" height="350" width="290">
+          <focusedlayout condition="Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)" height="350" width="290">
             <control type="image">
             <include>MovieShowcaseFO</include>
           </control>
@@ -94,7 +94,7 @@
               <label>$INFO[ListItem.Label]</label>
             </control>
           </focusedlayout>
-          <itemlayout condition="![container.content(addons) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)]" height="350" width="386">
+          <itemlayout condition="![container.content(addons) | Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)]" height="350" width="386">
             <control type="image">
             <include>EpisodePanelThumbDimensions</include>
              <bordersize>-16</bordersize>
@@ -140,7 +140,7 @@
               <label>$INFO[ListItem.Label]</label>
             </control>
           </itemlayout>
-          <focusedlayout condition="![container.content(addons) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)]" height="350" width="386">
+          <focusedlayout condition="![container.content(addons) | Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)]" height="350" width="386">
             <control type="image">
               <include>EpisodePanelThumbDimensions</include>
               <bordersize>-16</bordersize>

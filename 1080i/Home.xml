@@ -627,6 +627,12 @@
             <label>271</label>
             <onclick>ActivateWindow(MusicLibrary,top100,return)</onclick>
           </item>
+		  <item id="23" description="Music Videos">
+            <visible>Container(300).HasFocus(6) + Library.HasContent(MusicVideos)</visible>
+            <label>20389</label>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
+			<onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
+          </item>
           <item id="24" description="Recently added">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
             <label>31020</label>

@@ -105,7 +105,7 @@
     <control type="group" description="50 MediaInfo">
       <visible>Control.IsVisible(50)</visible>
       <control type="group" description="Thumbs NO info">
-        <visible>![Container.Content(movies) | container.content(tvshows) | container.content(episodes)]</visible>
+        <visible>![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)]</visible>
         <control type="image" id="70050" description="Poster">
           <visible>SubString(Container.FolderPath,videodb://1/2,left) | SubString(Container.FolderPath,videodb://4,left) | Container.Content(Seasons)</visible>
           <posx>147</posx>
@@ -141,7 +141,7 @@
         </control>
       </control>
       <control type="group" description="MediaInfo">
-        <visible>Container.Content(movies) | container.content(tvshows) | container.content(episodes)</visible>
+        <visible>Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)</visible>
         <control type="group" description="Movies and shows">
           <visible>!container.content(episodes)</visible>
           <control type="image" description="Thumb">
@@ -266,7 +266,7 @@
     <control type="group" description="54 MediaInfo">
       <visible>Control.IsVisible(54)</visible>
 	  <control type="image" description="GENERIC Thumb ONLY">
-           <visible>![Container.Content(movies) | container.content(tvshows) | container.content(episodes)]</visible>
+           <visible>![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)]</visible>
 		    <posx>60</posx>
             <posy>573</posy>
             <width>580</width>
@@ -277,7 +277,7 @@
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
       <control type="group" description="MediaInfo">
-        <visible>Container.Content(movies) | container.content(tvshows) | container.content(episodes)</visible>
+        <visible>Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)</visible>
         <control type="group" description="Movies and shows">
           <visible>!container.content(episodes)</visible>
           <control type="image">

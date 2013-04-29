@@ -361,7 +361,7 @@
       <label>- $LOCALIZE[31992]</label>
     </control>
 	<control type="radiobutton" id="9157" description="View 53 Bigger">
-      <visible>Control.IsVisible(53) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | container.content(movies) | container.content(seasons)]</visible>
+      <visible>Control.IsVisible(53) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | container.content(musicvideos) | container.content(movies) | container.content(seasons)]</visible>
       <font>ListDetails</font>
       <include>9000SysButtons</include>
       <onclick>Skin.ToggleSetting(53_BigGrid)</onclick>
@@ -375,22 +375,22 @@
       <selected>Control.IsVisible(55)</selected>
       <label>Big Panel</label>
     </control>
-    <control type="radiobutton" id="9159" description="View 57">
+    <control type="radiobutton" id="9159" description="View 57 EPISODES">
       <visible>container.content(episodes)</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(57)</onclick>
       <selected>Control.IsVisible(57)</selected>
       <label>20445</label>
     </control>
-    <control type="radiobutton" id="9160" description="View 58">
-      <visible>![container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+    <control type="radiobutton" id="9160" description="View 58 SQUARES">
+      <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(58)</onclick>
       <selected>Control.IsVisible(58)</selected>
       <label>20445</label>
     </control>
-    <control type="radiobutton" id="9161" description="View 59">
-      <visible>[container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
+    <control type="radiobutton" id="9161" description="View 59 POSTERS">
+      <visible>[[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(59)</onclick>
       <selected>Control.IsVisible(59)</selected>

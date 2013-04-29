@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="List_Layout">
-    <itemlayout condition="![Container.Content(movies) | container.content(tvshows) | container.content(episodes)]" height="72" width="1210">
+    <itemlayout condition="![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)]" height="72" width="1210">
       <control type="image">
         <posx>0</posx>
         <posy>0</posy>
@@ -30,7 +30,7 @@
       </control>
       <include>ListWatchedOverlay</include>
     </itemlayout>
-    <focusedlayout condition="![Container.Content(movies) | container.content(tvshows) | container.content(episodes)]" height="72" width="1210">
+    <focusedlayout condition="![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)]" height="72" width="1210">
       <control type="image">
         <posx>0</posx>
         <posy>0</posy>
@@ -66,7 +66,7 @@
       </control>
       <include>ListWatchedOverlay</include>
     </focusedlayout>
-    <itemlayout condition="Container.Content(movies) | container.content(tvshows) | [Control.IsVisible(54) + container.content(episodes)]" height="72" width="1210">
+    <itemlayout condition="Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | [Control.IsVisible(54) + container.content(episodes)]" height="72" width="1210">
       <control type="image" description="BG">
         <posx>570</posx>
         <width>640</width>
@@ -82,7 +82,7 @@
       </control>
       <include>ListWatchedOverlay</include>
     </itemlayout>
-    <focusedlayout condition="Container.Content(movies) | container.content(tvshows) | [Control.IsVisible(54) + container.content(episodes)]" height="72" width="1210">
+    <focusedlayout condition="Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | [Control.IsVisible(54) + container.content(episodes)]" height="72" width="1210">
       <control type="image" description="BG">
         <posx>570</posx>
         <width>640</width>
