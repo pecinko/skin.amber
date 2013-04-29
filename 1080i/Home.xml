@@ -3,7 +3,7 @@
   <allowoverlay>yes</allowoverlay>
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
-  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
   <controls>
@@ -697,6 +697,12 @@
             <onclick>Skin.ToggleSetting(plexbmc)</onclick>
             <onclick>XBMC.ReloadSkin()</onclick>
           </item>
+          <item id="57" description="Refresh PleXBMC">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+            <visible>Container(300).HasFocus(10)</visible>
+            <label>Refresh</label>
+            <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
+          </item>		  
         </content>
       </control>
     </control>
