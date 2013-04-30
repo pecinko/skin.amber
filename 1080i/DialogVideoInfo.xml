@@ -24,51 +24,34 @@
       <height>300</height>
       <texture>img/DefaultGradient.png</texture>
     </control>
-    <control type="image">
-      <visible>SubString(Container.FolderPath,videodb://3,left)</visible>
-	  <posx>0</posx>
-      <posy>124</posy>
-      <width>765</width>
-      <height>956</height>
-      <texture>info/MusicInfoGradient.png</texture>
-    </control>
     <control type="image" description="Cover">
-      <visible>![Container.Content(episodes) | SubString(Container.FolderPath,videodb://3,left)]</visible>
+      <visible>!Container.Content(episodes)</visible>
       <posx>0</posx>
       <posy>0</posy>
       <width>729</width>
       <height>1080</height>
-      <texture fallback="DefaultVideoBigPoster.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+      <texture fallback="DefaultFile.png" background="true">$INFO[ListItem.Thumb]</texture>
       <aspectratio>stretch</aspectratio>
     </control>
     <control type="image" description="Episodes Season Poster">
-      <visible>Container.Content(episodes) + !IsEmpty(ListItem.Art(season.poster))</visible>
+      <visible>Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))</visible>
       <posx>0</posx>
       <posy>0</posy>
       <width>729</width>
       <height>1080</height>
-      <texture background="true">$INFO[ListItem.Art(season.poster)]</texture>
+      <texture background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
       <aspectratio>stretch</aspectratio>
     </control>
-	<control type="image" description="Episodes TVShow Poster">
-      <visible>Container.Content(episodes) + IsEmpty(ListItem.Art(season.poster))</visible>
+	<control type="image" description="Episodes Season Poster">
+      <visible>Container.Content(episodes) + IsEmpty(ListItem.Art(tvshow.poster))</visible>
       <posx>0</posx>
       <posy>0</posy>
       <width>729</width>
       <height>1080</height>
-      <texture fallback="DefaultVideoBigPoster.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-      <aspectratio>stretch</aspectratio>
+      <texture fallback="DefaultFile.png" background="true">$INFO[ListItem.Thumb]</texture>
+      <aspectratio>scale</aspectratio>
     </control>
-	<control type="image" description="Episodes">
-      <visible>SubString(Container.FolderPath,videodb://3,left)</visible>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>729</width>
-      <height>1080</height>
-      <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.thumb]</texture>
-      <aspectratio>keep</aspectratio>
-    </control>
-    <control type="image">
+     <control type="image">
       <description>background image</description>
       <posx>729</posx>
       <posy>0</posy>
@@ -141,7 +124,7 @@
                   <label>$LOCALIZE[20417]:</label>
                   <label2>$INFO[ListItem.Writer]</label2>
                   <onclick>-</onclick>
-                  <visible>!IsEmpty(ListItem.Writer)</visible>
+				  <visible>!IsEmpty(ListItem.Writer)</visible>
                 </item>
                 <item>
                   <label>$LOCALIZE[572]:</label>
@@ -490,7 +473,7 @@
           <label>344</label>
           <onclick>Control.SetFocus(50)</onclick>
           <texturefocus>-</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
+          <alttexturefocus>-</alttexturefocus>
         </control>
         <control type="button" id="6" description="Refresh">
           <height>54</height>
@@ -545,6 +528,7 @@
             <height>40</height>
             <align>left</align>
             <aligny>center</aligny>
+			<scroll>false</scroll>
             <font>InfoPlot</font>
             <info>ListItem.Label</info>
           </control>
@@ -576,7 +560,7 @@
         <posy>582</posy>
         <width>249</width>
         <height>360</height>
-        <texture>$INFO[Container(50).ListItem.Icon]</texture>
+        <texture fallback="DefaultFile.png">$INFO[Container(50).ListItem.Thumb]</texture>
         <include>ThumbBorder</include>
 		<aspectratio aligny="top">scale</aspectratio>
       </control>
