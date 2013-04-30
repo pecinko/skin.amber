@@ -72,14 +72,93 @@
         <animation effect="fade" start="100" end="0" time="150" delay="0" center="120,350" reversible="false">Hidden</animation>
         <animation effect="fade" start="0" end="100" time="450" delay="400" center="120,350" reversible="false">Visible</animation>
         <posx>360</posx>
-        <posy>684</posy>
+        <posy>1020</posy>
         <width>1200</width>
-        <height>30</height>
+        <height>45</height>
         <align>center</align>
         <font>InfoTitle</font>
         <textcolor>White2</textcolor>
         <label>$INFO[ListItem.Label]</label>
       </control>
+      <control type="grouplist" description="Left Flags">
+        <posx>30</posx>
+        <posy>1023</posy>
+        <width min="90" max="450">auto</width>
+        <height>45</height>
+        <itemgap>30</itemgap>
+        <orientation>horizontal</orientation>
+        <align>left</align>
+        <aligny>center</aligny>
+        <control type="image">
+          <visible>![IsEmpty(ListItem.AudioChannels) | ListItem.IsFolder]</visible>
+          <height>45</height>
+          <width>90</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>![IsEmpty(ListItem.AudioChannels) | ListItem.IsFolder]</visible>
+          <height>45</height>
+          <width>90</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>container.content(albums) | container.content(songs) | container.content(seasons)  | container.content(tvshows)</visible>
+          <include>Stars</include>
+        </control>
+      </control>
+      <control type="grouplist" description="Right Flags">
+        <posx>1440</posx>
+        <posy>1023</posy>
+        <width min="90" max="450">auto</width>
+        <height>45</height>
+        <itemgap>30</itemgap>
+        <orientation>horizontal</orientation>
+        <align>right</align>
+        <aligny>center</aligny>
+        <control type="image">
+          <visible>IntegerGreaterThan(ListItem.VideoResolution,710) + ![IsEmpty(ListItem.VideoResolution) | ListItem.IsFolder]</visible>
+          <height>45</height>
+          <width>90</width>
+          <posx>0</posx>
+          <posy>0</posy>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>![IsEmpty(ListItem.VideoCodec) | ListItem.IsFolder]</visible>
+          <height>45</height>
+          <width>90</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <colordiffuse>Silver</colordiffuse>
+          <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+        </control>
+        <control type="label">
+          <visible>container.content(albums) | container.content(songs) | container.content(seasons)  | container.content(tvshows)</visible>
+          <height>45</height>
+          <width>90</width>
+          <font>Volume</font>
+          <align>right</align>
+          <label>$INFO[ListItem.Year]</label>
+        </control>
+      </control>
+      <!--<control type="label" description="Details">
+        <posx>360</posx>
+        <posy>1029</posy>
+        <height>33</height>
+        <width>1200</width>
+        <align>center</align>
+        <font>Details</font>
+        <label>$VAR[Details]</label>
+      </control>-->
     </control>
     <control type="group" description="Showcase 59 Movies TV Seasons">
       <visible>Control.IsVisible(59)</visible>
@@ -87,7 +166,7 @@
         <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>-120</posx>
-        <posy>725</posy>
+        <posy>675</posy>
         <width>2160</width>
         <height>339</height>
         <onleft>59</onleft>
@@ -223,7 +302,7 @@
       <control type="fixedlist" id="58">
         <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
         <posx>-174</posx>
-        <posy>600</posy>
+        <posy>525</posy>
         <width>2268</width>
         <height>660</height>
         <onleft>58</onleft>
@@ -290,7 +369,7 @@
         <visible>container.content(episodes)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>-75</posx>
-        <posy>741</posy>
+        <posy>660</posy>
         <width>2070</width>
         <height>291</height>
         <onleft>57</onleft>
