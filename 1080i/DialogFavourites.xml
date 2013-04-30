@@ -73,6 +73,14 @@
             <height>288</height>
             <include>SquareThumb</include>
           </control>
+		  <control type="label">
+            <posx>172</posx>
+            <posy>330</posy>
+            <width>354</width>
+            <height>45</height>
+            <align>center</align>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
         </itemlayout>
         <focusedlayout height="420" width="360">
           <control type="image">
