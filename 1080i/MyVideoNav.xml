@@ -35,7 +35,7 @@
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
       <control type="group" description="Media info">
-        <posx>99</posx>
+    	<posx>99</posx>
         <posy>528</posy>
         <control type="label" description="Label non episodes">
           <visible>!container.content(episodes)</visible>
