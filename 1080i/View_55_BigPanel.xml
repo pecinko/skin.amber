@@ -37,7 +37,8 @@
       </control>
 	  <control type="group" description="Container and frame">
         <control type="panel" id="55" description="Big Panel">
-          <viewtype label="Big Panel">Big Panel</viewtype>
+          <include>Container_Fade</include>
+		  <viewtype label="Big Panel">Big Panel</viewtype>
           <posx>810</posx>
           <posy>114</posy>
           <width>1137</width>

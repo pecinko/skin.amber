@@ -12,6 +12,11 @@
       <size>42</size>
     </font>
     <font>
+      <name>Year</name>
+      <filename>BebasNeue.ttf</filename>
+      <size>32</size>
+    </font>
+	<font>
       <name>Slider</name>
       <filename>BebasNeue.ttf</filename>
       <size>32</size>

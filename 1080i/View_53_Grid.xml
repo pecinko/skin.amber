@@ -12,7 +12,8 @@
         <texture>common/OverlayFS.png</texture>
       </control>
       <control type="panel" id="53" description="Grid">
-        <viewtype label="536">Grid</viewtype>
+        <include>Container_Fade</include>
+		<viewtype label="536">Grid</viewtype>
         <posx>60</posx>
         <posy>90</posy>
         <width>1800</width>

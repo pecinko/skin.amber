@@ -598,7 +598,7 @@
           </item>
           <item id="18" description="Music Videos">
             <visible>Container(300).HasFocus(3) + Library.HasContent(MusicVideos)</visible>
-            <label>20389</label>
+            <label>31971</label>
             <onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
           </item>
           <item id="19" description="Files Videos">
@@ -629,7 +629,7 @@
           </item>
 		  <item id="23" description="Music Videos">
             <visible>Container(300).HasFocus(6) + Library.HasContent(MusicVideos)</visible>
-            <label>20389</label>
+            <label>31972</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
 			<onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
           </item>
