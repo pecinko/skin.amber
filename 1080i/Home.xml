@@ -132,6 +132,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.0.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.0.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.0.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.0.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.0.ondeck)]</property>
           </item>
           <item id="31">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
@@ -145,6 +147,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.1.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.1.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.1.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.1.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.1.ondeck)]</property>
           </item>
           <item id="32">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
@@ -158,6 +162,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.2.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.2.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.2.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.2.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.2.ondeck)]</property>
           </item>
           <item id="33">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
@@ -171,6 +177,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.3.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.3.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.3.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.3.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.3.ondeck)]</property>
           </item>
           <item id="34">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
@@ -184,6 +192,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.4.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.4.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.4.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.4.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.4.ondeck)]</property>
           </item>
           <item id="35">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
@@ -197,6 +207,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.5.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.5.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.5.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.5.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.5.ondeck)]</property>
           </item>
           <item id="36">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
@@ -210,6 +222,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.6.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.6.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.6.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.6.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.6.ondeck)]</property>
           </item>
           <item id="37">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
@@ -223,6 +237,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.7.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.7.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.7.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.7.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.7.ondeck)]</property>
           </item>
           <item id="39">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
@@ -236,6 +252,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.8.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.8.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.8.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.8.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.8.ondeck)]</property>
           </item>
           <item id="40">
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
@@ -249,6 +267,8 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.9.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.9.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.9.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.9.newest)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.9.ondeck)]</property>
           </item>
           <item id="50" description="Channels">
             <visible>Skin.HasSetting(plexbmc)</visible>
@@ -706,6 +726,20 @@
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <label>Recently Viewed</label>
             <onclick>$INFO[Container(300).ListItem.Property(viewed)]</onclick>
+          </item>		  
+          <item id="61" description="PleXBMC: Recently released">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
+            <label>Recently Released</label>
+            <onclick>$INFO[Container(300).ListItem.Property(newest)]</onclick>
+          </item>		  
+          <item id="62" description="PleXBMC: ondeck">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
+            <label>On Deck</label>
+            <onclick>$INFO[Container(300).ListItem.Property(ondeck)]</onclick>
           </item>		  
         </content>
       </control>
