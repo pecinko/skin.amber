@@ -112,7 +112,7 @@
   </default>
   <default type="radiobutton">
     <posx>0</posx>
-    <posy>6</posy>
+    <posy>0</posy>
     <height>60</height>
     <align>left</align>
     <aligny>center</aligny>
@@ -122,26 +122,34 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <radiowidth>70</radiowidth>
-    <radioheight>30</radioheight>
+    <radiowidth>120</radiowidth>
+    <radioheight>60</radioheight>
     <texturefocus border="2">common/ButtonFO.png</texturefocus>
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
-	<textureradiofocus>img/RadioON.png</textureradiofocus>
-    <textureradionofocus>-</textureradionofocus>
+	<textureradiofocus>buttons/RadioOn.png</textureradiofocus>
+    <textureradionofocus>buttons/RadioOff.png</textureradionofocus>
+	<!--<textureradiofocus>img/RadioON.png</textureradiofocus>
+    <textureradionofocus>-</textureradionofocus>-->
     <textoffsetx>10</textoffsetx>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrol">
     <posx>0</posx>
-    <posy>0</posy>
-    <textureup>img/ArrowUpNF.png</textureup>
+    <spinposx>7</spinposx>
+	<posy>0</posy>
+    <height>60</height>
+	<textureup>buttons/SpinUpNF.png</textureup>
+    <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
+    <texturedown>buttons/SpinDownNF.png</texturedown>
+    <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+	<!--<textureup>img/ArrowUpNF.png</textureup>
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
-    <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>
+    <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>-->
     <texturefocus border="2">common/ButtonFO.png</texturefocus>
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
-	<spinwidth>21</spinwidth>
-    <spinheight>21</spinheight>
+	<spinwidth>60</spinwidth>
+    <spinheight>60</spinheight>
     <font>size22</font>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
@@ -156,19 +164,22 @@
   </default>
   <default type="spincontrolex">
     <posx>0</posx>
-    <posy>0</posy>
-    <width>450</width>
+    <spinposx>7</spinposx>
+	<posy>0</posy>
     <height>60</height>
-    <label>-</label>
     <font>size22</font>
-    <textureup>img/ArrowUpNF.png</textureup>
+	<textureup>buttons/SpinUpNF.png</textureup>
+    <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
+    <texturedown>buttons/SpinDownNF.png</texturedown>
+    <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+    <!--<textureup>img/ArrowUpNF.png</textureup>
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
-    <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>
+    <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>-->
     <texturefocus border="2">common/ButtonFO.png</texturefocus>
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
-	<spinwidth>21</spinwidth>
-    <spinheight>21</spinheight>
+	<spinwidth>60</spinwidth>
+    <spinheight>60</spinheight>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
     <focusedcolor>White2</focusedcolor>

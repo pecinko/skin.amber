@@ -227,17 +227,21 @@
   </include>
   <include name="9000ViewButtons">
     <height>54</height>
-    <width>444</width>
+    <width>500</width>
     <font>ViewMenu</font>
     <textoffsetx>30</textoffsetx>
     <disabledcolor>Grey</disabledcolor>
     <textureradiofocus>img/ArrowRightFO.png</textureradiofocus>
-    <radioposx>-20</radioposx>
+	<textureradionofocus>-</textureradionofocus>
+    <radiowidth>15</radiowidth>
+    <radioheight>60</radioheight>
+	<radioposx>5</radioposx>
   </include>
   <include name="9000SysButtons">
     <height>54</height>
-    <width>444</width>
+    <width>500</width>
     <font>ViewMenu</font>
+	<radioposx>390</radioposx>
     <textoffsetx>30</textoffsetx>
     <disabledcolor>Grey</disabledcolor>
   </include>
@@ -254,7 +258,7 @@
     <control type="image">
       <posx>-500</posx>
       <posy>0</posy>
-      <width>502</width>
+      <width>567</width>
       <height>1080</height>
       <texture border="0,0,0,0">common/ViewMenu.png</texture>
     </control>
@@ -262,7 +266,7 @@
   <include name="9000GrouplistParameters">
     <posx>-499</posx>
     <posy>-9</posy>
-    <width>444</width>
+    <width>500</width>
     <height>1120</height>
     <itemgap>0</itemgap>
     <onleft>9001</onleft>
