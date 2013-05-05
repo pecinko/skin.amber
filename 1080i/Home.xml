@@ -588,7 +588,12 @@
             <label>136</label>
             <onclick>ActivateWindow(Videos,playlists,return)</onclick>
           </item>
-          <item id="12" description="RA Movies">
+          <item id="11" description="MyMovies">
+            <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies1)</visible>
+            <label>135</label>
+            <onclick>ActivateWindow(Videos,Moviegenres,return)</onclick>
+          </item>
+		  <item id="12" description="RA Movies">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies2)</visible>
             <label>20434</label>
             <onclick>ActivateWindow(Videos,Moviesets,return)</onclick>
