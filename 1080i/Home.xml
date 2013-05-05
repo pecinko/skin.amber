@@ -564,15 +564,15 @@
           </item>
           <item id="7" description="RA TV">
             <visible>Container(300).HasFocus(5)</visible>
-            <label>31020</label>
-            <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
-          </item>
-          <item id="8" description="RA TV">
-            <visible>Container(300).HasFocus(5)</visible>
             <label>575</label>
             <onclick>ActivateWindow(Videos,&quot;library://video/inprogressshows.xml/&quot;,return)</onclick>
           </item>
-          <item id="9" description="Library">
+          <item id="8" description="RA TV">
+            <visible>Container(300).HasFocus(5)</visible>
+            <label>31020</label>
+            <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+          </item>
+		  <item id="9" description="Library">
             <visible>Container(300).HasFocus(5)</visible>
             <label>1024</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>

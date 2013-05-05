@@ -118,7 +118,7 @@
       <control type="label" description="Main Label">
         <posx>219</posx>
         <height>72</height>
-        <width>990</width>
+        <width>920</width>
         <scroll>false</scroll>
         <label>$INFO[ListItem.Label]</label>
       </control>
@@ -132,9 +132,7 @@
         <texture flipy="true" border="3">list/ListNF.png</texture>
       </control>
       <control type="image" description="BG">
-        <animation effect="slide" start="0,-72" end="0,0" time="300" reversible="false" tween="quadratic" easing="out" condition="Control.IsVisible(54) + Container.OnNext">focus</animation>
-       <animation effect="slide" start="0,72" end="0,0" time="300" reversible="false"  tween="quadratic" easing="out" condition="Control.IsVisible(54) + Container.OnPrevious">focus</animation>
-	   <posx>200</posx>
+        <posx>200</posx>
         <posy>3</posy>
         <width>1010</width>
         <height>69</height>
@@ -143,7 +141,7 @@
       <control type="label" description="Main Label">
         <posx>219</posx>
         <height>72</height>
-        <width>990</width>
+        <width>920</width>
         <label>$INFO[ListItem.Label]</label>
       </control>
       <include>ListWatchedOverlay</include>
