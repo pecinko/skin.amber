@@ -442,7 +442,7 @@
         </control>
 		<control type="textbox" description="Plot51">
           <posx>0</posx>
-          <posy>218</posy>
+          <posy>207</posy>
           <width>630</width>
           <height>548</height>
 		  <align>left</align>

@@ -5,11 +5,11 @@
   <controls>
     <control type="group">
       <posx>578</posx>
-      <posy>180</posy>
+      <posy>120</posy>
       <control type="image">
         <width>763</width>
         <height>136</height>
-        <texture>dialogs/ScanBG.png</texture>
+        <texture>dialogs/DialogSliderBG.png</texture>
       </control>
 	  <control type="image" description="Icon">
         <posx>4</posx>
