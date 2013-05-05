@@ -24,7 +24,7 @@
       </control>
       <control type="group" description="Container and frame">
         <control type="panel" id="51" description="Grid">
-          <include>Container_Fade</include>
+          
 		  <viewtype label="Panel">Panel</viewtype>
           <posx>750</posx>
           <posy>351</posy>

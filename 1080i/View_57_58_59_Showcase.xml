@@ -72,9 +72,9 @@
         <animation effect="fade" start="100" end="0" time="150" delay="0" center="120,350" reversible="false">Hidden</animation>
         <animation effect="fade" start="0" end="100" time="450" delay="400" center="120,350" reversible="false">Visible</animation>
         <control type="label" description="Title Label">
-          <posx>460</posx>
+          <posx>510</posx>
           <posy>1020</posy>
-          <width>1000</width>
+          <width>900</width>
           <height>45</height>
           <align>center</align>
           <font>InfoTitle</font>
@@ -85,11 +85,11 @@
           <posx>30</posx>
           <posy>1027</posy>
           <height>33</height>
-          <width>1200</width>
+          <width>450</width>
           <align>left</align>
           <font>Details</font>
           <scroll>false</scroll>
-          <label>$VAR[Details]</label>
+          <label>$VAR[Fanart_Details]</label>
         </control>
         <control type="image" description="Stars">
           <visible>![container.content(albums) | container.content(addons)]</visible>
@@ -109,18 +109,31 @@
           <scroll>false</scroll>
           <label>$INFO[ListItem.Year]</label>
         </control>
-		<control type="image" description="Watched Overlay">
-          <visible>Window.IsActive(MyVideoNav.xml) + [Container.content(musicVideos) | Container.Content(Movies)]</visible>
-          <posx>204r</posx>
-          <posy>1000</posy>
-          <width>22</width>
-          <height>90</height>
-          <texture>$VAR[Overlay]</texture>
-          <aspectratio align="right">keep</aspectratio>
+		<control type="label" description="Right value">
+          <visible>container.content(songs)</visible>
+		  <posx>200r</posx>
+          <posy>1031</posy>
+          <height>33</height>
+          <width>500</width>
+          <align>right</align>
+          <font>Year</font>
+          <scroll>false</scroll>
+          <label>$INFO[ListItem.FileExtension]</label>
         </control>
-        <control type="image" description="HD badge">
+		<control type="label" description="Right value">
+          <visible>container.content(addons)</visible>
+		  <posx>30r</posx>
+          <posy>1031</posy>
+          <height>33</height>
+          <width>500</width>
+          <align>right</align>
+          <font>Year</font>
+          <scroll>false</scroll>
+          <label>$INFO[ListItem.Property(Addon.Version]</label>
+        </control>
+		<control type="image" description="HD badge">
           <visible>Window.IsActive(MyVideoNav.xml) + ![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-          <posx>310r</posx>
+          <posx>292r</posx>
           <posy>1034</posy>
           <height>24</height>
           <width>90</width>
@@ -133,7 +146,6 @@
     <control type="group" description="Showcase 59 Movies TV Seasons">
       <visible>Control.IsVisible(59)</visible>
       <control type="fixedlist" id="59">
-        <include>Container_Fade</include>
 		<visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>-120</posx>
@@ -172,6 +184,7 @@
         </focusedlayout>
       </control>
       <control type="group">
+	    <visible>Skin.HasSetting(Posters_Gallery)</visible>
         <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
@@ -197,7 +210,7 @@
           <posx>330</posx>
           <posy>546</posy>
           <control type="label" description="Title Label">
-            <posy>81</posy>
+            <posy>78</posy>
             <width>1360</width>
             <height>60</height>
             <textcolor>White2</textcolor>
@@ -207,22 +220,22 @@
           </control>
           <control type="image" description="Watched Overlay">
             <visible>Container.content(MusicVideos) | Container.Content(Movies)</visible>
-            <posx>-39</posx>
-            <posy>132</posy>
+            <posx>-36</posx>
+            <posy>125</posy>
             <width>21</width>
             <height>70</height>
             <texture>$VAR[Overlay]</texture>
             <aspectratio>keep</aspectratio>
           </control>
           <control type="label" description="Details">
-            <posy>148</posy>
+            <posy>141</posy>
             <height>33</height>
             <width>1200</width>
             <font>Details</font>
             <label>$VAR[Details]</label>
           </control>
           <control type="label" description="Genre">
-            <posy>189</posy>
+            <posy>177</posy>
             <height>33</height>
             <width>1200</width>
             <font>Details</font>
@@ -230,9 +243,9 @@
           </control>
           <control type="textbox" description="Plot">
             <posx>0</posx>
-            <posy>235</posy>
+            <posy>228</posy>
             <width>1500</width>
-            <height>122</height>
+            <height>125</height>
             <align>left</align>
             <label>$VAR[Plots]</label>
           </control>
@@ -272,8 +285,7 @@
     <control type="group" description="Showcase 58 Squares">
       <visible>Control.IsVisible(58)</visible>
       <control type="fixedlist" id="58">
-        <include>Container_Fade</include>
-		<visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+      <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
         <posx>-174</posx>
         <posy>546</posy>
         <width>2268</width>
@@ -339,11 +351,10 @@
     <control type="group" description="Showcase 57 Episodes">
       <visible>Control.IsVisible(57)</visible>
       <control type="fixedlist" id="57">
-        <include>Container_Fade</include>
 		<visible>container.content(episodes)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>-75</posx>
-        <posy>660</posy>
+        <posy>690</posy>
         <width>2070</width>
         <height>291</height>
         <onleft>57</onleft>
@@ -428,7 +439,8 @@
         </focusedlayout>
       </control>
       <control type="group">
-        <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
+        <visible>Skin.HasSetting(Episodes_Gallery)</visible>
+		<visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
         <control type="button" id="7000">

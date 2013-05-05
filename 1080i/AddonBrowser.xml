@@ -155,7 +155,7 @@
         <posx>140</posx>
         <posy>663</posy>
         <width>534</width>
-        <height>309</height>
+        <height>303</height>
         <font>InfoPlot</font>
         <align>justify</align>
         <label>$INFO[Container(50).ListItem.Property(Addon.Description)]</label>

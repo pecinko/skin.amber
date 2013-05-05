@@ -12,7 +12,7 @@
         <texture>common/OverlayLowList.png</texture>
       </control>
       <control type="fixedlist" id="54">
-        <include>Container_Fade</include>
+        
         <animation effect="slide" start="0,0" end="0,-144" time="0" condition="StringCompare(Container.NumItems,1) | StringCompare(Container.NumItems,0)">conditional</animation>
         <animation effect="slide" start="0,0" end="0,-144" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
         <animation effect="slide" start="0,0" end="0,-72" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>

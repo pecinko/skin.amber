@@ -52,12 +52,6 @@
       <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,340" time="140" />
     </animation>
   </include>
-  <include name="Container_Fade">
-    <animation effect="fade" start="0" end="100" time="500" delay="0">WindowOpen</animation>
-    <animation effect="fade" start="100" end="0" time="200" delay="0">WindowClose</animation>
-    <animation effect="fade" start="0" end="100" time="500" delay="0">Visible</animation>
-    <animation effect="fade" start="100" end="0" time="200" delay="0">Hidden</animation>
-  </include>
   <include name="Icon_Fade">
     <fadetime>200</fadetime>
     <animation effect="fade" time="200">Visible</animation>
@@ -449,7 +443,7 @@
     <texturenofocus></texturenofocus>
     <alttexturenofocus></alttexturenofocus>
   </include>
-  <include name="List49_Commons">
+  <include name="List_9009_Commons" description="Video Info metadata container">
     <posx>0</posx>
     <posy>0</posy>
     <width>999</width>
@@ -459,7 +453,7 @@
     <onup>9000</onup>
     <ondown>9000</ondown>
     <pagecontrol>-</pagecontrol>
-    <itemlayout height="42">
+    <itemlayout height="42" width="999">
       <control type="label">
         <posx>200</posx>
         <posy>0</posy>
@@ -471,6 +465,7 @@
         <textcolor>Grey2</textcolor>
         <selectedcolor>selected</selectedcolor>
         <info>ListItem.Label</info>
+		<scroll>false</scroll>
       </control>
       <control type="label">
         <posx>220</posx>
@@ -483,9 +478,10 @@
         <textcolor>Silver</textcolor>
         <selectedcolor>White2</selectedcolor>
         <info>ListItem.Label2</info>
+		<scroll>false</scroll>
       </control>
     </itemlayout>
-    <focusedlayout height="42">
+    <focusedlayout height="42" width="999">
       <control type="label">
         <posx>200</posx>
         <posy>0</posy>
