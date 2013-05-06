@@ -38,14 +38,13 @@
         <ondown>5</ondown>
       </control>
       <control type="button" id="7">
-        <font>Details</font>
+        <textoffsetx>20</textoffsetx>
+		<font>Details</font>
       </control>
       <control type="radiobutton" id="8">
-        <radioposx>684</radioposx>
 		<font>Details</font>
       </control>
       <control type="spincontrolex" id="9">
-        <spinposx>-24</spinposx>
 		<font>Details</font>
         <reverse>yes</reverse>
       </control>

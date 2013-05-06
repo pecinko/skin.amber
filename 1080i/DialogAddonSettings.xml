@@ -50,13 +50,13 @@
       </control>
       
       <control type="button" id="3">
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>20</textoffsetx>
       </control>
       <control type="radiobutton" id="4">
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>20</textoffsetx>
       </control>
       <control type="spincontrolex" id="5">
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>20</textoffsetx>
         <reverse>yes</reverse>
       </control>
       <control type="image" id="6">

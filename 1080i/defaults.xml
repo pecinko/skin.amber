@@ -60,7 +60,7 @@
     <align>left</align>
     <aligny>center</aligny>
     <font>size22</font>
-    <textoffsetx>10</textoffsetx>
+    <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
     <focusedcolor>White2</focusedcolor>
@@ -79,7 +79,7 @@
     <aligny>center</aligny>
     <font>size22</font>
     <label>-</label>
-    <textoffsetx>10</textoffsetx>
+    <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
     <focusedcolor>White2</focusedcolor>
@@ -97,7 +97,7 @@
     <aligny>center</aligny>
     <font>size22</font>
     <label>-</label>
-    <textoffsetx>10</textoffsetx>
+    <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
     <focusedcolor>White2</focusedcolor>
@@ -122,7 +122,7 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <radiowidth>120</radiowidth>
+    <radiowidth>80</radiowidth>
     <radioheight>60</radioheight>
     <texturefocus border="2">common/ButtonFO.png</texturefocus>
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
@@ -130,13 +130,12 @@
     <textureradionofocus>buttons/RadioOff.png</textureradionofocus>
 	<!--<textureradiofocus>img/RadioON.png</textureradiofocus>
     <textureradionofocus>-</textureradionofocus>-->
-    <textoffsetx>10</textoffsetx>
+    <textoffsetx>20</textoffsetx>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrol">
     <posx>0</posx>
-    <spinposx>7</spinposx>
-	<posy>0</posy>
+    <posy>0</posy>
     <height>60</height>
 	<textureup>buttons/SpinUpNF.png</textureup>
     <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
@@ -148,7 +147,7 @@
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>-->
     <texturefocus border="2">common/ButtonFO.png</texturefocus>
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
-	<spinwidth>60</spinwidth>
+	<spinwidth>40</spinwidth>
     <spinheight>60</spinheight>
     <font>size22</font>
     <textcolor>White</textcolor>
@@ -156,7 +155,7 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <textoffsetx>10</textoffsetx>
+    <textoffsetx>20</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
     <reverse>yes</reverse>
@@ -178,14 +177,14 @@
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>-->
     <texturefocus border="2">common/ButtonFO.png</texturefocus>
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
-	<spinwidth>60</spinwidth>
+	<spinwidth>40</spinwidth>
     <spinheight>60</spinheight>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <textoffsetx>10</textoffsetx>
+    <textoffsetx>20</textoffsetx>
     <align>left</align>
     <aligny>center</aligny>
     <reverse>yes</reverse>
@@ -195,22 +194,23 @@
     <align>left</align>
     <aligny>center</aligny>
 	<visible>true</visible>
-    <sliderwidth>100</sliderwidth>
-    <sliderheight>24</sliderheight>
-    <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
-    <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
-    <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
+    <height>60</height>
+	<sliderwidth>180</sliderwidth>
+    <sliderheight>60</sliderheight>
+    <texturesliderbar>buttons/SliderBG.png</texturesliderbar>
+    <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
+    <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+	<textoffsetx>20</textoffsetx>
   </default>
   <default type="sliderex" description="Default Slider">
     <align>left</align>
     <aligny>center</aligny>
 	<height>60</height>
-    <width>450</width>
-    <sliderwidth>100</sliderwidth>
-    <sliderheight>24</sliderheight>
-    <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
-    <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
-    <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
+    <sliderwidth>180</sliderwidth>
+    <sliderheight>60</sliderheight>
+    <texturesliderbar>buttons/SliderBG.png</texturesliderbar>
+    <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
+    <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
     <texturefocus border="2">common/ButtonFO.png</texturefocus>
     <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
     <font>size22</font>
@@ -219,7 +219,7 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <textoffsetx>10</textoffsetx>
+    <textoffsetx>20</textoffsetx>
   </default>
   <default type="scrollbar">
     <posx>0</posx>
