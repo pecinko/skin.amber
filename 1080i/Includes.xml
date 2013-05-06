@@ -260,7 +260,7 @@
       <posy>0</posy>
       <width>567</width>
       <height>1080</height>
-      <texture border="0,0,0,0">common/ViewMenu.png</texture>
+      <texture>common/ViewMenu.png</texture>
     </control>
   </include>
   <include name="9000GrouplistParameters">

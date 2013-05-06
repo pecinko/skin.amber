@@ -62,7 +62,7 @@
           <label>$INFO[ListItem.Title]</label>
         </control>
         <control type="label" description="Details">
-          <posy>170</posy>
+          <posy>165</posy>
           <width>800</width>
           <height>33</height>
           <font>Details</font>
@@ -70,9 +70,9 @@
           <label>$VAR[Details]</label>
         </control>
         <control type="textbox" description="Plot51">
-          <posy>224</posy>
+          <posy>213</posy>
           <width>800</width>
-          <height>236</height>
+          <height>250</height>
           <shadowcolor>Black</shadowcolor>
           <label>$VAR[Plots]</label>
         </control>

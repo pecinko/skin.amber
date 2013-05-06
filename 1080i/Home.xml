@@ -813,7 +813,7 @@
         <posy>1044</posy>
         <width>720</width>
         <height>90</height>
-        <font>size15</font>
+        <font>rss</font>
         <urlset>1</urlset>
         <shadowcolor>ShadowDark</shadowcolor>
         <titlecolor>White2</titlecolor>
