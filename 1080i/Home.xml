@@ -17,7 +17,7 @@
     </control>
     <control type="group">
       <animation effect="slide" easing="out" start="0,0" end="0,400" time="350" delay="0" center="120,350" reversible="false" condition="Window.Next(1112)">Conditional</animation>
-	  <posy>90</posy>
+      <posy>90</posy>
       <control type="group" description="Furniture">
         <control type="image" description="Top glass border">
           <animation effect="zoom" start="100,100" end="100,50" time="100" condition="true">Conditional</animation>
@@ -29,7 +29,7 @@
         </control>
         <control type="image" description="Shelf BG">
           <visible>Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)</visible>
-		  <posx>760</posx>
+          <posx>760</posx>
           <posy>644</posy>
           <width>400</width>
           <height>50</height>
@@ -37,32 +37,23 @@
         </control>
         <control type="label" description="Shelf label">
           <visible>Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)</visible>
-		  <posx>760</posx>
+          <posx>760</posx>
           <posy>644</posy>
           <width>400</width>
           <height>50</height>
-		  <textcolor>Grey</textcolor>
+          <textcolor>Grey</textcolor>
           <shadowcolor>-</shadowcolor>
           <align>center</align>
           <label>31976</label>
         </control>
         <control type="image" description="Bottom glass border">
-          <!--<animation effect="zoom" start="100,100" end="100,50" time="100" condition="true">Conditional</animation>-->
           <animation effect="zoom" start="100,100" end="100,50" time="100" condition="!IntegerGreaterThan(Container(9001).NumItems,0)">Conditional</animation>
-		  <posx>0</posx>
+          <posx>0</posx>
           <posy>787</posy>
           <width>1920</width>
           <height>87</height>
-           <texture flipy="true" border="0,10,0,0">home/NavbarGlass2.png</texture>
+          <texture flipy="true" border="0,10,0,0">home/NavbarGlass2.png</texture>
         </control>
-		<!--<control type="image" description="Submenu BG">
-          <animation effect="zoom" start="100,100" end="100,0" time="100" condition="!IntegerGreaterThan(Container(9001).NumItems,0)">Conditional</animation>
-		  <posx>-40</posx>
-          <posy>788</posy>
-          <width>2000</width>
-          <height>50</height>
-          <texture flipy="true" border="39,0,39,0">home/HomeTopNav2.png</texture>
-        </control>-->
         <control type="image">
           <posx>0</posx>
           <posy>625</posy>
@@ -71,7 +62,6 @@
           <texture flipy="true">home/HomeMenuBack3.png</texture>
         </control>
       </control>
-      
       <control type="fixedlist" id="300" description="Main Bar">
         <animation effect="fade" time="200" start="100" end="25" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
         <posx>-338</posx>
@@ -132,7 +122,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.0.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.0.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.0.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.0.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.0.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.0.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.0.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.0.year)]</property>
@@ -149,7 +139,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.1.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.1.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.1.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.1.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.1.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.1.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.1.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.1.year)]</property>
@@ -166,7 +156,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.2.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.2.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.2.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.2.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.2.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.2.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.2.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.2.year)]</property>
@@ -183,7 +173,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.3.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.3.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.3.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.3.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.3.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.3.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.3.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.3.year)]</property>
@@ -200,7 +190,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.4.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.4.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.4.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.4.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.4.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.4.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.4.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.4.year)]</property>
@@ -217,7 +207,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.5.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.5.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.5.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.5.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.5.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.5.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.5.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.5.year)]</property>
@@ -234,7 +224,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.6.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.6.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.6.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.6.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.6.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.6.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.6.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.6.year)]</property>
@@ -251,7 +241,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.7.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.7.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.7.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.7.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.7.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.7.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.7.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.7.year)]</property>
@@ -268,7 +258,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.8.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.8.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.8.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.8.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.8.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.8.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.8.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.8.year)]</property>
@@ -285,7 +275,7 @@
             <property name="recent">$INFO[Window(Home).Property(plexbmc.9.recent)]</property>
             <property name="viewed">$INFO[Window(Home).Property(plexbmc.9.viewed)]</property>
             <property name="shared">$INFO[Window(Home).Property(plexbmc.9.shared)]</property>
-            <property name="newest">$INFO[Window(Home).Property(plexbmc.9.newest)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.9.released)]</property>
             <property name="ondeck">$INFO[Window(Home).Property(plexbmc.9.ondeck)]</property>
             <property name="album">$INFO[Window(Home).Property(plexbmc.9.album)]</property>
             <property name="year">$INFO[Window(Home).Property(plexbmc.9.year)]</property>
@@ -293,7 +283,7 @@
           <item id="50" description="Channels">
             <visible>Skin.HasSetting(plexbmc)</visible>
             <label>Channels</label>
-			<thumb>special://skin/backgrounds/Channels.jpg</thumb>
+            <thumb>special://skin/backgrounds/Channels.jpg</thumb>
             <onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall&quot;,return)</onclick>
           </item>
           <item id="49" description="Queue">
@@ -354,7 +344,7 @@
             <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
             <onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
           </item>
-		  <item id="25" description="Custom.5">
+          <item id="25" description="Custom.5">
             <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
@@ -367,13 +357,13 @@
             <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
             <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
           </item>
-		  <item id="26" description="Custom.6">
+          <item id="26" description="Custom.6">
             <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.6.Path)]</onclick>
           </item>
-		   <item id="6" description="Music">
+          <item id="6" description="Music">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music.Hide)</visible>
             <label>2</label>
@@ -572,7 +562,7 @@
             <label>31020</label>
             <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
           </item>
-		  <item id="9" description="Library">
+          <item id="9" description="Library">
             <visible>Container(300).HasFocus(5)</visible>
             <label>1024</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>
@@ -593,7 +583,7 @@
             <label>135</label>
             <onclick>ActivateWindow(Videos,Moviegenres,return)</onclick>
           </item>
-		  <item id="12" description="RA Movies">
+          <item id="12" description="RA Movies">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies2)</visible>
             <label>20434</label>
             <onclick>ActivateWindow(Videos,Moviesets,return)</onclick>
@@ -655,11 +645,11 @@
             <label>271</label>
             <onclick>ActivateWindow(MusicLibrary,top100,return)</onclick>
           </item>
-		  <item id="23" description="Music Videos">
+          <item id="23" description="Music Videos">
             <visible>Container(300).HasFocus(6) + Library.HasContent(MusicVideos)</visible>
             <label>31972</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
-			<onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
           </item>
           <item id="24" description="Recently added">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
@@ -731,71 +721,71 @@
             <label>Refresh</label>
             <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
           </item>
-		  <item id="58" description="PleXBMC: recently added">
+          <item id="58" description="PleXBMC: recently added">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <label>Recently Added</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
           </item>
           <item id="59" description="PleXBMC: search">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
-			<visible>!substring(Container(300).ListItem.Property(type),photo)</visible>
+            <visible>!substring(Container(300).ListItem.Property(type),photo)</visible>
             <label>Search</label>
             <onclick>$INFO[Container(300).ListItem.Property(search)]</onclick>
           </item>
           <item id="60" description="PleXBMC: Recently viewed">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>substring(Container(300).ListItem.Property(type),show) | substring(Container(300).ListItem.Property(type),movie)</visible>
             <label>Recently Viewed</label>
             <onclick>$INFO[Container(300).ListItem.Property(viewed)]</onclick>
-          </item>		  
+          </item>
           <item id="61" description="PleXBMC: Recently released">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>!substring(Container(300).ListItem.Property(type),show)</visible>
             <visible>substring(Container(300).ListItem.Property(type),show) | substring(Container(300).ListItem.Property(type),movie)</visible>
             <label>Recently Released</label>
             <onclick>$INFO[Container(300).ListItem.Property(newest)]</onclick>
-          </item>		  
+          </item>
           <item id="61" description="PleXBMC: Recently Aired">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>substring(Container(300).ListItem.Property(type),show)</visible>
             <visible>substring(Container(300).ListItem.Property(type),show) | substring(Container(300).ListItem.Property(type),movie)</visible>
             <label>Recently Aired</label>
             <onclick>$INFO[Container(300).ListItem.Property(newest)]</onclick>
-          </item>		  
+          </item>
           <item id="62" description="PleXBMC: ondeck">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>substring(Container(300).ListItem.Property(type),show) | substring(Container(300).ListItem.Property(type),movie)</visible>
             <label>On Deck</label>
             <onclick>$INFO[Container(300).ListItem.Property(ondeck)]</onclick>
-          </item>		  
+          </item>
           <item id="63" description="PleXBMC: albums">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>substring(Container(300).ListItem.Property(type),artist)</visible>
             <label>Albums</label>
             <onclick>$INFO[Container(300).ListItem.Property(album)]</onclick>
-          </item>		  
+          </item>
           <item id="64" description="PleXBMC: by year">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>substring(Container(300).ListItem.Property(type),photo)</visible>
             <label>Year</label>
             <onclick>$INFO[Container(300).ListItem.Property(year)]</onclick>
-          </item>		  
+          </item>
         </content>
       </control>
     </control>
