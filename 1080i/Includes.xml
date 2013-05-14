@@ -88,8 +88,8 @@
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
-        <height>48</height>
-        <texture>common/TimePanel2.png</texture>
+        <height>41</height>
+        <texture>common/TimePanel3.png</texture>
       </control>
       <control type="image">
         <visible>Window.IsActive(home)</visible>
@@ -103,7 +103,7 @@
         <posx>24</posx>
         <posy>0</posy>
         <width>1200</width>
-        <height>40</height>
+        <height>35</height>
         <font>Details</font>
         <label>$VAR[GlobalHeadings]</label>
       </control>
@@ -111,7 +111,7 @@
         <posx>24r</posx>
         <posy>0</posy>
         <width>500</width>
-        <height>40</height>
+        <height>35</height>
         <align>right</align>
         <font>Details</font>
         <textcolor>White</textcolor>

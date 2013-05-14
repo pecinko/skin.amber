@@ -28,11 +28,14 @@
         <control type="progress" id="20">
           <posx>363r</posx>
           <posy>48</posy>
+          <posy>52</posy>
           <width>324</width>
           <height>81</height>
           <texturebg>-</texturebg>
+          <height>80</height>
+          <texturebg>volume/VolumeProgressBG.png</texturebg>
           <lefttexture>-</lefttexture>
-          <midtexture border="1,40,1,41">img/BlackDotT.png</midtexture>
+          <midtexture border="1,40,1,40">img/BlackDotT.png</midtexture>
           <righttexture>-</righttexture>
           <info>Player.Volume</info>
         </control>

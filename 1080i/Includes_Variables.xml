@@ -28,7 +28,7 @@
     <value>$INFO[ListItem.thumb]</value>
   </variable>
   <variable name="LibraryStats" description="Home page library statistics">
-    <value condition="IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + Container(300).HasFocus(3)">[COLOR=Grey3]$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count),.,   ] [/COLOR]$LOCALIZE[16101]$INFO[Window(Home).Property(MusicVideos.Unwatched),.]</value>
+    <value condition="IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + [Container(300).HasFocus(3) | Container(300).HasFocus(13) | Container(300).HasFocus(14)]">[COLOR=Grey3]$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count),.,   ] [/COLOR]$LOCALIZE[16101]$INFO[Window(Home).Property(MusicVideos.Unwatched),.]</value>
 	<value condition="!IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + Container(300).HasFocus(3)">[COLOR=Grey3]$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count),.,   ]</value>
 	<value condition="IntegerGreaterThan(Window(Home).Property(Movies.Unwatched),0) + Library.HasContent(movies) + Container(300).HasFocus(4)">[COLOR=Grey3]$LOCALIZE[20342]$INFO[Window(Home).Property(Movies.Count),.,   ][/COLOR]  $LOCALIZE[16101]$INFO[Window(Home).Property(Movies.Unwatched),.]</value>
 	<value condition="!IntegerGreaterThan(Window(Home).Property(Movies.Unwatched),0) + Library.HasContent(movies) + Container(300).HasFocus(4)">[COLOR=Grey3]$LOCALIZE[20342]$INFO[Window(Home).Property(Movies.Count),.,   ][/COLOR]</value>

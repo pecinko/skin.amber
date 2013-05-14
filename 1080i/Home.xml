@@ -377,23 +377,38 @@
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.7.Path)]</onclick>
           </item>
-          <item id="300" description="PVR">
-            <visible>System.GetBool(pvrmanager.enabled)</visible>
-            <label>PVR</label>
-            <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
-            <onclick>ActivateWindowAndFocus(PVR, 50, 32)</onclick>
+		  
+		  <item id="13" description="Clips">
+            <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
+            <label>31972</label>
+            <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
           </item>
-          <item id="7" description="Favorites">
-            <visible>!Skin.HasSetting(Favourites.Hide)</visible>
-            <label>1036</label>
-            <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favourites.Background)]</thumb>
-            <onclick>ActivateWindow(Favourites)</onclick>
+		  <item id="14" description="Concerts">
+            <visible>Skin.HasSetting(Concerts.Show) + Library.HasContent(MusicVideos)</visible>
+            <label>31971</label>
+            <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
+            <onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
           </item>
           <item id="28" description="Custom.8">
             <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
+          </item>
+          
+          <item id="300" description="PVR">
+            <visible>System.GetBool(pvrmanager.enabled)</visible>
+            <label>PVR</label>
+            <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
+            <onclick>ActivateWindowAndFocus(PVR)</onclick>
+          </item>
+          <item id="7" description="Favorites">
+            <visible>!Skin.HasSetting(Favourites.Hide)</visible>
+            <label>1036</label>
+            <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favourites.Background)]</thumb>
+            <onclick>ActivateWindow(Favourites)</onclick>
           </item>
           <item id="29" description="Custom.9">
             <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
@@ -679,6 +694,44 @@
             <label>12333</label>
             <onclick>xbmc.mastermode</onclick>
           </item>
+		   <item id="29" description="Concerts artists">
+            <visible>Container(300).HasFocus(14)</visible>
+            <label>133</label>
+            <onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
+          </item>
+		  <item id="29" description="Recent concerts">
+            <visible>Container(300).HasFocus(14)</visible>
+            <label>31020</label>
+            <onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
+          </item>
+		  <item id="29" description="Concerts genres">
+            <visible>Container(300).HasFocus(14)</visible>
+            <label>135</label>
+            <onclick>ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
+          </item>
+		  <item id="30" description="Clips albums">
+            <visible>Container(300).HasFocus(13)</visible>
+            <label>132</label>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/5&quot;)</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/5&quot;)</onclick>
+	      </item>
+		  <item id="30" description="Clips artists">
+            <visible>Container(300).HasFocus(13)</visible>
+            <label>133</label>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/4&quot;)</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/4&quot;)</onclick>
+	      </item>
+		  <item id="30" description="Clips genres">
+            <visible>Container(300).HasFocus(13)</visible>
+            <label>135</label>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/1&quot;)</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/1&quot;)</onclick>
+	      </item>
+		 <!-- <item id="31" description="Recordings PVR">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>19163</label>
+            <onclick>ActivateWindowAndFocus(PVR, 34)</onclick>
+		  </item>-->
           <item id="51" description="Plexbmc Picture channels">
             <visible>Container(300).HasFocus(50)</visible>
             <label>1</label>
@@ -721,14 +774,8 @@
             <label>Refresh</label>
             <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
           </item>
-          <item id="58" description="PleXBMC: recently added">
-            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
-            <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
-            <label>Recently Added</label>
-            <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
-          </item>
-          <item id="59" description="PleXBMC: search">
+          
+	  <item id="58" description="PleXBMC: search">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
@@ -736,7 +783,7 @@
             <label>Search</label>
             <onclick>$INFO[Container(300).ListItem.Property(search)]</onclick>
           </item>
-          <item id="60" description="PleXBMC: Recently viewed">
+          <item id="59" description="PleXBMC: Recently viewed">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
@@ -744,12 +791,18 @@
             <label>Recently Viewed</label>
             <onclick>$INFO[Container(300).ListItem.Property(viewed)]</onclick>
           </item>
-          <item id="61" description="PleXBMC: Recently released">
+          <item id="60" description="PleXBMC: recently added">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
-            <visible>!substring(Container(300).ListItem.Property(type),show)</visible>
-            <visible>substring(Container(300).ListItem.Property(type),show) | substring(Container(300).ListItem.Property(type),movie)</visible>
+            <label>Recently Added</label>
+            <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
+          </item>
+		  <item id="61" description="PleXBMC: Recently released">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
+            <visible>substring(Container(300).ListItem.Property(type),movie)</visible>
             <label>Recently Released</label>
             <onclick>$INFO[Container(300).ListItem.Property(newest)]</onclick>
           </item>
@@ -758,7 +811,6 @@
             <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>substring(Container(300).ListItem.Property(type),show)</visible>
-            <visible>substring(Container(300).ListItem.Property(type),show) | substring(Container(300).ListItem.Property(type),movie)</visible>
             <label>Recently Aired</label>
             <onclick>$INFO[Container(300).ListItem.Property(newest)]</onclick>
           </item>
@@ -832,7 +884,6 @@
           <width>243</width>
           <height>243</height>
           <texture diffuse="thumbs/DiffuseSquare.png">$INFO[MusicPlayer.Cover]</texture>
-          <bordertexture>thumbs/ThumbNF.png</bordertexture>
           <aspectratio scalediffuse="false">stretch</aspectratio>
         </control>
         <control type="group" description="Info">
@@ -1059,7 +1110,7 @@
     </control>
     <include>Time</include>
     <control type="group" description="Library stats">
-      <animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240" condition="![[Container(300).HasFocus(3) + Library.HasContent(MusicVideos)] | Container(300).HasFocus(4) | Container(300).HasFocus(5) | [Container(300).HasFocus(6) + Library.HasContent(music)]]">Conditional</animation>
+      <animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240" condition="![[[Container(300).HasFocus(3) | Container(300).HasFocus(13) | Container(300).HasFocus(14)] + Library.HasContent(MusicVideos)] | Container(300).HasFocus(4) | Container(300).HasFocus(5) | [Container(300).HasFocus(6) + Library.HasContent(music)]]">Conditional</animation>
       <control type="image">
         <posx>810r</posx>
         <posy>990</posy>
