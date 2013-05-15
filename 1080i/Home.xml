@@ -3,6 +3,7 @@
   <allowoverlay>yes</allowoverlay>
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
+  <onload condition="Skin.HasSetting(Use_Artist_Slideshow)">RunScript(script.artistslideshow)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
@@ -11,7 +12,7 @@
       <include>Dimensions_Fullscreen</include>
       <timeperimage>8000</timeperimage>
       <fadetime>400</fadetime>
-      <imagepath background="true">$INFO[Container(300).ListItem.thumb]</imagepath>
+      <imagepath background="true">$INFO[Container(300).ListItem.Icon]</imagepath>
       <randomize>true</randomize>
       <aspectratio aligny="top">scale</aspectratio>
     </control>
@@ -428,14 +429,15 @@
             <visible>!Skin.HasSetting(Player.Hide)</visible>
             <visible>Player.HasAudio</visible>
             <label>16003</label>
-            <thumb fallback="special://skin/backgrounds/Music.jpg">$VAR[Player.Art]</thumb>
+            <thumb>$INFO[Window(Visualisation).Property(ArtistSlideshow)]</thumb>
+			<icon fallback="special://skin/backgrounds/Music.jpg">$VAR[HomePlayer.Art]</icon>
             <onclick>Fullscreen</onclick>
           </item>
           <item id="9" description="Video Player">
             <visible>!Skin.HasSetting(Player.Hide)</visible>
             <visible>Player.HasVideo</visible>
             <label>16003</label>
-            <thumb fallback="special://skin/backgrounds/Videos.jpg">$VAR[Player.Art]</thumb>
+            <thumb fallback="special://skin/backgrounds/Videos.jpg">$VAR[HomePlayer.Art]</thumb>
             <onclick>Fullscreen</onclick>
           </item>
           <item id="10" description="Settings">

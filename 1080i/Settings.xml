@@ -67,7 +67,7 @@
               <posy>0</posy>
               <width>324</width>
               <height>60</height>
-              <texture border="2">common/ButtonFO.png</texture>
+              <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Main Label">
               <posx>10</posx>
@@ -151,7 +151,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>1140</width>
-                <texture border="2">common/ButtonFO.png</texture>
+                <texture border="2">buttons/ButtonFO.png</texture>
               </control>
               <control type="label" description="Label 2">
                 <posx>30r</posx>
@@ -282,7 +282,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>1140</width>
-                <texture border="2">common/ButtonFO.png</texture>
+                <texture border="2">buttons/ButtonFO.png</texture>
               </control>
               <control type="label" description="Label 2">
                 <posx>30r</posx>
@@ -388,7 +388,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>1140</width>
-                <texture border="2">common/ButtonFO.png</texture>
+                <texture border="2">buttons/ButtonFO.png</texture>
               </control>
               <control type="label" description="Label 2">
                 <posx>30r</posx>
@@ -491,7 +491,7 @@
               <posy>0</posy>
               <width>801</width>
               <height>60</height>
-              <texture border="2">common/ButtonFO.png</texture>
+              <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Main Label">
               <posx>0</posx>
@@ -574,7 +574,7 @@
               <posy>0</posy>
               <width>411</width>
               <height>60</height>
-              <texture border="2">common/ButtonFO.png</texture>
+              <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Main Label">
               <posx>400</posx>

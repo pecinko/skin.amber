@@ -62,7 +62,7 @@
               <posy>0</posy>
               <width>321</width>
               <height>60</height>
-              <texture border="2">common/ButtonFO.png</texture>
+              <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Main Label">
               <posx>10</posx>
@@ -89,7 +89,7 @@
               <label>31976</label>
               <onclick>-</onclick>
             </item>
-          </content>
+	      </content>
         </control>
         <control type="group" id="9010">
           <!--9000 1-->
@@ -150,7 +150,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>1140</width>
-                <texture border="2">common/ButtonFO.png</texture>
+                <texture border="2">buttons/ButtonFO.png</texture>
               </control>
               <control type="label" description="Label 2">
                 <posx>30r</posx>
@@ -273,13 +273,21 @@
 			<label>$LOCALIZE[31980]</label>
             <label2>107</label2>
             <onclick>Skin.ToggleSetting(ShowClock)</onclick>
-          </item>
-		  <item id="11" description="Show Clock">
-            <visible>!Skin.HasSetting(ShowClock)</visible>
-			<label>$LOCALIZE[31980]</label>
-            <label2>106</label2>
-            <onclick>Skin.ToggleSetting(ShowClock)</onclick>
           </item>-->
+		  <item id="11" description="Artist slideshow">
+            <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
+			<label>$LOCALIZE[31969]</label>
+            <label2>107</label2>
+            <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
+			
+          </item>
+		  <item id="11" description="Artist slideshow">
+            <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
+			<label>$LOCALIZE[31969]</label>
+            <label2>106</label2>
+            <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
+			
+          </item>
               <item id="12" description="Reset Skin">
                 <label>$LOCALIZE[31038]</label>
                 <onclick>Skin.ResetSettings</onclick>
@@ -334,7 +342,7 @@
                   <posy>0</posy>
                   <width>1140</width>
                   <height>60</height>
-                  <texture border="2">common/ButtonFO.png</texture>
+                  <texture border="2">buttons/ButtonFO.png</texture>
                 </control>
                 <control type="label">
                   <posx>30</posx>
@@ -702,7 +710,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>1140</width>
-                <texture border="2">common/ButtonFO.png</texture>
+                <texture border="2">buttons/ButtonFO.png</texture>
               </control>
               <control type="label" description="Label 2">
                 <posx>30r</posx>
@@ -930,7 +938,7 @@
                 <posy>0</posy>
                 <height>60</height>
                 <width>1140</width>
-                <texture border="2">common/ButtonFO.png</texture>
+                <texture border="2">buttons/ButtonFO.png</texture>
               </control>
               <control type="label" description="Label 2">
                 <posx>30r</posx>

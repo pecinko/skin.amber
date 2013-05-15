@@ -125,7 +125,7 @@
       <filename>Default.ttf</filename>
       <style>bold</style>
       <size>28</size>
-      <!--<linespacing>0.98</linespacing>-->
+      <linespacing>1.0</linespacing>
     </font>
     <font>
       <name>InfoPath</name>

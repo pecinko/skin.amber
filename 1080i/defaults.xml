@@ -66,8 +66,8 @@
     <focusedcolor>White2</focusedcolor>
 	<selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="2">common/ButtonFO.png</texturefocus>
-    <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
+    <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
+    <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="edit">
@@ -85,8 +85,8 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="2">common/ButtonFO.png</texturefocus>
-	<texturenofocus border="3">common/ButtonNF.png</texturenofocus>
+    <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
+	<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
   </default>
   <default type="togglebutton">
     <posx>0</posx>
@@ -104,10 +104,10 @@
     <selectedcolor>White2</selectedcolor>
     <altselectedcolor>Orange</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="2">common/ButtonFO.png</texturefocus>
-    <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
-	<alttexturefocus border="2">common/ButtonFO.png</alttexturefocus>
-    <alttexturenofocus border="3">common/ButtonNF.png</alttexturenofocus>
+    <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
+    <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+	<alttexturefocus border="2">buttons/ButtonFO.png</alttexturefocus>
+    <alttexturenofocus border="3">buttons/ButtonNF.png</alttexturenofocus>
 	<pulseonselect>false</pulseonselect>
   </default>
   <default type="radiobutton">
@@ -124,8 +124,8 @@
     <disabledcolor>Disabled</disabledcolor>
     <radiowidth>80</radiowidth>
     <radioheight>60</radioheight>
-    <texturefocus border="2">common/ButtonFO.png</texturefocus>
-    <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
+    <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
+    <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 	<textureradiofocus>buttons/RadioOn.png</textureradiofocus>
     <textureradionofocus>buttons/RadioOff.png</textureradionofocus>
 	<!--<textureradiofocus>img/RadioON.png</textureradiofocus>
@@ -145,8 +145,8 @@
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>-->
-    <texturefocus border="2">common/ButtonFO.png</texturefocus>
-    <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
+    <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
+    <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 	<spinwidth>40</spinwidth>
     <spinheight>60</spinheight>
     <font>size22</font>
@@ -175,8 +175,8 @@
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>-->
-    <texturefocus border="2">common/ButtonFO.png</texturefocus>
-    <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
+    <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
+    <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 	<spinwidth>40</spinwidth>
     <spinheight>60</spinheight>
     <textcolor>White</textcolor>
@@ -211,8 +211,8 @@
     <texturesliderbar>buttons/SliderBG.png</texturesliderbar>
     <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
     <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
-    <texturefocus border="2">common/ButtonFO.png</texturefocus>
-    <texturenofocus border="3">common/ButtonNF.png</texturenofocus>
+    <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
+    <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
     <font>size22</font>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
