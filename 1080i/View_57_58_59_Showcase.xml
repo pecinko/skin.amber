@@ -67,10 +67,10 @@
         <aspectratio>scale</aspectratio>
         <texture>common/OverlayHorizontal2.png</texture>
       </control>
-	  <control type="image">
+      <control type="image">
         <visible>!Control.HasFocus(7000)</visible>
-		<animation effect="fade" start="100" end="0" time="50" delay="0">Hidden</animation>
-		<animation effect="fade" start="0" end="100" time="100" delay="250">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="50" delay="0">Hidden</animation>
+        <animation effect="fade" start="0" end="100" time="100" delay="250">Visible</animation>
         <posx>0</posx>
         <posy>990</posy>
         <width>1920</width>
@@ -103,14 +103,14 @@
         </control>
         <control type="image" description="Stars">
           <visible>![container.content(albums) | container.content(addons)]</visible>
-		  <posx>170r</posx>
+          <posx>170r</posx>
           <posy>1032</posy>
           <align>right</align>
           <include>Stars</include>
         </control>
         <control type="label" description="Right value">
           <visible>container.content(albums)</visible>
-		  <posx>30r</posx>
+          <posx>30r</posx>
           <posy>1028</posy>
           <height>33</height>
           <width>500</width>
@@ -119,9 +119,9 @@
           <scroll>false</scroll>
           <label>$INFO[ListItem.Year]</label>
         </control>
-		<control type="label" description="Right value">
+        <control type="label" description="Right value">
           <visible>container.content(songs)</visible>
-		  <posx>200r</posx>
+          <posx>200r</posx>
           <posy>1031</posy>
           <height>33</height>
           <width>500</width>
@@ -130,9 +130,9 @@
           <scroll>false</scroll>
           <label>$INFO[ListItem.FileExtension]</label>
         </control>
-		<control type="label" description="Right value">
+        <control type="label" description="Right value">
           <visible>container.content(addons)</visible>
-		  <posx>30r</posx>
+          <posx>30r</posx>
           <posy>1031</posy>
           <height>33</height>
           <width>500</width>
@@ -141,7 +141,7 @@
           <scroll>false</scroll>
           <label>$INFO[ListItem.Property(Addon.Version]</label>
         </control>
-		<control type="image" description="HD badge">
+        <control type="image" description="HD badge">
           <visible>Window.IsActive(MyVideoNav.xml) + ![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
           <posx>292r</posx>
           <posy>1034</posy>
@@ -150,13 +150,12 @@
           <aspectratio aligny="bottom" align="right">keep</aspectratio>
           <texture>badges/HD.png</texture>
         </control>
-		
       </control>
     </control>
     <control type="group" description="Showcase 59 Movies TV Seasons">
       <visible>Control.IsVisible(59)</visible>
       <control type="fixedlist" id="59">
-		<visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
+        <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>-120</posx>
         <posy>669</posy>
@@ -166,7 +165,7 @@
         <onright>59</onright>
         <onup>9000</onup>
         <ondown condition="Skin.HasSetting(Posters_Gallery)">7000</ondown>
-		<ondown condition="!Skin.HasSetting(Posters_Gallery)">60</ondown>
+        <ondown condition="!Skin.HasSetting(Posters_Gallery)">60</ondown>
         <viewtype label="20445">Fanart</viewtype>
         <pagecontrol>60</pagecontrol>
         <orientation>horizontal</orientation>
@@ -185,6 +184,11 @@
         <focusedlayout height="339" width="240">
           <control type="group">
             <control type="image">
+              <animation effect="fade" start="100" end="0" time="100">Focus</animation>
+              <include>MovieShowcaseBG</include>
+            </control>
+            <control type="image">
+              <animation effect="fade" start="100" end="0" time="100">Unfocus</animation>
               <include>MovieShowcaseFO</include>
             </control>
             <control type="image">
@@ -194,7 +198,7 @@
         </focusedlayout>
       </control>
       <control type="group">
-	    <visible>Skin.HasSetting(Posters_Gallery)</visible>
+        <visible>Skin.HasSetting(Posters_Gallery)</visible>
         <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
@@ -202,7 +206,7 @@
           <include>HiddenButton</include>
           <onup>59</onup>
           <ondown>59</ondown>
-		  <onclick>Control.SetFocus(59)</onclick>
+          <onclick>Control.SetFocus(59)</onclick>
           <onleft>Control.Move(59,-1)</onleft>
           <onright>Control.Move(59,1)</onright>
         </control>
@@ -277,6 +281,7 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
+        <animation effect="slide" start="0,0" end="0,-3" time="150">Focus</animation>
         <animation effect="slide" start="0,0" end="0,-81" time="350" easing="out" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>90</posx>
         <posy>1056</posy>
@@ -296,17 +301,17 @@
     <control type="group" description="Showcase 58 Squares">
       <visible>Control.IsVisible(58)</visible>
       <control type="fixedlist" id="58">
-      <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+        <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
-		<posx>-174</posx>
+        <posx>-174</posx>
         <posy>546</posy>
         <width>2268</width>
         <height>660</height>
         <onleft>58</onleft>
         <onright>58</onright>
         <onup>9000</onup>
-        <ondown condition="Skin.HasSetting(Music_Gallery)">7000</ondown>
-		<ondown condition="!Skin.HasSetting(Music_Gallery)">60</ondown>
+        <ondown condition="[container.content(artists) | container.content(albums)] + Skin.HasSetting(Music_Gallery)">7000</ondown>
+        <ondown condition="![[container.content(artists) | container.content(albums)] + Skin.HasSetting(Music_Gallery)]">60</ondown>
         <viewtype label="20445">Fanart</viewtype>
         <pagecontrol>60</pagecontrol>
         <orientation>horizontal</orientation>
@@ -323,26 +328,29 @@
           </control>
         </itemlayout>
         <focusedlayout height="660" width="324">
-          <control type="group">
-            <control type="image">
-              <include>MusicShowcaseFO</include>
-            </control>
-            <control type="image">
-              <include>MusicShowcaseThumb</include>
-            </control>
+          <control type="image">
+            <animation effect="fade" start="100" end="0" time="100">Focus</animation>
+            <include>MusicShowcaseBG</include>
+          </control>
+          <control type="image">
+            <animation effect="fade" start="100" end="0" time="100">Unfocus</animation>
+            <include>MusicShowcaseFO</include>
+          </control>
+          <control type="image">
+            <include>MusicShowcaseThumb</include>
           </control>
         </focusedlayout>
       </control>
-	  <control type="group">
+      <control type="group">
         <visible>Skin.HasSetting(Music_Gallery)</visible>
-		<visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
+        <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
         <control type="button" id="7000">
           <include>HiddenButton</include>
           <onup>58</onup>
           <ondown>58</ondown>
-		  <onclick>Control.SetFocus(58)</onclick>
+          <onclick>Control.SetFocus(58)</onclick>
           <onleft>Control.Move(58,-1)</onleft>
           <onright>Control.Move(58,1)</onright>
         </control>
@@ -360,7 +368,7 @@
           <posx>405</posx>
           <posy>555</posy>
           <control type="label" description="Title Label">
-         	<posy>78</posy>
+            <posy>78</posy>
             <width>1360</width>
             <height>60</height>
             <textcolor>White2</textcolor>
@@ -368,7 +376,7 @@
             <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
-		  <control type="label" description="Details">
+          <control type="label" description="Details">
             <posy>141</posy>
             <height>33</height>
             <width>1200</width>
@@ -383,10 +391,10 @@
             <align>left</align>
             <label>$VAR[Plots]</label>
           </control>
-        
         </control>
       </control>
       <control type="scrollbar" id="60">
+        <animation effect="slide" start="0,0" end="0,-3" time="150">Focus</animation>
         <animation effect="slide" start="0,0" end="0,-81" time="350" easing="out" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>291</posx>
         <posy>1056</posy>
@@ -397,7 +405,7 @@
         <texturesliderbarfocus>-</texturesliderbarfocus>
         <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
         <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-        <showonepage>false</showonepage>
+        <showonepage>true</showonepage>
         <orientation>horizontal</orientation>
         <onup>58</onup>
         <onright>-</onright>
@@ -406,7 +414,7 @@
     <control type="group" description="Showcase 57 Episodes">
       <visible>Control.IsVisible(57)</visible>
       <control type="fixedlist" id="57">
-		<visible>container.content(episodes)</visible>
+        <visible>container.content(episodes)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>-75</posx>
         <posy>690</posy>
@@ -416,7 +424,7 @@
         <onright>57</onright>
         <onup>9000</onup>
         <ondown condition="Skin.HasSetting(Episodes_Gallery)">7000</ondown>
-		<ondown condition="!Skin.HasSetting(Episodes_Gallery)">60</ondown>
+        <ondown condition="!Skin.HasSetting(Episodes_Gallery)">60</ondown>
         <viewtype label="20445">Fanart</viewtype>
         <pagecontrol>60</pagecontrol>
         <orientation>horizontal</orientation>
@@ -429,7 +437,6 @@
             <include>EpisodeShowcaseBG</include>
           </control>
           <control type="image">
-            <include>Icon_Fade</include>
             <include>EpisodeShowcaseThumb</include>
           </control>
           <control type="group">
@@ -460,6 +467,11 @@
         </itemlayout>
         <focusedlayout height="291" width="414">
           <control type="image">
+            <animation effect="fade" start="100" end="0" time="100">Focus</animation>
+            <include>EpisodeShowcaseBG</include>
+          </control>
+          <control type="image">
+            <animation effect="fade" start="100" end="0" time="100">Unfocus</animation>
             <include>EpisodeShowcaseFO</include>
           </control>
           <control type="image">
@@ -495,14 +507,14 @@
       </control>
       <control type="group">
         <visible>Skin.HasSetting(Episodes_Gallery)</visible>
-		<visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
+        <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
         <control type="button" id="7000">
           <include>HiddenButton</include>
           <onup>57</onup>
           <ondown>57</ondown>
-		  <onclick>Control.SetFocus(57)</onclick>
+          <onclick>Control.SetFocus(57)</onclick>
           <onleft>Control.Move(57,-1)</onleft>
           <onright>Control.Move(57,1)</onright>
         </control>
@@ -567,6 +579,7 @@
         </control>
       </control>
       <control type="scrollbar" id="60">
+        <animation effect="slide" start="0,0" end="0,-3" time="150">Focus</animation>
         <animation effect="slide" start="0,0" end="0,-81" time="350" easing="out" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>291</posx>
         <posy>1056</posy>
