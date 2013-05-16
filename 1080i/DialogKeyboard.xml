@@ -33,6 +33,7 @@
         <posy>60</posy>
         <width>870</width>
         <textcolor>Orange</textcolor>
+		<font>InfoTitle</font>
         <align>left</align>
       </control>
       <control type="group">

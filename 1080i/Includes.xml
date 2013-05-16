@@ -84,12 +84,12 @@
   <include name="Time">
     <control type="group">
       <control type="image">
-        <visible>![Window.IsActive(home) | Window.IsActive(MyVideoNav.xml)]</visible>
+        <visible>![Window.IsActive(home)]</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
-        <height>41</height>
-        <texture>common/TimePanel3.png</texture>
+        <height>50</height>
+        <texture>common/TopStripe.png</texture>
       </control>
       <control type="image">
         <visible>Window.IsActive(home)</visible>
@@ -100,7 +100,7 @@
         <texture border="100,0,0,0" flipy="true">common/TimePanel.png</texture>
       </control>
       <control type="label">
-        <posx>24</posx>
+        <posx>50</posx>
         <posy>0</posy>
         <width>1200</width>
         <height>35</height>
@@ -108,7 +108,7 @@
         <label>$VAR[GlobalHeadings]</label>
       </control>
       <control type="label">
-        <posx>24r</posx>
+        <posx>50r</posx>
         <posy>0</posy>
         <width>500</width>
         <height>35</height>

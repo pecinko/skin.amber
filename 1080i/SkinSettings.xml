@@ -315,18 +315,20 @@
               <itemlayout height="1" width="1140"></itemlayout>
               <focusedlayout height="60" width="1140">
                 <control type="image">
-                  <posx>1104</posx>
-                  <posy>14</posy>
-                  <width>20</width>
-                  <height>14</height>
-                  <texture>img/ArrowUpNF.png</texture>
+                  <posx>1080</posx>
+                  <posy>0</posy>
+                  <width>40</width>
+                  <height>60</height>
+                  <texture>buttons/SpinUpNF.png</texture>
+				  <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
-                  <posx>1104</posx>
-                  <posy>34</posy>
-                  <width>20</width>
-                  <height>14</height>
-                  <texture>img/ArrowDownNF.png</texture>
+                  <posx>1040</posx>
+                  <posy>0</posy>
+                  <width>40</width>
+                  <height>60</height>
+                  <texture>buttons/SpinDownNF.png</texture>
+				  <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
                   <posx>0</posx>
@@ -342,7 +344,7 @@
                   <posy>0</posy>
                   <width>1140</width>
                   <height>60</height>
-                  <texture border="2">buttons/ButtonFO.png</texture>
+                  <texture border="3">buttons/ButtonFO.png</texture>
                 </control>
                 <control type="label">
                   <posx>30</posx>
@@ -353,7 +355,7 @@
                   <label>$LOCALIZE[31110]</label>
                 </control>
                 <control type="label">
-                  <posx>50r</posx>
+                  <posx>120r</posx>
                   <posy>0</posy>
                   <width>960</width>
                   <height>60</height>
@@ -736,13 +738,13 @@
             <content>
               <item id="1" description="Enable Recently Added">
                 <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                <label>[COLOR=Orange]$LOCALIZE[31328][/COLOR]</label>
+                <label>[COLOR=Orange]$LOCALIZE[31020][/COLOR]</label>
                 <label2>$LOCALIZE[107]</label2>
                 <onclick>Skin.ToggleSetting(Hide.RecentlyAdded)</onclick>
               </item>
               <item id="1" description="Enable Recently Added">
                 <visible>Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                <label>[COLOR=Orange]$LOCALIZE[31328][/COLOR]</label>
+                <label>[COLOR=Orange]$LOCALIZE[31020][/COLOR]</label>
                 <label2>$LOCALIZE[106]</label2>
                 <onclick>Skin.Reset(Hide.RecentlyAdded)</onclick>
               </item>
