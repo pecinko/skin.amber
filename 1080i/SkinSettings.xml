@@ -2,6 +2,7 @@
 <window>
   <defaultcontrol always="true">9000</defaultcontrol>
   <backgroundcolor>0</backgroundcolor>
+  <allowoverlay>no</allowoverlay>
   <controls>
     <include>Settings_Art</include>
     <include>Time</include>
@@ -288,7 +289,21 @@
             <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
 			
           </item>
-              <item id="12" description="Reset Skin">
+		  <item id="12" description="Show player on home">
+            <visible>Skin.HasSetting(Show_Player)</visible>
+			<label>$LOCALIZE[31991]</label>
+            <label2>107</label2>
+            <onclick>Skin.ToggleSetting(Show_Player)</onclick>
+			
+          </item>
+		  <item id="12" description="Show player on home">
+            <visible>!Skin.HasSetting(Show_Player)</visible>
+			<label>$LOCALIZE[31991]</label>
+            <label2>106</label2>
+            <onclick>Skin.ToggleSetting(Show_Player)</onclick>
+			
+          </item>
+              <item id="13" description="Reset Skin">
                 <label>$LOCALIZE[31038]</label>
                 <onclick>Skin.ResetSettings</onclick>
                 <onclick>XBMC.ReloadSkin()</onclick>

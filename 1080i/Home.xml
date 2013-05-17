@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
-  <allowoverlay>yes</allowoverlay>
+  <allowoverlay>no</allowoverlay>
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
   <onload condition="Skin.HasSetting(Use_Artist_Slideshow)">RunScript(script.artistslideshow)</onload>
@@ -9,14 +9,37 @@
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
   <controls>
     <control type="multiimage">
-      <include>Dimensions_Fullscreen</include>
+      <visible>!Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
+	  <include>Dimensions_Fullscreen</include>
       <timeperimage>8000</timeperimage>
       <fadetime>400</fadetime>
       <imagepath background="true">$INFO[Container(300).ListItem.Icon]</imagepath>
       <randomize>true</randomize>
       <aspectratio aligny="top">scale</aspectratio>
     </control>
-    <control type="group">
+	<control type="visualisation">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1920</width>
+			<height>1080</height>
+			<visible>Player.HasAudio + Skin.HasSetting(Show_Player) + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+		</control>
+		<control type="videowindow">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1920</width>
+			<height>1080</height>
+			<visible>Player.HasVideo + Skin.HasSetting(Show_Player) + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+		</control>
+	<control type="videowindow" description="TV Channel Live BG">
+       <visible>Player.HasVideo</visible>
+	      <posx>0</posx>
+          <posy>0</posy>
+          <width>1920</width>
+          <height>1080</height>
+        </control>
+    
+	<control type="group">
       <animation effect="slide" easing="out" start="0,0" end="0,400" time="350" delay="0" center="120,350" reversible="false" condition="Window.Next(1112)">Conditional</animation>
       <posy>90</posy>
       <control type="group" description="Furniture">
