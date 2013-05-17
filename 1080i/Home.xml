@@ -9,7 +9,7 @@
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
   <controls>
     <control type="multiimage">
-      <visible>!Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
+      <visible>![Player.HasVideo + Skin.HasSetting(Show_Player)]</visible>
 	  <include>Dimensions_Fullscreen</include>
       <timeperimage>8000</timeperimage>
       <fadetime>400</fadetime>
@@ -22,14 +22,14 @@
 			<posy>0</posy>
 			<width>1920</width>
 			<height>1080</height>
-			<visible>Player.HasAudio + Skin.HasSetting(Show_Player) + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+			<visible>Player.HasAudio + Skin.HasSetting(Show_Player)</visible>
 		</control>
 		<control type="videowindow">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1920</width>
 			<height>1080</height>
-			<visible>Player.HasVideo + Skin.HasSetting(Show_Player) + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+			<visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
 		</control>
 	<control type="videowindow" description="TV Channel Live BG">
        <visible>Player.HasVideo</visible>
