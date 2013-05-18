@@ -16,16 +16,17 @@
     </control>
     <control type="group" description="Content">
       <include>OpenClose</include>
-      <control type="image">
-        <posx>99</posx>
-        <posy>106</posy>
-        <width>186</width>
-        <height>100</height>
-        <texture>settings/XBMCLogo.png</texture>
+      <posy>15</posy>
+	  <control type="image">
+        <posx>100</posx>
+        <posy>110</posy>
+        <width>240</width>
+        <height>61</height>
+		<texture>settings/XBMCLogo.png</texture>
       </control>
       <control type="grouplist" id="3" description="Left - Button Area">
         <posx>66</posx>
-        <posy>234</posy>
+        <posy>210</posy>
         <width>321</width>
         <height>780</height>
         <itemgap>0</itemgap>
@@ -40,7 +41,7 @@
       </control>
       <control type="grouplist" id="5" description="Right - Control Area">
         <posx>390</posx>
-        <posy>234</posy>
+        <posy>210</posy>
         <width>1467</width>
         <height>720</height>
         <itemgap>0</itemgap>
