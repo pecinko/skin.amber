@@ -106,14 +106,35 @@
         <texture border="100,0,0,0" flipy="true">common/TimePanel.png</texture>
       </control>
       <control type="label">
-        <posx>60</posx>
+        <visible>!Player.HasMedia</visible>
+		<posx>60</posx>
         <posy>0</posy>
         <width>1200</width>
         <height>35</height>
         <font>Details</font>
         <label>$VAR[GlobalHeadings]</label>
       </control>
-      <control type="label">
+	  <control type="group">
+	  <visible>Player.HasAudio + !Window.IsActive(home)</visible>
+	  <control type="image">
+		<posx>12</posx>
+        <posy>6</posy>
+        <width>30</width>
+        <height>27</height>
+		<aspectratio>keep</aspectratio>
+        <texture>img/NowPlayingFO.png</texture>
+		<colordiffuse>Orange</colordiffuse>
+      </control>
+	  <control type="label">
+    	<posx>60</posx>
+        <posy>0</posy>
+        <width>1200</width>
+        <height>35</height>
+        <font>Details</font>
+		<label>$INFO[MusicPlayer.Artist][COLOR=Orange]  •  [/COLOR]$INFO[MusicPlayer.Title][COLOR=Orange]  •  [/COLOR][COLOR=Grey]$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, - ][/COLOR]</label>
+	  </control>
+	  </control>
+	  <control type="label">
         <posx>40r</posx>
         <posy>0</posy>
         <width>500</width>
@@ -562,6 +583,24 @@
       <imagepath background="true">$VAR[Settings.Art]</imagepath>
     </control>
   </include>
+  <include name="Pvr_Art">
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Pvr.Art]</imagepath>
+    </control>
+  </include>
+  <include name="Pictures_Art">
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Pictures.Art]</imagepath>
+    </control>
+  </include>
+  <include name="Weather_Art">
+    <control type="multiimage">
+      <include>BG.Defaults</include>
+      <imagepath background="true">$VAR[Weather.Art]</imagepath>
+    </control>
+  </include>
   <include name="Fanart_Art">
     <control type="multiimage" description="FA">
       <visible>![Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(53)]</visible>
@@ -589,23 +628,164 @@
       <aspectratio>scale</aspectratio>
       <imagepath background="true">$VAR[Default.Art]</imagepath>
     </control>
-  </include>
-  <include name="Pvr_Art">
-    <control type="multiimage">
-      <include>BG.Defaults</include>
-      <imagepath background="true">$VAR[Pvr.Art]</imagepath>
-    </control>
-  </include>
-  <include name="Pictures_Art">
-    <control type="multiimage">
-      <include>BG.Defaults</include>
-      <imagepath background="true">$VAR[Pictures.Art]</imagepath>
-    </control>
-  </include>
-  <include name="Weather_Art">
-    <control type="multiimage">
-      <include>BG.Defaults</include>
-      <imagepath background="true">$VAR[Weather.Art]</imagepath>
+	<control type="image" description="fa overlay">
+             <visible>Control.IsVisible(50)</visible>
+ <posx>0</posx>
+        <posy>405</posy>
+        <width>1920</width>
+        <height>675</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayList.png</texture>
+      </control>
+	  <control type="image" description="fa overlay">
+             <visible>Control.IsVisible(51)</visible>
+ <posx>0</posx>
+        <posy>330</posy>
+        <width>1920</width>
+        <height>750</height>
+        <texture>common/OverlayPanel.png</texture>
+      </control>
+	  <control type="image" description="fa overlay">
+        <visible>Control.IsVisible(52)</visible>
+		<posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayFS.png</texture>
+      </control>
+	  <control type="image" description="fa overlay">
+        <visible>Control.IsVisible(53)</visible>
+		<posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayFS.png</texture>
+      </control>
+	  <control type="image" description="fa overlay">
+        <visible>Control.IsVisible(54)</visible>
+		<posx>0</posx>
+        <posy>663</posy>
+        <width>1920</width>
+        <height>417</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayLowList.png</texture>
+      </control>
+	  <control type="image" description="fa overlay">
+        <visible>Control.IsVisible(55)</visible>
+		<posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayFS.png</texture>
+      </control>
+	  <control type="image" description="fa overlay">
+        <visible>Control.IsVisible(56)</visible>
+		<posx>0</posx>
+        <posy>405</posy>
+        <width>1920</width>
+        <height>675</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayList.png</texture>
+      </control>
+	  <control type="group">
+      <visible>Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
+      <control type="image">
+        <animation effect="slide" easing="out" start="0,0" end="0,-90" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
+        <animation effect="fade" start="100" end="80" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
+        <posx>0</posx>
+        <posy>655</posy>
+        <width>1920</width>
+        <height>424</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>common/OverlayHorizontal2.png</texture>
+      </control>
+      <control type="image">
+        <visible>!Control.HasFocus(7000)</visible>
+        <animation effect="fade" start="100" end="0" time="50" delay="0">Hidden</animation>
+        <animation effect="fade" start="0" end="100" time="100" delay="250">Visible</animation>
+        <posx>0</posx>
+        <posy>990</posy>
+        <width>1920</width>
+        <height>120</height>
+        <texture>img/Footer.png</texture>
+      </control>
+      <control type="group">
+        <visible>!Control.HasFocus(7000)</visible>
+        <animation effect="fade" start="100" end="0" time="150" delay="0" center="120,350" reversible="false">Hidden</animation>
+        <animation effect="fade" start="0" end="100" time="450" delay="400" center="120,350" reversible="false">Visible</animation>
+        <control type="label" description="Title Label">
+          <posx>510</posx>
+          <posy>1020</posy>
+          <width>900</width>
+          <height>45</height>
+          <align>center</align>
+          <font>InfoTitle</font>
+          <textcolor>White2</textcolor>
+          <label>$INFO[ListItem.Label]</label>
+        </control>
+        <control type="label" description="Details">
+          <posx>30</posx>
+          <posy>1027</posy>
+          <height>33</height>
+          <width>450</width>
+          <align>left</align>
+          <font>Details</font>
+          <scroll>false</scroll>
+          <label>$VAR[Fanart_Details]</label>
+        </control>
+        <control type="image" description="Stars">
+          <visible>![container.content(albums) | container.content(addons)]</visible>
+          <posx>170r</posx>
+          <posy>1032</posy>
+          <align>right</align>
+          <include>Stars</include>
+        </control>
+        <control type="label" description="Right value">
+          <visible>container.content(albums)</visible>
+          <posx>30r</posx>
+          <posy>1028</posy>
+          <height>33</height>
+          <width>500</width>
+          <align>right</align>
+          <font>Year</font>
+          <scroll>false</scroll>
+          <label>$INFO[ListItem.Year]</label>
+        </control>
+        <control type="label" description="Right value">
+          <visible>container.content(songs)</visible>
+          <posx>200r</posx>
+          <posy>1031</posy>
+          <height>33</height>
+          <width>500</width>
+          <align>right</align>
+          <font>Year</font>
+          <scroll>false</scroll>
+          <label>$INFO[ListItem.FileExtension]</label>
+        </control>
+        <control type="label" description="Right value">
+          <visible>container.content(addons)</visible>
+          <posx>30r</posx>
+          <posy>1031</posy>
+          <height>33</height>
+          <width>500</width>
+          <align>right</align>
+          <font>Year</font>
+          <scroll>false</scroll>
+          <label>$INFO[ListItem.Property(Addon.Version]</label>
+        </control>
+        <control type="image" description="HD badge">
+          <visible>Window.IsActive(MyVideoNav.xml) + ![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
+          <posx>292r</posx>
+          <posy>1034</posy>
+          <height>24</height>
+          <width>90</width>
+          <aspectratio aligny="bottom" align="right">keep</aspectratio>
+          <texture>badges/HD.png</texture>
+        </control>
+      </control>
     </control>
   </include>
 </includes>
