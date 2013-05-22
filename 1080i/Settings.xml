@@ -6,23 +6,21 @@
   <controls>
     <include>Settings_Art</include>
     <include>Time</include>
-    <control type="image">
-      <include>OpenClose</include>
-      <posx>36</posx>
-      <posy>60</posy>
-      <width>1849</width>
-      <height>1010</height>
+    <control type="group" description="Content">
+      <animation effect="fade" time="250" condition="!Window.Previous(SettingsCategory.xml)">WindowOpen</animation>
+      <animation effect="fade" time="250" condition="!Window.Next(SettingsCategory.xml)">WindowClose</animation>
+      <control type="image">
+      <include>Panel_Size</include>
       <texture>dialogs/AddonSettingsBG.png</texture>
     </control>
-    <control type="group" description="Content">
-      <posy>15</posy>
-	  <include>OpenClose</include>
-      <control type="image">
+	<control type="label">
         <posx>100</posx>
-        <posy>110</posy>
+        <posy>120</posy>
         <width>240</width>
         <height>61</height>
-		<texture>settings/XBMCLogo.png</texture>
+		<font>Logo</font>
+		<align>center</align>
+		<label>XBMC</label>
       </control>
       <control type="label" description="XBMC settings">
         <visible>Container(9000).HasFocus(1)</visible>
@@ -88,7 +86,8 @@
             <posy>0</posy>
             <width>301</width>
             <height>60</height>
-            <label>$INFO[ListItem.Label]</label>
+            <textcolor>Orange</textcolor>
+			<label>$INFO[ListItem.Label]</label>
           </control>
         </focusedlayout>
         <content>
@@ -231,10 +230,6 @@
               <label>13000</label>
               <onclick>activatewindow(SystemSettings)</onclick>
             </item>
-            <item id="10" description="Profiles">
-              <label>13200</label>
-              <onclick>ActivateWindow(Profiles)</onclick>
-            </item>
             <item id="11" description="PVR">
               <label>PVR</label>
               <onclick>activateWindow(PVRSettings)</onclick>
@@ -243,38 +238,46 @@
               <label>10040</label>
               <onclick>activatewindow(AddonBrowser,root)</onclick>
             </item>
-            <item id="13" description="Weather">
-              <label>8</label>
-              <onclick>activatewindow(WeatherSettings)</onclick>
-            </item>
           </content>
         </control>
         <control type="group">
-          <posx>1534</posx>
-          <posy>210</posy>
-          <control type="group">
+          
+          <control type="grouplist" id="500">
             <visible>Container(9000).HasFocus(1)</visible>
-            <control type="button" id="500" description="File manager">
+			<posx>1534</posx>
+            <posy>210</posy>
+		    <width>322</width>
+			<height>600</height>
+			<onup>500</onup>
+            <ondown>500</ondown>
+			<onleft>9001</onleft>
+			<control type="button" id="501" description="Wether">
               <font>ListDetails</font>
-			  <posy>0</posy>
-              <width>322</width>
+			  <width>322</width>
+              <label>$LOCALIZE[8]</label>
+              <onclick>activatewindow(WeatherSettings)</onclick>
+            </control>
+			<control type="button" id="502" description="Profiles">
+              <font>ListDetails</font>
+			  <width>322</width>
+              <label>$LOCALIZE[13200]</label>
+              <onclick>ActivateWindow(Profiles)</onclick>
+            </control>
+			<control type="button" id="503" description="File manager">
+              <font>ListDetails</font>
+			  <width>322</width>
               <label>10003</label>
               <onclick>ActivateWindow(filemanager)</onclick>
-              <onleft>9001</onleft>
-              <onup>501</onup>
-              <ondown>501</ondown>
             </control>
-            <control type="button" id="501" description="Sys info">
+            <control type="button" id="504" description="Sys info">
               <font>ListDetails</font>
-			  <posy>60</posy>
-              <width>322</width>
+			  <width>322</width>
               <label>$LOCALIZE[138]</label>
               <onclick>activatewindow(systeminfo)</onclick>
-              <onleft>9001</onleft>
-              <onup>500</onup>
-              <ondown>500</ondown>
             </control>
-          </control>
+			
+			
+	      </control>
         </control>
         <!--9000 2-->
         <control type="panel" id="9002">
@@ -421,13 +424,15 @@
               <onclick>ActivateWindow(1114)</onclick>
             </item>
             <item id="11" description="Artist slideshow">
-              <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
+              <visible>System.HasAddon(script.artistslideshow)</visible>
+			  <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
               <label>$LOCALIZE[31969]</label>
               <label2>107</label2>
               <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
             </item>
             <item id="11" description="Artist slideshow">
-              <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
+              <visible>System.HasAddon(script.artistslideshow)</visible>
+			  <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
               <label>$LOCALIZE[31969]</label>
               <label2>106</label2>
               <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>

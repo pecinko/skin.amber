@@ -2,8 +2,8 @@
 <window id="0">
   <allowoverlay>no</allowoverlay>
   <defaultcontrol always="true">300</defaultcontrol>
-  <include>OpenClose</include>
-  <onload condition="Skin.HasSetting(Use_Artist_Slideshow)">RunScript(script.artistslideshow)</onload>
+  <!--<include>OpenClose</include>-->
+  <onload condition="System.HasAddon(script.artistslideshow) + Skin.HasSetting(Use_Artist_Slideshow) + Player.HasAudio">RunScript(script.artistslideshow)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>

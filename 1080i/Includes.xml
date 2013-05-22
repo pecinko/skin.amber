@@ -29,8 +29,8 @@
     <animation effect="fade" time="0">Hidden</animation>
   </include>
   <include name="OpenClose">
-    <animation effect="fade" time="380">WindowOpen</animation>
-    <animation effect="fade" time="220">WindowClose</animation>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
   </include>
   <include name="DialogOpenClose">
     <animation type="WindowOpen">
@@ -81,6 +81,12 @@
     <width>1920</width>
     <height>1080</height>
   </include>
+  <include name="Panel_Size">
+  <posx>36</posx>
+        <posy>54</posy>
+        <width>1849</width>
+        <height>1010</height>
+	</include>	
   <include name="Time">
     <control type="group">
       <control type="image">
