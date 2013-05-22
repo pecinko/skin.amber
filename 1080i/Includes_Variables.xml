@@ -14,9 +14,9 @@
 	<value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
   </variable>
   <variable name="Banner" description="TV Banners">
-    <value condition="Skin.HasSetting(plexbmc)">$INFO[ListItem.Property(banner)]</value>
-	<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-    <value>$INFO[ListItem.Icon]</value>
+    <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+	<value condition="Skin.HasSetting(plexbmc)">$INFO[ListItem.Property(banner)]</value>
+	<value>$INFO[ListItem.Icon]</value>
   </variable>
   <variable name="Playlist" description="Side menu label">
     <value condition="Player.HasAudio">$LOCALIZE[13350]</value>
@@ -40,7 +40,7 @@
     <value condition="Library.HasContent(music) + Container(300).HasFocus(6)">[COLOR=Grey3]$LOCALIZE[134]$INFO[Window(Home).Property(Music.SongsCount),.,   ] [/COLOR][COLOR=White]$LOCALIZE[132]$INFO[Window(Home).Property(Music.AlbumsCount),.][/COLOR]</value>
   </variable>
   <variable name="GlobalHeadings" description="Global Headings">
-    <value condition="Skin.hassetting(plexbmc) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading),,[COLOR=Grey]  •  [/COLOR]][COLOR=Grey]$INFO[Container.NumItems][/COLOR]</value>
+    <value condition="Skin.hassetting(plexbmc) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading),,[COLOR=Orange]  •  [/COLOR]][COLOR=Grey]$INFO[Container.NumItems][/COLOR]</value>
 	<value condition="Window.IsActive(1112)">$LOCALIZE[31976]</value>
 	<value condition="Window.IsActive(56) | Window.IsActive(SkinSettings.xml)">$LOCALIZE[20077]</value>
 	<value condition="Window.IsActive(Settings.xml) | Window.IsActive(SettingsCategory.xml)">$LOCALIZE[5]</value>
@@ -49,10 +49,10 @@
     <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
     <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>
 	<value condition="Window.IsActive(DialogFavourites.xml)">$LOCALIZE[1036]</value>
-    <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342][COLOR=Grey]  •  $INFO[Container.NumItems][/COLOR]</value>
-    <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343][COLOR=Grey]  •  $INFO[Container.NumItems][/COLOR]</value>
-    <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389][COLOR=Grey]  •  $INFO[Container.NumItems][/COLOR]</value>
-	<value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName,,[COLOR=Grey]  •  [/COLOR]][COLOR=Grey]$INFO[Container.NumItems][/COLOR]</value>
+    <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342][COLOR=Orange]  •  $INFO[Container.NumItems][/COLOR]</value>
+    <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343][COLOR=Orange]  •  $INFO[Container.NumItems][/COLOR]</value>
+    <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389][COLOR=Orange]  •  $INFO[Container.NumItems][/COLOR]</value>
+	<value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName,,[COLOR=Orange]  •  [/COLOR]][COLOR=Grey]$INFO[Container.NumItems][/COLOR]</value>
   </variable>
   <variable name="QuitLabel2" description="Label2 for skin settings Quit function item">
     <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
@@ -122,7 +122,7 @@
   <variable name="Plots" description="Plots and descriptions">
     <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
     <value condition="SubString(ListItem.Path,videodb://1/7)">$LOCALIZE[20457]</value>
-    <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
+    <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot) + !IsEmpty(ListItem.Title)">$INFO[Container.ShowPlot]</value>
     <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
 	<value condition="Container.Content(albums) + IsEmpty(ListItem.Property(Album_Description))">$LOCALIZE[414]</value>
     <value condition="Container.Content(artists) + !IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
