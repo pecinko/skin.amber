@@ -240,9 +240,7 @@
             </item>
           </content>
         </control>
-        <control type="group">
-          
-          <control type="grouplist" id="500">
+        <control type="grouplist" id="500">
             <visible>Container(9000).HasFocus(1)</visible>
 			<posx>1534</posx>
             <posy>210</posy>
@@ -278,7 +276,6 @@
 			
 			
 	      </control>
-        </control>
         <!--9000 2-->
         <control type="panel" id="9002">
           <visible>Container(9000).HasFocus(2)</visible>
@@ -485,17 +482,17 @@
       </control>
 		</control>
         <!-- 9000 3 -->
-        <control type="panel" id="9003">
+		<control type="panel" id="9003">
           <visible>Container(9000).HasFocus(3)</visible>
           <posx>390</posx>
           <posy>210</posy>
           <width>1140</width>
           <height>780</height>
           <onleft>9000</onleft>
-          <onright>60</onright>
-          <onup>9002</onup>
-          <ondown>9002</ondown>
-          <pagecontrol>-</pagecontrol>
+          <onright>63</onright>
+          <onup>9003</onup>
+          <ondown>9003</ondown>
+          <pagecontrol>63</pagecontrol>
           <scrolltime>280</scrolltime>
           <itemlayout width="1140" height="60">
             <control type="image">
@@ -1559,6 +1556,21 @@
         </control>
       </control>
     </control>
-  
+  <control type="scrollbar" id="63">
+        <visible>Control.IsVisible(9003)</visible>
+        <posx>1518</posx>
+        <posy>210</posy>
+        <width>36</width>
+        <height>780</height>
+        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbar>-</texturesliderbar>
+        <texturesliderbarfocus>-</texturesliderbarfocus>
+        <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+        <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+        <showonepage>false</showonepage>
+        <orientation>vertical</orientation>
+        <onleft>9003</onleft>
+        <onright>9000</onright>
+      </control>
   </controls>
 </window>
