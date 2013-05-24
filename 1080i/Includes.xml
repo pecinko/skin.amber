@@ -52,6 +52,39 @@
       <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,340" time="140" />
     </animation>
   </include>
+  
+  <include name="WeatherAni0">
+   <animation type="WindowOpen">
+            <effect type="fade" start="80" end="100" time="200"/>
+        </animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="100"/>
+		</animation>
+  </include>
+  <include name="WeatherAni1">
+   <animation type="WindowOpen">
+            <effect type="fade" start="80" end="100" time="200" delay="150"/>
+        </animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="100" delay="150"/>
+		</animation>
+  </include>
+  <include name="WeatherAni2">
+   <animation type="WindowOpen">
+            <effect type="fade" start="80" end="100" time="200" delay="300"/>
+        </animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="100" delay="300"/>
+		</animation>
+  </include>
+  <include name="WeatherAni3">
+   <animation type="WindowOpen">
+            <effect type="fade" start="80" end="100" time="200" delay="450"/>
+        </animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="100" delay="450"/>
+		</animation>
+  </include>
   <include name="Icon_Fade">
     <fadetime>200</fadetime>
     <animation effect="fade" time="200">Visible</animation>
@@ -90,7 +123,7 @@
   <include name="Time">
     <control type="group">
       <control type="image">
-        <visible>![Window.IsActive(home)]</visible>
+        <visible>![Window.IsActive(home) | Window.IsActive(weather)]</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
@@ -98,10 +131,10 @@
         <texture>common/TopStripe.png</texture>
       </control>
       <control type="image">
-        <visible>Window.IsActive(home)</visible>
-        <posx>600r</posx>
+        <visible>Window.IsActive(home) | Window.IsActive(weather)</visible>
+        <posx>510r</posx>
         <posy>0</posy>
-        <width>600</width>
+        <width>510</width>
         <height>90</height>
         <texture border="100,0,0,0" flipy="true">common/TimePanel.png</texture>
       </control>

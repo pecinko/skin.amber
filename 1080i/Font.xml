@@ -6,6 +6,11 @@
       <filename>BebasNeue.ttf</filename>
       <size>88</size>
     </font>
+	<font>
+      <name>WeatherTitle</name>
+      <filename>BebasNeue.ttf</filename>
+      <size>45</size>
+    </font>
     <font>
       <name>Logo</name>
       <filename>BebasNeue.ttf</filename>
