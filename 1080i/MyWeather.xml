@@ -333,19 +333,21 @@
       <include>9000Commons</include>
       <control type="grouplist" id="9000">
         <posx>-499</posx>
-		<posy>30</posy>
-		<width>444</width>
-		<height>1120</height>
-		<itemgap>0</itemgap>
-		<onleft>50</onleft>
-		<onright>50</onright>
-		<onup>9000</onup>
-		<ondown>9000</ondown>
-		<scrolltime>200</scrolltime>
-		<orientation>vertical</orientation>
+    <posy>60</posy>
+    <width>500</width>
+    <height>1120</height>
+    <itemgap>0</itemgap>
+    <onleft>9001</onleft>
+    <onright>50</onright>
+    <onup>9000</onup>
+    <ondown>9000</ondown>
+	<onback>50</onback>
+    <scrolltime>200</scrolltime>
+    <orientation>vertical</orientation>
        <control type="label" id="9001" description="Provider">
         <textoffsetx>10</textoffsetx>
 		<align>center</align>
+		<textcolor>Orange</textcolor>
 		<include>9000ViewButtons</include>
 		<label>$INFO[Window.Property(WeatherProvider)]</label>
         
@@ -355,20 +357,11 @@
 		  <include>9000ViewButtons</include>
 		  <label>Spacer</label>
 		</control>
-		<control type="label" id="9002" description="Heading">
-          <textcolor>Orange</textcolor>
-          <textoffsetx>10</textoffsetx>
-		  <align>left</align>
-		  <include>9000ViewButtons</include>
-		  <label>$LOCALIZE[33063]</label>
-		</control>
-		
-	 	<control type="spincontrolex" id="3" description="Location">
-          <include>9000ViewButtons</include>
+		<control type="spincontrolex" id="3" description="Location">
+          <include>9000SysButtons</include>
         </control>
 		<control type="button" id="4" description="Settings">
-          <align>right</align>
-		  <include>9000ViewButtons</include>
+          <include>9000SysButtons</include>
           <label>5</label>
 		  <onclick>ActivateWindow(MyWeatherSettings)</onclick>
         </control>
