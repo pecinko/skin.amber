@@ -693,12 +693,12 @@
 	  <control type="group">
       <visible>Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
       <control type="image">
-        <animation effect="slide" easing="out" start="0,0" end="0,-90" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
+        <animation effect="slide" easing="out" start="0,0" end="0,-66" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <animation effect="fade" start="100" end="80" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <posx>0</posx>
         <posy>655</posy>
         <width>1920</width>
-        <height>424</height>
+        <height>390</height>
         <aspectratio>stretch</aspectratio>
         <texture>common/OverlayHorizontal2.png</texture>
       </control>
