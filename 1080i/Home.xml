@@ -59,16 +59,20 @@
           <height>50</height>
           <texture border="39,0,39,0">home/HomeTopNav2.png</texture>
         </control>
-        <control type="label" description="Shelf label">
+        <control type="button" description="Shelf label">
           <visible>Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)</visible>
           <posx>760</posx>
           <posy>644</posy>
           <width>400</width>
           <height>50</height>
           <textcolor>Grey</textcolor>
-          <shadowcolor>-</shadowcolor>
+		  <focusedcolor>Black</focusedcolor>
+          <shadowcolor>Silver</shadowcolor>
           <align>center</align>
           <label>31976</label>
+		  <texturefocus></texturefocus>
+		  <texturenofocus></texturenofocus>
+		  <onclick>ActivateWindow(1112)</onclick>
         </control>
         <control type="image" description="Bottom glass border">
           <animation effect="zoom" start="100,100" end="100,50" time="100" condition="!IntegerGreaterThan(Container(9001).NumItems,0)">Conditional</animation>
@@ -92,7 +96,6 @@
         <posy>689</posy>
         <width>3069</width>
         <height>225</height>
-        <onup>700</onup>
         <onleft>300</onleft>
         <onright>300</onright>
         <ondown>9001</ondown>
