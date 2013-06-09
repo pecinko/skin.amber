@@ -13,7 +13,7 @@
       <include>Panel_Size</include>
       <texture>dialogs/AddonSettingsBG.png</texture>
     </control>
-	<control type="label">
+	<!--<control type="label">
         <posx>100</posx>
         <posy>120</posy>
         <width>240</width>
@@ -21,7 +21,7 @@
 		<font>Logo</font>
 		<align>center</align>
 		<label>XBMC</label>
-      </control>
+      </control>-->
       <control type="label" description="XBMC settings">
         <visible>Container(9000).HasFocus(1)</visible>
         <posx>650</posx>
@@ -92,7 +92,7 @@
         </focusedlayout>
         <content>
           <item id="1">
-            <label>13000</label>
+            <label>XBMC</label>
             <onclick>-</onclick>
           </item>
           <item id="2">

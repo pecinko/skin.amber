@@ -455,12 +455,12 @@
             <onclick condition="!System.HasMediaDvd">Notification($LOCALIZE[164],$LOCALIZE[219],5,DefaultIconWarning.png)</onclick>
             <onclick condition="!System.HasMediaDvd">EjectTray()</onclick>
           </item>
-          <item id="9" description="Player">
+          <!--<item id="9" description="Player">
             <visible>!Skin.HasSetting(Player.Hide) + Player.HasMedia</visible>
             <label>$VAR[HomePlayer.Label]</label>
 			<icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[HomePlayer.Art]</icon>
             <onclick>Fullscreen</onclick>
-          </item>
+          </item>-->
           <item id="15" description="Weather">
             <visible>!Skin.HasSetting(Weather.Hide)</visible>
             <label>8</label>
@@ -882,10 +882,10 @@
         <textcolor>Grey</textcolor>
       </control>
     </control>
-       <control type="group" description="Music Cover group">
+       <!--<control type="group" description="Music Cover group">
         <animation effect="slide" start="900,0" end="0,0" time="500" tween="quadratic">Visible</animation>
         <animation effect="slide" start="0,0" end="900,0" time="350" easing="in">Hidden</animation>
-        <visible>Player.HasAudio + Container(300).HasFocus(9)</visible>
+        <visible>Player.HasAudio</visible>
 		    <posy>255</posy>
             <posx>510r</posx>
             <control type="image" description="MusicAlbum">
@@ -906,7 +906,7 @@
               <aspectratio scalediffuse="false">scale</aspectratio>
               <texture diffuse="player/PlayerDiffuse.png" fallback="DefaultMusic.png">$INFO[MusicPlayer.Cover]</texture>
             </control>
-	      </control>
+	      </control>-->
 
     <include>Time</include>
     <control type="group" description="Library stats">

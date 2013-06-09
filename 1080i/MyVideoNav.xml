@@ -269,7 +269,7 @@
       </control>
 	</control>
     <!-- BIGLIST 52 -->
-    <control type="group" description="52 MediaInfo">
+    <!--<control type="group" description="52 MediaInfo">
       <visible>Control.IsVisible(52)</visible>
       <include>OpenClose</include>
 	  <include>View_52_BigList</include>
@@ -341,7 +341,7 @@
           <texture>badges/HD.png</texture>
         </control>
       </control>
-    </control>
+    </control>-->
 	<!-- GRID 53 -->
     <control type="group" description="53">
 	<include>OpenClose</include>
