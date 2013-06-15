@@ -806,21 +806,7 @@
               <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
               <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
             </item>
-            <item id="9" description="Player">
-              <visible>!Skin.HasSetting(Player.Hide)</visible>
-              <label>[COLOR=Orange]$LOCALIZE[16003][/COLOR]</label>
-              <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
-              <thumb fallback="special://skin/backgrounds/default/default.jpg">$VAR[Player.Art]</thumb>
-              <onclick>Skin.ToggleSetting(Player.Hide)</onclick>
-            </item>
-            <item id="9" description="Player">
-              <visible>Skin.HasSetting(Player.Hide)</visible>
-              <label>[COLOR=Grey]$LOCALIZE[16003][/COLOR]</label>
-              <label2>$LOCALIZE[1223]</label2>
-              <thumb fallback="special://skin/backgrounds/default/default.jpg">$VAR[Player.Art]</thumb>
-              <onclick>Skin.ToggleSetting(Player.Hide)</onclick>
-            </item>
-			<item id="15" description="Weather">
+            <item id="15" description="Weather">
               <visible>!Skin.HasSetting(Weather.Hide)</visible>
               <label>[COLOR=Orange]$LOCALIZE[8][/COLOR]</label>
               <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>

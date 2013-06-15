@@ -9,27 +9,27 @@
   <controls>
     <control type="multiimage">
       <visible>![Player.HasVideo + Skin.HasSetting(Show_Player)]</visible>
-	  <include>Dimensions_Fullscreen</include>
+      <include>Dimensions_Fullscreen</include>
       <timeperimage>8000</timeperimage>
       <fadetime>400</fadetime>
       <imagepath background="true">$INFO[Container(300).ListItem.Icon]</imagepath>
       <randomize>true</randomize>
       <aspectratio aligny="top">scale</aspectratio>
     </control>
-	<control type="visualisation">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1920</width>
-			<height>1080</height>
-			<visible>Player.HasAudio + Skin.HasSetting(Show_Player)</visible>
-		</control>
-		<control type="videowindow">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1920</width>
-			<height>1080</height>
-			<visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
-		</control>
+    <control type="visualisation">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <visible>Player.HasAudio + Skin.HasSetting(Show_Player)</visible>
+    </control>
+    <control type="videowindow">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
+    </control>
     <control type="group">
       <animation effect="slide" easing="out" start="0,0" end="0,400" time="350" delay="0" center="120,350" reversible="false" condition="Window.Next(1112)">Conditional</animation>
       <posy>90</posy>
@@ -57,13 +57,13 @@
           <width>400</width>
           <height>50</height>
           <textcolor>Grey</textcolor>
-		  <focusedcolor>Black</focusedcolor>
+          <focusedcolor>Black</focusedcolor>
           <shadowcolor>Silver</shadowcolor>
           <align>center</align>
           <label>31976</label>
-		  <texturefocus></texturefocus>
-		  <texturenofocus></texturenofocus>
-		  <onclick>ActivateWindow(1112)</onclick>
+          <texturefocus></texturefocus>
+          <texturenofocus></texturenofocus>
+          <onclick>ActivateWindow(1112)</onclick>
         </control>
         <control type="image" description="Bottom glass border">
           <animation effect="zoom" start="100,100" end="100,50" time="100" condition="!IntegerGreaterThan(Container(9001).NumItems,0)">Conditional</animation>
@@ -134,7 +134,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.0.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.0.path)]</onclick>
             <thumb>$INFO[Skin.String(Plexbmc.0.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
             <property name="type">$INFO[Window(Home).Property(plexbmc.0.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.0.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.0.search)]</property>
@@ -152,8 +152,8 @@
             <label2>$INFO[Window(Home).Property(plexbmc.1.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.1.path)]</onclick>
             <thumb>$INFO[Skin.String(Plexbmc.1.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
-			<property name="type">$INFO[Window(Home).Property(plexbmc.1.type)]</property>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.1.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.1.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.1.search)]</property>
             <property name="recent">$INFO[Window(Home).Property(plexbmc.1.recent)]</property>
@@ -169,8 +169,8 @@
             <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
             <label2>$INFO[Window(Home).Property(plexbmc.2.subtitle)]</label2>
             <thumb>$INFO[Skin.String(Plexbmc.2.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
-			<onclick>$INFO[Window(Home).Property(plexbmc.2.path)]</onclick>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
+            <onclick>$INFO[Window(Home).Property(plexbmc.2.path)]</onclick>
             <property name="type">$INFO[Window(Home).Property(plexbmc.2.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.2.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.2.search)]</property>
@@ -187,8 +187,8 @@
             <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
             <label2>$INFO[Window(Home).Property(plexbmc.3.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.3.path)]</onclick>
-			<thumb>$INFO[Skin.String(Plexbmc.3.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
+            <thumb>$INFO[Skin.String(Plexbmc.3.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
             <property name="type">$INFO[Window(Home).Property(plexbmc.3.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.3.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.3.search)]</property>
@@ -206,8 +206,8 @@
             <label2>$INFO[Window(Home).Property(plexbmc.4.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.4.path)]</onclick>
             <thumb>$INFO[Skin.String(Plexbmc.4.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
-			<property name="type">$INFO[Window(Home).Property(plexbmc.4.type)]</property>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.4.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.4.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.4.search)]</property>
             <property name="recent">$INFO[Window(Home).Property(plexbmc.4.recent)]</property>
@@ -224,7 +224,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.5.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.5.path)]</onclick>
             <thumb>$INFO[Skin.String(Plexbmc.5.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
             <property name="type">$INFO[Window(Home).Property(plexbmc.5.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.5.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.5.search)]</property>
@@ -242,7 +242,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.6.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.6.path)]</onclick>
             <thumb>$INFO[Skin.String(Plexbmc.6.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
             <property name="type">$INFO[Window(Home).Property(plexbmc.6.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.6.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.6.search)]</property>
@@ -260,8 +260,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.7.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.7.path)]</onclick>
             <thumb>$INFO[Skin.String(Plexbmc.7.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
-			
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
             <property name="type">$INFO[Window(Home).Property(plexbmc.7.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.7.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.7.search)]</property>
@@ -278,9 +277,8 @@
             <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
             <label2>$INFO[Window(Home).Property(plexbmc.8.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.8.path)]</onclick>
-
-			<thumb>$INFO[Skin.String(Plexbmc.8.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
+            <thumb>$INFO[Skin.String(Plexbmc.8.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
             <property name="type">$INFO[Window(Home).Property(plexbmc.8.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.8.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.8.search)]</property>
@@ -297,9 +295,8 @@
             <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
             <label2>$INFO[Window(Home).Property(plexbmc.9.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.9.path)]</onclick>
-
-			<thumb>$INFO[Skin.String(Plexbmc.9.Background)]</thumb>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
+            <thumb>$INFO[Skin.String(Plexbmc.9.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
             <property name="type">$INFO[Window(Home).Property(plexbmc.9.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.9.partialpath)]</property>
             <property name="search">$INFO[Window(Home).Property(plexbmc.9.search)]</property>
@@ -408,15 +405,14 @@
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.7.Path)]</onclick>
           </item>
-		  
-		  <item id="13" description="Clips">
+          <item id="13" description="Clips">
             <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
             <label>31972</label>
             <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
           </item>
-		  <item id="14" description="Concerts">
+          <item id="14" description="Concerts">
             <visible>Skin.HasSetting(Concerts.Show) + Library.HasContent(MusicVideos)</visible>
             <label>31971</label>
             <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
@@ -428,7 +424,6 @@
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
             <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
           </item>
-          
           <item id="300" description="PVR">
             <visible>System.GetBool(pvrmanager.enabled)</visible>
             <label>PVR</label>
@@ -455,17 +450,11 @@
             <onclick condition="!System.HasMediaDvd">Notification($LOCALIZE[164],$LOCALIZE[219],5,DefaultIconWarning.png)</onclick>
             <onclick condition="!System.HasMediaDvd">EjectTray()</onclick>
           </item>
-          <!--<item id="9" description="Player">
-            <visible>!Skin.HasSetting(Player.Hide) + Player.HasMedia</visible>
-            <label>$VAR[HomePlayer.Label]</label>
-			<icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[HomePlayer.Art]</icon>
-            <onclick>Fullscreen</onclick>
-          </item>-->
           <item id="15" description="Weather">
             <visible>!Skin.HasSetting(Weather.Hide)</visible>
             <label>8</label>
             <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Skin.String(Weather.Background)]</thumb>
-			<onclick>ActivateWindow(Weather)</onclick>
+            <onclick>ActivateWindow(Weather)</onclick>
           </item>
           <item id="10" description="Settings">
             <visible>!Skin.HasSetting(Settings.Hide)</visible>
@@ -507,6 +496,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <font>Sublist</font>
+            <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
             <textcolor>Black</textcolor>
             <shadowcolor>-</shadowcolor>
@@ -519,6 +509,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <font>Sublist</font>
+            <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
             <textcolor>Sublist</textcolor>
             <shadowcolor>-</shadowcolor>
@@ -718,40 +709,40 @@
             <label>12333</label>
             <onclick>xbmc.mastermode</onclick>
           </item>
-		   <item id="29" description="Concerts artists">
+          <item id="29" description="Concerts artists">
             <visible>Container(300).HasFocus(14)</visible>
             <label>133</label>
             <onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
           </item>
-		  <item id="29" description="Recent concerts">
+          <item id="29" description="Recent concerts">
             <visible>Container(300).HasFocus(14)</visible>
             <label>31020</label>
             <onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
           </item>
-		  <item id="29" description="Concerts genres">
+          <item id="29" description="Concerts genres">
             <visible>Container(300).HasFocus(14)</visible>
             <label>135</label>
             <onclick>ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
           </item>
-		  <item id="30" description="Clips albums">
+          <item id="30" description="Clips albums">
             <visible>Container(300).HasFocus(13)</visible>
             <label>132</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/5&quot;)</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/5&quot;)</onclick>
-	      </item>
-		  <item id="30" description="Clips artists">
+          </item>
+          <item id="30" description="Clips artists">
             <visible>Container(300).HasFocus(13)</visible>
             <label>133</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/4&quot;)</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/4&quot;)</onclick>
-	      </item>
-		  <item id="30" description="Clips genres">
+          </item>
+          <item id="30" description="Clips genres">
             <visible>Container(300).HasFocus(13)</visible>
             <label>135</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/1&quot;)</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/1&quot;)</onclick>
-	      </item>
-		  <item id="51" description="Plexbmc Picture channels">
+          </item>
+          <item id="51" description="Plexbmc Picture channels">
             <visible>Container(300).HasFocus(50)</visible>
             <label>1</label>
             <onclick>ActivateWindow(pictures,&quot;plugin://plugin.video.plexbmc/?url=http://photo&amp;mode=22&quot;,return)</onclick>
@@ -793,8 +784,7 @@
             <label>Refresh</label>
             <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
           </item>
-          
-	  <item id="58" description="PleXBMC: search">
+          <item id="58" description="PleXBMC: search">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
@@ -817,9 +807,9 @@
             <label>Recently Added</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
           </item>
-		  <item id="61" description="PleXBMC: Recently released">
+          <item id="61" description="PleXBMC: Recently released">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40) </visible>
+            <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
             <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
             <visible>substring(Container(300).ListItem.Property(type),movie)</visible>
             <label>Recently Released</label>
@@ -882,32 +872,6 @@
         <textcolor>Grey</textcolor>
       </control>
     </control>
-       <!--<control type="group" description="Music Cover group">
-        <animation effect="slide" start="900,0" end="0,0" time="500" tween="quadratic">Visible</animation>
-        <animation effect="slide" start="0,0" end="900,0" time="350" easing="in">Hidden</animation>
-        <visible>Player.HasAudio</visible>
-		    <posy>255</posy>
-            <posx>510r</posx>
-            <control type="image" description="MusicAlbum">
-              <posx>0</posx>
-              <posy>0</posy>
-              <height>450</height>
-              <width>450</width>
-              <fadetime>300</fadetime>
-              <bordersize>-27</bordersize>
-			   <texture>player/PlayerCoverBG.png</texture>
-            </control>
-			<control type="image" description="MusicAlbum">
-              <posx>0</posx>
-              <posy>0</posy>
-              <height>450</height>
-              <width>450</width>
-              <fadetime>300</fadetime>
-              <aspectratio scalediffuse="false">scale</aspectratio>
-              <texture diffuse="player/PlayerDiffuse.png" fallback="DefaultMusic.png">$INFO[MusicPlayer.Cover]</texture>
-            </control>
-	      </control>-->
-
     <include>Time</include>
     <control type="group" description="Library stats">
       <animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240" condition="![[[Container(300).HasFocus(13) | Container(300).HasFocus(14)] + Library.HasContent(MusicVideos)] | Container(300).HasFocus(4) | Container(300).HasFocus(5) | [Container(300).HasFocus(6) + Library.HasContent(music)]]">Conditional</animation>
