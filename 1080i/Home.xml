@@ -740,7 +740,12 @@
             </control>
           </focusedlayout>
           <content>
-            <item id="2" description="Program apps">
+            <item id="1" description="DVD eject">
+              <visible>Container(300).HasFocus(8)</visible>
+              <label>13391</label>
+              <onclick>EjectTray()</onclick>
+            </item>
+			<item id="2" description="Program apps">
               <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons2)</visible>
               <label>0</label>
               <onclick>XBMC.ActivateWindow(Programs,Addons,return)</onclick>

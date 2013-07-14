@@ -1658,7 +1658,6 @@
               <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
               <onclick condition="System.HasMediaDvd">PlayDVD()</onclick>
               <onclick condition="!System.HasMediaDvd">Notification($LOCALIZE[164],$LOCALIZE[219],5,DefaultIconWarning.png)</onclick>
-              <onclick condition="!System.HasMediaDvd">EjectTray()</onclick>
             </item>
             <item id="15" description="Weather">
               <visible>!Skin.HasSetting(Weather.Hide)</visible>
