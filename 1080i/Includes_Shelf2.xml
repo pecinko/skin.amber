@@ -8,19 +8,18 @@
     <posx>30r</posx>
     <align>right</align>
     <posx>594</posx>
-    <posy>307</posy>
+    <posy>309</posy>
     <height>45</height>
-    <width>300</width>
+    <width>400</width>
 	<textcolor>Orange</textcolor>
     <font>ListDetails</font>
   </include>
   <include name="RecentlyAdded_Label">
-    <posx>530</posx>
-    <posy>307</posy>
+    <posx>600</posx>
+    <posy>309</posy>
     <height>45</height>
-    <width>1000</width>
+    <width>870</width>
     <align>left</align>
-    <textcolor>Orange</textcolor>
     <font>ListDetails</font>
   </include>
   <include name="RecentlyAdded_Posters">
@@ -38,14 +37,14 @@
     <itemlayout height="420" width="260">
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <include>PosterThumb</include>
@@ -54,14 +53,14 @@
     <focusedlayout height="420" width="260">
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <include>PosterThumb</include>
@@ -83,14 +82,14 @@
     <itemlayout height="420" width="260">
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/PosterDiffuse.png">$INFO[ListItem.Thumb]</texture>
@@ -112,21 +111,21 @@
                 <font>Slider</font>
 				<align>center</align>
                 <textcolor>White2</textcolor>
-                <label>$INFO[ListItem.Season,S, . ]$INFO[ListItem.Episode,E]</label>
+                <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
               </control>
             </control>
     </itemlayout>
     <focusedlayout height="420" width="260">
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
         <posx>20</posx>
-        <posy>24</posy>
+        <posy>22</posy>
         <width>216</width>
         <height>315</height>
         <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/PosterDiffuse.png">$INFO[ListItem.Thumb]</texture>
@@ -148,7 +147,7 @@
                 <font>Slider</font>
 				<align>center</align>
                 <textcolor>White2</textcolor>
-                <label>$INFO[ListItem.Season,S, . ]$INFO[ListItem.Episode,E]</label>
+                <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
               </control>
             </control>
     </focusedlayout>
@@ -237,6 +236,73 @@
             <font>ItemCount</font>
             <textcolor>Orange</textcolor>
             <label>$INFO[ListItem.Label2]</label>
+          </control>
+        </focusedlayout>
+  </include>
+  <include name="RecentlyAdded_Addons">
+    <posx>580</posx>
+    <posy>360</posy>
+    <width>1300</width>
+    <height>420</height>
+    <onleft>300</onleft>
+    <onback>300</onback>
+    <orientation>horizontal</orientation>
+    
+    <preloaditems>4</preloaditems>
+	<focusposition>0</focusposition>
+        <movement>2</movement>
+      <itemlayout height="420" width="260">
+          <control type="image">
+            <posx>15</posx>
+            <posy>22</posy>
+            <width>230</width>
+            <height>230</height>
+            <bordersize>-12</bordersize>
+            <include>SquareThumbBG</include>
+          </control>
+          <control type="image">
+            <posx>15</posx>
+            <posy>22</posy>
+            <width>230</width>
+            <height>230</height>
+            <include>SquareThumb</include>
+          </control>
+          <control type="label">
+            <posx>130</posx>
+            <posy>300</posy>
+            <width>230</width>
+            <height>45</height>
+            <align>center</align>
+            <font>ItemCount</font>
+            <scroll>false</scroll>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="420" width="260">
+          <control type="image">
+            <posx>15</posx>
+            <posy>22</posy>
+            <width>230</width>
+            <height>230</height>
+            <bordersize>-12</bordersize>
+            <include>SquareThumbFO</include>
+          </control>
+          <control type="image">
+            <posx>15</posx>
+            <posy>22</posy>
+            <width>230</width>
+            <height>230</height>
+            <include>SquareThumb</include>
+          </control>
+          <control type="label">
+            <posx>130</posx>
+            <posy>300</posy>
+            <width>230</width>
+            <height>45</height>
+            <align>center</align>
+            <font>ItemCount</font>
+            <textcolor>Orange</textcolor>
+            <label>$INFO[ListItem.Label]</label>
           </control>
         </focusedlayout>
   </include>
