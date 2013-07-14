@@ -24,9 +24,8 @@
           <posy>480</posy>
           <width>555</width>
           <height>555</height>
-          <bordersize>-29</bordersize>
-          <texture>thumbs/SquareBG_NF.png</texture>
-		  <aspectratio>scale</aspectratio>
+          <bordersize>-28</bordersize>
+          <include>SquareThumbBG</include>
         </control>
 		<control type="image" description="Thumb">
           <posx>60</posx>
@@ -34,8 +33,7 @@
           <width>555</width>
           <height>555</height>
           <include>Icon_Fade</include>
-          <texture background="true" fallback="DefaultFile.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
-          <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+          <include>SquareThumb</include>
         </control>
 		
 	</control>	
@@ -130,15 +128,13 @@
           <width>420</width>
           <height>420</height>
           <bordersize>-22</bordersize>
-          <texture>thumbs/SquareBG_NF.png</texture>
-		  <aspectratio>scale</aspectratio>
+          <include>SquareThumbBG</include>
         </control>
 		<control type="image" description="Thumb">
           <width>420</width>
           <height>420</height>
           <include>Icon_Fade</include>
-          <texture background="true" fallback="DefaultFolder.png" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
-          <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+          <include>SquareThumb</include>
         </control>
 	</control>
 	<include>Time</include>

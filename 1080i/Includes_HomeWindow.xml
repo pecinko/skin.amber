@@ -1,25 +1,24 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="1112">
-    
-<defaultcontrol always="true">300</defaultcontrol>
-  <include>OpenClose</include>
-  <controls>
-    <include>Time</include>
-    <control type="grouplist" id="300">
-	  <animation effect="slide" easing="out" start="0,-20" end="0,0" time="150" delay="300" tween="bounce">WindowOpen</animation>
-	  <posx>60</posx>
-	  <posy>48</posy>
-	  <width>1920</width>
-      <height>1032</height>
-      <onup>300</onup>
-      <ondown>300</ondown>
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="Vertical_Home_Layout">
+    <!--<control type="group" id="700">
+	  <control type="image" description="RA BG">
+        <visible>Control.IsVisible(311) | Control.IsVisible(411) | Control.IsVisible(511)</visible>
+        <include>VisibleFadeEffect</include>
+		<posx>530</posx>
+        <posy>315</posy>
+        <width>1500</width>
+        <height>450</height>
+        <texture border="0,40,0,40">home/OverlayRA2.png</texture>
+      </control>
+	  
 	  <control type="label" id="110" description="Top Label">
         <visible>Control.IsVisible(111)</visible>
         <include>VisibleFadeEffect</include>
         <include>ShelfTopLabel</include>
         <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
       </control>
-	  <control type="panel" id="111" description="TOP Shortcuts">
+	  <control type="panel" id="111" description="Favourites">
         <visible>Skin.HasSetting(Shelf.Favs) + IntegerGreaterThan(Container(111).NumItems,0)</visible> 
 		<onleft>111</onleft>
         <onright>111</onright>
@@ -249,20 +248,29 @@
           </item>
         </content>
       </control>
-	  <control type="label" id="310" description="Top Label">
+	  
+	  
+	  <control type="label" description="Header">
         <visible>Control.IsVisible(311)</visible>
         <include>VisibleFadeEffect</include>
-        <include>ShelfTopLabel</include>
+        <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
       </control>
-      <control type="panel" id="311" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(311).NumItems,0)</visible>
+	  <control type="label" description="Label">
+        <visible>Control.HasFocus(311)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(311).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="311" description="TOP Shortcuts">
+        <visible>Container(300).HasFocus(4)</visible>
+		<visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(311).NumItems,0)</visible>
 		<visible>[Library.HasContent(Movies) | Skin.HasSetting(plexbmc)]</visible>
-        <onleft>311</onleft>
+        <onleft>300</onleft>
         <onright>311</onright>
 		<onup>300</onup>
 	    <ondown>300</ondown>
-        <include>RA_Commons_Posters</include>
+        <include>RecentlyAdded_Posters</include>
         <content>
           <item id="1" description="Movies">
             <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -506,20 +514,27 @@
           </item>
         </content>
       </control>
-      <control type="label" id="410" description="Top Label">
+      <control type="label" description="Header">
         <visible>Control.IsVisible(411)</visible>
         <include>VisibleFadeEffect</include>
-        <include>ShelfTopLabel</include>
+         <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
       </control>
-      <control type="panel" id="411" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(411).NumItems,0)</visible>
+	  <control type="label" description="Label">
+        <visible>Control.HasFocus(411)</visible>
+        <include>VisibleFadeEffect</include>
+         <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(411).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="411" description="TOP Shortcuts">
+        <visible>Container(300).HasFocus(5)</visible>
+		<visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(411).NumItems,0)</visible>
 		<visible>[Library.HasContent(TVShows) | Skin.HasSetting(plexbmc)]</visible>
-        <onleft>411</onleft>
+        <onleft>300</onleft>
         <onright>411</onright>
 		<onup>300</onup>
 	    <ondown>300</ondown>
-        <include>RA_Commons_Posters</include>
+        <include>RecentlyAdded_Episodes</include>
         <content>
           <item id="1" description="Episodes1">
             <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -626,8 +641,7 @@
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.ShowTitle)]</label2>
-            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason),,.]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeNumber]</property>
-			<!--<property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason)]</property>-->
+			<property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason)]</property>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Path)]</onclick>
@@ -824,25 +838,33 @@
           </item>
         </content>
       </control>
-     <control type="label" id="510" description="Top Label">
+     <control type="label" description="Header">
         <visible>Control.IsVisible(511)</visible>
         <include>VisibleFadeEffect</include>
-        <include>ShelfTopLabel</include>
+         <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
       </control>
-      <control type="panel" id="511" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(511).NumItems,0)</visible>
+	  <control type="label" description="Label">
+        <visible>Control.HasFocus(511)</visible>
+        <include>VisibleFadeEffect</include>
+         <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(511).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="511" description="TOP Shortcuts">
+        <visible>Container(300).HasFocus(6)</visible>
+		<visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(511).NumItems,0)</visible>
 		<visible>[Library.HasContent(Music) | Skin.HasSetting(plexbmc)]</visible>
-        <onleft>511</onleft>
+        <onleft>300</onleft>
         <onright>511</onright>
 		<onup>300</onup>
 	    <ondown>300</ondown>
-        <include>RA_Commons_Music</include>
+        <include>RecentlyAdded_Albums</include>
         <content>
           <item id="1" description="Music">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.1.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.1.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.1.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.1.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.1.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.1.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</thumb>
@@ -851,7 +873,8 @@
           <item id="2" description="Shortcut2">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.2.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.2.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.2.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.2.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.2.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.2.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</thumb>
@@ -860,7 +883,8 @@
           <item id="3" description="Shortcut3">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.3.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.3.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.3.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.3.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.3.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.3.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</thumb>
@@ -869,7 +893,8 @@
           <item id="4" description="Shortcut4">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.4.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.4.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.4.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.4.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.4.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.4.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</thumb>
@@ -878,7 +903,8 @@
           <item id="5" description="Shortcut5">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.5.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.5.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.5.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.5.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.5.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.5.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</thumb>
@@ -887,7 +913,8 @@
           <item id="6" description="Music">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.6.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.6.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.6.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.6.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.6.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.6.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</thumb>
@@ -896,7 +923,8 @@
           <item id="7" description="Shortcut7">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.7.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.7.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.7.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.7.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.7.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.7.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</thumb>
@@ -905,7 +933,8 @@
           <item id="8" description="Shortcut8">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.8.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.8.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.8.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.8.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.8.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.8.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</thumb>
@@ -914,7 +943,8 @@
           <item id="9" description="Shortcut9">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.9.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.9.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.9.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.9.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.9.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.9.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</thumb>
@@ -923,7 +953,8 @@
           <item id="10" description="Shortcut10">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(LatestAlbum.10.Path))</visible>
-            <label>$INFO[Window(Home).Property(LatestAlbum.10.Artist),, - ]$INFO[Window(Home).Property(LatestAlbum.10.Title)]</label>
+            <label>$INFO[Window(Home).Property(LatestAlbum.10.Artist)]</label>
+			<label2>$INFO[Window(Home).Property(LatestAlbum.10.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.10.Path)])</onclick>
             <thumb>$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</thumb>
@@ -932,8 +963,9 @@
           <item id="1" description="Music">
 		    <visible>Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Title)]</label>
-            <onclick>PlayList.Clear</onclick>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Title)]</label2>
+			<onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
@@ -941,7 +973,8 @@
           <item id="2" description="Shortcut2">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.2.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Thumb)]</thumb>
@@ -950,7 +983,8 @@
           <item id="3" description="Shortcut3">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.3.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Thumb)]</thumb>
@@ -959,7 +993,8 @@
           <item id="4" description="Shortcut4">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.4.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Thumb)]</thumb>
@@ -968,7 +1003,8 @@
           <item id="5" description="Shortcut5">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.5.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Thumb)]</thumb>
@@ -977,7 +1013,8 @@
           <item id="6" description="Music">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.6.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Thumb)]</thumb>
@@ -986,7 +1023,8 @@
           <item id="7" description="Shortcut7">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.7.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Thumb)]</thumb>
@@ -995,7 +1033,8 @@
           <item id="8" description="Shortcut8">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.8.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Thumb)]</thumb>
@@ -1004,7 +1043,8 @@
           <item id="9" description="Shortcut9">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.9.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Thumb)]</thumb>
@@ -1013,7 +1053,8 @@
           <item id="10" description="Shortcut10">
             <visible>Skin.HasSetting(plexbmc)</visible>
 			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.10.Title))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Title)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Title)]</label2>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Thumb)]</thumb>
@@ -1021,14 +1062,958 @@
           </item>
         </content>
       </control>
-    </control>
-	<control type="image" description="Bottom fade">
-       <posx>0</posx>
-        <posy>1056</posy>
-        <width>1920</width>
-        <height>24</height>
-        <texture>img/Gradient.png</texture>
-        <aspectratio>stretch</aspectratio>
+    </control>-->
+	
+	
+	
+	<control type="group">
+      <control type="group" description="Furniture">
+        <control type="image" description="Main Left Blade">
+          <animation effect="fade" time="0" start="100" end="99" reversible="false" condition="true">Conditional</animation>
+		  <posx>0</posx>
+          <posy>0</posy>
+          <width>540</width>
+          <height>1080</height>
+          <texture border="0,0,30,0">common/ViewMenu.png</texture>
+        </control>
+        <control type="label">
+          <posx>50</posx>
+          <posy>0</posy>
+          <width>460</width>
+          <height>80</height>
+          <aligny>center</aligny>
+          <textcolor>Grey3</textcolor>
+          <shadowcolor>ShadowDark</shadowcolor>
+          <label>$INFO[System.Time]</label>
+          <font>Volume</font>
+        </control>
+        <control type="label">
+          <visible>Skin.HasSetting(plexbmc)</visible>
+		  <posx>50</posx>
+          <posy>1000</posy>
+          <width>460</width>
+          <height>80</height>
+          <aligny>center</aligny>
+          <textcolor>Grey3</textcolor>
+          <shadowcolor>ShadowDark</shadowcolor>
+          <label>$INFO[Container(300).ListItem.Label2]</label>
+          <font>Volume</font>
+        </control>
+		<control type="label">
+          <visible>!Skin.HasSetting(plexbmc)</visible>
+		  <posx>50</posx>
+          <posy>1000</posy>
+          <width>460</width>
+          <height>80</height>
+          <aligny>center</aligny>
+          <textcolor>Grey3</textcolor>
+          <shadowcolor>ShadowDark</shadowcolor>
+          <label>XBMC</label>
+          <font>Volume</font>
+        </control>
       </control>
-  </controls>
-</window>
+      <control type="fixedlist" id="300" description="Main Bar">
+        <animation effect="fade" time="200" start="100" end="20" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
+        <posx>30</posx>
+        <posy>100</posy>
+        <width>460</width>
+        <height>880</height>
+        <onup>300</onup>
+        <ondown>300</ondown>
+        <onleft>9001</onleft>
+        <onright condition="Skin.HasSetting(Shelf.Favs) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)">ActivateWindow(1112)</onright>
+        <onback>9001</onback>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime tween="quadratic" easing="out">300</scrolltime>
+        <focusposition>5</focusposition>
+        <movement>0</movement>
+        <preloaditems>4</preloaditems>
+        <itemlayout height="80" width="460">
+          <control type="label">
+            <posx>460</posx>
+            <posy>0</posy>
+            <width>460</width>
+            <height>80</height>
+            <align>right</align>
+            <aligny>center</aligny>
+            <textcolor>Grey3</textcolor>
+            <shadowcolor>ShadowDark</shadowcolor>
+            <label>$INFO[ListItem.Label]</label>
+            <font>MainMenuVertical</font>
+          </control>
+        </itemlayout>
+        <focusedlayout height="80" width="460">
+          <control type="label">
+            <posx>460</posx>
+            <posy>0</posy>
+            <width>460</width>
+            <height>80</height>
+            <align>right</align>
+            <aligny>center</aligny>
+            <textcolor>Orange</textcolor>
+            <shadowcolor>ShadowDark</shadowcolor>
+            <label>$INFO[ListItem.Label]</label>
+            <font>MainMenuVerticalFO</font>
+          </control>
+        </focusedlayout>
+        <content>
+            <item id="30">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.0.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.0.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.0.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.0.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.0.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.0.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.0.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.0.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.0.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.0.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.0.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.0.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.0.year)]</property>
+          </item>
+          <item id="31">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.1.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.1.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.1.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.1.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.1.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.1.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.1.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.1.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.1.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.1.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.1.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.1.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.1.year)]</property>
+          </item>
+          <item id="32">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.2.subtitle)]</label2>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.2.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
+            <onclick>$INFO[Window(Home).Property(plexbmc.2.path)]</onclick>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.2.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.2.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.2.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.2.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.2.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.2.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.2.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.2.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.2.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.2.year)]</property>
+          </item>
+          <item id="33">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.3.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.3.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.3.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.3.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.3.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.3.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.3.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.3.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.3.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.3.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.3.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.3.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.3.year)]</property>
+          </item>
+          <item id="34">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.4.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.4.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.4.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.4.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.4.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.4.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.4.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.4.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.4.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.4.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.4.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.4.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.4.year)]</property>
+          </item>
+          <item id="35">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.5.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.5.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.5.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.5.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.5.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.5.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.5.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.5.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.5.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.5.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.5.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.5.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.5.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.5.year)]</property>
+          </item>
+          <item id="36">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.6.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.6.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.6.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.6.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.6.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.6.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.6.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.6.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.6.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.6.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.6.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.6.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.6.year)]</property>
+          </item>
+          <item id="37">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.7.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.7.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.7.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.7.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.7.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.7.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.7.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.7.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.7.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.7.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.7.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.7.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.7.year)]</property>
+          </item>
+          <item id="38">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.8.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.8.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.8.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.8.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.8.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.8.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.8.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.8.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.8.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.8.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.8.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.8.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.8.year)]</property>
+          </item>
+          <item id="39">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.9.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.9.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.9.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.9.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.9.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.9.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.9.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.9.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.9.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.9.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.9.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.9.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.9.year)]</property>
+          </item>
+          <item id="40">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.10.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.10.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.10.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.10.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.10.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.10.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.10.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.10.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.10.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.10.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.10.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.10.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.10.year)]</property>
+          </item>
+          <item id="41">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.11.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.11.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.11.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.11.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.11.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.11.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.11.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.11.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.11.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.11.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.11.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.11.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.11.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.11.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.11.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.11.year)]</property>
+          </item>
+          <item id="40">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.12.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.12.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.12.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.12.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.12.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.12.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.12.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.12.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.12.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.12.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.12.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.12.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.12.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.12.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.12.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.12.year)]</property>
+          </item>
+          <item id="43">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.13.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.13.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.13.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.13.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.13.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.13.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.13.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.13.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.13.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.13.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.13.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.13.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.13.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.13.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.13.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.13.year)]</property>
+          </item>
+          <item id="44">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.14.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.14.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.14.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.14.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.14.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.14.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.14.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.14.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.14.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.14.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.14.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.14.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.14.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.14.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.14.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.14.year)]</property>
+          </item>
+          <item id="45">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.15.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.15.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.15.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.15.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.15.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.15.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.15.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.15.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.15.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.15.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.15.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.15.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.15.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.15.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.15.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.15.year)]</property>
+          </item>
+          <item id="46">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.16.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.16.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.16.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.16.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.16.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.16.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.16.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.16.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.16.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.16.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.16.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.16.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.16.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.16.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.16.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.16.year)]</property>
+          </item>
+          <item id="47">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.17.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.17.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.17.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.17.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.17.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.17.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.17.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.17.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.17.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.17.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.17.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.17.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.17.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.17.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.17.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.17.year)]</property>
+          </item>
+          <item id="48">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.18.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.18.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.18.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.18.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.18.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.18.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.18.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.18.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.18.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.18.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.18.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.18.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.18.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.18.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.18.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.18.year)]</property>
+          </item>
+          <item id="49">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.19.title))</visible>
+            <label>$INFO[Window(Home).Property(plexbmc.19.title)]</label>
+            <label2>$INFO[Window(Home).Property(plexbmc.19.subtitle)]</label2>
+            <onclick>$INFO[Window(Home).Property(plexbmc.19.path)]</onclick>
+            <thumb background="true">$INFO[Skin.String(Plexbmc.19.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.19.art)]</icon>
+            <property name="type">$INFO[Window(Home).Property(plexbmc.19.type)]</property>
+            <property name="partial">$INFO[Window(Home).Property(plexbmc.19.partialpath)]</property>
+            <property name="search">$INFO[Window(Home).Property(plexbmc.19.search)]</property>
+            <property name="recent">$INFO[Window(Home).Property(plexbmc.19.recent)]</property>
+            <property name="viewed">$INFO[Window(Home).Property(plexbmc.19.viewed)]</property>
+            <property name="shared">$INFO[Window(Home).Property(plexbmc.19.shared)]</property>
+            <property name="newest">$INFO[Window(Home).Property(plexbmc.19.released)]</property>
+            <property name="ondeck">$INFO[Window(Home).Property(plexbmc.19.ondeck)]</property>
+            <property name="album">$INFO[Window(Home).Property(plexbmc.19.album)]</property>
+            <property name="year">$INFO[Window(Home).Property(plexbmc.19.year)]</property>
+          </item>
+            <item id="50" description="Channels">
+              <visible>Skin.HasSetting(plexbmc)</visible>
+              <label>Channels</label>
+              <thumb>special://skin/backgrounds/Channels.jpg</thumb>
+              <!--<onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall&quot;,return)</onclick>-->
+			  <onclick>ActivateWindow(1115)</onclick>
+            </item>
+            <item id="49" description="Queue">
+              <visible>Skin.HasSetting(plexbmc)</visible>
+              <label>Queue</label>
+              <thumb fallback="special://skin/backgrounds/Network.jpg">$INFO[Skin.String(Network.Background)]</thumb>
+              <onclick>$INFO[Window(Home).Property(plexbmc.queue)]</onclick>
+              <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex))</visible>
+            </item>
+            <item id="21" description="Custom1">
+              <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.1.Path)]</onclick>
+            </item>
+            <item id="1" description="Pictures">
+              <visible>!Skin.HasSetting(plexbmc)</visible>
+              <visible>!Skin.HasSetting(Pictures.Hide)</visible>
+              <label>1</label>
+              <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+              <onclick>ActivateWindow(Pictures,root)</onclick>
+            </item>
+            <item id="22" description="Custom2">
+              <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.2.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.2.Path)]</onclick>
+            </item>
+            <item id="2" description="Addons">
+              <visible>!Skin.HasSetting(Addons.Hide)</visible>
+              <label>24001</label>
+              <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+              <onclick>ActivateWindow(1115)</onclick>
+            </item>
+            <item id="23" description="Custom3">
+              <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.3.Path)]</onclick>
+            </item>
+            <item id="3" description="Videos">
+              <visible>!Skin.HasSetting(plexbmc)</visible>
+              <visible>!Skin.HasSetting(Videos.Hide)</visible>
+              <label>3</label>
+              <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+              <onclick>ActivateWindow(Videos,root)</onclick>
+            </item>
+            <item id="24" description="Custom.4">
+              <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.4.Path)]</onclick>
+            </item>
+            <item id="4" description="MyMovies">
+              <visible>!Skin.HasSetting(plexbmc)</visible>
+              <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
+              <label>20342</label>
+              <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+              <onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
+            </item>
+            <item id="25" description="Custom.5">
+              <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.5.Path)]</onclick>
+            </item>
+            <item id="5" description="MyTV">
+              <visible>!Skin.HasSetting(plexbmc)</visible>
+              <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
+              <label>20343</label>
+              <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+              <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
+            </item>
+            <item id="26" description="Custom.6">
+              <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.6.Path)]</onclick>
+            </item>
+            <item id="6" description="Music">
+              <visible>!Skin.HasSetting(plexbmc)</visible>
+              <visible>!Skin.HasSetting(Music.Hide)</visible>
+              <label>2</label>
+              <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+              <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,root)</onclick>
+              <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</onclick>
+            </item>
+            <item id="27" description="Custom.7">
+              <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.7.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.7.Path)]</onclick>
+            </item>
+            <item id="13" description="Clips">
+              <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
+              <label>31972</label>
+              <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
+              <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
+              <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
+            </item>
+            <item id="14" description="Concerts">
+              <visible>Skin.HasSetting(Concerts.Show) + Library.HasContent(MusicVideos)</visible>
+              <label>31971</label>
+              <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
+              <onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+            </item>
+            <item id="28" description="Custom.8">
+              <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
+            </item>
+            <item id="300" description="PVR">
+              <visible>System.GetBool(pvrmanager.enabled)</visible>
+              <label>PVR</label>
+              <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
+              <onclick>ActivateWindowAndFocus(PVR)</onclick>
+            </item>
+            <item id="7" description="Favorites">
+              <visible>!Skin.HasSetting(Favourites.Hide)</visible>
+              <label>1036</label>
+              <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favourites.Background)]</thumb>
+              <onclick>ActivateWindow(Favourites)</onclick>
+            </item>
+            <item id="29" description="Custom.9">
+              <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
+              <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
+              <onclick>$INFO[Skin.String(CustomHome.9.Path)]</onclick>
+            </item>
+            <item id="8" description="DVD">
+              <visible>!Skin.HasSetting(DVD.Hide)</visible>
+              <label>427</label>
+              <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+              <onclick condition="System.HasMediaDvd">PlayDVD()</onclick>
+              <onclick condition="!System.HasMediaDvd">Notification($LOCALIZE[164],$LOCALIZE[219],5,DefaultIconWarning.png)</onclick>
+              <onclick condition="!System.HasMediaDvd">EjectTray()</onclick>
+            </item>
+            <item id="15" description="Weather">
+              <visible>!Skin.HasSetting(Weather.Hide)</visible>
+              <label>8</label>
+              <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Skin.String(Weather.Background)]</thumb>
+              <onclick>ActivateWindow(Weather)</onclick>
+            </item>
+            <item id="10" description="Settings">
+              <visible>!Skin.HasSetting(Settings.Hide)</visible>
+              <label>5</label>
+              <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+              <onclick>ActivateWindow(Settings)</onclick>
+            </item>
+            <item id="11" description="Quit">
+              <visible>!Skin.HasSetting(Quit.Hide)</visible>
+              <label fallback="13009">$VAR[QuitLabel2]</label>
+              <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+              <onclick>$VAR[QuitAction]</onclick>
+            </item>
+          </content>
+      </control>
+    </control>
+	<control type="image" description="Sub Left Blade">
+      <visible>System.HasAddon(plugin.video.plexbmc)</visible>
+	  <include>VisibleFadeEffect</include>
+	  <animation effect="slide" start="0,0" end="389,0" time="250" delay="0" reversible="true" condition="Control.HasFocus(9001)">conditional</animation>
+	  <posx>-518</posx>
+      <posy>0</posy>
+      <width>540</width>
+      <height>1080</height>
+      <texture border="0,0,30,0">common/ViewMenu.png</texture>
+    </control>
+    <control type="fixedlist" id="9001">
+      <visible allowhiddenfocus="true">Control.HasFocus(9001) + System.HasAddon(plugin.video.plexbmc)</visible>
+	  <include>VisibleFadeEffect</include>
+	  <animation effect="slide" start="0,0" end="450,0" time="250" delay="0" condition="Control.HasFocus(9001)">conditional</animation>
+      <animation effect="fade" time="300" start="100" end="0" delay="0" reversible="true" condition="!Control.HasFocus(9001)">Conditional</animation>
+      <posx>-450</posx>
+      <posy>330</posy>
+      <width>400</width>
+      <height>480</height>
+      <onleft>300</onleft>
+      <onright>300</onright>
+      <onup>9001</onup>
+      <ondown>9001</ondown>
+      <onback>300</onback>
+      <focusposition>3</focusposition>
+      <movement>3</movement>
+	  <scrolltime>280</scrolltime>
+      <itemlayout width="400" height="60">
+        <control type="image">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>400</width>
+          <height>60</height>
+          <texture border="3">buttons/ButtonNF.png</texture>
+        </control>
+        <control type="label" description="Main Label">
+          <posx>30</posx>
+          <posy>0</posy>
+          <width>360</width>
+          <height>60</height>
+          <label>$INFO[ListItem.Label]</label>
+        </control>
+      </itemlayout>
+      <focusedlayout width="400" height="60">
+        <control type="image">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>400</width>
+          <height>60</height>
+          <texture border="2">buttons/ButtonFO.png</texture>
+        </control>
+        <control type="label" description="Main Label">
+          <posx>30</posx>
+          <posy>0</posy>
+          <width>360</width>
+          <height>60</height>
+          <textcolor>Orange</textcolor>
+          <label>$INFO[ListItem.Label]</label>
+        </control>
+      </focusedlayout>
+      <content>
+        <item id="2" description="go PleXBMC">
+          <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
+          <label>Go Plex</label>
+          <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+          <onclick>XBMC.ReloadSkin()</onclick>
+        </item>
+        <item id="3" description="go XBMC">
+          <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+          <label>Go XBMC</label>
+          <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+          <onclick>XBMC.ReloadSkin()</onclick>
+        </item>
+        <item id="4" description="Refresh PleXBMC">
+          <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+          <label>Refresh</label>
+          <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
+        </item>
+        <item id="5" description="PleXBMC Settings">
+              <visible>System.HasAddon(plugin.video.plexbmc)</visible>
+              <label>PleXBMC settings</label>
+              <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
+            </item>
+      </content>
+    </control>
+    <control type="group">
+      <posx>0</posx>
+      <posy>-60</posy>
+      <control type="group" description="Music info">
+        <include>VisibleFadeEffect</include>
+        <animation effect="slide" start="-900,0" end="0,0" time="500" tween="quadratic">Visible</animation>
+        <animation effect="slide" start="0,0" end="-900,0" time="350" easing="in">Hidden</animation>
+        <visible>Player.HasAudio + Container(300).HasFocus(9)</visible>
+        <control type="image">
+          <posx>51</posx>
+          <posy>100</posy>
+          <width>747</width>
+          <height>267</height>
+          <texture border="6">img/BlackRounded.png</texture>
+        </control>
+        <control type="image">
+          <description>Cover image</description>
+          <posx>60</posx>
+          <posy>111</posy>
+          <width>243</width>
+          <height>243</height>
+          <texture diffuse="thumbs/DiffuseSquare.png">$INFO[MusicPlayer.Cover]</texture>
+          <bordertexture>thumbs/ThumbNF.png</bordertexture>
+          <aspectratio scalediffuse="false">stretch</aspectratio>
+        </control>
+        <control type="group" description="Info">
+          <posx>351</posx>
+          <posy>111</posy>
+          <control type="fadelabel" description="Title">
+            <posy>10</posy>
+            <height>45</height>
+            <width>440</width>
+            <label>$INFO[MusicPlayer.Title]</label>
+            <scrollout>false</scrollout>
+            <textcolor>Orange</textcolor>
+            <pauseatend>2000</pauseatend>
+          </control>
+          <control type="label" description="Artist">
+            <posy>66</posy>
+            <height>45</height>
+            <width>440</width>
+            <label>$INFO[MusicPlayer.Artist]</label>
+            <textcolor>White2</textcolor>
+          </control>
+          <control type="label" description="Album">
+            <posy>105</posy>
+            <height>45</height>
+            <width>440</width>
+            <textcolor>White2</textcolor>
+            <label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+          </control>
+          <control type="label" description="Time">
+            <posy>165</posy>
+            <height>45</height>
+            <width>800</width>
+            <textcolor>White2</textcolor>
+            <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+          </control>
+          <control type="label" description="Next">
+            <posy>204</posy>
+            <height>45</height>
+            <width>440</width>
+            <label>$LOCALIZE[209] : $INFO[MusicPlayer.offset(1).Title]</label>
+            <textcolor>Grey2</textcolor>
+          </control>
+        </control>
+      </control>
+      <control type="group" description="Video Info">
+        <include>VisibleFadeEffect</include>
+        <visible>Player.HasVideo + Container(300).HasFocus(9)</visible>
+        <control type="label" description="Top Label">
+          <include>ShelfTopLabel</include>
+          <label>13350</label>
+        </control>
+        <control type="image">
+          <description>Cover image</description>
+          <posx>30</posx>
+          <posy>26</posy>
+          <width>195</width>
+          <height>195</height>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[VideoPlayer.cover]</texture>
+        </control>
+        <control type="label">
+          <description>Studio label</description>
+          <posx>240</posx>
+          <posy>30</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$INFO[VideoPlayer.Studio]</label>
+          <textcolor>Grey2</textcolor>
+          <visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
+        </control>
+        <control type="label">
+          <description>TV Show Title label</description>
+          <posx>240</posx>
+          <posy>30</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$INFO[VideoPlayer.tvshowtitle]</label>
+          <textcolor>White</textcolor>
+          <visible>videoplayer.content(episodes)</visible>
+        </control>
+        <control type="fadelabel">
+          <description>Music Video Artist label</description>
+          <posx>240</posx>
+          <posy>30</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$INFO[VideoPlayer.Artist]</label>
+          <visible>videoplayer.content(musicvideos)</visible>
+          <scrollout>false</scrollout>
+          <pauseatend>2000</pauseatend>
+        </control>
+        <control type="fadelabel">
+          <description>Title label</description>
+          <posx>240</posx>
+          <posy>64</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$INFO[VideoPlayer.Title]</label>
+          <scrollout>false</scrollout>
+          <pauseatend>2000</pauseatend>
+        </control>
+        <control type="label">
+          <description>Genre label</description>
+          <posx>240</posx>
+          <posy>105</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$INFO[VideoPlayer.Genre]</label>
+          <visible>!videoplayer.content(episodes) + !videoplayer.content(musicvideos)</visible>
+        </control>
+        <control type="label">
+          <posx>240</posx>
+          <posy>105</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$INFO[VideoPlayer.Album]</label>
+          <visible>videoplayer.content(musicvideos)</visible>
+        </control>
+        <control type="label">
+          <description>Season and Episode label</description>
+          <posx>240</posx>
+          <posy>105</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode]</label>
+          <visible>videoplayer.content(episodes)</visible>
+        </control>
+        <control type="label">
+          <description>Time Label</description>
+          <posx>240</posx>
+          <posy>142</posy>
+          <height>45</height>
+          <width>900</width>
+          <label>$INFO[VideoPlayer.Time]$INFO[VideoPlayer.Duration, / ]</label>
+        </control>
+      </control>
+    </control>
+    <control type="group" description="Player Info">
+      <visible>Player.HasMedia + !Container(300).HasFocus(9)</visible>
+      <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
+      <include>VisibleFadeEffect</include>
+      <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(301)">conditional</animation>
+      <posx>30</posx>
+      <posy>900</posy>
+      <control type="image" description="Playing BG">
+        <width>390</width>
+        <height>105</height>
+        <texture border="14">img/ProgressBG.png</texture>
+      </control>
+      <control type="group">
+        <control type="image">
+          <posx>15</posx>
+          <posy>15</posy>
+          <width>75</width>
+          <height>75</height>
+          <texture>$INFO[MusicPlayer.Cover]</texture>
+          <aspectratio>keep</aspectratio>
+        </control>
+        <control type="image">
+          <posx>15</posx>
+          <posy>21</posy>
+          <width>75</width>
+          <height>75</height>
+          <texture>$INFO[VideoPlayer.Cover]</texture>
+          <aspectratio>keep</aspectratio>
+        </control>
+        <control type="label">
+          <posx>105</posx>
+          <posy>9</posy>
+          <aligny>center</aligny>
+          <width>261</width>
+          <height>36</height>
+          <font>size16</font>
+          <textcolor>White2</textcolor>
+          <label>$INFO[MusicPlayer.Title]</label>
+        </control>
+        <control type="label">
+          <posx>105</posx>
+          <posy>36</posy>
+          <aligny>center</aligny>
+          <width>261</width>
+          <height>36</height>
+          <font>size14</font>
+          <label>$INFO[MusicPlayer.Artist]</label>
+        </control>
+        <control type="label">
+          <posx>105</posx>
+          <posy>60</posy>
+          <aligny>center</aligny>
+          <width>261</width>
+          <height>36</height>
+          <font>size14</font>
+          <label>$INFO[MusicPlayer.Album]</label>
+        </control>
+        <control type="label">
+          <posx>105</posx>
+          <posy>9</posy>
+          <aligny>center</aligny>
+          <width>261</width>
+          <height>36</height>
+          <font>size16</font>
+          <textcolor>White2</textcolor>
+          <label>$INFO[VideoPlayer.Title]</label>
+        </control>
+        <control type="label">
+          <posx>105</posx>
+          <posy>36</posy>
+          <aligny>center</aligny>
+          <width>261</width>
+          <height>36</height>
+          <font>size14</font>
+          <label>$INFO[VideoPlayer.Artist]</label>
+        </control>
+        <control type="label">
+          <posx>105</posx>
+          <posy>60</posy>
+          <aligny>center</aligny>
+          <width>261</width>
+          <height>36</height>
+          <font>size14</font>
+          <label>$INFO[VideoPlayer.Album]</label>
+        </control>
+      </control>
+    </control>
+	
+    <include>Time</include>
+  </include>
+</includes>
