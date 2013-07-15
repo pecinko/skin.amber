@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <include name="RAVisibleFadeEffect">
+  <!--<include name="RAVisibleFadeEffect">
     <animation effect="slide" start="1900,0" end="0,0" time="400" delay="100" reversible="true">Visible</animation>
     <animation effect="slide" start="0,0" end="1900,0" time="400" delay="0">Hidden</animation>
-  </include>
+  </include>-->
   <include name="RecentlyAdded_Header">
     <posx>30r</posx>
     <align>right</align>
@@ -30,10 +30,6 @@
     <onleft>300</onleft>
     <onback>300</onback>
     <orientation>horizontal</orientation>
-    
-    <preloaditems>4</preloaditems>
-	<focusposition>0</focusposition>
-        <movement>3</movement>
     <itemlayout height="420" width="260">
       <control type="image">
         <posx>20</posx>
@@ -75,10 +71,6 @@
     <onleft>300</onleft>
     <onback>300</onback>
     <orientation>horizontal</orientation>
-    
-    <preloaditems>4</preloaditems>
-	<focusposition>0</focusposition>
-        <movement>3</movement>
     <itemlayout height="420" width="260">
       <control type="image">
         <posx>20</posx>
@@ -160,11 +152,7 @@
     <onleft>300</onleft>
     <onback>300</onback>
     <orientation>horizontal</orientation>
-    
-    <preloaditems>4</preloaditems>
-	<focusposition>0</focusposition>
-        <movement>3</movement>
-      <itemlayout height="420" width="260">
+    <itemlayout height="420" width="260">
           <control type="image">
             <posx>15</posx>
             <posy>21</posy>
@@ -247,11 +235,7 @@
     <onleft>300</onleft>
     <onback>300</onback>
     <orientation>horizontal</orientation>
-    
-    <preloaditems>4</preloaditems>
-	<focusposition>0</focusposition>
-        <movement>2</movement>
-      <itemlayout height="420" width="260">
+     <itemlayout height="420" width="260">
           <control type="image">
             <posx>15</posx>
             <posy>22</posy>
@@ -315,7 +299,6 @@
     <onback>300</onback>
     <orientation>horizontal</orientation>
     
-    <preloaditems>4</preloaditems>
     <itemlayout condition="Container(300).HasFocus(5)" height="420" width="260">
       <control type="image">
         <posx>20</posx>
@@ -540,7 +523,7 @@
     </focusedlayout>
   </include>
   <!--RA-->
-  <include name="Media_RA">
+  <!--<include name="Media_RA">
     <control type="group">
       <visible>Control.IsVisible(11000)</visible>
       <include>RAVisibleFadeEffect</include>
@@ -839,6 +822,6 @@
         </content>
       </control>
     </control>
-  </include>
+  </include>-->
   
 </includes>

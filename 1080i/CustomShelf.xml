@@ -13,7 +13,7 @@
       <height>1032</height>
       <onup>300</onup>
       <ondown>300</ondown>
-	  <control type="label" id="110" description="Top Label">
+	  <!--<control type="label" id="110" description="Top Label">
         <visible>Control.IsVisible(111)</visible>
         <include>VisibleFadeEffect</include>
         <include>ShelfTopLabel</include>
@@ -98,7 +98,7 @@
             <property name="ItemType">$LOCALIZE[1036]</property>
           </item>
 	    </content>
-      </control>
+      </control>-->
 	  <control type="label" id="210" description="Top Label">
         <visible>Control.IsVisible(211)</visible>
         <include>VisibleFadeEffect</include>

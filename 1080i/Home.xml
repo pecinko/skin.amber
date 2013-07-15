@@ -3,10 +3,10 @@
   <allowoverlay>no</allowoverlay>
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
-  <onload condition="!Skin.HasSetting(VerticalHome) + System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
-  <onload condition="Skin.HasSetting(VerticalHome) + System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + IsEmpty(Window.Property(plexbmc.0.title))">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
-  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + Skin.HasSetting(Shelf.Addons)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
+  <onload condition="Window.Previous(favourites) | IsEmpty(Window(Home).Property(favourite.1.path))">RunScript(script.favourites)</onload>
   <controls>
     <control type="multiimage">
       <visible>![Player.HasVideo + Skin.HasSetting(Show_Player)]</visible>

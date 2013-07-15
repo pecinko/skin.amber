@@ -1488,7 +1488,7 @@
               <label2>$INFO[Skin.String(ShelfAddons.10.Label)]</label2>
               <onclick>Skin.SetAddon(ShelfAddons.10.Label,xbmc.python.pluginsource)</onclick>
             </item>
-            <item id="2" description="Enable Favs">
+            <!--<item id="2" description="Enable Favs">
               <visible>!Skin.HasSetting(Shelf.Favs)</visible>
               <label>$LOCALIZE[1036]</label>
               <label2>$LOCALIZE[106]</label2>
@@ -1559,7 +1559,7 @@
               <label>$LOCALIZE[1036] 10</label>
               <label2>$INFO[Skin.String(ShelfFavs.10.Label)]</label2>
               <onclick>RunScript(script.favourites,changetitle=true&amp;property=ShelfFavs.10)</onclick>
-            </item>
+            </item>-->
           </content>
         </control>
 		<!--9000 6-->

@@ -2,9 +2,8 @@
 <includes>
   <include name="Vertical_Home_Layout">
     <control type="group" id="700">
-	  <visible>!Skin.HasSetting(plexbmc)</visible>
 	  <control type="image" description="RA BG">
-        <visible>Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(311) | Control.IsVisible(411) | Control.IsVisible(511)</visible>
+        <visible>Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | Control.IsVisible(311) | Control.IsVisible(411) | Control.IsVisible(511)</visible>
         <include>VisibleFadeEffect</include>
 		<posx>530</posx>
         <posy>315</posy>
@@ -26,84 +25,84 @@
       </control>
 	  <control type="panel" id="111" description="Favourites">
         <visible>Container(300).HasFocus(7)</visible>
-		<visible>Skin.HasSetting(Shelf.Favs) + IntegerGreaterThan(Container(111).NumItems,0)</visible> 
+		<visible>IntegerGreaterThan(Container(111).NumItems,0)</visible> 
 		<onleft>300</onleft>
         <onright>111</onright>
 		<onup>300</onup>
 	    <ondown>300</ondown>
         <include>RecentlyAdded_Addons</include>
         <content>
-          <item id="1" description="Favs">
-            <visible>Skin.String(ShelfFavs.1.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.1.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.1.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.1.Path)]</onclick>
+          <item id="1" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.1.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.1.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.1.path)]</onclick>
           </item>
-          <item id="2" description="Favs">
-            <visible>Skin.String(ShelfFavs.2.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.2.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.2.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.2.Path)]</onclick>
+		  <item id="2" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.2.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.2.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.2.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.2.path)]</onclick>
           </item>
-          <item id="3" description="Favs">
-            <visible>Skin.String(ShelfFavs.3.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.3.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.3.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.3.Path)]</onclick>
+		  <item id="3" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.3.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.3.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.3.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.3.path)]</onclick>
           </item>
-          <item id="4" description="Favs">
-            <visible>Skin.String(ShelfFavs.4.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.4.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.4.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.4.Path)]</onclick>
+		  <item id="4" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.4.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.4.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.4.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.4.path)]</onclick>
           </item>
-          <item id="5" description="Favs">
-            <visible>Skin.String(ShelfFavs.5.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.5.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.5.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.5.Path)]</onclick>
+		  <item id="5" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.5.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.5.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.5.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.5.path)]</onclick>
           </item>
-          <item id="6" description="Favs">
-            <visible>Skin.String(ShelfFavs.6.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.6.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.6.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.6.Path)]</onclick>
+		  <item id="6" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.6.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.6.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.6.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.6.path)]</onclick>
           </item>
-          <item id="7" description="Favs">
-            <visible>Skin.String(ShelfFavs.7.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.7.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.7.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.7.Path)]</onclick>
+		  <item id="7" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.7.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.7.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.7.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.7.path)]</onclick>
           </item>
-          <item id="8" description="Favs">
-            <visible>Skin.String(ShelfFavs.8.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.8.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.8.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.8.Path)]</onclick>
+		  <item id="8" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.8.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.8.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.8.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.8.path)]</onclick>
           </item>
-          <item id="9" description="Favs">
-            <visible>Skin.String(ShelfFavs.9.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.9.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.9.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.9.Path)]</onclick>
+		  <item id="9" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.9.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.9.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.9.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.9.path)]</onclick>
           </item>
-          <item id="10" description="Favs">
-            <visible>Skin.String(ShelfFavs.10.Label)</visible>
-            <label>$INFO[Skin.String(ShelfFavs.10.Label)]</label>
-            <thumb>$INFO[Skin.String(ShelfFavs.10.Icon)]</thumb>
-            <onclick>$INFO[Skin.String(ShelfFavs.10.Path)]</onclick>
+		  <item id="10" description="AutoFavourite">
+            <visible>!IsEmpty(Window(Home).Property(favourite.10.path))</visible>
+            <label>$INFO[Window(Home).Property(favourite.10.name)]</label>
+            <thumb>$INFO[Window(Home).Property(favourite.10.thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[1036]</property>
+            <onclick>$ESCINFO[Window(Home).Property(favourite.10.path)]</onclick>
           </item>
-	    </content>
+		</content>
       </control>
 	  <control type="label" description="Header">
         <visible>Control.IsVisible(211)</visible>
@@ -196,7 +195,31 @@
             <onclick>RunAddon($INFO[Skin.String(ShelfAddons.10.Label)])</onclick>
             <property name="ItemType">$LOCALIZE[24001]</property>
           </item>
-		  <item id="1" description="Music">
+	    </content>
+      </control>
+	  
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(212)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(212).ListItem.Property(ItemType)]</label>
+      </control>
+	  <control type="label" description="Label">
+        <visible>Control.HasFocus(212)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(212).ListItem.Label]</label>
+      </control>
+      <control type="panel" id="212" description="Addons">
+        <visible>Container(300).HasFocus(50)</visible>
+		<visible>IntegerGreaterThan(Container(212).NumItems,0)</visible> 
+		<onleft>300</onleft>
+        <onright>211</onright>
+		<onup>300</onup>
+	    <ondown>300</ondown>
+        <include>RecentlyAdded_Addons</include>
+        <content>
+          <item id="1" description="Music">
             <visible>Skin.HasSetting(plexbmc)</visible>
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestChannel.1.Title)]</label>
@@ -260,9 +283,24 @@
             <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.8.Thumb)]</thumb>
             <property name="ItemType">Channels</property>
           </item>
+		  <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.9.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.9.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.9.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.9.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
+		  <item id="1" description="Music">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.10.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.10.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.10.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.10.Thumb)]</thumb>
+            <property name="ItemType">Channels</property>
+          </item>
         </content>
       </control>
-	  
 	  
 	  <control type="label" description="Header">
         <visible>Control.IsVisible(311)</visible>
@@ -276,11 +314,10 @@
         <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(311).ListItem.Label]</label>
       </control>
-      <control type="panel" id="311" description="TOP Shortcuts">
-        <visible>Container(300).HasFocus(4)</visible>
-		<visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(311).NumItems,0)</visible>
-		<visible>[Library.HasContent(Movies) | Skin.HasSetting(plexbmc)]</visible>
-        <onleft>300</onleft>
+      <control type="panel" id="311" description="Movies">
+        <visible>IntegerGreaterThan(Container(311).NumItems,0) + [Library.HasContent(Movies) | Skin.HasSetting(plexbmc)] + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		<visible>Container(300).HasFocus(4) | StringCompare(Container(300).ListItem.Property(type),movie)</visible>
+		<onleft>300</onleft>
         <onright>311</onright>
 		<onup>300</onup>
 	    <ondown>300</ondown>
@@ -541,10 +578,9 @@
         <label>$INFO[Container(411).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(411).ListItem.Label]</label>
       </control>
       <control type="panel" id="411" description="TOP Shortcuts">
-        <visible>Container(300).HasFocus(5)</visible>
-		<visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(411).NumItems,0)</visible>
-		<visible>[Library.HasContent(TVShows) | Skin.HasSetting(plexbmc)]</visible>
-        <onleft>300</onleft>
+        <visible>IntegerGreaterThan(Container(411).NumItems,0) + [Library.HasContent(TVShows) | Skin.HasSetting(plexbmc)] + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		<visible>Container(300).HasFocus(5) | StringCompare(Container(300).ListItem.Property(type),show)</visible>
+	    <onleft>300</onleft>
         <onright>411</onright>
 		<onup>300</onup>
 	    <ondown>300</ondown>
@@ -865,10 +901,9 @@
         <label>$INFO[Container(511).ListItem.Label]</label>
       </control>
       <control type="panel" id="511" description="TOP Shortcuts">
-        <visible>Container(300).HasFocus(6)</visible>
-		<visible>!Skin.HasSetting(Hide.RecentlyAdded) + IntegerGreaterThan(Container(511).NumItems,0)</visible>
-		<visible>[Library.HasContent(Music) | Skin.HasSetting(plexbmc)]</visible>
-        <onleft>300</onleft>
+        <visible>IntegerGreaterThan(Container(511).NumItems,0) + [Library.HasContent(Music) | Skin.HasSetting(plexbmc)] + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
+		<visible>Container(300).HasFocus(6) | StringCompare(Container(300).ListItem.Property(type),artist)</visible>
+		<onleft>300</onleft>
         <onright>511</onright>
 		<onup>300</onup>
 	    <ondown>300</ondown>
@@ -1120,8 +1155,7 @@
         <onup>300</onup>
         <ondown>300</ondown>
         <onleft>9001</onleft>
-        <onright condition="!Skin.HasSetting(plexbmc)">700</onright>
-		<onright condition="Skin.HasSetting(plexbmc) + [Skin.HasSetting(Shelf.Favs) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)]">ActivateWindow(1112)</onright>
+        <onright>700</onright>
 		<onback>9001</onback>
         <pagecontrol>-</pagecontrol>
         <scrolltime tween="quadratic" easing="out">300</scrolltime>
@@ -1681,8 +1715,7 @@
       </control>
     </control>
 	<control type="image" description="Sub Left Blade">
-      <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-	  <include>VisibleFadeEffect</include>
+      <include>VisibleFadeEffect</include>
 	  <animation effect="slide" start="0,0" end="389,0" time="250" delay="0" reversible="true" condition="Control.HasFocus(9001)">conditional</animation>
 	  <posx>-518</posx>
       <posy>0</posy>
