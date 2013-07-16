@@ -12,7 +12,6 @@
   <include file="Defaults.xml" />
   <include file="Includes_HomeWindow.xml" />
   <include file="Includes_Shelf.xml" />
-  <include file="Includes_Shelf2.xml" />
   <include file="View_50.xml" />
   <include file="View_51_Panel.xml" />
   <include file="View_52_BigList.xml" />
@@ -239,12 +238,20 @@
     </control>
   </include>
   <include name="Stars">
+    <visible>!IsEmpty(ListItem.StarRating)</visible>
+	<height>24</height>
+    <width>174</width>
+    <aspectratio align="left">keep</aspectratio>
+    <colordiffuse>Silver</colordiffuse>
+    <texture>$INFO[ListItem.StarRating]</texture>
+  </include>
+  <!--<include name="Stars">
     <height>24</height>
     <width>174</width>
     <aspectratio align="left">keep</aspectratio>
     <colordiffuse>Silver</colordiffuse>
     <texture>$VAR[Stars]</texture>
-  </include>
+  </include>-->
   <include name="ListWatchedOverlay">
     <control type="image">
       <posx>52r</posx>
@@ -264,7 +271,7 @@
     <bordersize>-9</bordersize>
   </include>
   <include name="EpisodeThumb">
-    <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/EpisodeDiffuse.png">$INFO[ListItem.thumb]</texture>
+    <texture background="true" diffuse="thumbs/EpisodeDiffuse.png">$INFO[ListItem.thumb]</texture>
     <aspectratio scalediffuse="false">scale</aspectratio>
   </include>
   <include name="EpisodeThumbBG">
@@ -276,7 +283,7 @@
     <texture>thumbs/EpisodeBG_FO.png</texture>
   </include>
   <include name="SquareThumb">
-    <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
+    <texture background="true" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
   </include>
   <include name="SquareThumbBG">
@@ -288,7 +295,7 @@
     <texture>thumbs/SquareBG_FO.png</texture>
   </include>
   <include name="PosterThumb">
-    <texture fallback="DefaultFolder.png" background="true" diffuse="thumbs/PosterDiffuse.png">$INFO[ListItem.thumb]</texture>
+    <texture background="true" diffuse="thumbs/PosterDiffuse.png">$INFO[ListItem.thumb]</texture>
     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
   </include>
   <include name="PosterThumbBG">
@@ -476,7 +483,7 @@
       <label>$LOCALIZE[491]</label>
     </control>
     <control type="radiobutton" id="9158" description="View 55 BigPanel">
-      <visible>![Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml)]</visible>
+      <visible>Skin.HasSetting(plexbmc) | !Window.IsActive(MyMusicSongs.xml)</visible>
       <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(55)</onclick>
       <selected>Control.IsVisible(55)</selected>
