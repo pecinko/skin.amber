@@ -24,62 +24,17 @@
       <control type="group" description="Thumb">
         <posy>-6</posy>
         <control type="image">
-          <visible>VideoPlayer.Content(pvr)</visible>
-          <posx>1648</posx>
+          <posx>390r</posx>
           <posy>72</posy>
-          <width>240</width>
+          <width>350</width>
           <height>240</height>
-          <bordersize>-8</bordersize>
-          <include>SquareThumbBG</include>
+          <texture diffuse="thumbs/SquareDiffuse.png" fallback="thumbs/SquareBG_NF.png">$INFO[VideoPlayer.Cover]</texture>
+          <aspectratio aligny="bottom" align="right">keep</aspectratio>
         </control>
-		<control type="image">
-          <visible>VideoPlayer.Content(pvr)</visible>
-          <posx>1648</posx>
-          <posy>72</posy>
-          <width>240</width>
-          <height>240</height>
-          <texture>$INFO[Player.Art(Thumb)]</texture>
-          <aspectratio align="left">stretch</aspectratio>
-        </control>
-		<control type="image">
-          <visible>VideoPlayer.Content(episodes)</visible>
-          <posx>1720</posx>
-          <posy>72</posy>
-          <width>168</width>
-          <height>240</height>
-          <bordersize>-8</bordersize>
-          <include>PosterThumbBG</include>
-        </control>
-		<control type="image">
-          <visible>VideoPlayer.Content(episodes)</visible>
-          <posx>1720</posx>
-          <posy>72</posy>
-          <width>168</width>
-          <height>240</height>
-          <texture>$INFO[Player.Art(TVShowThumb)]</texture>
-          <aspectratio align="left">stretch</aspectratio>
-        </control>
-        <control type="image">
-          <visible>![VideoPlayer.Content(episodes) | VideoPlayer.Content(pvr)]</visible>
-          <posx>1720</posx>
-          <posy>72</posy>
-          <width>168</width>
-          <height>240</height>
-          <bordersize>-8</bordersize>
-          <include>PosterThumbBG</include>
-        </control>
-		<control type="image">
-          <visible>![VideoPlayer.Content(episodes) | VideoPlayer.Content(pvr)]</visible>
-          <posx>1720</posx>
-          <posy>72</posy>
-          <width>168</width>
-          <height>240</height>
-          <texture>$INFO[Player.Art(Thumb)]</texture>
-          <include>PosterThumb</include>
-        </control>
+		
         <control type="group">
           <posx>-260</posx>
-          <posy>66</posy>
+          <posy>81</posy>
           <control type="label" description="Main label">
             <visible>![VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(Episodes)]</visible>
             <include>FullscreenInfoLabelMain</include>
@@ -118,8 +73,9 @@
           <control type="textbox">
             <posx>300</posx>
             <posy>112</posy>
-            <width>1590</width>
+            <width>1410</width>
             <height>125</height>
+			<align>justify</align>
             <label>$INFO[VideoPlayer.Plot]</label>
             <autoscroll>false</autoscroll>
             <font>InfoPlot</font>
