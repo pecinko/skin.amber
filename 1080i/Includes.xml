@@ -271,7 +271,7 @@
     <bordersize>-9</bordersize>
   </include>
   <include name="EpisodeThumb">
-    <texture background="true" diffuse="thumbs/EpisodeDiffuse.png">$INFO[ListItem.thumb]</texture>
+    <texture background="true" diffuse="thumbs/EpisodeDiffuse.png">$VAR[Thumbs]</texture>
     <aspectratio scalediffuse="false">scale</aspectratio>
   </include>
   <include name="EpisodeThumbBG">
@@ -283,7 +283,7 @@
     <texture>thumbs/EpisodeBG_FO.png</texture>
   </include>
   <include name="SquareThumb">
-    <texture background="true" diffuse="thumbs/SquareDiffuse.png">$INFO[ListItem.thumb]</texture>
+    <texture background="true" diffuse="thumbs/SquareDiffuse.png">$VAR[Thumbs]</texture>
     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
   </include>
   <include name="SquareThumbBG">
@@ -295,7 +295,7 @@
     <texture>thumbs/SquareBG_FO.png</texture>
   </include>
   <include name="PosterThumb">
-    <texture background="true" diffuse="thumbs/PosterDiffuse.png">$INFO[ListItem.thumb]</texture>
+    <texture background="true" diffuse="thumbs/PosterDiffuse.png">$VAR[Thumbs]</texture>
     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
   </include>
   <include name="PosterThumbBG">
@@ -772,7 +772,7 @@
       <aspectratio>scale</aspectratio>
       <imagepath background="true">$VAR[Default.Art]</imagepath>
     </control>
-    <control type="image" description="fa overlay">
+    <!--<control type="image" description="fa overlay">
       <visible>Control.IsVisible(50)</visible>
       <posx>0</posx>
       <posy>405</posy>
@@ -780,9 +780,9 @@
       <height>675</height>
       <aspectratio>stretch</aspectratio>
       <texture>common/OverlayList.png</texture>
-    </control>
+    </control>-->
     <control type="image" description="fa overlay">
-      <visible>Control.IsVisible(51)</visible>
+      <visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(56)</visible>
       <posx>0</posx>
       <posy>330</posy>
       <width>1920</width>
@@ -790,7 +790,7 @@
       <texture>common/OverlayPanel.png</texture>
     </control>
     <control type="image" description="fa overlay">
-      <visible>Control.IsVisible(52)</visible>
+      <visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55)</visible>
       <posx>0</posx>
       <posy>0</posy>
       <width>1920</width>
@@ -798,7 +798,7 @@
       <aspectratio>stretch</aspectratio>
       <texture>common/OverlayFS.png</texture>
     </control>
-    <control type="image" description="fa overlay">
+    <!--<control type="image" description="fa overlay">
       <visible>Control.IsVisible(53)</visible>
       <posx>0</posx>
       <posy>0</posy>
@@ -806,7 +806,7 @@
       <height>1080</height>
       <aspectratio>stretch</aspectratio>
       <texture>common/OverlayFS.png</texture>
-    </control>
+    </control>-->
     <control type="image" description="fa overlay">
       <visible>Control.IsVisible(54)</visible>
       <posx>0</posx>
@@ -816,7 +816,7 @@
       <aspectratio>stretch</aspectratio>
       <texture>common/OverlayLowList.png</texture>
     </control>
-    <control type="image" description="fa overlay">
+    <!--<control type="image" description="fa overlay">
       <visible>Control.IsVisible(55)</visible>
       <posx>0</posx>
       <posy>0</posy>
@@ -824,8 +824,8 @@
       <height>1080</height>
       <aspectratio>stretch</aspectratio>
       <texture>common/OverlayFS.png</texture>
-    </control>
-    <control type="image" description="fa overlay">
+    </control>-->
+    <!--<control type="image" description="fa overlay">
       <visible>Control.IsVisible(56)</visible>
       <posx>0</posx>
       <posy>405</posy>
@@ -833,7 +833,7 @@
       <height>675</height>
       <aspectratio>stretch</aspectratio>
       <texture>common/OverlayList.png</texture>
-    </control>
+    </control>-->
     <control type="group">
       <visible>Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
       <control type="image">
