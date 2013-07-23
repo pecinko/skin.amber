@@ -1,46 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-  <zorder>2</zorder>
+  <coordinates>
+    <system>1</system>
+    <posx>0</posx>
+    <posy>0</posy>
+  </coordinates>
+  <animation effect="fade" time="200" delay="200">WindowOpen</animation>
+  <animation effect="fade" time="100">WindowClose</animation>
   <controls>
     <control type="group" description="Content">
-      <animation effect="fade" time="250" delay="500">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <posx>429</posx>
-      <posy>500</posy>
-      <height>330</height>
-      <width>1062</width>
+      <posx>720</posx>
+      <posy>990</posy>
       <control type="image" description="Dialog BG">
         <posx>0</posx>
         <posy>0</posy>
-        <width>1062</width>
-        <height>330</height>
-        <texture border="0,30,0,30">dialogs/DialogProgressBG.png</texture>
+        <width>480</width>
+        <height>120</height>
+        <texture>dialogs/TinyDialog.png</texture>
+      </control>
+	  <control type="image" description="Dialog BG">
+        <posx>6</posx>
+        <posy>30</posy>
+        <width>48</width>
+        <height>48</height>
+        <texture>dialogs/TinyDialog.png</texture>
       </control>
       <control type="label" description="Heading">
-        <posx>201</posx>
-        <posy>40</posy>
-        <height>40</height>
-        <width>660</width>
+        <posx>60</posx>
+        <posy>30</posy>
+        <height>48</height>
+        <width>460</width>
         <textcolor>Orange</textcolor>
-        <align>center</align>
-        <label>20186</label>
-      </control>
-      <control type="label" description="Loading">
-        <posx>201</posx>
-        <posy>136</posy>
-        <height>30</height>
-        <width>660</width>
-        <label>31979</label>
-        <align>center</align>
-      </control>
-      <control type="image" description="Spinner">
-        <animation effect="fade" time="250" delay="700">WindowOpen</animation>
-        <posx>366</posx>
-        <posy>210</posy>
-        <height>21</height>
-        <width>330</width>
-        <aspectratio>keep</aspectratio>
-        <texture>busy/BusyBar.gif</texture>
+        <font>InfoTitle</font>
+        <label>$LOCALIZE[31979]</label>
       </control>
     </control>
   </controls>
