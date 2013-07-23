@@ -11,6 +11,7 @@
     <include>DimBG</include>
     <control type="group" description="Content">
 	<include>DialogOpenClose</include>
+	<animation effect="slide" start="0,0" end="126,0" time="0" delay="0" center="auto" reversible="true" condition="!Control.IsVisible(5)">Conditional</animation>
 	<posx>312</posx>
     <posy>180</posy>
       <control type="image">
@@ -23,9 +24,9 @@
       </control>
 	  <control type="image">
         <visible>!Control.IsVisible(5)</visible>
-		<posx>-14</posx>
+		<posx>86</posx>
         <posy>-20</posy>
-        <width>1040</width>
+        <width>840</width>
         <height>720</height>
         <texture border="55">dialogs/DialogSmall.png</texture>
       </control>
@@ -153,9 +154,9 @@
     </control>
 	<control type="group" description="Group 3 Plain list">
       <control type="list" id="3">
-        <posx>0</posx>
+        <posx>100</posx>
         <posy>60</posy>
-        <width>1010</width>
+        <width>810</width>
         <height>600</height>
         <itemgap>0</itemgap>
         <orientation>vertical</orientation>
@@ -165,33 +166,33 @@
         <ondown>3</ondown>
         <pagecontrol>60</pagecontrol>
         <scrolltime>0</scrolltime>
-        <itemlayout width="1010" height="60">
+        <itemlayout width="810" height="60">
           <control type="image">
             <posx>0</posx>
             <posy>0</posy>
-            <width>1010</width>
+            <width>810</width>
             <height>60</height>
             <texture border="3">list/ListNF.png</texture>
           </control>
 		  <control type="label">
-            <width>1010</width>
+            <width>810</width>
             <height>60</height>
             <textoffsetx>30</textoffsetx>
 			<info>ListItem.Label</info>
           </control>
         </itemlayout>
-        <focusedlayout width="1010" height="60">
+        <focusedlayout width="810" height="60">
           <control type="image">
             <visible>Control.HasFocus(3)</visible>
             <include>VisibleFadeEffect</include>
             <posx>0</posx>
             <posy>0</posy>
-            <width>1010</width>
+            <width>810</width>
             <height>60</height>
             <texture border="2">buttons/ButtonFO.png</texture>
           </control>
           <control type="label">
-            <width>1010</width>
+            <width>810</width>
             <height>60</height>
             <textoffsetx>30</textoffsetx>
 			<info>ListItem.Label</info>
