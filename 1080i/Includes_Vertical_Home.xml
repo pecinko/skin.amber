@@ -1355,7 +1355,7 @@
         <ondown>300</ondown>
         <onleft>9001</onleft>
         <onright condition="!Skin.HasSetting(UseFullScreenShelf)">700</onright>
-        <onright condition="Skin.HasSetting(UseFullScreenShelf) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)">ActivateWindow(1112)</onright>
+        <onright condition="Skin.HasSetting(UseFullScreenShelf)">ActivateWindow(1112)</onright>
 		<onback>9001</onback>
         <pagecontrol>-</pagecontrol>
         <focusposition>5</focusposition>
