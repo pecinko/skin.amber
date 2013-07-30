@@ -25,7 +25,7 @@
         <texture>img/BlackDotST.png</texture>
       </control>
       <control type="label" id="10" description="row 1 sys label">
-        <posx>60</posx>
+        <posx>40</posx>
         <posy>-8</posy>
         <width>1890</width>
         <height>38</height>
@@ -35,7 +35,7 @@
         <label>-</label>
       </control>
       <control type="label" id="11" description="row 2 sys label">
-        <posx>60</posx>
+        <posx>40</posx>
         <posy>30</posy>
         <width>1890</width>
         <height>36</height>
@@ -45,7 +45,7 @@
         <label>-</label>
       </control>
       <control type="label" id="12" description="row 3 sys label">
-        <posx>60</posx>
+        <posx>40</posx>
         <posy>68</posy>
         <width>1890</width>
         <height>72</height>

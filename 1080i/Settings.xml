@@ -210,10 +210,7 @@
             </control>
           </focusedlayout>
           <content>
-            <item id="1" description="Addons">
-            <label>24001</label>
-            <onclick>ActivateWindow(AddonBrowser,root)</onclick>
-           </item>
+            
 		   <item id="2" description="Appearance">
               <label>480</label>
               <onclick>activatewindow(AppearanceSettings)</onclick>
@@ -230,7 +227,11 @@
               <label>1</label>
               <onclick>activatewindow(PicturesSettings)</onclick>
             </item>
-            <item id="8" description="Service">
+          <item id="1" description="Addons">
+            <label>24001</label>
+            <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+           </item>
+		     <item id="8" description="Service">
               <label>14036</label>
               <onclick>activatewindow(ServiceSettings)</onclick>
             </item>
@@ -1665,6 +1666,20 @@
               <label>$LOCALIZE[31994]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
+            </item>
+			<item id="1" description="FS Shelf">
+              <visible>Skin.HasSetting(VerticalHome)</visible>
+              <visible>Skin.HasSetting(UseFullScreenShelf)</visible>
+			  <label>$LOCALIZE[31986]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.ToggleSetting(UseFullScreenShelf)</onclick>
+            </item>
+			<item id="0" description="FS Shelf">
+              <visible>Skin.HasSetting(VerticalHome)</visible>
+			  <visible>!Skin.HasSetting(UseFullScreenShelf)</visible>
+              <label>$LOCALIZE[31986]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(UseFullScreenShelf)</onclick>
             </item>
 			
           </content>

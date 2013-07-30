@@ -5,33 +5,26 @@
     <posx>0</posx>
     <posy>0</posy>
   </coordinates>
-  <animation effect="fade" time="200" delay="200">WindowOpen</animation>
-  <animation effect="fade" time="100">WindowClose</animation>
   <controls>
     <control type="group" description="Content">
-      <posx>720</posx>
-      <posy>990</posy>
-      <control type="image" description="Dialog BG">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>480</width>
-        <height>120</height>
-        <texture>dialogs/TinyDialog.png</texture>
+      <animation effect="slide" start="0,0" end="0,-124" time="200" delay="300">WindowOpen</animation>
+      <posy>603</posy>
+      <control type="image" description="Background">
+        <posx>618</posx>
+        <posy>534</posy>
+        <width>684</width>
+        <height>66</height>
+        <texture border="48,24,48,0">OSD/SeekBottomBar.png</texture>
       </control>
-	  <control type="image" description="Dialog BG">
-        <posx>6</posx>
+	  <!--<control type="image" description="Dialog BG">
+        <posx>24</posx>
         <posy>30</posy>
-        <width>48</width>
-        <height>48</height>
-        <texture>dialogs/TinyDialog.png</texture>
-      </control>
+        <width>32</width>
+        <height>32</height>
+        <texture>busy/Loading.gif</texture>
+      </control>-->
       <control type="label" description="Heading">
-        <posx>60</posx>
-        <posy>30</posy>
-        <height>48</height>
-        <width>460</width>
-        <textcolor>Orange</textcolor>
-        <font>InfoTitle</font>
+		<include>SeekbarLabels</include>
         <label>$LOCALIZE[31979]</label>
       </control>
     </control>
