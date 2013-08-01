@@ -60,20 +60,20 @@
     <control type="group" description="Library stats">
       <animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240" condition="![[[Container(300).HasFocus(13) | Container(300).HasFocus(14)] + Library.HasContent(MusicVideos)] | Container(300).HasFocus(4) | Container(300).HasFocus(5) | [Container(300).HasFocus(6) + Library.HasContent(music)]]">Conditional</animation>
       <control type="image">
-        <posx>810r</posx>
+        <posx>540r</posx>
         <posy>990</posy>
-        <width>810</width>
+        <width>570</width>
         <height>90</height>
         <texture border="100,0,0,0">common/TimePanel.png</texture>
       </control>
       <control type="label">
-        <posx>729r</posx>
+        <posx>40r</posx>
         <posy>1032</posy>
         <height>50</height>
-        <width>700</width>
-        <font>Sublist</font>
+        <width>500</width>
+        <font>ListDetails</font>
+		<align>right</align>
         <label>$VAR[LibraryStats]</label>
-        <textcolor>Orange2</textcolor>
         <shadowcolor>ShadowDark</shadowcolor>
       </control>
     </control>
