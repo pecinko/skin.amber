@@ -243,10 +243,10 @@
               <label>PVR</label>
               <onclick>activateWindow(PVRSettings)</onclick>
             </item>
-            <item id="12" description="Addons">
+            <!--<item id="12" description="Addons">
               <label>10040</label>
               <onclick>activatewindow(AddonBrowser,root)</onclick>
-            </item>
+            </item>-->
           </content>
         </control>
         <control type="grouplist" id="500">

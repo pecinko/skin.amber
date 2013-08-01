@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
-  <backgroundcolor>0</backgroundcolor>
   <defaultcontrol always="true">300</defaultcontrol>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
