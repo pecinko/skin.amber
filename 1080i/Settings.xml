@@ -1489,6 +1489,71 @@
               <label2>$INFO[Skin.String(ShelfAddons.10.Label)]</label2>
               <onclick>Skin.SetAddon(ShelfAddons.10.Label,xbmc.python.pluginsource)</onclick>
             </item>
+            <item id="13" description="Disable service.skin.widgets">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf)</visible>
+              <label>$LOCALIZE[31967]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.Reset(AltShelf)</onclick>
+            </item>
+            <item id="13" description="Enable service.skin.widgets">
+              <visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(AltShelf)</visible>
+              <label>$LOCALIZE[31967]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(AltShelf)</onclick>
+            </item>
+            <item id="13" description="Configure service.skin.widgets">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf)</visible>
+              <label>$LOCALIZE[31964]</label>
+              <onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
+            </item>
+            <item id="14" description="Disable recommended movies">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecMovies)</visible>
+              <label>$LOCALIZE[31966]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.Reset(ShelfRecMovies)</onclick>
+            </item>
+            <item id="14" description="Enable recommended movies">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + !Skin.HasSetting(ShelfRecMovies)</visible>
+              <label>$LOCALIZE[31966]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(ShelfRecMovies)</onclick>
+            </item>
+            <item id="15" description="Disable recommended episodes">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecEpisodes)</visible>
+              <label>$LOCALIZE[31965]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.Reset(ShelfRecEpisodes)</onclick>
+            </item>
+            <item id="15" description="Enable recommended episodes">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + !Skin.HasSetting(ShelfRecEpisodes)</visible>
+              <label>$LOCALIZE[31965]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(ShelfRecEpisodes)</onclick>
+            </item>
+            <item id="16" description="Disable recommended albums">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecAlbums)</visible>
+              <label>$LOCALIZE[31963]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.Reset(ShelfRecAlbums)</onclick>
+            </item>
+            <item id="16" description="Enable recommended albums">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + !Skin.HasSetting(ShelfRecAlbums)</visible>
+              <label>$LOCALIZE[31963]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(ShelfRecAlbums)</onclick>
+            </item>
+            <item id="17" description="Disable recommended music videos">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecMusicVideos)</visible>
+              <label>$LOCALIZE[31962]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.Reset(ShelfRecMusicVideos)</onclick>
+            </item>
+            <item id="17" description="Enable recommended music videos">
+              <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + !Skin.HasSetting(ShelfRecMusicVideos)</visible>
+              <label>$LOCALIZE[31962]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(ShelfRecMusicVideos)</onclick>
+            </item>
             <!--<item id="2" description="Enable Favs">
               <visible>!Skin.HasSetting(Shelf.Favs)</visible>
               <label>$LOCALIZE[1036]</label>

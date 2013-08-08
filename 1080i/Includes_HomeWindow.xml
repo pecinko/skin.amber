@@ -1202,7 +1202,7 @@
         <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(512).ListItem.Label]</label>
       </control>
-      <control type="panel" id="512" description="Concerts">
+      <control type="panel" id="512" description="Music video clips">
         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path)) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
         <visible>Container(300).HasFocus(13)</visible>
         <onleft>300</onleft>

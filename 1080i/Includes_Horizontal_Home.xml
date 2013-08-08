@@ -1044,7 +1044,7 @@
             <include>PosterThumb</include>
           </control>
 		  <control type="group">
-			<visible>StringCompare(ListItem.Property(ItemType),$LOCALIZE[20387])</visible>
+			<visible>StringCompare(ListItem.Property(ItemType),$LOCALIZE[20387]) | StringCompare(ListItem.Property(ItemType),$LOCALIZE[31965])</visible>
 			<posy>264</posy>
 			<control type="image">
               <posx>21</posx>
@@ -1080,7 +1080,7 @@
             <include>PosterThumb</include>
           </control>
 		  <control type="group">
-			<visible>StringCompare(ListItem.Property(ItemType),$LOCALIZE[20387])</visible>
+			<visible>StringCompare(ListItem.Property(ItemType),$LOCALIZE[20387]) | StringCompare(ListItem.Property(ItemType),$LOCALIZE[31965])</visible>
 			<posy>264</posy>
 			<control type="image">
               <posx>21</posx>
