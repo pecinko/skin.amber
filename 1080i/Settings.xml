@@ -235,6 +235,11 @@
             <label>24001</label>
             <onclick>ActivateWindow(AddonBrowser,root)</onclick>
            </item>
+		   <item id="7" description="XBIAN config">
+            <visible>System.HasAddon(plugin.xbianconfig)</visible>
+			<label>XBian</label>
+            <onclick>RunAddon(plugin.xbianconfig)</onclick>
+           </item>
 		     <item id="8" description="Service">
               <label>14036</label>
               <onclick>activatewindow(ServiceSettings)</onclick>
