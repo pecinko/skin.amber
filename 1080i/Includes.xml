@@ -135,9 +135,9 @@
       <control type="image">
         <visible>!Player.HasAudio + [Window.IsActive(home) | Window.IsActive(weather)]</visible>
         <include>VisibleFadeEffect</include>
-		<posx>510r</posx>
+		<posx>540r</posx>
         <posy>0</posy>
-        <width>510</width>
+        <width>540</width>
         <height>90</height>
         <texture border="100,0,0,0" flipy="true">common/TimePanel.png</texture>
       </control>
