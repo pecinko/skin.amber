@@ -170,7 +170,8 @@
         <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="311" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + [!IsEmpty(Window(Home).Property(LatestMovie.1.Path)) | !IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))]</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+        <visible>[!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMovie.1.Path))] | [System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMovie.1.Title))] | [Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))]</visible>
         <onleft>311</onleft>
         <onright>311</onright>
 		<onup>300</onup>
@@ -178,88 +179,168 @@
         <include>RA_Commons_Posters</include>
         <content>
           <item id="1" description="Movies">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.1.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.1.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.1.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.1.Path)])</onclick>
           </item>
           <item id="2" description="Shortcut2">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.2.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.2.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.2.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.2.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.2.Path)])</onclick>
           </item>
           <item id="3" description="Shortcut3">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.3.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			       <visible>!IsEmpty(Window(Home).Property(LatestMovie.3.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.3.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
           </item>
           <item id="4" description="Shortcut4">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.4.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.4.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.4.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
           </item>
           <item id="5" description="Shortcut5">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.5.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.5.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.5.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
           </item>
           <item id="6" description="Movies">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.6.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.6.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.6.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
           </item>
           <item id="7" description="Shortcut7">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.7.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.7.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.7.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.7.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.7.Path)])</onclick>
           </item>
           <item id="8" description="Shortcut8">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.8.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.8.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.8.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.8.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.8.Path)])</onclick>
           </item>
           <item id="9" description="Shortcut9">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.9.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.9.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.9.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.9.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.9.Path)])</onclick>
           </item>
           <item id="10" description="Shortcut10">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestMovie.10.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestMovie.10.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestMovie.10.Title)]</label>
             <thumb>$INFO[Window(Home).Property(LatestMovie.10.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.10.Path)])</onclick>
           </item>
+          <item id="1" description="Shortcut 1 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.1.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.1.File)])</onclick>
+          </item>
+          <item id="2" description="Shortcut 2 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.2.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.2.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.2.File)])</onclick>
+          </item>
+          <item id="3" description="Shortcut 3 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.3.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.3.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.3.File)])</onclick>
+          </item>
+          <item id="4" description="Shortcut 4 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.4.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.4.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.4.File)])</onclick>
+          </item>
+          <item id="5" description="Shortcut 5 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.5.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.5.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.5.File)])</onclick>
+          </item>
+          <item id="6" description="Shortcut 6 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.6.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.6.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.6.File)])</onclick>
+          </item>
+          <item id="7" description="Shortcut 7 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.7.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.7.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.7.File)])</onclick>
+          </item>
+          <item id="8" description="Shortcut 8 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.8.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.8.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.8.File)])</onclick>
+          </item>
+          <item id="9" description="Shortcut 9 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.9.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.9.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.9.File)])</onclick>
+          </item>
+          <item id="10" description="Shortcut 10 (skin widgets)">
+            <visible>[!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)]</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentMovie.10.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMovie.10.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20386]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.10.File)])</onclick>
+          </item>
           <item id="1" description="Movies">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -267,7 +348,7 @@
           </item>
           <item id="2" description="Shortcut2">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.2.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.2.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.2.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.2.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -275,7 +356,7 @@
           </item>
           <item id="3" description="Shortcut3">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.3.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.3.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.3.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.3.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -283,7 +364,7 @@
           </item>
           <item id="4" description="Shortcut4">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.4.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.4.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.4.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.4.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -291,7 +372,7 @@
           </item>
           <item id="5" description="Shortcut5">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.5.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.5.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.5.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.5.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -299,7 +380,7 @@
           </item>
           <item id="6" description="Movies">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.6.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.6.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.6.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.6.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -307,7 +388,7 @@
           </item>
           <item id="7" description="Shortcut7">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.7.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.7.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.7.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.7.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -315,7 +396,7 @@
           </item>
           <item id="8" description="Shortcut8">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.8.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.8.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.8.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.8.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -323,7 +404,7 @@
           </item>
           <item id="9" description="Shortcut9">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.9.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.9.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.9.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.9.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
@@ -331,91 +412,177 @@
           </item>
           <item id="10" description="Shortcut10">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.10.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.10.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.10.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.10.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.10.Path)])</onclick>
           </item>
-		  <item id="11" description="Shortcut11">
+		      <item id="11" description="Shortcut11">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.11.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.11.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.11.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.11.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.11.Path)])</onclick>
           </item>
-		  <item id="12" description="Shortcut12">
+		      <item id="12" description="Shortcut12">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.12.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.12.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.12.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.12.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.12.Path)])</onclick>
           </item>
-		  <item id="13" description="Shortcut13">
+		      <item id="13" description="Shortcut13">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.13.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.13.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.13.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.13.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.13.Path)])</onclick>
           </item>
-		  <item id="14" description="Shortcut14">
+		      <item id="14" description="Shortcut14">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.14.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.14.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.14.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.14.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.14.Path)])</onclick>
           </item>
-		  <item id="15" description="Shortcut15">
+		      <item id="15" description="Shortcut15">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.15.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.15.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.15.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.15.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.15.Path)])</onclick>
           </item>
-		  <item id="16" description="Shortcut16">
+		      <item id="16" description="Shortcut16">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.16.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.16.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.16.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.16.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.16.Path)])</onclick>
           </item>
-		  <item id="17" description="Shortcut17">
+		      <item id="17" description="Shortcut17">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.17.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.17.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.17.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.17.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.17.Path)])</onclick>
           </item>
-		  <item id="18" description="Shortcut18">
+		      <item id="18" description="Shortcut18">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.18.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.18.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.18.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.18.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.18.Path)])</onclick>
           </item>
-		  <item id="19" description="Shortcut19">
+		      <item id="19" description="Shortcut19">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.19.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.19.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.19.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.19.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.19.Path)])</onclick>
           </item>
-		  <item id="20" description="Shortcut20">
+		      <item id="20" description="Shortcut20">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.20.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.20.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.20.Title)]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.20.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20386]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.20.Path)])</onclick>
+          </item>
+        </content>
+      </control>
+      <control type="label" id="312" description="Top Label">
+        <visible>Control.IsVisible(313)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>ShelfTopLabel</include>
+        <label>$INFO[Container(313).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="panel" id="313" description="TOP Shortcuts">
+        <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecMovies) + !IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
+        <onleft>313</onleft>
+        <onright>313</onright>
+    <onup>300</onup>
+      <ondown>300</ondown>
+        <include>RA_Commons_Posters</include>
+        <content>
+          <item id="1" description="Shortcut 1 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.1.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
+          </item>
+          <item id="2" description="Shortcut 2 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.2.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
+          </item>
+          <item id="3" description="Shortcut 3 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.3.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
+          </item>
+          <item id="4" description="Shortcut 4 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.4.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
+          </item>
+          <item id="5" description="Shortcut 5 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.5.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.5.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
+          </item>
+          <item id="6" description="Shortcut 6 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.6.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.6.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
+          </item>
+          <item id="7" description="Shortcut 7 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.7.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.7.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
+          </item>
+          <item id="8" description="Shortcut 8 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.8.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.8.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
+          </item>
+          <item id="9" description="Shortcut 9 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.9.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.9.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
+          </item>
+          <item id="10" description="Shortcut 10 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.10.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMovie.10.Art(poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31966]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.10.File)])</onclick>
           </item>
         </content>
       </control>
@@ -426,7 +593,8 @@
         <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
       </control>
       <control type="panel" id="411" description="TOP Shortcuts">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + [!IsEmpty(Window(Home).Property(LatestEpisode.1.Path)) | !IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))]</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
+        <visible>[!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestEpisode.1.Path))] | [System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentEpisode.1.Title))] | [Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))]</visible>
 		 <onleft>411</onleft>
         <onright>411</onright>
 		<onup>300</onup>
@@ -434,18 +602,18 @@
         <include>RA_Commons_Posters</include>
         <content>
           <item id="1" description="Episodes1">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.1.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.1.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.1.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.1.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.1.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber]</property>
-			<thumb>$INFO[Window(Home).Property(LatestEpisode.1.ShowThumb)]</thumb>
+			      <thumb>$INFO[Window(Home).Property(LatestEpisode.1.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
           </item>
           <item id="2" description="Shortcut2">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.2.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.2.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.2.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.2.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.2.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber]</property>
@@ -454,8 +622,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
           </item>
           <item id="3" description="Shortcut3">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.3.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.3.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.3.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.3.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.3.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber]</property>
@@ -464,8 +632,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
           </item>
           <item id="4" description="Shortcut4">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.4.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.4.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.4.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.4.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.4.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber]</property>
@@ -474,8 +642,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
           </item>
           <item id="5" description="Shortcut5">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.5.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.5.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.5.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.5.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.5.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber]</property>
@@ -484,8 +652,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
           </item>
           <item id="6" description="Shortcut6">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.6.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.6.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.6.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.6.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.6.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.6.EpisodeNumber]</property>
@@ -494,8 +662,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
           </item>
           <item id="7" description="Shortcut7">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.7.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.7.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.7.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.7.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.7.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.7.EpisodeNumber]</property>
@@ -504,8 +672,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.7.Path)])</onclick>
           </item>
           <item id="8" description="Shortcut8">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.8.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.8.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.8.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.8.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.8.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.8.EpisodeNumber]</property>
@@ -514,8 +682,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.8.Path)])</onclick>
           </item>
           <item id="9" description="Shortcut9">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.9.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.9.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.9.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.9.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.9.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.9.EpisodeNumber]</property>
@@ -524,8 +692,8 @@
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.9.Path)])</onclick>
           </item>
           <item id="10" description="Shortcut10">
-            <visible>!Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(LatestEpisode.10.Path))</visible>
+            <visible>!Skin.HasSetting(plexbmc) + [!Skin.HasSetting(AltShelf) | !System.HasAddon(service.skin.widgets)]</visible>
+			      <visible>!IsEmpty(Window(Home).Property(LatestEpisode.10.Path))</visible>
             <label>$INFO[Window(Home).Property(LatestEpisode.10.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(LatestEpisode.10.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(LatestEpisode.10.EpisodeSeason),,.]$INFO[Window(Home).Property(LatestEpisode.10.EpisodeNumber]</property>
@@ -533,9 +701,109 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.10.Path)])</onclick>
           </item>
+          <item id="1" description="Shortcut 1 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.1.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
+          </item>
+          <item id="2" description="Shortcut 2 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.2.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.2.File)])</onclick>
+          </item>
+          <item id="3" description="Shortcut 3 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.3.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.3.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.3.File)])</onclick>
+          </item>
+          <item id="4" description="Shortcut 4 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.4.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.4.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.4.File)])</onclick>
+          </item>
+          <item id="5" description="Shortcut 5 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.5.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.5.File)])</onclick>
+          </item>
+          <item id="6" description="Shortcut 6 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.6.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.6.File)])</onclick>
+          </item>
+          <item id="7" description="Shortcut 7 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.7.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.7.File)])</onclick>
+          </item>
+          <item id="8" description="Shortcut 8 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.8.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.8.File)])</onclick>
+          </item>
+          <item id="9" description="Shortcut 9 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.9.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
+          </item>
+          <item id="1" description="Shortcut 10 (skin widgets)">
+            <visible>!Skin.HasSetting(plexbmc) + Skin.HasSetting(AltShelf) + System.HasAddon(service.skin.widgets)</visible>
+            <visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecentEpisode.10.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[20387]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
+          </item>
           <item id="1" description="Episodes1">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.ShowTitle)]</label2>
             <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason),,.]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeNumber]</property>
@@ -546,7 +814,7 @@
           </item>
           <item id="2" description="Shortcut2">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.2.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.2.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeason)]</property>
@@ -556,7 +824,7 @@
           </item>
           <item id="3" description="Shortcut3">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.3.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.3.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeason)]</property>
@@ -566,7 +834,7 @@
           </item>
           <item id="4" description="Shortcut4">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.4.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.4.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeason)]</property>
@@ -576,7 +844,7 @@
           </item>
           <item id="5" description="Shortcut5">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.5.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.5.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeason)]</property>
@@ -586,7 +854,7 @@
           </item>
           <item id="6" description="Shortcut6">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.6.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.6.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeason)]</property>
@@ -596,7 +864,7 @@
           </item>
           <item id="7" description="Shortcut7">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.7.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.7.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeason)]</property>
@@ -606,7 +874,7 @@
           </item>
           <item id="8" description="Shortcut8">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.8.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.8.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeason)]</property>
@@ -616,7 +884,7 @@
           </item>
           <item id="9" description="Shortcut9">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.9.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.9.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeason)]</property>
@@ -626,7 +894,7 @@
           </item>
           <item id="10" description="Shortcut10">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.10.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.10.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeason)]</property>
@@ -634,9 +902,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Path)])</onclick>
           </item>
-		  <item id="11" description="Shortcut11">
+		      <item id="11" description="Shortcut11">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.11.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.11.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeason)]</property>
@@ -644,9 +912,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Path)])</onclick>
           </item>
-		  <item id="12" description="Shortcut12">
+		      <item id="12" description="Shortcut12">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.12.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.12.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeason)]</property>
@@ -654,9 +922,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Path)])</onclick>
           </item>
-		  <item id="13" description="Shortcut13">
+		      <item id="13" description="Shortcut13">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.13.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.13.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeason)]</property>
@@ -664,9 +932,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Path)])</onclick>
           </item>
-		  <item id="14" description="Shortcut14">
+		      <item id="14" description="Shortcut14">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.14.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.14.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeason)]</property>
@@ -674,9 +942,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Path)])</onclick>
           </item>
-		  <item id="15" description="Shortcut15">
+		      <item id="15" description="Shortcut15">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.15.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.15.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeason)]</property>
@@ -684,9 +952,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Path)])</onclick>
           </item>
-		  <item id="16" description="Shortcut16">
+		      <item id="16" description="Shortcut16">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.16.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.16.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeSeason)]</property>
@@ -694,9 +962,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.Path)])</onclick>
           </item>
-		  <item id="17" description="Shortcut17">
+		      <item id="17" description="Shortcut17">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.17.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.17.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeSeason)]</property>
@@ -704,9 +972,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.Path)])</onclick>
           </item>
-		  <item id="18" description="Shortcut18">
+		      <item id="18" description="Shortcut18">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.18.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.18.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeSeason)]</property>
@@ -714,9 +982,9 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.Path)])</onclick>
           </item>
-		  <item id="19" description="Shortcut19">
+		      <item id="19" description="Shortcut19">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.19.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.19.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeSeason)]</property>
@@ -724,15 +992,121 @@
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.Path)])</onclick>
           </item>
-		  <item id="20" description="Shortcut20">
+		      <item id="20" description="Shortcut20">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.20.Path))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.20.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeTitle)]</label>
             <label2>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeSeason)]</property>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Path)])</onclick>
+          </item>
+        </content>
+      </control>
+      <control type="label" id="412" description="Top Label">
+        <visible>Control.IsVisible(413)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>ShelfTopLabel</include>
+        <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="panel" id="413" description="TOP Shortcuts">
+        <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecEpisodes) + !IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
+     <onleft>413</onleft>
+        <onright>413</onright>
+    <onup>300</onup>
+      <ondown>300</ondown>
+        <include>RA_Commons_Posters</include>
+        <content>
+          <item id="1" description="Shortcut 1 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.1.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
+          </item>
+          <item id="2" description="Shortcut 2 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
+          </item>
+          <item id="3" description="Shortcut 3 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.3.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
+          </item>
+          <item id="4" description="Shortcut 4 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
+          </item>
+          <item id="5" description="Shortcut 5 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.5.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
+          </item>
+          <item id="6" description="Shortcut 6 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.6.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
+          </item>
+          <item id="7" description="Shortcut 7 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.7.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
+          </item>
+          <item id="8" description="Shortcut 8 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.8.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
+          </item>
+          <item id="9" description="Shortcut 9 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.9.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
+          </item>
+          <item id="10" description="Shortcut 10 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.10.Title)]</label>
+            <label2>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)]</label2>
+            <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.10.EpisodeNo]</property>
+            <thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</thumb>
+            <property name="ItemType">$LOCALIZE[31965]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
           </item>
         </content>
       </control>
@@ -851,7 +1225,7 @@
           </item>
           <item id="2" description="Shortcut2">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.2.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.2.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Path)]</onclick>
@@ -860,7 +1234,7 @@
           </item>
           <item id="3" description="Shortcut3">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.3.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.3.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Path)]</onclick>
@@ -869,7 +1243,7 @@
           </item>
           <item id="4" description="Shortcut4">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.4.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.4.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Path)]</onclick>
@@ -878,7 +1252,7 @@
           </item>
           <item id="5" description="Shortcut5">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.5.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.5.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Path)]</onclick>
@@ -887,7 +1261,7 @@
           </item>
           <item id="6" description="Music">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.6.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.6.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Path)]</onclick>
@@ -896,7 +1270,7 @@
           </item>
           <item id="7" description="Shortcut7">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.7.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.7.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Path)]</onclick>
@@ -905,7 +1279,7 @@
           </item>
           <item id="8" description="Shortcut8">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.8.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.8.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Path)]</onclick>
@@ -914,7 +1288,7 @@
           </item>
           <item id="9" description="Shortcut9">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.9.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.9.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Path)]</onclick>
@@ -923,12 +1297,352 @@
           </item>
           <item id="10" description="Shortcut10">
             <visible>Skin.HasSetting(plexbmc)</visible>
-			<visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.10.Title))</visible>
+			      <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.10.Title))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Artist),, - ]$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Title)]</label>
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+        </content>
+      </control>
+      <control type="label" id="512" description="Top Label">
+        <visible>Control.IsVisible(513)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>ShelfTopLabel</include>
+        <label>$INFO[Container(513).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="panel" id="513" description="TOP Shortcuts">
+        <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecAlbums) + !IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
+        <onleft>513</onleft>
+        <onright>513</onright>
+    <onup>300</onup>
+      <ondown>300</ondown>
+        <include>RA_Commons_Music</include>
+        <content>
+          <item id="1" description="Music">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="2" description="Shortcut2">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="3" description="Shortcut3">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="4" description="Shortcut4">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="5" description="Shortcut5">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="6" description="Music">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="7" description="Shortcut7">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="8" description="Shortcut8">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="9" description="Shortcut9">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+          <item id="10" description="Shortcut10">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist),, - ]$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
+            <thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31963]</property>
+          </item>
+        </content>
+      </control>
+       <control type="label" id="610" description="Top Label">
+        <visible>Control.IsVisible(611)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>ShelfTopLabel</include>
+        <label>$INFO[Container(611).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="panel" id="611" description="TOP Shortcuts">
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(Concerts.Show)</visible>
+        <visible>[!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path))] | [System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
+        <onleft>611</onleft>
+        <onright>611</onright>
+    <onup>300</onup>
+      <ondown>300</ondown>
+        <include>RA_Commons_Posters</include>
+        <content>
+         <item id="1" description="Movies">
+            <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.1.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.1.Path)])</onclick>
+          </item>
+          <item id="2" description="Shortcut2">
+            <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.2.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.2.Path)])</onclick>
+          </item>
+          <item id="3" description="Shortcut3">
+            <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.3.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.3.Path)])</onclick>
+          </item>
+          <item id="4" description="Shortcut4">
+            <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.4.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.4.Path)])</onclick>
+          </item>
+          <item id="5" description="Shortcut5">
+           <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.5.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.5.Path)])</onclick>
+          </item>
+          <item id="6" description="Movies">
+           <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.6.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.6.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.6.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.6.Path)])</onclick>
+          </item>
+          <item id="7" description="Shortcut7">
+            <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.7.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.7.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.7.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.7.Path)])</onclick>
+          </item>
+          <item id="8" description="Shortcut8">
+           <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.8.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.8.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.8.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.8.Path)])</onclick>
+          </item>
+          <item id="9" description="Shortcut9">
+           <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.9.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.9.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.9.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.9.Path)])</onclick>
+          </item>
+          <item id="10" description="Shortcut10">
+            <visible>!Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(LatestMusicVideo.10.Path)) | !System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(LatestMusicVideo.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(LatestMusicVideo.10.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(LatestMusicVideo.10.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.10.Path)])</onclick>
+          </item>
+          <item id="1" description="Recent music video 1 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.1.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.1.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.1.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.1.File)])</onclick>
+          </item>
+          <item id="2" description="Recent music video 2 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.2.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.2.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.2.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.2.File)])</onclick>
+          </item>
+          <item id="3" description="Recent music video 3 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.3.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.3.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.3.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.3.File)])</onclick>
+          </item>
+          <item id="4" description="Recent music video 4 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.4.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.4.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.4.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.4.Path)])</onclick>
+          </item>
+          <item id="5" description="Recent music video 5 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.5.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.5.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.5.File)])</onclick>
+          </item>
+          <item id="6" description="Recent music video 6 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.6.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.6.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.6.File)])</onclick>
+          </item>
+          <item id="7" description="Recent music video 7 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.7.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.7.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.7.File)])</onclick>
+          </item>
+          <item id="8" description="Recent music video 8 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.8.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.8.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.8.File)])</onclick>
+          </item>
+          <item id="9" description="Recent music video 9 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.9.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.9.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.9.File)])</onclick>
+          </item>
+          <item id="10" description="Recent music video 10 (skin widgets)">
+            <visible>Skin.HasSetting(AltShelf) + !IsEmpty(Window(Home).Property(RecentMusicVideo.10.Path)) + System.HasAddon(service.skin.widgets)</visible>
+            <label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecentMusicVideo.10.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.10.File)])</onclick>
+          </item>
+        </content>
+      </control>
+      <control type="label" id="613" description="Top Label">
+        <visible>Control.IsVisible(614)</visible>
+        <include>VisibleFadeEffect</include>
+        <include>ShelfTopLabel</include>
+        <label>$INFO[Container(614).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="panel" id="614" description="TOP Shortcuts">
+        <visible>Skin.HasSetting(Concerts.Show)</visible>
+        <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(AltShelf) + Skin.HasSetting(ShelfRecMusicVideos) + !IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
+        <onleft>614</onleft>
+        <onright>614</onright>
+    <onup>300</onup>
+      <ondown>300</ondown>
+        <include>RA_Commons_Posters</include>
+        <content>
+          <item id="1" description="Recommended music video 1 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.1.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.1.File)])</onclick>
+          </item>
+          <item id="2" description="Recommended music video 2 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.2.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.2.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.2.File)])</onclick>
+          </item>
+          <item id="3" description="Recommended music video 3 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.3.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.3.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.3.File)])</onclick>
+          </item>
+          <item id="4" description="Recommended music video 4 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.4.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.4.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.4.Path)])</onclick>
+          </item>
+          <item id="5" description="Recommended music video 5 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.5.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.5.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.5.File)])</onclick>
+          </item>
+          <item id="6" description="Recommended music video 6 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.6.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.6.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.6.File)])</onclick>
+          </item>
+          <item id="7" description="Recommended music video 7 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.7.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.7.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.7.File)])</onclick>
+          </item>
+          <item id="8" description="Recommended music video 8 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.8.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.8.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.8.File)])</onclick>
+          </item>
+          <item id="9" description="Recommended music video 9 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.9.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
+          </item>
+          <item id="10" description="Recommended music video 10 (skin widgets)">
+            <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Path))</visible>
+            <label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)]</label>
+            <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31962]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
           </item>
         </content>
       </control>
