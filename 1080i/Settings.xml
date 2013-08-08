@@ -115,6 +115,10 @@
             <label>31995</label>
             <onclick>-</onclick>
           </item>
+		  <item id="7" description="Quit menu">
+            <label>31990</label>
+            <onclick>-</onclick>
+          </item>
         </content>
       </control>
       <control type="group" id="9010">
@@ -243,10 +247,6 @@
               <label>PVR</label>
               <onclick>activateWindow(PVRSettings)</onclick>
             </item>
-            <!--<item id="12" description="Addons">
-              <label>10040</label>
-              <onclick>activatewindow(AddonBrowser,root)</onclick>
-            </item>-->
           </content>
         </control>
         <control type="grouplist" id="500">
@@ -424,13 +424,7 @@
               <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
               <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
             </item>
-         
-            <item id="10" description="Quit button function">
-              <label>$LOCALIZE[31982]</label>
-              <label2 fallback="33061">$VAR[QuitLabel2]</label2>
-              <onclick>ActivateWindow(1114)</onclick>
-            </item>
-            <item id="11" description="Artist slideshow">
+           <item id="11" description="Artist slideshow">
               <visible>System.HasAddon(script.artistslideshow)</visible>
 			  <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
               <label>$LOCALIZE[31969]</label>
@@ -1745,6 +1739,162 @@
               <label>$LOCALIZE[31986]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(UseFullScreenShelf)</onclick>
+            </item>
+			
+          </content>
+        </control>
+		<!-- 9000 7 -->
+		<control type="panel" id="9007">
+          <visible>Container(9000).HasFocus(7)</visible>
+          <posx>390</posx>
+          <posy>210</posy>
+          <width>1140</width>
+          <height>780</height>
+          <onleft>9000</onleft>
+          <onright>500</onright>
+          <onup>9007</onup>
+          <ondown>9007</ondown>
+          <pagecontrol>-</pagecontrol>
+          <scrolltime>280</scrolltime>
+          <itemlayout width="1140" height="60">
+            <control type="image">
+              <posx>0</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>1140</width>
+              <texture border="3">buttons/ButtonNF.png</texture>
+            </control>
+            <control type="label" description="Label 2">
+              <posx>30r</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>600</width>
+              <font>Label2</font>
+              <haspath>true</haspath>
+              <align>right</align>
+              <scroll>false</scroll>
+              <textcolor>Orange</textcolor>
+              <label>$INFO[ListItem.Label2]</label>
+            </control>
+            <control type="label" description="Main Label">
+              <posx>30</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>930</width>
+              <scroll>false</scroll>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="image" description="Icon">
+              <visible>!IsEmpty(ListItem.Icon)</visible>
+              <posx>81r</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>60</width>
+              <aspectratio>keep</aspectratio>
+              <bordersize>6</bordersize>
+              <texture>$INFO[ListItem.Icon]</texture>
+            </control>
+          </itemlayout>
+          <focusedlayout width="1140" height="60">
+            <control type="image">
+              <posx>0</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>1140</width>
+              <texture border="2">buttons/ButtonFO.png</texture>
+            </control>
+            <control type="label" description="Label 2">
+              <posx>30r</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>600</width>
+              <font>Label2</font>
+              <haspath>true</haspath>
+              <align>right</align>
+              <scroll>false</scroll>
+              <textcolor>Orange</textcolor>
+              <label>$INFO[ListItem.Label2]</label>
+            </control>
+            <control type="label" description="Main Label">
+              <posx>30</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>930</width>
+              <scroll>false</scroll>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="image" description="Icon">
+              <visible>!IsEmpty(ListItem.Icon)</visible>
+              <posx>81r</posx>
+              <posy>0</posy>
+              <height>60</height>
+              <width>60</width>
+              <bordersize>6</bordersize>
+              <aspectratio>keep</aspectratio>
+              <texture>$INFO[ListItem.Icon]</texture>
+            </control>
+          </focusedlayout>
+          <content>
+            <item id="1" description="QuitAction">
+              <label>$LOCALIZE[31989]</label>
+              <label2 fallback="31988">$VAR[QuitLabel2]</label2>
+              <onclick>ActivateWindow(1114)</onclick>
+            </item>
+            <item id="2" description="Quit">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+              <visible>!Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
+			  <label> - $LOCALIZE[13009]</label>
+              <label2>107</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Quit)</onclick>
+            </item>
+            <item id="2" description="Quit">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+			  <visible>Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
+			  <label> - $LOCALIZE[13009]</label>
+              <label2>106</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Quit)</onclick>
+            </item>
+			<item id="3" description="Sleep">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+              <visible>!Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
+			  <label> - $LOCALIZE[13011]</label>
+              <label2>107</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Sleep)</onclick>
+            </item>
+            <item id="3" description="Sleep">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+			  <visible>Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
+			  <label> - $LOCALIZE[13011]</label>
+              <label2>106</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Sleep)</onclick>
+            </item>
+            <item id="4" description="Shutdown">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+              <visible>!Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
+			  <label> - $LOCALIZE[13005]</label>
+              <label2>107</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Shutdown)</onclick>
+            </item>
+            <item id="4" description="Shutdown">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+			  <visible>Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
+			  <label> - $LOCALIZE[13005]</label>
+              <label2>106</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Shutdown)</onclick>
+            </item>
+			<item id="5" description="Reboot">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+              <visible>!Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
+			  <label> - $LOCALIZE[13013]</label>
+              <label2>107</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
+            </item>
+            <item id="4" description="Shutdown">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+			  <visible>Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
+			  <label> - $LOCALIZE[13013]</label>
+              <label2>106</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
             </item>
 			
           </content>

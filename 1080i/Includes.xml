@@ -3,6 +3,7 @@
   <!--
 	  CUSTOM WINDOWS LIST
 		_Shelf 1112
+		_Quit 1114
 		_MenuCustomizer 1116
 		_ShelfCustomizer 1117
 		_Custom_Debug 50 dialog
@@ -726,8 +727,10 @@
 	  
 	  <control type="multiimage" description="FA slideshow INFO">
       <include>VisibleFadeEffect</include>
-	  <include>BG.Defaults</include>
-      <imagepath background="true">$VAR[Fanart.Art]</imagepath>
+	  <width>1280</width>
+      <height>720</height>
+      <include>BG.Defaults</include>
+	  <imagepath background="true">$VAR[Fanart.Art]</imagepath>
     </control>
 	<control type="image" description="Info panel BG">
       <include>VisibleFadeEffect</include>
