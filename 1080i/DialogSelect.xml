@@ -11,7 +11,7 @@
     <include>DimBG</include>
     <control type="group" description="Content">
 	<include>OpenClose</include>
-	<animation effect="slide" start="0,0" end="126,0" time="0" delay="0" center="auto" reversible="true" condition="!Control.IsVisible(5)">Conditional</animation>
+	<animation effect="slide" start="0,0" end="126,0" time="0" delay="0" center="auto" reversible="true" condition="Control.IsVisible(3)">Conditional</animation>
 	<posx>312</posx>
     <posy>180</posy>
       <control type="image">
@@ -39,7 +39,8 @@
         <textcolor>Orange</textcolor>
     </control>
     <control type="group" description="Group 6 Thumbs">
-      <control type="list" id="6">
+      <visible>!Control.IsVisible(3)</visible>
+	  <control type="list" id="6">
         <posx>256</posx>
         <posy>60</posy>
         <width>1010</width>
