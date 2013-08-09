@@ -11,7 +11,7 @@
     <shadowcolor>Shadow</shadowcolor>
   </include>
   <include name="RA_Commons_Posters">
-    <include>ListVisibleFade</include>
+    <include>VisibleFadeEffect</include>
     <posx>60</posx>
     <posy>84</posy>
     <width>1860</width>
@@ -103,7 +103,7 @@
     </focusedlayout>
   </include>
   <include name="RA_Commons_Music">
-    <include>ListVisibleFade</include>
+    <include>VisibleFadeEffect</include>
     <posx>72</posx>
     <posy>84</posy>
     <width>1860</width>
