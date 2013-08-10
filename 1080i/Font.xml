@@ -58,6 +58,11 @@
       <size>32</size>
     </font>
     <font>
+      <name>Flags</name>
+      <filename>BebasNeue.ttf</filename>
+      <size>28</size>
+    </font>
+	<font>
       <name>Episode</name>
       <filename>BebasNeue.ttf</filename>
       <size>24</size>

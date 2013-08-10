@@ -95,27 +95,27 @@
             <label>XBMC</label>
             <onclick>-</onclick>
           </item>
-          <item id="2">
-            <label>33063</label>
+          <item id="2" description="Options">
+            <label>20077</label>
             <onclick>-</onclick>
           </item>
-          <item id="3" description="Home screen categories">
-            <label>31974</label>
-            <onclick>-</onclick>
-          </item>
-          <item id="4">
-            <label>33069</label>
-            <onclick>-</onclick>
-          </item>
-          <item id="5">
-            <label>31976</label>
-            <onclick>-</onclick>
-          </item>
-		  <item id="6" description="Home layout">
+          <item id="6" description="Home layout">
             <label>31995</label>
             <onclick>-</onclick>
           </item>
-		  <item id="7" description="Quit menu">
+		  <item id="3" description="Home menu">
+            <label>31974</label>
+            <onclick>-</onclick>
+          </item>
+          <item id="5" description="Shelf">
+            <label>31976</label>
+            <onclick>-</onclick>
+          </item>
+		  <item id="4" description="Backgrounds">
+            <label>33069</label>
+            <onclick>-</onclick>
+          </item>
+          <item id="7" description="Quit menu">
             <label>31990</label>
             <onclick>-</onclick>
           </item>
@@ -239,6 +239,21 @@
             <visible>System.HasAddon(plugin.xbianconfig)</visible>
 			<label>XBian</label>
             <onclick>RunAddon(plugin.xbianconfig)</onclick>
+           </item>
+		   <item id="7" description="OpenElec config">
+            <visible>System.HasAddon(plugin.openelec.settings)</visible>
+			<label>OpenElec</label>
+            <onclick>RunAddon(plugin.openelec.settings)</onclick>
+           </item>
+		   <item id="7" description="Raspbmc config">
+            <visible>System.HasAddon(plugin.raspbmc.settings)</visible>
+			<label>Raspbmc</label>
+            <onclick>RunAddon(plugin.raspbmc.settings)</onclick>
+           </item>
+		   <item id="7" description="Plexbmc config">
+            <visible>System.HasAddon(plugin.video.plexbmc)</visible>
+			<label>PleXBMC</label>
+            <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
            </item>
 		     <item id="8" description="Service">
               <label>14036</label>
@@ -1731,22 +1746,31 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
             </item>
-			<item id="1" description="FS Shelf">
-              <visible>Skin.HasSetting(VerticalHome)</visible>
-              <visible>Skin.HasSetting(UseFullScreenShelf)</visible>
-			  <label>$LOCALIZE[31986]</label>
+			<item id="1" description="Default bg">
+              <visible>Skin.HasSetting(Home_DefaultBG)</visible>
+              <label>$LOCALIZE[31986]</label>
               <label2>$LOCALIZE[107]</label2>
-              <onclick>Skin.ToggleSetting(UseFullScreenShelf)</onclick>
+              <onclick>Skin.ToggleSetting(Home_DefaultBG)</onclick>
             </item>
-			<item id="0" description="FS Shelf">
-              <visible>Skin.HasSetting(VerticalHome)</visible>
-			  <visible>!Skin.HasSetting(UseFullScreenShelf)</visible>
+			<item id="1" description="Default bg">
+              <visible>!Skin.HasSetting(Home_DefaultBG)</visible>
               <label>$LOCALIZE[31986]</label>
               <label2>$LOCALIZE[106]</label2>
-              <onclick>Skin.ToggleSetting(UseFullScreenShelf)</onclick>
+              <onclick>Skin.ToggleSetting(Home_DefaultBG)</onclick>
             </item>
-			
-          </content>
+			<item id="2" description="Library stats">
+              <visible>Skin.HasSetting(Show_Library_Count)</visible>
+              <label>$LOCALIZE[31978]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.ToggleSetting(Show_Library_Count)</onclick>
+            </item>
+			<item id="2" description="Library stats">
+              <visible>!Skin.HasSetting(Show_Library_Count)</visible>
+              <label>$LOCALIZE[31978]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(Show_Library_Count)</onclick>
+            </item>
+	      </content>
         </control>
 		<!-- 9000 7 -->
 		<control type="panel" id="9007">
