@@ -2963,7 +2963,7 @@
           <onclick>XBMC.ReloadSkin()</onclick>
         </item>
 		<item id="70" description="XBIAN config">
-            <!--<visible>System.HasAddon(plugin.xbianconfig)</visible>-->
+            <visible>System.HasAddon(plugin.xbianconfig)</visible>
 			<label>XBian</label>
             <onclick>RunAddon(plugin.xbianconfig)</onclick>
            </item>
