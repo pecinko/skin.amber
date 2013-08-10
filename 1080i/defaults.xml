@@ -130,7 +130,8 @@
   <default type="spincontrol">
     <posx>0</posx>
     <posy>0</posy>
-    <height>60</height>
+    <height>40</height>
+	<width>26</width>
 	<textureup>buttons/SpinUpNF.png</textureup>
     <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
     <texturedown>buttons/SpinDownNF.png</texturedown>
@@ -141,8 +142,8 @@
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>-->
     <texturefocus border="2">buttons/ButtonFO.png</texturefocus>
     <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-	<spinwidth>40</spinwidth>
-    <spinheight>60</spinheight>
+	<spinwidth>26</spinwidth>
+    <spinheight>40</spinheight>
     <font>size22</font>
     <textcolor>White</textcolor>
 	<shadowcolor>ShadowDark</shadowcolor>
@@ -150,7 +151,7 @@
     <selectedcolor>Orange</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <textoffsetx>20</textoffsetx>
-    <align>left</align>
+    <align>right</align>
     <aligny>center</aligny>
     <reverse>yes</reverse>
     <pulseonselect>false</pulseonselect>
