@@ -24,4 +24,12 @@
 	<color name="Orange2">FFeaab01</color>
 	<!--<color name="Orange">FFFFAA21</color>
 	<color name="Orange2">FFe19326</color>-->
+	<!--XBian config colors:-->
+    <color name="white">FFCCCCCC</color>
+    <color name="grey">FF5E5E5E</color>
+    <color name="grey2">FFBEBEBE</color>
+    <color name="grey3">FF9e9e9e</color>
+    <color name="black">FF000000</color>
+    <color name="blue">FFf6b12b</color><!-- is actual orange -->
+	<!--end of XBian config colors:-->
 </colors>
