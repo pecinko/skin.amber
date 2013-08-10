@@ -223,8 +223,8 @@
     </font>
     <font>
       <name>Keyboard</name>
-      <filename>UbuntuCondensed.ttf</filename>
-      <size>36</size>
+      <filename>Arial.ttf</filename>
+      <size>30</size>
     </font>
     <font>
       <name>size23</name>
@@ -492,7 +492,7 @@
     <font>
       <name>Keyboard</name>
       <filename>Arial.ttf</filename>
-      <size>36</size>
+      <size>30</size>
     </font>
     <font>
       <name>size23</name>

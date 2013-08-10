@@ -583,26 +583,18 @@
   </include>
   <!--NEW end-->
   <include name="KeyboardButtons">
-    <texturefocus border="2">common/KeyButtonFO.png</texturefocus>
     <align>center</align>
     <aligny>center</aligny>
     <textoffsetx>0</textoffsetx>
-    <width>75</width>
-    <height>75</height>
+    <width>87</width>
+    <height>87</height>
     <font>Keyboard</font>
-    <texturenofocus></texturenofocus>
-    <alttexturenofocus></alttexturenofocus>
-  </include>
-  <include name="KeyboardNumButtons">
-    <texturefocus border="2">common/KeyButtonFO.png</texturefocus>
-    <align>center</align>
-    <aligny>center</aligny>
-    <textoffsetx>0</textoffsetx>
-    <width>75</width>
-    <height>75</height>
-    <font>Keyboard</font>
-    <texturenofocus></texturenofocus>
-    <alttexturenofocus></alttexturenofocus>
+	<focusedcolor>Orange</focusedcolor>
+	<textoffsety>-3</textoffsety>
+    <texturefocus border="16,0,16,0">common/KeyButtonFO.png</texturefocus>
+    <texturenofocus border="16,0,16,0">common/KeyButtonNF.png</texturenofocus>
+	<alttexturefocus border="16,0,16,0">common/KeyButtonFO.png</alttexturefocus>
+    <alttexturenofocus border="16,0,16,0">common/KeyButtonNF.png</alttexturenofocus>
   </include>
   <include name="List_9009_Commons" description="Video Info metadata container">
     <posx>0</posx>
