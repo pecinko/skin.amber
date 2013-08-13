@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window type="window">
-  <defaultcontrol always="true">3</defaultcontrol>
+  <defaultcontrol>3</defaultcontrol>
   <coordinates>
     <system>1</system>
     <posx>0</posx>
@@ -31,11 +31,23 @@
         <texture border="55">dialogs/DialogSmall.png</texture>
       </control>
     <control type="label" id="1" description="Header">
-      <posx>0</posx>
+      <visible>Control.IsVisible(3)</visible>  
+		<posx>0</posx>
         <posy>0</posy>
         <width>1010</width>
         <height>30</height>
         <align>center</align>
+		<font>ListDetails</font>
+        <textcolor>Orange</textcolor>
+    </control>
+	<control type="label" id="1" description="Header">
+      <visible>Control.IsVisible(6)</visible>  
+		<posx>300</posx>
+        <posy>0</posy>
+        <width>900</width>
+        <height>30</height>
+        <align>center</align>
+		<font>ListDetails</font>
         <textcolor>Orange</textcolor>
     </control>
     <control type="group" description="Group 6 Thumbs">
@@ -69,8 +81,7 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
 		  <control type="label">
-            <visible>IsEmpty(ListItem.Property(Addon.Creator))</visible>
-			<posx>990</posx>
+            <posx>990</posx>
             <posy>0</posy>
             <width>800</width>
             <height>60</height>
@@ -80,18 +91,7 @@
 			<scroll>false</scroll>
             <info>ListItem.Label2</info>
           </control>
-		  <control type="label">
-            <posx>990</posx>
-            <posy>0</posy>
-            <width>740</width>
-            <height>60</height>
-			<align>right</align>
-			<font>Label2</font>
-			<textcolor>Grey</textcolor>
-	        <scroll>false</scroll>
-			<label>$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
-          </control>
-        </itemlayout>
+		</itemlayout>
         <focusedlayout width="1010" height="60">
           <control type="image">
             <visible>Control.HasFocus(6)</visible>
@@ -121,8 +121,7 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
 		  <control type="label">
-            <visible>IsEmpty(ListItem.Property(Addon.Creator))</visible>
-			<posx>990</posx>
+        	<posx>990</posx>
             <posy>0</posy>
             <width>800</width>
             <height>60</height>
@@ -132,20 +131,11 @@
 			<font>Label2</font>
             <info>ListItem.Label2</info>
           </control>
-		  <control type="label">
-            <posx>990</posx>
-            <posy>0</posy>
-            <width>740</width>
-            <height>60</height>
-			<align>right</align>
-			<font>Label2</font>
-			<textcolor>Grey2</textcolor>
-			<shadowcolor>ShadowDark</shadowcolor>
-            <label>$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
-          </control>
-        </focusedlayout>
+	    </focusedlayout>
       </control>
-	  <control type="image" description="Thumb">
+	  
+	  <control type="image" description="Thumb BG">
+			<visible>Control.HasFocus(6)</visible>
 			<posx>18</posx>
 			<posy>36</posy>
 			<width>220</width>
@@ -153,21 +143,25 @@
 			<include>SquareThumbBG</include>
 	   </control>
 	   <control type="image" description="Thumb">
+			<visible>Control.HasFocus(6)</visible>
 			<posx>18</posx>
 			<posy>36</posy>
 			<width>220</width>
 			<height>220</height>
-			<texture>$INFO[Container(6).Listitem.Thumb]</texture>
+			<texture>$INFO[Container(6).ListItem.Thumb]</texture>
 			<aspectratio>keep</aspectratio>
 	   </control>
-	   <control type="label" description="Version">
+	   <control type="label" description="Author">
+			<visible>Control.HasFocus(6) + !IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
 			<posx>18</posx>
-			<posy>270</posy>
+			<posy>276</posy>
 			<width>220</width>
-			<height>60</height>
+			<height>150</height>
+			<wrapmultiline>true</wrapmultiline>
 			<align>center</align>
 			<font>ListDetails</font>
-			<label>$INFO[Container(6).ListItem.Label2,$LOCALIZE[24051] ]</label>
+			<textcolor>White2</textcolor>
+			<label>$INFO[Container(6).ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
 	   </control>
     </control>
 	<control type="group" description="Group 3 Plain list">

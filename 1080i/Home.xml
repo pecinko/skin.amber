@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
   <defaultcontrol always="true">300</defaultcontrol>
-  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + IsEmpty(Window.Property(plexbmc.0.title))">RunScript(plugin.video.plexbmc,skin,nocat)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,channelShelf)</onload>
   <onload condition="Window.Previous(favourites) | IsEmpty(Window(Home).Property(favourite.1.path))">RunScript(script.favourites)</onload>
@@ -58,7 +58,10 @@
       </control>
     </control>
     <include>Time</include>
-    <include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
+    <control type="group">
+	<!--<animation effect="slide" start="0,0" end="0,-500" time="0" condition="!Skin.HasSetting(Hide.RecentlyAdded)">Conditional</animation>-->
+	<include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
+	</control>
 	</control>
   </controls>
 </window>
