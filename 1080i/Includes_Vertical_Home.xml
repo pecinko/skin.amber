@@ -2,7 +2,6 @@
 <includes>
   <include name="RecentlyAdded_Header">
     <animation effect="slide" start="0,0" end="0,-162" time="0" condition="Control.IsVisible(312) | Control.IsVisible(413) | Control.IsVisible(513) | Control.IsVisible(515)">Conditional</animation>
-    <include>VisibleFadeEffectDelay</include>
 	<posx>20r</posx>
     <align>right</align>
     <posx>594</posx>
@@ -14,7 +13,6 @@
   </include>
   <include name="Recommended_Header">
     <animation effect="slide" start="0,0" end="0,522" time="0" condition="Control.IsVisible(311) | Control.IsVisible(411) |  Control.IsVisible(511) | Control.IsVisible(514)">Conditional</animation>
-    <include>VisibleFadeEffectDelay</include>
 	<posx>20r</posx>
     <align>right</align>
     <posx>594</posx>
@@ -26,7 +24,6 @@
   </include>
   <include name="RecentlyAdded_Label">
     <animation effect="slide" start="0,0" end="0,-162" time="0" condition="Control.IsVisible(312) | Control.IsVisible(413) | Control.IsVisible(513) | Control.IsVisible(515)">Conditional</animation>
-    <include>VisibleFadeEffectDelay</include>
 	<posx>558</posx>
     <posy>339</posy>
     <height>45</height>
@@ -36,7 +33,6 @@
   </include>
   <include name="Recommended_Label">
     <animation effect="slide" start="0,0" end="0,522" time="0" condition="Control.IsVisible(311) | Control.IsVisible(411) |  Control.IsVisible(511) | Control.IsVisible(514)">Conditional</animation>
-    <include>VisibleFadeEffectDelay</include>
 	<posx>558</posx>
     <posy>339</posy>
     <height>45</height>
@@ -443,7 +439,6 @@
   <include name="Recommended_Albums">
     <animation effect="slide" start="0,0" end="0,162" time="0" condition="Control.IsVisible(511)">Conditional</animation>
     <include>VisibleFadeEffectDelayShelf</include>
-	<include>VisibleFadeEffectDelayShelf</include>
 	<posx>540</posx>
     <posy>378</posy>
     <width>1368</width>
@@ -648,7 +643,6 @@
     <control type="group" id="700">
       <control type="image" description="RA BG">
         <visible>Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [Control.IsVisible(311) + !Control.IsVisible(312)] | [!Control.IsVisible(311) + Control.IsVisible(312)] | [Control.IsVisible(411) + !Control.IsVisible(413)] | [!Control.IsVisible(411) + Control.IsVisible(413)] | [Control.IsVisible(511) + !Control.IsVisible(513)] | [!Control.IsVisible(511) + Control.IsVisible(513)] | [Control.IsVisible(514) + !Control.IsVisible(515)] | [!Control.IsVisible(514) + Control.IsVisible(515)] | Control.IsVisible(313) | Control.IsVisible(412) | Control.IsVisible(512)</visible>
-        <include>VisibleFadeEffect</include>
         <posx>530</posx>
         <posy>345</posy>
         <width>1500</width>
@@ -657,7 +651,6 @@
       </control>
       <control type="image" description="RA BG 2">
         <visible>[Control.IsVisible(311) + Control.IsVisible(312)] | [Control.IsVisible(411) + Control.IsVisible(413)] | [Control.IsVisible(511) + Control.IsVisible(513)] | [Control.IsVisible(514) + Control.IsVisible(515)]</visible>
-        <include>VisibleFadeEffect</include>
         <posx>530</posx>
         <posy>183</posy>
         <width>1500</width>
