@@ -34,6 +34,10 @@
     <animation effect="fade" time="100" delay="50">Visible</animation>
     <animation effect="fade" time="50">Hidden</animation>
   </include>
+  <include name="OSDFade">
+    <animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
+    <animation effect="fade" start="100" end="0" time="50">WindowClose</animation>
+  </include>
   <include name="OpenClose">
     <animation effect="fade" time="250">WindowOpen</animation>
     <animation effect="fade" time="250">WindowClose</animation>
@@ -1981,7 +1985,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.0.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.0.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.0.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.0.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.0.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.0.search)]</property>
@@ -1999,7 +2003,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.1.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.1.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.1.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.1.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.1.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.1.search)]</property>
@@ -2016,7 +2020,7 @@
       <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
       <label2>$INFO[Window(Home).Property(plexbmc.2.subtitle)]</label2>
       <thumb background="true">$INFO[Skin.String(Plexbmc.2.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
       <onclick>$INFO[Window(Home).Property(plexbmc.2.path)]</onclick>
       <property name="type">$INFO[Window(Home).Property(plexbmc.2.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.2.partialpath)]</property>
@@ -2035,7 +2039,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.3.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.3.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.3.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.3.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.3.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.3.search)]</property>
@@ -2053,7 +2057,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.4.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.4.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.4.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.4.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.4.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.4.search)]</property>
@@ -2071,7 +2075,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.5.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.5.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.5.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.5.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.5.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.5.search)]</property>
@@ -2089,7 +2093,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.6.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.6.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.6.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.6.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.6.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.6.search)]</property>
@@ -2107,7 +2111,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.7.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.7.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.7.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.7.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.7.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.7.search)]</property>
@@ -2125,7 +2129,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.8.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.8.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.8.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.8.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.8.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.8.search)]</property>
@@ -2143,7 +2147,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.9.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.9.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.9.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.9.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.9.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.9.search)]</property>
@@ -2161,7 +2165,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.10.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.10.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.10.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.10.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.10.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.10.search)]</property>
@@ -2179,7 +2183,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.11.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.11.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.11.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.11.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.11.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.11.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.11.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.11.search)]</property>
@@ -2197,7 +2201,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.12.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.12.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.12.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.12.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.12.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.12.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.12.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.12.search)]</property>
@@ -2215,7 +2219,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.13.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.13.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.13.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.13.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.13.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.13.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.13.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.13.search)]</property>
@@ -2233,7 +2237,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.14.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.14.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.14.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.14.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.14.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.14.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.14.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.14.search)]</property>
@@ -2251,7 +2255,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.15.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.15.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.15.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.15.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.15.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.15.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.15.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.15.search)]</property>
@@ -2269,7 +2273,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.16.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.16.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.16.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.16.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.16.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.16.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.16.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.16.search)]</property>
@@ -2287,7 +2291,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.17.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.17.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.17.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.17.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.17.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.17.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.17.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.17.search)]</property>
@@ -2305,7 +2309,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.18.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.18.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.18.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.18.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.18.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.18.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.18.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.18.search)]</property>
@@ -2323,7 +2327,7 @@
       <label2>$INFO[Window(Home).Property(plexbmc.19.subtitle)]</label2>
       <onclick>$INFO[Window(Home).Property(plexbmc.19.path)]</onclick>
       <thumb background="true">$INFO[Skin.String(Plexbmc.19.Background)]</thumb>
-      <icon fallback="special://skin/backgrounds/default/Default.jpg">$INFO[Window(Home).Property(plexbmc.19.art)]</icon>
+      <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.19.art)]</icon>
       <property name="type">$INFO[Window(Home).Property(plexbmc.19.type)]</property>
       <property name="partial">$INFO[Window(Home).Property(plexbmc.19.partialpath)]</property>
       <property name="search">$INFO[Window(Home).Property(plexbmc.19.search)]</property>

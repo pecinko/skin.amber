@@ -2,8 +2,7 @@
 <window type="dialog">
   <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
   <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !System.IdleTime(7)] | Player.Forwarding | Player.Rewinding | Player.Caching]]</visible>
-  <animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="50">WindowClose</animation>
+  <include>OSDFade</include>
   <zorder>2</zorder>
   <controls>
     <control type="group" description="Top Bar">
