@@ -59,7 +59,7 @@
     </control>
     <include>Time</include>
     <control type="group">
-	<!--<animation effect="slide" start="0,0" end="0,-500" time="0" condition="!Skin.HasSetting(Hide.RecentlyAdded)">Conditional</animation>-->
+	<visible>![!Skin.HasSetting(VerticalHome) + !Control.HasFocus(300)]</visible>
 	<include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
 	</control>
 	</control>

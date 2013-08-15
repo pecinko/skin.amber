@@ -39,38 +39,28 @@
       <control type="group">
         <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Player.Caching | Player.Paused | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Window.IsActive(videoosd.xml)]</visible>
 		<posy>10</posy>
-        <control type="image" description="Real Background">
+        <control type="_progress" description="Buffer Bar">
           <posx>450</posx>
-          <posy>0</posy>
+          <posy>3</posy>
           <width>1020</width>
-          <height>24</height>
-          <texture border="18,1,18,1">VideoOSD/ProgressRealBG.png</texture>
-        </control>
-        <control type="progress" description="Buffer Bar">
-          <posx>460</posx>
-          <posy>4</posy>
-          <width>1002</width>
-          <height>17</height>
-          <texturebg border="6">VideoOSD/VideoProgressBG.png</texturebg>
-          <midtexture border="0,0,1,0">VideoOSD/BufferMidd.png</midtexture>
-          <lefttexture border="0">VideoOSD/BufferLeft.png</lefttexture>
-          <righttexture border="0">VideoOSD/BufferRight.png</righttexture>
+          <height>18</height>
+          <texturebg border="15,0,15,0">VideoOSD/ProgressBG.png</texturebg>
+		  <midtexture border="15,0,15,0">VideoOSD/ProgressBar.png</midtexture>
           <info>Player.CacheLevel</info>
-          <visible>Player.Caching</visible>
-        </control>
-        <control type="progress" id="23" description="Progress Bar">
-          <posx>453</posx>
-          <posy>0</posy>
-          <width>1023</width>
-          <height>25</height>
-          <texturebg border="8">VideoOSD/VideoProgressBG.png</texturebg>
-          <midtexture border="0,0,1,0">VideoOSD/VideoProgressMidd.png</midtexture>
-          <lefttexture border="0">VideoOSD/VideoProgressLeft.png</lefttexture>
-          <righttexture border="0">VideoOSD/VideoProgressRight.png</righttexture>
-          <info>Player.Progress</info>
+	  	  <visible>Player.Caching</visible>
+		</control>
+		<control type="progress" id="23" description="Progress Bar">
+          <posx>450</posx>
+          <posy>3</posy>
+          <width>1020</width>
+          <height>18</height>
+          <texturebg border="15,0,15,0">VideoOSD/ProgressBG.png</texturebg>
+		  <midtexture border="15,0,15,0">VideoOSD/ProgressBar.png</midtexture>
+          <colordiffuse>Yellow</colordiffuse>
+		  <info>Player.Progress</info>
           <visible>true</visible>
         </control>
-        <control type="label" description="Progress label">
+	    <control type="label" description="Progress time label">
           <posx>420</posx>
           <posy>-5</posy>
           <height>30</height>
@@ -79,7 +69,7 @@
           <label>$INFO[Player.Time]</label>
           <font>Details</font>
         </control>
-        <control type="label" description="Progress label">
+        <control type="label" description="Progress rem time label">
           <posx>1490</posx>
           <posy>-5</posy>
           <height>30</height>
