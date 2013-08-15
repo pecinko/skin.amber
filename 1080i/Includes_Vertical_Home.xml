@@ -1667,7 +1667,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.1.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
           </item>
           <item id="2" description="Recommended album 2 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
@@ -1676,7 +1676,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.2.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
           </item>
           <item id="3" description="Recommended album 3 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
@@ -1685,7 +1685,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.3.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
           </item>
           <item id="4" description="Recommended album 4 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
@@ -1694,7 +1694,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.4.Title)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
           </item>
           <item id="5" description="Recommended album 5 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
@@ -1703,7 +1703,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.5.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
           </item>
           <item id="6" description="Recommended album 6 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
@@ -1712,7 +1712,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.6.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
           </item>
           <item id="7" description="Recommended album 7 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
@@ -1721,7 +1721,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.7.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
           </item>
           <item id="8" description="Recommended album 8 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
@@ -1730,7 +1730,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.8.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
           </item>
           <item id="9" description="Recommended album 9 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
@@ -1739,7 +1739,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.9.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
           </item>
           <item id="10" description="Recommended album 10 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
@@ -1748,7 +1748,7 @@
             <thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31963]</property>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedAlbum.10.File)])</onclick>
+            <onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
           </item>
         </content>
       </control>
