@@ -223,13 +223,12 @@
     </control>
   </include>
   <include name="SeekbarLabels">
-    <posx>0</posx>
-    <posy>537</posy>
-    <height>70</height>
-    <width>1920</width>
+    <posx>40</posx>
+    <posy>0</posy>
+    <height>40</height>
+    <width>1840</width>
     <align>center</align>
-    <font>size24B</font>
-    <textcolor>White2</textcolor>
+    <font>ListDetails</font>
     <shadowcolor>Shadow</shadowcolor>
     <animation effect="fade" time="200">VisibleChange</animation>
   </include>

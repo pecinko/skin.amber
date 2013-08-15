@@ -3,24 +3,23 @@
   <defaultcontrol always="false">602</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <zorder>2</zorder>
-  <animation effect="slide" start="0,150" end="0,0" time="300">WindowOpen</animation>
-  <animation effect="slide" start="0,0" end="0,150" time="200">WindowClose</animation>
+  <animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="50">WindowClose</animation>
   <controls>
     <control type="group">
       <visible>![Window.IsActive(DialogSelect.xml) | Window.IsActive(SliderDialog) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-      <animation effect="slide" start="0,150" end="0,0" time="300">Visible</animation>
-      <animation effect="slide" start="0,0" end="0,150" time="200">Hidden</animation>
       <posx>0</posx>
       <posy>0</posy>
       <control type="group">
         <control type="group" description="Dialog Background">
           <control type="image">
             <posx>0</posx>
-            <posy>930</posy>
+            <posy>957</posy>
             <width>1920</width>
-            <height>150</height>
+            <height>123</height>
             <aspectratio>stretch</aspectratio>
-            <texture border="0,50,0,0">VideoOSD/BGVideoOSD2.png</texture>
+            <texture>img/BlackDotST.png</texture>
+			<!--<texture border="0,50,0,0">VideoOSD/BGVideoOSD2.png</texture>-->
           </control>
 		  <control type="image">
             <posx>610</posx>

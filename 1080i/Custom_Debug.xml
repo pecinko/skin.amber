@@ -50,7 +50,8 @@
         <label>$INFO[Container.NumItems,Items: ]</label>
       </control>
 	  <control type="label">
-        <posy>90</posy>
+        <visible>Window.IsActive(home)</visible>
+		<posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
@@ -60,7 +61,8 @@
         <label>RECENT: $INFO[Window(Home).Property(SkinWidgets_RecentItems)]</label>
       </control>
 	  <control type="label">
-        <posy>90</posy>
+        <visible>Window.IsActive(home)</visible>
+		<posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
@@ -70,7 +72,8 @@
         <label>RANDOM: $INFO[Window(Home).Property(SkinWidgets_RandomItems)]</label>
       </control>
 	  <control type="label">
-        <posy>90</posy>
+        <visible>Window.IsActive(home)</visible>
+		<posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
@@ -80,7 +83,8 @@
         <label>RECOMMENDED: $INFO[Window(Home).Property(SkinWidgets_Recommended)]</label>
       </control>
 	  <control type="label">
-        <posy>90</posy>
+        <visible>Window.IsActive(home)</visible>
+		<posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
