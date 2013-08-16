@@ -102,7 +102,7 @@
           <info>Player.CacheLevel</info>
           <visible>Player.Caching</visible>
         </control>
-        <control type="progress" id="23" description="Progress Bar">
+        <control type="progress" description="Progress Bar">
           <posx>144</posx>
           <posy>90</posy>
           <width>720</width>
