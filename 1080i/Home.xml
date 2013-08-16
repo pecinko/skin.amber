@@ -8,7 +8,7 @@
   <controls>
  	<include condition="Skin.HasSetting(Home_DefaultBG)">Default_Art</include>
 	<control type="multiimage">
-      <visible>![[Player.HasVideo + Skin.HasSetting(Show_Player)] | Skin.HasSetting(Home_DefaultBG)]</visible>
+      <visible>![Player.HasVideo + Skin.HasSetting(Show_Player)] + !Skin.HasSetting(Home_DefaultBG)</visible>
       <include>Dimensions_Fullscreen</include>
       <timeperimage>12000</timeperimage>
       <fadetime>400</fadetime>
