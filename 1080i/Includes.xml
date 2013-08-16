@@ -233,8 +233,18 @@
     <width>1840</width>
     <align>center</align>
     <font>ListDetails</font>
-    <shadowcolor>Shadow</shadowcolor>
-    <animation effect="fade" time="200">VisibleChange</animation>
+    <shadowcolor>Black</shadowcolor>
+    <animation effect="fade" time="50">VisibleChange</animation>
+  </include>
+  <include name="OSDSeekbarLabels">
+    <posx>450</posx>
+    <posy>30</posy>
+    <height>40</height>
+    <width>710</width>
+    <align>center</align>
+    <font>ListDetails</font>
+    <shadowcolor>Black</shadowcolor>
+    <animation effect="fade" time="50">VisibleChange</animation>
   </include>
   <include name="MiniBackground">
     <control type="image" description="Default BG">

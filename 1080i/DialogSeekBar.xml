@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-  <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-  <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !System.IdleTime(7)] | Player.Forwarding | Player.Rewinding | Player.Caching]]</visible>
+  <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(videoosd.xml)]</visible>
+  <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Window.IsVisible(FullScreenVideo) + !System.IdleTime(15) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
   <include>OSDFade</include>
   <zorder>2</zorder>
   <controls>
@@ -11,8 +11,10 @@
 		<posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
-        <height>87</height>
-        <texture>img/BlackDotST.png</texture>
+        <height>108</height>
+        <texture flipy="true" border="0,0,0,30">OSD/OSDBackground.png</texture>
+        <colordiffuse>BBFFFFFF</colordiffuse>
+		<!--<texture>img/BlackDotST.png</texture>-->
       </control>
       <control type="label" description="Clock">
         <posx>40r</posx>
@@ -22,6 +24,7 @@
         <align>right</align>
         <aligny>center</aligny>
         <font>Details</font>
+		<shadowcolor>Black</shadowcolor>
         <label>$INFO[System.Time]</label>
       </control>
 	  <control type="label" description="End Time">
@@ -32,13 +35,14 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>Details</font>
+		<shadowcolor>Black</shadowcolor>
         <label>$LOCALIZE[19127][COLOR=Orange] • [/COLOR]$INFO[Player.FinishTime]</label>
       </control>
       
       <control type="group">
         <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Player.Caching | Player.Paused | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Window.IsActive(videoosd.xml)]</visible>
 		<posy>10</posy>
-        <control type="_progress" description="Buffer Bar">
+        <control type="progress" description="Buffer Bar">
           <posx>450</posx>
           <posy>3</posy>
           <width>1020</width>
@@ -67,6 +71,7 @@
           <align>right</align>
           <label>$INFO[Player.Time]</label>
           <font>Details</font>
+		  <shadowcolor>Black</shadowcolor>
         </control>
         <control type="label" description="Progress rem time label">
           <posx>1490</posx>
@@ -76,6 +81,7 @@
           <align>left</align>
           <label>$INFO[Player.TimeRemaining,-]</label>
           <font>Details</font>
+		  <shadowcolor>Black</shadowcolor>
         </control>
       </control>
     </control>

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <animation effect="fade" time="500">WindowOpen</animation>
-  <animation effect="fade" time="300">WindowClose</animation>
+  <include>OpenClose</include>
   <onunload>Dialog.close(all,true)</onunload>
   <controls>
     <control type="group" id="0">

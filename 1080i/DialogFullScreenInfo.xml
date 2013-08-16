@@ -17,7 +17,7 @@
         <posy>0</posy>
         <width>1920</width>
         <height>361</height>
-        <texture flipy="true">OSD/OSDBackground.png</texture>
+        <texture border="0,0,0,30" flipy="true">OSD/OSDBackground.png</texture>
         <colordiffuse>BBFFFFFF</colordiffuse>
       </control>
       <control type="group" description="Thumb">
