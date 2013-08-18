@@ -200,7 +200,7 @@
           <width>1200</width>
           <height>35</height>
           <font>Details</font>
-          <label>$INFO[MusicPlayer.Artist,,[COLOR=Orange]  •  [/COLOR]]$INFO[MusicPlayer.Title,,[COLOR=Orange]  •  [/COLOR]][COLOR=Grey3]$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, - ][/COLOR]</label>
+          <label>$INFO[MusicPlayer.Artist,,[COLOR=Orange]  •  [/COLOR]]$INFO[MusicPlayer.Title,,[COLOR=Orange]  •  [/COLOR]][COLOR=Grey3]$INFO[MusicPlayer.TimeSpeed]$INFO[MusicPlayer.Duration, - ][/COLOR]</label>
         </control>
         <!--<control type="label">
           <visible>Player.HasVideo</visible>
