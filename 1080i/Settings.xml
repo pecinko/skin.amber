@@ -1446,12 +1446,12 @@
             </item>
             <item id="1" description="Enable Recently Added">
               <visible>Skin.HasSetting(Hide.RecentlyAdded)</visible>
-              <label>$LOCALIZE[31020]</label>
+              <label>$LOCALIZE[31967]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.Reset(Hide.RecentlyAdded)</onclick>
             </item>
 			<item id="2" description="Configure service.skin.widgets">
-              <visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(RecentlyAdded.Hide)</visible>
+              <visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
               <label>$LOCALIZE[31964]</label>
               <onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
             </item>
