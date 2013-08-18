@@ -31,7 +31,7 @@
     <animation effect="fade" time="0">Hidden</animation>
   </include>
   <include name="VisibleFadeEffectDelayShelf">
-    <animation effect="fade" time="100" delay="50">Visible</animation>
+    <animation effect="fade" time="100">Visible</animation>
     <animation effect="fade" time="50">Hidden</animation>
   </include>
   <include name="OSDFade">
