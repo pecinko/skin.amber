@@ -477,7 +477,19 @@
               <onclick condition="StringCompare(Skin.String(MusicAction),Addons)">Skin.SetString(MusicAction,Files)</onclick>
               <onclick condition="StringCompare(Skin.String(MusicAction),Playlists)">Skin.SetString(MusicAction,Addons)</onclick>
             </item>
-            <item id="14" description="Reset Skin">
+            <item id="14" description="Activate fullscreen on music playback">
+              <visible>Skin.HasSetting(FullscreenMusic)</visible>
+              <label>$LOCALIZE[31959]</label>
+              <label2>107</label2>
+              <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
+            </item>
+            <item id="14" description="Activate fullscreen on music playback">
+              <visible>!Skin.HasSetting(FullscreenMusic)</visible>
+              <label>$LOCALIZE[31959]</label>
+              <label2>106</label2>
+              <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
+            </item>
+            <item id="15" description="Reset Skin">
               <label>$LOCALIZE[31038]</label>
               <onclick>Skin.ResetSettings</onclick>
               <onclick>XBMC.ReloadSkin()</onclick>
