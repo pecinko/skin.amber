@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">9000</defaultcontrol>
-  <onload condition="IsEmpty(Skin.String(MusicAction))">Skin.SetString(MusicAction,Library)</onload>
   <allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
   <controls>
@@ -456,40 +455,7 @@
               <label2>106</label2>
               <onclick>Skin.ToggleSetting(Show_Player)</onclick>
             </item>
-            <item id="13" description="Music button action">
-              <visible>!Skin.HasSetting(plexbmc)</visible>
-              <label>$LOCALIZE[31960]</label>
-              <label2>$INFO[Skin.String(MusicAction)]</label2>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Playlists) | IsEmpty(Skin.String(MusicAction))">Skin.SetString(MusicAction,Addons)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Compilations)">Skin.SetString(MusicAction,Playlists)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),RecentlyPlayedAlbums)">Skin.SetString(MusicAction,Compilations)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),RecentlyAddedAlbums)">Skin.SetString(MusicAction,RecentlyPlayedAlbums)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Top100Albums)">Skin.SetString(MusicAction,RecentlyAddedAlbums)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Top100Songs)">Skin.SetString(MusicAction,Top100Albums)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Years)">Skin.SetString(MusicAction,Top100Songs)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Songs)">Skin.SetString(MusicAction,Years)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Singles)">Skin.SetString(MusicAction,Songs)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Albums)">Skin.SetString(MusicAction,Singles)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Artists)">Skin.SetString(MusicAction,Albums)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Genres)">Skin.SetString(MusicAction,Artists)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Library)">Skin.SetString(MusicAction,Genres)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Files)">Skin.SetString(MusicAction,Library)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Addons)">Skin.SetString(MusicAction,Files)</onclick>
-              <onclick condition="StringCompare(Skin.String(MusicAction),Playlists)">Skin.SetString(MusicAction,Addons)</onclick>
-            </item>
-            <item id="14" description="Activate fullscreen on music playback">
-              <visible>Skin.HasSetting(FullscreenMusic)</visible>
-              <label>$LOCALIZE[31959]</label>
-              <label2>107</label2>
-              <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
-            </item>
-            <item id="14" description="Activate fullscreen on music playback">
-              <visible>!Skin.HasSetting(FullscreenMusic)</visible>
-              <label>$LOCALIZE[31959]</label>
-              <label2>106</label2>
-              <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
-            </item>
-            <item id="15" description="Reset Skin">
+            <item id="13" description="Reset Skin">
               <label>$LOCALIZE[31038]</label>
               <onclick>Skin.ResetSettings</onclick>
               <onclick>XBMC.ReloadSkin()</onclick>
