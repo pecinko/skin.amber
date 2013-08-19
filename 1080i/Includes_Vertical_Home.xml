@@ -645,7 +645,7 @@
         <visible>Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [Control.IsVisible(311) + !Control.IsVisible(312)] | [!Control.IsVisible(311) + Control.IsVisible(312)] | [Control.IsVisible(411) + !Control.IsVisible(413)] | [!Control.IsVisible(411) + Control.IsVisible(413)] | [Control.IsVisible(511) + !Control.IsVisible(513)] | [!Control.IsVisible(511) + Control.IsVisible(513)] | [Control.IsVisible(514) + !Control.IsVisible(515)] | [!Control.IsVisible(514) + Control.IsVisible(515)] | Control.IsVisible(313) | Control.IsVisible(412) | Control.IsVisible(512)</visible>
         <posx>530</posx>
         <posy>345</posy>
-        <width>1500</width>
+        <width>1390</width>
         <height>390</height>
         <texture border="0,40,0,40">home/OverlayRA2.png</texture>
       </control>
@@ -653,7 +653,7 @@
         <visible>[Control.IsVisible(311) + Control.IsVisible(312)] | [Control.IsVisible(411) + Control.IsVisible(413)] | [Control.IsVisible(511) + Control.IsVisible(513)] | [Control.IsVisible(514) + Control.IsVisible(515)]</visible>
         <posx>530</posx>
         <posy>183</posy>
-        <width>1500</width>
+        <width>1390</width>
         <height>720</height>
         <texture border="0,40,0,40">home/OverlayRA2.png</texture>
       </control>
@@ -672,15 +672,7 @@
 	  <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Episodes.List</include>
 	  <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Albums.List</include>
       
-      
-      
-      
-      
-      
-      
-      
-      
-	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc_Vertical_Shelf</include>
+	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
     </control>
     <control type="group">
       <!--<control type="group" description="Full screen shelf trigger">
@@ -783,7 +775,7 @@
           </control>
         </focusedlayout>
         <content>
-          <include condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">Plex.Items</include>
+          <include condition="Skin.HasSetting(plexbmc)">Plex.Items</include>
 		  <item id="21" description="Custom1">
             <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.1.Label)]</label>

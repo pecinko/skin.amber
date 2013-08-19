@@ -2,10 +2,10 @@
 <includes>
   <!--
 	  CUSTOM WINDOWS LIST
-		_Shelf 1112
 		_Quit 1114
 		_MenuCustomizer 1116
 		_ShelfCustomizer 1117
+		_Custom_FullscreenMusic 1118
 		_Custom_Debug 50 dialog
 		
 	-->
@@ -822,21 +822,23 @@
       <visible>Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
       <control type="image">
         <animation effect="slide" easing="out" start="0,0" end="0,62" time="350" delay="0" center="120,350" reversible="true" condition="[Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]">Conditional</animation>
-        <animation effect="slide" easing="out" start="0,0" end="0,-66" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
-        <animation effect="fade" start="100" end="80" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
+        <animation effect="slide" easing="out" start="0,0" end="0,52" time="200" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
+        <!--<animation effect="fade" start="100" end="80" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>-->
         <posx>0</posx>
-        <posy>655</posy>
+        <posy>636</posy>
         <width>1920</width>
-        <height>390</height>
+        <height>396</height>
         <aspectratio>stretch</aspectratio>
-        <texture>common/OverlayHorizontal2.png</texture>
+        <texture border="0,30,0,0">OSD/OSDBackground.png</texture>
+        <colordiffuse>FFE2E2E2</colordiffuse>
+		<!--<texture>common/OverlayHorizontal2.png</texture>-->
       </control>
       <control type="image">
         <visible>![Control.HasFocus(7000)]</visible>
         <animation effect="fade" start="100" end="0" time="250" delay="80" condition="[Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]">Conditional</animation>
         <animation effect="slide" start="0,0" end="0,80" time="250" delay="80" condition="[Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]">Conditional</animation>
-        <animation effect="fade" start="100" end="0" time="50" delay="0">Hidden</animation>
-        <animation effect="fade" start="0" end="100" time="100" delay="250">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="100" delay="0">Hidden</animation>
+        <animation effect="fade" start="0" end="100" time="0" delay="0">Visible</animation>
         <posx>0</posx>
         <posy>990</posy>
         <width>1920</width>
@@ -845,27 +847,28 @@
       </control>
     </control>
   </include>
-  <include name="Plexbmc_Horizontal_Shelf">
+  <include name="Plexbmc_Shelf">
     <control type="group" description="PLEXBMC">
-      <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
       <control type="label" description="Header">
         <visible>Control.IsVisible(313)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Header_H</include>
+        <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(313).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(313)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Label_H</include>
+        <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(313).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="313" description="Movies PLEXBMC">
-        <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
-        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path)) + StringCompare(Container(300).ListItem.Property(type),movie)</visible>
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
+        <visible>StringCompare(Container(300).ListItem.Property(type),movie)</visible>
         <onleft>313</onleft>
         <onright>313</onright>
-        <include>Horizontal_Shelf_Commons</include>
+		<ondown>300</ondown>
+		<onback>300</onback>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
         <include>RecentlyAdded_Posters</include>
         <content>
           <item id="1" description="Movies">
@@ -1013,20 +1016,23 @@
       <control type="label" description="Header">
         <visible>Control.IsVisible(515)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Header_H</include>
+        <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(515).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(515)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Label_H</include>
+        <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(515).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="515" description="TOP Shortcuts">
-        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title)) + StringCompare(Container(300).ListItem.Property(type),artist)</visible>
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))</visible>
+		<visible>StringCompare(Container(300).ListItem.Property(type),artist)</visible>
         <onleft>515</onleft>
         <onright>515</onright>
-        <include>Horizontal_Shelf_Commons</include>
+		<ondown>300</ondown>
+		<onback>300</onback>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
         <include>RecentlyAdded_Albums</include>
         <content>
           <item id="1" description="Music">
@@ -1124,20 +1130,23 @@
       <control type="label" description="Header">
         <visible>Control.IsVisible(212)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Header_H</include>
+        <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(212).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(212)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Label_H</include>
+        <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(212).ListItem.Label]</label>
       </control>
-      <control type="fixedlist" id="212" description="Addons">
-        <visible>Container(300).HasFocus(50) + !IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Title))</visible>
+      <control type="fixedlist" id="212" description="Channels">
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Title))</visible>
+		<visible>Container(300).HasFocus(50)</visible>
         <onleft>212</onleft>
         <onright>212</onright>
-        <include>Horizontal_Shelf_Commons</include>
+        <ondown>300</ondown>
+		<onback>300</onback>
+		<include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
         <include>RecentlyAdded_Addons</include>
         <content>
           <item id="1" description="Music">
@@ -1215,21 +1224,23 @@
       <control type="label" description="Header">
         <visible>Control.IsVisible(412)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Header_H</include>
+        <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(412).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(412)</visible>
         <include>VisibleFadeEffect</include>
-        <include>RA_Label_H</include>
+        <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(412).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(412).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="412" description="TV Shows PleXBMC">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path)) + StringCompare(Container(300).ListItem.Property(type),show)</visible>
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
+		<visible>StringCompare(Container(300).ListItem.Property(type),show)</visible>
         <onleft>412</onleft>
         <onright>412</onright>
-        <include>Horizontal_Shelf_Commons</include>
+        <ondown>300</ondown>
+		<onback>300</onback>
+		<include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
         <include>RecentlyAdded_Episodes</include>
         <content>
           <item id="1" description="Episodes1">
@@ -1416,7 +1427,7 @@
       </control>
     </control>
   </include>
-  <include name="Plexbmc_Vertical_Shelf">
+  <!--<include name="Plexbmc_Vertical_Shelf">
     <control type="group" description="PLEXBMC">
       <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
       <control type="label" description="Header">
@@ -1989,7 +2000,7 @@
         </content>
       </control>
     </control>
-  </include>
+  </include>-->
   <include name="Plex.Items">
     <item id="30">
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
@@ -2369,7 +2380,6 @@
     <control type="group" description="Library stats">
       <animation effect="slide" tween="cubic" easing="inout" start="0,0" end="0,120" time="240" condition="![[[Container(300).HasFocus(13) | Container(300).HasFocus(14)] + Library.HasContent(MusicVideos)] | Container(300).HasFocus(4) | Container(300).HasFocus(5) | [Container(300).HasFocus(6) + Library.HasContent(music)]]">Conditional</animation>
       <control type="image">
-        <visible>![!Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Hide.RecentlyAdded)]</visible>
         <posx>540r</posx>
         <posy>990</posy>
         <width>570</width>
@@ -2378,7 +2388,7 @@
       </control>
       <control type="label">
         <posx>40r</posx>
-        <posy>1036</posy>
+        <posy>1033</posy>
         <height>50</height>
         <width>500</width>
         <font>ListDetails</font>

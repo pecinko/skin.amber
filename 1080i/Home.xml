@@ -59,7 +59,6 @@
     </control>
     <include>Time</include>
     <control type="group">
-	<visible>![!Skin.HasSetting(VerticalHome) + !Control.HasFocus(300)]</visible>
 	<include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
 	</control>
 	</control>
