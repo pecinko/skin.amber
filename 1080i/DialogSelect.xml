@@ -15,7 +15,7 @@
 	<posx>312</posx>
     <posy>180</posy>
       <control type="image">
-        <visible>Control.IsVisible(5)</visible>
+        <visible>Control.IsVisible(5) | Control.IsVisible(6)</visible>
 		<posx>-14</posx>
         <posy>-20</posy>
         <width>1293</width>
@@ -23,7 +23,7 @@
         <texture flipx="true" border="55">dialogs/DialogRightSmall.png</texture>
       </control>
 	  <control type="image">
-        <visible>!Control.IsVisible(5)</visible>
+        <visible>![Control.IsVisible(5) | Control.IsVisible(6)]</visible>
 		<posx>86</posx>
         <posy>-20</posy>
         <width>840</width>
