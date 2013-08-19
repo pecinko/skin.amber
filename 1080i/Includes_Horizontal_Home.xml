@@ -373,7 +373,7 @@
       </control>
       <control type="fixedlist" id="111" description="Favourites">
         <visible>!Skin.HasSetting(Hide.RecentlyAdded) + !IsEmpty(Window(Home).Property(favourite.1.label))</visible>
-		<visible>Container(300).HasFocus(7)</visible>
+		    <visible>Container(300).HasFocus(7)</visible>
         <onleft>111</onleft>
         <onright>111</onright>
         <include>Horizontal_Shelf_Commons</include>
@@ -419,10 +419,11 @@
       </control>
       <control type="fixedlist" id="311" description="Movies XBMC">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentMovie.1.Title)) + IsEmpty(Window(Home).Property(RecommendedMovie.1.Title)) + IsEmpty(Window(Home).Property(RandomMovie.1.Title))]]</visible>
-		<visible>Container(300).HasFocus(4)</visible>
-    <onleft>311</onleft>
-     <onright>311</onright>
-  	<include>Horizontal_Shelf_Commons</include>
+		    <visible>Container(300).HasFocus(4)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left) | SubString(Window(Home).Property(SkinWidgets_Recommended),true,left) | SubString(Window(Home).Property(SkinWidgets_RandomItems),true,left)</visible>
+        <onleft>311</onleft>
+        <onright>311</onright>
+  	    <include>Horizontal_Shelf_Commons</include>
         <include>RecentlyAdded_Posters</include>
         <content>
           <include>RecentMovieContent</include>
@@ -445,6 +446,7 @@
       <control type="fixedlist" id="514" description="Recent concerts">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title)) + IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))]]</visible>
         <visible>Container(300).HasFocus(14)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left) | SubString(Window(Home).Property(SkinWidgets_Recommended),true,left)</visible>
         <onleft>514</onleft>
         <onright>514</onright>
         <include>Horizontal_Shelf_Commons</include>
@@ -468,7 +470,8 @@
       </control>
       <control type="fixedlist" id="411" description="TV Shows XBMC">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentEpisode.1.Title)) + IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))]]</visible>
-		<visible>Container(300).HasFocus(5)</visible>
+		    <visible>Container(300).HasFocus(5)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left) | SubString(Window(Home).Property(SkinWidgets_Recommended),true,left)</visible>
         <onleft>411</onleft>
         <onright>411</onright>
         <include>Horizontal_Shelf_Commons</include>
@@ -492,7 +495,8 @@
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentAlbum.1.Title)) + IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))]]</visible>
-		<visible>Container(300).HasFocus(6)</visible>
+		    <visible>Container(300).HasFocus(6)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left) | SubString(Window(Home).Property(SkinWidgets_Recommended),true,left)</visible>
         <onleft>511</onleft>
         <onright>511</onright>
         <include>Horizontal_Shelf_Commons</include>
@@ -517,6 +521,7 @@
       <control type="fixedlist" id="512" description="Music video clips">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
         <visible>Container(300).HasFocus(13)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left)</visible>
         <onleft>512</onleft>
         <onright>512</onright>
         <include>Horizontal_Shelf_Commons</include>

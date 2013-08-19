@@ -716,6 +716,7 @@
       <control type="fixedlist" id="311" description="Movies XBMC">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMovie.1.Title))]</visible>
         <visible>Container(300).HasFocus(4)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left)</visible>
         <onright>311</onright>
         <onup>300</onup>
         <ondown condition="Control.IsVisible(312)">312</ondown>
@@ -739,7 +740,8 @@
       </control>
       <control type="fixedlist" id="312" description="TOP Shortcuts">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecommendedMovie.1.Title)) + IsEmpty(Window(Home).Property(RandomMovie.1.Title))]]</visible>
-		<visible>Container(300).HasFocus(4)</visible>
+		    <visible>Container(300).HasFocus(4)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true,left) | SubString(Window(Home).Property(SkinWidgets_RandomItems),true,left)</visible>
         <onright>312</onright>
         <onup condition="Control.IsVisible(311)">311</onup>
         <onup condition="!Control.IsVisible(311)">300</onup>
@@ -765,6 +767,7 @@
       <control type="fixedlist" id="514" description="Recent concerts">
 		<visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
 		<visible>Container(300).HasFocus(14)</visible>
+    <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left)</visible>
         <visible></visible>
         <onright>514</onright>
         <onup>300</onup>
@@ -790,6 +793,7 @@
       <control type="fixedlist" id="515" description="Recommended concerts">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))]</visible>
         <visible>Container(300).HasFocus(14)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true,left)</visible>
         <onright>515</onright>
         <onup condition="Control.IsVisible(514)">514</onup>
         <onup condition="!Control.IsVisible(514)">300</onup>
@@ -813,7 +817,8 @@
       </control>
       <control type="fixedlist" id="411" description="TV Shows XBMC">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentEpisode.1.Title))]</visible>
-		<visible>Container(300).HasFocus(5)</visible>
+		    <visible>Container(300).HasFocus(5)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left)</visible>
         <onright>411</onright>
         <onup>300</onup>
         <ondown condition="Control.IsVisible(413)">413</ondown>
@@ -837,7 +842,8 @@
       </control>
       <control type="fixedlist" id="413" description="TV Shows XBMC Widgets">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))]</visible>
-		<visible>Container(300).HasFocus(5)</visible>
+		    <visible>Container(300).HasFocus(5)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true,left)</visible>
         <onright>413</onright>
         <onup condition="Control.IsVisible(411)">411</onup>
         <onup condition="!Control.IsVisible(411)">300</onup>
@@ -861,8 +867,8 @@
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentAlbum.1.Title))]</visible>
-		<visible>Container(300).HasFocus(6)</visible>
-		<visible></visible>
+		    <visible>Container(300).HasFocus(6)</visible>
+		    <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left)</visible>
         <onright>511</onright>
         <onup>300</onup>
         <ondown condition="Control.IsVisible(513)">513</ondown>
@@ -886,7 +892,8 @@
       </control>
       <control type="fixedlist" id="513" description="TOP Shortcuts">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))]</visible>
-		<visible>Container(300).HasFocus(6)</visible>
+		    <visible>Container(300).HasFocus(6)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true,left)</visible>
         <onright>513</onright>
         <onup condition="Control.IsVisible(511)">511</onup>
         <onup condition="!Control.IsVisible(511)">300</onup>
@@ -911,6 +918,7 @@
       <control type="fixedlist" id="512" description="Music video clips">
         <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
         <visible>Container(300).HasFocus(13)</visible>
+        <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),true,left)</visible>
         <onright>512</onright>
         <onup>300</onup>
         <ondown>300</ondown>
