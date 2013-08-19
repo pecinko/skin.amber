@@ -668,8 +668,8 @@
         <label>$INFO[Container(111).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="111" description="Favourites">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-		<visible>Container(300).HasFocus(7) + !IsEmpty(Window(Home).Property(favourite.1.path))</visible>
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(favourite.1.label))]</visible>
+		<visible>Container(300).HasFocus(7)</visible>
         <onright>111</onright>
         <onup>300</onup>
         <ondown>300</ondown>
@@ -860,7 +860,7 @@
         <label>$INFO[Container(511).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
-        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(LatestAlbum.1.Title))]</visible>
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentAlbum.1.Title))]</visible>
 		<visible>Container(300).HasFocus(6)</visible>
 		<visible></visible>
         <onright>511</onright>
@@ -869,7 +869,7 @@
         <ondown condition="!Control.IsVisible(513)">300</ondown>
         <include>RecentlyAdded_Albums</include>
         <content>
-         <include>LatestAlbumContent</include>
+         <include>RecentAlbumContent</include>
         </content>
       </control>
       <control type="label" description="Header">
@@ -909,14 +909,14 @@
         <label>$INFO[Container(512).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="512" description="Music video clips">
-        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(LatestMusicVideo.1.Title))]</visible>
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
         <visible>Container(300).HasFocus(13)</visible>
         <onright>512</onright>
         <onup>300</onup>
         <ondown>300</ondown>
         <include>RecentlyAdded_Albums</include>
         <content>
-          <include>LatestClipContent</include>
+          <include>RecentClipContent</include>
         </content>
       </control>
 	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc_Vertical_Shelf</include>
@@ -966,8 +966,7 @@
           <font>Volume</font>
         </control>
         <control type="label">
-          <visible>!Skin.HasSetting(plexbmc) + !Player.HasAudio</visible>
-          <include>VisibleFadeEffect</include>
+          <visible>![Skin.HasSetting(plexbmc) | Player.HasAudio]</visible>
           <posx>50</posx>
           <posy>0</posy>
           <width>460</width>

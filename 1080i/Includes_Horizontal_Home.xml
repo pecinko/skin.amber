@@ -372,8 +372,8 @@
         <label>$INFO[Container(111).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="111" description="Favourites">
-        <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-		<visible>Container(300).HasFocus(7) + !IsEmpty(Window(Home).Property(favourite.1.path))</visible>
+        <visible>!Skin.HasSetting(Hide.RecentlyAdded) + !IsEmpty(Window(Home).Property(favourite.1.label))</visible>
+		<visible>Container(300).HasFocus(7)</visible>
         <onleft>111</onleft>
         <onright>111</onright>
         <include>Horizontal_Shelf_Commons</include>
@@ -395,8 +395,8 @@
         <label>$INFO[Container(211).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="211" description="Addons">
-        <visible>Skin.HasSetting(Shelf.Addons)</visible>
-        <visible>Container(300).HasFocus(2) + !IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
+        <visible>Skin.HasSetting(Shelf.Addons) + !IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
+        <visible>Container(300).HasFocus(2)</visible>
         <onleft>211</onleft>
         <onright>211</onright>
         <include>Horizontal_Shelf_Commons</include>
@@ -443,7 +443,7 @@
         <label>$INFO[Container(514).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="514" description="Recent concerts">
-        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path)) + IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))]]</visible>
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title)) + IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))]]</visible>
         <visible>Container(300).HasFocus(14)</visible>
         <onleft>514</onleft>
         <onright>514</onright>
@@ -467,7 +467,7 @@
         <label>$INFO[Container(411).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(411).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="411" description="TV Shows XBMC">
-        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentEpisode.1.Title)) + IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title)]]</visible>
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentEpisode.1.Title)) + IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))]]</visible>
 		<visible>Container(300).HasFocus(5)</visible>
         <onleft>411</onleft>
         <onright>411</onright>
@@ -491,14 +491,14 @@
         <label>$INFO[Container(511).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
-        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(LatestAlbum.1.Title)) + IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))]]</visible>
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | [IsEmpty(Window(Home).Property(RecentAlbum.1.Title)) + IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))]]</visible>
 		<visible>Container(300).HasFocus(6)</visible>
         <onleft>511</onleft>
         <onright>511</onright>
         <include>Horizontal_Shelf_Commons</include>
         <include>RecentlyAdded_Albums</include>
         <content>
-          <include>LatestAlbumContent</include>
+          <include>RecentAlbumContent</include>
           <include>RecommendedAlbumContent</include>
         </content>
       </control>
@@ -515,14 +515,14 @@
         <label>$INFO[Container(512).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="512" description="Music video clips">
-        <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path)) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
         <visible>Container(300).HasFocus(13)</visible>
         <onleft>512</onleft>
         <onright>512</onright>
         <include>Horizontal_Shelf_Commons</include>
         <include>RecentlyAdded_Albums</include>
         <content>
-          <include>LatestClipContent</include>
+          <include>RecentClipContent</include>
         </content>
       </control>
 <include condition="Skin.HasSetting(plexbmc)">Plexbmc_Horizontal_Shelf</include>
