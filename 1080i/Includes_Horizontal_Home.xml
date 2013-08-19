@@ -703,8 +703,9 @@
               <visible>!Skin.HasSetting(Music.Hide)</visible>
               <label>2</label>
               <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
-              <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,root)</onclick>
+              <onclick condition="Library.HasContent(Music) + !Skin.HasSetting(ArtistView)">ActivateWindow(MusicLibrary,root)</onclick>
               <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</onclick>
+              <onclick condition="Library.HasContent(Music) + Skin.HasSetting(ArtistView)">ActivateWindow(MusicLibrary,Artists)</onclick>
             </item>
             <item id="27" description="Custom.7">
               <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
