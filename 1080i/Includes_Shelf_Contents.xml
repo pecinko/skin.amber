@@ -2,70 +2,70 @@
 <includes>
 <include name="FavouriteContent">
   <item id="1" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.1.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.1.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.1.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.1.path)]</onclick>
   </item>
   <item id="2" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.2.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.2.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.2.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.2.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.2.path)]</onclick>
   </item>
   <item id="3" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.3.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.3.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.3.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.3.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.3.path)]</onclick>
   </item>
   <item id="4" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.4.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.4.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.4.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.4.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.4.path)]</onclick>
   </item>
   <item id="5" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.5.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.5.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.5.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.5.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.5.path)]</onclick>
   </item>
   <item id="6" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.6.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.6.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.6.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.6.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.6.path)]</onclick>
   </item>
   <item id="7" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.7.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.7.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.7.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.7.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.7.path)]</onclick>
   </item>
   <item id="8" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.8.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.8.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.8.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.8.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.8.path)]</onclick>
   </item>
   <item id="9" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.9.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.9.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.9.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.9.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.9.path)]</onclick>
   </item>
   <item id="10" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.10.path))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.10.label))</visible>
     <label>$INFO[Window(Home).Property(favourite.10.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.10.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
@@ -551,95 +551,95 @@
   </item>
 </include>
 
-<include name="LatestAlbumContent">
+<include name="RecentAlbumContent">
   <item id="1" description="Music">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.1.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.1.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.1.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.1.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.1.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.1.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="2" description="Shortcut2">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.2.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.2.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.2.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.2.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.2.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.2.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.2.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.2.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.2.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="3" description="Shortcut3">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.3.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.3.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.3.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.3.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.3.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.3.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.3.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.3.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.3.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="4" description="Shortcut4"> 
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.4.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.4.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.4.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.4.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.4.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.4.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.4.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.4.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.4.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="5" description="Shortcut5">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.5.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.5.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.5.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.5.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.5.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.5.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.5.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.5.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.5.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="6" description="Music">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.6.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.6.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.6.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.6.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.6.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.6.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.6.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.6.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.6.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="7" description="Shortcut7">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.7.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.7.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.7.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.7.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.7.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.7.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.7.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.7.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.7.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="8" description="Shortcut8">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.8.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.8.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.8.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.8.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.8.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.8.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.8.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.8.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.8.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="9" description="Shortcut9">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.9.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.9.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.9.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.9.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.9.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.9.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.9.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.9.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.9.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
   <item id="10" description="Shortcut10">
-    <visible>!IsEmpty(Window(Home).Property(LatestAlbum.10.Title))</visible>
-    <label>$INFO[Window(Home).Property(LatestAlbum.10.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestAlbum.10.Title)]</label2>
+    <visible>!IsEmpty(Window(Home).Property(RecentAlbum.10.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentAlbum.10.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentAlbum.10.Title)]</label2>
     <onclick>PlayList.Clear</onclick>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestAlbum.10.Path)])</onclick>
-    <thumb>$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</thumb>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentAlbum.10.Path)])</onclick>
+    <thumb>$INFO[Window(Home).Property(RecentAlbum.10.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[359]</property>
   </item>
 </include>
@@ -883,92 +883,92 @@
   </item>
 </include>
 
-<include name="LatestClipContent">
+<include name="RecentClipContent">
   <item id="1" description="Movies">
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.1.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.1.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.1.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.1.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.1.Path)])</onclick>
   </item>
   <item id="2" description="Shortcut2">
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.2.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.2.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.2.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.2.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.2.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.2.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.2.Path)])</onclick>
   </item>
   <item id="3" description="Shortcut3">
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.3.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.3.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.3.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.3.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.3.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.3.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.3.Path)])</onclick>
   </item>
   <item id="4" description="Shortcut4">
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.4.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.4.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.4.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.4.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.4.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.4.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.4.Path)])</onclick>
   </item>
   <item id="5" description="Shortcut5">
     <visible>!Skin.HasSetting(plexbmc)</visible>
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.5.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.5.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.5.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.5.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.5.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.5.Path)])</onclick>
   </item>
   <item id="6" description="Movies">
     <visible>!Skin.HasSetting(plexbmc)</visible>
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.6.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.6.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.6.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.6.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.6.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.6.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.6.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.6.Path)])</onclick>
   </item>
   <item id="7" description="Shortcut7">
     <visible>!Skin.HasSetting(plexbmc)</visible>
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.7.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.7.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.7.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.7.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.7.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.7.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.7.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.7.Path)])</onclick>
   </item>
   <item id="8" description="Shortcut8">
     <visible>!Skin.HasSetting(plexbmc)</visible>
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.8.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.8.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.8.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.8.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.8.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.8.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.8.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.8.Path)])</onclick>
   </item>
   <item id="9" description="Shortcut9">
     <visible>!Skin.HasSetting(plexbmc)</visible>
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.9.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.9.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.9.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.9.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.9.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.9.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.9.Path)])</onclick>
   </item>
   <item id="10" description="Shortcut10">
     <visible>!Skin.HasSetting(plexbmc)</visible>
-    <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.10.Path))</visible>
-    <label>$INFO[Window(Home).Property(LatestMusicVideo.10.Artist)]</label>
-    <label2>$INFO[Window(Home).Property(LatestMusicVideo.10.Title)]</label2>
-    <thumb>$INFO[Window(Home).Property(LatestMusicVideo.10.Thumb)]</thumb>
+    <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.10.Title))</visible>
+    <label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)]</label>
+    <label2>$INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label2>
+    <thumb>$INFO[Window(Home).Property(RecentMusicVideo.10.Thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[20386]</property>
-    <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.10.Path)])</onclick>
+    <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.10.Path)])</onclick>
   </item>
 </include>
   
