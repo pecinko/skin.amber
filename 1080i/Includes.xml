@@ -22,7 +22,6 @@
   <include file="View_55_BigPanel.xml" />
   <include file="View_56_BannerList.xml" />
   <include file="View_57_58_59_Showcase.xml" />
-  <include file="Custom_FullscreenMusic.xml" />
   <include file="View_PVR.xml" />
   <include name="VisibleFadeEffect">
     <animation effect="fade" time="200">Visible</animation>
