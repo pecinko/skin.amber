@@ -78,7 +78,17 @@
 		  <wrapmultiline>true</wrapmultiline>
 		  <label>$INFO[ListItem.Label]</label>
         </control>
+      <control type="image">
+          <visible>Container.Content(Artists)</visible>
+          <posx>0</posx>
+          <posy>100</posy>
+          <width>610</width>
+          <height>341</height>
+          <aspectratio>scale</aspectratio>
+          <texture background="true" fallback="img/BlackDot.png" >$INFO[ListItem.Art(fanart)]</texture>
+      </control>
 	    <control type="textbox" description="Plot51">
+          <visible>!Container.Content(Artists)</visible>
           <posx>0</posx>
           <posy>120</posy>
           <width>600</width>
@@ -86,11 +96,15 @@
 		  <align>left</align>
 		  <label>$VAR[Plots]</label>
 	    </control>
-        <control type="image" description="Rating">
-			<posx>-3</posx>
-             <posy>830</posy>
-             <include>Stars</include>
-          </control>
+      <control type="textbox" description="Plot51">
+          <visible>Container.Content(Artists)</visible>
+          <posx>0</posx>
+          <posy>480</posy>
+          <width>600</width>
+          <height>380</height>
+      <align>left</align>
+      <label>$VAR[Plots]</label>
+      </control>
    </control>
 	 </control>
     <control type="group" description="Side menu 9000 group">
