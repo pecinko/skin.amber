@@ -1,5 +1,288 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
+<include name="Favourite.List">
+<control type="label" description="Header">
+        <visible>Control.IsVisible(111)</visible>
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(111)</visible>
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(111).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="111" description="Favourites">
+        <visible>!IsEmpty(Window(Home).Property(favourite.1.label))]</visible>
+		<visible>Container(300).HasFocus(7)</visible>
+        <onright>111</onright>
+        <onup>300</onup>
+        <ondown>300</ondown>
+        <include>RecentlyAdded_Addons</include>
+        <content>
+          <include>FavouriteContent</include>
+        </content>
+      </control>
+</include>
+<include name="Addons.List">
+<control type="label" description="Header">
+        <visible>Control.IsVisible(211)</visible>
+        <include>VisibleFadeEffect</include>
+        <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(211)</visible>
+        
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(211).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="211" description="Addons">
+        <visible>Skin.HasSetting(Shelf.Addons)</visible>
+        <visible>Container(300).HasFocus(2) + !IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
+        <onright>211</onright>
+        <onup>300</onup>
+        <ondown>300</ondown>
+        <include>RecentlyAdded_Addons</include>
+        <content>
+          <include>AddonContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recent.Movies.List">
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(311)</visible>
+        
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(311)</visible>
+        
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(311).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="311" description="Movies XBMC">
+        <visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title))]</visible>
+        <visible>Container(300).HasFocus(4)</visible>
+        <onright>311</onright>
+        <onup>300</onup>
+        <ondown condition="Control.IsVisible(312)">312</ondown>
+        <ondown condition="!Control.IsVisible(312)">300</ondown>
+        <include>RecentlyAdded_Posters</include>
+        <content>
+          <include>RecentMovieContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recommended.And.Random.Movies.List">
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(312)</visible>
+        
+        <include>Recommended_Header</include>
+        <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(312)</visible>
+        
+        <include>Recommended_Label</include>
+        <label>$INFO[Container(312).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="312" description="TOP Shortcuts">
+        <visible>![IsEmpty(Window(Home).Property(RecommendedMovie.1.Title)) + IsEmpty(Window(Home).Property(RandomMovie.1.Title))]]</visible>
+		<visible>Container(300).HasFocus(4)</visible>
+        <onright>312</onright>
+        <onup condition="Control.IsVisible(311)">311</onup>
+        <onup condition="!Control.IsVisible(311)">300</onup>
+        <ondown>300</ondown>
+        <include>Recommended_Posters</include>
+        <content>
+          <include condition="SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">RecommendedMovieContent</include>
+          <include condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">RandomMovieContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recent.Concerts.List">
+	  <control type="label" description="Header recent concerts">
+        <visible>Control.IsVisible(514)</visible>
+        
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(514).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(514)</visible>
+        
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(514).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="514" description="Recent concerts">
+		<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
+		<visible>Container(300).HasFocus(14)</visible>
+        <visible></visible>
+        <onright>514</onright>
+        <onup>300</onup>
+        <ondown condition="Control.IsVisible(515)">515</ondown>
+        <ondown condition="!Control.IsVisible(515)">300</ondown>
+        <include>RecentlyAdded_Posters</include>
+        <content>
+          <include>RecentConcertContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recommended.Concerts.List">
+	  <control type="label" description="Header recommended concerts">
+        <visible>Control.IsVisible(515)</visible>
+        
+        <include>Recommended_Header</include>
+        <label>$INFO[Container(515).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(515)</visible>
+        
+        <include>Recommended_Label</include>
+        <label>$INFO[Container(515).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="515" description="Recommended concerts">
+        <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))]</visible>
+        <visible>Container(300).HasFocus(14)</visible>
+        <onright>515</onright>
+        <onup condition="Control.IsVisible(514)">514</onup>
+        <onup condition="!Control.IsVisible(514)">300</onup>
+        <ondown>300</ondown>
+        <include>Recommended_Posters</include>
+        <content>
+          <include>RecommendedConcertContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recent.Episodes.List">
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(411)</visible>
+        
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(411)</visible>
+        
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(411).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(411).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="411" description="TV Shows XBMC">
+        <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))]</visible>
+		<visible>Container(300).HasFocus(5)</visible>
+        <onright>411</onright>
+        <onup>300</onup>
+        <ondown condition="Control.IsVisible(413)">413</ondown>
+        <ondown condition="!Control.IsVisible(413)">300</ondown>
+        <include>RecentlyAdded_Episodes</include>
+        <content>
+          <include>RecentEpisodeContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recommended.Episodes.List">
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(413)</visible>
+        
+        <include>Recommended_Header</include>
+        <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(413)</visible>
+        
+        <include>Recommended_Label</include>
+        <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="413" description="TV Shows XBMC Widgets">
+        <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))]</visible>
+		<visible>Container(300).HasFocus(5)</visible>
+        <onright>413</onright>
+        <onup condition="Control.IsVisible(411)">411</onup>
+        <onup condition="!Control.IsVisible(411)">300</onup>
+        <ondown>300</ondown>
+        <include>Recommended_Episodes</include>
+        <content>
+          <include>RecommendedEpisodeContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recent.Albums.List">
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(511)</visible>
+        
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(511)</visible>
+        
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(511).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="511" description="TOP Shortcuts">
+        <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))]</visible>
+		<visible>Container(300).HasFocus(6)</visible>
+		<visible></visible>
+        <onright>511</onright>
+        <onup>300</onup>
+        <ondown condition="Control.IsVisible(513)">513</ondown>
+        <ondown condition="!Control.IsVisible(513)">300</ondown>
+        <include>RecentlyAdded_Albums</include>
+        <content>
+         <include>RecentAlbumContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recommended.Albums.List">
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(513)</visible>
+        
+        <include>Recommended_Header</include>
+        <label>$INFO[Container(513).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(513)</visible>
+        
+        <include>Recommended_Label</include>
+        <label>$INFO[Container(513).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="513" description="TOP Shortcuts">
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))]</visible>
+		<visible>Container(300).HasFocus(6)</visible>
+        <onright>513</onright>
+        <onup condition="Control.IsVisible(511)">511</onup>
+        <onup condition="!Control.IsVisible(511)">300</onup>
+        <ondown>300</ondown>
+        <include>Recommended_Albums</include>
+        <content>
+          <include>RecommendedAlbumContent</include>
+        </content>
+      </control>
+	  </include>
+	  <include name="Recent.Clips.List">
+	  <control type="label" description="Header Clips">
+        <visible>Control.IsVisible(512)</visible>
+        
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(512).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(512)</visible>
+        
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(512).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="512" description="Music video clips">
+        <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
+        <visible>Container(300).HasFocus(13)</visible>
+        <onright>512</onright>
+        <onup>300</onup>
+        <ondown>300</ondown>
+        <include>RecentlyAdded_Albums</include>
+        <content>
+          <include>RecentClipContent</include>
+        </content>
+      </control>
+	  </include>
 <include name="FavouriteContent">
   <item id="1" description="AutoFavourite">
     <visible>!IsEmpty(Window(Home).Property(favourite.1.label))</visible>
