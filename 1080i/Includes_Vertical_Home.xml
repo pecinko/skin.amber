@@ -775,7 +775,7 @@
           </control>
         </focusedlayout>
         <content>
-          <include condition="Skin.HasSetting(plexbmc)">Plex.Items</include>
+          <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Items</include>
 		  <item id="21" description="Custom1">
             <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
@@ -1201,36 +1201,7 @@
           <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/1&quot;)</onclick>
           <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/1&quot;)</onclick>
         </item>
-        <item id="58" description="PleXBMC: search">
-          <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-          <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
-          <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
-          <visible>!substring(Container(300).ListItem.Property(type),photo)</visible>
-          <label>Search</label>
-          <onclick>$INFO[Container(300).ListItem.Property(search)]</onclick>
-        </item>
-        <item id="57" description="Refresh PleXBMC">
-          <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-          <label>Refresh</label>
-          <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
-        </item>
-        <item id="54" description="PleXBMC Settings">
-          <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-          <label>PleXBMC settings</label>
-          <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
-        </item>
-        <item id="55" description="go PleXBMC">
-          <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
-          <label>Go Plex</label>
-          <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-          <onclick>XBMC.ReloadSkin()</onclick>
-        </item>
-        <item id="56" description="go XBMC">
-          <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-          <label>Go XBMC</label>
-          <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-          <onclick>XBMC.ReloadSkin()</onclick>
-        </item>
+        <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
 		
       </content>
     </control>
