@@ -828,7 +828,7 @@
         <width>1920</width>
         <height>396</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="0,30,0,0">OSD/OSDBackground.png</texture>
+        <texture border="0,30,0,30">OSD/OSDBackground.png</texture>
         <colordiffuse>FFE2E2E2</colordiffuse>
 		<!--<texture>common/OverlayHorizontal2.png</texture>-->
       </control>

@@ -18,7 +18,7 @@
         <posy>0</posy>
         <width>1920</width>
         <height>361</height>
-        <texture border="30,0,0,0">OSD/OSDBackground.png</texture>
+        <texture border="0,30,0,30">OSD/OSDBackground.png</texture>
         <colordiffuse>FFE2E2E2</colordiffuse>
 		<!--<colordiffuse>BBFFFFFF</colordiffuse>-->
       </control>

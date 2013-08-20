@@ -11,7 +11,7 @@
         <posy>0</posy>
         <width>1920</width>
         <height>108</height>
-        <texture flipy="true" border="0,0,0,30">OSD/OSDBackground.png</texture>
+        <texture flipy="true" border="0,30,0,30">OSD/OSDBackground.png</texture>
         <colordiffuse>FFE2E2E2</colordiffuse>
 		<!--<colordiffuse>BBFFFFFF</colordiffuse>-->
       </control>
