@@ -48,7 +48,6 @@
             <height>125</height>
 			<align>justify</align>
             <label>$INFO[VideoPlayer.Plot]</label>
-            <autoscroll>false</autoscroll>
             <font>InfoPlot</font>
           </control>
 		  <control type="grouplist" description="Flags">
