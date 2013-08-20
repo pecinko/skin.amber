@@ -238,10 +238,10 @@
     <animation effect="fade" time="50">VisibleChange</animation>
   </include>
   <include name="OSDSeekbarLabels">
-    <posx>450</posx>
-    <posy>30</posy>
+    <posx>440</posx>
+    <posy>21</posy>
     <height>40</height>
-    <width>710</width>
+    <width>600</width>
     <align>center</align>
     <font>ListDetails</font>
     <shadowcolor>Black</shadowcolor>
