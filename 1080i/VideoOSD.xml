@@ -137,16 +137,16 @@
         </control>
       </control>
       <control type="grouplist" id="99" description="UP Control Area">
-        <posx>260</posx>
+        <posx>207</posx>
         <posy>360</posy>
-        <width>600</width>
+        <width>690</width>
         <height>300</height>
         <itemgap>3</itemgap>
         <orientation aligny="bottom">vertical</orientation>
         <pagecontrol>60</pagecontrol>
         <ondown>100</ondown>
         <control type="togglebutton" id="401">
-          <width>600</width>
+          <width>690</width>
           <label>31356</label>
           <altlabel>31356</altlabel>
           <align>center</align>
@@ -158,7 +158,7 @@
           <altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
         </control>
         <control type="button" id="402">
-          <width>600</width>
+          <width>660</width>
           <aligny>center</aligny>
           <label>22006</label>
           <onclick>SubtitleDelay</onclick>
@@ -166,7 +166,7 @@
           <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
         </control>
         <control type="button" id="403">
-          <width>600</width>
+          <width>660</width>
           <aligny>center</aligny>
           <label>209</label>
           <onclick>NextSubtitle</onclick>
@@ -174,7 +174,7 @@
           <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
         </control>
         <control type="radiobutton" id="404">
-          <width>600</width>
+          <width>660</width>
           <aligny>center</aligny>
           <label>449</label>
           <radioposx>200</radioposx>
@@ -391,9 +391,9 @@
         </control>
       </control>
       <control type="grouplist" id="101" description="DOWN Control Area">
-        <posx>260</posx>
+        <posx>207</posx>
         <posy>549</posy>
-        <width>600</width>
+        <width>690</width>
         <height>1002</height>
         <itemgap>3</itemgap>
         <orientation>vertical</orientation>
@@ -402,7 +402,7 @@
         <control type="togglebutton" id="6999" description="Record">
           <visible>VideoPlayer.Content(LiveTV)</visible>
           <enable>Player.CanRecord</enable>
-          <width>600</width>
+          <width>690</width>
           <label>264</label>
           <altlabel>265</altlabel>
           <align>center</align>
@@ -411,33 +411,33 @@
         </control>
         <control type="togglebutton" id="7000">
           <visible>VideoPlayer.HasMenu</visible>
-          <width>600</width>
+          <width>690</width>
           <label>31355</label>
           <align>center</align>
           <usealttexture>!VideoPlayer.HasMenu</usealttexture>
           <onclick>PlayerControl(ShowVideoMenu)</onclick>
         </control>
         <control type="button" id="7001">
-          <width>600</width>
+          <width>690</width>
           <label>13396</label>
           <align>center</align>
           <onclick>ActivateWindow(OSDAudioSettings)</onclick>
         </control>
         <control type="button" id="7002">
-          <width>600</width>
+          <width>690</width>
           <label>13395</label>
           <align>center</align>
           <onclick>ActivateWindow(OSDVideoSettings)</onclick>
         </control>
         <control type="button" id="7003">
           <visible>!VideoPlayer.Content(LiveTV)</visible>
-          <width>600</width>
+          <width>690</width>
           <label>298</label>
           <align>center</align>
           <onclick>ActivateWindow(VideoBookmarks)</onclick>
         </control>
         <control type="togglebutton" id="7004">
-          <width>600</width>
+          <width>690</width>
           <align>center</align>
           <label>20159</label>
           <onclick>close</onclick>
@@ -447,7 +447,7 @@
           <usealttexture>Window.IsActive(142)</usealttexture>
         </control>
         <control type="button" id="7005">
-          <width>600</width>
+          <width>690</width>
           <label>21445</label>
           <align>center</align>
           <onclick>CodecInfo</onclick>
