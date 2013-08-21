@@ -6,6 +6,7 @@
   <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">RunScript(plugin.video.plexbmc,shelf)</onload>
   <onload condition="Window.Previous(favourites) | IsEmpty(Window(Home).Property(favourite.1.path))">RunScript(script.favourites)</onload>
   <onload condition="!Skin.HasSetting(plexbmc)">SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
+  <onload condition="!Skin.HasSetting(Hide.RecentlyAdded) + Window.Previous(Startup.xml)">AlarmClock(StartupRefresh,ReloadSkin(),00:01,silent)</onload>
   <controls>
  	<include condition="Skin.HasSetting(Home_DefaultBG)">Default_Art</include>
 	<control type="multiimage">
