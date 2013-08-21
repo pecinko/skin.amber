@@ -12,7 +12,7 @@
         <label>$INFO[Container(111).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="111" description="Favourites">
-        <visible>!IsEmpty(Window(Home).Property(favourite.1.label))]</visible>
+        <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
 		<visible>Container(300).HasFocus(7)</visible>
         <onright>111</onright>
         <onup>300</onup>
@@ -63,7 +63,7 @@
         <label>$INFO[Container(311).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="311" description="Movies XBMC">
-        <visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title))]</visible>
+        <visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title))</visible>
         <visible>Container(300).HasFocus(4)</visible>
         <onright>311</onright>
         <onup>300</onup>
@@ -118,7 +118,7 @@
         <label>$INFO[Container(514).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="514" description="Recent concerts">
-		<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
+		<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))</visible>
 		<visible>Container(300).HasFocus(14)</visible>
         <visible></visible>
         <onright>514</onright>
@@ -146,7 +146,7 @@
         <label>$INFO[Container(515).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="515" description="Recommended concerts">
-        <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))]</visible>
+        <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
         <visible>Container(300).HasFocus(14)</visible>
         <onright>515</onright>
         <onup condition="Control.IsVisible(514)">514</onup>
@@ -173,7 +173,7 @@
         <label>$INFO[Container(411).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(411).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="411" description="TV Shows XBMC">
-        <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))]</visible>
+        <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))</visible>
 		<visible>Container(300).HasFocus(5)</visible>
         <onright>411</onright>
         <onup>300</onup>
@@ -200,7 +200,7 @@
         <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="413" description="TV Shows XBMC Widgets">
-        <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))]</visible>
+        <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
 		<visible>Container(300).HasFocus(5)</visible>
         <onright>413</onright>
         <onup condition="Control.IsVisible(411)">411</onup>
@@ -227,7 +227,7 @@
         <label>$INFO[Container(511).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
-        <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))]</visible>
+        <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
 		<visible>Container(300).HasFocus(6)</visible>
 		<visible></visible>
         <onright>511</onright>
@@ -295,70 +295,70 @@
 	  </include>
 <include name="FavouriteContent">
   <item id="1" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.1.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.1.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.1.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.1.path)]</onclick>
   </item>
   <item id="2" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.2.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.2.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.2.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.2.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.2.path)]</onclick>
   </item>
   <item id="3" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.3.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.3.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.3.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.3.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.3.path)]</onclick>
   </item>
   <item id="4" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.4.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.4.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.4.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.4.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.4.path)]</onclick>
   </item>
   <item id="5" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.5.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.5.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.5.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.5.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.5.path)]</onclick>
   </item>
   <item id="6" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.6.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.6.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.6.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.6.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.6.path)]</onclick>
   </item>
   <item id="7" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.7.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.7.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.7.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.7.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.7.path)]</onclick>
   </item>
   <item id="8" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.8.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.8.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.8.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.8.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.8.path)]</onclick>
   </item>
   <item id="9" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.9.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.9.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.9.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.9.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
     <onclick>$INFO[Window(Home).Property(favourite.9.path)]</onclick>
   </item>
   <item id="10" description="AutoFavourite">
-    <visible>!IsEmpty(Window(Home).Property(favourite.10.label))</visible>
+    <visible>!IsEmpty(Window(Home).Property(favourite.10.path))</visible>
     <label>$INFO[Window(Home).Property(favourite.10.name)]</label>
     <thumb>$INFO[Window(Home).Property(favourite.10.thumb)]</thumb>
     <property name="ItemType">$LOCALIZE[1036]</property>
