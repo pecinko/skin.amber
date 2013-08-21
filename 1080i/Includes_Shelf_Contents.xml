@@ -1210,7 +1210,6 @@
     <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.4.File)])</onclick>
   </item>
   <item id="5" description="Shortcut5">
-    <visible>!Skin.HasSetting(plexbmc)</visible>
     <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.5.Title))</visible>
     <label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)]</label>
     <label2>$INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label2>
@@ -1219,7 +1218,6 @@
     <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.5.File)])</onclick>
   </item>
   <item id="6" description="Movies">
-    <visible>!Skin.HasSetting(plexbmc)</visible>
     <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.6.Title))</visible>
     <label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)]</label>
     <label2>$INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label2>
@@ -1228,7 +1226,6 @@
     <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.6.File)])</onclick>
   </item>
   <item id="7" description="Shortcut7">
-    <visible>!Skin.HasSetting(plexbmc)</visible>
     <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.7.Title))</visible>
     <label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)]</label>
     <label2>$INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label2>
@@ -1237,7 +1234,6 @@
     <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.7.File)])</onclick>
   </item>
   <item id="8" description="Shortcut8">
-    <visible>!Skin.HasSetting(plexbmc)</visible>
     <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.8.Title))</visible>
     <label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)]</label>
     <label2>$INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label2>
@@ -1246,7 +1242,6 @@
     <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.8.File)])</onclick>
   </item>
   <item id="9" description="Shortcut9">
-    <visible>!Skin.HasSetting(plexbmc)</visible>
     <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.9.Title))</visible>
     <label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)]</label>
     <label2>$INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label2>
@@ -1255,7 +1250,6 @@
     <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.9.File)])</onclick>
   </item>
   <item id="10" description="Shortcut10">
-    <visible>!Skin.HasSetting(plexbmc)</visible>
     <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.10.Title))</visible>
     <label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)]</label>
     <label2>$INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label2>

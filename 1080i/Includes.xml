@@ -868,13 +868,11 @@
     <control type="group" description="PLEXBMC">
       <control type="label" description="Header">
         <visible>Control.IsVisible(313)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(313).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(313)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(313).ListItem.Label]</label>
       </control>
@@ -1032,13 +1030,11 @@
       </control>
       <control type="label" description="Header">
         <visible>Control.IsVisible(515)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(515).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(515)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(515).ListItem.Label]</label>
       </control>
@@ -1146,13 +1142,11 @@
       </control>
       <control type="label" description="Header">
         <visible>Control.IsVisible(212)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(212).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(212)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(212).ListItem.Label]</label>
       </control>
@@ -1240,13 +1234,11 @@
       </control>
       <control type="label" description="Header">
         <visible>Control.IsVisible(412)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(412).ListItem.Property(ItemType)]</label>
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(412)</visible>
-        <include>VisibleFadeEffect</include>
         <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(412).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(412).ListItem.Label]</label>
       </control>

@@ -390,7 +390,7 @@
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Concerts.List</include>
 	  <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Episodes.List</include>
 	  <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Albums.List</include>
-	  <include condition="Skin.HasSetting(plexbmc) + !Skin.HasSetting(Hide.RecentlyAdded)">Plexbmc_Shelf</include>
+	  <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
 	  
 	  
 	  
