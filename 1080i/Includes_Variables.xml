@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
+  <variable name="UpperShelfType">
+    <value condition="Control.IsVisible(111)">$LOCALIZE[1036]</value>
+    <value condition="Control.IsVisible(211)">$LOCALIZE[24001]</value>
+    <value condition="Control.IsVisible(311) | Control.IsVisible(411) | Control.IsVisible(511) | Control.IsVisible(512) | Control.IsVisible(514)">$LOCALIZE[31020]</value>
+  </variable>
+  <variable name="LowerShelfType">
+    <value condition="Control.IsVisible(312) + !SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">$LOCALIZE[575]</value>
+    <value condition="Control.IsVisible(312) + !SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">$LOCALIZE[590]</value>
+    <value condition="Control.IsVisible(312) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left) + SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">$LOCALIZE[31958]</value>
+    <value condition="Control.IsVisible(515) | Control.IsVisible(513)">$LOCALIZE[31957]</value>
+    <value condition="Control.IsVisible(413)">$LOCALIZE[19031]</value>
+  </variable>
   <variable name="Time" description="Date and time">
     <value condition="Window.IsActive(home) | Window.IsActive(weather)">[COLOR=Grey2]$INFO[System.Date][/COLOR][COLOR=Orange]  •  [/COLOR]$INFO[System.Time]</value>
     <value>$INFO[System.Time]</value>
