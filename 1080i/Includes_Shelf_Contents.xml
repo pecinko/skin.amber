@@ -166,7 +166,7 @@
       <visible>Control.HasFocus(411)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
 	  <include>RecentlyAdded_Label</include>
-      <label>$INFO[Container(411).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(411).ListItem.Label]</label>
+      <label>$INFO[Container(411).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="411" description="TV Shows XBMC">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))</visible>
@@ -649,7 +649,6 @@
     <item id="1" description="Shortcut 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentEpisode.1.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo), • ]$INFO[Window(Home).Property(RecentEpisode.1.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
@@ -657,16 +656,13 @@
     <item id="2" description="Shortcut 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentEpisode.2.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo), • ]$INFO[Window(Home).Property(RecentEpisode.2.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut 3 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.3.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.3.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.3.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.3.File)])</onclick>
