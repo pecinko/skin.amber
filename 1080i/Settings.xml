@@ -119,6 +119,7 @@
             <label>31990</label>
             <onclick>-</onclick>
           </item>
+		  <include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Section.Label</include> 
         </content>
       </control>
       <control type="group" id="9010">
@@ -1830,7 +1831,9 @@
 			
           </content>
         </control>
-      </control>
+		<!-- 9000 8 -->
+		<include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Controls</include>
+	  </control>
     </control>
   <control type="scrollbar" id="63">
         <visible>Control.IsVisible(9003)</visible>
