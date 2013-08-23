@@ -669,63 +669,49 @@
     </item>
     <item id="4" description="Shortcut 4 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.4.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.4.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.4.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut 5 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.5.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.5.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.5.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.5.File)])</onclick>
     </item>
     <item id="6" description="Shortcut 6 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.6.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.6.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.6.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut 7 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.7.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.7.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.7.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut 8 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.8.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.8.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.8.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.9.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.9.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut 10 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.10.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label2>
-      <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)]</property>
+      <label>$INFO[Window(Home).Property(RecentEpisode.10.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
