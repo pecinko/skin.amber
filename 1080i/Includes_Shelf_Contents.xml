@@ -4,7 +4,7 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(111)</visible>
       <include>RecentlyAdded_Header</include>
-      <label>$VAR[UpperShelfType]</label>
+      <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(111)</visible>
@@ -28,7 +28,7 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(211)</visible>
       <include>RecentlyAdded_Header</include>
-      <label>$VAR[UpperShelfType]</label>
+      <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(211)</visible>
@@ -52,7 +52,7 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(311)</visible>
       <include>RecentlyAdded_Header</include>
-      <label>$VAR[UpperShelfType]</label>
+      <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(311)</visible>
@@ -77,7 +77,7 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(312)</visible>
       <include>Recommended_Header</include>
-      <label>$VAR[LowerShelfType]</label>
+      <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(312)</visible>
@@ -103,7 +103,7 @@
     <control type="label" description="Header recent concerts">
       <visible>Control.IsVisible(514)</visible>
       <include>RecentlyAdded_Header</include>
-      <label>$VAR[UpperShelfType]</label>
+      <label>$INFO[Container(514).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(514)</visible>
@@ -129,7 +129,7 @@
     <control type="label" description="Header recommended concerts">
       <visible>Control.IsVisible(515)</visible>
       <include>Recommended_Header</include>
-      <label>$VAR[LowerShelfType]</label>
+      <label>$INFO[Container(515).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(515)</visible>
@@ -154,7 +154,7 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(411)</visible>
       <include>RecentlyAdded_Header</include>
-      <label>$VAR[UpperShelfType]</label>
+      <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(411)</visible>
@@ -179,7 +179,7 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(413)</visible>
       <include>Recommended_Header</include>
-      <label>$VAR[LowerShelfType]</label>
+      <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(413)</visible>
@@ -204,12 +204,12 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(511)</visible>
       <include>RecentlyAdded_Header</include>
-      <label>$VAR[UpperShelfType]</label>
+      <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(511)</visible>
       <include>RecentlyAdded_Label</include>
-      <label>$INFO[Container(511).ListItem.Property(LabelInfo)]</label>
+      <label>$INFO[Container(511).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="511" description="TOP Shortcuts">
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
@@ -230,12 +230,12 @@
     <control type="label" description="Header">
       <visible>Control.IsVisible(513)</visible>
       <include>Recommended_Header</include>
-      <label>$VAR[LowerShelfType]</label>
+      <label>$INFO[Container(513).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(513)</visible>
       <include>Recommended_Label</include>
-      <label>$INFO[Container(513).ListItem.Property(LabelInfo)]</label>
+      <label>$INFO[Container(513).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="513" description="TOP Shortcuts">
       <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))]</visible>
@@ -255,7 +255,7 @@
     <control type="label" description="Header Clips">
       <visible>Control.IsVisible(512)</visible>
       <include>RecentlyAdded_Header</include>
-      <label>$VAR[UpperShelfType]</label>
+      <label>$INFO[Container(512).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
       <visible>Control.HasFocus(512)</visible>
@@ -279,60 +279,70 @@
       <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.1.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.1.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.1.path)]</onclick>
     </item>
     <item id="2" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.2.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.2.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.2.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.2.path)]</onclick>
     </item>
     <item id="3" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.3.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.3.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.3.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.3.path)]</onclick>
     </item>
     <item id="4" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.4.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.4.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.4.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.4.path)]</onclick>
     </item>
     <item id="5" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.5.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.5.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.5.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.5.path)]</onclick>
     </item>
     <item id="6" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.6.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.6.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.6.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.6.path)]</onclick>
     </item>
     <item id="7" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.7.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.7.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.7.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.7.path)]</onclick>
     </item>
     <item id="8" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.8.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.8.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.8.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.8.path)]</onclick>
     </item>
     <item id="9" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.9.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.9.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.9.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.9.path)]</onclick>
     </item>
     <item id="10" description="AutoFavourite">
       <visible>!IsEmpty(Window(Home).Property(favourite.10.path))</visible>
       <label>$INFO[Window(Home).Property(favourite.10.name)]</label>
       <thumb>$INFO[Window(Home).Property(favourite.10.thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[1036]</property>
       <onclick>$INFO[Window(Home).Property(favourite.10.path)]</onclick>
     </item>
   </include>
@@ -342,245 +352,285 @@
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.1.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.1.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.1.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="2" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.2.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.2.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.2.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.2.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="3" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.3.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.3.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.3.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.3.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="4" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.4.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.4.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.4.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.4.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="5" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.5.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.5.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.5.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="6" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.6.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.6.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.6.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.6.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="7" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.7.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.7.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.7.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.7.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="8" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.8.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.8.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.8.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.8.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="9" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.9.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.9.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.9.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.9.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
     <item id="10" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.10.Label))</visible>
       <label>$INFO[system.addontitle(Skin.String(ShelfAddons.10.Label))]</label>
       <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.10.Label))]</thumb>
       <onclick>RunAddon($INFO[Skin.String(ShelfAddons.10.Label)])</onclick>
+      <property name="ItemType">$LOCALIZE[24001]</property>
     </item>
   </include>
   <include name="RecentMovieContent">
     <item id="1" description="Shortcut 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.1.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.1.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.1.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.1.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.1.File)])</onclick>
     </item>
     <item id="2" description="Shortcut 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.2.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.2.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.2.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.2.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.2.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut 3 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.3.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.3.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.3.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.3.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.3.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.3.File)])</onclick>
     </item>
     <item id="4" description="Shortcut 4 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.4.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.4.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.4.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.4.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.4.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut 5 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.5.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.5.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.5.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.5.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.5.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.5.File)])</onclick>
     </item>
     <item id="6" description="Shortcut 6 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.6.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.6.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.6.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.6.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.6.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut 7 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.7.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.7.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.7.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.7.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.7.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut 8 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.8.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.8.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.8.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.8.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.8.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.9.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.9.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.9.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.9.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.9.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut 10 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.10.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.10.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.10.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMovie.10.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.10.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.10.File)])</onclick>
     </item>
   </include>
   <include name="RecommendedMovieContent">
     <item id="1" description="Shortcut 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.1.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.1.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
     </item>
     <item id="2" description="Shortcut 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.2.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.2.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.2.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut 3 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.3.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.3.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.3.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
     </item>
     <item id="4" description="Shortcut 4 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.4.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.4.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.4.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut 5 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.5.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.5.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.5.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.5.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
     </item>
     <item id="6" description="Shortcut 6 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.6.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.6.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.6.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.6.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut 7 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.7.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.7.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.7.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.7.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut 8 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.8.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.8.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.8.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.8.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.9.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.9.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.9.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.9.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut 10 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.10.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.10.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMovie.10.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMovie.10.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31966]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.10.File)])</onclick>
     </item>
   </include>
   <include name="RandomMovieContent">
     <item id="1" description="Shortcut 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.1.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.1.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.1.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.1.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.1.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.1.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.1.File)])</onclick>
     </item>
     <item id="2" description="Shortcut 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.2.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.2.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.2.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.2.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.2.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.2.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut 3 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.3.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.3.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.3.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.3.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.3.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.3.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.3.File)])</onclick>
     </item>
     <item id="4" description="Shortcut 4 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.4.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.4.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.4.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.4.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.4.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.4.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut 5 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.5.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.5.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.5.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.5.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.5.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.5.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.5.File)])</onclick>
     </item>
     <item id="6" description="Shortcut 6 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.6.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.6.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.6.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.6.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.6.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.6.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut 7 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.7.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.7.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.7.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.7.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.7.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.7.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut 8 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.8.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.8.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.8.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.8.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.8.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.8.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.9.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.9.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.9.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.9.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.9.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.9.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut 10 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RandomMovie.10.Title))</visible>
-      <label>$INFO[Window(Home).Property(RandomMovie.10.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.10.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RandomMovie.10.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RandomMovie.10.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RandomMovie.10.Art(poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31987]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.10.File)])</onclick>
     </item>
   </include>
@@ -591,6 +641,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
     </item>
     <item id="2" description="Shortcut 2 (skin widgets)">
@@ -599,6 +650,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut 3 (skin widgets)">
@@ -607,6 +659,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.3.File)])</onclick>
     </item>
     <item id="4" description="Shortcut 4 (skin widgets)">
@@ -615,6 +668,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut 5 (skin widgets)">
@@ -623,6 +677,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.5.File)])</onclick>
     </item>
     <item id="6" description="Shortcut 6 (skin widgets)">
@@ -631,6 +686,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut 7 (skin widgets)">
@@ -639,6 +695,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut 8 (skin widgets)">
@@ -647,6 +704,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
@@ -655,6 +713,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut 10 (skin widgets)">
@@ -663,6 +722,7 @@
       <label2>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[20387]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
     </item>
   </include>
@@ -673,6 +733,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
     </item>
     <item id="2" description="Shortcut 2 (skin widgets)">
@@ -681,6 +742,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut 3 (skin widgets)">
@@ -689,6 +751,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
     </item>
     <item id="4" description="Shortcut 4 (skin widgets)">
@@ -697,6 +760,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut 5 (skin widgets)">
@@ -705,6 +769,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
     </item>
     <item id="6" description="Shortcut 6 (skin widgets)">
@@ -713,6 +778,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut 7 (skin widgets)">
@@ -721,6 +787,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut 8 (skin widgets)">
@@ -729,6 +796,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
@@ -737,6 +805,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut 10 (skin widgets)">
@@ -745,6 +814,7 @@
       <label2>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)]</label2>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.10.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</thumb>
+      <property name="ItemType">$LOCALIZE[31965]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
     </item>
   </include>
@@ -753,8 +823,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.1.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.1.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.1.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
     </item>
@@ -762,8 +832,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.2.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.2.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.2.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.2.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.2.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.2.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.2.Play)]</onclick>
     </item>
@@ -771,8 +841,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.3.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.3.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.3.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.3.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.3.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.3.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.3.Play)]</onclick>
     </item>
@@ -780,8 +850,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.4.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.4.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.4.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.4.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.4.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.4.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.4.Play)]</onclick>
     </item>
@@ -789,8 +859,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.5.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.5.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.5.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.5.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.5.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.5.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.5.Play)]</onclick>
     </item>
@@ -798,8 +868,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.6.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.6.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.6.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.6.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.6.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.6.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.6.Play)]</onclick>
     </item>
@@ -807,8 +877,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.7.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.7.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.7.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.7.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.7.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.7.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.7.Play)]</onclick>
     </item>
@@ -816,8 +886,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.8.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.8.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.8.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.8.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.8.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.8.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.8.Play)]</onclick>
     </item>
@@ -825,8 +895,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.9.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.9.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.9.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.9.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.9.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.9.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.9.Play)]</onclick>
     </item>
@@ -834,8 +904,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.10.Title))</visible>
       <label>$INFO[Window(Home).Property(RecentAlbum.10.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentAlbum.10.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecentAlbum.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.10.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentAlbum.10.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecentAlbum.10.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[359]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecentAlbum.10.Play)]</onclick>
     </item>
@@ -845,8 +915,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.1.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.1.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
     </item>
@@ -854,8 +924,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.2.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.2.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
     </item>
@@ -863,8 +933,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.3.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.3.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
     </item>
@@ -872,8 +942,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.4.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.4.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
     </item>
@@ -881,8 +951,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.5.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.5.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
     </item>
@@ -890,8 +960,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.6.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.6.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
     </item>
@@ -899,8 +969,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.7.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.7.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
     </item>
@@ -908,8 +978,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.8.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.8.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
     </item>
@@ -917,8 +987,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.9.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.9.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
     </item>
@@ -926,8 +996,8 @@
       <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
       <label>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label2>
-      <property name="LabelInfo">$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.10.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedAlbum.10.Year)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31963]</property>
       <onclick>PlayList.Clear</onclick>
       <onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
     </item>
@@ -935,124 +1005,144 @@
   <include name="RecentConcertContent">
     <item id="1" description="Recent music video 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.1.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.1.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.1.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.1.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.1.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.1.File)])</onclick>
     </item>
     <item id="2" description="Recent music video 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.2.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.2.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.2.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.2.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.2.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.2.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.2.File)])</onclick>
     </item>
     <item id="3" description="Recent music video 3 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.3.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.3.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.3.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.3.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.3.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.3.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.3.File)])</onclick>
     </item>
     <item id="4" description="Recent music video 4 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.4.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.4.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.4.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.4.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.4.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.4.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.4.Path)])</onclick>
     </item>
     <item id="5" description="Recent music video 5 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.5.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.5.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.5.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.5.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.5.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.5.File)])</onclick>
     </item>
     <item id="6" description="Recent music video 6 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.6.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.6.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.6.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.6.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.6.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.6.File)])</onclick>
     </item>
     <item id="7" description="Recent music video 7 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.7.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.7.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.7.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.7.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.7.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.7.File)])</onclick>
     </item>
     <item id="8" description="Recent music video 8 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.8.Title))</visible>
-     <label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.8.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.8.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.8.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.8.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.8.File)])</onclick>
     </item>
     <item id="9" description="Recent music video 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.9.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.9.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.9.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.9.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.9.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.9.File)])</onclick>
     </item>
     <item id="10" description="Recent music video 10 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.10.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.10.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.10.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.10.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.10.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31961]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.10.File)])</onclick>
     </item>
   </include>
   <include name="RecommendedConcertContent">
     <item id="1" description="Recommended music video 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.1.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.1.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.1.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.1.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.1.File)])</onclick>
     </item>
     <item id="2" description="Recommended music video 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.2.Title))</visible>
-     <label>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.2.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.2.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.2.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.2.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.2.File)])</onclick>
     </item>
     <item id="3" description="Recommended music video 3 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.3.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.3.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.3.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.3.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.3.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.3.File)])</onclick>
     </item>
     <item id="4" description="Recommended music video 4 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.4.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.4.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.4.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.4.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.4.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.4.Path)])</onclick>
     </item>
     <item id="5" description="Recommended music video 5 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.5.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.5.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.5.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.5.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.5.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.5.File)])</onclick>
     </item>
     <item id="6" description="Recommended music video 6 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.6.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.6.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.6.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.6.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.6.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.6.File)])</onclick>
     </item>
     <item id="7" description="Recommended music video 7 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.7.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.7.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.7.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.7.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.7.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.7.File)])</onclick>
     </item>
     <item id="8" description="Recommended music video 8 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.8.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.8.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.8.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.8.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.8.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.8.File)])</onclick>
     </item>
     <item id="9" description="Recommended music video 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.9.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.9.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.9.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.9.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
     </item>
     <item id="10" description="Recommended music video 10 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.10.Year)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.10.Runtime)] $LOCALIZE[12391]</label>
+      <label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Artist)][COLOR=Orange]  •  [/COLOR]$INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)]</label>
       <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[31962]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
     </item>
   </include>
@@ -1062,6 +1152,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.1.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.1.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.1.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.1.File)])</onclick>
     </item>
     <item id="2" description="Shortcut2">
@@ -1069,6 +1160,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.2.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.2.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.2.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut3">
@@ -1076,6 +1168,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.3.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.3.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.3.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.3.File)])</onclick>
     </item>
     <item id="4" description="Shortcut4">
@@ -1083,6 +1176,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.4.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.4.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.4.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut5">
@@ -1090,6 +1184,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.5.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.5.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.5.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.5.File)])</onclick>
     </item>
     <item id="6" description="Movies">
@@ -1097,6 +1192,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.6.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.6.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.6.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut7">
@@ -1104,6 +1200,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.7.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.7.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.7.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut8">
@@ -1111,6 +1208,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.8.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.8.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.8.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut9">
@@ -1118,6 +1216,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.9.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.9.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.9.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut10">
@@ -1125,6 +1224,7 @@
       <label>$INFO[Window(Home).Property(RecentMusicVideo.10.Artist)]</label>
       <label2>$INFO[Window(Home).Property(RecentMusicVideo.10.Title)]</label2>
       <thumb>$INFO[Window(Home).Property(RecentMusicVideo.10.Thumb)]</thumb>
+      <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.10.File)])</onclick>
     </item>
   </include>
