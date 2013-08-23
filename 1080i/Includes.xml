@@ -1142,7 +1142,7 @@
       <control type="label" description="Label">
         <visible>Control.HasFocus(511)</visible>
         <include>RecentlyAdded_Label</include>
-        <label>$INFO[Container(511).ListItem.Label]</label>
+        <label>$INFO[Container(511).ListItem.Label][COLOR=White]$INFO[Container(511).ListItem.Label2, • ][/COLOR]</label>
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
         <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))</visible>
