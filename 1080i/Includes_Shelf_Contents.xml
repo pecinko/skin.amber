@@ -432,70 +432,70 @@
   <include name="RecentMovieContent">
     <item id="1" description="Shortcut 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.1.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.1.Year), • ]$INFO[Window(Home).Property(RecentMovie.1.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.1.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.1.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.1.File)])</onclick>
     </item>
     <item id="2" description="Shortcut 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.2.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.2.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.2.Year), • ]$INFO[Window(Home).Property(RecentMovie.2.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.2.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.2.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.2.File)])</onclick>
     </item>
     <item id="3" description="Shortcut 3 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.3.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.3.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.3.Year), • ]$INFO[Window(Home).Property(RecentMovie.3.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.3.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.3.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.3.File)])</onclick>
     </item>
     <item id="4" description="Shortcut 4 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.4.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.4.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.4.Year), • ]$INFO[Window(Home).Property(RecentMovie.4.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.4.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.4.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.4.File)])</onclick>
     </item>
     <item id="5" description="Shortcut 5 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.5.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.5.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.5.Year), • ]$INFO[Window(Home).Property(RecentMovie.5.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.5.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.5.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.5.File)])</onclick>
     </item>
     <item id="6" description="Shortcut 6 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.6.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.6.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.6.Year), • ]$INFO[Window(Home).Property(RecentMovie.6.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.6.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.6.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.6.File)])</onclick>
     </item>
     <item id="7" description="Shortcut 7 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.7.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.7.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.7.Year), • ]$INFO[Window(Home).Property(RecentMovie.7.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.7.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.7.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.7.File)])</onclick>
     </item>
     <item id="8" description="Shortcut 8 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.8.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.8.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.8.Year), • ]$INFO[Window(Home).Property(RecentMovie.8.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.8.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.8.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.8.File)])</onclick>
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.9.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.9.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.9.Year), • ]$INFO[Window(Home).Property(RecentMovie.9.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.9.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.9.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.9.File)])</onclick>
     </item>
     <item id="10" description="Shortcut 10 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.10.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
+      <label>$INFO[Window(Home).Property(RecentMovie.10.Title)][COLOR=White]$INFO[Window(Home).Property(RecentMovie.10.Year), • ]$INFO[Window(Home).Property(RecentMovie.10.Runtime), • , $LOCALIZE[12391]]$INFO[Window(Home).Property(RecentMovie.10.Rating), • ][/COLOR]</label>
       <thumb>$INFO[Window(Home).Property(RecentMovie.10.Art(poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20386]</property>
       <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.10.File)])</onclick>
@@ -648,8 +648,7 @@
   <include name="RecentEpisodeContent">
     <item id="1" description="Shortcut 1 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.1.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label2>
+      <label>$INFO[Window(Home).Property(RecentEpisode.1.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo), • ]$INFO[Window(Home).Property(RecentEpisode.1.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
@@ -657,8 +656,7 @@
     </item>
     <item id="2" description="Shortcut 2 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.2.Title))</visible>
-      <label>$INFO[Window(Home).Property(RecentEpisode.2.Title)]</label>
-      <label2>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)]</label2>
+      <label>$INFO[Window(Home).Property(RecentEpisode.2.Title)][COLOR=White]$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle), • ]$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo), • ]$INFO[Window(Home).Property(RecentEpisode.2.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[20387]</property>
