@@ -38,8 +38,7 @@
       <label>$INFO[Container(211).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="211" description="Addons">
-      <visible>Skin.HasSetting(Shelf.Addons)</visible>
-      <visible>Container(300).HasFocus(2) + !IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
+      <visible>Container(300).HasFocus(2)</visible>
       <onright>211</onright>
       <onup>300</onup>
       <ondown>300</ondown>

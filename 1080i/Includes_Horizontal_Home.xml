@@ -86,8 +86,8 @@
           <height>720</height>
           <texture border="0,40,0,40">home/OverlayRA2.png</texture>
         </control>
-        <include>Favourite.List</include>
-        <include>Addons.List</include>
+        <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
+        <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Concerts.List</include>
         <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Episodes.List</include>

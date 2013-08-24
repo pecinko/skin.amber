@@ -1446,7 +1446,19 @@
               <label>$LOCALIZE[31964]</label>
               <onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
             </item>
-            <item id="3" description="Enable Addons">
+            <item id="2" description="Enable Favourites">
+              <visible>!Skin.HasSetting(Hide.Favourites)</visible>
+              <label>$LOCALIZE[1036]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.ToggleSetting(Hide.Favourites)</onclick>
+            </item>
+            <item id="2" description="Enable Favourites">
+              <visible>Skin.HasSetting(Hide.Favourites)</visible>
+              <label>$LOCALIZE[1036]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.Reset(Hide.Favourites)</onclick>
+            </item>
+			<item id="3" description="Enable Addons">
               <visible>!Skin.HasSetting(Shelf.Addons)</visible>
               <label>$LOCALIZE[24001]</label>
               <label2>$LOCALIZE[106]</label2>
