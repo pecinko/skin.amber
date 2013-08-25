@@ -988,140 +988,140 @@
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.1.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.1.Path)])</onclick>
           </item>
           <item id="2" description="Shortcut2">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.2.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.2.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.2.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.2.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.2.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.2.Path)])</onclick>
           </item>
           <item id="3" description="Shortcut3">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.3.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.3.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.3.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.3.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.3.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.3.Path)])</onclick>
           </item>
           <item id="4" description="Shortcut4">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.4.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.4.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.4.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.4.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.4.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.4.Path)])</onclick>
           </item>
           <item id="5" description="Shortcut5">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.5.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.5.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.5.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.5.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.5.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.5.Path)])</onclick>
           </item>
           <item id="6" description="Movies">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.6.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.6.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.6.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.6.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.6.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.6.Path)])</onclick>
           </item>
           <item id="7" description="Shortcut7">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.7.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.7.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.7.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.7.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.7.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.7.Path)])</onclick>
           </item>
           <item id="8" description="Shortcut8">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.8.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.8.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.8.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.8.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.8.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.8.Path)])</onclick>
           </item>
           <item id="9" description="Shortcut9">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.9.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.9.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.9.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.9.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.9.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.9.Path)])</onclick>
           </item>
           <item id="10" description="Shortcut10">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.10.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.10.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.10.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.10.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.10.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.10.Path)])</onclick>
           </item>
           <item id="11" description="Shortcut11">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.11.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.11.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.11.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.11.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.11.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.11.Path)])</onclick>
           </item>
           <item id="12" description="Shortcut12">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.12.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.12.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.12.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.12.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.12.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.12.Path)])</onclick>
           </item>
           <item id="13" description="Shortcut13">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.13.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.13.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.13.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.13.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.13.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.13.Path)])</onclick>
           </item>
           <item id="14" description="Shortcut14">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.14.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.14.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.14.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.14.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.14.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.14.Path)])</onclick>
           </item>
           <item id="15" description="Shortcut15">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.15.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.15.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.15.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.15.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.15.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.15.Path)])</onclick>
           </item>
           <item id="16" description="Shortcut16">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.16.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.16.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.16.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.16.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.16.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.16.Path)])</onclick>
           </item>
           <item id="17" description="Shortcut17">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.17.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.17.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.17.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.17.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.17.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.17.Path)])</onclick>
           </item>
           <item id="18" description="Shortcut18">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.18.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.18.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.18.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.18.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.18.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.18.Path)])</onclick>
           </item>
           <item id="19" description="Shortcut19">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.19.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.19.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.19.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.19.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.19.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.19.Path)])</onclick>
           </item>
           <item id="20" description="Shortcut20">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.20.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.20.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.20.Year), • ]$INFO[Window(Home).Property(Plexbmc.RecentMovie.20.Rating), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.20.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20386]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.20.Path)])</onclick>
           </item>
         </content>
@@ -1134,7 +1134,7 @@
       <control type="label" description="Label">
         <visible>Control.HasFocus(511)</visible>
         <include>RecentlyAdded_Label</include>
-        <label>$INFO[Container(511).ListItem.Label][COLOR=White]$INFO[Container(511).ListItem.Label2, • ][/COLOR]</label>
+        <label>$INFO[Container(511).ListItem.Property(ShelfLabel)]</label>
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
         <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))</visible>
@@ -1153,7 +1153,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.1.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.1.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.1.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.1.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="2" description="Shortcut2">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.2.Title))</visible>
@@ -1162,7 +1163,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.2.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.2.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="3" description="Shortcut3">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.3.Title))</visible>
@@ -1171,7 +1173,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.3.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.3.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="4" description="Shortcut4">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.4.Title))</visible>
@@ -1180,7 +1183,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.4.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.4.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="5" description="Shortcut5">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.5.Title))</visible>
@@ -1189,7 +1193,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.5.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.5.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="6" description="Music">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.6.Title))</visible>
@@ -1198,7 +1203,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.6.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.6.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="7" description="Shortcut7">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.7.Title))</visible>
@@ -1207,7 +1213,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.7.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.7.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="8" description="Shortcut8">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.8.Title))</visible>
@@ -1216,7 +1223,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.8.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.8.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="9" description="Shortcut9">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.9.Title))</visible>
@@ -1225,7 +1233,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.9.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.9.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
           <item id="10" description="Shortcut10">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.10.Title))</visible>
@@ -1234,7 +1243,8 @@
             <onclick>PlayList.Clear</onclick>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Path)]</onclick>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[359]</property>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.10.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.10.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
         </content>
       </control>
@@ -1354,140 +1364,140 @@
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Path)]</onclick>
           </item>
           <item id="2" description="Shortcut2">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.2.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.Path)])</onclick>
           </item>
           <item id="3" description="Shortcut3">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.3.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.Path)])</onclick>
           </item>
           <item id="4" description="Shortcut4">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.4.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.Path)])</onclick>
           </item>
           <item id="5" description="Shortcut5">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.5.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.Path)])</onclick>
           </item>
           <item id="6" description="Shortcut6">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.6.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.Path)])</onclick>
           </item>
           <item id="7" description="Shortcut7">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.7.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.Path)])</onclick>
           </item>
           <item id="8" description="Shortcut8">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.8.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.Path)])</onclick>
           </item>
           <item id="9" description="Shortcut9">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.9.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.Path)])</onclick>
           </item>
           <item id="10" description="Shortcut10">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.10.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Path)])</onclick>
           </item>
           <item id="11" description="Shortcut11">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.11.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Path)])</onclick>
           </item>
           <item id="12" description="Shortcut12">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.12.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Path)])</onclick>
           </item>
           <item id="13" description="Shortcut13">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.13.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Path)])</onclick>
           </item>
           <item id="14" description="Shortcut14">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.14.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Path)])</onclick>
           </item>
           <item id="15" description="Shortcut15">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.15.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Path)])</onclick>
           </item>
           <item id="16" description="Shortcut16">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.16.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.Path)])</onclick>
           </item>
           <item id="17" description="Shortcut17">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.17.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.Path)])</onclick>
           </item>
           <item id="18" description="Shortcut18">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.18.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.Path)])</onclick>
           </item>
           <item id="19" description="Shortcut19">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.19.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.Path)])</onclick>
           </item>
           <item id="20" description="Shortcut20">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.20.Path))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Thumb)]</thumb>
-            <property name="ItemType">$LOCALIZE[20387]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Path)])</onclick>
           </item>
         </content>
@@ -2084,6 +2094,7 @@
             <onclick>$INFO[Skin.String(CustomHome.7.Path)]</onclick>
           </item>
           <item id="13" description="Clips">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
             <label>31972</label>
             <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
@@ -2091,6 +2102,7 @@
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
           </item>
           <item id="14" description="Concerts">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>Skin.HasSetting(Concerts.Show) + Library.HasContent(MusicVideos)</visible>
             <label>31971</label>
             <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
