@@ -418,7 +418,7 @@
       <control type="group" description="55 MediaInfo NO Small Fanart">
         <visible>!Skin.HasSetting(55_SmallFanart)</visible>
         <posx>60</posx>
-        <posy>139</posy>
+        <posy>100</posy>
         <control type="label" description="Title Label">
           <posy>18</posy>
           <width>630</width>
@@ -527,7 +527,7 @@
       <control type="group" description="55 MediaInfo with Small Fanart">
         <visible>Skin.HasSetting(55_SmallFanart)</visible>
         <posx>60</posx>
-        <posy>139</posy>
+        <posy>100</posy>
         <control type="group" description="Info with Fanart">
           <visible>!IsEmpty(ListItem.Art(fanart)</visible>
           <control type="image" description="FA">

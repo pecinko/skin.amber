@@ -20,7 +20,7 @@
 	<visible>Control.IsVisible(55)</visible>
 		<control type="image" description="Thumb">
           <posx>60</posx>
-          <posy>114</posy>
+          <posy>75</posy>
           <width>690</width>
           <height>900</height>
           <include>Icon_Fade</include>

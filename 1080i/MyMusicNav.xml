@@ -68,7 +68,7 @@
 	  <control type="group" description="55 MediaInfo">
 	    <visible>!Skin.HasSetting(55_SmallFanart)</visible>
 		<posx>60</posx>
-        <posy>139</posy>
+        <posy>100</posy>
         <control type="label" description="Title Label">
           <posy>18</posy>
           <width>600</width>
@@ -91,7 +91,7 @@
       <control type="group" description="55 MediaInfo">
 	    <visible>Skin.HasSetting(55_SmallFanart)</visible>
 		<posx>60</posx>
-        <posy>139</posy>
+        <posy>100</posy>
         <control type="image" description="FA">
 		  <posx>0</posx>
 		  <posy>0</posy>

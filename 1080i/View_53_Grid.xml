@@ -17,7 +17,6 @@
         <ondown>53</ondown>
         <preloaditems>4</preloaditems>
         <pagecontrol>60</pagecontrol>
-        <scrolltime>400</scrolltime>
         <itemlayout condition="Container.Content(TvShows) + Skin.HasSetting(53_UseBanners)" height="230" width="900">
           <control type="image">
             <posx>30</posx>
@@ -34,7 +33,7 @@
             <texture background="true">$VAR[Banner]</texture>
             <aspectratio>keep</aspectratio>
           </control>
-        </itemlayout>
+		 </itemlayout>
         <focusedlayout condition="Container.Content(TvShows) + Skin.HasSetting(53_UseBanners)" height="230" width="900">
           <control type="image">
             <posx>30</posx>
@@ -345,35 +344,28 @@
           </control>
         </focusedlayout>
       </control>
-      <control type="image" description="Footer BG">
-		<posx>0</posx>
+	  <control type="image" description="Footer Dim BG">
+        <posx>0</posx>
         <posy>1017</posy>
         <width>1920</width>
         <height>54</height>
         <texture>img/BlackDotST2.png</texture>
       </control>
-	  <control type="image" description="Footer">
-		<posx>0</posx>
+      <control type="image" description="Footer">
+        <posx>0</posx>
         <posy>993</posy>
         <width>1920</width>
         <height>87</height>
         <texture border="0,30,0,0">OSD/OSDBackground.png</texture>
       </control>
-	 	  <control type="label">
-            <posx>40</posx>
-            <posy>1011</posy>
-            <width>1860</width>
-            <height>80</height>
-            <align>center</align>
-			<label>[COLOR=Orange]$INFO[ListItem.Label][/COLOR]   $VAR[Details]</label>
-          </control>
+      <include>FooterInfo</include>
 	  <control type="scrollbar" id="60">
-        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+        <animation effect="slide" start="0,0" end="-6,0" time="150">Focus</animation>
+        <animation effect="slide" start="-6,0" end="0,0" time="300">UnFocus</animation>
         <posx>20r</posx>
-        <posy>360</posy>
+        <posy>120</posy>
         <width>36</width>
-        <height>700</height>
+        <height>860</height>
         <texturesliderbackground>-</texturesliderbackground>
         <texturesliderbar>-</texturesliderbar>
         <texturesliderbarfocus>-</texturesliderbarfocus>
