@@ -301,13 +301,13 @@
             </control>
             <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
-              <posy>207</posy>
+              <posy>294</posy>
               <control type="image">
                 <posx>12</posx>
                 <posy>5</posy>
                 <width>390</width>
                 <height>60</height>
-                <texture>img/OverlayStripe.png</texture>
+                <texture border="3">img/WhiteRoundedT.png</texture>
               </control>
               <control type="label">
                 <posx>30</posx>
@@ -339,31 +339,32 @@
             </control>
             <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
-              <posy>207</posy>
+              <posy>294</posy>
               <control type="image">
                 <posx>12</posx>
                 <posy>5</posy>
                 <width>390</width>
                 <height>60</height>
-                <texture>img/OverlayStripe.png</texture>
+                <texture border="3">img/WhiteRoundedT.png</texture>
               </control>
               <control type="label">
                 <posx>30</posx>
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
-                <textcolor>White2</textcolor>
+                <textcolor>Orange</textcolor>
                 <label>$LOCALIZE[31973] $INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
               </control>
               <control type="image" description="Watched Overlay">
                 <posx>360</posx>
                 <width>24</width>
                 <height>70</height>
-                <texture>$VAR[Overlay]</texture>
+                <colordiffuse>Orange</colordiffuse>
+				<texture>$VAR[Overlay]</texture>
                 <aspectratio>keep</aspectratio>
               </control>
             </control>
-            <control type="label">
+            <!--<control type="label">
               <posx>204</posx>
               <posy>291</posy>
               <width>450</width>
@@ -372,7 +373,7 @@
               <align>center</align>
               <font>Details</font>
               <label>$INFO[ListItem.Label]</label>
-            </control>
+            </control>-->
           </control>
         </focusedlayout>
         <itemlayout condition="![container.content(episodes) | container.content(addons) | Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml) | Window.IsActive(MyPics.xml) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="420" width="450">
