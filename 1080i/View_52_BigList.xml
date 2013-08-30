@@ -294,9 +294,9 @@
         <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
         <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
         <posx>21r</posx>
-        <posy>246</posy>
+        <posy>99</posy>
         <width>36</width>
-        <height>792</height>
+        <height>900</height>
         <texturesliderbackground>-</texturesliderbackground>
         <texturesliderbar>-</texturesliderbar>
         <texturesliderbarfocus>-</texturesliderbarfocus>
