@@ -435,14 +435,13 @@
       <label>31965</label>
     </control>
     <control type="radiobutton" id="9147" description="View 52">
-      <visible>false</visible>
-      <include>9000ViewButtons</include>
+      <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(episodes) | Container.Content(albums) | Container.Content(artists)</visible>
+	  <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(52)</onclick>
       <selected>Control.IsVisible(52)</selected>
       <label>537</label>
     </control>
     <control type="radiobutton" id="9148" description="View 52 Movies">
-      <visible>false</visible>
       <visible>Control.IsVisible(52) + Container.Content(Movies)</visible>
       <font>ListDetails</font>
       <include>9000SysButtons</include>
@@ -451,7 +450,6 @@
       <label>- $LOCALIZE[20445]</label>
     </control>
     <control type="radiobutton" id="9149" description="View 52 TV">
-      <visible>false</visible>
       <visible>Control.IsVisible(52) + Container.Content(TVShows)</visible>
       <font>ListDetails</font>
       <include>9000SysButtons</include>
@@ -460,7 +458,6 @@
       <label>- $LOCALIZE[20445]</label>
     </control>
     <control type="radiobutton" id="9150" description="View 52 Episodes">
-      <visible>false</visible>
       <visible>Control.IsVisible(52) + Container.Content(Episodes)</visible>
       <font>ListDetails</font>
       <include>9000SysButtons</include>
@@ -469,12 +466,19 @@
       <label>- $LOCALIZE[20445]</label>
     </control>
     <control type="radiobutton" id="9151" description="View 52 Episodes">
-      <visible>false</visible>
       <visible>Control.IsVisible(52) + Container.Content(Albums)</visible>
       <font>ListDetails</font>
       <include>9000SysButtons</include>
       <onclick>Skin.ToggleSetting(52_Albums_UseFanart)</onclick>
       <selected>Skin.HasSetting(52_Albums_UseFanart)</selected>
+      <label>- $LOCALIZE[20445]</label>
+    </control>
+	<control type="radiobutton" id="9152" description="View 52 Episodes">
+      <visible>Control.IsVisible(52) + Container.Content(artists)</visible>
+      <font>ListDetails</font>
+      <include>9000SysButtons</include>
+      <onclick>Skin.ToggleSetting(52_Artists_UseFanart)</onclick>
+      <selected>Skin.HasSetting(52_Artists_UseFanart)</selected>
       <label>- $LOCALIZE[20445]</label>
     </control>
     <control type="radiobutton" id="9153" description="View 51">
@@ -738,8 +742,13 @@
     </control>
   </include>
   <include name="Fanart_Art">
-    <control type="multiimage">
-      <visible>Window.IsActive(MyPics.xml)</visible>
+    <control type="image" description="FA">
+       <visible>Control.IsVisible(52) Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(55) | [Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]</visible> 
+	   <include>BG.Defaults</include>
+        <texture>img/FS_BG.png</texture>
+      </control>
+	  <control type="multiimage">
+      <visible>Window.IsActive(MyPics.xml) + ![Control.IsVisible(53) | Control.IsVisible(55)]</visible>
       <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Pictures.Art]</imagepath>
     </control>
@@ -749,11 +758,7 @@
       <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Fanart.Art]</imagepath>
     </control>
-	<control type="image" description="FA">
-        <visible>!Window.IsActive(MyPics.xml) + [Control.IsVisible(53) | Control.IsVisible(55)]</visible>
-		<include>BG.Defaults</include>
-        <texture>img/FS_BG.png</texture>
-      </control>
+	
     <control type="group" description="FA slideshow INFO">
       <visible>!Window.IsActive(MyPics.xml)</visible>
       <visible>[Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]</visible>
@@ -773,8 +778,8 @@
         <texture border="150,0,0,0">info/InfoRightPanelTop2.png</texture>
       </control>
     </control>
-    <control type="group" description="Control 55 - control 53 viz 53_XML">
-      <visible>Control.IsVisible(55)</visible>
+    <control type="group" description="Control 55 nad 52 - control 53 viz 53_XML">
+      <visible>Control.IsVisible(52) | Control.IsVisible(55)</visible>
       <control type="image" description="Footer Dim BG">
         <posx>0</posx>
         <posy>1017</posy>

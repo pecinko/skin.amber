@@ -22,7 +22,7 @@
         <texture flipy="true" border="44,0,44,0">dialogs/BusyBG.png</texture>
       </control>
       <control type="label" id="30" description="Header Label">
-        <posx>120</posx>
+        <posx>132</posx>
         <posy>2</posy>
         <width>560</width>
         <height>20</height>
@@ -30,7 +30,7 @@
         <align>left</align>
       </control>
       <control type="label" id="31" description="Current Directory Label">
-        <posx>120</posx>
+        <posx>132</posx>
         <posy>20</posy>
         <width>560</width>
         <height>30</height>
@@ -39,9 +39,9 @@
         <haspath>true</haspath>
       </control>
 	  <control type="label" id="1" description="Progress label">
-        <posx>42</posx>
+        <posx>36</posx>
         <posy>2</posy>
-        <width>70</width>
+        <width>92</width>
         <height>50</height>
         <align>center</align>
 		<font>Progress</font>
