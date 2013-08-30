@@ -19,44 +19,83 @@
         <itemlayout condition="Container.Content(TvShows) + Skin.HasSetting(53_UseBanners)" height="230" width="900">
           <control type="image">
             <posx>30</posx>
-            <posy>24</posy>
-            <width>834</width>
-            <height>153</height>
+            <posy>21</posy>
+            <width>830</width>
+            <height>144</height>
             <include>ThumbBorderInside</include>
           </control>
           <control type="image">
             <posx>30</posx>
-            <posy>24</posy>
-            <width>834</width>
-            <height>153</height>
+            <posy>21</posy>
+            <width>830</width>
+            <height>144</height>
             <texture background="true">$VAR[Banner]</texture>
-            <aspectratio>keep</aspectratio>
+            <aspectratio>stretch</aspectratio>
+          </control>
+		  <control type="group">
+            <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+			<control type="image" description="Label2 BG">
+              <posx>639</posx>
+              <posy>177</posy>
+              <width>225</width>
+              <height>42</height>
+              <texture border="9">img/WhiteRoundedT.png</texture>
+            </control>
+            <control type="label" description="l2">
+              <posx>751</posx>
+              <posy>177</posy>
+              <height>42</height>
+              <width>225</width>
+              <font>GridItems</font>
+              <align>center</align>
+              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
+            </control>
           </control>
         </itemlayout>
         <focusedlayout condition="Container.Content(TvShows) + Skin.HasSetting(53_UseBanners)" height="230" width="900">
           <control type="image">
             <posx>30</posx>
-            <posy>24</posy>
-            <width>834</width>
-            <height>153</height>
+            <posy>21</posy>
+            <width>830</width>
+            <height>144</height>
             <include>ThumbBorderInside</include>
           </control>
           <control type="image">
             <posx>30</posx>
-            <posy>24</posy>
-            <width>834</width>
-            <height>153</height>
+            <posy>21</posy>
+            <width>830</width>
+            <height>144</height>
             <texture background="true">$VAR[Banner]</texture>
-            <aspectratio>keep</aspectratio>
+            <aspectratio>stretch</aspectratio>
           </control>
           <control type="image">
             <posx>30</posx>
-            <posy>24</posy>
-            <width>834</width>
-            <height>153</height>
+            <posy>21</posy>
+            <width>830</width>
+            <height>144</height>
             <texture border="25">img/Frame.png</texture>
             <bordersize>-27</bordersize>
             <aspectratio>stretch</aspectratio>
+          </control>
+		  <control type="group">
+            <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+			<control type="image" description="Label2 BG">
+              <posx>639</posx>
+              <posy>177</posy>
+              <width>225</width>
+              <height>42</height>
+              <texture border="9">img/WhiteRoundedT.png</texture>
+            </control>
+            <control type="label" description="l2">
+              <posx>751</posx>
+              <posy>177</posy>
+              <height>42</height>
+              <width>225</width>
+              <font>GridItems</font>
+              <textcolor>Orange</textcolor>
+              <align>center</align>
+               <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
+            </control>
           </control>
         </focusedlayout>
         <itemlayout condition="!Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="420" width="257">
