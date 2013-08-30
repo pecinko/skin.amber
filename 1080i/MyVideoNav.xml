@@ -363,6 +363,12 @@
             <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
           </control>
         </control>
+		<control type="image" description="Rating">
+            <visible>Container.Content(Tvshows)</visible>
+			<posx>-3</posx>
+            <posy>639</posy>
+            <include>Stars</include>
+          </control>
       </control>
     </control>
     <!-- GRID 53 -->
