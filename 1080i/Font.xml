@@ -50,7 +50,7 @@
 	<font>
       <name>GridItems</name>
       <filename>UbuntuCaps.ttf</filename>
-      <size>20</size>
+      <size>22</size>
 	</font>
 	<font>
       <name>Progress</name>
@@ -344,7 +344,7 @@
 	<font>
       <name>GridItems</name>
       <filename>Arial.ttf</filename>
-      <size>20</size>
+      <size>21</size>
 	</font>
 	<font>
       <name>Progress</name>
