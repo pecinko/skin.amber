@@ -48,6 +48,11 @@
       <size>19</size>
 	</font>
 	<font>
+      <name>GridItems</name>
+      <filename>UbuntuCaps.ttf</filename>
+      <size>20</size>
+	</font>
+	<font>
       <name>Progress</name>
       <filename>BebasNeue.ttf</filename>
       <size>46</size>
@@ -335,6 +340,11 @@
       <name>ExtProgressBar2</name>
       <filename>Arial.ttf</filename>
       <size>19</size>
+	</font>
+	<font>
+      <name>GridItems</name>
+      <filename>Arial.ttf</filename>
+      <size>20</size>
 	</font>
 	<font>
       <name>Progress</name>
