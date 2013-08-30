@@ -115,7 +115,8 @@
           </control>
           <control type="group">
             <control type="image" description="Label2 BG">
-              <posx>20</posx>
+              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
+			  <posx>20</posx>
               <posy>354</posy>
               <width>216</width>
               <height>42</height>
@@ -148,7 +149,7 @@
               <width>216</width>
               <font>GridItems</font>
               <align>center</align>
-              <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
             </control>
           </control>
         </itemlayout>
@@ -179,7 +180,8 @@
           </control>-->
           <control type="group">
             <control type="image" description="Label2 BG">
-              <posx>20</posx>
+              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
+			  <posx>20</posx>
               <posy>354</posy>
               <width>216</width>
               <height>42</height>
@@ -215,7 +217,7 @@
               <font>GridItems</font>
               <textcolor>Orange</textcolor>
               <align>center</align>
-              <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
             </control>
           </control>
         </focusedlayout>
@@ -237,7 +239,8 @@
           </control>
 		  <control type="group">
 			<control type="image" description="Label2 BG">
-              <posx>30</posx>
+              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
+			  <posx>30</posx>
               <posy>393</posy>
               <width>240</width>
               <height>42</height>
@@ -264,13 +267,13 @@
             </control>
             <control type="label" description="l2">
               <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-              <posx>128</posx>
-              <posy>354</posy>
+              <posx>150</posx>
+              <posy>393</posy>
               <height>42</height>
-              <width>216</width>
+              <width>240</width>
               <font>GridItems</font>
               <align>center</align>
-              <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
             </control>
           </control>
         </itemlayout>
@@ -302,7 +305,8 @@
           </control>-->
 		  <control type="group">
 			<control type="image" description="Label2 BG">
-              <posx>30</posx>
+              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
+			  <posx>30</posx>
               <posy>393</posy>
               <width>240</width>
               <height>42</height>
@@ -331,14 +335,14 @@
             </control>
             <control type="label" description="l2">
               <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-              <posx>128</posx>
-              <posy>354</posy>
+              <posx>150</posx>
+              <posy>393</posy>
               <height>42</height>
-              <width>216</width>
+              <width>240</width>
               <font>GridItems</font>
               <textcolor>Orange</textcolor>
               <align>center</align>
-              <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
             </control>
           </control>
         </focusedlayout>
