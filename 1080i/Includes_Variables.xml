@@ -26,14 +26,6 @@
     <value condition="Player.HasAudio">$LOCALIZE[13350]</value>
     <value>$LOCALIZE[559]</value>
   </variable>
-  <variable name="Thumbs_52" description="Container 52 Thumbs">
-    <value condition="container.content(movies) + Skin.HasSetting(52_Movies_UseFanart)">$INFO[ListItem.Art(fanart)]</value>
-	<value condition="container.content(tvshows) + Skin.HasSetting(52_TV_UseFanart)">$INFO[ListItem.Art(fanart)]</value>
-	<value condition="container.content(episodes) + Skin.HasSetting(52_Episodes_UseFanart)">$INFO[ListItem.Art(fanart)]</value>
-	<value condition="container.content(albums) + Skin.HasSetting(52_Albums_UseFanart) + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-	<value condition="container.content(albums) + Skin.HasSetting(52_Albums_UseFanart) + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(Thumb)]</value>
-    <value>$INFO[ListItem.Art(Thumb)]</value>
-  </variable>
   <variable name="LibraryStats" description="Home page library statistics">
     <value condition="IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,[COLOR=Orange]  •  [/COLOR]]$LOCALIZE[16101]$INFO[Window(Home).Property(MusicVideos.Unwatched), ]</value>
 	<value condition="!IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,[COLOR=Orange]  •  [/COLOR]]</value>
@@ -133,13 +125,6 @@
 	<value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureKeywords)">$INFO[ListItem.PictureKeywords]</value>
 	<value condition="Window.IsActive(MyPics.xml)">[COLOR=Grey]$LOCALIZE[21821]:[/COLOR][CR][CR]   $LOCALIZE[416]</value>
 	<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
-  </variable>
-  <variable name="52_Label2" description="Container 52 label2">
-    <value condition="SubString(ListItem.Path,videodb://1/7)">$LOCALIZE[20457]</value>
-    <value condition="IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0) + [Container.Content(TVShows) | Container.Content(Seasons)]">[COLOR=Orange]$INFO[ListItem.Property(UnwatchedEpisodes)][/COLOR]</value>
-	<value condition="container.content(musicvideos)">$INFO[ListItem.Artist]</value>
-	<value condition="Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureResolution]</value>
-	<value condition="![Container.Content(TVShows) | Container.Content(Seasons)]">$INFO[ListItem.Label2]</value>
   </variable>
   <variable name="Stars" description="Star Rating">
     <value condition="![Container.Content(albums) | IsEmpty(ListItem.StarRating)]">$INFO[ListItem.StarRating]</value>

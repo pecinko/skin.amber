@@ -48,7 +48,7 @@
           <height>82</height>
           <font>Volume</font>
           <textcolor>White2</textcolor>
-		  <shadowcolor>Black</shadowcolor>
+		  <shadowcolor>ShadowDark</shadowcolor>
           <label>$INFO[Control.GetLabel(20)]</label>
         </control>
       </control>
