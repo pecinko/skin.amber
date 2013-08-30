@@ -743,7 +743,7 @@
   </include>
   <include name="Fanart_Art">
     <control type="image" description="FA">
-       <visible>Control.IsVisible(52) Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(55) | [Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]</visible> 
+       <visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(55) | [Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]</visible> 
 	   <include>BG.Defaults</include>
         <texture>img/FS_BG.png</texture>
       </control>
