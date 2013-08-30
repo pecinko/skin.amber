@@ -18,6 +18,8 @@
       <onright>111</onright>
       <onup>300</onup>
       <ondown>300</ondown>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">111</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Addons</include>
       <content>
@@ -43,6 +45,8 @@
       <onright>211</onright>
       <onup>300</onup>
       <ondown>300</ondown>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">211</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Addons</include>
       <content>
@@ -67,7 +71,9 @@
       <visible>Container(300).HasFocus(4)</visible>
       <onright>311</onright>
       <onup>300</onup>
-      <ondown condition="Control.IsVisible(312)">312</ondown>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">311</onleft>
+	  <ondown condition="Control.IsVisible(312)">312</ondown>
       <ondown condition="!Control.IsVisible(312)">300</ondown>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Posters</include>
@@ -95,7 +101,9 @@
       <onup condition="Control.IsVisible(311)">311</onup>
       <onup condition="!Control.IsVisible(311)">300</onup>
       <ondown>300</ondown>
-      <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">312</onleft>
+	  <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Posters</include>
       <content>
         <include condition="SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">RecommendedMovieContent</include>
@@ -123,6 +131,8 @@
       <onup>300</onup>
       <ondown condition="Control.IsVisible(515)">515</ondown>
       <ondown condition="!Control.IsVisible(515)">300</ondown>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Posters</include>
       <content>
@@ -148,6 +158,8 @@
       <onright>515</onright>
       <onup condition="Control.IsVisible(514)">514</onup>
       <onup condition="!Control.IsVisible(514)">300</onup>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
       <ondown>300</ondown>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Posters</include>
@@ -175,6 +187,8 @@
       <onup>300</onup>
       <ondown condition="Control.IsVisible(413)">413</ondown>
       <ondown condition="!Control.IsVisible(413)">300</ondown>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">411</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Episodes</include>
       <content>
@@ -201,6 +215,8 @@
       <onup condition="Control.IsVisible(411)">411</onup>
       <onup condition="!Control.IsVisible(411)">300</onup>
       <ondown>300</ondown>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">413</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Episodes</include>
       <content>
@@ -226,6 +242,8 @@
       <visible></visible>
       <onright>511</onright>
       <onup>300</onup>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">511</onleft>
       <ondown condition="Control.IsVisible(513)">513</ondown>
       <ondown condition="!Control.IsVisible(513)">300</ondown>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
@@ -254,6 +272,8 @@
       <onup condition="Control.IsVisible(511)">511</onup>
       <onup condition="!Control.IsVisible(511)">300</onup>
       <ondown>300</ondown>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">513</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Albums</include>
       <content>
@@ -279,6 +299,8 @@
       <onright>512</onright>
       <onup>300</onup>
       <ondown>300</ondown>
+	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+	  <onleft condition="!Skin.HasSetting(VerticalHome)">512</onleft>
       <include>RecentlyAdded_Albums</include>
       <content>
         <include>RecentMusicVideoContent</include>
