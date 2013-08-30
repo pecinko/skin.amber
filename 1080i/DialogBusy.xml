@@ -23,9 +23,9 @@
         <height>70</height>
         <align>center</align>
 		<textcolor>Orange</textcolor>
-        <label>$LOCALIZE[31979]$INFO[Control.GetLabel(10), ,%]</label>
+        <label>$LOCALIZE[31979]</label>
       </control>
-	  <control type="progress" id="10" description="Progress bar">
+	  <!--<control type="progress" id="10" description="Progress bar">
         <posx>708</posx>
         <posy>550</posy>
         <width>150</width>
@@ -34,7 +34,7 @@
         <midtexture>-</midtexture>
         <righttexture>-</righttexture>
         <lefttexture>-</lefttexture>
-      </control>
+      </control>-->
     </control>
   </controls>
 </window>
