@@ -44,6 +44,7 @@
   <string id="31392">(2/2) Arial based</string>
   
   <!-- Extra Unified PVR labels -->
+  <string id="31500">Live TV</string>
   <string id="31501">Scheduled Time</string>
   <string id="31503">Add Group</string>
   <string id="31504">Rename Group</string>
@@ -91,5 +92,5 @@
   <string id="31992">Banner (wide) thumbs</string>
   <string id="31993">Not used - click to customize</string>
   <string id="31994">Use vertical main menu on Home screen</string>
-  <string id="31995">Home layout</string>
+  <string id="31995">Home layout</string> 
 </strings>
