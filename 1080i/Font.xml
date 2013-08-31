@@ -82,11 +82,6 @@
       <size>28</size>
     </font>
     <font>
-      <name>Episode</name>
-      <filename>BebasNeue.ttf</filename>
-      <size>24</size>
-    </font>
-    <font>
       <name>ItemCount</name>
       <filename>UbuntuCaps.ttf</filename>
       <size>22</size>
@@ -95,11 +90,6 @@
       <name>Sublist</name>
       <filename>UbuntuCaps.ttf</filename>
       <size>30</size>
-    </font>
-    <font>
-      <name>MainLabel</name>
-      <filename>UbuntuCaps.ttf</filename>
-      <size>33</size>
     </font>
     <font>
       <name>MainLabelBig</name>
@@ -136,41 +126,6 @@
       <color>White</color>
     </font>
     <font>
-      <name>size14</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>21</size>
-    </font>
-    <font>
-      <name>size15</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>22</size>
-    </font>
-    <font>
-      <name>size15</name>
-      <filename>Arial.ttf</filename>
-      <size>22</size>
-    </font>
-    <font>
-      <name>size16</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>24</size>
-    </font>
-    <font>
-      <name>size17</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>26</size>
-    </font>
-    <font>
-      <name>size18</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>27</size>
-    </font>
-    <font>
       <name>InfoPlot</name>
       <filename>Default.ttf</filename>
       <style>bold</style>
@@ -181,18 +136,6 @@
       <name>InfoPath</name>
       <filename>UbuntuCaps.ttf</filename>
       <size>22</size>
-    </font>
-    <font>
-      <name>size19</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>28</size>
-    </font>
-    <font>
-      <name>size20</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>30</size>
     </font>
     <font>
       <name>size22</name>
@@ -215,11 +158,6 @@
       <size>25</size>
     </font>
     <font>
-      <name>52Title</name>
-      <filename>UbuntuCaps.ttf</filename>
-      <size>36</size>
-    </font>
-    <font>
       <name>FManager</name>
       <filename>Arial.ttf</filename>
       <size>26</size>
@@ -235,61 +173,14 @@
       <size>26</size>
     </font>
     <font>
-      <name>size22B</name>
-      <filename>UbuntuCaps.ttf</filename>
-      <style>bold</style>
-      <size>32</size>
-    </font>
-    <font>
       <name>Keyboard</name>
       <filename>Arial.ttf</filename>
       <size>30</size>
     </font>
     <font>
-      <name>size23</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>34</size>
-    </font>
-    <font>
-      <name>size24</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>36</size>
-    </font>
-    <font>
       <name>size24B</name>
       <filename>UbuntuCaps.ttf</filename>
       <size>36</size>
-    </font>
-    <font>
-      <name>size25</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>38</size>
-    </font>
-    <font>
-      <name>size26</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>39</size>
-    </font>
-    <font>
-      <name>size26B</name>
-      <filename>UbuntuCaps.ttf</filename>
-      <size>39</size>
-    </font>
-    <font>
-      <name>size28</name>
-      <filename>Default.ttf</filename>
-      <style>bold</style>
-      <size>42</size>
-    </font>
-    <font>
-      <name>size28B</name>
-      <filename>UbuntuCaps.ttf</filename>
-      <size>42</size>
-      <style>bold</style>
     </font>
   </fontset>
   <fontset id="Arial based" unicode="true" idloc="31392">
@@ -371,11 +262,6 @@
       <size>32</size>
     </font>
     <font>
-      <name>Episode</name>
-      <filename>Arial.ttf</filename>
-      <size>24</size>
-    </font>
-    <font>
       <name>ItemCount</name>
       <filename>Arial.ttf</filename>
       <size>22</size>
@@ -384,11 +270,6 @@
       <name>Sublist</name>
       <filename>Arial.ttf</filename>
       <size>30</size>
-    </font>
-    <font>
-      <name>MainLabel</name>
-      <filename>Arial.ttf</filename>
-      <size>33</size>
     </font>
     <font>
       <name>MainLabelBig</name>
@@ -425,41 +306,6 @@
       <color>White</color>
     </font>
     <font>
-      <name>size14</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>21</size>
-    </font>
-    <font>
-      <name>size15</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>22</size>
-    </font>
-    <font>
-      <name>size15</name>
-      <filename>Arial.ttf</filename>
-      <size>22</size>
-    </font>
-    <font>
-      <name>size16</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>24</size>
-    </font>
-    <font>
-      <name>size17</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>26</size>
-    </font>
-    <font>
-      <name>size18</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>27</size>
-    </font>
-    <font>
       <name>InfoPlot</name>
       <filename>Arial.ttf</filename>
       <size>28</size>
@@ -469,18 +315,6 @@
       <name>InfoPath</name>
       <filename>Arial.ttf</filename>
       <size>22</size>
-    </font>
-    <font>
-      <name>size19</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>28</size>
-    </font>
-    <font>
-      <name>size20</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>30</size>
     </font>
     <font>
       <name>size22</name>
@@ -503,11 +337,6 @@
       <size>25</size>
     </font>
     <font>
-      <name>52Title</name>
-      <filename>Arial.ttf</filename>
-      <size>36</size>
-    </font>
-    <font>
       <name>FManager</name>
       <filename>Arial.ttf</filename>
       <size>26</size>
@@ -523,61 +352,14 @@
       <size>26</size>
     </font>
     <font>
-      <name>size22B</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>32</size>
-    </font>
-    <font>
       <name>Keyboard</name>
       <filename>Arial.ttf</filename>
       <size>30</size>
     </font>
     <font>
-      <name>size23</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>34</size>
-    </font>
-    <font>
-      <name>size24</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>36</size>
-    </font>
-    <font>
       <name>size24B</name>
       <filename>Arial.ttf</filename>
       <size>36</size>
-    </font>
-    <font>
-      <name>size25</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>38</size>
-    </font>
-    <font>
-      <name>size26</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>39</size>
-    </font>
-    <font>
-      <name>size26B</name>
-      <filename>Arial.ttf</filename>
-      <size>39</size>
-    </font>
-    <font>
-      <name>size28</name>
-      <filename>Arial.ttf</filename>
-      <style>bold</style>
-      <size>42</size>
-    </font>
-    <font>
-      <name>size28B</name>
-      <filename>Arial.ttf</filename>
-      <size>42</size>
-      <style>bold</style>
     </font>
   </fontset>
 </fonts>
