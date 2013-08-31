@@ -585,7 +585,7 @@
         <posx>60</posx>
         <posy>100</posy>
         <control type="group" description="Info with Fanart">
-          <visible>!IsEmpty(ListItem.Art(fanart)</visible>
+          <visible>!IsEmpty(ListItem.Art(fanart))</visible>
           <control type="image" description="FA">
             <posx>0</posx>
             <posy>21</posy>

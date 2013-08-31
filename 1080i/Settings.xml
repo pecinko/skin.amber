@@ -248,7 +248,7 @@
               <onclick>activatewindow(SystemSettings)</onclick>
             </item>
             <item id="11" description="PVR">
-              <label>PVR</label>
+              <label>$LOCALIZE[31500]</label>
               <onclick>activateWindow(PVRSettings)</onclick>
             </item>
           </content>
