@@ -124,7 +124,7 @@
             <posy>30</posy>
             <width>234</width>
             <height>351</height>
-            <bordersize>-17</bordersize>
+            <bordersize>-15</bordersize>
             <include>PosterThumbBG</include>
           </control>
           <control type="image">
@@ -148,7 +148,7 @@
             <posy>30</posy>
             <width>234</width>
             <height>351</height>
-            <bordersize>-17</bordersize>
+            <bordersize>-15</bordersize>
             <include>PosterThumbFO</include>
           </control>
           <control type="image">

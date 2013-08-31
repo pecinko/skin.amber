@@ -321,11 +321,11 @@
     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
   </include>
   <include name="PosterThumbBG">
-    <bordersize>-15</bordersize>
+    <bordersize>-14</bordersize>
     <texture>thumbs/PosterBG_NF.png</texture>
   </include>
   <include name="PosterThumbFO">
-    <bordersize>-15</bordersize>
+    <bordersize>-14</bordersize>
     <texture>thumbs/PosterBG_FO.png</texture>
   </include>
   <include name="FullscreenInfoLabelMain">

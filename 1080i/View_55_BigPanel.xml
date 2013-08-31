@@ -37,7 +37,7 @@
         <itemlayout condition="container.content(MusicVideos) | Container.Content(tvshows) | Container.Content(Movies) | container.content(seasons)" height="450" width="282">
           <control type="image">
             <include>BigPanelPosterDimensions</include>
-            <bordersize>-17</bordersize>
+            <bordersize>-16</bordersize>
             <include>PosterThumbBG</include>
           </control>
           <control type="image">
@@ -55,7 +55,7 @@
         <focusedlayout condition="container.content(MusicVideos) | Container.Content(tvshows) | Container.Content(Movies) | container.content(seasons)" height="450" width="282">
           <control type="image">
             <include>BigPanelPosterDimensions</include>
-            <bordersize>-17</bordersize>
+            <bordersize>-16</bordersize>
             <include>PosterThumbFO</include>
           </control>
           <control type="image">

@@ -58,6 +58,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-13</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -75,6 +76,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-13</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -83,6 +85,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-13</bordersize>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
@@ -111,6 +114,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-13</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -128,6 +132,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-13</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -136,6 +141,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-13</bordersize>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
