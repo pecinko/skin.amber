@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">21</defaultcontrol>
   <coordinates>
@@ -37,7 +36,7 @@
           <posy>318</posy>
           <width>660</width>
           <height>60</height>
-		  <align>center</align>
+          <align>center</align>
           <textcolor>White2</textcolor>
           <font>Keyboard</font>
           <scroll>true</scroll>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">2</defaultcontrol>
   <include>OpenClose</include>
@@ -20,7 +19,7 @@
         <width>1140</width>
         <align>center</align>
         <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
-         <textcolor>Orange</textcolor>       
+        <textcolor>Orange</textcolor>
       </control>
       <control type="panel" id="11">
         <posx>66</posx>
@@ -92,21 +91,21 @@
           <description>Create Bookmark button</description>
           <label>$LOCALIZE[294]</label>
           <width>375</width>
-		  <align>center</align>
+          <align>center</align>
           <texturenofocus>-</texturenofocus>
         </control>
         <control type="button" id="3">
           <description>Clear Bookmark button</description>
           <label>$LOCALIZE[296]</label>
           <width>375</width>
-		  <align>center</align>
+          <align>center</align>
           <texturenofocus>-</texturenofocus>
         </control>
         <control type="button" id="4">
           <description>Clear Bookmark button</description>
           <label>$LOCALIZE[20406]</label>
           <width>375</width>
-		  <align>center</align>
+          <align>center</align>
           <texturenofocus>-</texturenofocus>
           <visible>videoplayer.content(episodes)</visible>
         </control>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="false">602</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
@@ -13,22 +12,22 @@
       <control type="group">
         <control type="group" description="Dialog Background">
           <control type="image" description="Background">
-		<posx>0</posx>
-        <posy>948</posy>
-        <width>1920</width>
-        <height>120</height>
-        <texture>img/BlackDotST2.png</texture>
-      </control>
-	  <control type="image" description="Background">
-		<posx>0</posx>
-        <posy>924</posy>
-        <width>1920</width>
-        <height>156</height>
-        <texture border="0,30,0,30">OSD/OSDBackground.png</texture>
-        <!--<colordiffuse>FFE2E2E2</colordiffuse>-->
-		<!--<colordiffuse>BBFFFFFF</colordiffuse>-->
-      </control>
-	    <control type="image">
+            <posx>0</posx>
+            <posy>948</posy>
+            <width>1920</width>
+            <height>120</height>
+            <texture>img/BlackDotST2.png</texture>
+          </control>
+          <control type="image" description="Background">
+            <posx>0</posx>
+            <posy>924</posy>
+            <width>1920</width>
+            <height>156</height>
+            <texture border="0,30,0,30">OSD/OSDBackground.png</texture>
+            <!--<colordiffuse>FFE2E2E2</colordiffuse>-->
+            <!--<colordiffuse>BBFFFFFF</colordiffuse>-->
+          </control>
+          <control type="image">
             <posx>610</posx>
             <posy>1027</posy>
             <width>700</width>
@@ -91,8 +90,8 @@
           <onleft>601</onleft>
           <onright>603</onright>
           <ondown>702</ondown>
-		  <onup>Close</onup>
-		  <onup>XBMC.ActivateWindow(142)</onup>
+          <onup>Close</onup>
+          <onup>XBMC.ActivateWindow(142)</onup>
           <onclick>PlayerControl(Play)</onclick>
         </control>
         <control type="button" id="603">
@@ -107,7 +106,7 @@
           <onleft>602</onleft>
           <onright>604</onright>
           <onup>Close</onup>
-		  <onup>XBMC.ActivateWindow(142)</onup>
+          <onup>XBMC.ActivateWindow(142)</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Stop)</onclick>
         </control>
@@ -142,7 +141,7 @@
           <onclick>PlayerControl(Next)</onclick>
         </control>
       </control>
-	  <control type="group" id="100">
+      <control type="group" id="100">
         <visible>VideoPlayer.Content(LiveTV)</visible>
         <posx>723</posx>
         <posy>140r</posy>
@@ -195,8 +194,8 @@
           <onleft>601</onleft>
           <onright>603</onright>
           <ondown>701</ondown>
-		  <onup>Close</onup>
-		  <onup>XBMC.ActivateWindow(142)</onup>
+          <onup>Close</onup>
+          <onup>XBMC.ActivateWindow(142)</onup>
           <onclick>PlayerControl(Play)</onclick>
         </control>
         <control type="button" id="603">
@@ -211,7 +210,7 @@
           <onleft>602</onleft>
           <onright>604</onright>
           <onup>Close</onup>
-		  <onup>XBMC.ActivateWindow(142)</onup>
+          <onup>XBMC.ActivateWindow(142)</onup>
           <ondown>701</ondown>
           <onclick>PlayerControl(Stop)</onclick>
         </control>
@@ -244,11 +243,11 @@
           <onright>600</onright>
           <onup>noop</onup>
           <ondown>701</ondown>
-           <onclick>ActivateWindow(PVROSDGuide)</onclick>
+          <onclick>ActivateWindow(PVROSDGuide)</onclick>
           <onclick>Dialog.Close(VideoOSD)</onclick>
         </control>
       </control>
-	  <control type="group" id="101">
+      <control type="group" id="101">
         <visible>!VideoPlayer.Content(LiveTV)</visible>
         <posx>765</posx>
         <posy>81r</posy>
@@ -256,7 +255,7 @@
         <ondown>609</ondown>
         <control type="togglebutton" id="700">
           <enable>VideoPlayer.HasMenu</enable>
-		  <posx>0</posx>
+          <posx>0</posx>
           <posy>4</posy>
           <width>90</width>
           <height>98</height>
@@ -264,9 +263,9 @@
           <font>-</font>
           <texturefocus>VideoOSD/OSDDVDFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDDVDNF.png</texturenofocus>
-		  <alttexturenofocus>VideoOSD/OSDDVDDisabled.png</alttexturenofocus>
+          <alttexturenofocus>VideoOSD/OSDDVDDisabled.png</alttexturenofocus>
           <usealttexture>!VideoPlayer.HasMenu</usealttexture>
-		  <onleft>704</onleft>
+          <onleft>704</onleft>
           <onright>701</onright>
           <onup>602</onup>
           <ondown>Close</ondown>
@@ -299,7 +298,7 @@
           <texturenofocus>VideoOSD/OSDSubtitlesNF.png</texturenofocus>
           <alttexturefocus>VideoOSD/OSDSubtitlesFO.png</alttexturefocus>
           <alttexturenofocus>VideoOSD/OSDSubtitlesNF.png</alttexturenofocus>
-		  <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
+          <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
           <onleft>701</onleft>
           <onright>703</onright>
           <onup>602</onup>
@@ -308,7 +307,7 @@
           <onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
           <altclick>Close</altclick>
           <altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
-		  <altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
+          <altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
         </control>
         <control type="button" id="703">
           <posx>214</posx>
@@ -341,7 +340,7 @@
           <onclick>ActivateWindow(VideoBookmarks)</onclick>
         </control>
       </control>
-	  <control type="group" id="101">
+      <control type="group" id="101">
         <visible>VideoPlayer.Content(LiveTV)</visible>
         <posx>800</posx>
         <posy>81r</posy>
@@ -349,7 +348,7 @@
         <ondown>609</ondown>
         <control type="button" id="700">
           <enable>Player.CanRecord</enable>
-		  <posx>0</posx>
+          <posx>0</posx>
           <posy>4</posy>
           <width>90</width>
           <height>98</height>
@@ -357,7 +356,7 @@
           <font>-</font>
           <texturefocus>VideoOSD/OSDrecordFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDRecordNF.png</texturenofocus>
-  		  <onleft>704</onleft>
+          <onleft>704</onleft>
           <onright>701</onright>
           <onup>602</onup>
           <ondown>Close</ondown>
@@ -372,7 +371,7 @@
           <label>$LOCALIZE[31356]</label>
           <altlabel>$LOCALIZE[31356]</altlabel>
           <font>-</font>
-		  <texturefocus>VideoOSD/OSDBookmarksFO.png</texturefocus>
+          <texturefocus>VideoOSD/OSDBookmarksFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDBookmarksNF.png</texturenofocus>
           <onleft>700</onleft>
           <onright>702</onright>
@@ -380,15 +379,15 @@
           <ondown>Close</ondown>
           <onclick>Dialog.Close(VideoOSD)</onclick>
           <onclick>ActivateWindow(Teletext)</onclick>
-		  <onclick>ActivateWindow(Teletext)</onclick>
-	    </control>
+          <onclick>ActivateWindow(Teletext)</onclick>
+        </control>
         <control type="button" id="702">
           <posx>153</posx>
           <posy>8</posy>
           <width>81</width>
           <height>90</height>
           <label>$LOCALIZE[13395]</label>
-		  <font>-</font>
+          <font>-</font>
           <texturefocus>VideoOSD/OSDVideoFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDVideoNF.png</texturenofocus>
           <onleft>701</onleft>
@@ -414,7 +413,7 @@
         </control>
         <control type="button" id="704">
           <visible>false</visible>
-		  <posx>296</posx>
+          <posx>296</posx>
           <posy>5</posy>
           <width>87</width>
           <height>93</height>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol>52</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -9,7 +8,7 @@
       <include>OpenClose</include>
       <posx>315</posx>
       <posy>320</posy>
-	  <width>1300</width>
+      <width>1300</width>
       <height>480</height>
       <control type="image">
         <posx>-21</posx>

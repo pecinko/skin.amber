@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1114">
   <defaultcontrol always="true">9000</defaultcontrol>
   <include>DialogOpenClose</include>
@@ -6,11 +5,11 @@
     <control type="group" description="All dialog content">
       <animation type="WindowOpen">
         <effect type="zoom" start="95" end="100" center="960,540" time="200" />
-        <effect type="fade" start="80" end="100" time="200"/>
+        <effect type="fade" start="80" end="100" time="200" />
       </animation>
       <animation type="WindowClose">
         <effect type="zoom" start="100" end="95" center="960,540" time="100" />
-        <effect type="fade" start="100" end="0" time="100"/>
+        <effect type="fade" start="100" end="0" time="100" />
       </animation>
       <control type="image" description="Menu BG">
         <posx>681</posx>

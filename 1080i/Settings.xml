@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">9000</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -10,10 +9,10 @@
       <animation effect="fade" time="250" condition="!Window.Previous(SettingsCategory.xml)">WindowOpen</animation>
       <animation effect="fade" time="250" condition="!Window.Next(SettingsCategory.xml)">WindowClose</animation>
       <control type="image">
-      <include>Panel_Size</include>
-      <texture>dialogs/AddonSettingsBG.png</texture>
-    </control>
-	<!--<control type="label">
+        <include>Panel_Size</include>
+        <texture>dialogs/AddonSettingsBG.png</texture>
+      </control>
+      <!--<control type="label">
         <posx>100</posx>
         <posy>120</posy>
         <width>240</width>
@@ -87,7 +86,7 @@
             <width>301</width>
             <height>60</height>
             <textcolor>Orange</textcolor>
-			<label>$INFO[ListItem.Label]</label>
+            <label>$INFO[ListItem.Label]</label>
           </control>
         </focusedlayout>
         <content>
@@ -103,7 +102,7 @@
             <label>$LOCALIZE[31995]</label>
             <onclick>noop</onclick>
           </item>
-		  <item id="3" description="Home menu">
+          <item id="3" description="Home menu">
             <label>$LOCALIZE[31974]</label>
             <onclick>noop</onclick>
           </item>
@@ -111,7 +110,7 @@
             <label>$LOCALIZE[31976]</label>
             <onclick>noop</onclick>
           </item>
-		  <item id="4" description="Backgrounds">
+          <item id="4" description="Backgrounds">
             <label>$LOCALIZE[33069]</label>
             <onclick>noop</onclick>
           </item>
@@ -119,7 +118,7 @@
             <label>$LOCALIZE[31990]</label>
             <onclick>noop</onclick>
           </item>
-		  <include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Section.Label</include> 
+          <include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Section.Label</include>
         </content>
       </control>
       <control type="group" id="9010">
@@ -215,8 +214,7 @@
             </control>
           </focusedlayout>
           <content>
-            
-		   <item id="2" description="Appearance">
+            <item id="2" description="Appearance">
               <label>$LOCALIZE[480]</label>
               <onclick>activatewindow(AppearanceSettings)</onclick>
             </item>
@@ -232,16 +230,16 @@
               <label>$LOCALIZE[1]</label>
               <onclick>activatewindow(PicturesSettings)</onclick>
             </item>
-          <item id="1" description="Addons">
-            <label>$LOCALIZE[24001]</label>
-            <onclick>ActivateWindow(AddonBrowser,root)</onclick>
-           </item>
-		   <item id="7" description="Plexbmc config">
-            <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-			<label>PleXBMC</label>
-            <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
-           </item>
-		     <item id="8" description="Service">
+            <item id="1" description="Addons">
+              <label>$LOCALIZE[24001]</label>
+              <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+            </item>
+            <item id="7" description="Plexbmc config">
+              <visible>System.HasAddon(plugin.video.plexbmc)</visible>
+              <label>PleXBMC</label>
+              <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
+            </item>
+            <item id="8" description="Service">
               <label>$LOCALIZE[14036]</label>
               <onclick>activatewindow(ServiceSettings)</onclick>
             </item>
@@ -256,42 +254,40 @@
           </content>
         </control>
         <control type="grouplist" id="500">
-            <visible>Container(9000).HasFocus(1)</visible>
-			<posx>1534</posx>
-            <posy>210</posy>
-		    <width>322</width>
-			<height>600</height>
-			<onup>500</onup>
-            <ondown>500</ondown>
-			<onleft>9001</onleft>
-			<itemgap>0</itemgap>
-			<control type="button" id="501" description="Wether">
-              <font>ListDetails</font>
-			  <width>322</width>
-              <label>$LOCALIZE[8]</label>
-              <onclick>activatewindow(WeatherSettings)</onclick>
-            </control>
-			<control type="button" id="502" description="Profiles">
-              <font>ListDetails</font>
-			  <width>322</width>
-              <label>$LOCALIZE[13200]</label>
-              <onclick>ActivateWindow(Profiles)</onclick>
-            </control>
-			<control type="button" id="503" description="File manager">
-              <font>ListDetails</font>
-			  <width>322</width>
-              <label>$LOCALIZE[10003]</label>
-              <onclick>ActivateWindow(filemanager)</onclick>
-            </control>
-            <control type="button" id="504" description="Sys info">
-              <font>ListDetails</font>
-			  <width>322</width>
-              <label>$LOCALIZE[138]</label>
-              <onclick>activatewindow(systeminfo)</onclick>
-            </control>
-			
-			
-	      </control>
+          <visible>Container(9000).HasFocus(1)</visible>
+          <posx>1534</posx>
+          <posy>210</posy>
+          <width>322</width>
+          <height>600</height>
+          <onup>500</onup>
+          <ondown>500</ondown>
+          <onleft>9001</onleft>
+          <itemgap>0</itemgap>
+          <control type="button" id="501" description="Wether">
+            <font>ListDetails</font>
+            <width>322</width>
+            <label>$LOCALIZE[8]</label>
+            <onclick>activatewindow(WeatherSettings)</onclick>
+          </control>
+          <control type="button" id="502" description="Profiles">
+            <font>ListDetails</font>
+            <width>322</width>
+            <label>$LOCALIZE[13200]</label>
+            <onclick>ActivateWindow(Profiles)</onclick>
+          </control>
+          <control type="button" id="503" description="File manager">
+            <font>ListDetails</font>
+            <width>322</width>
+            <label>$LOCALIZE[10003]</label>
+            <onclick>ActivateWindow(filemanager)</onclick>
+          </control>
+          <control type="button" id="504" description="Sys info">
+            <font>ListDetails</font>
+            <width>322</width>
+            <label>$LOCALIZE[138]</label>
+            <onclick>activatewindow(systeminfo)</onclick>
+          </control>
+        </control>
         <!--9000 2-->
         <control type="panel" id="9002">
           <visible>Container(9000).HasFocus(2)</visible>
@@ -390,25 +386,25 @@
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(Hide_Watched_Marks)</onclick>
             </item>
-			<item id="0" description="Watched Marks">
+            <item id="0" description="Watched Marks">
               <visible>!Skin.HasSetting(Hide_Watched_Marks)</visible>
               <label>$LOCALIZE[31981]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Hide_Watched_Marks)</onclick>
             </item>
-			<item id="1" description="UnWatched Marks">
+            <item id="1" description="UnWatched Marks">
               <visible>Skin.HasSetting(Hide_Unwatched_Marks)</visible>
               <label>$LOCALIZE[31980]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
             </item>
-			<item id="1" description="UnWatched Marks">
+            <item id="1" description="UnWatched Marks">
               <visible>!Skin.HasSetting(Hide_Unwatched_Marks)</visible>
               <label>$LOCALIZE[31980]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
             </item>
-			<item id="2" description="AutoScroll">
+            <item id="2" description="AutoScroll">
               <visible>Skin.HasSetting(AutoScroll)</visible>
               <label>$LOCALIZE[20189]</label>
               <label2>$LOCALIZE[107]</label2>
@@ -430,16 +426,16 @@
               <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
               <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
             </item>
-           <item id="11" description="Artist slideshow">
+            <item id="11" description="Artist slideshow">
               <visible>System.HasAddon(script.artistslideshow)</visible>
-			  <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
+              <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
               <label>$LOCALIZE[31969]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
             </item>
             <item id="11" description="Artist slideshow">
               <visible>System.HasAddon(script.artistslideshow)</visible>
-			  <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
+              <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
               <label>$LOCALIZE[31969]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
@@ -488,35 +484,35 @@
             </item>
           </content>
         </control>
-		<control type="group">
-		<visible>Container(9000).HasFocus(2)</visible>
-		<control type="image" description="Watched marks">
-        <posx>1550</posx>
-        <posy>210</posy>
-        <width>26</width>
-        <height>60</height>
-		<aspectratio>keep</aspectratio>
-		<texture>OverlayWatched.png</texture>
-		</control>
-		<control type="image" description="UnWatched marks">
-        <posx>1550</posx>
-        <posy>270</posy>
-        <width>26</width>
-        <height>60</height>
-		<aspectratio>keep</aspectratio>
-		<texture>OverlayUnwatched.png</texture>
-      </control>
-	  <control type="image" description="UnWatched marks">
-        <posx>1590</posx>
-        <posy>270</posy>
-        <width>26</width>
-        <height>60</height>
-		<aspectratio>keep</aspectratio>
-		<texture>overlay/OverlayUnwatched.png</texture>
-      </control>
-		</control>
+        <control type="group">
+          <visible>Container(9000).HasFocus(2)</visible>
+          <control type="image" description="Watched marks">
+            <posx>1550</posx>
+            <posy>210</posy>
+            <width>26</width>
+            <height>60</height>
+            <aspectratio>keep</aspectratio>
+            <texture>OverlayWatched.png</texture>
+          </control>
+          <control type="image" description="UnWatched marks">
+            <posx>1550</posx>
+            <posy>270</posy>
+            <width>26</width>
+            <height>60</height>
+            <aspectratio>keep</aspectratio>
+            <texture>OverlayUnwatched.png</texture>
+          </control>
+          <control type="image" description="UnWatched marks">
+            <posx>1590</posx>
+            <posy>270</posy>
+            <width>26</width>
+            <height>60</height>
+            <aspectratio>keep</aspectratio>
+            <texture>overlay/OverlayUnwatched.png</texture>
+          </control>
+        </control>
         <!-- 9000 3 -->
-		<control type="panel" id="9003">
+        <control type="panel" id="9003">
           <visible>Container(9000).HasFocus(3)</visible>
           <posx>390</posx>
           <posy>210</posy>
@@ -850,10 +846,9 @@
               <visible>Skin.HasSetting(Weather.Hide)</visible>
               <label>[COLOR=Grey]$LOCALIZE[8][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
-
               <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
             </item>
-			<item id="10" description="Settings">
+            <item id="10" description="Settings">
               <label>$LOCALIZE[5]</label>
               <label2>$LOCALIZE[31293]</label2>
               <thumb fallback="special://skin/backgrounds/System.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
@@ -1441,7 +1436,7 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.Reset(Hide.RecentlyAdded)</onclick>
             </item>
-			<item id="2" description="Configure service.skin.widgets">
+            <item id="2" description="Configure service.skin.widgets">
               <visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
               <label>$LOCALIZE[31964]</label>
               <onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
@@ -1458,7 +1453,7 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.Reset(Hide.Favourites)</onclick>
             </item>
-			<item id="3" description="Enable Addons">
+            <item id="3" description="Enable Addons">
               <visible>!Skin.HasSetting(Shelf.Addons)</visible>
               <label>$LOCALIZE[24001]</label>
               <label2>$LOCALIZE[106]</label2>
@@ -1475,7 +1470,7 @@
               <label>$LOCALIZE[24000] 1</label>
               <label2>$INFO[Skin.String(ShelfAddons.1.Label)]</label2>
               <onclick>Skin.SetAddon(ShelfAddons.1.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-           </item>
+            </item>
             <item id="6" description="ADDONS">
               <visible>Skin.HasSetting(Shelf.Addons)</visible>
               <label>$LOCALIZE[24000] 2</label>
@@ -1530,7 +1525,6 @@
               <label2>$INFO[Skin.String(ShelfAddons.10.Label)]</label2>
               <onclick>Skin.SetAddon(ShelfAddons.10.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
             </item>
-            
             <!--<item id="2" description="Enable Favs">
               <visible>!Skin.HasSetting(Shelf.Favs)</visible>
               <label>$LOCALIZE[1036]</label>
@@ -1557,8 +1551,8 @@
             </item>-->
           </content>
         </control>
-		<!--9000 6-->
-		<control type="panel" id="9006">
+        <!--9000 6-->
+        <control type="panel" id="9006">
           <visible>Container(9000).HasFocus(6)</visible>
           <posx>390</posx>
           <posy>210</posy>
@@ -1655,40 +1649,40 @@
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
             </item>
-			<item id="0" description="Vertical">
+            <item id="0" description="Vertical">
               <visible>!Skin.HasSetting(VerticalHome)</visible>
               <label>$LOCALIZE[31994]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
             </item>
-			<item id="1" description="Default bg">
+            <item id="1" description="Default bg">
               <visible>Skin.HasSetting(Home_DefaultBG)</visible>
               <label>$LOCALIZE[31986]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(Home_DefaultBG)</onclick>
             </item>
-			<item id="1" description="Default bg">
+            <item id="1" description="Default bg">
               <visible>!Skin.HasSetting(Home_DefaultBG)</visible>
               <label>$LOCALIZE[31986]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Home_DefaultBG)</onclick>
             </item>
-			<item id="2" description="Library stats">
+            <item id="2" description="Library stats">
               <visible>Skin.HasSetting(Show_Library_Count)</visible>
               <label>$LOCALIZE[31978]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(Show_Library_Count)</onclick>
             </item>
-			<item id="2" description="Library stats">
+            <item id="2" description="Library stats">
               <visible>!Skin.HasSetting(Show_Library_Count)</visible>
               <label>$LOCALIZE[31978]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Show_Library_Count)</onclick>
             </item>
-	      </content>
+          </content>
         </control>
-		<!-- 9000 7 -->
-		<control type="panel" id="9007">
+        <!-- 9000 7 -->
+        <control type="panel" id="9007">
           <visible>Container(9000).HasFocus(7)</visible>
           <posx>390</posx>
           <posy>210</posy>
@@ -1787,81 +1781,80 @@
             <item id="2" description="Quit">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
               <visible>!Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
-			  <label> - $LOCALIZE[13009]</label>
+              <label> - $LOCALIZE[13009]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Quit)</onclick>
             </item>
             <item id="2" description="Quit">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
-			  <visible>Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
-			  <label> - $LOCALIZE[13009]</label>
+              <visible>Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
+              <label> - $LOCALIZE[13009]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Quit)</onclick>
             </item>
-			<item id="3" description="Sleep">
+            <item id="3" description="Sleep">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
               <visible>!Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
-			  <label> - $LOCALIZE[13011]</label>
+              <label> - $LOCALIZE[13011]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Sleep)</onclick>
             </item>
             <item id="3" description="Sleep">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
-			  <visible>Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
-			  <label> - $LOCALIZE[13011]</label>
+              <visible>Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
+              <label> - $LOCALIZE[13011]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Sleep)</onclick>
             </item>
             <item id="4" description="Shutdown">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
               <visible>!Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
-			  <label> - $LOCALIZE[13005]</label>
+              <label> - $LOCALIZE[13005]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Shutdown)</onclick>
             </item>
             <item id="4" description="Shutdown">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
-			  <visible>Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
-			  <label> - $LOCALIZE[13005]</label>
+              <visible>Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
+              <label> - $LOCALIZE[13005]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Shutdown)</onclick>
             </item>
-			<item id="5" description="Reboot">
+            <item id="5" description="Reboot">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
               <visible>!Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
-			  <label> - $LOCALIZE[13013]</label>
+              <label> - $LOCALIZE[13013]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
             </item>
             <item id="4" description="Shutdown">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
-			  <visible>Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
-			  <label> - $LOCALIZE[13013]</label>
+              <visible>Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
+              <label> - $LOCALIZE[13013]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
             </item>
-			
           </content>
         </control>
-		<!-- 9000 8 -->
-		<include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Controls</include>
-	  </control>
-    </control>
-  <control type="scrollbar" id="63">
-        <visible>Control.IsVisible(9003)</visible>
-        <posx>1518</posx>
-        <posy>210</posy>
-        <width>36</width>
-        <height>780</height>
-        <texturesliderbackground>-</texturesliderbackground>
-        <texturesliderbar>-</texturesliderbar>
-        <texturesliderbarfocus>-</texturesliderbarfocus>
-        <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
-        <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-        <showonepage>false</showonepage>
-        <orientation>vertical</orientation>
-        <onleft>9003</onleft>
-        <onright>9000</onright>
+        <!-- 9000 8 -->
+        <include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Controls</include>
       </control>
+    </control>
+    <control type="scrollbar" id="63">
+      <visible>Control.IsVisible(9003)</visible>
+      <posx>1518</posx>
+      <posy>210</posy>
+      <width>36</width>
+      <height>780</height>
+      <texturesliderbackground>-</texturesliderbackground>
+      <texturesliderbar>-</texturesliderbar>
+      <texturesliderbarfocus>-</texturesliderbarfocus>
+      <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+      <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+      <showonepage>false</showonepage>
+      <orientation>vertical</orientation>
+      <onleft>9003</onleft>
+      <onright>9000</onright>
+    </control>
   </controls>
 </window>

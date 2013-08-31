@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol>61</defaultcontrol>
   <include>OpenClose</include>
   <controls>
     <include>DimBG</include>
-	<control type="group" description="Content">
-	<include>DialogOpenClose</include>
-	<control type="image">
+    <control type="group" description="Content">
+      <include>DialogOpenClose</include>
+      <control type="image">
         <posx>360</posx>
         <posy>20</posy>
         <width>1200</width>
@@ -18,8 +17,8 @@
         <posy>60</posy>
         <width>1920</width>
         <height>45</height>
-		<align>center</align>
-		<textcolor>Orange</textcolor>
+        <align>center</align>
+        <textcolor>Orange</textcolor>
       </control>
       <control type="textbox" id="5" description="Textarea">
         <posx>424</posx>
@@ -44,8 +43,6 @@
         <onleft>close</onleft>
         <onright>close</onright>
       </control>
-	  
-    
-	</control>
+    </control>
   </controls>
 </window>

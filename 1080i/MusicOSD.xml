@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">602</defaultcontrol>
   <animation effect="slide" start="0,150" end="0,0" time="300">WindowOpen</animation>
@@ -12,13 +11,13 @@
       <info>Player.Progress</info>
       <visible>true</visible>
     </control>
-      <control type="image" description="Background">
-		<posx>0</posx>
-        <posy>972</posy>
-        <width>1920</width>
-        <height>108</height>
-        <texture border="0,30,0,30">OSD/OSDBackground.png</texture>
-      </control>
+    <control type="image" description="Background">
+      <posx>0</posx>
+      <posy>972</posy>
+      <width>1920</width>
+      <height>108</height>
+      <texture border="0,30,0,30">OSD/OSDBackground.png</texture>
+    </control>
     <control type="group">
       <posx>120</posx>
       <posy>758</posy>
@@ -263,7 +262,7 @@
         <width>690</width>
         <height>52</height>
         <textcolor>Orange</textcolor>
-		<label>$LOCALIZE[33063]</label>
+        <label>$LOCALIZE[33063]</label>
         <align>center</align>
       </control>
       <control type="grouplist" id="100" description="Music OSD Options">
@@ -278,7 +277,7 @@
         <itemgap>0</itemgap>
         <scrolltime>280</scrolltime>
         <control type="button" id="555" description="Playlist">
-		<width>525</width>
+          <width>525</width>
           <label>$LOCALIZE[559]</label>
           <onclick>Close</onclick>
           <onclick>ActivateWindow(MusicPlaylist)</onclick>

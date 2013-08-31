@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <!--
 	  CUSTOM WINDOWS LIST
@@ -65,34 +64,34 @@
   </include>
   <include name="WeatherAni0">
     <animation type="WindowOpen">
-      <effect type="fade" start="80" end="100" time="200"/>
+      <effect type="fade" start="80" end="100" time="200" />
     </animation>
     <animation type="WindowClose">
-      <effect type="fade" start="100" end="0" time="100"/>
+      <effect type="fade" start="100" end="0" time="100" />
     </animation>
   </include>
   <include name="WeatherAni1">
     <animation type="WindowOpen">
-      <effect type="fade" start="80" end="100" time="200" delay="150"/>
+      <effect type="fade" start="80" end="100" time="200" delay="150" />
     </animation>
     <animation type="WindowClose">
-      <effect type="fade" start="100" end="0" time="100" delay="150"/>
+      <effect type="fade" start="100" end="0" time="100" delay="150" />
     </animation>
   </include>
   <include name="WeatherAni2">
     <animation type="WindowOpen">
-      <effect type="fade" start="80" end="100" time="200" delay="300"/>
+      <effect type="fade" start="80" end="100" time="200" delay="300" />
     </animation>
     <animation type="WindowClose">
-      <effect type="fade" start="100" end="0" time="100" delay="300"/>
+      <effect type="fade" start="100" end="0" time="100" delay="300" />
     </animation>
   </include>
   <include name="WeatherAni3">
     <animation type="WindowOpen">
-      <effect type="fade" start="80" end="100" time="200" delay="450"/>
+      <effect type="fade" start="80" end="100" time="200" delay="450" />
     </animation>
     <animation type="WindowClose">
-      <effect type="fade" start="100" end="0" time="100" delay="450"/>
+      <effect type="fade" start="100" end="0" time="100" delay="450" />
     </animation>
   </include>
   <include name="Icon_Fade">
@@ -436,7 +435,7 @@
     </control>
     <control type="radiobutton" id="9147" description="View 52">
       <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(episodes) | Container.Content(albums) | Container.Content(artists)</visible>
-	  <include>9000ViewButtons</include>
+      <include>9000ViewButtons</include>
       <onclick>Container.SetViewMode(52)</onclick>
       <selected>Control.IsVisible(52)</selected>
       <label>$LOCALIZE[537]</label>
@@ -473,7 +472,7 @@
       <selected>Skin.HasSetting(52_Albums_UseFanart)</selected>
       <label>- $LOCALIZE[20445]</label>
     </control>
-	<control type="radiobutton" id="9152" description="View 52 Episodes">
+    <control type="radiobutton" id="9152" description="View 52 Episodes">
       <visible>Control.IsVisible(52) + Container.Content(artists)</visible>
       <font>ListDetails</font>
       <include>9000SysButtons</include>
@@ -743,11 +742,11 @@
   </include>
   <include name="Fanart_Art">
     <control type="image" description="FA">
-       <visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(55) | [Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]</visible> 
-	   <include>BG.Defaults</include>
-        <texture>img/FS_BG.png</texture>
-      </control>
-	  <control type="multiimage">
+      <visible>Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(55) | [Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]</visible>
+      <include>BG.Defaults</include>
+      <texture>img/FS_BG.png</texture>
+    </control>
+    <control type="multiimage">
       <visible>Window.IsActive(MyPics.xml) + ![Control.IsVisible(53) | Control.IsVisible(55)]</visible>
       <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Pictures.Art]</imagepath>
@@ -758,7 +757,6 @@
       <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Fanart.Art]</imagepath>
     </control>
-	
     <control type="group" description="FA slideshow INFO">
       <visible>!Window.IsActive(MyPics.xml)</visible>
       <visible>[Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]</visible>
@@ -1874,7 +1872,7 @@
       <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Channels.Hide)</visible>
       <label>$LOCALIZE[31975]</label>
       <thumb>special://skin/backgrounds/Channels.jpg</thumb>
-      <onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall&quot;,return)</onclick>
+      <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
     </item>
     <item id="49" description="Queue">
       <visible>Skin.HasSetting(plexbmc)</visible>
@@ -1888,18 +1886,18 @@
     <item id="51" description="Plexbmc Picture channels">
       <visible>Container(300).HasFocus(50)</visible>
       <label>$LOCALIZE[1]</label>
-      <onclick>ActivateWindow(pictures,&quot;plugin://plugin.video.plexbmc/?url=http://photo&amp;mode=22&quot;,return)</onclick>
+      <onclick>ActivateWindow(pictures,"plugin://plugin.video.plexbmc/?url=http://photo&amp;mode=22",return)</onclick>
     </item>
     <item id="52" description="Plexbmc Video channels">
       <visible>Container(300).HasFocus(50)</visible>
       <label>$LOCALIZE[157]</label>
-      <onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22&quot;,return)</onclick>
+      <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22",return)</onclick>
     </item>
     <item id="53" description="Plexbmc Music channels">
       <visible>Container(300).HasFocus(50)</visible>
       <label>$LOCALIZE[2]</label>
-      <onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,&quot;plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22&quot;,return)</onclick>
-      <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,&quot;plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22&quot;,return)</onclick>
+      <onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
+      <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
     </item>
     <item id="54" description="PleXBMC Settings">
       <visible>System.HasAddon(plugin.video.plexbmc)</visible>
@@ -2083,8 +2081,8 @@
       <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
       <label>$LOCALIZE[31972]</label>
       <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
-      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
-      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
+      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/")</onclick>
+      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/")</onclick>
     </item>
     <item id="14" description="Concerts">
       <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -2188,7 +2186,7 @@
     <item id="7" description="RA TV">
       <visible>Container(300).HasFocus(5)</visible>
       <label>$LOCALIZE[575]</label>
-      <onclick>ActivateWindow(Videos,&quot;library://video/inprogressshows.xml/&quot;,return)</onclick>
+      <onclick>ActivateWindow(Videos,"library://video/inprogressshows.xml/",return)</onclick>
     </item>
     <item id="8" description="RA TV">
       <visible>Container(300).HasFocus(5)</visible>
@@ -2281,8 +2279,8 @@
     <item id="23" description="Music Videos">
       <visible>Container(300).HasFocus(6) + Library.HasContent(MusicVideos)</visible>
       <label>$LOCALIZE[31972]</label>
-      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/&quot;)</onclick>
-      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/&quot;)</onclick>
+      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/")</onclick>
+      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/")</onclick>
     </item>
     <item id="24" description="Recently added">
       <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
@@ -2330,20 +2328,20 @@
     <item id="30" description="Clips albums">
       <visible>Container(300).HasFocus(13)</visible>
       <label>$LOCALIZE[132]</label>
-      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/5&quot;)</onclick>
-      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/5&quot;)</onclick>
+      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/5")</onclick>
+      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/5")</onclick>
     </item>
     <item id="30" description="Clips artists">
       <visible>Container(300).HasFocus(13)</visible>
       <label>$LOCALIZE[133]</label>
-      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/4&quot;)</onclick>
-      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/4&quot;)</onclick>
+      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/4")</onclick>
+      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/4")</onclick>
     </item>
     <item id="30" description="Clips genres">
       <visible>Container(300).HasFocus(13)</visible>
       <label>$LOCALIZE[135]</label>
-      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,&quot;videodb://3/1&quot;)</onclick>
-      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,&quot;videodb://3/1&quot;)</onclick>
+      <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/1")</onclick>
+      <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/1")</onclick>
     </item>
     <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
   </include>

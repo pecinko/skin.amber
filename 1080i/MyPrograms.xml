@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">50</defaultcontrol>
   <controls>
@@ -38,46 +37,46 @@
       </control>
     </control>
     <!-- LIST 55 Big Panel -->
-	<control type="group" description="55 MediaInfo">
+    <control type="group" description="55 MediaInfo">
       <visible>Control.IsVisible(55)</visible>
-	    <posx>60</posx>
-        <posy>100</posy>
-        <control type="label" description="Title Label">
-          <posy>18</posy>
-          <width>630</width>
-          <height>50</height>
-		  <aligny>bottom</aligny>
-		  <textcolor>Orange</textcolor>
-          <font>InfoTitle</font>
-		  <wrapmultiline>true</wrapmultiline>
-		  <label>$INFO[ListItem.Label]</label>
-        </control>
-        <control type="label" description="Details">
-          <posy>108</posy>
-          <height>33</height>
-          <width>630</width>
-          <font>Details</font>
-		  <label>$VAR[Details]</label>
-        </control>
-		<control type="label" description="Genre">
-          <posy>153</posy>
-          <height>33</height>
-		  <width>630</width>
-		  <scroll>false</scroll>
-          <font>Details</font>
-		  <label>$INFO[ListItem.Genre]</label>
-        </control>
-		<control type="textbox" description="Plot51">
-          <posx>0</posx>
-          <posy>221</posy>
-          <width>630</width>
-          <height>540</height>
-		  <align>left</align>
-		  <label>$VAR[Plots]</label>
-	    </control>
+      <posx>60</posx>
+      <posy>100</posy>
+      <control type="label" description="Title Label">
+        <posy>18</posy>
+        <width>630</width>
+        <height>50</height>
+        <aligny>bottom</aligny>
+        <textcolor>Orange</textcolor>
+        <font>InfoTitle</font>
+        <wrapmultiline>true</wrapmultiline>
+        <label>$INFO[ListItem.Label]</label>
+      </control>
+      <control type="label" description="Details">
+        <posy>108</posy>
+        <height>33</height>
+        <width>630</width>
+        <font>Details</font>
+        <label>$VAR[Details]</label>
+      </control>
+      <control type="label" description="Genre">
+        <posy>153</posy>
+        <height>33</height>
+        <width>630</width>
+        <scroll>false</scroll>
+        <font>Details</font>
+        <label>$INFO[ListItem.Genre]</label>
+      </control>
+      <control type="textbox" description="Plot51">
+        <posx>0</posx>
+        <posy>221</posy>
+        <width>630</width>
+        <height>540</height>
+        <align>left</align>
+        <label>$VAR[Plots]</label>
+      </control>
       <control type="grouplist" description="Flags">
         <visible>!ListItem.IsFolder</visible>
-		<posy>780</posy>
+        <posy>780</posy>
         <width min="90" max="650">auto</width>
         <height>120</height>
         <itemgap>30</itemgap>
@@ -93,7 +92,7 @@
           <colordiffuse>Silver</colordiffuse>
           <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
         </control>
-		<control type="image">
+        <control type="image">
           <visible>!IsEmpty(ListItem.AudioChannels)</visible>
           <height>45</height>
           <width>90</width>
@@ -102,7 +101,7 @@
           <colordiffuse>Silver</colordiffuse>
           <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
         </control>
-		<control type="image">
+        <control type="image">
           <visible>!IsEmpty(ListItem.VideoCodec)</visible>
           <height>45</height>
           <width>90</width>
@@ -123,20 +122,20 @@
           <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
         </control>
       </control>
-	  <control type="image" description="Rating">
-			<posx>-3</posx>
-             <posy>840</posy>
-             <include>Stars</include>
-          </control>
-		  <control type="label" description="Addon version">
-          <visible>Container.Content(addons)</visible>
-		  <posy>840</posy>
-          <width>800</width>
-          <height>33</height>
-          <font>Details</font>
-          <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
-        </control>
-	</control>
+      <control type="image" description="Rating">
+        <posx>-3</posx>
+        <posy>840</posy>
+        <include>Stars</include>
+      </control>
+      <control type="label" description="Addon version">
+        <visible>Container.Content(addons)</visible>
+        <posy>840</posy>
+        <width>800</width>
+        <height>33</height>
+        <font>Details</font>
+        <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
+      </control>
+    </control>
     <!-- LOWLIST 54 -->
     <control type="group" description="MediaInfo List 50">
       <posx>80</posx>

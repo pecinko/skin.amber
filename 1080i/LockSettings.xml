@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">5</defaultcontrol>
   <include>OpenClose</include>
@@ -15,14 +14,14 @@
         <height>720</height>
         <texture border="55">dialogs/DialogRightSmall.png</texture>
       </control>
-	  <control type="label" description="Title">
+      <control type="label" description="Title">
         <posx>0</posx>
         <posy>50</posy>
         <width>1010</width>
         <height>40</height>
         <align>center</align>
         <textcolor>Orange</textcolor>
-		<label>$LOCALIZE[20043]</label>
+        <label>$LOCALIZE[20043]</label>
       </control>
       <control type="grouplist" id="5">
         <description>Control Area</description>

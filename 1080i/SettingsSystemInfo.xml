@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">9001</defaultcontrol>
   <backgroundcolor>0</backgroundcolor>
@@ -77,19 +76,19 @@
           <control type="label" id="52">
             <description>XBMC XBE BUILD Version</description>
             <width>1420</width>
-			<textcolor>Grey3</textcolor>
+            <textcolor>Grey3</textcolor>
           </control>
           <control type="label" id="21">
             <description>CPU Text</description>
             <height>45</height>
-			<width>1420</width>
+            <width>1420</width>
             <font>info</font>
             <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
           </control>
           <control type="label" id="23">
             <description>Memory Text</description>
             <height>45</height>
-			<width>1420</width>
+            <width>1420</width>
             <font>info</font>
             <label>$LOCALIZE[31309] $INFO[system.memory(used.percent)]</label>
           </control>
@@ -116,7 +115,7 @@
             <height>90</height>
             <width>1420</width>
             <font>info</font>
-			<wrapmultiline>true</wrapmultiline>
+            <wrapmultiline>true</wrapmultiline>
           </control>
           <control type="label" id="6">
             <description>Label 6</description>

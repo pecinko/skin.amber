@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <defaultcontrol always="true">11</defaultcontrol>
   <coordinates>
@@ -9,26 +8,25 @@
   <controls>
     <control type="group" description="Content">
       <include>DialogOpenClose</include>
-	<control type="image">
+      <control type="image">
         <posx>290</posx>
         <posy>120</posy>
         <width>750</width>
         <height>780</height>
         <texture border="90,0,90,0">dialogs/DialogBG.png</texture>
       </control>
-	  <control type="label" description="Header">
-          <posx>340</posx>
-		  <posy>170</posy>
-          <width>630</width>
-          <height>36</height>
-          <textcolor>Orange</textcolor>
-		  <font>InfoTitle</font>
-		  <align>center</align>
-          <label>[B]$INFO[VideoPlayer.ChannelName][/B] - $INFO[Container(11).ListItem.StartDate]</label>
-        </control>
-      
+      <control type="label" description="Header">
+        <posx>340</posx>
+        <posy>170</posy>
+        <width>630</width>
+        <height>36</height>
+        <textcolor>Orange</textcolor>
+        <font>InfoTitle</font>
+        <align>center</align>
+        <label>[B]$INFO[VideoPlayer.ChannelName][/B] - $INFO[Container(11).ListItem.StartDate]</label>
+      </control>
       <control type="list" id="11">
-         <posx>320</posx>
+        <posx>320</posx>
         <posy>240</posy>
         <width>680</width>
         <height>599</height>
@@ -53,7 +51,7 @@
             <posx>144</posx>
             <posy>0</posy>
             <height>75</height>
-			<include>RecOverlay</include>
+            <include>RecOverlay</include>
           </control>
           <control type="label">
             <posx>180</posx>
@@ -99,7 +97,7 @@
       </control>
       <control type="scrollbar" id="60">
         <visible>false</visible>
-		<posx>996</posx>
+        <posx>996</posx>
         <posy>240</posy>
         <width>9</width>
         <height>525</height>

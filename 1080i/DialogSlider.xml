@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">11</defaultcontrol>
   <include>OpenClose</include>
@@ -8,16 +7,16 @@
       <posy>105</posy>
       <control type="image">
         <posx>130</posx>
-		<width>503</width>
+        <width>503</width>
         <height>136</height>
         <texture border="120,0,0,0">dialogs/DialogSliderBG.png</texture>
       </control>
-	  <control type="image" description="Icon">
+      <control type="image" description="Icon">
         <posx>134</posx>
         <posy>4</posy>
-	    <width>128</width>
+        <width>128</width>
         <height>128</height>
-		<bordersize>24</bordersize>
+        <bordersize>24</bordersize>
         <texture>settings/Gears.png</texture>
       </control>
       <control type="label" id="10" description="Heading">
@@ -25,13 +24,13 @@
         <posy>12</posy>
         <width>600</width>
         <height>40</height>
-		<align>center</align>
+        <align>center</align>
       </control>
       <control type="slider" id="11" description="Slider">
         <posx>316</posx>
         <posy>40</posy>
         <width>240</width>
-		<onup>noop</onup>
+        <onup>noop</onup>
         <ondown>noop</ondown>
         <onleft>11</onleft>
         <onright>11</onright>
@@ -41,7 +40,7 @@
         <posy>90</posy>
         <width>600</width>
         <height>40</height>
-		<align>center</align>
+        <align>center</align>
         <font>Slider</font>
         <textcolor>White</textcolor>
       </control>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="Favourite.List">
     <control type="label" description="Header">
@@ -9,7 +8,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(111)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>RecentlyAdded_Label</include>
+      <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(111).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="111" description="Favourites">
@@ -18,8 +17,8 @@
       <onright>111</onright>
       <onup>300</onup>
       <ondown>300</ondown>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">111</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">111</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Addons</include>
       <content>
@@ -36,7 +35,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(211)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	    <include>RecentlyAdded_Label</include>
+      <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(211).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="211" description="Addons">
@@ -45,8 +44,8 @@
       <onright>211</onright>
       <onup>300</onup>
       <ondown>300</ondown>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">211</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">211</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Addons</include>
       <content>
@@ -63,7 +62,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(311)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>RecentlyAdded_Label</include>
+      <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(311).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="311" description="Movies XBMC">
@@ -72,8 +71,8 @@
       <onright>311</onright>
       <onup>300</onup>
       <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">311</onleft>
-	  <ondown condition="Control.IsVisible(312)">312</ondown>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">311</onleft>
+      <ondown condition="Control.IsVisible(312)">312</ondown>
       <ondown condition="!Control.IsVisible(312)">300</ondown>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Posters</include>
@@ -91,7 +90,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(312)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>Recommended_Label</include>
+      <include>Recommended_Label</include>
       <label>$INFO[Container(312).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="312" description="TOP Shortcuts">
@@ -102,8 +101,8 @@
       <onup condition="!Control.IsVisible(311)">300</onup>
       <ondown>300</ondown>
       <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">312</onleft>
-	  <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">312</onleft>
+      <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Posters</include>
       <content>
         <include condition="SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">RecommendedMovieContent</include>
@@ -120,7 +119,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(514)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>RecentlyAdded_Label</include>
+      <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(514).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="514" description="Recent concerts">
@@ -131,8 +130,8 @@
       <onup>300</onup>
       <ondown condition="Control.IsVisible(515)">515</ondown>
       <ondown condition="!Control.IsVisible(515)">300</ondown>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Posters</include>
       <content>
@@ -149,7 +148,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(515)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>Recommended_Label</include>
+      <include>Recommended_Label</include>
       <label>$INFO[Container(515).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="515" description="Recommended concerts">
@@ -158,8 +157,8 @@
       <onright>515</onright>
       <onup condition="Control.IsVisible(514)">514</onup>
       <onup condition="!Control.IsVisible(514)">300</onup>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
       <ondown>300</ondown>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Posters</include>
@@ -177,7 +176,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(411)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>RecentlyAdded_Label</include>
+      <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(411).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="411" description="TV Shows XBMC">
@@ -187,8 +186,8 @@
       <onup>300</onup>
       <ondown condition="Control.IsVisible(413)">413</ondown>
       <ondown condition="!Control.IsVisible(413)">300</ondown>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">411</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">411</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>RecentlyAdded_Episodes</include>
       <content>
@@ -205,7 +204,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(413)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>Recommended_Label</include>
+      <include>Recommended_Label</include>
       <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="413" description="TV Shows XBMC Widgets">
@@ -215,8 +214,8 @@
       <onup condition="Control.IsVisible(411)">411</onup>
       <onup condition="!Control.IsVisible(411)">300</onup>
       <ondown>300</ondown>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">413</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">413</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Episodes</include>
       <content>
@@ -233,7 +232,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(511)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	    <include>RecentlyAdded_Label</include>
+      <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(511).ListItem.Property(ShelfLabel)]</label>
     </control>
     <control type="fixedlist" id="511" description="TOP Shortcuts">
@@ -242,8 +241,8 @@
       <visible></visible>
       <onright>511</onright>
       <onup>300</onup>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">511</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">511</onleft>
       <ondown condition="Control.IsVisible(513)">513</ondown>
       <ondown condition="!Control.IsVisible(513)">300</ondown>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
@@ -262,7 +261,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(513)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	  <include>Recommended_Label</include>
+      <include>Recommended_Label</include>
       <label>$INFO[Container(513).ListItem.Property(ShelfLabel)]</label>
     </control>
     <control type="fixedlist" id="513" description="TOP Shortcuts">
@@ -272,8 +271,8 @@
       <onup condition="Control.IsVisible(511)">511</onup>
       <onup condition="!Control.IsVisible(511)">300</onup>
       <ondown>300</ondown>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">513</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">513</onleft>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
       <include>Recommended_Albums</include>
       <content>
@@ -290,7 +289,7 @@
     <control type="label" description="Label">
       <visible>Control.HasFocus(512)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
-	    <include>RecentlyAdded_Label</include>
+      <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(512).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="512" description="Music video clips">
@@ -299,8 +298,8 @@
       <onright>512</onright>
       <onup>300</onup>
       <ondown>300</ondown>
-	  <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-	  <onleft condition="!Skin.HasSetting(VerticalHome)">512</onleft>
+      <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+      <onleft condition="!Skin.HasSetting(VerticalHome)">512</onleft>
       <include>RecentlyAdded_Albums</include>
       <content>
         <include>RecentMusicVideoContent</include>
@@ -816,7 +815,7 @@
     </item>
     <item id="9" description="Shortcut 9 (skin widgets)">
       <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
-     <label>$INFO[Window(Home).Property(RecommendedEpisode.9.Title)][COLOR=White]$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle), • ]$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo), • ]$INFO[Window(Home).Property(RecommendedEpisode.9.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
+      <label>$INFO[Window(Home).Property(RecommendedEpisode.9.Title)][COLOR=White]$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle), • ]$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo), • ]$INFO[Window(Home).Property(RecommendedEpisode.9.Runtime), • , $LOCALIZE[12391]][/COLOR]</label>
       <property name="SeasonEpisode">$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo)]</property>
       <thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</thumb>
       <property name="ItemType">$LOCALIZE[31966]</property>

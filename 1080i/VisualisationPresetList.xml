@@ -1,33 +1,31 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">2</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <controls>
     <include>DimBG</include>
-	
     <control type="group" description="Content">
-	<animation type="WindowOpen">
-            <effect type="zoom" start="80" end="100" center="960,340" tween="back" time="280" />
-            <effect type="fade" start="0" end="100" time="280"/>
-        </animation>
-		<animation type="WindowClose">
-			<effect type="zoom" start="100" end="80" center="960,340" time="200" />
-			<effect type="fade" start="100" end="0" time="200"/>
-		</animation>
+      <animation type="WindowOpen">
+        <effect type="zoom" start="80" end="100" center="960,340" tween="back" time="280" />
+        <effect type="fade" start="0" end="100" time="280" />
+      </animation>
+      <animation type="WindowClose">
+        <effect type="zoom" start="100" end="80" center="960,340" time="200" />
+        <effect type="fade" start="100" end="0" time="200" />
+      </animation>
       <control type="image">
-		  <posx>485</posx>
-		  <posy>100</posy>
-		  <width>950</width>
-		  <height>720</height>
-		  <texture>dialogs/DialogBG.png</texture>
-		</control>
-	<control type="label" description="Header Label">
+        <posx>485</posx>
+        <posy>100</posy>
+        <width>950</width>
+        <height>720</height>
+        <texture>dialogs/DialogBG.png</texture>
+      </control>
+      <control type="label" description="Header Label">
         <posx>525</posx>
         <posy>150</posy>
         <width>840</width>
         <label>$LOCALIZE[31048]</label>
         <align>center</align>
-		<textcolor>Orange</textcolor>
+        <textcolor>Orange</textcolor>
       </control>
       <control type="fixedlist" id="2">
         <description>Preset List</description>
@@ -56,7 +54,7 @@
           <control type="image">
             <visible>!Control.HasFocus(60)</visible>
             <include>VisibleFadeEffect</include>
-			<width>870</width>
+            <width>870</width>
             <height>69</height>
             <texture border="2">buttons/ButtonFO.png</texture>
           </control>
@@ -65,15 +63,15 @@
             <height>69</height>
             <width>810</width>
             <selectedcolor>Orange</selectedcolor>
-			<info>ListItem.Label</info>
+            <info>ListItem.Label</info>
           </control>
         </focusedlayout>
       </control>
-	  <control type="scrollbar" id="60">
-		<posx>1401</posx>
-		<posy>273</posy>
-		<width>36</width>
-		<height>480</height>
+      <control type="scrollbar" id="60">
+        <posx>1401</posx>
+        <posy>273</posy>
+        <width>36</width>
+        <height>480</height>
         <texturesliderbackground>-</texturesliderbackground>
         <texturesliderbar>-</texturesliderbar>
         <texturesliderbarfocus>-</texturesliderbarfocus>
@@ -81,10 +79,9 @@
         <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
-		<onleft>2</onleft>
+        <onleft>2</onleft>
         <onright>noop</onright>
+      </control>
     </control>
-    </control>
-    
   </controls>
 </window>
