@@ -149,7 +149,7 @@
           <aspectratio aligny="top">scale</aspectratio>
         </control>
         <control type="image" description="Overlay">
-          <visible>!IsEmpty(ListItem.Art(fanart)</visible>
+          <visible>!IsEmpty(ListItem.Art(fanart))</visible>
           <posx>0</posx>
           <posy>0</posy>
           <width>603</width>
@@ -159,7 +159,7 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="group" description="Fallback info">
-          <visible>IsEmpty(ListItem.Art(fanart)</visible>
+          <visible>IsEmpty(ListItem.Art(fanart))</visible>
           <control type="label" description="Title Label">
             <posy>18</posy>
             <width>600</width>
@@ -180,7 +180,7 @@
           </control>
         </control>
         <control type="group" description="Info with fanart">
-          <visible>!IsEmpty(ListItem.Art(fanart)</visible>
+          <visible>!IsEmpty(ListItem.Art(fanart))</visible>
           <control type="label" description="Title Label">
             <posy>400</posy>
             <width>600</width>
