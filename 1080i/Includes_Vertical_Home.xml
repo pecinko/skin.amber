@@ -59,7 +59,6 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -77,7 +76,6 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -86,7 +84,6 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
@@ -115,8 +112,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-        <bordersize>-13</bordersize>
-		<include>PosterThumbBG</include>
+        <include>PosterThumbBG</include>
       </control>
       <control type="image">
         <posx>21</posx>
@@ -133,8 +129,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-        <bordersize>-13</bordersize>
-		<include>PosterThumbBG</include>
+        <include>PosterThumbBG</include>
       </control>
       <control type="image">
         <visible>Control.HasFocus(312) | Control.HasFocus(515)</visible>
@@ -142,7 +137,6 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">

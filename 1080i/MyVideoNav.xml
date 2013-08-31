@@ -401,7 +401,7 @@
             <posy>681</posy>
             <width>246</width>
             <height>366</height>
-            <bordersize>-15</bordersize>
+            <bordersize>-17</bordersize>
             <include>PosterThumbBG</include>
           </control>
           <control type="image">
