@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <strings>
   <string id="31020">Adicionados Recentemente</string>
   <string id="31025">Itens</string>
@@ -29,6 +29,7 @@
   <string id="31392">(2/2) Baseado em Arial</string>
   
   <!-- Extra Unified PVR labels -->
+  <string id="31500">Live TV</string>
   <string id="31501">Tempo Programado</string>
   <string id="31503">Adicionar Grupo</string>
   <string id="31504">Renomear Grupo</string>
