@@ -29,7 +29,7 @@
           <posy>150</posy>
           <width>1130</width>
           <height>840</height>
-          <onleft>-</onleft>
+          <onleft>noop</onleft>
           <onright>60</onright>
           <onup>5</onup>
           <ondown>5</ondown>
@@ -89,7 +89,7 @@
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
         <onleft>5</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
   </controls>

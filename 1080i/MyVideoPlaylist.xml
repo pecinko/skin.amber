@@ -53,7 +53,7 @@
             <height>839</height>
             <pagecontrol>60</pagecontrol>
             <scrolltime>200</scrolltime>
-            <onleft>-</onleft>
+            <onleft>noop</onleft>
             <onright>9000</onright>
             <onup>50</onup>
             <ondown>50</ondown>

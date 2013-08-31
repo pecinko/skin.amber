@@ -45,6 +45,13 @@
               <include>BigPanelPosterDimensions</include>
               <include>PosterThumb</include>
             </control>
+			<control type="image">
+             <posx>229</posx>
+              <posy>374</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
+            </control>
           </itemlayout>
           <focusedlayout condition="container.content(MusicVideos) | Container.Content(tvshows) | Container.Content(Movies) | container.content(seasons)" height="450" width="282">
             <control type="image">
@@ -55,6 +62,13 @@
             <control type="image">
               <include>BigPanelPosterDimensions</include>
               <include>PosterThumb</include>
+            </control>
+			<control type="image">
+             <posx>229</posx>
+              <posy>374</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
             </control>
           </focusedlayout>
           <itemlayout condition="container.content(addons) | Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml) | Window.IsActive(MyPics.xml)" height="300" width="284">
@@ -106,9 +120,9 @@
                 <label>$INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
               </control>
 			  <control type="image" description="Watched Overlay">
-              <posx>324</posx>
+              <posx>321</posx>
               <posy>189</posy>
-              <width>24</width>
+              <width>33</width>
               <height>70</height>
               <texture>$VAR[Overlay]</texture>
               <aspectratio>keep</aspectratio>
@@ -143,9 +157,9 @@
                 <label>$INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
               </control>
 			  <control type="image" description="Watched Overlay">
-              <posx>324</posx>
+              <posx>321</posx>
               <posy>189</posy>
-              <width>24</width>
+              <width>33</width>
               <height>70</height>
               <texture>$VAR[Overlay]</texture>
               <aspectratio>keep</aspectratio>

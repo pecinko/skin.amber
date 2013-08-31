@@ -32,8 +32,8 @@
           <width>324</width>
           <height>518</height>
           <itemgap>0</itemgap>
-          <onleft>-</onleft>
-          <onright>-</onright>
+          <onleft>noop</onleft>
+          <onright>noop</onright>
           <onup>9001</onup>
           <ondown>9001</ondown>
           <control type="button" id="95" description="Summary">

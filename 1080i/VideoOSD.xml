@@ -42,7 +42,7 @@
         <visible>!VideoPlayer.Content(LiveTV)</visible>
         <posx>723</posx>
         <posy>140r</posy>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>702</ondown>
         <defaultcontrol always="true">602</defaultcontrol>
         <control type="button" id="600">
@@ -56,7 +56,7 @@
           <texturenofocus>VideoOSD/OSDPreviousNF.png</texturenofocus>
           <onleft>605</onleft>
           <onright>601</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Previous)</onclick>
         </control>
@@ -71,7 +71,7 @@
           <texturenofocus>VideoOSD/OSDRWNF.png</texturenofocus>
           <onleft>600</onleft>
           <onright>602</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Rewind)</onclick>
         </control>
@@ -122,7 +122,7 @@
           <texturenofocus>VideoOSD/OSDFWNF.png</texturenofocus>
           <onleft>603</onleft>
           <onright>605</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Forward)</onclick>
         </control>
@@ -137,7 +137,7 @@
           <texturenofocus>VideoOSD/OSDNextNF.png</texturenofocus>
           <onleft>604</onleft>
           <onright>600</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Next)</onclick>
         </control>
@@ -146,7 +146,7 @@
         <visible>VideoPlayer.Content(LiveTV)</visible>
         <posx>723</posx>
         <posy>140r</posy>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>701</ondown>
         <defaultcontrol always="true">602</defaultcontrol>
         <control type="button" id="600">
@@ -160,7 +160,7 @@
           <texturenofocus>VideoOSD/OSDChannelDownNF.png</texturenofocus>
           <onleft>605</onleft>
           <onright>601</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>701</ondown>
           <onclick>PlayerControl(Previous)</onclick>
         </control>
@@ -175,7 +175,7 @@
           <texturenofocus>VideoOSD/OSDChannelUpNF.png</texturenofocus>
           <onleft>600</onleft>
           <onright>602</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>701</ondown>
           <onclick>PlayerControl(Next)</onclick>
         </control>
@@ -226,7 +226,7 @@
           <texturenofocus>VideoOSD/OSDChannelsNF.png</texturenofocus>
           <onleft>603</onleft>
           <onright>605</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>701</ondown>
           <onclick>ActivateWindow(PVROSDChannels)</onclick>
           <onclick>Dialog.Close(VideoOSD)</onclick>
@@ -242,7 +242,7 @@
           <texturenofocus>VideoOSD/OSDEpgNF.png</texturenofocus>
           <onleft>604</onleft>
           <onright>600</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>701</ondown>
            <onclick>ActivateWindow(PVROSDGuide)</onclick>
           <onclick>Dialog.Close(VideoOSD)</onclick>

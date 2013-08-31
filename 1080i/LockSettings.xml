@@ -32,7 +32,7 @@
         <height>540</height>
         <itemgap>0</itemgap>
         <orientation>vertical</orientation>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>9000</onright>
         <onup>5</onup>
         <ondown>5</ondown>
@@ -61,7 +61,7 @@
           <width>254</width>
           <label>$LOCALIZE[222]</label>
           <onleft>5</onleft>
-          <onright>-</onright>
+          <onright>noop</onright>
           <onup>28</onup>
           <ondown>28</ondown>
         </control>
