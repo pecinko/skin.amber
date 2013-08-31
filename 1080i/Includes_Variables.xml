@@ -74,17 +74,6 @@
     <value condition="ListItem.IsRecording">OverlayRecording.png</value>
     <value condition="ListItem.HasTimer">OverlayTimer.png</value>
   </variable>
-  <variable name="WeatherFooter" description="Weather plus footer labels">
-    <value condition="IsEmpty(Window.Property(Weather.CurrentView))">$LOCALIZE[31904]</value>
-    <value condition="StringCompare(Window.Property(Weather.CurrentView),36hour)">$LOCALIZE[31901]</value>
-    <value condition="StringCompare(Window.Property(Weather.CurrentView),weekend)">$LOCALIZE[31903]</value>
-    <value condition="StringCompare(Window.Property(Weather.CurrentView),maps)">$INFO[Window.Property(Weather.CurrentMap)]</value>
-    <value condition="StringCompare(Window.Property(Weather.CurrentView),hourly)">$LOCALIZE[31902]</value>
-  </variable>
-  <variable name="PVR_Headings" description="PVR Headings">
-    <value condition="Control.IsVisible(16) | Control.IsVisible(15) | Control.IsVisible(10)">$INFO[Control.GetLabel(31)]</value>
-    <value>$INFO[Container.FolderName]</value>
-  </variable>
   <variable name="Details" description="Shown Above Plots and descriptions">
     <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
     <value condition="Container.content(Albums)">$INFO[ListItem.Artist]</value>
@@ -124,11 +113,6 @@
     <value condition="Window.IsActive(MyPics.xml)">[COLOR=Grey]$LOCALIZE[21821]:[/COLOR][CR][CR]   $LOCALIZE[416]</value>
     <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
   </variable>
-  <variable name="Stars" description="Star Rating">
-    <value condition="![Container.Content(albums) | IsEmpty(ListItem.StarRating)]">$INFO[ListItem.StarRating]</value>
-    <value condition="!IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating,badges/,.png]</value>
-    <value condition="Window.IsActive(MyVideoNav.xml) + IsEmpty(ListItem.Rating) + ![IsEmpty(ListItem.Title) | container.content(addons)]">badges/0.0.png</value>
-  </variable>
   <variable name="PVROverlay" description="PVR Overlay image">
     <value condition="ListItem.IsRecording">OverlayRecording.png</value>
     <value condition="ListItem.HasTimer">OverlayTimer.png</value>
@@ -159,21 +143,5 @@
     <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
     <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
     <value>special://skin/backgrounds/default/</value>
-  </variable>
-  <variable name="Player.Art" description="Calculate BG to show">
-    <value condition="Player.HasAudio + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</value>
-    <value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + !IsEmpty(MusicPlayer.Property(Fanart_Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
-    <value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + IsEmpty(MusicPlayer.Property(Fanart_Image))">$INFO[Skin.String(Music.Background)]</value>
-    <value condition="Player.HasVideo">$INFO[Skin.String(Videos.Background)]</value>
-  </variable>
-  <variable name="HomePlayer.Art" description="Calculate BG to show">
-    <value condition="Player.HasAudio + !IsEmpty(MusicPlayer.Property(Fanart_Image))">$INFO[MusicPlayer.Property(Fanart_Image)]</value>
-    <value condition="Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image)) + !IsEmpty(Skin.String(Music.Background))">$INFO[Skin.String(Music.Background)]</value>
-    <value condition="Player.HasAudio + IsEmpty(MusicPlayer.Property(Fanart_Image)) + IsEmpty(Skin.String(Music.Background))">special://skin/backgrounds/Music.jpg</value>
-    <value condition="Player.HasVideo + !Skin.HasSetting(Show_Player)">$INFO[Skin.String(Videos.Background)]</value>
-  </variable>
-  <variable name="HomePlayer.Label" description="Player Duration">
-    <value condition="Player.HasMedia + !IsEmpty(Player.TimeRemaining) + System.IdleTime(2)">$INFO[Player.TimeRemaining]</value>
-    <value>$LOCALIZE[16003]</value>
   </variable>
 </includes>
