@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <colors>
 	<color name="Grey3">FF9e9e9e</color>
 	<color name="Grey2">FFBEBEBE</color>
@@ -21,5 +22,4 @@
 	<color name="Orange">FFf6b12b</color>
 	<color name="Orange2">FFeaab01</color>
 	<color name="Yellow">fff6c42b</color>
-							
 </colors>
