@@ -52,16 +52,6 @@
       <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,540" time="140" />
     </animation>
   </include>
-  <include name="DialogOpenCloseVisible">
-    <animation type="Visible">
-      <effect type="fade" start="0" end="100" time="240" />
-      <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,340" time="240" />
-    </animation>
-    <animation type="Hidden">
-      <effect type="fade" start="100" end="0" time="140" />
-      <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,340" time="140" />
-    </animation>
-  </include>
   <include name="WeatherAni0">
     <animation type="WindowOpen">
       <effect type="fade" start="80" end="100" time="200" />
@@ -347,20 +337,6 @@
     <font>size24B</font>
     <textcolor>White2</textcolor>
     <animation effect="fade" time="200">VisibleChange</animation>
-  </include>
-  <include name="FullscreenInfoLabel2">
-    <posx>300</posx>
-    <posy>45</posy>
-    <width>1200</width>
-    <scroll>false</scroll>
-    <align>left</align>
-    <textcolor>Grey</textcolor>
-    <animation effect="fade" time="200">VisibleChange</animation>
-  </include>
-  <include name="9000Buttons">
-    <width>444</width>
-    <textoffsetx>10</textoffsetx>
-    <disabledcolor>Grey</disabledcolor>
   </include>
   <include name="9000ViewButtons">
     <height>54</height>
@@ -726,12 +702,6 @@
     <control type="multiimage">
       <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Pvr.Art]</imagepath>
-    </control>
-  </include>
-  <include name="Pictures_Art">
-    <control type="multiimage">
-      <include>BG.Defaults</include>
-      <imagepath background="true">$VAR[Pictures.Art]</imagepath>
     </control>
   </include>
   <include name="Weather_Art">
