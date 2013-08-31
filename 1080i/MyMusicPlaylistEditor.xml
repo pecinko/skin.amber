@@ -26,7 +26,7 @@
         <height>60</height>
         <textcolor>Orange</textcolor>
         <textoffsetx>20</textoffsetx>
-        <label>1033</label>
+        <label>$LOCALIZE[1033]</label>
       </control>
       <control type="list" id="50">
         <posx>-230</posx>
@@ -144,7 +144,7 @@
         <control type="button" id="6" description="Open">
           <posy>240</posy>
           <width>315</width>
-          <label>502</label>
+          <label>$LOCALIZE[502]</label>
           <onup>8999</onup>
           <ondown>7</ondown>
           <onleft>50</onleft>
@@ -152,7 +152,7 @@
         <control type="button" id="7" description="save">
           <posy>300</posy>
           <width>315</width>
-          <label>190</label>
+          <label>$LOCALIZE[190]</label>
           <onup>6</onup>
           <ondown>8</ondown>
           <onleft>50</onleft>
@@ -160,7 +160,7 @@
         <control type="button" id="8" description="clear">
           <posy>360</posy>
           <width>315</width>
-          <label>192</label>
+          <label>$LOCALIZE[192]</label>
           <onup>7</onup>
           <ondown>8999</ondown>
           <onleft>50</onleft>
@@ -169,7 +169,7 @@
           <enable>IntegerGreaterThan(Container(100).NumItems,0)</enable>
           <posy>420</posy>
           <width>315</width>
-          <label>559</label>
+          <label>$LOCALIZE[559]</label>
           <onup>8</onup>
           <ondown>100</ondown>
           <onleft>50</onleft>
@@ -198,7 +198,7 @@
         <height>60</height>
         <textcolor>Orange</textcolor>
         <textoffsetx>20</textoffsetx>
-        <label>559</label>
+        <label>$LOCALIZE[559]</label>
       </control>
 	  <control type="label" id="101" description="item count">
         <posx>1338</posx>
@@ -324,7 +324,7 @@
         <posx>-223</posx>
         <posy>420</posy>
         <width>315</width>
-        <label>1024</label>
+        <label>$LOCALIZE[1024]</label>
         <onup>50</onup>
         <ondown>50</ondown>
         <onleft>100</onleft>

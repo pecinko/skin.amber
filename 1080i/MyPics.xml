@@ -172,18 +172,18 @@
         <control type="button" id="6" description="Slideshow">
           <disabledcolor>Disabled</disabledcolor>
           <include>9000SysButtons</include>
-          <label>108</label>
+          <label>$LOCALIZE[108]</label>
           <visible>!ListItem.IsFolder</visible>
         </control>
         <control type="button" id="7" description="Recursive slideshow">
           <disabledcolor>Disabled</disabledcolor>
           <include>9000SysButtons</include>
-          <label>13318</label>
+          <label>$LOCALIZE[13318]</label>
           <visible>ListItem.IsFolder</visible>
         </control>
         <control type="radiobutton" id="9" description="Randomize">
           <include>9000SysButtons</include>
-          <label>13319</label>
+          <label>$LOCALIZE[13319]</label>
         </control>
         <control type="button" id="699" description="Playing">
           <enable>Player.HasMedia</enable>

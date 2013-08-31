@@ -434,7 +434,7 @@
           <width>250</width>
           <align>center</align>
           <font>Details</font>
-          <label>Cinema</label>
+          <label>$LOCALIZE[31005]</label>
           <textcolor>White</textcolor>
           <focusedcolor>Orange</focusedcolor>
 		  <texturefocus>-</texturefocus>
@@ -447,8 +447,8 @@
           <width>230</width>
           <align>center</align>
           <font>Details</font>
-          <label>208</label>
-          <altlabel>1024</altlabel>
+          <label>$LOCALIZE[208]</label>
+          <altlabel>$LOCALIZE[1024]</altlabel>
           <textcolor>White</textcolor>
           <focusedcolor>Orange</focusedcolor>
 		  <texturefocus>-</texturefocus>
@@ -460,7 +460,7 @@
           <width>230</width>
           <font>Details</font>
           <align>center</align>
-          <label>20410</label>
+          <label>$LOCALIZE[20410]</label>
           <textcolor>White</textcolor>
           <focusedcolor>Orange</focusedcolor>
 		  <texturefocus>-</texturefocus>
@@ -475,7 +475,7 @@
           <font>Details</font>
           <textcolor>White</textcolor>
 		  <focusedcolor>Orange</focusedcolor>
-          <label>344</label>
+          <label>$LOCALIZE[344]</label>
           <onclick>Control.SetFocus(50)</onclick>
           <texturefocus>-</texturefocus>
           <alttexturefocus>-</alttexturefocus>
@@ -497,7 +497,7 @@
           <font>Details</font>
           <textcolor>White</textcolor>
           <focusedcolor>Orange</focusedcolor>
-		  <label>13511</label>
+		  <label>$LOCALIZE[13511]</label>
           <texturefocus>-</texturefocus>
         </control>
       </control>

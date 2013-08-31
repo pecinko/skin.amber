@@ -20,7 +20,7 @@
         <width>1010</width>
         <align>center</align>
         <textcolor>Orange</textcolor>
-        <label>21422</label>
+        <label>$LOCALIZE[21422]</label>
       </control>
       <control type="group" id="9001">
         <posy>60</posy>
@@ -68,7 +68,7 @@
 	   <control type="button" id="19" description="Cancel">
           <posy>210</posy>
           <width>231</width>
-          <label>222</label>
+          <label>$LOCALIZE[222]</label>
           <onup>18</onup>
           <onleft>9001</onleft>
           <ondown>20</ondown>
@@ -76,7 +76,7 @@
 		<control type="button" id="20" description="Browse">
         <posy>270</posy>
         <width>231</width>
-        <label>1024</label>
+        <label>$LOCALIZE[1024]</label>
         <onup>19</onup>
         <onleft>9001</onleft>
         <ondown>18</ondown>
@@ -84,7 +84,7 @@
 	   <control type="button" id="18" description="OK"> 
           <posy>330</posy>
           <width>231</width>
-          <label>186</label>
+          <label>$LOCALIZE[186]</label>
           <onup>20</onup>
           <onleft>9001</onleft>
           <ondown>19</ondown>

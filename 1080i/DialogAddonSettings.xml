@@ -82,17 +82,17 @@
         <onright>9</onright>
         <orientation>vertical</orientation>
         <control type="button" id="10" description="OK">
-          <label>186</label>
+          <label>$LOCALIZE[186]</label>
           <width>324</width>
           <textoffsetx>10</textoffsetx>
         </control>
         <control type="button" id="11" description="cancel">
-          <label>222</label>
+          <label>$LOCALIZE[222]</label>
           <width>324</width>
           <textoffsetx>10</textoffsetx>
         </control>
         <control type="button" id="12" description="defaults">
-          <label>409</label>
+          <label>$LOCALIZE[409]</label>
           <width>324</width>
           <textoffsetx>10</textoffsetx>
         </control>

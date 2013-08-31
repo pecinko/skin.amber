@@ -120,28 +120,28 @@
             <control type="button" id="12" description="album">
                 <posy>240</posy>
                 <width>315</width>
-                <label>558</label>
+                <label>$LOCALIZE[558]</label>
                 <onup>15</onup>
                 <ondown>13</ondown>
               </control>
             <control type="button" id="13" description="get thumb">
                 <posy>300</posy>
                 <width>315</width>
-                <label>13405</label>
+                <label>$LOCALIZE[13405]</label>
                 <onup>12</onup>
                 <ondown>11</ondown>
              </control>
             <control type="button" id="11" description="cancel">
                 <posy>360</posy>
                 <width>315</width>
-                <label>222</label>
+                <label>$LOCALIZE[222]</label>
                 <onup>13</onup>
                 <ondown>10</ondown>
              </control>
 			<control type="button" id="10" description="OK">
                 <posy>420</posy>
                 <width>315</width>
-                <label>186</label>
+                <label>$LOCALIZE[186]</label>
                 <onup>11</onup>
                 <ondown>14</ondown>
             </control>

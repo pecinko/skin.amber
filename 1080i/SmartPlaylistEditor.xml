@@ -38,7 +38,7 @@
             <posy>0</posy>
             <width>330</width>
             <height>60</height>
-            <label>15019</label>
+            <label>$LOCALIZE[15019]</label>
 			
           </control>
           <control type="button" id="14">
@@ -46,14 +46,14 @@
             <posy>0</posy>
             <width>330</width>
             <height>60</height>
-            <label>1210</label>
+            <label>$LOCALIZE[1210]</label>
           </control>
           <control type="button" id="15">
             <posx>0</posx>
             <posy>0</posy>
             <width>330</width>
             <height>60</height>
-            <label>21435</label>
+            <label>$LOCALIZE[21435]</label>
           </control>
         </control>
 	<control type="grouplist" id="9002" description="Ok cancel">
@@ -72,14 +72,14 @@
             <posy>0</posy>
             <width>330</width>
             <height>60</height>
-            <label>186</label>
+            <label>$LOCALIZE[186]</label>
           </control>
           <control type="button" id="21">
             <posx>0</posx>
             <posy>0</posy>
             <width>330</width>
             <height>60</height>
-            <label>222</label>
+            <label>$LOCALIZE[222]</label>
            </control>
         </control>	
     <control type="group" id="9000">
@@ -87,7 +87,7 @@
 				<control type="spincontrolex" id="22" description="Set Playlist type">
 					<posy>180</posy>
                     <width>1467</width>
-                    <label>467</label>
+                    <label>$LOCALIZE[467]</label>
                     <textoffsetx>30</textoffsetx>
                     <reverse>yes</reverse>
 					<onright>9002</onright>
@@ -107,7 +107,7 @@
                 <control type="label">
                     <posy>306</posy>
                     <width>1467</width>
-					<label>21434</label>
+					<label>$LOCALIZE[21434]</label>
                     <textoffsetx>30</textoffsetx>
 					<align>center</align>
 		        </control>
@@ -174,7 +174,7 @@
                 <control type="spincontrolex" id="16" description="Items must match">
                     <posy>720</posy>
                     <width>1467</width>
-					<label>21424</label>
+					<label>$LOCALIZE[21424]</label>
                     <textoffsetx>30</textoffsetx>
                     <reverse>yes</reverse>
 					<onleft>9002</onleft>
@@ -185,7 +185,7 @@
                 <control type="spincontrolex" id="17" description="Limit to">
                     <posy>780</posy>
                     <width>1467</width>
-					<label>21427</label>
+					<label>$LOCALIZE[21427]</label>
                     <textoffsetx>30</textoffsetx>
                     <reverse>yes</reverse>
 					<onleft>9002</onleft>
@@ -196,7 +196,7 @@
                 <control type="spincontrolex" id="18" description="Order by">
                     <posy>840</posy>
                     <width>1467</width>
-                    <label>21429</label>
+                    <label>$LOCALIZE[21429]</label>
                     <textoffsetx>30</textoffsetx>
                     <reverse>yes</reverse>
 					<onleft>9002</onleft>

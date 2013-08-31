@@ -24,7 +24,7 @@
         <posy>281</posy>
         <width>690</width>
         <height>52</height>
-        <label>13008</label>
+        <label>$LOCALIZE[13008]</label>
         <align>center</align>
         <aligny>center</aligny>
         <textcolor>Orange</textcolor>
@@ -46,7 +46,7 @@
           <defaultcontrol always="true">701</defaultcontrol>
           <control type="radiobutton" id="701" description="Menu">
             <width>525</width>
-            <label>31983</label>
+            <label>$LOCALIZE[31983]</label>
             <onclick>Skin.Reset(shutdown)</onclick>
             <selected>IsEmpty(Skin.String(shutdown))</selected>
           </control>
@@ -67,7 +67,7 @@
           <control type="radiobutton" id="704" description="Shutdown">
             <width>525</width>
             <enable>System.CanPowerdown</enable>
-            <label>13005</label>
+            <label>$LOCALIZE[13005]</label>
             <onclick>Skin.SetString(shutdown,powerdown)</onclick>
             <selected>StringCompare(Skin.String(shutdown),powerdown)</selected>
           </control>

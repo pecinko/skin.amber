@@ -221,19 +221,19 @@
           <scrolltime>200</scrolltime>
           <control type="button" id="413">
             <width>330</width>
-            <label>186</label>
+            <label>$LOCALIZE[186]</label>
             <onleft>450</onleft>
         	<onright>60</onright>
           </control>
           <control type="button" id="414">
             <width>330</width>
-            <label>222</label>
+            <label>$LOCALIZE[222]</label>
             <onleft>450</onleft>
         	<onright>60</onright>
           </control>
           <control type="button" id="415">
             <width>330</width>
-            <label>119</label>
+            <label>$LOCALIZE[119]</label>
             <onleft>450</onleft>
         	<onright>60</onright>
           </control>

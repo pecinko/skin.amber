@@ -208,11 +208,11 @@
     </control>
           <control type="togglebutton" id="32" description="TV Channels">
           <include>9000SysButtons</include>
-          <label>19023</label>
+          <label>$LOCALIZE[19023]</label>
         </control>
 		<control type="button" id="33" description="TV Channels">
           <include>9000SysButtons</include>
-          <label>19024</label>
+          <label>$LOCALIZE[19024]</label>
         </control>
 		<control type="button" id="31" description="TV Guide">
           <include>9000SysButtons</include>
@@ -220,15 +220,15 @@
         </control>
         <control type="button" id="34" description="Recordings">
           <include>9000SysButtons</include>
-          <label>19163</label>
+          <label>$LOCALIZE[19163]</label>
         </control>
         <control type="button" id="35" description="Timers">
           <include>9000SysButtons</include>
-          <label>19040</label>
+          <label>$LOCALIZE[19040]</label>
         </control>
         <control type="button" id="36" description="Search">
           <include>9000SysButtons</include>
-          <label>137</label>
+          <label>$LOCALIZE[137]</label>
         </control>
       </control>
     </control>

@@ -111,7 +111,7 @@
       <control type="button" id="10">
         <description>OK</description>
         <width>300</width>
-		<label>186</label>
+		<label>$LOCALIZE[186]</label>
 		<align>center</align>
       </control>
     </control>

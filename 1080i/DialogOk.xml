@@ -62,7 +62,7 @@
         <posy>230</posy>
 		<height>60</height>
         <width>300</width>
-        <label>186</label>
+        <label>$LOCALIZE[186]</label>
 		<align>center</align>
 		<pulseonselect>true</pulseonselect>
       </control>

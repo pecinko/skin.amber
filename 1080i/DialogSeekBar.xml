@@ -100,7 +100,7 @@
       <control type="label" description="Pause">
         <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused + System.IdleTime(4)]</visible>
 	<include>SeekbarLabels</include>
-        <label>112</label>
+        <label>$LOCALIZE[112]</label>
       </control>
       <control type="label" id="24" description="Buffering label">
         <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>

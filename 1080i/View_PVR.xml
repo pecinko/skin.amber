@@ -602,7 +602,7 @@
           <posy>0</posy>
           <width>450</width>
           <height>30</height>
-          <label>369</label>
+          <label>$LOCALIZE[369]</label>
         </control>
         <control type="label">
           <description>Schedule Time header label</description>
@@ -610,7 +610,7 @@
           <posy>0</posy>
           <width>550</width>
           <height>30</height>
-          <label>31501</label>
+          <label>$LOCALIZE[31501]</label>
         </control>
         <control type="label">
           <description>Channel header label</description>
@@ -618,7 +618,7 @@
           <posy>0</posy>
           <width>380</width>
           <height>30</height>
-          <label>19029</label>
+          <label>$LOCALIZE[19029]</label>
         </control>
         <control type="label">
           <description>Status header label</description>
@@ -626,7 +626,7 @@
           <posy>0</posy>
           <width>280</width>
           <height>30</height>
-          <label>126</label>
+          <label>$LOCALIZE[126]</label>
         </control>
       </control>
       <control type="group" description="Footer">
@@ -969,7 +969,7 @@
             <height>30</height>
             <scroll>false</scroll>
             <font>ListDetails</font>
-              <label>19043</label>
+              <label>$LOCALIZE[19043]</label>
               <visible>ListItem.IsRecording</visible>
             </control>
             <control type="label">
@@ -979,7 +979,7 @@
             <height>30</height>
             <scroll>false</scroll>
             <font>ListDetails</font>
-              <label>31510</label>
+              <label>$LOCALIZE[31510]</label>
               <visible>ListItem.HasTimer</visible>
             </control>
 	    </itemlayout>
@@ -1037,7 +1037,7 @@
             <height>30</height>
             <scroll>false</scroll>
             <font>ListDetails</font>
-              <label>19043</label>
+              <label>$LOCALIZE[19043]</label>
               <visible>ListItem.IsRecording</visible>
             </control>
             <control type="label">
@@ -1047,7 +1047,7 @@
             <height>30</height>
             <scroll>false</scroll>
             <font>ListDetails</font>
-              <label>31510</label>
+              <label>$LOCALIZE[31510]</label>
               <visible>ListItem.HasTimer</visible>
             </control>
         </focusedlayout>
@@ -1068,7 +1068,7 @@
           <posy>0</posy>
           <width>680</width>
           <height>30</height>
-          <label>369</label>
+          <label>$LOCALIZE[369]</label>
         </control>
         <control type="label">
           <description>Schedule Time header label</description>
@@ -1076,7 +1076,7 @@
           <posy>0</posy>
           <width>280</width>
           <height>30</height>
-          <label>21820</label>
+          <label>$LOCALIZE[21820]</label>
         </control>
         <control type="label">
           <description>Channel header label</description>
@@ -1084,7 +1084,7 @@
           <posy>0</posy>
           <width>480</width>
           <height>30</height>
-          <label>19148</label>
+          <label>$LOCALIZE[19148]</label>
         </control>
         <control type="label">
           <description>Status header label</description>
@@ -1092,7 +1092,7 @@
           <posy>0</posy>
           <width>280</width>
           <height>30</height>
-          <label>126</label>
+          <label>$LOCALIZE[126]</label>
         </control>
       </control>
       <control type="group" description="Footer">

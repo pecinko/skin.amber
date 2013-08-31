@@ -14,7 +14,7 @@
       </control>
       <control type="label" description="Pause">
         <include>SeekbarLabels</include>
-        <label>112</label>
+        <label>$LOCALIZE[112]</label>
       </control>
     </control>
   </controls>

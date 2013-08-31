@@ -141,7 +141,7 @@
             <visible>System.CanPowerDown</visible>
             <onclick>dialog.close(all,true)</onclick>
 			<onclick>XBMC.Powerdown()</onclick>
-            <label>13005</label>
+            <label>$LOCALIZE[13005]</label>
             <thumb>ShutdownNF.png</thumb>
             <icon>ShutdownFO.png</icon>
           </item>

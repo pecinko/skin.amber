@@ -57,7 +57,7 @@
         <control type="button" id="50" description="Defaults">
           <posy>450</posy>
           <width>254</width>
-          <label>409</label>
+          <label>$LOCALIZE[409]</label>
           <onleft>5</onleft>
           <onup>29</onup>
           <ondown>28</ondown>
@@ -65,7 +65,7 @@
 		<control type="button" id="28" description="OK">
           <posy>510</posy>
           <width>254</width>
-          <label>186</label>
+          <label>$LOCALIZE[186]</label>
           <onleft>5</onleft>
           <onup>50</onup>
           <ondown>29</ondown>
@@ -73,7 +73,7 @@
         <control type="button" id="29" description="Cancel">
           <posy>570</posy>
           <width>254</width>
-          <label>222</label>
+          <label>$LOCALIZE[222]</label>
           <onleft>5</onleft>
           <onright>-</onright>
           <onup>28</onup>

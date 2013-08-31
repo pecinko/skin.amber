@@ -29,7 +29,7 @@
                 <height>60</height>
 				<textcolor>Orange</textcolor>
                 <textoffsetx>30</textoffsetx>
-				<label>10523</label>
+				<label>$LOCALIZE[10523]</label>
             </control>
 			<control type="label" description="Album info">
                 <visible>container.content(artists)</visible>
@@ -39,7 +39,7 @@
                 <height>60</height>
 				<textcolor>Orange</textcolor>
                 <textoffsetx>30</textoffsetx>
-				<label>21891</label>
+				<label>$LOCALIZE[21891]</label>
             </control>
 			<control type="label" description="Album title">
                 <visible>!container.content(artists)</visible>
@@ -123,28 +123,28 @@
             <control type="button" id="11" description="last fm">
                 <posy>240</posy>
                 <width>315</width>
-                <label>last fm</label>
+                <label>$LOCALIZE[31004]</label>
                 <onup>12</onup>
                 <ondown>6</ondown>
             </control>
 			<control type="button" id="6" description="refresh">
                 <posy>300</posy>
                 <width>315</width>
-                <label>184</label>
+                <label>$LOCALIZE[184]</label>
                 <onup>11</onup>
                 <ondown>10</ondown>
               </control>
             <control type="button" id="10" description="get thumb">
                 <posy>360</posy>
                 <width>315</width>
-                <label>13405</label>
+                <label>$LOCALIZE[13405]</label>
                 <onup>6</onup>
                 <ondown>12</ondown>
              </control>
             <control type="button" id="12" description="get fanart">
                 <posy>420</posy>
                 <width>315</width>
-                <label>20445</label>
+                <label>$LOCALIZE[20445]</label>
                 <onup>10</onup>
                 <ondown>11</ondown>
              </control>

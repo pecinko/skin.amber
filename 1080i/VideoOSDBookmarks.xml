@@ -90,21 +90,21 @@
         <ondown>11</ondown>
         <control type="button" id="2">
           <description>Create Bookmark button</description>
-          <label>294</label>
+          <label>$LOCALIZE[294]</label>
           <width>375</width>
 		  <align>center</align>
           <texturenofocus>-</texturenofocus>
         </control>
         <control type="button" id="3">
           <description>Clear Bookmark button</description>
-          <label>296</label>
+          <label>$LOCALIZE[296]</label>
           <width>375</width>
 		  <align>center</align>
           <texturenofocus>-</texturenofocus>
         </control>
         <control type="button" id="4">
           <description>Clear Bookmark button</description>
-          <label>20406</label>
+          <label>$LOCALIZE[20406]</label>
           <width>375</width>
 		  <align>center</align>
           <texturenofocus>-</texturenofocus>

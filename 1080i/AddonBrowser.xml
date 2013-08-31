@@ -125,7 +125,7 @@
           <scrolltime>200</scrolltime>
           <control type="button" id="3">
             <width>330</width>
-            <label>186</label>
+            <label>$LOCALIZE[186]</label>
             <font>Label2</font>
           </control>
           <control type="radiobutton" id="5">
@@ -140,7 +140,7 @@
           </control>
           <control type="radiobutton" id="7">
             <width>330</width>
-            <label>25001</label>
+            <label>$LOCALIZE[25001]</label>
             <font>Label2</font>
           </control>
         </control>

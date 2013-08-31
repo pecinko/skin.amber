@@ -50,7 +50,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>210</label>
+          <label>$LOCALIZE[210]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDPreviousFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDPreviousNF.png</texturenofocus>
@@ -65,7 +65,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31354</label>
+          <label>$LOCALIZE[31354]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDRWFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDRWNF.png</texturenofocus>
@@ -80,8 +80,8 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31351</label>
-          <altlabel>208</altlabel>
+          <label>$LOCALIZE[31351]</label>
+          <altlabel>$LOCALIZE[208]</altlabel>
           <font>-</font>
           <texturefocus>VideoOSD/OSDPauseFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDPauseNF.png</texturenofocus>
@@ -100,7 +100,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31352</label>
+          <label>$LOCALIZE[31352]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDStopFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDStopNF.png</texturenofocus>
@@ -116,7 +116,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31353</label>
+          <label>$LOCALIZE[31353]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDFWFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDFWNF.png</texturenofocus>
@@ -131,7 +131,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>209</label>
+          <label>$LOCALIZE[209]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDNextFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDNextNF.png</texturenofocus>
@@ -154,7 +154,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>210</label>
+          <label>$LOCALIZE[210]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDChannelDownFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDChannelDownNF.png</texturenofocus>
@@ -169,7 +169,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31354</label>
+          <label>$LOCALIZE[31354]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDChannelUpFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDChannelUpNF.png</texturenofocus>
@@ -184,8 +184,8 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31351</label>
-          <altlabel>208</altlabel>
+          <label>$LOCALIZE[31351]</label>
+          <altlabel>$LOCALIZE[208]</altlabel>
           <font>-</font>
           <texturefocus>VideoOSD/OSDPauseFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDPauseNF.png</texturenofocus>
@@ -204,7 +204,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31352</label>
+          <label>$LOCALIZE[31352]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDStopFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDStopNF.png</texturenofocus>
@@ -220,7 +220,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31353</label>
+          <label>$LOCALIZE[31353]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDChannelsFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDChannelsNF.png</texturenofocus>
@@ -236,7 +236,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>209</label>
+          <label>$LOCALIZE[209]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDEpgFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDEpgNF.png</texturenofocus>
@@ -260,7 +260,7 @@
           <posy>4</posy>
           <width>90</width>
           <height>98</height>
-          <label>31355</label>
+          <label>$LOCALIZE[31355]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDDVDFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDDVDNF.png</texturenofocus>
@@ -277,7 +277,7 @@
           <posy>8</posy>
           <width>81</width>
           <height>90</height>
-          <label>13395</label>
+          <label>$LOCALIZE[13395]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDVideoFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDVideoNF.png</texturenofocus>
@@ -292,8 +292,8 @@
           <posy>8</posy>
           <width>81</width>
           <height>90</height>
-          <label>31356</label>
-          <altlabel>31356</altlabel>
+          <label>$LOCALIZE[31356]</label>
+          <altlabel>$LOCALIZE[31356]</altlabel>
           <font>-</font>
           <texturefocus>VideoOSD/OSDSubtitlesFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDSubtitlesNF.png</texturenofocus>
@@ -330,7 +330,7 @@
           <posy>5</posy>
           <width>87</width>
           <height>93</height>
-          <label>298</label>
+          <label>$LOCALIZE[298]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDBookmarksFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDBookmarksNF.png</texturenofocus>
@@ -353,7 +353,7 @@
           <posy>4</posy>
           <width>90</width>
           <height>98</height>
-          <label>31355</label>
+          <label>$LOCALIZE[31355]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDrecordFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDRecordNF.png</texturenofocus>
@@ -369,8 +369,8 @@
           <posy>8</posy>
           <width>81</width>
           <height>90</height>
-          <label>31356</label>
-          <altlabel>31356</altlabel>
+          <label>$LOCALIZE[31356]</label>
+          <altlabel>$LOCALIZE[31356]</altlabel>
           <font>-</font>
 		  <texturefocus>VideoOSD/OSDBookmarksFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDBookmarksNF.png</texturenofocus>
@@ -387,7 +387,7 @@
           <posy>8</posy>
           <width>81</width>
           <height>90</height>
-          <label>13395</label>
+          <label>$LOCALIZE[13395]</label>
 		  <font>-</font>
           <texturefocus>VideoOSD/OSDVideoFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDVideoNF.png</texturenofocus>
@@ -418,7 +418,7 @@
           <posy>5</posy>
           <width>87</width>
           <height>93</height>
-          <label>298</label>
+          <label>$LOCALIZE[298]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDBookmarksFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDBookmarksNF.png</texturenofocus>

@@ -138,15 +138,15 @@
 	  <ondown>9002</ondown>
 		<control type="radiobutton" id="7" description="Activate channel">
           <width>600</width>
-		  <label>19074</label>
+		  <label>$LOCALIZE[19074]</label>
         </control>
         <control type="edit" id="8" description="Rename">
           <width>600</width>
-		  <label>118</label>
+		  <label>$LOCALIZE[118]</label>
         </control>
         <control type="button" id="9" description="Change logo">
           <width>600</width>
-		  <label>19202</label>
+		  <label>$LOCALIZE[19202]</label>
         </control>
        <!-- <control type="image" id="10">
           <width>600</width>
@@ -156,11 +156,11 @@
         </control>-->
         <control type="radiobutton" id="12" description="EPG active">
 <width>600</width>
-          <label>19206</label>
+          <label>$LOCALIZE[19206]</label>
         </control>
         <control type="spincontrolex" id="13" description="EPG source">
 <width>600</width>
-          <label>19200</label>
+          <label>$LOCALIZE[19200]</label>
         </control>
 		<control type="label" id="29" description="spacer">
         <width>600</width>
@@ -168,21 +168,21 @@
 		</control>
 		<control type="button" id="30" description="Group Manager Button">
         <width>600</width>
-		<label>19205</label>
+		<label>$LOCALIZE[19205]</label>
       </control>
 	  <control type="button" id="33" description="New channel">
         <font>Details</font>
-        <label>19204</label>
+        <label>$LOCALIZE[19204]</label>
       </control>
       <control type="button" id="34" description="TV">
         <visible>IsEmpty(Window.Property(IsRadio))</visible>
         <width>600</width>
-        <label>19024</label>
+        <label>$LOCALIZE[19024]</label>
       </control>
       <control type="button" id="34" description="Radio">
         <visible>!IsEmpty(Window.Property(IsRadio))</visible>
         <width>600</width>
-        <label>19023</label>
+        <label>$LOCALIZE[19023]</label>
       </control>
       </control>
 	  
@@ -196,29 +196,29 @@
 	  <onup>9000</onup>
 	  <ondown>9000</ondown>
       <control type="button" id="4" description="OK">
-        <label>186</label>
+        <label>$LOCALIZE[186]</label>
 		<width>324</width>
 		<font>Details</font>
       </control>
       <control type="button" id="5" description="Apply">
-        <label>14070</label>
+        <label>$LOCALIZE[14070]</label>
 		<width>324</width>
 		<font>Details</font>
       </control>
       <control type="button" id="6" description="Cancel">
-        <label>222</label>
+        <label>$LOCALIZE[222]</label>
 		<width>324</width>
 		<font>Details</font>
       </control>
 	  <control type="button" id="31" description="Edit">
         <font>Details</font>
         <width>324</width>
-		<label>19203</label>
+		<label>$LOCALIZE[19203]</label>
       </control>
       <control type="button" id="32" description="Delete">
         <font>Details</font>
         <width>324</width>
-		<label>19211</label>
+		<label>$LOCALIZE[19211]</label>
       </control>
       
       

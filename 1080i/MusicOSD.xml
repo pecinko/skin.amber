@@ -135,7 +135,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>210</label>
+          <label>$LOCALIZE[210]</label>
           <font>-</font>
           <texturefocus>MusicOSD/OSDPreviousFO.png</texturefocus>
           <texturenofocus>MusicOSD/OSDPreviousNF.png</texturenofocus>
@@ -150,8 +150,8 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31351</label>
-          <altlabel>208</altlabel>
+          <label>$LOCALIZE[31351]</label>
+          <altlabel>$LOCALIZE[208]</altlabel>
           <font>-</font>
           <texturefocus>MusicOSD/OSDPauseFO.png</texturefocus>
           <texturenofocus>MusicOSD/OSDPauseNF.png</texturenofocus>
@@ -169,7 +169,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31352</label>
+          <label>$LOCALIZE[31352]</label>
           <font>-</font>
           <texturefocus>MusicOSD/OSDStopFO.png</texturefocus>
           <texturenofocus>MusicOSD/OSDStopNF.png</texturenofocus>
@@ -184,7 +184,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>209</label>
+          <label>$LOCALIZE[209]</label>
           <font>-</font>
           <texturefocus>MusicOSD/OSDNextFO.png</texturefocus>
           <texturenofocus>MusicOSD/OSDNextNF.png</texturenofocus>
@@ -263,7 +263,7 @@
         <width>690</width>
         <height>52</height>
         <textcolor>Orange</textcolor>
-		<label>33063</label>
+		<label>$LOCALIZE[33063]</label>
         <align>center</align>
       </control>
       <control type="grouplist" id="100" description="Music OSD Options">
@@ -279,7 +279,7 @@
         <scrolltime>280</scrolltime>
         <control type="button" id="555" description="Playlist">
 		<width>525</width>
-          <label>559</label>
+          <label>$LOCALIZE[559]</label>
           <onclick>Close</onclick>
           <onclick>ActivateWindow(MusicPlaylist)</onclick>
         </control>
@@ -291,7 +291,7 @@
         </control>
         <control type="button" id="500" description="Visualisation">
           <width>525</width>
-          <label>24010</label>
+          <label>$LOCALIZE[24010]</label>
         </control>
         <control type="button" id="19" description="Visualisation settings">
           <width>525</width>
@@ -302,21 +302,21 @@
         </control>
         <control type="button" id="20" description="Visualisation Presets">
           <width>525</width>
-          <label>31048</label>
+          <label>$LOCALIZE[31048]</label>
           <onclick>ActivateWindow(122)</onclick>
           <enable>Visualisation.Enabled</enable>
           <animation effect="fade" start="100" end="50" time="100" condition="!Visualisation.Enabled">Conditional</animation>
         </control>
         <control type="button" id="9" description="Lyrics">
           <width>525</width>
-          <label>24013</label>
+          <label>$LOCALIZE[24013]</label>
           <onclick>Close</onclick>
           <onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
           <onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
         </control>
         <control type="button" id="301" description="CodecInfo">
           <width>525</width>
-          <label>21446</label>
+          <label>$LOCALIZE[21446]</label>
           <onclick>CodecInfo</onclick>
         </control>
       </control>

@@ -134,7 +134,7 @@
         <font>WeatherTitle</font>
         <shadowcolor>ShadowDark</shadowcolor>
         <align>center</align>
-        <label>33006</label>
+        <label>$LOCALIZE[33006]</label>
       </control>
       <control type="label" description="Day 1 label">
         <include>WeatherAni1</include>
@@ -144,7 +144,7 @@
         <font>WeatherTitle</font>
         <align>center</align>
         <shadowcolor>ShadowDark</shadowcolor>
-        <label>33007</label>
+        <label>$LOCALIZE[33007]</label>
       </control>
       <control type="label" description="Day 2 label">
         <include>WeatherAni2</include>
@@ -466,11 +466,12 @@
         </control>
         <control type="button" id="4" description="Settings">
           <include>9000SysButtons</include>
-          <label>5</label>
+          <label>$LOCALIZE[5]</label>
           <onclick>ActivateWindow(MyWeatherSettings)</onclick>
         </control>
         <control type="spincontrolex" id="3" description="Location">
           <include>9000SysButtons</include>
+          <label>$LOCALIZE[396]</label>
         </control>
       </control>
     </control>

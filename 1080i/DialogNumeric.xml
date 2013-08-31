@@ -49,7 +49,7 @@
             <description>1 button</description>
             <posx>0</posx>
             <posy>0</posy>
-            <label>12311</label>
+            <label>$LOCALIZE[12311]</label>
             <onleft>22</onleft>
             <onright>12</onright>
             <onup>10</onup>
@@ -60,7 +60,7 @@
             <description>2 button</description>
             <posx>90</posx>
             <posy>0</posy>
-            <label>12312</label>
+            <label>$LOCALIZE[12312]</label>
             <onleft>11</onleft>
             <onright>13</onright>
             <onup>10</onup>
@@ -71,7 +71,7 @@
             <description>3 button</description>
             <posx>180</posx>
             <posy>0</posy>
-            <label>12313</label>
+            <label>$LOCALIZE[12313]</label>
             <onleft>12</onleft>
             <onright>23</onright>
             <onup>19</onup>
@@ -82,7 +82,7 @@
             <description>4 button</description>
             <posx>0</posx>
             <posy>72</posy>
-            <label>12314</label>
+            <label>$LOCALIZE[12314]</label>
             <onleft>21</onleft>
             <onright>15</onright>
             <onup>11</onup>
@@ -93,7 +93,7 @@
             <description>5 button</description>
             <posx>90</posx>
             <posy>72</posy>
-            <label>12315</label>
+            <label>$LOCALIZE[12315]</label>
             <onleft>14</onleft>
             <onright>16</onright>
             <onup>12</onup>
@@ -104,7 +104,7 @@
             <description>6 button</description>
             <posx>180</posx>
             <posy>72</posy>
-            <label>12316</label>
+            <label>$LOCALIZE[12316]</label>
             <onleft>15</onleft>
             <onright>21</onright>
             <onup>13</onup>
@@ -115,7 +115,7 @@
             <description>7 button</description>
             <posx>0</posx>
             <posy>144</posy>
-            <label>12317</label>
+            <label>$LOCALIZE[12317]</label>
             <onleft>21</onleft>
             <onright>18</onright>
             <onup>14</onup>
@@ -126,7 +126,7 @@
             <description>8 button</description>
             <posx>90</posx>
             <posy>144</posy>
-            <label>12318</label>
+            <label>$LOCALIZE[12318]</label>
             <onleft>17</onleft>
             <onright>19</onright>
             <onup>15</onup>
@@ -137,7 +137,7 @@
             <description>9 button</description>
             <posx>180</posx>
             <posy>144</posy>
-            <label>12319</label>
+            <label>$LOCALIZE[12319]</label>
             <onleft>18</onleft>
             <onright>21</onright>
             <onup>16</onup>
@@ -148,7 +148,7 @@
             <description>0 button</description>
             <posx>90</posx>
             <posy>216</posy>
-            <label>12310</label>
+            <label>$LOCALIZE[12310]</label>
             <onleft>20</onleft>
             <onright>21</onright>
             <onup>18</onup>

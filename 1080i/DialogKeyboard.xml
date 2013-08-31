@@ -429,7 +429,7 @@
               <posx>0</posx>
               <posy>0</posy>
               <width>490</width>
-              <label>20182</label>
+              <label>$LOCALIZE[20182]</label>
               <onleft>300</onleft>
               <onright>300</onright>
               <onup>54</onup>

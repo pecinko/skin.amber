@@ -25,7 +25,7 @@
         <posx>525</posx>
         <posy>150</posy>
         <width>840</width>
-        <label>31048</label>
+        <label>$LOCALIZE[31048]</label>
         <align>center</align>
 		<textcolor>Orange</textcolor>
       </control>

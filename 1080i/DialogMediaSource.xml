@@ -28,7 +28,7 @@
                 <width>1010</width>
                 <height>40</height>
                 <textcolor>Orange</textcolor>
-                <label>1021</label>
+                <label>$LOCALIZE[1021]</label>
             </control>
             <control type="list" id="10" description="Path list">
                 <posx>60</posx>
@@ -76,7 +76,7 @@
                 <posy>333</posy>
                 <width>1010</width>
                 <height>40</height>
-                <label>1022</label>
+                <label>$LOCALIZE[1022]</label>
             </control>
             <control type="button" id="12"  description="Path Buttons">
                 <posx>27</posx>
@@ -110,7 +110,7 @@
                     <posy>0</posy>
                     <width>230</width>
                     <height>60</height>
-                    <label>1024</label>
+                    <label>$LOCALIZE[1024]</label>
                     <align>left</align>
                     <textoffsetx>30</textoffsetx>
                     <onleft>10</onleft>
@@ -124,7 +124,7 @@
                     <posy>62</posy>
                     <width>230</width>
                     <height>60</height>
-                    <label>15019</label>
+                    <label>$LOCALIZE[15019]</label>
                     <align>left</align>
                     <textoffsetx>30</textoffsetx>
                     <onleft>10</onleft>
@@ -138,7 +138,7 @@
                     <posy>123</posy>
                     <width>230</width>
                     <height>60</height>
-                    <label>1210</label>
+                    <label>$LOCALIZE[1210]</label>
                     <align>left</align>
                     <textoffsetx>30</textoffsetx>
                     <onleft>10</onleft>
@@ -153,7 +153,7 @@
                     <posy>255</posy>
                     <width>230</width>
                     <height>60</height>
-                    <label>222</label>
+                    <label>$LOCALIZE[222]</label>
                     <align>left</align>
                     <textoffsetx>30</textoffsetx>
                     <onleft>12</onleft>
@@ -168,7 +168,7 @@
                     <posy>315</posy>
                     <width>230</width>
                     <height>60</height>
-                    <label>186</label>
+                    <label>$LOCALIZE[186]</label>
                     <align>left</align>
                     <textoffsetx>30</textoffsetx>
                     <onleft>12</onleft>

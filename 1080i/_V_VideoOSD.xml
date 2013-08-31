@@ -47,7 +47,7 @@
         <control type="label" description="Pause">
           <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused + System.IdleTime(2)]</visible>
           <include>OSDSeekbarLabels</include>
-          <label>112</label>
+          <label>$LOCALIZE[112]</label>
         </control>
         <control type="label" id="24" description="Buffering label">
           <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
@@ -147,8 +147,8 @@
         <ondown>100</ondown>
         <control type="togglebutton" id="401">
           <width>690</width>
-          <label>31356</label>
-          <altlabel>31356</altlabel>
+          <label>$LOCALIZE[31356]</label>
+          <altlabel>$LOCALIZE[31356]</altlabel>
           <align>center</align>
           <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
           <onclick>Close</onclick>
@@ -160,7 +160,7 @@
         <control type="button" id="402">
           <width>660</width>
           <aligny>center</aligny>
-          <label>22006</label>
+          <label>$LOCALIZE[22006]</label>
           <onclick>SubtitleDelay</onclick>
           <visible>false</visible>
           <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
@@ -168,7 +168,7 @@
         <control type="button" id="403">
           <width>660</width>
           <aligny>center</aligny>
-          <label>209</label>
+          <label>$LOCALIZE[209]</label>
           <onclick>NextSubtitle</onclick>
           <visible>false</visible>
           <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
@@ -176,7 +176,7 @@
         <control type="radiobutton" id="404">
           <width>660</width>
           <aligny>center</aligny>
-          <label>449</label>
+          <label>$LOCALIZE[449]</label>
           <radioposx>200</radioposx>
           <onclick>ShowSubtitles</onclick>
           <selected>VideoPlayer.SubtitlesEnabled</selected>
@@ -196,7 +196,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>210</label>
+          <label>$LOCALIZE[210]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDPreviousFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDPreviousNF.png</texturenofocus>
@@ -211,7 +211,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31354</label>
+          <label>$LOCALIZE[31354]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDRWFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDRWNF.png</texturenofocus>
@@ -226,8 +226,8 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31351</label>
-          <altlabel>208</altlabel>
+          <label>$LOCALIZE[31351]</label>
+          <altlabel>$LOCALIZE[208]</altlabel>
           <font>-</font>
           <texturefocus>VideoOSD/OSDPauseFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDPauseNF.png</texturenofocus>
@@ -245,7 +245,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31352</label>
+          <label>$LOCALIZE[31352]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDStopFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDStopNF.png</texturenofocus>
@@ -260,7 +260,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31353</label>
+          <label>$LOCALIZE[31353]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDFWFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDFWNF.png</texturenofocus>
@@ -275,7 +275,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>209</label>
+          <label>$LOCALIZE[209]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDNextFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDNextNF.png</texturenofocus>
@@ -298,7 +298,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>210</label>
+          <label>$LOCALIZE[210]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDChannelDownFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDChannelDownNF.png</texturenofocus>
@@ -313,7 +313,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31354</label>
+          <label>$LOCALIZE[31354]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDChannelUpFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDChannelUpNF.png</texturenofocus>
@@ -328,8 +328,8 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31351</label>
-          <altlabel>208</altlabel>
+          <label>$LOCALIZE[31351]</label>
+          <altlabel>$LOCALIZE[208]</altlabel>
           <font>-</font>
           <texturefocus>VideoOSD/OSDPauseFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDPauseNF.png</texturenofocus>
@@ -347,7 +347,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31352</label>
+          <label>$LOCALIZE[31352]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDStopFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDStopNF.png</texturenofocus>
@@ -362,7 +362,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>31353</label>
+          <label>$LOCALIZE[31353]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDChannelsFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDChannelsNF.png</texturenofocus>
@@ -378,7 +378,7 @@
           <posy>0</posy>
           <width>90</width>
           <height>98</height>
-          <label>209</label>
+          <label>$LOCALIZE[209]</label>
           <font>-</font>
           <texturefocus>VideoOSD/OSDEpgFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDEpgNF.png</texturenofocus>
@@ -403,8 +403,8 @@
           <visible>VideoPlayer.Content(LiveTV)</visible>
           <enable>Player.CanRecord</enable>
           <width>690</width>
-          <label>264</label>
-          <altlabel>265</altlabel>
+          <label>$LOCALIZE[264]</label>
+          <altlabel>$LOCALIZE[265]</altlabel>
           <align>center</align>
           <textcolor>Red</textcolor>
           <onclick>PlayerControl(Record)</onclick>
@@ -412,34 +412,34 @@
         <control type="togglebutton" id="7000">
           <visible>VideoPlayer.HasMenu</visible>
           <width>690</width>
-          <label>31355</label>
+          <label>$LOCALIZE[31355]</label>
           <align>center</align>
           <usealttexture>!VideoPlayer.HasMenu</usealttexture>
           <onclick>PlayerControl(ShowVideoMenu)</onclick>
         </control>
         <control type="button" id="7001">
           <width>690</width>
-          <label>13396</label>
+          <label>$LOCALIZE[13396]</label>
           <align>center</align>
           <onclick>ActivateWindow(OSDAudioSettings)</onclick>
         </control>
         <control type="button" id="7002">
           <width>690</width>
-          <label>13395</label>
+          <label>$LOCALIZE[13395]</label>
           <align>center</align>
           <onclick>ActivateWindow(OSDVideoSettings)</onclick>
         </control>
         <control type="button" id="7003">
           <visible>!VideoPlayer.Content(LiveTV)</visible>
           <width>690</width>
-          <label>298</label>
+          <label>$LOCALIZE[298]</label>
           <align>center</align>
           <onclick>ActivateWindow(VideoBookmarks)</onclick>
         </control>
         <control type="togglebutton" id="7004">
           <width>690</width>
           <align>center</align>
-          <label>20159</label>
+          <label>$LOCALIZE[20159]</label>
           <onclick>close</onclick>
           <onclick>ActivateWindow(142)</onclick>
           <altclick>close</altclick>
@@ -448,7 +448,7 @@
         </control>
         <control type="button" id="7005">
           <width>690</width>
-          <label>21445</label>
+          <label>$LOCALIZE[21445]</label>
           <align>center</align>
           <onclick>CodecInfo</onclick>
         </control>

@@ -23,7 +23,7 @@
       <height>40</height>
 	  <align>center</align>
 	  <textcolor>Orange</textcolor>
-      <label>10034</label>
+      <label>$LOCALIZE[10034]</label>
     </control>
     <control type="togglebutton" id="4" description="Enable Login Screen">
       <posx>0</posx>
