@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <backgroundcolor>0</backgroundcolor>
   <allowoverlay>no</allowoverlay>
@@ -9,20 +8,20 @@
     <control type="group" description="Content">
       <animation effect="fade" time="250" condition="!Window.Previous(Settings.xml)">WindowOpen</animation>
       <animation effect="fade" time="250" condition="!Window.Next(Settings.xml)">WindowClose</animation>
-	  <control type="image">
-      <include>Panel_Size</include>
-      <texture>dialogs/SettingsBG.png</texture>
-    </control>
-	 <control type="label">
+      <control type="image">
+        <include>Panel_Size</include>
+        <texture>dialogs/SettingsBG.png</texture>
+      </control>
+      <control type="label">
         <posx>100</posx>
         <posy>120</posy>
         <width>240</width>
         <height>61</height>
-		<font>Logo</font>
-		<align>center</align>
-		<label>XBMC</label>
+        <font>Logo</font>
+        <align>center</align>
+        <label>XBMC</label>
       </control>
-	  <control type="label" id="2" description="Category label">
+      <control type="label" id="2" description="Category label">
         <posx>650</posx>
         <posy>117</posy>
         <width>620</width>
@@ -45,7 +44,7 @@
       </control>
       <control type="button" id="10" description="Category Button">
         <textoffsetx>10</textoffsetx>
-		<focusedcolor>Orange</focusedcolor>
+        <focusedcolor>Orange</focusedcolor>
       </control>
       <control type="grouplist" id="5" description="Right - Control Area">
         <posx>390</posx>

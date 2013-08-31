@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">20</defaultcontrol>
   <coordinates>
@@ -10,21 +9,21 @@
     <control type="group">
       <control type="image" description="Speaker">
         <visible>!player.passthrough</visible>
-		<posx>60</posx>
+        <posx>60</posx>
         <posy>72</posy>
         <width>129</width>
         <height>129</height>
         <texture>volume/Volume.png</texture>
-		<colordiffuse>Orange</colordiffuse>
+        <colordiffuse>Orange</colordiffuse>
       </control>
-	  <control type="image" description="Speaker passthrough">
+      <control type="image" description="Speaker passthrough">
         <visible>player.passthrough</visible>
-		<posx>60</posx>
+        <posx>60</posx>
         <posy>72</posy>
         <width>129</width>
         <height>129</height>
         <texture>volume/VolumeMuted.png</texture>
-		<colordiffuse>Orange</colordiffuse>
+        <colordiffuse>Orange</colordiffuse>
       </control>
       <control type="group">
         <visible>!player.passthrough</visible>
@@ -48,7 +47,7 @@
           <height>82</height>
           <font>Volume</font>
           <textcolor>White2</textcolor>
-		  <shadowcolor>ShadowDark</shadowcolor>
+          <shadowcolor>ShadowDark</shadowcolor>
           <label>$INFO[Control.GetLabel(20)]</label>
         </control>
       </control>

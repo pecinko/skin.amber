@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <defaultcontrol always="true">11</defaultcontrol>
   <coordinates>
@@ -9,23 +8,23 @@
   <controls>
     <control type="group" description="Content">
       <include>DialogOpenClose</include>
-	<control type="image">
+      <control type="image">
         <posx>290</posx>
         <posy>120</posy>
         <width>750</width>
         <height>780</height>
         <texture border="90,0,90,0">dialogs/DialogBG.png</texture>
       </control>
-	  <control type="label">
-          <posx>340</posx>
-		  <posy>170</posy>
-          <width>630</width>
-          <height>36</height>
-          <textcolor>Orange</textcolor>
-		  <font>InfoTitle</font>
-		  <align>center</align>
-          <label>$LOCALIZE[19019]</label>
-        </control>
+      <control type="label">
+        <posx>340</posx>
+        <posy>170</posy>
+        <width>630</width>
+        <height>36</height>
+        <textcolor>Orange</textcolor>
+        <font>InfoTitle</font>
+        <align>center</align>
+        <label>$LOCALIZE[19019]</label>
+      </control>
       <control type="list" id="11" description="CHANNELS">
         <posx>320</posx>
         <posy>240</posy>
@@ -66,7 +65,7 @@
             <font>ListDetails</font>
             <width>500</width>
             <scroll>false</scroll>
-			<textcolor>Label2</textcolor>
+            <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Title]</label>
           </control>
         </itemlayout>
@@ -106,14 +105,14 @@
             <height>30</height>
             <font>ListDetails</font>
             <width>500</width>
-			<textcolor>Label2</textcolor>
+            <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Title]</label>
           </control>
         </focusedlayout>
       </control>
       <control type="scrollbar" id="61">
         <visible>false</visible>
-		<posx>1011</posx>
+        <posx>1011</posx>
         <posy>240</posy>
         <width>9</width>
         <height>495</height>

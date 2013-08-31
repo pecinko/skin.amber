@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">20</defaultcontrol>
   <include>OpenClose</include>
@@ -9,20 +8,20 @@
     <include>DimBG</include>
     <control type="group" description="Content">
       <include>DialogOpenClose</include>
-	  <posx>537</posx>
+      <posx>537</posx>
       <posy>45</posy>
-     <control type="image">
-      <posx>-12</posx>
-      <posy>99</posy>
-      <width>870</width>
-      <height>780</height>
-      <texture>dialogs/FileManagerPanel.png</texture>
-     </control>
-	 <control type="label" id="1" description="header label">
+      <control type="image">
+        <posx>-12</posx>
+        <posy>99</posy>
+        <width>870</width>
+        <height>780</height>
+        <texture>dialogs/FileManagerPanel.png</texture>
+      </control>
+      <control type="label" id="1" description="header label">
         <posy>122</posy>
         <width>846</width>
         <height>40</height>
-		<textcolor>Orange</textcolor>
+        <textcolor>Orange</textcolor>
         <label>$LOCALIZE[35000]</label>
         <align>center</align>
       </control>
@@ -40,26 +39,26 @@
             <height>128</height>
             <texture border="3">list/ListNF.png</texture>
           </control>
-		  <control type="label" description="Name">
+          <control type="label" description="Name">
             <width>846</width>
             <height>56</height>
-			<textoffsetx>30</textoffsetx>
+            <textoffsetx>30</textoffsetx>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label" description="Product ID Vendor ID">
             <posy>48</posy>
-			<width>846</width>
+            <width>846</width>
             <height>40</height>
-			<textoffsetx>30</textoffsetx>
+            <textoffsetx>30</textoffsetx>
             <label>$LOCALIZE[35504]:  [COLOR=Silver]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=Silver]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
             <font>Label2</font>
           </control>
           <control type="label" description="class">
             <posy>80</posy>
-			<width>846</width>
+            <width>846</width>
             <height>40</height>
             <textoffsetx>30</textoffsetx>
-			<label>$LOCALIZE[35501]:  [COLOR=Silver]$INFO[ListItem.Property(Class)][/COLOR]</label>
+            <label>$LOCALIZE[35501]:  [COLOR=Silver]$INFO[ListItem.Property(Class)][/COLOR]</label>
             <font>Label2</font>
           </control>
         </itemlayout>
@@ -69,7 +68,7 @@
             <height>128</height>
             <texture border="3">list/ListNF.png</texture>
           </control>
-		  <control type="image">
+          <control type="image">
             <width>846</width>
             <height>128</height>
             <texture border="2">buttons/ButtonFO.png</texture>
@@ -77,23 +76,23 @@
           <control type="label" description="Name">
             <width>846</width>
             <height>56</height>
-			<textoffsetx>30</textoffsetx>
+            <textoffsetx>30</textoffsetx>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label" description="Product ID Vendor ID">
             <posy>48</posy>
-			<width>846</width>
+            <width>846</width>
             <height>40</height>
-			<textoffsetx>30</textoffsetx>
+            <textoffsetx>30</textoffsetx>
             <label>$LOCALIZE[35504]:  [COLOR=Silver]$INFO[ListItem.Property(Product)][/COLOR]    $LOCALIZE[35503]:  [COLOR=Silver]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
             <font>Label2</font>
           </control>
           <control type="label" description="class">
             <posy>80</posy>
-			<width>846</width>
+            <width>846</width>
             <height>40</height>
             <textoffsetx>30</textoffsetx>
-			<label>$LOCALIZE[35501]:  [COLOR=Silver]$INFO[ListItem.Property(Class)][/COLOR]</label>
+            <label>$LOCALIZE[35501]:  [COLOR=Silver]$INFO[ListItem.Property(Class)][/COLOR]</label>
             <font>Label2</font>
           </control>
         </focusedlayout>
@@ -105,7 +104,7 @@
         <height>40</height>
         <font>ItemCount</font>
         <scroll>true</scroll>
-		<align>right</align>
+        <align>right</align>
         <label>$INFO[Container(20).NumItems] $LOCALIZE[31025]</label>
       </control>
     </control>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonmenu" id="111">
   <defaultcontrol always="true">9009</defaultcontrol>
   <coordinates>
@@ -12,14 +11,14 @@
 	<include>OpenClose</include>
 	<include>DimBG</include>
     </control>-->
-	<control type="group" description="MENU">
+    <control type="group" description="MENU">
       <animation type="WindowOpen">
         <effect type="zoom" start="95" end="100" center="960,540" time="200" />
-        <effect type="fade" start="80" end="100" time="200"/>
+        <effect type="fade" start="80" end="100" time="200" />
       </animation>
       <animation type="WindowClose">
         <effect type="zoom" start="100" end="95" center="960,540" time="100" />
-        <effect type="fade" start="100" end="0" time="100"/>
+        <effect type="fade" start="100" end="0" time="100" />
       </animation>
       <control type="image" description="Menu BG">
         <posx>699</posx>
@@ -121,35 +120,35 @@
           </item>
           <item id="11" description="Quit">
             <visible>!Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
-			<onclick>dialog.close(all,true)</onclick>
-			<onclick>XBMC.Quit()</onclick>
+            <onclick>dialog.close(all,true)</onclick>
+            <onclick>XBMC.Quit()</onclick>
             <label>$LOCALIZE[13009]</label>
             <thumb>QuitNF.png</thumb>
             <icon>QuitFO.png</icon>
           </item>
           <item id="12" description="Sleep">
             <visible>!Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
-			<visible>System.CanSuspend</visible>
+            <visible>System.CanSuspend</visible>
             <onclick>dialog.close(all,true)</onclick>
-			<onclick>XBMC.Suspend()</onclick>
+            <onclick>XBMC.Suspend()</onclick>
             <label>$LOCALIZE[13011]</label>
             <thumb>SleepNF.png</thumb>
             <icon>SleepFO.png</icon>
           </item>
           <item id="15" description="Shutdown">
-		   <visible>!Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
+            <visible>!Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
             <visible>System.CanPowerDown</visible>
             <onclick>dialog.close(all,true)</onclick>
-			<onclick>XBMC.Powerdown()</onclick>
-            <label>13005</label>
+            <onclick>XBMC.Powerdown()</onclick>
+            <label>$LOCALIZE[13005]</label>
             <thumb>ShutdownNF.png</thumb>
             <icon>ShutdownFO.png</icon>
           </item>
           <item id="14" description="Reboot">
             <visible>!Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
-			<visible>System.CanReboot</visible>
+            <visible>System.CanReboot</visible>
             <onclick>dialog.close(all,true)</onclick>
-			<onclick>XBMC.Reset()</onclick>
+            <onclick>XBMC.Reset()</onclick>
             <label>$LOCALIZE[13013]</label>
             <thumb>RestartNF.png</thumb>
             <icon>RestartFO.png</icon>

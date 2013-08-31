@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="List_Layout">
     <itemlayout condition="![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)]" height="72" width="1210">
@@ -28,8 +27,8 @@
         <align>right</align>
         <label>$INFO[ListItem.Label2]</label>
       </control>
-	  <include>ListWatchedOverlay</include>
-	</itemlayout>
+      <include>ListWatchedOverlay</include>
+    </itemlayout>
     <focusedlayout condition="![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)]" height="72" width="1210">
       <control type="image">
         <posx>0</posx>
@@ -39,7 +38,7 @@
         <texture flipy="true" border="3">list/ListNF.png</texture>
       </control>
       <control type="image">
-	     <posx>0</posx>
+        <posx>0</posx>
         <posy>1</posy>
         <width>1210</width>
         <height>69</height>
@@ -69,7 +68,7 @@
     <itemlayout condition="Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | [Control.IsVisible(54) + container.content(episodes)]" height="72" width="1210">
       <control type="image" description="BG">
         <posy>0</posy>
-		<posx>570</posx>
+        <posx>570</posx>
         <width>640</width>
         <height>73</height>
         <texture flipy="true" border="3">list/ListNF.png</texture>
@@ -91,7 +90,7 @@
         <texture flipy="true" border="3">list/ListNF.png</texture>
       </control>
       <control type="image" description="BG">
-   <posx>570</posx>
+        <posx>570</posx>
         <posy>1</posy>
         <width>640</width>
         <height>69</height>
@@ -148,7 +147,7 @@
     <control type="group">
       <visible>Control.IsVisible(50)</visible>
       <control type="list" id="50">
-	  <viewtype label="535">List</viewtype>
+        <viewtype label="535">List</viewtype>
         <posx>710</posx>
         <posy>406</posy>
         <width>1210</width>
@@ -158,8 +157,8 @@
         <onright>60</onright>
         <onup>50</onup>
         <ondown>50</ondown>
-		<preloaditems>4</preloaditems>
-		<include>List_Layout</include>
+        <preloaditems>4</preloaditems>
+        <include>List_Layout</include>
       </control>
       <control type="scrollbar" id="60">
         <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>

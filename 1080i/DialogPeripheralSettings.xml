@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol>5</defaultcontrol>
   <include>OpenClose</include>
@@ -18,14 +17,14 @@
         <height>720</height>
         <texture border="55">dialogs/DialogRightSmall.png</texture>
       </control>
-	  <control type="label" description="Title">
+      <control type="label" description="Title">
         <posx>0</posx>
         <posy>50</posy>
         <width>1010</width>
         <height>40</height>
         <align>center</align>
         <textcolor>Orange</textcolor>
-		<label>$LOCALIZE[5] - $LOCALIZE[35000]</label>
+        <label>$LOCALIZE[5] - $LOCALIZE[35000]</label>
       </control>
       <control type="grouplist" id="5">
         <description>Control Area</description>
@@ -49,7 +48,7 @@
       <control type="spincontrolex" id="9">
         <textoffsetx>30</textoffsetx>
       </control>
-	  <control type="sliderex" id="10">
+      <control type="sliderex" id="10">
         <textoffsetx>30</textoffsetx>
       </control>
       <control type="group" id="9000">
@@ -57,15 +56,15 @@
         <control type="button" id="50" description="Defaults">
           <posy>450</posy>
           <width>254</width>
-          <label>409</label>
+          <label>$LOCALIZE[409]</label>
           <onleft>5</onleft>
           <onup>29</onup>
           <ondown>28</ondown>
         </control>
-		<control type="button" id="28" description="OK">
+        <control type="button" id="28" description="OK">
           <posy>510</posy>
           <width>254</width>
-          <label>186</label>
+          <label>$LOCALIZE[186]</label>
           <onleft>5</onleft>
           <onup>50</onup>
           <ondown>29</ondown>
@@ -73,7 +72,7 @@
         <control type="button" id="29" description="Cancel">
           <posy>570</posy>
           <width>254</width>
-          <label>222</label>
+          <label>$LOCALIZE[222]</label>
           <onleft>5</onleft>
           <onright>noop</onright>
           <onup>28</onup>

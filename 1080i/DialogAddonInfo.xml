@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">9000</defaultcontrol>
   <include>OpenClose</include>
@@ -8,7 +7,7 @@
         <include>Panel_Size</include>
         <texture>dialogs/SettingsBG.png</texture>
       </control>
-      <control type="label" description="Header"> 
+      <control type="label" description="Header">
         <posx>358</posx>
         <posy>90</posy>
         <width>1491</width>
@@ -120,28 +119,28 @@
             <align>justify</align>
             <label>$INFO[ListItem.Property(Addon.Description)]</label>
           </control>
-            <control type="label" description="Disclaimer">
-              <visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
-			  <posx>30</posx>
-              <posy>735</posy>
-              <width>1380</width>
-              <height>60</height>
-              <font>Details</font>
-			  <label>$INFO[ListItem.Property(Addon.Disclaimer),[COLOR=Orange]$LOCALIZE[24052]: [/COLOR]]</label>
-              <scroll>true</scroll>
-              <wrapmultiline>true</wrapmultiline>
-            </control>
-            <control type="label" description="Broken">
-              <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
-              <posx>30</posx>
-              <posy>735</posy>
-              <width>1380</width>
-              <height>60</height>
-              <font>Details</font>
-			  <label>$INFO[ListItem.Property(Addon.broken),[COLOR=Orange]$LOCALIZE[24096]: [/COLOR]]</label>
-              <scroll>true</scroll>
-              <wrapmultiline>true</wrapmultiline>
-            </control>
+          <control type="label" description="Disclaimer">
+            <visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
+            <posx>30</posx>
+            <posy>735</posy>
+            <width>1380</width>
+            <height>60</height>
+            <font>Details</font>
+            <label>$INFO[ListItem.Property(Addon.Disclaimer),[COLOR=Orange]$LOCALIZE[24052]: [/COLOR]]</label>
+            <scroll>true</scroll>
+            <wrapmultiline>true</wrapmultiline>
+          </control>
+          <control type="label" description="Broken">
+            <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+            <posx>30</posx>
+            <posy>735</posy>
+            <width>1380</width>
+            <height>60</height>
+            <font>Details</font>
+            <label>$INFO[ListItem.Property(Addon.broken),[COLOR=Orange]$LOCALIZE[24096]: [/COLOR]]</label>
+            <scroll>true</scroll>
+            <wrapmultiline>true</wrapmultiline>
+          </control>
         </control>
       </control>
       <control type="grouplist" id="9000">
@@ -155,48 +154,47 @@
         <onup>9000</onup>
         <ondown>9000</ondown>
         <control type="button" id="9" description="configure">
-          <label>5</label>
+          <label>$LOCALIZE[5]</label>
           <width>324</width>
-		  <align>right</align>
+          <align>right</align>
           <focusedcolor>Orange</focusedcolor>
-		  <textoffsetx>20</textoffsetx>
+          <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="8" description="update">
-          <label>24069</label>
+          <label>$LOCALIZE[24069]</label>
           <width>324</width>
           <align>right</align>
-		  <focusedcolor>Orange</focusedcolor>
-		  <textoffsetx>20</textoffsetx>
+          <focusedcolor>Orange</focusedcolor>
+          <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="10" description="changelog">
-          <label>24036</label>
+          <label>$LOCALIZE[24036]</label>
           <width>324</width>
           <align>right</align>
-		  <focusedcolor>Orange</focusedcolor>
-		  <textoffsetx>20</textoffsetx>
+          <focusedcolor>Orange</focusedcolor>
+          <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="7" description="enable">
-          <label>24021</label>
+          <label>$LOCALIZE[24021]</label>
           <width>324</width>
           <align>right</align>
-		  <focusedcolor>Orange</focusedcolor>
-		  <textoffsetx>20</textoffsetx>
+          <focusedcolor>Orange</focusedcolor>
+          <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="11" description="rollback">
-          <label>24048</label>
+          <label>$LOCALIZE[24048]</label>
           <width>324</width>
           <align>right</align>
-		  <focusedcolor>Orange</focusedcolor>
-		  <textoffsetx>20</textoffsetx>
+          <focusedcolor>Orange</focusedcolor>
+          <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="6" description="install">
-          <label>24022</label>
+          <label>$LOCALIZE[24022]</label>
           <width>324</width>
           <align>right</align>
-		  <focusedcolor>Orange</focusedcolor>
-		  <textoffsetx>20</textoffsetx>
+          <focusedcolor>Orange</focusedcolor>
+          <textoffsetx>20</textoffsetx>
         </control>
-		
       </control>
     </control>
   </controls>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol allways="true">50</defaultcontrol>
   <include>OpenClose</include>
@@ -26,7 +25,7 @@
         <height>60</height>
         <textcolor>Orange</textcolor>
         <textoffsetx>20</textoffsetx>
-        <label>1033</label>
+        <label>$LOCALIZE[1033]</label>
       </control>
       <control type="list" id="50">
         <posx>-230</posx>
@@ -77,9 +76,9 @@
             <width>909</width>
             <texture border="5" flipy="true">list/ListNF.png</texture>
           </control>
-		  <control type="image">
+          <control type="image">
             <visible>Control.HasFocus(50)</visible>
-			<posx>0</posx>
+            <posx>0</posx>
             <posy>0</posy>
             <height>60</height>
             <width>909</width>
@@ -106,11 +105,11 @@
           </control>
         </focusedlayout>
       </control>
-	  <control type="scrollbar" id="60">
+      <control type="scrollbar" id="60">
         <posx>-250</posx>
         <posy>120</posy>
         <width>36</width>
-		<height>360</height>
+        <height>360</height>
         <texturesliderbackground>-</texturesliderbackground>
         <texturesliderbar>-</texturesliderbar>
         <texturesliderbarfocus>-</texturesliderbarfocus>
@@ -118,7 +117,7 @@
         <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
-		<onleft>noop</onleft>
+        <onleft>noop</onleft>
         <onright>50</onright>
       </control>
       <control type="image" description="Icon">
@@ -144,7 +143,7 @@
         <control type="button" id="6" description="Open">
           <posy>240</posy>
           <width>315</width>
-          <label>502</label>
+          <label>$LOCALIZE[502]</label>
           <onup>8999</onup>
           <ondown>7</ondown>
           <onleft>50</onleft>
@@ -152,7 +151,7 @@
         <control type="button" id="7" description="save">
           <posy>300</posy>
           <width>315</width>
-          <label>190</label>
+          <label>$LOCALIZE[190]</label>
           <onup>6</onup>
           <ondown>8</ondown>
           <onleft>50</onleft>
@@ -160,7 +159,7 @@
         <control type="button" id="8" description="clear">
           <posy>360</posy>
           <width>315</width>
-          <label>192</label>
+          <label>$LOCALIZE[192]</label>
           <onup>7</onup>
           <ondown>8999</ondown>
           <onleft>50</onleft>
@@ -169,7 +168,7 @@
           <enable>IntegerGreaterThan(Container(100).NumItems,0)</enable>
           <posy>420</posy>
           <width>315</width>
-          <label>559</label>
+          <label>$LOCALIZE[559]</label>
           <onup>8</onup>
           <ondown>100</ondown>
           <onleft>50</onleft>
@@ -198,9 +197,9 @@
         <height>60</height>
         <textcolor>Orange</textcolor>
         <textoffsetx>20</textoffsetx>
-        <label>559</label>
+        <label>$LOCALIZE[559]</label>
       </control>
-	  <control type="label" id="101" description="item count">
+      <control type="label" id="101" description="item count">
         <posx>1338</posx>
         <posy>50</posy>
         <width>600</width>
@@ -256,9 +255,9 @@
             <width>909</width>
             <texture border="5" flipy="true">list/ListNF.png</texture>
           </control>
-		  <control type="image">
+          <control type="image">
             <visible>Control.HasFocus(100)</visible>
-			<posx>0</posx>
+            <posx>0</posx>
             <posy>0</posy>
             <height>60</height>
             <width>909</width>
@@ -285,11 +284,11 @@
           </control>
         </focusedlayout>
       </control>
-	  <control type="scrollbar" id="61">
+      <control type="scrollbar" id="61">
         <posx>1344</posx>
         <posy>120</posy>
         <width>36</width>
-		<height>360</height>
+        <height>360</height>
         <texturesliderbackground>-</texturesliderbackground>
         <texturesliderbar>-</texturesliderbar>
         <texturesliderbarfocus>-</texturesliderbarfocus>
@@ -297,7 +296,7 @@
         <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
-		<onleft>100</onleft>
+        <onleft>100</onleft>
         <onright>noop</onright>
       </control>
       <control type="group">
@@ -324,7 +323,7 @@
         <posx>-223</posx>
         <posy>420</posy>
         <width>315</width>
-        <label>1024</label>
+        <label>$LOCALIZE[1024]</label>
         <onup>50</onup>
         <ondown>50</ondown>
         <onleft>100</onleft>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="50">
   <zorder>3</zorder>
   <coordinates>
@@ -15,7 +14,7 @@
       <height>1080</height>
       <texture>grids/DebugGrid.png</texture>
     </control>
-	<control type="image" description="LayoutGrid">
+    <control type="image" description="LayoutGrid">
       <visible>Skin.HasSetting(LayoutGrid)</visible>
       <posx>0</posx>
       <posy>0</posy>
@@ -49,8 +48,8 @@
         <align>left</align>
         <label>$INFO[Container.NumItems,Items: ]</label>
       </control>
-	  <control type="label">
-		<posy>90</posy>
+      <control type="label">
+        <posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>Orange</textcolor>
@@ -58,9 +57,9 @@
         <align>left</align>
         <label>RESUMABLE: $INFO[ListItem.property(IsResumable)]  PLEXBMC OVERLAY: $INFO[ListItem.property(overlay)]</label>
       </control>
-	  <control type="label">
+      <control type="label">
         <visible>Window.IsActive(home)</visible>
-		<posy>90</posy>
+        <posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
@@ -69,9 +68,9 @@
         <align>left</align>
         <label>RECENT: $INFO[Window(Home).Property(SkinWidgets_RecentItems)] - $INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
       </control>
-	  <control type="label">
+      <control type="label">
         <visible>Window.IsActive(home)</visible>
-		<posy>90</posy>
+        <posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
@@ -80,9 +79,9 @@
         <align>left</align>
         <label>RANDOM: $INFO[Window(Home).Property(SkinWidgets_RandomItems)] - $INFO[Window(Home).Property(RandomMovie.1.Title)]</label>
       </control>
-	  <control type="label">
+      <control type="label">
         <visible>Window.IsActive(home)</visible>
-		<posy>90</posy>
+        <posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
@@ -91,9 +90,9 @@
         <align>left</align>
         <label>RECOMMENDED: $INFO[Window(Home).Property(SkinWidgets_Recommended)] - $INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
       </control>
-	  <control type="label">
+      <control type="label">
         <visible>Window.IsActive(home)</visible>
-		<posy>90</posy>
+        <posy>90</posy>
         <width>1170</width>
         <height>32</height>
         <textcolor>FF0000FF</textcolor>
@@ -102,7 +101,7 @@
         <align>left</align>
         <label>RUNNING: $INFO[Window(Home).Property(SkinWidgets_Running)]</label>
       </control>
-	  <!-- Window labels -->
+      <!-- Window labels -->
       <control type="label">
         <width>1170</width>
         <height>32</height>
