@@ -5,11 +5,11 @@
     <value>$INFO[System.Time]</value>
   </variable>
   <variable name="Overlay" description="Overlay image">
-    <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay/]</value>
-	<value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay),overlay_unwatched/]</value>
+    <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
+	<value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
 	<value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
 	<value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,overlay_watched/]</value>
-	<value condition="Skin.HasSetting(Hide_Watched_Marks) + ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
+	<value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
 	<value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
 	<value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
   </variable>

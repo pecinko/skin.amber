@@ -163,6 +163,13 @@
           <control type="image">
             <include>MovieShowcaseThumb</include>
           </control>
+		  <control type="image">
+             <posx>190</posx>
+              <posy>291</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
+            </control>
         </itemlayout>
         <focusedlayout height="339" width="240">
           <control type="group">
@@ -178,6 +185,13 @@
               <include>MovieShowcaseThumb</include>
             </control>
           </control>
+		  <control type="image">
+             <posx>190</posx>
+              <posy>291</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
+            </control>
         </focusedlayout>
       </control>
       <control type="group">
@@ -203,6 +217,13 @@
             <include>Icon_Fade</include>
             <include>MovieShowcaseThumb</include>
           </control>
+		  <control type="image">
+             <posx>190</posx>
+              <posy>291</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
+            </control>
         </control>
         <control type="group" description="Media info">
           <posx>330</posx>
@@ -526,8 +547,8 @@
               <label>$LOCALIZE[31973] $INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
             </control>
             <control type="image" description="Watched Overlay">
-              <posx>360</posx>
-              <width>24</width>
+              <posx>357</posx>
+              <width>33</width>
               <height>70</height>
               <texture>$VAR[Overlay]</texture>
               <aspectratio>keep</aspectratio>
@@ -565,8 +586,8 @@
               <label>$LOCALIZE[31973] $INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
             </control>
             <control type="image" description="Watched Overlay">
-              <posx>360</posx>
-              <width>24</width>
+              <posx>357</posx>
+              <width>33</width>
               <height>70</height>
               <texture>$VAR[Overlay]</texture>
               <aspectratio>keep</aspectratio>
@@ -598,9 +619,9 @@
           </control>
         </control>
         <control type="image" description="Watched Overlay">
-          <posx>456</posx>
-          <posy>811</posy>
-          <width>21</width>
+          <posx>406</posx>
+          <posy>970</posy>
+          <width>33</width>
           <height>70</height>
           <texture>$VAR[Overlay]</texture>
           <aspectratio>keep</aspectratio>

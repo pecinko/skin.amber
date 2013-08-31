@@ -270,7 +270,7 @@
       <visible>!Container.Content(tvshows)</visible>
       <posx>52r</posx>
       <posy>0</posy>
-      <width>22</width>
+      <width>30</width>
       <height>72</height>
       <texture>$VAR[Overlay]</texture>
       <aspectratio aligny="center">keep</aspectratio>

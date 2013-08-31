@@ -567,7 +567,8 @@
           <label>$VAR[Plots]</label>
         </control>
         <control type="image" description="Rating">
-          <posx>-3</posx>
+          <visible>!Container.Content(Tvshows)</visible>
+		  <posx>-3</posx>
           <posy>840</posy>
           <include>Stars</include>
         </control>
@@ -734,7 +735,8 @@
             </control>
           </control>
           <control type="image" description="Rating">
-            <posx>-3</posx>
+            <visible>!Container.Content(Tvshows)</visible>
+			<posx>-3</posx>
             <posy>840</posy>
             <include>Stars</include>
           </control>
@@ -797,6 +799,12 @@
             <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
           </control>
         </control>
+		<control type="image" description="Rating">
+            <visible>Container.Content(Tvshows)</visible>
+			<posx>60</posx>
+		  <posy>1032</posy>
+            <include>Stars</include>
+          </control>
     </control>
     
     <!-- LIST 56 Banner List -->

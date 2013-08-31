@@ -32,25 +32,13 @@
             <texture background="true">$VAR[Banner]</texture>
             <aspectratio>stretch</aspectratio>
           </control>
-		  <control type="group">
-            <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-			<control type="image" description="Label2 BG">
-              <posx>639</posx>
-              <posy>177</posy>
-              <width>225</width>
-              <height>42</height>
-              <texture border="9">img/WhiteRoundedT.png</texture>
+		  <control type="image">
+             <posx>822</posx>
+              <posy>129</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
             </control>
-            <control type="label" description="l2">
-              <posx>751</posx>
-              <posy>177</posy>
-              <height>42</height>
-              <width>225</width>
-              <font>GridItems</font>
-              <align>center</align>
-              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
-            </control>
-          </control>
         </itemlayout>
         <focusedlayout condition="Container.Content(TvShows) + Skin.HasSetting(53_UseBanners)" height="230" width="900">
           <control type="image">
@@ -77,26 +65,13 @@
             <bordersize>-27</bordersize>
             <aspectratio>stretch</aspectratio>
           </control>
-		  <control type="group">
-            <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-			<control type="image" description="Label2 BG">
-              <posx>639</posx>
-              <posy>177</posy>
-              <width>225</width>
-              <height>42</height>
-              <texture border="9">img/WhiteRoundedT.png</texture>
+		  <control type="image">
+             <posx>822</posx>
+              <posy>129</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
             </control>
-            <control type="label" description="l2">
-              <posx>751</posx>
-              <posy>177</posy>
-              <height>42</height>
-              <width>225</width>
-              <font>GridItems</font>
-              <textcolor>Orange</textcolor>
-              <align>center</align>
-               <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
-            </control>
-          </control>
         </focusedlayout>
         <itemlayout condition="!Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="420" width="257">
           <control type="image">
@@ -113,45 +88,13 @@
             <height>315</height>
             <include>PosterThumb</include>
           </control>
-          <control type="group">
-            <control type="image" description="Label2 BG">
-              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
-			  <posx>20</posx>
-              <posy>354</posy>
-              <width>216</width>
-              <height>42</height>
-              <texture border="3">img/WhiteRoundedT.png</texture>
-            </control>
-            <control type="image">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39</posx>
-              <posy>354</posy>
-              <width>22</width>
-              <height>42</height>
+		  <control type="image">
+              <posx>201</posx>
+              <posy>303</posy>
+              <width>33</width>
+              <height>33</height>
               <texture>$VAR[Overlay]</texture>
-              <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
-            <control type="label" description="l2">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39r</posx>
-              <posy>354</posy>
-              <height>42</height>
-              <width>216</width>
-              <font>GridItems</font>
-              <align>right</align>
-              <label>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</label>
-            </control>
-            <control type="label" description="l2">
-              <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-              <posx>128</posx>
-              <posy>354</posy>
-              <height>42</height>
-              <width>216</width>
-              <font>GridItems</font>
-              <align>center</align>
-              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
-            </control>
-          </control>
         </itemlayout>
         <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="420" width="257">
           <control type="image">
@@ -168,58 +111,14 @@
             <height>315</height>
             <include>PosterThumb</include>
           </control>
-          <!--<control type="label">
-            <posx>128</posx>
-            <posy>351</posy>
-            <width>250</width>
-            <height>45</height>
-            <textcolor>Orange</textcolor>
-            <align>center</align>
-			<font>Details</font>
-            <label>$INFO[ListItem.Label]</label>
-          </control>-->
-          <control type="group">
-            <control type="image" description="Label2 BG">
-              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
-			  <posx>20</posx>
-              <posy>354</posy>
-              <width>216</width>
-              <height>42</height>
-              <texture border="3">img/WhiteRoundedT.png</texture>
-            </control>
             <control type="image">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39</posx>
-              <posy>354</posy>
-              <width>22</width>
-              <height>42</height>
-              <colordiffuse>Orange</colordiffuse>
+              <posx>201</posx>
+              <posy>303</posy>
+              <width>33</width>
+              <height>33</height>
               <texture>$VAR[Overlay]</texture>
-              <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
-            <control type="label" description="l2">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39r</posx>
-              <posy>354</posy>
-              <height>42</height>
-              <width>216</width>
-              <font>GridItems</font>
-              <textcolor>Orange</textcolor>
-              <align>right</align>
-              <label>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</label>
-            </control>
-            <control type="label" description="l2">
-              <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-              <posx>128</posx>
-              <posy>354</posy>
-              <height>42</height>
-              <width>216</width>
-              <font>GridItems</font>
-              <textcolor>Orange</textcolor>
-              <align>center</align>
-              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
-            </control>
-          </control>
+         
         </focusedlayout>
         <itemlayout condition="Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="465" width="300">
           <control type="image">
@@ -237,45 +136,14 @@
             <height>351</height>
             <include>PosterThumb</include>
           </control>
-		  <control type="group">
-			<control type="image" description="Label2 BG">
-              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
-			  <posx>30</posx>
-              <posy>393</posy>
-              <width>240</width>
-              <height>42</height>
-              <texture border="9">img/WhiteRoundedT.png</texture>
-            </control>
-            <control type="image">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39</posx>
-              <posy>393</posy>
-              <width>22</width>
-              <height>42</height>
+		  <control type="image">
+             <posx>233</posx>
+              <posy>347</posy>
+              <width>33</width>
+              <height>33</height>
               <texture>$VAR[Overlay]</texture>
-              <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
-            <control type="label" description="l2">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39r</posx>
-              <posy>393</posy>
-              <height>42</height>
-              <width>216</width>
-              <font>GridItems</font>
-              <align>right</align>
-              <label>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</label>
-            </control>
-            <control type="label" description="l2">
-              <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-              <posx>150</posx>
-              <posy>393</posy>
-              <height>42</height>
-              <width>240</width>
-              <font>GridItems</font>
-              <align>center</align>
-              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
-            </control>
-          </control>
+		  
         </itemlayout>
         <focusedlayout condition="Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="465" width="300">
           <control type="image">
@@ -303,48 +171,13 @@
             <font>Details</font>
             <label>$INFO[ListItem.Label]</label>
           </control>-->
-		  <control type="group">
-			<control type="image" description="Label2 BG">
-              <visible>[[Container.Content(movies) | Container.Content(musicvideos)] + !IsEmpty(ListItem.Overlay)] | [[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)]</visible>
-			  <posx>30</posx>
-              <posy>393</posy>
-              <width>240</width>
-              <height>42</height>
-              <texture border="9">img/WhiteRoundedT.png</texture>
-            </control>
-            <control type="image">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39</posx>
-              <posy>393</posy>
-              <width>22</width>
-              <height>42</height>
-              <colordiffuse>Orange</colordiffuse>
+		  <control type="image">
+             <posx>233</posx>
+              <posy>347</posy>
+              <width>33</width>
+              <height>33</height>
               <texture>$VAR[Overlay]</texture>
-              <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
-            <control type="label" description="l2">
-              <visible>Container.Content(movies) | Container.Content(musicvideos)</visible>
-              <posx>39r</posx>
-              <posy>393</posy>
-              <height>42</height>
-              <width>216</width>
-              <font>GridItems</font>
-              <textcolor>Orange</textcolor>
-              <align>right</align>
-              <label>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</label>
-            </control>
-            <control type="label" description="l2">
-              <visible>[Container.Content(seasons) | Container.content(tvshows)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-              <posx>150</posx>
-              <posy>393</posy>
-              <height>42</height>
-              <width>240</width>
-              <font>GridItems</font>
-              <textcolor>Orange</textcolor>
-              <align>center</align>
-              <label>$LOCALIZE[16101]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR=Orange]  •  [/COLOR]]</label>
-            </control>
-          </control>
         </focusedlayout>
         <itemlayout condition="container.content(addons) | Window.IsActive(MyMusicNav.xml) | Window.IsActive(MyMusicSongs.xml) | Window.IsActive(MyPics.xml)" height="420" width="360">
           <control type="image">
@@ -440,12 +273,11 @@
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
-                <textcolor>White2</textcolor>
                 <label>$LOCALIZE[31973] $INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
               </control>
               <control type="image" description="Watched Overlay">
-                <posx>360</posx>
-                <width>24</width>
+                <posx>357</posx>
+                <width>33</width>
                 <height>70</height>
                 <texture>$VAR[Overlay]</texture>
                 <aspectratio>keep</aspectratio>
@@ -482,11 +314,11 @@
                 <label>$LOCALIZE[31973] $INFO[ListItem.Season,,.]$INFO[ListItem.Episode]</label>
               </control>
               <control type="image" description="Watched Overlay">
-                <posx>360</posx>
-                <width>24</width>
+                <posx>357</posx>
+                <width>33</width>
                 <height>70</height>
                 <colordiffuse>Orange</colordiffuse>
-                <texture>$VAR[Overlay]</texture>
+				<texture>$VAR[Overlay]</texture>
                 <aspectratio>keep</aspectratio>
               </control>
             </control>

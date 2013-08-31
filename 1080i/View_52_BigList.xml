@@ -65,9 +65,9 @@
           <control type="group">
             <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
             <control type="image">
-              <posx>52r</posx>
+              <posx>54r</posx>
               <posy>0</posy>
-              <width>22</width>
+              <width>30</width>
               <height>108</height>
               <texture>$VAR[Overlay]</texture>
               <aspectratio aligny="center">keep</aspectratio>
@@ -90,9 +90,9 @@
           <control type="group">
             <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
             <control type="image">
-              <posx>52r</posx>
+              <posx>54r</posx>
               <posy>0</posy>
-              <width>22</width>
+              <width>30</width>
               <height>108</height>
               <texture>$VAR[Overlay]</texture>
               <aspectratio aligny="center">keep</aspectratio>

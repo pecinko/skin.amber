@@ -37,6 +37,13 @@
 		  <control type="image">
             <include>MovieShowcaseThumb</include>
           </control>
+		  <control type="image">
+             <posx>190</posx>
+              <posy>293</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
+            </control>
           </itemlayout>
           <focusedlayout condition="Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)" height="350" width="290">
             <control type="image">
@@ -45,6 +52,13 @@
 		  <control type="image">
             <include>MovieShowcaseThumb</include>
           </control>
+		  <control type="image">
+             <posx>190</posx>
+              <posy>293</posy>
+              <width>33</width>
+              <height>33</height>
+              <texture>$VAR[Overlay]</texture>
+            </control>
 		</focusedlayout>
           <itemlayout condition="container.content(addons)" height="350" width="290">
             <control type="image">

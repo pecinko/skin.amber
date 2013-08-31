@@ -50,6 +50,15 @@
         <label>$INFO[Container.NumItems,Items: ]</label>
       </control>
 	  <control type="label">
+		<posy>90</posy>
+        <width>1170</width>
+        <height>32</height>
+        <textcolor>Orange</textcolor>
+        <font>font13</font>
+        <align>left</align>
+        <label>RESUMABLE: $INFO[ListItem.property(IsResumable)]  PLEXBMC OVERLAY: $INFO[ListItem.property(overlay)]</label>
+      </control>
+	  <control type="label">
         <visible>Window.IsActive(home)</visible>
 		<posy>90</posy>
         <width>1170</width>
