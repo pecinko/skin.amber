@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="List52Label">
     <posx>15</posx>
@@ -6,7 +5,7 @@
     <height>72</height>
     <width>820</width>
     <scroll>false</scroll>
-	<font>Details</font>
+    <font>Details</font>
     <aligny>center</aligny>
   </include>
   <include name="List52Label2">
@@ -19,29 +18,29 @@
     <textcolor>Grey</textcolor>
   </include>
   <include name="List52_NF">
-  <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
-            <height>109</height>
-            <width>930</width>
-            <texture flipy="true" border="3">list/ListNF.png</texture>
-          </control>
+    <control type="image">
+      <posx>0</posx>
+      <posy>0</posy>
+      <height>109</height>
+      <width>930</width>
+      <texture flipy="true" border="3">list/ListNF.png</texture>
+    </control>
   </include>
   <include name="List52_FO">
-  <control type="image">
-            <posx>0</posx>
-            <posy>1</posy>
-            <width>930</width>
-            <height>105</height>
-            <texture>list/ListFO.png</texture>
-          </control>
+    <control type="image">
+      <posx>0</posx>
+      <posy>1</posy>
+      <width>930</width>
+      <height>105</height>
+      <texture>list/ListFO.png</texture>
+    </control>
   </include>
   <include name="View_52_BigList">
     <control type="group" description="Large Infolist2">
       <visible>Control.IsVisible(52)</visible>
       <control type="list" id="52">
         <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(episodes) | Container.Content(albums) | Container.Content(artists)</visible>
-		<viewtype label="Large List">Large List</viewtype>
+        <viewtype label="Large List">Large List</viewtype>
         <posx>999</posx>
         <posy>120</posy>
         <width>930</width>
@@ -76,7 +75,7 @@
         </itemlayout>
         <focusedlayout condition="container.content(Movies) | container.content(TVShows) | Container.Content(Seasons) | [container.content(episodes) + !Skin.HasSetting(52_Episodes_UseFanart)]" height="108" width="930">
           <include>List52_NF</include>
-		  <include>List52_FO</include>
+          <include>List52_FO</include>
           <control type="label">
             <textcolor>White2</textcolor>
             <include>List52Label</include>
@@ -100,16 +99,16 @@
           </control>
         </focusedlayout>
         <itemlayout condition="container.content(episodes) + Skin.HasSetting(52_Episodes_UseFanart)" height="108" width="930">
-         <include>List52_NF</include>
+          <include>List52_NF</include>
           <control type="image">
             <posx>9</posx>
             <posy>15</posy>
             <height>78</height>
             <width>134</width>
             <bordersize>-7</bordersize>
-			<include>EpisodeThumbBG</include>
+            <include>EpisodeThumbBG</include>
           </control>
-		  <control type="image">
+          <control type="image">
             <posx>9</posx>
             <posy>15</posy>
             <height>78</height>
@@ -139,16 +138,16 @@
         </itemlayout>
         <focusedlayout condition="container.content(episodes) + Skin.HasSetting(52_Episodes_UseFanart)" height="108" width="930">
           <include>List52_NF</include>
-		  <include>List52_FO</include>
+          <include>List52_FO</include>
           <control type="image">
             <posx>9</posx>
             <posy>15</posy>
             <height>78</height>
             <width>134</width>
-			<bordersize>-7</bordersize>
+            <bordersize>-7</bordersize>
             <include>EpisodeThumbBG</include>
           </control>
-		  <control type="image">
+          <control type="image">
             <posx>9</posx>
             <posy>15</posy>
             <height>78</height>
@@ -166,18 +165,17 @@
           <control type="label">
             <posx>189</posx>
             <width>700</width>
-              <textcolor>White2</textcolor>
-			  <include>List52Label</include>
+            <textcolor>White2</textcolor>
+            <include>List52Label</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
             <posx>189</posx>
             <width>700</width>
-             <textcolor>Grey3</textcolor>
-			 <include>List52Label2</include>
+            <textcolor>Grey3</textcolor>
+            <include>List52Label2</include>
             <label>$VAR[Details]</label>
           </control>
-		  
         </focusedlayout>
         <itemlayout condition="container.content(artists) | container.content(albums)" height="108" width="930">
           <include>List52_NF</include>
@@ -187,64 +185,64 @@
             <height>84</height>
             <width>84</width>
             <bordersize>-6</bordersize>
-			<include>SquareThumbBG</include>
+            <include>SquareThumbBG</include>
           </control>
-		  <control type="image">
+          <control type="image">
             <posx>9</posx>
             <posy>12</posy>
             <height>84</height>
             <width>84</width>
             <texture background="true">$VAR[Thumbs]</texture>
-		    <aspectratio aligny="top">scale</aspectratio>
+            <aspectratio aligny="top">scale</aspectratio>
           </control>
           <control type="label">
             <posx>120</posx>
             <width>700</width>
-              <textcolor>White2</textcolor>
-			<scroll>false</scroll>
-			  <include>List52Label</include>
+            <textcolor>White2</textcolor>
+            <scroll>false</scroll>
+            <include>List52Label</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
             <posx>120</posx>
             <width>700</width>
-			<scroll>false</scroll>
-             <textcolor>Grey3</textcolor>
-			 <include>List52Label2</include>
+            <scroll>false</scroll>
+            <textcolor>Grey3</textcolor>
+            <include>List52Label2</include>
             <label>$VAR[Details]</label>
           </control>
         </itemlayout>
         <focusedlayout condition="container.content(artists) | container.content(albums)" height="108" width="930">
           <include>List52_NF</include>
-		  <include>List52_FO</include>
+          <include>List52_FO</include>
           <control type="image">
             <posx>9</posx>
             <posy>12</posy>
             <height>84</height>
             <width>84</width>
             <bordersize>-6</bordersize>
-			<include>SquareThumbBG</include>
+            <include>SquareThumbBG</include>
           </control>
-		  <control type="image">
+          <control type="image">
             <posx>9</posx>
             <posy>12</posy>
             <height>84</height>
             <width>84</width>
             <texture background="true">$VAR[Thumbs]</texture>
-		    <aspectratio aligny="top">scale</aspectratio>
+            <aspectratio aligny="top">scale</aspectratio>
           </control>
           <control type="label">
             <posx>120</posx>
             <width>700</width>
-              <textcolor>White2</textcolor>
-			  <include>List52Label</include>
+            <textcolor>White2</textcolor>
+            <include>List52Label</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label">
             <posx>120</posx>
             <width>700</width>
-             <textcolor>Grey3</textcolor>
-			 <include>List52Label2</include>
+            <textcolor>Grey3</textcolor>
+            <include>List52Label2</include>
             <label>$VAR[Details]</label>
           </control>
         </focusedlayout>

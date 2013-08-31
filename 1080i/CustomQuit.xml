@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1114">
   <defaultcontrol always="true">9000</defaultcontrol>
   <include>DialogOpenClose</include>
@@ -6,11 +5,11 @@
     <control type="group" description="All dialog content">
       <animation type="WindowOpen">
         <effect type="zoom" start="95" end="100" center="960,540" time="200" />
-        <effect type="fade" start="80" end="100" time="200"/>
+        <effect type="fade" start="80" end="100" time="200" />
       </animation>
       <animation type="WindowClose">
         <effect type="zoom" start="100" end="95" center="960,540" time="100" />
-        <effect type="fade" start="100" end="0" time="100"/>
+        <effect type="fade" start="100" end="0" time="100" />
       </animation>
       <control type="image" description="Menu BG">
         <posx>681</posx>
@@ -24,7 +23,7 @@
         <posy>281</posy>
         <width>690</width>
         <height>52</height>
-        <label>13008</label>
+        <label>$LOCALIZE[13008]</label>
         <align>center</align>
         <aligny>center</aligny>
         <textcolor>Orange</textcolor>
@@ -46,7 +45,7 @@
           <defaultcontrol always="true">701</defaultcontrol>
           <control type="radiobutton" id="701" description="Menu">
             <width>525</width>
-            <label>31983</label>
+            <label>$LOCALIZE[31983]</label>
             <onclick>Skin.Reset(shutdown)</onclick>
             <selected>IsEmpty(Skin.String(shutdown))</selected>
           </control>
@@ -67,7 +66,7 @@
           <control type="radiobutton" id="704" description="Shutdown">
             <width>525</width>
             <enable>System.CanPowerdown</enable>
-            <label>13005</label>
+            <label>$LOCALIZE[13005]</label>
             <onclick>Skin.SetString(shutdown,powerdown)</onclick>
             <selected>StringCompare(Skin.String(shutdown),powerdown)</selected>
           </control>

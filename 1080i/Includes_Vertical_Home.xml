@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="RecentlyAdded_Header">
     <animation effect="slide" start="0,0" end="0,-162" time="0" condition="Control.IsVisible(312) | Control.IsVisible(413) | Control.IsVisible(513) | Control.IsVisible(515)">Conditional</animation>
@@ -30,7 +29,7 @@
     <width>1080</width>
     <align>left</align>
     <textcolor>Orange</textcolor>
-	<font>ListDetails</font>
+    <font>ListDetails</font>
   </include>
   <include name="Recommended_Label">
     <animation effect="slide" start="0,0" end="0,522" time="0" condition="Control.IsVisible(311) | Control.IsVisible(411) |  Control.IsVisible(511) | Control.IsVisible(514)">Conditional</animation>
@@ -40,7 +39,7 @@
     <width>1080</width>
     <align>left</align>
     <textcolor>Orange</textcolor>
-	<font>ListDetails</font>
+    <font>ListDetails</font>
   </include>
   <include name="RecentlyAdded_Posters">
     <animation effect="slide" start="0,0" end="0,-162" time="0" condition="Control.IsVisible(312) | Control.IsVisible(515)">Conditional</animation>
@@ -660,7 +659,7 @@
         <texture border="0,40,0,40">home/OverlayRA2.png</texture>
       </control>
       <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
-        <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
+      <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Concerts.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Episodes.List</include>

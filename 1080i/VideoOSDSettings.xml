@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol>5</defaultcontrol>
   <include>OSDFade</include>
@@ -13,16 +12,16 @@
         <width>810</width>
         <height>1080</height>
         <texture border="30,0,30,0">OSD/OSDBackgroundV.png</texture>
-		<colordiffuse>FFE2E2E2</colordiffuse>
-		<aspectratio>stretch</aspectratio>
+        <colordiffuse>FFE2E2E2</colordiffuse>
+        <aspectratio>stretch</aspectratio>
       </control>
-	  <control type="label" id="2" description="Settings">
+      <control type="label" id="2" description="Settings">
         <posx>90</posx>
         <posy>21</posy>
         <width>810</width>
         <font>InfoTitle</font>
-		<textcolor>Orange</textcolor>
-		<shadowcolor>Black</shadowcolor>
+        <textcolor>Orange</textcolor>
+        <shadowcolor>Black</shadowcolor>
         <align>center</align>
       </control>
       <control type="grouplist" id="5" description="Control Area">
@@ -38,21 +37,21 @@
       </control>
       <control type="button" id="7">
         <textoffsetx>20</textoffsetx>
-		<font>Details</font>
-		<shadowcolor>Black</shadowcolor>
+        <font>Details</font>
+        <shadowcolor>Black</shadowcolor>
       </control>
       <control type="radiobutton" id="8">
-		<font>Details</font>
-		<shadowcolor>Black</shadowcolor>
+        <font>Details</font>
+        <shadowcolor>Black</shadowcolor>
       </control>
       <control type="spincontrolex" id="9">
-		<font>Details</font>
-		<shadowcolor>Black</shadowcolor>
+        <font>Details</font>
+        <shadowcolor>Black</shadowcolor>
         <reverse>yes</reverse>
       </control>
       <control type="sliderex" id="10">
         <align>left</align>
-		<shadowcolor>Black</shadowcolor>
+        <shadowcolor>Black</shadowcolor>
         <font>Details</font>
       </control>
     </control>

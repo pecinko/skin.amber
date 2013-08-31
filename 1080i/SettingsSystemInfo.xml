@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">9001</defaultcontrol>
   <backgroundcolor>0</backgroundcolor>
@@ -20,7 +19,7 @@
         <posy>108</posy>
         <width>1400</width>
         <height>50</height>
-        <label>130</label>
+        <label>$LOCALIZE[130]</label>
         <align>center</align>
         <textcolor>Orange</textcolor>
       </control>
@@ -39,32 +38,32 @@
           <control type="button" id="95" description="Summary">
             <texture border="3" flipy="true">list/ListNF.png</texture>
             <width>324</width>
-            <label>20037</label>
+            <label>$LOCALIZE[20037]</label>
           </control>
           <control type="button" id="94" description="Storage">
             <width>324</width>
-            <label>13277</label>
+            <label>$LOCALIZE[13277]</label>
             <texture border="3" flipy="true">list/ListNF.png</texture>
           </control>
           <control type="button" id="96" description="Network">
             <width>324</width>
-            <label>13279</label>
+            <label>$LOCALIZE[13279]</label>
             <texture border="3" flipy="true">list/ListNF.png</texture>
           </control>
           <control type="button" id="97" description="Video">
             <width>324</width>
-            <label>13280</label>
+            <label>$LOCALIZE[13280]</label>
             <texture border="3" flipy="true">list/ListNF.png</texture>
           </control>
           <control type="button" id="98" description="Hardware">
             <width>324</width>
-            <label>13281</label>
+            <label>$LOCALIZE[13281]</label>
             <texture border="3" flipy="true">list/ListNF.png</texture>
           </control>
           <control type="button" id="99" description="Hardware">
             <visible>Skin.HasSetting(PVR_Enabled)</visible>
             <width>324</width>
-            <label>19191</label>
+            <label>$LOCALIZE[19191]</label>
             <texture border="3" flipy="true">list/ListNF.png</texture>
           </control>
         </control>
@@ -77,19 +76,19 @@
           <control type="label" id="52">
             <description>XBMC XBE BUILD Version</description>
             <width>1420</width>
-			<textcolor>Grey3</textcolor>
+            <textcolor>Grey3</textcolor>
           </control>
           <control type="label" id="21">
             <description>CPU Text</description>
             <height>45</height>
-			<width>1420</width>
+            <width>1420</width>
             <font>info</font>
             <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
           </control>
           <control type="label" id="23">
             <description>Memory Text</description>
             <height>45</height>
-			<width>1420</width>
+            <width>1420</width>
             <font>info</font>
             <label>$LOCALIZE[31309] $INFO[system.memory(used.percent)]</label>
           </control>
@@ -116,7 +115,7 @@
             <height>90</height>
             <width>1420</width>
             <font>info</font>
-			<wrapmultiline>true</wrapmultiline>
+            <wrapmultiline>true</wrapmultiline>
           </control>
           <control type="label" id="6">
             <description>Label 6</description>

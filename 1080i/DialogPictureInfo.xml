@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">5</defaultcontrol>
   <include>OpenClose</include>
@@ -17,7 +16,7 @@
         <posx>0</posx>
         <posy>60</posy>
         <width>1920</width>
-        <label>13406</label>
+        <label>$LOCALIZE[13406]</label>
         <textcolor>Orange</textcolor>
         <align>center</align>
       </control>

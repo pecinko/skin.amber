@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">10</defaultcontrol>
   <include>OpenClose</include>
@@ -20,7 +19,7 @@
         <width>1010</width>
         <align>center</align>
         <textcolor>Orange</textcolor>
-        <label>1007</label>
+        <label>$LOCALIZE[1007]</label>
       </control>
       <control type="group" id="9001">
         <posy>30</posy>
@@ -50,7 +49,7 @@
           <texturefocus border="16,6,16,6">dialogs/AddSourceBottomFrame.png</texturefocus>
         </control>
         <control type="button" id="13" description="Port">
-          <label>1013</label>
+          <label>$LOCALIZE[1013]</label>
           <posy>270</posy>
           <width>1010</width>
           <textoffsetx>30</textoffsetx>
@@ -85,7 +84,7 @@
         <control type="button" id="12" description="Browse">
           <posy>210</posy>
           <width>231</width>
-          <label>1024</label>
+          <label>$LOCALIZE[1024]</label>
           <onup>18</onup>
           <onleft>16</onleft>
           <ondown>19</ondown>
@@ -93,7 +92,7 @@
         <control type="button" id="19" description="Cancel">
           <posy>330</posy>
           <width>231</width>
-          <label>222</label>
+          <label>$LOCALIZE[222]</label>
           <onup>12</onup>
           <onleft>14</onleft>
           <ondown>18</ondown>
@@ -101,7 +100,7 @@
         <control type="button" id="18" description="OK">
           <posy>390</posy>
           <width>231</width>
-          <label>186</label>
+          <label>$LOCALIZE[186]</label>
           <onup>19</onup>
           <onleft>15</onleft>
           <ondown>12</ondown>

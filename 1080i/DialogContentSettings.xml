@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <window>
   <defaultcontrol always="true">3</defaultcontrol>
   <coordinates>
@@ -31,7 +30,7 @@
         <width>837</width>
         <height>60</height>
         <textcolor>Orange</textcolor>
-        <label>20344</label>
+        <label>$LOCALIZE[20344]</label>
         <textoffsetx>30</textoffsetx>
       </control>
       <control type="spincontrolex" id="3">
@@ -133,7 +132,7 @@
           <posy>237</posy>
           <width>315</width>
           <height>60</height>
-          <label>5</label>
+          <label>$LOCALIZE[5]</label>
           <onleft>4</onleft>
           <onright>3</onright>
           <onup>28</onup>
@@ -145,7 +144,7 @@
           <posy>360</posy>
           <width>315</width>
           <height>60</height>
-          <label>186</label>
+          <label>$LOCALIZE[186]</label>
           <onleft>4</onleft>
           <onright>3</onright>
           <onup>29</onup>
@@ -157,7 +156,7 @@
           <posy>298</posy>
           <width>315</width>
           <height>62</height>
-          <label>222</label>
+          <label>$LOCALIZE[222]</label>
           <onleft>4</onleft>
           <onright>3</onright>
           <onup>6</onup>

@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <defaultcontrol always="true">5</defaultcontrol>
   <include>OpenClose</include>
@@ -44,22 +43,22 @@
       </control>
       <control type="button" id="7">
         <width>741</width>
-		<textoffsetx>30</textoffsetx>
+        <textoffsetx>30</textoffsetx>
       </control>
       <control type="radiobutton" id="8">
         <width>741</width>
-		<textoffsetx>30</textoffsetx>
+        <textoffsetx>30</textoffsetx>
       </control>
       <control type="spincontrolex" id="9">
         <width>741</width>
-		<textoffsetx>30</textoffsetx>
+        <textoffsetx>30</textoffsetx>
       </control>
       <control type="group" id="9000">
         <posx>1003</posx>
         <control type="button" id="28" description="OK">
           <posy>450</posy>
           <width>231</width>
-          <label>186</label>
+          <label>$LOCALIZE[186]</label>
           <onleft>5</onleft>
           <onup>29</onup>
           <ondown>29</ondown>
@@ -67,7 +66,7 @@
         <control type="button" id="29" description="Cancel">
           <posy>510</posy>
           <width>231</width>
-          <label>222</label>
+          <label>$LOCALIZE[222]</label>
           <onleft>5</onleft>
           <onright>noop</onright>
           <onup>28</onup>
@@ -79,24 +78,24 @@
         <posy>149</posy>
         <width>240</width>
         <height>240</height>
-		<texture>unknown-user.png</texture>
+        <texture>unknown-user.png</texture>
         <aspectratio>scale</aspectratio>
       </control>
-	  <control type="image" id="2" description="Profile image">
+      <control type="image" id="2" description="Profile image">
         <posx>753</posx>
         <posy>149</posy>
         <width>240</width>
         <height>240</height>
-		<texture></texture>
+        <texture></texture>
         <aspectratio>scale</aspectratio>
       </control>
-	  <control type="image" description="Profile image overlay">
+      <control type="image" description="Profile image overlay">
         <posx>753</posx>
         <posy>149</posy>
         <width>240</width>
         <height>240</height>
         <texture border="3">thumbs/CoverOverlay0.png</texture>
-		<aspectratio>stretch</aspectratio>
+        <aspectratio>stretch</aspectratio>
       </control>
     </control>
   </controls>

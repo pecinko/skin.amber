@@ -1,76 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="FooterInfo">
-  <control type="label" description="Title Label">
-          <posx>510</posx>
-          <posy>1020</posy>
-          <width>900</width>
-          <height>45</height>
-          <align>center</align>
-          <font>InfoTitle</font>
-          <textcolor>White2</textcolor>
-		  <shadowcolor>ShadowDark</shadowcolor>
-          <label>$INFO[ListItem.Label]</label>
-        </control>
-        <control type="label" description="Details">
-          <posx>30</posx>
-          <posy>1027</posy>
-          <height>33</height>
-          <width>450</width>
-          <align>left</align>
-          <font>Details</font>
-          <scroll>false</scroll>
-          <label>$VAR[Fanart_Details]</label>
-        </control>
-        <control type="image" description="Stars">
-          <visible>![container.content(albums) | container.content(addons)]</visible>
-          <posx>170r</posx>
-          <posy>1032</posy>
-          <align>right</align>
-          <include>Stars</include>
-        </control>
-        <control type="label" description="Right value">
-          <visible>container.content(albums)</visible>
-          <posx>30r</posx>
-          <posy>1028</posy>
-          <height>33</height>
-          <width>500</width>
-          <align>right</align>
-          <font>Year</font>
-          <scroll>false</scroll>
-          <label>$INFO[ListItem.Year]</label>
-        </control>
-        <control type="label" description="Right value">
-          <visible>container.content(songs)</visible>
-          <posx>200r</posx>
-          <posy>1031</posy>
-          <height>33</height>
-          <width>500</width>
-          <align>right</align>
-          <font>Year</font>
-          <scroll>false</scroll>
-          <label>$INFO[ListItem.FileExtension]</label>
-        </control>
-        <control type="label" description="Right value">
-          <visible>container.content(addons)</visible>
-          <posx>30r</posx>
-          <posy>1031</posy>
-          <height>33</height>
-          <width>500</width>
-          <align>right</align>
-          <font>Year</font>
-          <scroll>false</scroll>
-          <label>$INFO[ListItem.Property(Addon.Version)]</label>
-        </control>
-        <control type="image" description="HD badge">
-          <visible>Window.IsActive(MyVideoNav.xml) + ![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-          <posx>292r</posx>
-          <posy>1034</posy>
-          <height>24</height>
-          <width>90</width>
-          <aspectratio aligny="bottom" align="right">keep</aspectratio>
-          <texture>badges/HD.png</texture>
-        </control>
+    <control type="label" description="Title Label">
+      <posx>510</posx>
+      <posy>1020</posy>
+      <width>900</width>
+      <height>45</height>
+      <align>center</align>
+      <font>InfoTitle</font>
+      <textcolor>White2</textcolor>
+      <shadowcolor>ShadowDark</shadowcolor>
+      <label>$INFO[ListItem.Label]</label>
+    </control>
+    <control type="label" description="Details">
+      <posx>30</posx>
+      <posy>1027</posy>
+      <height>33</height>
+      <width>450</width>
+      <align>left</align>
+      <font>Details</font>
+      <scroll>false</scroll>
+      <label>$VAR[Fanart_Details]</label>
+    </control>
+    <control type="image" description="Stars">
+      <visible>![container.content(albums) | container.content(addons)]</visible>
+      <posx>170r</posx>
+      <posy>1032</posy>
+      <align>right</align>
+      <include>Stars</include>
+    </control>
+    <control type="label" description="Right value">
+      <visible>container.content(albums)</visible>
+      <posx>30r</posx>
+      <posy>1028</posy>
+      <height>33</height>
+      <width>500</width>
+      <align>right</align>
+      <font>Year</font>
+      <scroll>false</scroll>
+      <label>$INFO[ListItem.Year]</label>
+    </control>
+    <control type="label" description="Right value">
+      <visible>container.content(songs)</visible>
+      <posx>200r</posx>
+      <posy>1031</posy>
+      <height>33</height>
+      <width>500</width>
+      <align>right</align>
+      <font>Year</font>
+      <scroll>false</scroll>
+      <label>$INFO[ListItem.FileExtension]</label>
+    </control>
+    <control type="label" description="Right value">
+      <visible>container.content(addons)</visible>
+      <posx>30r</posx>
+      <posy>1031</posy>
+      <height>33</height>
+      <width>500</width>
+      <align>right</align>
+      <font>Year</font>
+      <scroll>false</scroll>
+      <label>$INFO[ListItem.Property(Addon.Version)]</label>
+    </control>
+    <control type="image" description="HD badge">
+      <visible>Window.IsActive(MyVideoNav.xml) + ![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
+      <posx>292r</posx>
+      <posy>1034</posy>
+      <height>24</height>
+      <width>90</width>
+      <aspectratio aligny="bottom" align="right">keep</aspectratio>
+      <texture>badges/HD.png</texture>
+    </control>
   </include>
   <include name="MovieShowcaseThumbDimensions">
     <posx>15</posx>
@@ -128,19 +127,19 @@
   </include>
   <include name="View_59_Showcase">
     <control type="group" description="Footer info">
-        <visible>Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
-		<visible>![Control.HasFocus(7000) | [Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]]</visible>
-        <animation effect="fade" start="100" end="0" time="150" delay="0" center="120,350" reversible="false">Hidden</animation>
-        <animation effect="fade" start="0" end="100" time="450" delay="400" center="120,350" reversible="false">Visible</animation>
-        <include>FooterInfo</include>
-      </control>
+      <visible>Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
+      <visible>![Control.HasFocus(7000) | [Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]]</visible>
+      <animation effect="fade" start="100" end="0" time="150" delay="0" center="120,350" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" time="450" delay="400" center="120,350" reversible="false">Visible</animation>
+      <include>FooterInfo</include>
+    </control>
     <control type="group" description="Showcase 59 Movies TV Seasons">
       <visible>Control.IsVisible(59)</visible>
       <control type="fixedlist" id="59">
         <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <animation effect="slide" easing="out" start="0,0" end="0,60" time="350" delay="0" center="120,350" reversible="true" condition="Skin.HasSetting(Posters_Info)">Conditional</animation>
-		<posx>-120</posx>
+        <posx>-120</posx>
         <posy>669</posy>
         <width>2160</width>
         <height>339</height>
@@ -163,13 +162,13 @@
           <control type="image">
             <include>MovieShowcaseThumb</include>
           </control>
-		  <control type="image">
-             <posx>190</posx>
-              <posy>291</posy>
-              <width>33</width>
-              <height>33</height>
-              <texture>$VAR[Overlay]</texture>
-            </control>
+          <control type="image">
+            <posx>190</posx>
+            <posy>291</posy>
+            <width>33</width>
+            <height>33</height>
+            <texture>$VAR[Overlay]</texture>
+          </control>
         </itemlayout>
         <focusedlayout height="339" width="240">
           <control type="group">
@@ -185,13 +184,13 @@
               <include>MovieShowcaseThumb</include>
             </control>
           </control>
-		  <control type="image">
-             <posx>190</posx>
-              <posy>291</posy>
-              <width>33</width>
-              <height>33</height>
-              <texture>$VAR[Overlay]</texture>
-            </control>
+          <control type="image">
+            <posx>190</posx>
+            <posy>291</posy>
+            <width>33</width>
+            <height>33</height>
+            <texture>$VAR[Overlay]</texture>
+          </control>
         </focusedlayout>
       </control>
       <control type="group">
@@ -217,13 +216,13 @@
             <include>Icon_Fade</include>
             <include>MovieShowcaseThumb</include>
           </control>
-		  <control type="image">
-             <posx>190</posx>
-              <posy>291</posy>
-              <width>33</width>
-              <height>33</height>
-              <texture>$VAR[Overlay]</texture>
-            </control>
+          <control type="image">
+            <posx>190</posx>
+            <posy>291</posy>
+            <width>33</width>
+            <height>33</height>
+            <texture>$VAR[Overlay]</texture>
+          </control>
         </control>
         <control type="group" description="Media info">
           <posx>330</posx>
@@ -284,7 +283,7 @@
           </control>
         </control>
       </control>
-	  <control type="group">
+      <control type="group">
         <visible>Skin.HasSetting(Posters_Info)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
@@ -305,7 +304,7 @@
             <height>33</height>
             <width>570</width>
             <font>Details</font>
-			<scroll>false</scroll>
+            <scroll>false</scroll>
             <label>$VAR[Details]</label>
           </control>
           <control type="label" description="Genre">
@@ -314,7 +313,7 @@
             <width>570</width>
             <font>ListDetails</font>
             <scroll>false</scroll>
-			<label>$INFO[ListItem.Genre]</label>
+            <label>$INFO[ListItem.Genre]</label>
           </control>
           <control type="textbox" description="Plot">
             <posx>0</posx>
@@ -324,14 +323,14 @@
             <align>justify</align>
             <label>$VAR[Plots]</label>
           </control>
-		  <control type="image" description="Stars">
-          <visible>![container.content(albums) | container.content(addons)]</visible>
-          <posx>0</posx>
-          <posy>720</posy>
-          <align>right</align>
-          <include>Stars</include>
-        </control>
-		  <control type="image" description="Watched Overlay">
+          <control type="image" description="Stars">
+            <visible>![container.content(albums) | container.content(addons)]</visible>
+            <posx>0</posx>
+            <posy>720</posy>
+            <align>right</align>
+            <include>Stars</include>
+          </control>
+          <control type="image" description="Watched Overlay">
             <visible>Container.content(MusicVideos) | Container.Content(Movies)</visible>
             <posx>170</posx>
             <posy>698</posy>
@@ -366,7 +365,7 @@
         <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <animation effect="slide" easing="out" start="0,0" end="0,60" time="350" delay="0" center="120,350" reversible="true" condition="Skin.HasSetting(Music_Info)">Conditional</animation>
-		<posx>-174</posx>
+        <posx>-174</posx>
         <posy>546</posy>
         <width>2268</width>
         <height>660</height>
@@ -456,7 +455,7 @@
           </control>
         </control>
       </control>
-	  <control type="group">
+      <control type="group">
         <visible>Skin.HasSetting(Music_Info)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
@@ -506,7 +505,7 @@
         <visible>container.content(episodes)</visible>
         <animation effect="slide" easing="out" start="0,0" end="0,800" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
         <animation effect="slide" easing="out" start="0,0" end="0,60" time="350" delay="0" center="120,350" reversible="true" condition="Skin.HasSetting(Episodes_Info)">Conditional</animation>
-		<posx>-75</posx>
+        <posx>-75</posx>
         <posy>690</posy>
         <width>2070</width>
         <height>291</height>
@@ -668,7 +667,7 @@
           </control>
         </control>
       </control>
-	  <control type="group">
+      <control type="group">
         <visible>Skin.HasSetting(Episodes_Info)</visible>
         <animation effect="fade" delay="200" time="300">Visible</animation>
         <animation effect="fade" time="100">Hidden</animation>
@@ -689,7 +688,7 @@
             <height>33</height>
             <width>570</width>
             <font>Details</font>
-			<scroll>false</scroll>
+            <scroll>false</scroll>
             <label>$VAR[Details]</label>
           </control>
           <control type="label" description="Genre">
@@ -698,7 +697,7 @@
             <width>570</width>
             <font>ListDetails</font>
             <scroll>false</scroll>
-			<label>$INFO[ListItem.Season,$LOCALIZE[20373] ]</label>
+            <label>$INFO[ListItem.Season,$LOCALIZE[20373] ]</label>
           </control>
           <control type="textbox" description="Plot">
             <posx>0</posx>
@@ -708,14 +707,14 @@
             <align>justify</align>
             <label>$VAR[Plots]</label>
           </control>
-		  <control type="image" description="Stars">
-          <visible>![container.content(albums) | container.content(addons)]</visible>
-          <posx>0</posx>
-          <posy>720</posy>
-          <align>right</align>
-          <include>Stars</include>
-        </control>
-		  <control type="image" description="Watched Overlay">
+          <control type="image" description="Stars">
+            <visible>![container.content(albums) | container.content(addons)]</visible>
+            <posx>0</posx>
+            <posy>720</posy>
+            <align>right</align>
+            <include>Stars</include>
+          </control>
+          <control type="image" description="Watched Overlay">
             <visible>Container.content(MusicVideos) | Container.Content(Movies)</visible>
             <posx>170</posx>
             <posy>698</posy>

@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="View_54_LowList">
     <control type="group" description="List">
       <visible>Control.IsVisible(54)</visible>
-      
       <control type="list" id="54">
         <posx>710</posx>
         <posy>705</posy>
