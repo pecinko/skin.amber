@@ -118,7 +118,7 @@
         <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
-		<onleft>-</onleft>
+		<onleft>noop</onleft>
         <onright>50</onright>
       </control>
       <control type="image" description="Icon">
@@ -298,7 +298,7 @@
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
 		<onleft>100</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
       <control type="group">
         <posx>105</posx>

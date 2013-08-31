@@ -37,7 +37,7 @@
                 <height>246</height>
                 <onup>12</onup>
                 <ondown>12</ondown>
-                <onleft>-</onleft>
+                <onleft>noop</onleft>
                 <onright>11</onright>
                 <scrolltime>0</scrolltime>
                 <itemlayout height="62">

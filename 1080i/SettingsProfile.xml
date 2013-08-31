@@ -31,9 +31,9 @@
       <width>800</width>
       <label>$LOCALIZE[20096]:  $LOCALIZE[1223]</label>
       <altlabel>$LOCALIZE[20096]:  $LOCALIZE[305]</altlabel>
-      <onright>-</onright>
-      <onleft>-</onleft>
-      <onup>-</onup>
+      <onright>noop</onright>
+      <onleft>noop</onleft>
+      <onup>noop</onup>
       <ondown>2</ondown>
       <textoffsetx>30</textoffsetx>
     </control>
@@ -45,10 +45,10 @@
         <posy>0</posy>
         <width>800</width>
         <height>360</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>4</onup>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <pagecontrol>60</pagecontrol>
         <scrolltime>280</scrolltime>
         <itemlayout width="800" height="60">

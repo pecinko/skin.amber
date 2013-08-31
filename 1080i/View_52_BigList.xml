@@ -305,7 +305,7 @@
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
         <onleft>52</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
   </include>

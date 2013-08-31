@@ -85,7 +85,7 @@
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
         <onleft>5</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
   </controls>

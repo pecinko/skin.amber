@@ -357,7 +357,7 @@
         <showonepage>true</showonepage>
         <orientation>horizontal</orientation>
         <onup>59</onup>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Showcase 58 Squares">
@@ -497,7 +497,7 @@
         <showonepage>true</showonepage>
         <orientation>horizontal</orientation>
         <onup>58</onup>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Showcase 57 Episodes">
@@ -741,7 +741,7 @@
         <showonepage>true</showonepage>
         <orientation>horizontal</orientation>
         <onup>57</onup>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
   </include>

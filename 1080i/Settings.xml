@@ -50,7 +50,7 @@
         <posy>210</posy>
         <width>324</width>
         <height>780</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>9010</onright>
         <onup>9000</onup>
         <ondown>9000</ondown>
@@ -93,31 +93,31 @@
         <content>
           <item id="1">
             <label>XBMC</label>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="2" description="Options">
             <label>20077</label>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="6" description="Home layout">
             <label>31995</label>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
 		  <item id="3" description="Home menu">
             <label>31974</label>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="5" description="Shelf">
             <label>31976</label>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
 		  <item id="4" description="Backgrounds">
             <label>33069</label>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
           <item id="7" description="Quit menu">
             <label>31990</label>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
           </item>
 		  <include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Section.Label</include> 
         </content>

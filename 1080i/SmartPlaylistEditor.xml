@@ -29,7 +29,7 @@
           <height>240</height>
           <onleft>9000</onleft>
           <onright>60</onright>
-          <onup>-</onup>
+          <onup>noop</onup>
           <ondown>9002</ondown>
           <itemgap>0</itemgap>
           <scrolltime>200</scrolltime>
@@ -64,7 +64,7 @@
           <onleft>9000</onleft>
           <onright>60</onright>
           <onup>9001</onup>
-          <ondown>-</ondown>
+          <ondown>noop</ondown>
           <itemgap>0</itemgap>
           <scrolltime>200</scrolltime>
           <control type="button" id="20">
@@ -125,7 +125,7 @@
                     <width>1400</width>
                     <height>300</height>
                     <onup>12</onup>
-                    <onleft>-</onleft>
+                    <onleft>noop</onleft>
                     <onright>9001</onright>
                     <ondown>16</ondown>
                     <itemlayout width="1400" height="60">

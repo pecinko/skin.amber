@@ -323,7 +323,7 @@
         <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
         <showonepage>true</showonepage>
         <orientation>vertical</orientation>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>120</onright>
       </control>
     </control>

@@ -35,13 +35,13 @@
         <posy>270</posy>
         <width>870</width>
         <height>483</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>60</onright>
         <pagecontrol>60</pagecontrol>
         <focusposition>3</focusposition>
         <movement>3</movement>
-        <onup>-</onup>
-        <ondown>-</ondown>
+        <onup>noop</onup>
+        <ondown>noop</ondown>
         <itemlayout height="69">
           <control type="label">
             <posx>30</posx>
@@ -82,7 +82,7 @@
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
 		<onleft>2</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
     </control>
     </control>
     

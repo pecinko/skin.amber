@@ -641,8 +641,8 @@
     <posy>0</posy>
     <width>999</width>
     <height>504</height>
-    <onleft>-</onleft>
-    <onright>-</onright>
+    <onleft>noop</onleft>
+    <onright>noop</onright>
     <onup>9000</onup>
     <ondown>9000</ondown>
     <pagecontrol>-</pagecontrol>
@@ -845,7 +845,7 @@
   <include name="Plexbmc.Settings.Section.Label">
     <item id="8" description="Plexbmc menu">
       <label>PleXBMC</label>
-      <onclick>-</onclick>
+      <onclick>noop</onclick>
     </item>
   </include>
   <include name="Plexbmc.Settings.Controls">
