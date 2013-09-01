@@ -94,7 +94,7 @@
       <label>$INFO[Container(312).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="312" description="TOP Shortcuts">
-      <visible>![IsEmpty(Window(Home).Property(RecommendedMovie.1.Title)) + IsEmpty(Window(Home).Property(RandomMovie.1.Title))]]</visible>
+      <visible>![IsEmpty(Window(Home).Property(RecommendedMovie.1.Title)) + IsEmpty(Window(Home).Property(RandomMovie.1.Title))]</visible>
       <visible>Container(300).HasFocus(4)</visible>
       <onright>312</onright>
       <onup condition="Control.IsVisible(311)">311</onup>

@@ -159,7 +159,7 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="group" description="Fallback info">
-          <visible>IsEmpty(ListItem.Art(fanart)</visible>
+          <visible>IsEmpty(ListItem.Art(fanart))</visible>
           <control type="label" description="Title Label">
             <posy>18</posy>
             <width>600</width>
