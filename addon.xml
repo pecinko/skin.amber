@@ -1,4 +1,4 @@
-<addon id="skin.amber" version="0.9.4" name="Amber" provider-name="Pecinko, Toiva">
+<addon id="skin.amber" version="0.1.0" name="Amber" provider-name="Pecinko">
   <requires>
     <import addon="xbmc.gui" version="4.0.0"/>
     <import addon="script.favourites" version="3.2.0"/>
@@ -12,7 +12,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary>designed by Pećinko</summary>
-    <description>Amber offers nice, fast and simple to use interface. Based mostly on Aeon/Aeon Nox and Mediastream textures.</description>
+    <summary>Coding and design by Pećinko. Cocoding by Toiva.</summary>
+    <description>No bloatware, just your media with easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skin.</description>
   </extension>
 </addon>
