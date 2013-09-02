@@ -297,11 +297,11 @@
     <aspectratio scalediffuse="false">scale</aspectratio>
   </include>
   <include name="EpisodeThumbBG">
-    <bordersize>-18</bordersize>
+    <bordersize>-17</bordersize>
     <texture>thumbs/EpisodeBG_NF.png</texture>
   </include>
   <include name="EpisodeThumbFO">
-    <bordersize>-18</bordersize>
+    <bordersize>-17</bordersize>
     <texture>thumbs/EpisodeBG_FO.png</texture>
   </include>
   <include name="SquareThumb">

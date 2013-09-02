@@ -95,7 +95,8 @@
         <itemlayout condition="container.content(episodes)" height="300" width="378">
           <control type="image">
             <include>BigPanelEpisodeDimensions</include>
-            <include>EpisodeThumbBG</include>
+            <bordersize>-16</bordersize>
+			<include>EpisodeThumbBG</include>
           </control>
           <control type="image">
             <include>BigPanelEpisodeDimensions</include>
@@ -131,7 +132,8 @@
         <focusedlayout condition="container.content(episodes)" height="300" width="378">
           <control type="image">
             <include>BigPanelEpisodeDimensions</include>
-            <include>EpisodeThumbFO</include>
+            <bordersize>-16</bordersize>
+			<include>EpisodeThumbFO</include>
           </control>
           <control type="image">
             <include>BigPanelEpisodeDimensions</include>
