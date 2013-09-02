@@ -924,13 +924,15 @@
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(313)</visible>
-        <include>RecentlyAdded_Label</include>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+		<include>RecentlyAdded_Label</include>
         <label>$INFO[Container(313).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="313" description="Movies PLEXBMC">
         <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
         <visible>StringCompare(Container(300).ListItem.Property(type),movie)</visible>
-        <onleft>313</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">313</onleft>
+		<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
         <onright>313</onright>
         <ondown>300</ondown>
         <onback>300</onback>
@@ -1086,13 +1088,15 @@
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(511)</visible>
-        <include>RecentlyAdded_Label</include>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+		<include>RecentlyAdded_Label</include>
         <label>$INFO[Container(511).ListItem.Property(ShelfLabel)]</label>
       </control>
       <control type="fixedlist" id="511" description="TOP Shortcuts">
         <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))</visible>
         <visible>StringCompare(Container(300).ListItem.Property(type),artist)</visible>
-        <onleft>300</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">511</onleft>
+		<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
         <onright>511</onright>
         <ondown>300</ondown>
         <onback>300</onback>
@@ -1208,13 +1212,15 @@
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(212)</visible>
-        <include>RecentlyAdded_Label</include>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+		<include>RecentlyAdded_Label</include>
         <label>$INFO[Container(212).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="212" description="Channels">
         <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Title))</visible>
         <visible>Container(300).HasFocus(50)</visible>
-        <onleft>212</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">212</onleft>
+		<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
         <onright>212</onright>
         <ondown>300</ondown>
         <onback>300</onback>
@@ -1300,13 +1306,15 @@
       </control>
       <control type="label" description="Label">
         <visible>Control.HasFocus(412)</visible>
-        <include>RecentlyAdded_Label</include>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+		<include>RecentlyAdded_Label</include>
         <label>$INFO[Container(412).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(412).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="412" description="TV Shows PleXBMC">
         <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
         <visible>StringCompare(Container(300).ListItem.Property(type),show)</visible>
-        <onleft>412</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">412</onleft>
+		<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
         <onright>412</onright>
         <ondown>300</ondown>
         <onback>300</onback>
