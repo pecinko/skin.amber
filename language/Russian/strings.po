@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2013-08-31 19:30+0000\n"
+"PO-Revision-Date: 2013-09-02 10:00+0000\n"
 "Last-Translator: relyter <tyler@pisem.net>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/xbmc-skins/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgctxt "Addon Description"
 msgid ""
 "Amber offers nice, fast and simple to use interface. Based mostly on "
 "Aeon/Aeon Nox and Mediastream textures."
-msgstr "Amber имеет красивый, быстрый и легкий в использовании интерфейс. Обложка основана на текстурах Aeon/Aeon Nox и Mediastream."
+msgstr "Amber это быстрый, красивый и легкий в использовании интерфейс. Обложка основана на текстурах Aeon/Aeon Nox и Mediastream."
 
 msgctxt "#31000"
 msgid "Picture Channels"
@@ -70,7 +70,7 @@ msgstr "XBMC"
 
 msgctxt "#31010"
 msgid "Queue"
-msgstr "Добавить в плейлист"
+msgstr "В плейлист"
 
 msgctxt "#31011"
 msgid "Recently Viewed"
@@ -110,11 +110,11 @@ msgstr "Выбрать фон раздела"
 
 msgctxt "#31113"
 msgid "Single Image"
-msgstr "Одно изображение"
+msgstr "Одна картинка"
 
 msgctxt "#31114"
 msgid "Multi Image"
-msgstr "Папка изображений"
+msgstr "Набор картинок"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
@@ -158,11 +158,11 @@ msgstr "Стоп"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr "Перемотка вперед"
+msgstr "Вперед"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr "Перемотка назад"
+msgstr "Назад"
 
 msgctxt "#31355"
 msgid "Movie menu"
@@ -307,7 +307,7 @@ msgstr "Полка"
 
 msgctxt "#31978"
 msgid "Show library info on Home (totals, unwatched...)"
-msgstr "Отображать статистику библиотеки в главном меню (всего, непросмотрено...)"
+msgstr "Показывать статистику библиотеки в Главном меню"
 
 msgctxt "#31979"
 msgid "Loading..."
@@ -315,7 +315,7 @@ msgstr "Загрузка..."
 
 msgctxt "#31980"
 msgid "Hide unwatched and partialy watched marks"
-msgstr "Убрать отметки \"непросмотрено\" и \"частично просмотрено\""
+msgstr "Убрать отметки \"не просмотрено\" и \"частично просмотрено\""
 
 msgctxt "#31981"
 msgid "Hide watched marks"
@@ -347,7 +347,7 @@ msgstr "Меню выключения"
 
 msgctxt "#31991"
 msgid "Background music visualization/video player on Home screen"
-msgstr "Показывать в фоне видео/визуализацию в главном меню"
+msgstr "Показывать видео/визуализации в фоне в Главном меню"
 
 msgctxt "#31992"
 msgid "Banner (wide) thumbs"
@@ -359,7 +359,7 @@ msgstr "Не используется - кликните, чтобы настр�
 
 msgctxt "#31994"
 msgid "Use vertical main menu on Home screen"
-msgstr "Вертикальное главное меню"
+msgstr "Вертикальное Главное меню"
 
 msgctxt "#31995"
 msgid "Home layout"
