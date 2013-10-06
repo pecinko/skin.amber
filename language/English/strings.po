@@ -360,7 +360,13 @@ msgctxt "#31983"
 msgid "Choose from menu"
 msgstr ""
 
-#empty strings from id 31984 to 31985
+msgctxt "#31984"
+msgid "TV Tunes (requires TV Tunes add-on)"
+msgstr ""
+
+msgctxt "#31985"
+msgid "Advanced"
+msgstr ""
 
 msgctxt "#31986"
 msgid "Use default background on Home page"
