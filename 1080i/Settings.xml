@@ -430,20 +430,6 @@
               <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
               <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
             </item>
-            <item id="11" description="Artist slideshow">
-              <visible>System.HasAddon(script.artistslideshow)</visible>
-              <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
-              <label>$LOCALIZE[31969]</label>
-              <label2>$LOCALIZE[107]</label2>
-              <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
-            </item>
-            <item id="11" description="Artist slideshow">
-              <visible>System.HasAddon(script.artistslideshow)</visible>
-              <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
-              <label>$LOCALIZE[31969]</label>
-              <label2>$LOCALIZE[106]</label2>
-              <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
-            </item>
             <item id="12" description="Show player on home">
               <visible>Skin.HasSetting(Show_Player)</visible>
               <label>$LOCALIZE[31991]</label>
@@ -512,7 +498,7 @@
             <width>26</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
-            <texture>overlay/OverlayUnwatched.png</texture>
+            <texture>OverlayInProgress.png</texture>
           </control>
         </control>
         <!-- 9000 3 -->
@@ -1936,15 +1922,29 @@
           <content>
             <item id="1" description="TVTunes">
               <visible>!Skin.HasSetting(TVTunes.Enabled)</visible>
-              <label> - $LOCALIZE[31984]</label>
+              <label>$LOCALIZE[31984]</label>
               <label2>$LOCALIZE[13106]</label2>
               <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
             </item>
             <item id="1" description="Quit">
               <visible>Skin.HasSetting(TVTunes.Enabled)</visible>
-              <label> - $LOCALIZE[31984]</label>
+              <label>$LOCALIZE[31984]</label>
               <label2>$LOCALIZE[305]</label2>
               <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
+            </item>
+			<item id="2" description="Artist slideshow">
+              <visible>System.HasAddon(script.artistslideshow)</visible>
+              <visible>Skin.HasSetting(Use_Artist_Slideshow)</visible>
+              <label>$LOCALIZE[31969]</label>
+              <label2>$LOCALIZE[13106]</label2>
+              <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
+            </item>
+            <item id="2" description="Artist slideshow">
+              <visible>System.HasAddon(script.artistslideshow)</visible>
+              <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
+              <label>$LOCALIZE[31969]</label>
+              <label2>$LOCALIZE[305]</label2>
+              <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
             </item>
           </content>
         </control>

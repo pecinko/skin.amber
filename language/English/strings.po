@@ -304,7 +304,7 @@ msgid "Show info"
 msgstr ""
 
 msgctxt "#31969"
-msgid "Show artist slideshow backgrounds in music player"
+msgid "Artist slideshow (requires Artist slideshow add-on)"
 msgstr ""
 
 msgctxt "#31970"
