@@ -2129,12 +2129,14 @@
   </include>
   <include name="Home.Submenu.Items">
     <item id="0" description="Update Library">
-      <visible>Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(13) | Container(300).HasFocus(14)</visible>
+      <visible>!Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
+	  <visible>Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(13) | Container(300).HasFocus(14)</visible>
       <label>$LOCALIZE[653]</label>
       <onclick>UpdateLibrary(video)</onclick>
     </item>
     <item id="0" description="Update Library">
-      <visible>Container(300).HasFocus(6)</visible>
+      <visible>!Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
+	  <visible>Container(300).HasFocus(6)</visible>
       <label>$LOCALIZE[653]</label>
       <onclick>UpdateLibrary(music)</onclick>
     </item>

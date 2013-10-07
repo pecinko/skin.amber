@@ -1960,6 +1960,18 @@
               <label2>$LOCALIZE[305]</label2>
               <onclick>Skin.ToggleSetting(Use.FastStart)</onclick>
             </item>
+			<item id="4" description="Hide Library update button">
+              <visible>!Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
+              <label>$LOCALIZE[31957]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(Hide.LibraryUpdate.Button)</onclick>
+            </item>
+            <item id="4" description="Hide Library update button">
+              <visible>Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
+              <label>$LOCALIZE[31957]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.ToggleSetting(Hide.LibraryUpdate.Button)</onclick>
+            </item>
           </content>
         </control>
       </control>

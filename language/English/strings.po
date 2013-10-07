@@ -252,8 +252,12 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31957
+#empty strings from id 31905 to 31956
 #AMBER
+
+msgctxt "#31957"
+msgid "Hide Update library button from home submenu"
+msgstr ""
 
 #.view label
 msgctxt "#31958"

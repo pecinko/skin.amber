@@ -1,3 +1,6 @@
+1.1.0
+Add option to hide library update button from Home submenu
+
 1.0.9
 Add fast start option that skips waiting for skin widgets
 Fix Player VideoInfo dialog closing
