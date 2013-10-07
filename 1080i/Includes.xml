@@ -151,7 +151,7 @@
         <texture border="100,0,0,0" flipy="true">common/TimePanel.png</texture>
       </control>
       <control type="label">
-        <visible>!Player.HasAudio</visible>
+        <visible>!Player.HasAudio | [Player.HasAudio + SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
         <include>VisibleFadeEffect</include>
         <posx>30</posx>
         <posy>0</posy>
@@ -161,7 +161,7 @@
         <label>$VAR[GlobalHeadings]</label>
       </control>
       <control type="group">
-        <visible>Player.HasAudio</visible>
+        <visible>Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
         <include>VisibleFadeEffect</include>
         <control type="image" description="Speaker">
           <visible>Player.HasAudio</visible>
