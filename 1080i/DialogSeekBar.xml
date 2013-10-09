@@ -36,6 +36,18 @@
         <shadowcolor>Black</shadowcolor>
         <label>$LOCALIZE[19127][COLOR=Orange] • [/COLOR]$INFO[Player.FinishTime]</label>
       </control>
+      <control type="label" description="Chapter Info">
+        <posx>40</posx>
+        <posy>40</posy>
+        <width>700</width>
+        <height>50</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>Details</font>
+        <shadowcolor>Black</shadowcolor>
+        <label>$LOCALIZE[21396][COLOR=Orange] • [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName,[COLOR=Orange] • [/COLOR]]</label>
+        <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
+      </control>
       <control type="group">
         <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Player.Caching | Player.Paused | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Window.IsActive(videoosd.xml)]</visible>
         <posy>10</posy>
