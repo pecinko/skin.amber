@@ -1,6 +1,6 @@
 <window>
   <defaultcontrol always="true">50</defaultcontrol>
-  <onload condition="Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+  <onload condition="Container.Content(TVShows) + Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onload>
   <controls>
     <control type="group" description="BG">
       <include>Fanart_Art</include>
@@ -65,7 +65,7 @@
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
           <control type="group" description="Media info">
-		  	<visible>!Container.Content(seasons)</visible>
+            <visible>!Container.Content(seasons)</visible>
             <animation effect="fade" delay="100" time="300">Visible</animation>
             <animation effect="fade" time="0">Hidden</animation>
             <posx>555</posx>
@@ -403,7 +403,7 @@
           </control>
           <control type="group" description="Media info">
             <visible>!container.content(seasons)</visible>
-			<posx>375</posx>
+            <posx>375</posx>
             <posy>618</posy>
             <control type="label" description="Title">
               <posy>117</posy>
@@ -645,7 +645,7 @@
             <height>548</height>
             <align>left</align>
             <label>$VAR[Plots]</label>
-		  </control>
+          </control>
           <control type="image" description="Rating">
             <visible>!Container.Content(Tvshows)</visible>
             <posx>-3</posx>
@@ -662,7 +662,7 @@
           </control>
         </control>
       </control>
-	  <control type="group" description="55 MediaInfo with Small Fanart">
+      <control type="group" description="55 MediaInfo with Small Fanart">
         <visible>Skin.HasSetting(55_SmallFanart) + [Container.Content(tvshows) + Skin.HasSetting(55_UseBanners)]</visible>
         <posx>60</posx>
         <posy>100</posy>
