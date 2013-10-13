@@ -153,6 +153,14 @@
             <thumb>RestartNF.png</thumb>
             <icon>RestartFO.png</icon>
           </item>
+          <item id="16" description="Settings">
+            <visible>Skin.HasSetting(QuitMenu_Show_Settings)</visible>
+            <onclick>dialog.close(all,true)</onclick>
+            <onclick>ActivateWindow(Settings,return)</onclick>
+            <label>$LOCALIZE[5]</label>
+            <thumb>settings/Gears.png</thumb>
+            <icon>settings/GearsFO.png</icon>
+          </item>
         </content>
       </control>
     </control>

@@ -1817,12 +1817,26 @@
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
             </item>
-            <item id="4" description="Shutdown">
+            <item id="5" description="Shutdown">
               <visible>IsEmpty(Skin.String(shutdown))</visible>
               <visible>Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
               <label> - $LOCALIZE[13013]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
+            </item>
+            <item id="6" description="Settings">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+              <visible>Skin.HasSetting(QuitMenu_Show_Settings)</visible>
+              <label> - $LOCALIZE[5]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Show_Settings)</onclick>
+            </item>
+            <item id="6" description="Settings">
+              <visible>IsEmpty(Skin.String(shutdown))</visible>
+              <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
+              <label> - $LOCALIZE[5]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(QuitMenu_Show_Settings)</onclick>
             </item>
           </content>
         </control>
