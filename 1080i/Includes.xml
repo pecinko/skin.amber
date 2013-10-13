@@ -2331,6 +2331,11 @@
       <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/1")</onclick>
       <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/1")</onclick>
     </item>
+	<item id="50" description="Test">
+      <visible>Container(300).HasFocus(10)</visible>
+      <label>$LOCALIZE[20183]</label>
+      <onclick>XBMC.ReloadSkin()</onclick>
+    </item>
     <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
   </include>
   <include name="Library_Count">
