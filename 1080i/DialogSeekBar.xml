@@ -6,7 +6,7 @@
   <controls>
     <control type="group" description="Top Bar">
       <control type="image" description="Background">
-       <animation effect="slide" start="0,0" end="0,30" time="0" reversible="true" condition="!Window.IsActive(DialogFullScreenInfo.xml) + Player.ChapterCount + !VideoPlayer.Content(LiveTV)">Conditional</animation>
+       <animation effect="slide" start="0,0" end="0,30" time="0" reversible="true" condition="Player.ChapterCount + !VideoPlayer.Content(LiveTV)">Conditional</animation>
 		<posx>0</posx>
         <posy>-30</posy>
         <width>1920</width>
@@ -127,13 +127,12 @@
         <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
       </control>
 	  <control type="label" description="Seek time label">
-        <visible>![Window.IsActive(DialogFullScreenInfo.xml) | Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | [Player.Paused + System.IdleTime(4)]]</visible>
+        <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | [Player.Paused + System.IdleTime(4)]]</visible>
         <include>SeekbarLabels</include>
         <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season,[COLOR=Orange]  •  [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
       </control>
 	  <control type="label" description="Chapter Info with Player info">
         <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
-		<animation effect="slide" start="0,0" end="0,-36" time="0" reversible="true" condition="Window.IsActive(DialogFullScreenInfo.xml) + !VideoPlayer.Content(LiveTV)">Conditional</animation>
 		<posy>36</posy>
 		<font>InfoPath</font>
 		<include>SeekbarLabels</include>
