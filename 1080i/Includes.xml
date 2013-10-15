@@ -1686,7 +1686,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path)]</onclick>
           </item>
           <item id="2" description="Shortcut2">
@@ -1694,7 +1694,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.Path)])</onclick>
           </item>
           <item id="3" description="Shortcut3">
@@ -1702,7 +1702,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.Path)])</onclick>
           </item>
           <item id="4" description="Shortcut4">
@@ -1710,7 +1710,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.Path)])</onclick>
           </item>
           <item id="5" description="Shortcut5">
@@ -1718,7 +1718,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.Path)])</onclick>
           </item>
           <item id="6" description="Shortcut6">
@@ -1726,7 +1726,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.Path)])</onclick>
           </item>
           <item id="7" description="Shortcut7">
@@ -1734,7 +1734,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.Path)])</onclick>
           </item>
           <item id="8" description="Shortcut8">
@@ -1742,7 +1742,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.Path)])</onclick>
           </item>
           <item id="9" description="Shortcut9">
@@ -1750,7 +1750,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.Path)])</onclick>
           </item>
           <item id="10" description="Shortcut10">
@@ -1758,7 +1758,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.Path)])</onclick>
           </item>
           <item id="11" description="Shortcut11">
@@ -1766,7 +1766,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.Path)])</onclick>
           </item>
           <item id="12" description="Shortcut12">
@@ -1774,7 +1774,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.Path)])</onclick>
           </item>
           <item id="13" description="Shortcut13">
@@ -1782,7 +1782,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.Path)])</onclick>
           </item>
           <item id="14" description="Shortcut14">
@@ -1790,7 +1790,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.Path)])</onclick>
           </item>
           <item id="15" description="Shortcut15">
@@ -1798,7 +1798,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.Path)])</onclick>
           </item>
           <item id="16" description="Shortcut16">
@@ -1806,7 +1806,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.Path)])</onclick>
           </item>
           <item id="17" description="Shortcut17">
@@ -1814,7 +1814,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.EpisodeSeason)]</property>
+			<property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.Path)])</onclick>
           </item>
           <item id="18" description="Shortcut18">
@@ -1822,7 +1822,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.Path)])</onclick>
           </item>
           <item id="19" description="Shortcut19">
@@ -1830,7 +1830,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.Path)])</onclick>
           </item>
           <item id="20" description="Shortcut20">
@@ -1838,7 +1838,7 @@
             <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.EpisodeSeason), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31014]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.EpisodeNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.Path)])</onclick>
           </item>
         </content>
@@ -2299,14 +2299,15 @@
       <label>$LOCALIZE[31011]</label>
       <onclick>$INFO[Container(300).ListItem.Property(viewed)]</onclick>
     </item>
-    <item id="60" description="PleXBMC: recently added">
+    <item id="60" description="PleXBMC: unwatched">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
       <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
       <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
-      <label>$LOCALIZE[31020]</label>
-      <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
+      <visible>substring(Container(300).ListItem.Property(type),show) | substring(Container(300).ListItem.Property(type),movie)</visible>
+      <label>$LOCALIZE[16101]</label>
+      <onclick>$INFO[Container(300).ListItem.Property(partial)]/unwatched&amp;mode=0,return)</onclick>
     </item>
-    <item id="61" description="PleXBMC: Recently released">
+	<item id="61" description="PleXBMC: Recently released">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
       <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
       <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
@@ -2322,7 +2323,14 @@
       <label>$LOCALIZE[31013]</label>
       <onclick>$INFO[Container(300).ListItem.Property(newest)]</onclick>
     </item>
-    <item id="62" description="PleXBMC: ondeck">
+	<item id="62" description="PleXBMC: recently added">
+      <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+      <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
+      <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
+      <label>$LOCALIZE[31020]</label>
+      <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
+    </item>
+    <item id="63" description="PleXBMC: ondeck">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
       <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
       <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
@@ -2330,7 +2338,7 @@
       <label>$LOCALIZE[31014]</label>
       <onclick>$INFO[Container(300).ListItem.Property(ondeck)]</onclick>
     </item>
-    <item id="63" description="PleXBMC: albums">
+    <item id="64" description="PleXBMC: albums">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
       <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
       <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
@@ -2338,7 +2346,7 @@
       <label>$LOCALIZE[132]</label>
       <onclick>$INFO[Container(300).ListItem.Property(album)]</onclick>
     </item>
-    <item id="64" description="PleXBMC: by year">
+    <item id="65" description="PleXBMC: by year">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
       <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
       <visible>substring(Container(300).ListItem.Property(shared),false)</visible>
