@@ -3,6 +3,10 @@
     <value condition="Window.IsActive(home) | Window.IsActive(weather)">[COLOR=Grey2]$INFO[System.Date][/COLOR][COLOR=Orange]  •  [/COLOR]$INFO[System.Time]</value>
     <value>$INFO[System.Time]</value>
   </variable>
+  <variable name="ChapterLabel" description="Chapter label in  DialogSeekBar">
+    <value condition="!IsEmpty(Player.ChapterName)">$INFO[Player.ChapterName][COLOR=Orange] • [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+    <value>$LOCALIZE[21396][COLOR=Orange] • [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+  </variable>
   <variable name="Overlay" description="Overlay image">
     <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
     <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>

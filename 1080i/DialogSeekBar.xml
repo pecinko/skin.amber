@@ -6,10 +6,11 @@
   <controls>
     <control type="group" description="Top Bar">
       <control type="image" description="Background">
-        <posx>0</posx>
-        <posy>0</posy>
+       <animation effect="slide" start="0,0" end="0,30" time="0" reversible="true" condition="!Window.IsActive(DialogFullScreenInfo.xml) + Player.ChapterCount + !VideoPlayer.Content(LiveTV)">Conditional</animation>
+		<posx>0</posx>
+        <posy>-30</posy>
         <width>1920</width>
-        <height>108</height>
+        <height>138</height>
         <texture flipy="true" border="0,30,0,30">OSD/OSDBackground.png</texture>
         <colordiffuse>FFE2E2E2</colordiffuse>
         <!--<colordiffuse>BBFFFFFF</colordiffuse>-->
@@ -83,7 +84,7 @@
       </control>
     </control>
     <control type="group">
-      <posy>40</posy>
+      <posy>36</posy>
       <control type="label" description="Pause">
         <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused + System.IdleTime(4)]</visible>
         <include>SeekbarLabels</include>
@@ -119,34 +120,24 @@
         <include>SeekbarLabels</include>
         <label>32 X</label>
       </control>
-      <control type="label" description="Chapter Info with Player info">
-        <visible>Window.IsActive(DialogFullScreenInfo.xml) + Player.ChapterCount</visible>
-		<include>SeekbarLabels</include>
-        <label>$LOCALIZE[21396][COLOR=Orange] • [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName,[COLOR=Orange] • [/COLOR]]</label>
-      </control>
-	  <control type="label" description="Seek time label">
+      <control type="label" description="Seek time label">
         <visible>![player.forwarding | player.rewinding]</visible>
         <visible>Player.DisplayAfterSeek</visible>
         <include>SeekbarLabels</include>
         <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
       </control>
-	  <control type="label" description="Chapter Info">
-        <visible>![player.forwarding | player.rewinding]</visible>
-        <visible>Player.DisplayAfterSeek + [Player.ChapterCount + VideoPlayer.Content(MusicVideos)]</visible>
-		<posx>40</posx>
-        <posy>0</posy>
-        <width>600</width>
-        <height>50</height>
-        <align>left</align>
-        <aligny>center</aligny>
-        <font>SetContent</font>
-        <shadowcolor>Black</shadowcolor>
-        <label>$LOCALIZE[21396][COLOR=Orange] • [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName,[COLOR=Orange] • [/COLOR]]</label>
-      </control>
 	  <control type="label" description="Seek time label">
         <visible>![Window.IsActive(DialogFullScreenInfo.xml) | Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | [Player.Paused + System.IdleTime(4)]]</visible>
         <include>SeekbarLabels</include>
         <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season,[COLOR=Orange]  •  [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
+      </control>
+	  <control type="label" description="Chapter Info with Player info">
+        <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
+		<animation effect="slide" start="0,0" end="0,-36" time="0" reversible="true" condition="Window.IsActive(DialogFullScreenInfo.xml) + !VideoPlayer.Content(LiveTV)">Conditional</animation>
+		<posy>36</posy>
+		<font>InfoPath</font>
+		<include>SeekbarLabels</include>
+        <label>$VAR[ChapterLabel]</label>
       </control>
     </control>
   </controls>
