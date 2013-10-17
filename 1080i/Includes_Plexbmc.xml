@@ -132,7 +132,7 @@
           <item id="1" description="Movies">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
 			<visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.1.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Duration), • , $LOCALIZE[31297]][/COLOR] $INFO[Window(Home).Property(Plexbmc.LatestMovie.1.uuid)]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.1.Path)])</onclick>
@@ -1092,7 +1092,7 @@
         <label>$INFO[Container(212).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="212" description="Channels">
-        <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Title))</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))</visible>
         <visible>Container(300).HasFocus(50)</visible>
         <onleft condition="!Skin.HasSetting(VerticalHome)">212</onleft>
         <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
