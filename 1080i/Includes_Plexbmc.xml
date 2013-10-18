@@ -1258,6 +1258,56 @@
             <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.20.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.20.Artist), • ][/COLOR]</property>
             <property name="ItemType">$LOCALIZE[31961]</property>
           </item>
+		  <item id="21" description="Shortcut21">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.21.Title))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.21.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.21.Title)]</label2>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.21.Path)]</onclick>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.21.Thumb)]</thumb>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.21.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.21.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+          </item>
+		  <item id="22" description="Shortcut22">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.22.Title))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.22.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.22.Title)]</label2>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.22.Path)]</onclick>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.22.Thumb)]</thumb>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.22.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.22.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+          </item>
+		  <item id="23" description="Shortcut23">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.23.Title))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.23.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.23.Title)]</label2>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.23.Path)]</onclick>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.23.Thumb)]</thumb>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.23.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.23.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+          </item>
+		  <item id="24" description="Shortcut24">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.24.Title))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.24.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.24.Title)]</label2>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.24.Path)]</onclick>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.24.Thumb)]</thumb>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.24.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.24.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+          </item>
+		  <item id="25" description="Shortcut25">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.25.Title))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.25.Artist)]</label>
+            <label2>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.25.Title)]</label2>
+            <onclick>PlayList.Clear</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.25.Path)]</onclick>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.25.Thumb)]</thumb>
+            <property name="ShelfLabel">$INFO[Window(Home).Property(plexbmc.LatestAlbum.25.Title)][COLOR=White]$INFO[Window(Home).Property(plexbmc.LatestAlbum.25.Artist), • ][/COLOR]</property>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+          </item>
 	    </content>
       </control>
       <control type="label" description="Header">
