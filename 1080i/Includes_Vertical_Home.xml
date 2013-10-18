@@ -674,7 +674,7 @@
         <texture border="0,40,0,40">home/OverlayRA2.png</texture>
       </control>
 	  <control type="image" description="RA BG Plexbmc only">
-        <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [IntegerGreaterThan(Container(311).NumItems,0) + !IntegerGreaterThan(Container(312).NumItems,0)] | [!IntegerGreaterThan(Container(311).NumItems,0) + IntegerGreaterThan(Container(312).NumItems,0)] | [IntegerGreaterThan(Container(411).NumItems,0) + !IntegerGreaterThan(Container(413).NumItems,0)] | [!IntegerGreaterThan(Container(411).NumItems,0) + IntegerGreaterThan(Container(413).NumItems,0)] | Control.IsVisible(511)]</visible>
+        <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [IntegerGreaterThan(Container(311).NumItems,0) + !IntegerGreaterThan(Container(312).NumItems,0)] | [!IntegerGreaterThan(Container(311).NumItems,0) + IntegerGreaterThan(Container(312).NumItems,0)] | [IntegerGreaterThan(Container(411).NumItems,0) + !IntegerGreaterThan(Container(413).NumItems,0)] | [!IntegerGreaterThan(Container(411).NumItems,0) + IntegerGreaterThan(Container(413).NumItems,0)] | Control.IsVisible(511) | Control.IsVisible(512)]</visible>
         <posx>530</posx>
         <posy>345</posy>
         <width>1390</width>

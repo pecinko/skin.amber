@@ -1310,6 +1310,170 @@
           </item>
 	    </content>
       </control>
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(512)</visible>
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(512).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(512)</visible>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(512).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="512" description="Pictures">
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))</visible>
+        <visible>StringCompare(Container(300).ListItem.Property(type),photo)</visible>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">512</onleft>
+        <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+        <onright>512</onright>
+        <ondown>300</ondown>
+        <onback>300</onback>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
+        <include>RecentlyAdded_Addons</include>
+        <content>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.1.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.2.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.2.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.3.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.3.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.4.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.4.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.5.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.5.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.6.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.6.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.7.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.7.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.8.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.8.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.9.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.9.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+          <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.10.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.10.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.11.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.11.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.12.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.12.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.13.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.13.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.14.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.14.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.15.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.15.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.16.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.16.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.16.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.16.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.17.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.17.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.17.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.17.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.18.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.18.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.18.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.18.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.19.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.19.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.19.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.19.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+		  <item id="1" description="Photos">
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.20.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestPhoto.20.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestPhoto.20.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.20.Thumb)]</thumb>
+            <property name="ItemType">Photo</property>
+          </item>
+        </content>
+      </control>
       <control type="label" description="Header">
         <visible>Control.IsVisible(212)</visible>
         <include>RecentlyAdded_Header</include>
