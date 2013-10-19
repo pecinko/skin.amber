@@ -728,6 +728,101 @@
         <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
         <include>Recommended_Posters</include>
       </control>
+	  
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(303)</visible>
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(303).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(303)</visible>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(303).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="303" description="Movies PLEXBMC">
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
+        <visible>Container(300).HasFocus(33)</visible>
+        <onright>303</onright>
+        <onup>300</onup>
+        <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">303</onleft>
+        <ondown condition="Control.IsVisible(403)">403</ondown>
+        <ondown condition="!Control.IsVisible(403)">300</ondown>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
+        <include>RecentlyAdded_Posters</include>
+      </control>
+      <control type="label" description="Header">
+        <visible>Control.IsVisible(403)</visible>
+        <include>Recommended_Header</include>
+        <label>$INFO[Container(403).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(403)</visible>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+        <include>Recommended_Label</include>
+        <label>$INFO[Container(403).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="403" description="Movies PLEXBMC">
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))</visible>
+        <visible>Container(300).HasFocus(33)</visible>
+        <onright>403</onright>
+        <onup condition="Control.IsVisible(303)">303</onup>
+        <onup condition="!Control.IsVisible(302)">300</onup>
+        <ondown>300</ondown>
+        <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">403</onleft>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
+        <include>Recommended_Posters</include>
+      </control>
+	  
+	  <control type="label" description="Header">
+        <visible>Control.IsVisible(304)</visible>
+        <include>RecentlyAdded_Header</include>
+        <label>$INFO[Container(304).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(304)</visible>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+        <include>RecentlyAdded_Label</include>
+        <label>$INFO[Container(304).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="304" description="Movies PLEXBMC">
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
+        <visible>Container(300).HasFocus(34)</visible>
+        <onright>304</onright>
+        <onup>300</onup>
+        <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">304</onleft>
+        <ondown condition="Control.IsVisible(404)">404</ondown>
+        <ondown condition="!Control.IsVisible(404)">300</ondown>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
+        <include>RecentlyAdded_Posters</include>
+      </control>
+      <control type="label" description="Header">
+        <visible>Control.IsVisible(404)</visible>
+        <include>Recommended_Header</include>
+        <label>$INFO[Container(404).ListItem.Property(ItemType)]</label>
+      </control>
+      <control type="label" description="Label">
+        <visible>Control.HasFocus(404)</visible>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
+        <include>Recommended_Label</include>
+        <label>$INFO[Container(404).ListItem.Label]</label>
+      </control>
+      <control type="fixedlist" id="404" description="Movies PLEXBMC">
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))</visible>
+        <visible>Container(300).HasFocus(34)</visible>
+        <onright>402</onright>
+        <onup condition="Control.IsVisible(304)">304</onup>
+        <onup condition="!Control.IsVisible(304)">300</onup>
+        <ondown>300</ondown>
+        <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+        <onleft condition="!Skin.HasSetting(VerticalHome)">404</onleft>
+        <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Commons</include>
+        <include>Recommended_Posters</include>
+      </control>
+	  
       <!--<control type="label" description="Header">
         <visible>Control.IsVisible(311)</visible>
         <include>RecentlyAdded_Header</include>
