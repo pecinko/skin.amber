@@ -36,7 +36,7 @@
   </include>
   <include name="Recommended_Label">
     <animation effect="slide" start="0,0" end="0,522" time="0" condition="!Skin.HasSetting(plexbmc) + [Control.IsVisible(311) | Control.IsVisible(411) | Control.IsVisible(511) | Control.IsVisible(514)]">Conditional</animation>
-	<animation effect="slide" start="0,0" end="0,522" time="0" condition="Skin.HasSetting(plexbmc) + [IntegerGreaterThan(Container(311).NumItems,0) | IntegerGreaterThan(Container(411).NumItems,0) | IntegerGreaterThan(Container(511).NumItems,0)]">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,522" time="0" condition="Skin.HasSetting(plexbmc) + [IntegerGreaterThan(Container(311).NumItems,0) | IntegerGreaterThan(Container(411).NumItems,0) | IntegerGreaterThan(Container(511).NumItems,0) | IntegerGreaterThan(Container(900).NumItems,0)]">Conditional</animation>
     <posx>558</posx>
     <posy>339</posy>
     <height>45</height>
@@ -611,7 +611,7 @@
     </itemlayout>
     <focusedlayout height="345" width="228">
       <control type="image">
-        <visible>![Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212)]</visible>
+        <visible>![Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900)]</visible>
         <posx>21</posx>
         <posy>21</posy>
         <width>198</width>
@@ -620,7 +620,7 @@
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
-        <visible>Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212)</visible>
+        <visible>Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900)</visible>
         <posx>21</posx>
         <posy>21</posy>
         <width>198</width>
@@ -674,7 +674,7 @@
         <texture border="0,40,0,40">home/OverlayRA2.png</texture>
       </control>
 	  <control type="image" description="RA BG Plexbmc only">
-        <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [IntegerGreaterThan(Container(311).NumItems,0) + !IntegerGreaterThan(Container(312).NumItems,0)] | [!IntegerGreaterThan(Container(311).NumItems,0) + IntegerGreaterThan(Container(312).NumItems,0)] | [IntegerGreaterThan(Container(411).NumItems,0) + !IntegerGreaterThan(Container(413).NumItems,0)] | [!IntegerGreaterThan(Container(411).NumItems,0) + IntegerGreaterThan(Container(413).NumItems,0)] | Control.IsVisible(511) | Control.IsVisible(512)]</visible>
+        <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [IntegerGreaterThan(Container(311).NumItems,0) + !IntegerGreaterThan(Container(312).NumItems,0)] | [!IntegerGreaterThan(Container(311).NumItems,0) + IntegerGreaterThan(Container(312).NumItems,0)] | [IntegerGreaterThan(Container(411).NumItems,0) + !IntegerGreaterThan(Container(413).NumItems,0)] | [!IntegerGreaterThan(Container(411).NumItems,0) + IntegerGreaterThan(Container(413).NumItems,0)] | Control.IsVisible(511) | Control.IsVisible(900)]</visible>
         <posx>530</posx>
         <posy>345</posy>
         <width>1390</width>
