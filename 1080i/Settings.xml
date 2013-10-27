@@ -118,7 +118,7 @@
             <label>$LOCALIZE[31990]</label>
             <onclick>noop</onclick>
           </item>
-          <include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Section.Label</include>
+          <!--<include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Section.Label</include>-->
 		  <item id="10" description="Advanced">
             <label>$LOCALIZE[31985]</label>
             <onclick>noop</onclick>
@@ -238,11 +238,6 @@
               <label>$LOCALIZE[24001]</label>
               <onclick>ActivateWindow(AddonBrowser,root)</onclick>
             </item>
-            <item id="7" description="Plexbmc config">
-              <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-              <label>PleXBMC</label>
-              <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
-            </item>
             <item id="8" description="Service">
               <label>$LOCALIZE[14036]</label>
               <onclick>activatewindow(ServiceSettings)</onclick>
@@ -254,6 +249,11 @@
             <item id="11" description="PVR">
               <label>$LOCALIZE[31500]</label>
               <onclick>activateWindow(PVRSettings)</onclick>
+            </item>
+			<item id="7" description="Plexbmc config">
+              <visible>System.HasAddon(plugin.video.plexbmc)</visible>
+              <label>PleXBMC</label>
+              <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
             </item>
           </content>
         </control>
@@ -1841,7 +1841,7 @@
           </content>
         </control>
         <!-- 9000 8 -->
-        <include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Controls</include>
+        <!--<include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Controls</include>-->
 		<!-- 9000 10 -->
         <control type="panel" id="9007">
           <visible>Container(9000).HasFocus(10)</visible>
