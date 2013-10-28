@@ -105,7 +105,7 @@
       <posy>0</posy>
       <width>1920</width>
       <height>1080</height>
-      <texture>common/DimBG.png</texture>
+      <texture>img/BlackDotT.png</texture>
     </control>
   </include>
   <include name="Dimensions_Fullscreen">
