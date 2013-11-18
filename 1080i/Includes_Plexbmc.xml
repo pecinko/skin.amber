@@ -1294,451 +1294,451 @@
           <item id="1" description="Episodes1">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.1.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Path)]</onclick>
           </item>
           <item id="2" description="Shortcut2">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.2.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.2.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.Path)])</onclick>
           </item>
           <item id="3" description="Shortcut3">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.3.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.3.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.Path)])</onclick>
           </item>
           <item id="4" description="Shortcut4">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.4.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.4.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.Path)])</onclick>
           </item>
           <item id="5" description="Shortcut5">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.5.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.5.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.Thumb)]</thumb>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeason)]</property>
             <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.Path)])</onclick>
           </item>
           <item id="6" description="Shortcut6">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.6.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.6.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.Path)])</onclick>
           </item>
           <item id="7" description="Shortcut7">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.7.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.7.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.Path)])</onclick>
           </item>
           <item id="8" description="Shortcut8">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.8.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.8.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.Path)])</onclick>
           </item>
           <item id="9" description="Shortcut9">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.9.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.9.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.Path)])</onclick>
           </item>
           <item id="10" description="Shortcut10">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.10.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.10.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Path)])</onclick>
           </item>
           <item id="11" description="Shortcut11">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.11.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.11.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Path)])</onclick>
           </item>
           <item id="12" description="Shortcut12">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.12.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.12.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Path)])</onclick>
           </item>
           <item id="13" description="Shortcut13">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.13.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.13.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Path)])</onclick>
           </item>
           <item id="14" description="Shortcut14">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.14.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.14.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Path)])</onclick>
           </item>
           <item id="15" description="Shortcut15">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.15.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.15.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Path)])</onclick>
           </item>
           <item id="16" description="Shortcut16">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.16.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.16.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.Path)])</onclick>
           </item>
           <item id="17" description="Shortcut17">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.17.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.17.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.Path)])</onclick>
           </item>
           <item id="18" description="Shortcut18">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.18.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.18.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.Path)])</onclick>
           </item>
           <item id="19" description="Shortcut19">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.19.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.19.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.Path)])</onclick>
           </item>
           <item id="20" description="Shortcut20">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.20.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.20.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Path)])</onclick>
           </item>
           <item id="21" description="Shortcut21">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.21.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.21.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.Path)])</onclick>
           </item>
           <item id="22" description="Shortcut22">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.22.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.22.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.Path)])</onclick>
           </item>
           <item id="23" description="Shortcut23">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.23.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.23.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.Path)])</onclick>
           </item>
           <item id="24" description="Shortcut24">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.24.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.24.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.Path)])</onclick>
           </item>
           <item id="25" description="Shortcut25">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.25.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.25.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.Path)])</onclick>
           </item>
           <item id="26" description="Shortcut26">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.26.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.26.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.Path)])</onclick>
           </item>
           <item id="27" description="Shortcut27">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.27.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.27.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.Path)])</onclick>
           </item>
           <item id="28" description="Shortcut28">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.28.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.28.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.Path)])</onclick>
           </item>
           <item id="29" description="Shortcut29">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.29.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.29.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.Path)])</onclick>
           </item>
           <item id="30" description="Shortcut30">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.30.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.30.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.Path)])</onclick>
           </item>
           <item id="31" description="Shortcut31">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.31.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.31.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.Path)])</onclick>
           </item>
           <item id="32" description="Shortcut32">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.32.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.32.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.Path)])</onclick>
           </item>
           <item id="33" description="Shortcut33">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.33.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.33.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.Path)])</onclick>
           </item>
           <item id="34" description="Shortcut34">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.34.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.34.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.Path)])</onclick>
           </item>
           <item id="35" description="Shortcut35">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.35.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.35.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.Path)])</onclick>
           </item>
           <item id="36" description="Shortcut36">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.36.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.36.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.Path)])</onclick>
           </item>
           <item id="37" description="Shortcut37">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.37.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.37.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.Path)])</onclick>
           </item>
           <item id="38" description="Shortcut38">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.38.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.38.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.Path)])</onclick>
           </item>
           <item id="39" description="Shortcut39">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.39.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.39.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.Path)])</onclick>
           </item>
           <item id="40" description="Shortcut40">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.40.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.40.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.Path)])</onclick>
           </item>
           <item id="41" description="Shortcut41">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.41.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.41.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.Path)])</onclick>
           </item>
           <item id="42" description="Shortcut42">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.42.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.42.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.Path)])</onclick>
           </item>
           <item id="43" description="Shortcut43">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.43.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.43.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.Path)])</onclick>
           </item>
           <item id="44" description="Shortcut44">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.44.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.44.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.Path)])</onclick>
           </item>
           <item id="45" description="Shortcut45">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.45.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.45.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.Path)])</onclick>
           </item>
           <item id="46" description="Shortcut46">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.46.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.46.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.Path)])</onclick>
           </item>
           <item id="47" description="Shortcut47">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.47.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.47.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.Path)])</onclick>
           </item>
           <item id="48" description="Shortcut48">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.48.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.48.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.Path)])</onclick>
           </item>
           <item id="49" description="Shortcut49">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.49.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.49.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.Path)])</onclick>
           </item>
           <item id="50" description="Shortcut50">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.50.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.50.uuid))</visible>
-            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeason), • ][/COLOR]</label>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeTitle), • ][/COLOR]</label>
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
-            <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeason)]</property>
+            <property name="SeasonEpisode">$LOCALIZE[31973] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeason)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Path)])</onclick>
           </item>
         </content>
@@ -1755,7 +1755,7 @@
         <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="413" description="OnDeck TV Shows PleXBMC">
-        <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
+        <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))</visible>
         <visible>StringCompare(Container(300).ListItem.Property(type),show)</visible>
         <onright>413</onright>
         <onup condition="Control.IsVisible(411)">411</onup>
