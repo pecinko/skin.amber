@@ -130,7 +130,7 @@
           <control type="label">
             <posx>315</posx>
             <posy>0</posy>
-            <width>900</width>
+            <width>800</width>
             <height>54</height>
             <font>ListDetails</font>
             <aligny>center</aligny>
@@ -140,13 +140,13 @@
             <info>ListItem.Label2</info>
           </control>
           <control type="image">
-            <posx>1230</posx>
+            <posx>1120</posx>
             <posy>0</posy>
             <width>120</width>
             <height>54</height>
             <colordiffuse>Grey</colordiffuse>
             <aspectratio>keep</aspectratio>
-            <texture>info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+            <texture>badges/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
           </control>
         </itemlayout>
         <focusedlayout width="1250" height="54">
@@ -205,7 +205,7 @@
           <control type="label">
             <posx>315</posx>
             <posy>0</posy>
-            <width>900</width>
+            <width>800</width>
             <height>54</height>
             <font>ListDetails</font>
             <aligny>center</aligny>
@@ -214,12 +214,12 @@
             <info>ListItem.Label2</info>
           </control>
           <control type="image">
-            <posx>1230</posx>
+            <posx>1120</posx>
             <posy>0</posy>
             <width>120</width>
             <height>54</height>
             <aspectratio>keep</aspectratio>
-            <texture>info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+            <texture>badges/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
           </control>
         </focusedlayout>
       </control>
