@@ -938,8 +938,8 @@
       <onclick>ActivateWindow(Weather)</onclick>
     </item>
     <item id="10" description="Settings">
-      <visible>!Skin.HasSetting(Settings.Hide)</visible>
-      <label>$LOCALIZE[5]</label>
+      <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
+	  <label>$LOCALIZE[5]</label>
       <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
       <onclick>ActivateWindow(Settings)</onclick>
     </item>

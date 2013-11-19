@@ -118,8 +118,7 @@
             <label>$LOCALIZE[31990]</label>
             <onclick>noop</onclick>
           </item>
-          <!--<include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Section.Label</include>-->
-		  <item id="10" description="Advanced">
+		  <item id="8" description="Advanced">
             <label>$LOCALIZE[31985]</label>
             <onclick>noop</onclick>
           </item>
@@ -839,7 +838,8 @@
               <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
             </item>
             <item id="10" description="Settings">
-              <label>$LOCALIZE[5]</label>
+              <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
+			  <label>$LOCALIZE[5]</label>
               <label2>$LOCALIZE[31293]</label2>
               <thumb fallback="special://skin/backgrounds/System.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
               <onclick>Notification($LOCALIZE[416],,6,DefaultIconWarning.png)</onclick>
@@ -1841,18 +1841,16 @@
           </content>
         </control>
         <!-- 9000 8 -->
-        <!--<include description="Item 8" condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Settings.Controls</include>-->
-		<!-- 9000 10 -->
-        <control type="panel" id="9007">
-          <visible>Container(9000).HasFocus(10)</visible>
+        <control type="panel" id="9008">
+          <visible>Container(9000).HasFocus(8)</visible>
           <posx>390</posx>
           <posy>210</posy>
           <width>1140</width>
           <height>780</height>
           <onleft>9000</onleft>
           <onright>500</onright>
-          <onup>9007</onup>
-          <ondown>9007</ondown>
+          <onup>9008</onup>
+          <ondown>9008</ondown>
           <pagecontrol>-</pagecontrol>
           <scrolltime>280</scrolltime>
           <itemlayout width="1140" height="60">
@@ -1940,7 +1938,7 @@
               <label2>$LOCALIZE[13106]</label2>
               <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
             </item>
-            <item id="1" description="Quit">
+            <item id="1" description="TVTunes">
               <visible>Skin.HasSetting(TVTunes.Enabled)</visible>
               <label>$LOCALIZE[31984]</label>
               <label2>$LOCALIZE[305]</label2>
@@ -1991,7 +1989,7 @@
       </control>
     </control>
     <control type="textbox">
-      <visible>Container(9007).HasFocus(3)</visible>
+      <visible>Container(9008).HasFocus(3)</visible>
       <posx>1548</posx>
       <posy>210</posy>
       <width>294</width>
