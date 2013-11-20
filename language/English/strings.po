@@ -209,7 +209,9 @@ msgctxt "#31501"
 msgid "Scheduled Time"
 msgstr ""
 
-#empty string with id 31502
+msgctxt "#31502"
+msgid "All Movies"
+msgstr ""
 
 msgctxt "#31503"
 msgid "Add Group"
@@ -227,7 +229,11 @@ msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr ""
 
-#empty strings from id 31507 to 31509
+msgctxt "#31507"
+msgid "Movies homescreen button opens:"
+msgstr ""
+
+#empty strings from id 31508 to 31509
 
 msgctxt "#31510"
 msgid "Timer Set"

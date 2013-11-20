@@ -429,17 +429,22 @@
               <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
               <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
             </item>
-            <item id="12" description="Show player on home">
+            <item id="5" description="Show player on home">
               <visible>Skin.HasSetting(Show_Player)</visible>
               <label>$LOCALIZE[31991]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(Show_Player)</onclick>
             </item>
-            <item id="12" description="Show player on home">
+            <item id="5" description="Show player on home">
               <visible>!Skin.HasSetting(Show_Player)</visible>
               <label>$LOCALIZE[31991]</label>
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Show_Player)</onclick>
+            </item>
+			<item id="12" description="Movies entry points">
+              <label>$LOCALIZE[31507]</label>
+              <label2 fallback="31502">$VAR[MovieEntryPointLabel2]</label2>
+              <onclick>ActivateWindow(1115)</onclick>
             </item>
             <item id="13" description="Use artist view">
               <visible>Skin.HasSetting(ArtistView)</visible>
