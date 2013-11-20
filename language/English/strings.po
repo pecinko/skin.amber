@@ -258,8 +258,12 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31955
+#empty strings from id 31905 to 31954
 #AMBER
+
+msgctxt "#31955"
+msgid "Display shelf items after a short delay"
+msgstr ""
 
 msgctxt "#31956"
 msgid "Get theme"
