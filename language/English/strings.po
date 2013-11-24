@@ -189,7 +189,11 @@ msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr ""
 
-#empty strings from id 31357 to 31389
+msgctxt "#31357"
+msgid "Local subtitle available"
+msgstr ""
+
+#empty strings from id 31358 to 31389
 #Skin Fontsets
 
 msgctxt "#31390"

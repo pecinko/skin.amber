@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <allowoverlay>no</allowoverlay>
   <coordinates>
     <system>1</system>
     <posx>0</posx>
-    <posy>0</posy>
+    <posy>45</posy>
   </coordinates>
   <include>OpenClose</include>
   <controls>
@@ -27,15 +28,14 @@
       <control type="group">
         <posx>300</posx>
         <posy>111</posy>
-        <control type="image" id="110">
-          <description>Service Logo</description>
+        <!--<control type="image" id="110" description="Service Logo">
           <posx>30</posx>
           <posy>0</posy>
           <width>375</width>
           <height>60</height>
           <aspectratio>keep</aspectratio>
-        </control>
-        <control type="group" id="111">
+        </control>-->
+		<control type="group" id="111">
           <control type="grouplist">
             <posx>120</posx>
             <posy>741</posy>
@@ -44,11 +44,11 @@
             <align>center</align>
             <orientation>horizontal</orientation>
             <itemgap>8</itemgap>
-            <control type="label" description="Notification Local subtitle available">
+            <control type="label" id="130" description="Notification Local subtitle available">
               <width>1245</width>
               <height>60</height>
               <textcolor>Orange</textcolor>
-              <label>$LOCALIZE[SCRIPT655]</label>
+              <label>31357</label>
               <font>size22</font>
               <align>center</align>
               <aligny>center</aligny>
@@ -56,20 +56,38 @@
             </control>
           </control>
         </control>
-        <control type="label" id="100" description="Textarea">
+		<control type="label" id="100" description="Active service Header">
           <posx>75</posx>
-          <posy>90</posy>
+          <posy>12</posy>
+          <width>1320</width>
+          <height>30</height>
+          <align>center</align>
+		  <aligny>center</aligny>
+        </control>
+        <control type="label" description="Video File name">
+          <posx>75</posx>
+          <posy>60</posy>
           <width>1320</width>
           <height>60</height>
           <font>FManager</font>
-          <textcolor>Orange</textcolor>
+          <label>$INFO[Player.Filename]</label>
+		  <textcolor>Orange</textcolor>
           <align>center</align>
           <aligny>center</aligny>
           <wrapmultiline>true</wrapmultiline>
         </control>
+		<control type="label" id="140" description="Searching...">
+          <posx>75</posx>
+          <posy>117</posy>
+          <width>1320</width>
+          <height>30</height>
+          <align>center</align>
+          <aligny>center</aligny>
+		  <font>FManager</font>
+        </control>
       </control>
       <!-- ** Required ** Do not change <id>or<type>-->
-      <control type="list" id="120">
+      <control type="list" id="120" description="Main list">
         <posx>309</posx>
         <posy>285</posy>
         <width>1350</width>
@@ -223,15 +241,15 @@
           </control>
         </focusedlayout>
       </control>
-      <control type="group" id="250">
+      <control type="group" id="250" description="Right side options group">
         <posx>-339</posx>
         <posy>0</posy>
-        <control type="label" description="XBMC Subtitles label">
+        <control type="label" description="Options title right menu">
           <posx>2000</posx>
           <posy>220</posy>
           <width>380</width>
           <height>30</height>
-          <label>$LOCALIZE[SCRIPT760]</label>
+          <label>24018</label>
           <font>ListDetails</font>
           <align>center</align>
         </control>

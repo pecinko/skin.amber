@@ -286,7 +286,7 @@
           <ondown>Close</ondown>
           <onclick>ActivateWindow(OSDVideoSettings)</onclick>
         </control>
-        <control type="togglebutton" id="702">
+        <control type="button" id="702">
           <posx>153</posx>
           <posy>8</posy>
           <width>81</width>
@@ -296,18 +296,11 @@
           <font>-</font>
           <texturefocus>VideoOSD/OSDSubtitlesFO.png</texturefocus>
           <texturenofocus>VideoOSD/OSDSubtitlesNF.png</texturenofocus>
-          <alttexturefocus>VideoOSD/OSDSubtitlesFO.png</alttexturefocus>
-          <alttexturenofocus>VideoOSD/OSDSubtitlesNF.png</alttexturenofocus>
-          <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
           <onleft>701</onleft>
           <onright>703</onright>
           <onup>602</onup>
-          <ondown>Close</ondown>
           <onclick>Close</onclick>
-          <onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
-          <altclick>Close</altclick>
-          <altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
-          <altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
+          <onclick>ActivateWindow(SubtitleSearch)</onclick>
         </control>
         <control type="button" id="703">
           <posx>214</posx>
