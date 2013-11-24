@@ -17,12 +17,12 @@
     </control>
     <control type="button" id="11">
       <include>HiddenButton</include>
-      <onfocus>ReplaceWindow(Home)</onfocus>
+      <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
       <visible>!IsEmpty(Window(Home).Property(SkinWidgets_Running))</visible>
     </control>
     <control type="button" id="12">
       <include>HiddenButton</include>
-      <onfocus>ReplaceWindow(Home)</onfocus>
+      <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
     </control>
 	<include>Default_Art</include>
   </controls>
