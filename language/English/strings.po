@@ -100,6 +100,10 @@ msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr ""
 
+msgctxt "#31049"
+msgid "Settings Level"
+msgstr ""
+
 #empty strings from id 31049 to 31109
 
 msgctxt "#31110"

@@ -39,7 +39,7 @@
         <onleft>5</onleft>
         <onright>5</onright>
         <onup>3</onup>
-        <ondown>3</ondown>
+        <ondown>20</ondown>
         <orientation>vertical</orientation>
       </control>
       <control type="button" id="10" description="Category Button">
@@ -55,7 +55,7 @@
         <onleft>3</onleft>
         <onright>60</onright>
         <onup>5</onup>
-        <ondown>5</ondown>
+        <ondown>20</ondown>
         <pagecontrol>60</pagecontrol>
         <orientation>vertical</orientation>
       </control>
@@ -70,6 +70,28 @@
       <control type="spincontrolex" id="9" description="Spin control">
         <width>1467</width>
         <textoffsetx>42</textoffsetx>
+      </control>
+      <control type="label" description="Settings level label">
+        <posx>66</posx>
+        <posy>900</posy>
+        <width>321</width>
+        <height>60</height>
+        <textoffsetx>10</textoffsetx>
+		<label>$LOCALIZE[31049]</label>
+      </control>
+	  <control type="button" id="20" description="Settings level button">
+        <posx>66</posx>
+        <posy>960</posy>
+        <width>321</width>
+        <height>60</height>
+        <onleft>5</onleft>
+        <onright>5</onright>
+        <onup>3</onup>
+        <ondown>noop</ondown>
+        <textoffsetx>10</textoffsetx>
+        <textcolor>Orange</textcolor>
+		<focusedcolor>Orange</focusedcolor>
+        <onclick>SettingsLevelChange</onclick>
       </control>
       <control type="scrollbar" id="60">
         <posx>81r</posx>
