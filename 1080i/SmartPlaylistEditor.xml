@@ -3,7 +3,7 @@
   <include>OpenClose</include>
   <controls>
     <control type="group">
-      <include>MiniBackground</include>
+      <include>Default_Art</include>
       <control type="image">
         <posx>36</posx>
         <posy>35</posy>
@@ -113,14 +113,14 @@
           <posx>19</posx>
           <posy>380</posy>
           <width>1422</width>
-          <height>320</height>
+          <height>200</height>
           <texture border="15">dialogs/AddSourceTopFrame.png</texture>
         </control>
         <control type="panel" id="10" description="Rules List">
           <posx>30</posx>
           <posy>390</posy>
           <width>1400</width>
-          <height>300</height>
+          <height>179</height>
           <onup>12</onup>
           <onleft>noop</onleft>
           <onright>9001</onright>
@@ -169,7 +169,7 @@
           </focusedlayout>
         </control>
         <control type="spincontrolex" id="16" description="Items must match">
-          <posy>720</posy>
+          <posy>600</posy>
           <width>1467</width>
           <label>$LOCALIZE[21424]</label>
           <textoffsetx>30</textoffsetx>
@@ -180,7 +180,7 @@
           <ondown>17</ondown>
         </control>
         <control type="spincontrolex" id="17" description="Limit to">
-          <posy>780</posy>
+          <posy>660</posy>
           <width>1467</width>
           <label>$LOCALIZE[21427]</label>
           <textoffsetx>30</textoffsetx>
@@ -191,14 +191,36 @@
           <ondown>18</ondown>
         </control>
         <control type="spincontrolex" id="18" description="Order by">
-          <posy>840</posy>
+          <posy>720</posy>
           <width>1467</width>
           <label>$LOCALIZE[21429]</label>
           <textoffsetx>30</textoffsetx>
           <reverse>yes</reverse>
           <onleft>9002</onleft>
-          <onright>19</onright>
+          <onright>9002</onright>
           <onup>17</onup>
+          <ondown>23</ondown>
+        </control>
+		<control type="spincontrolex" id="23" description="Group by">
+          <posy>780</posy>
+          <width>1467</width>
+          <label>$LOCALIZE[21458]</label>
+          <textoffsetx>30</textoffsetx>
+          <reverse>yes</reverse>
+          <onleft>9002</onleft>
+          <onright>9002</onright>
+          <onup>18</onup>
+          <ondown>19</ondown>
+        </control>
+		<control type="radiobutton" id="24" description="Mixed">
+          <posy>840</posy>
+          <width>1467</width>
+          <height>60</height>
+          <label>$LOCALIZE[20395]</label>
+          <textoffsetx>30</textoffsetx>
+          <onleft>9002</onleft>
+          <onright>9002</onright>
+          <onup>23</onup>
           <ondown>19</ondown>
         </control>
         <control type="togglebutton" id="19" description="Ascending descending">
@@ -208,9 +230,9 @@
           <label>$LOCALIZE[21429]:  $LOCALIZE[21431]</label>
           <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21430]</altlabel>
           <textoffsetx>30</textoffsetx>
-          <onleft>18</onleft>
+          <onleft>9002</onleft>
           <onright>9002</onright>
-          <onup>18</onup>
+          <onup>24</onup>
           <ondown>22</ondown>
         </control>
       </control>
