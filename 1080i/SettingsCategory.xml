@@ -50,15 +50,24 @@
         <posx>390</posx>
         <posy>210</posy>
         <width>1467</width>
-        <height>720</height>
+        <height>660</height>
         <itemgap>0</itemgap>
         <onleft>3</onleft>
         <onright>60</onright>
         <onup>5</onup>
-        <ondown>20</ondown>
+        <ondown>5</ondown>
         <pagecontrol>60</pagecontrol>
         <orientation>vertical</orientation>
       </control>
+	  <control type="textbox" id="6" description="Settings description">
+				<visible>ControlGroup(5).HasFocus()</visible>
+				<posx>420</posx>
+        		<posy>890</posy>
+        		<width>1407</width>
+        		<height>659</height>
+				<align>justify</align>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			</control>
       <control type="button" id="7" description="Button">
         <width>1467</width>
         <textoffsetx>42</textoffsetx>
