@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <defaultcontrol always="true">10</defaultcontrol>
   <include>OpenClose</include>
@@ -30,32 +31,14 @@
         <align>center</align>
         <label>$INFO[Control.GetLabel(1)]$INFO[System.Progressbar,  ,%]</label>
       </control>
-      <control type="label" id="2" description="Line 1">
+      <control type="textbox" id="9" description="Labels">
         <posx>51</posx>
         <posy>100</posy>
-        <height>30</height>
         <width>960</width>
-        <label></label>
-        <font>ListDetails</font>
+        <height>90</height>
         <align>center</align>
-      </control>
-      <control type="label" id="3" description="Line 2">
-        <posx>51</posx>
-        <posy>136</posy>
-        <height>30</height>
-        <width>960</width>
-        <label></label>
         <font>ListDetails</font>
-        <align>center</align>
-      </control>
-      <control type="label" id="4" description="Line 3">
-        <posx>51</posx>
-        <posy>172</posy>
-        <height>30</height>
-        <width>960</width>
-        <label></label>
-        <font>ListDetails</font>
-        <align>center</align>
+        <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
       </control>
       <control type="button" id="10" description="Cancel">
         <posx>381</posx>
