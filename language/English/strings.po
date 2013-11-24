@@ -193,7 +193,7 @@ msgid "(1/3) Skin default"
 msgstr ""
 
 msgctxt "#31391"
-msgid "(3/3) SourceSansPro (no caps)"
+msgid "(3/3) Arial (no caps)"
 msgstr ""
 
 msgctxt "#31392"
