@@ -228,6 +228,11 @@
           <include>9000SysButtons</include>
           <label>$LOCALIZE[589]</label>
         </control>
+		<control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+		  <altlabel>13353</altlabel>
+        </control>
         <control type="button" id="698" description="Files">
           <include>9000SysButtons</include>
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>

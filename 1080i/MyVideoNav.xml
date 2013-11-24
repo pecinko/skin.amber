@@ -838,19 +838,20 @@
           <label>$LOCALIZE[21429]:  $LOCALIZE[21430]</label>
           <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21431]</altlabel>
         </control>
-        <control type="radiobutton" id="17" description="Flatten">
-          <include>9000SysButtons</include>
-          <label>$LOCALIZE[14022] - $LOCALIZE[20411]</label>
-          <onclick>fullscreen</onclick>
-        </control>
-        <control type="button" id="698" description="Browse files">
-          <include>9000SysButtons</include>
-          <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
-          <onclick>ActivateWindow(Videos,files)</onclick>
-        </control>
         <control type="button" id="8" description="Search">
           <include>9000SysButtons</include>
           <label>$LOCALIZE[137]</label>
+        </control>
+		<control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+		  <altlabel>13353</altlabel>
+        </control>
+		<control type="button" id="699" description="Playing">
+          <enable>Player.HasMedia</enable>
+          <include>9000SysButtons</include>
+          <label>$LOCALIZE[16003]</label>
+          <onclick>fullscreen</onclick>
         </control>
       </control>
     </control>
