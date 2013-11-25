@@ -510,7 +510,8 @@
           <texturefocus>-</texturefocus>
         </control>
         <control type="button" id="100" description="TvTunes">
-          <height>54</height>
+          <visible>Container.Content(TVShows) + System.HasAddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled)</visible>
+		  <height>54</height>
           <width>230</width>
           <align>center</align>
           <font>Details</font>
@@ -518,8 +519,7 @@
           <focusedcolor>Orange</focusedcolor>
           <label>$LOCALIZE[31956]</label>
           <texturefocus>-</texturefocus>
-          <onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-          <visible>Container.Content(TVShows) + System.HasAddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled)</visible>
+          <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
         </control>
       </control>
       <control type="image" description="Line Split">
