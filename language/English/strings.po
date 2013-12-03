@@ -260,8 +260,13 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31954
+#empty strings from id 31905 to 31953
 #AMBER
+
+#."S" Season
+msgctxt "#31954"
+msgid "S"
+msgstr ""
 
 msgctxt "#31955"
 msgid "Display shelf items after a short delay"
