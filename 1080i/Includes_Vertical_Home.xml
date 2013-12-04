@@ -131,15 +131,7 @@
         <height>285</height>
         <include>PosterThumb</include>
       </control>
-	  <control type="image">
-		<visible>Control.IsVisible(312)</visible>
-		<posx>175</posx>
-		<posy>273</posy>
-		<width>33</width>
-		<height>33</height>
-		<texture>OverlayInProgress.png</texture>
-	  </control>
-    </itemlayout>
+	</itemlayout>
     <focusedlayout height="345" width="228">
       <control type="image">
         <visible>![Control.HasFocus(312) | Control.HasFocus(515)]</visible>
@@ -166,14 +158,6 @@
         <height>285</height>
         <include>PosterThumb</include>
       </control>
-	  <control type="image">
-		<visible>Control.IsVisible(312)</visible>
-		<posx>175</posx>
-		<posy>273</posy>
-		<width>33</width>
-		<height>33</height>
-		<texture>OverlayInProgress.png</texture>
-	  </control>
     </focusedlayout>
   </include>
   <include name="RecentlyAdded_Episodes">
