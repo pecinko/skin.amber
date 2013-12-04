@@ -1,3 +1,9 @@
+1.2.6
+Remove shelf items delay as it was not working as supposed
+Increase number of photos on shelf
+Remove watched marks from shelf
+Add an option to choose Movies entry point from favourites
+
 1.1.0
 Add option to hide library update button from Home submenu
 Add chapter info to video player
