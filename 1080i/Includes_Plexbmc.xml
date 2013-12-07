@@ -1,110 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-  <!--<include name="Plexbmc.Settings.Section.Label">
-    <item id="8" description="Plexbmc menu">
-      <label>PleXBMC</label>
-      <onclick>noop</onclick>
-    </item>
-  </include>
-  <include name="Plexbmc.Settings.Controls">
-    <control type="panel" id="9008">
-      <visible>Container(9000).HasFocus(8)</visible>
-      <posx>390</posx>
-      <posy>210</posy>
-      <width>1140</width>
-      <height>780</height>
-      <onleft>9000</onleft>
-      <onright>63</onright>
-      <onup>9003</onup>
-      <ondown>9003</ondown>
-      <pagecontrol>63</pagecontrol>
-      <scrolltime>280</scrolltime>
-      <itemlayout width="1140" height="60">
-        <control type="image">
-          <posx>0</posx>
-          <posy>0</posy>
-          <height>60</height>
-          <width>1140</width>
-          <texture border="3">buttons/ButtonNF.png</texture>
-        </control>
-        <control type="label" description="Label 2">
-          <posx>30r</posx>
-          <posy>0</posy>
-          <height>60</height>
-          <width>600</width>
-          <font>ListDetails</font>
-          <align>right</align>
-          <scroll>false</scroll>
-          <label>$INFO[ListItem.Label2]</label>
-        </control>
-        <control type="label" description="Main Label">
-          <posx>30</posx>
-          <posy>0</posy>
-          <height>60</height>
-          <width>930</width>
-          <scroll>false</scroll>
-          <label>$INFO[ListItem.Label]</label>
-        </control>
-      </itemlayout>
-      <focusedlayout width="1140" height="60">
-        <control type="image">
-          <posx>0</posx>
-          <posy>0</posy>
-          <height>60</height>
-          <width>1140</width>
-          <texture border="2">buttons/ButtonFO.png</texture>
-        </control>
-        <control type="label" description="Label 2">
-          <posx>30r</posx>
-          <posy>0</posy>
-          <height>60</height>
-          <width>600</width>
-          <font>ListDetails</font>
-          <align>right</align>
-          <scroll>false</scroll>
-          <label>$INFO[ListItem.Label2]</label>
-        </control>
-        <control type="label" description="Main Label">
-          <posx>30</posx>
-          <posy>0</posy>
-          <height>60</height>
-          <width>930</width>
-          <scroll>false</scroll>
-          <label>$INFO[ListItem.Label]</label>
-        </control>
-      </focusedlayout>
-      <content>
-        <item id="1" description="Channels">
-          <visible>!Skin.HasSetting(Channels.Hide)</visible>
-          <label>$LOCALIZE[31975]</label>
-          <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
-          <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
-        </item>
-        <item id="1" description="Channels">
-          <visible>Skin.HasSetting(Channels.Hide)</visible>
-          <label>$LOCALIZE[31975]</label>
-          <label2>[COLOR=Orange]$LOCALIZE[1223][/COLOR]</label2>
-          <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
-        </item>
-        <item id="2" description="Shared">
-          <visible>!Skin.HasSetting(Hide.Shared)</visible>
-          <label>$LOCALIZE[31006]</label>
-          <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
-          <onclick>Skin.ToggleSetting(Hide.Shared)</onclick>
-        </item>
-        <item id="2" description="Channels">
-          <visible>Skin.HasSetting(Hide.Shared)</visible>
-          <label>$LOCALIZE[31006]</label>
-          <label2>[COLOR=Orange]$LOCALIZE[1223][/COLOR]</label2>
-          <onclick>Skin.ToggleSetting(Hide.Shared)</onclick>
-        </item>
-        <item id="10" description="PleXBMC Settings">
-          <label>$LOCALIZE[31007]</label>
-          <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
-        </item>
-      </content>
-    </control>
-  </include>-->
   <include name="Plexbmc_Shelf">
     <control type="group" description="PLEXBMC">
       <control type="label" description="Header">
@@ -674,6 +569,86 @@
             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.50.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.50.Path)])</onclick>
+          </item>
+		  <item id="51" description="Shortcut51">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.51.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.51.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.51.Path)])</onclick>
+          </item>
+          <item id="52" description="Shortcut52">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.52.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.52.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.52.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.52.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.52.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.52.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.52.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.52.Path)])</onclick>
+          </item>
+          <item id="53" description="Shortcut53">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.53.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.53.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.53.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.53.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.53.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.53.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.53.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.53.Path)])</onclick>
+          </item>
+          <item id="54" description="Shortcut54">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.54.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.54.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.54.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.54.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.54.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.54.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.54.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.54.Path)])</onclick>
+          </item>
+          <item id="55" description="Shortcut55">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.55.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.55.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.55.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.55.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.55.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.55.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.55.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.55.Path)])</onclick>
+          </item>
+          <item id="56" description="Shortcut56">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.56.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.56.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.56.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.56.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.56.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.56.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.56.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.56.Path)])</onclick>
+          </item>
+          <item id="57" description="Shortcut57">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.57.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.57.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.57.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.57.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.57.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.57.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.57.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.57.Path)])</onclick>
+          </item>
+          <item id="58" description="Shortcut58">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.58.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.58.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.58.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.58.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.58.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.58.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.58.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.58.Path)])</onclick>
+          </item>
+          <item id="59" description="Shortcut59">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.59.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.59.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.59.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.59.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.59.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.59.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.59.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.59.Path)])</onclick>
+          </item>
+          <item id="60" description="Shortcut60">
+            <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.60.Path))</visible>
+            <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.60.uuid))</visible>
+            <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.60.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.60.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.60.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.60.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
+            <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.60.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[31961]</property>
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.60.Path)])</onclick>
           </item>
         </content>
       </control>
