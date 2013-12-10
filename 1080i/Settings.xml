@@ -466,7 +466,19 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
             </item>
-            <item id="15" description="Reset Skin">
+			<item id="15" description="Holiday">
+              <visible>Skin.HasSetting(holiday)</visible>
+              <label>[COLOR=Orange]Holiday Theme[/COLOR]</label>
+              <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
+              <onclick>Skin.ToggleSetting(holiday)</onclick>
+            </item>
+            <item id="15" description="Holiday">
+              <visible>!Skin.HasSetting(holiday)</visible>
+              <label>[COLOR=Orange]Holiday Theme[/COLOR]</label>
+              <label2>$LOCALIZE[1223]</label2>
+              <onclick>Skin.ToggleSetting(holiday)</onclick>
+            </item>
+            <item id="16" description="Reset Skin">
               <label>$LOCALIZE[31038]</label>
               <onclick>Skin.ResetSettings</onclick>
               <onclick>XBMC.ReloadSkin()</onclick>

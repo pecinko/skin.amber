@@ -64,5 +64,6 @@
         <include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
       </control>
     </control>
+	<include condition="Skin.HasSetting(holiday)">Holiday</include>
   </controls>
 </window>
