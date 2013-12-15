@@ -459,13 +459,13 @@
             </item>
 			<item id="15" description="Holiday">
               <visible>Skin.HasSetting(holiday)</visible>
-              <label>[COLOR=Orange]Holiday Theme[/COLOR]</label>
+              <label>[COLOR=Orange]$LOCALIZE[31996][/COLOR]</label>
               <label2>[COLOR=Orange]$LOCALIZE[305][/COLOR]</label2>
               <onclick>Skin.ToggleSetting(holiday)</onclick>
             </item>
             <item id="15" description="Holiday">
               <visible>!Skin.HasSetting(holiday)</visible>
-              <label>[COLOR=Orange]Holiday Theme[/COLOR]</label>
+              <label>[COLOR=Orange]$LOCALIZE[31996][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(holiday)</onclick>
             </item>
@@ -2046,5 +2046,6 @@
       <onleft>9003</onleft>
       <onright>9000</onright>
     </control>
+	<include condition="Skin.HasSetting(holiday)">Holiday</include>
   </controls>
 </window>
