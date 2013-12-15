@@ -1,3 +1,9 @@
+1.2.9
+Finally fix busy dialog
+Plexbmc add-on support improvements
+Add holiday snowfall effect
+Fix size and scrolling of titles in panel view
+
 1.2.6
 Remove shelf items delay as it was not working as supposed
 Increase number of photos on shelf
