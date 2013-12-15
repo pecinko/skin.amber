@@ -628,7 +628,7 @@
     </itemlayout>
     <focusedlayout height="345" width="228">
       <control type="image">
-        <visible>![Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900)]</visible>
+        <visible>![Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900) | Control.HasFocus(901)]</visible>
         <posx>21</posx>
         <posy>21</posy>
         <width>198</width>
@@ -637,7 +637,7 @@
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
-        <visible>Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900)</visible>
+        <visible>Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900) | Control.HasFocus(901)</visible>
         <posx>21</posx>
         <posy>21</posy>
         <width>198</width>
@@ -692,7 +692,7 @@
         <texture border="0,40,0,40">home/OverlayRA2T.png</texture>
       </control>
 	  <control type="image" description="RA BG Plexbmc only">
-        <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [IntegerGreaterThan(Container(311).NumItems,0) + !IntegerGreaterThan(Container(312).NumItems,0)] | [!IntegerGreaterThan(Container(311).NumItems,0) + IntegerGreaterThan(Container(312).NumItems,0)] | [IntegerGreaterThan(Container(411).NumItems,0) + !IntegerGreaterThan(Container(413).NumItems,0)] | [!IntegerGreaterThan(Container(411).NumItems,0) + IntegerGreaterThan(Container(413).NumItems,0)] | Control.IsVisible(511) | Control.IsVisible(900)]</visible>
+        <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | [IntegerGreaterThan(Container(311).NumItems,0) + !IntegerGreaterThan(Container(312).NumItems,0)] | [!IntegerGreaterThan(Container(311).NumItems,0) + IntegerGreaterThan(Container(312).NumItems,0)] | [IntegerGreaterThan(Container(411).NumItems,0) + !IntegerGreaterThan(Container(413).NumItems,0)] | [!IntegerGreaterThan(Container(411).NumItems,0) + IntegerGreaterThan(Container(413).NumItems,0)] | Control.IsVisible(511) | Control.IsVisible(900) | Control.IsVisible(901)]</visible>
         <posx>530</posx>
         <posy>345</posy>
         <width>1390</width>
