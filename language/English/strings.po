@@ -452,3 +452,7 @@ msgstr ""
 msgctxt "#31995"
 msgid "Home layout"
 msgstr ""
+
+msgctxt "#31996"
+msgid "Holiday snowfall theme"
+msgstr ""
