@@ -120,7 +120,15 @@ msgctxt "#31114"
 msgid "Multi Image"
 msgstr ""
 
-#empty strings from id 31115 to 31131
+msgctxt "#31115"
+msgid "Start music playlist on XBMC load"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Startup playlist"
+msgstr ""
+
+#empty strings from id 31117 to 31131
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
