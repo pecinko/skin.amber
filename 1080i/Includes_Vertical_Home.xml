@@ -77,7 +77,7 @@
     </itemlayout>
     <focusedlayout height="345" width="228">
       <control type="image">
-        <visible>![Control.HasFocus(311) | Control.HasFocus(313) | Control.HasFocus(514)]</visible>
+        <visible>![Control.HasFocus(311) | Control.HasFocus(514)]</visible>
         <posx>21</posx>
         <posy>21</posy>
         <width>189</width>
@@ -86,7 +86,7 @@
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
-        <visible>Control.HasFocus(311) | Control.HasFocus(313) | Control.HasFocus(514)</visible>
+        <visible>Control.HasFocus(311) | Control.HasFocus(514)</visible>
         <posx>21</posx>
         <posy>21</posy>
         <width>189</width>
