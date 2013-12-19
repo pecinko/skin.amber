@@ -2036,6 +2036,9 @@
       <onleft>9003</onleft>
       <onright>9000</onright>
     </control>
-	<include condition="Skin.HasSetting(holiday)">Holiday</include>
+	<control type="group" description="Holiday theme">
+		<visible>Skin.HasSetting(holiday)</visible>
+		<include>Holiday</include>
+	</control>
   </controls>
 </window>
