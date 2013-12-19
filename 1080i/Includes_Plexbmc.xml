@@ -28,109 +28,94 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
-			<thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Thumb)]</thumb>
-            
+            <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Thumb)]</thumb>
           </item>
           <item id="2" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.2.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Thumb)]</thumb>
-            
           </item>
           <item id="3" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.3.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Thumb)]</thumb>
-            
           </item>
           <item id="4" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.4.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Thumb)]</thumb>
-            
           </item>
           <item id="5" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.5.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Thumb)]</thumb>
-            
           </item>
           <item id="6" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.6.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Thumb)]</thumb>
-            
           </item>
           <item id="7" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.7.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Thumb)]</thumb>
-            
           </item>
           <item id="8" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.8.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Thumb)]</thumb>
-            
           </item>
           <item id="9" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.9.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Thumb)]</thumb>
-            
           </item>
           <item id="10" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.10.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Thumb)]</thumb>
-            
           </item>
-		  <item id="11" description="Photos">
+          <item id="11" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.11.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Thumb)]</thumb>
-            
           </item>
           <item id="12" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.12.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Thumb)]</thumb>
-            
           </item>
           <item id="13" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.13.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Thumb)]</thumb>
-            
           </item>
           <item id="14" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.14.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Thumb)]</thumb>
-            
           </item>
           <item id="15" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.15.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Title)]</label>
             <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Thumb)]</thumb>
-            
           </item>
         </content>
-		<!--<content>
+        <!--<content>
           <item id="1" description="Photos">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.1.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.1.Title)]</label>
@@ -147,7 +132,7 @@
           </item>
         </content>-->
       </control>
-	  <control type="label" description="Header">
+      <control type="label" description="Header">
         <visible>Control.IsVisible(901) + !Control.HasFocus(901)</visible>
         <include>RecentlyAdded_Header</include>
         <label>$LOCALIZE[31010]</label>
@@ -156,7 +141,7 @@
         <visible>Control.HasFocus(901)</visible>
         <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
         <width>1300</width>
-		<include>RecentlyAdded_Label</include>
+        <include>RecentlyAdded_Label</include>
         <label>$INFO[Container(901).ListItem.Label][COLOR=White]$INFO[Container(901).ListItem.Label2][/COLOR]</label>
       </control>
       <control type="fixedlist" id="901" description="Queue">
@@ -173,111 +158,111 @@
           <item id="1" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.1.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.1.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.1.Year), • ]$INFO[Window.Property(Plexbmc.Queue.1.Duration), • , $LOCALIZE[31297]]</label2>
-			<thumb>$INFO[Window.Property(Plexbmc.Queue.1.Thumb)]</thumb>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.1.Year), • ]$INFO[Window.Property(Plexbmc.Queue.1.Duration), • , $LOCALIZE[31297]]</label2>
+            <thumb>$INFO[Window.Property(Plexbmc.Queue.1.Thumb)]</thumb>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.1.Path)])</onclick>
           </item>
           <item id="2" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.2.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.2.Title)]</label>
             <label2>$INFO[Window.Property(Plexbmc.Queue.2.Year), • ]$INFO[Window.Property(Plexbmc.Queue.2.Duration), • , $LOCALIZE[31297]]</label2>
-			<thumb>$INFO[Window.Property(Plexbmc.Queue.2.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(Plexbmc.Queue.2.Thumb)]</thumb>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.2.Path)])</onclick>
           </item>
           <item id="3" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.3.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.3.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.3.Year), • ]$INFO[Window.Property(Plexbmc.Queue.3.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.3.Year), • ]$INFO[Window.Property(Plexbmc.Queue.3.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.3.Thumb)]</thumb>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.3.Path)])</onclick>
           </item>
           <item id="4" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.4.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.4.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.4.Year), • ]$INFO[Window.Property(Plexbmc.Queue.4.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.4.Year), • ]$INFO[Window.Property(Plexbmc.Queue.4.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.4.Thumb)]</thumb>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.4.Path)])</onclick>
           </item>
           <item id="5" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.5.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.5.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.5.Year), • ]$INFO[Window.Property(Plexbmc.Queue.5.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.5.Year), • ]$INFO[Window.Property(Plexbmc.Queue.5.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.5.Thumb)]</thumb>
- 			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.5.Path)])</onclick>           
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.5.Path)])</onclick>
           </item>
           <item id="6" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.6.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.6.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.6.Year), • ]$INFO[Window.Property(Plexbmc.Queue.6.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.6.Year), • ]$INFO[Window.Property(Plexbmc.Queue.6.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.6.Thumb)]</thumb>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.6.Path)])</onclick>
           </item>
           <item id="7" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.7.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.7.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.7.Year), • ]$INFO[Window.Property(Plexbmc.Queue.7.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.7.Year), • ]$INFO[Window.Property(Plexbmc.Queue.7.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.7.Thumb)]</thumb>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.7.Path)])</onclick>
           </item>
           <item id="8" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.8.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.8.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.8.Year), • ]$INFO[Window.Property(Plexbmc.Queue.8.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.8.Year), • ]$INFO[Window.Property(Plexbmc.Queue.8.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.8.Thumb)]</thumb>
-			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.8.Path)])</onclick>            
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.8.Path)])</onclick>
           </item>
           <item id="9" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.9.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.9.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.9.Year), • ]$INFO[Window.Property(Plexbmc.Queue.9.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.9.Year), • ]$INFO[Window.Property(Plexbmc.Queue.9.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.9.Thumb)]</thumb>
-			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.9.Path)])</onclick>            
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.9.Path)])</onclick>
           </item>
           <item id="10" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.10.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.10.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.10.Year), • ]$INFO[Window.Property(Plexbmc.Queue.10.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.10.Year), • ]$INFO[Window.Property(Plexbmc.Queue.10.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.10.Thumb)]</thumb>
-			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.10.Path)])</onclick>            
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.10.Path)])</onclick>
           </item>
-		  <item id="11" description="Queue">
+          <item id="11" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.11.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.11.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.11.Year), • ]$INFO[Window.Property(Plexbmc.Queue.11.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.11.Year), • ]$INFO[Window.Property(Plexbmc.Queue.11.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.11.Thumb)]</thumb>
-			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.11.Path)])</onclick>            
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.11.Path)])</onclick>
           </item>
           <item id="12" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.12.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.12.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.12.Year), • ]$INFO[Window.Property(Plexbmc.Queue.12.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.12.Year), • ]$INFO[Window.Property(Plexbmc.Queue.12.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.12.Thumb)]</thumb>
-			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.12.Path)])</onclick>            
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.12.Path)])</onclick>
           </item>
           <item id="13" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.13.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.13.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.13.Year), • ]$INFO[Window.Property(Plexbmc.Queue.13.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.13.Year), • ]$INFO[Window.Property(Plexbmc.Queue.13.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.13.Thumb)]</thumb>
-			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.13.Path)])</onclick>            
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.13.Path)])</onclick>
           </item>
           <item id="14" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.14.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.14.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.14.Year), • ]$INFO[Window.Property(Plexbmc.Queue.14.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.14.Year), • ]$INFO[Window.Property(Plexbmc.Queue.14.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.14.Thumb)]</thumb>
-			<onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.14.Path)])</onclick>            
+            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.14.Path)])</onclick>
           </item>
           <item id="15" description="Queue">
             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.15.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.Queue.15.Title)]</label>
-			<label2>$INFO[Window.Property(Plexbmc.Queue.15.Year), • ]$INFO[Window.Property(Plexbmc.Queue.15.Duration), • , $LOCALIZE[31297]]</label2>
+            <label2>$INFO[Window.Property(Plexbmc.Queue.15.Year), • ]$INFO[Window.Property(Plexbmc.Queue.15.Duration), • , $LOCALIZE[31297]]</label2>
             <thumb>$INFO[Window.Property(Plexbmc.Queue.15.Thumb)]</thumb>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.Queue.15.Path)])</onclick>
           </item>
         </content>
-	  </control>
-	  <control type="label" description="Header">
+      </control>
+      <control type="label" description="Header">
         <visible>Control.IsVisible(311)</visible>
         <include>RecentlyAdded_Header</include>
         <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
@@ -700,7 +685,7 @@
             <property name="ItemType">$LOCALIZE[31961]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.50.Path)])</onclick>
           </item>
-		  <item id="51" description="Shortcut51">
+          <item id="51" description="Shortcut51">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.51.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.51.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Title)][COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Year), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Rating), • ]$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Duration), • , $LOCALIZE[31297]][/COLOR]</label>
@@ -1898,7 +1883,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Path)])</onclick>
           </item>
-		  <item id="50" description="Shortcut50">
+          <item id="50" description="Shortcut50">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.50.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.50.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1907,7 +1892,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Path)])</onclick>
           </item>
-		  <item id="50" description="Shortcut50">
+          <item id="50" description="Shortcut50">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.50.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.50.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1916,7 +1901,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Path)])</onclick>
           </item>
-		  <item id="50" description="Shortcut50">
+          <item id="50" description="Shortcut50">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.50.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.50.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1925,7 +1910,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Path)])</onclick>
           </item>
-		  <item id="50" description="Shortcut50">
+          <item id="50" description="Shortcut50">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.50.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.50.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1934,7 +1919,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Path)])</onclick>
           </item>
-		  <item id="51" description="Shortcut51">
+          <item id="51" description="Shortcut51">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.51.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.51.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1943,7 +1928,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.Path)])</onclick>
           </item>
-		  <item id="52" description="Shortcut52">
+          <item id="52" description="Shortcut52">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.52.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.52.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1952,7 +1937,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.Path)])</onclick>
           </item>
-		  <item id="53" description="Shortcut53">
+          <item id="53" description="Shortcut53">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.53.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.53.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1961,7 +1946,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.Path)])</onclick>
           </item>
-		  <item id="54" description="Shortcut54">
+          <item id="54" description="Shortcut54">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.54.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.54.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1970,7 +1955,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.Path)])</onclick>
           </item>
-		  <item id="55" description="Shortcut55">
+          <item id="55" description="Shortcut55">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.55.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.55.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1979,7 +1964,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.Path)])</onclick>
           </item>
-		  <item id="56" description="Shortcut56">
+          <item id="56" description="Shortcut56">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.56.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.56.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1987,8 +1972,8 @@
             <property name="ItemType">$LOCALIZE[31961]</property>
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.Path)])</onclick>
-		  </item>
-		  <item id="57" description="Shortcut57">
+          </item>
+          <item id="57" description="Shortcut57">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.57.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.57.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -1997,7 +1982,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.Path)])</onclick>
           </item>
-		  <item id="58" description="Shortcut58">
+          <item id="58" description="Shortcut58">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.58.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.58.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -2006,7 +1991,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.Path)])</onclick>
           </item>
-		  <item id="59" description="Shortcut59">
+          <item id="59" description="Shortcut59">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.59.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.59.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -2015,7 +2000,7 @@
             <property name="SeasonEpisode">$LOCALIZE[31954] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.EpisodeSeasonNumber)]</property>
             <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.Path)])</onclick>
           </item>
-		  <item id="60" description="Shortcut60">
+          <item id="60" description="Shortcut60">
             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.60.Path))</visible>
             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.60.uuid))</visible>
             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.ShowTitle)] [COLOR=White]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeSeasonNumber), •  $LOCALIZE[20373]][/COLOR]</label>
@@ -2505,6 +2490,7 @@
   </include>
   <include name="Plexbmc.Items">
     <item id="30">
+      <visible>!Skin.HasSetting(hide.plexbmc.0.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.0.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
@@ -2525,6 +2511,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.0.year)]</property>
     </item>
     <item id="31">
+      <visible>!Skin.HasSetting(hide.plexbmc.1.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.1.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
@@ -2545,6 +2532,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.1.year)]</property>
     </item>
     <item id="32">
+      <visible>!Skin.HasSetting(hide.plexbmc.2.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.2.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
@@ -2565,6 +2553,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.2.year)]</property>
     </item>
     <item id="33">
+      <visible>!Skin.HasSetting(hide.plexbmc.3.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.3.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
@@ -2585,6 +2574,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.3.year)]</property>
     </item>
     <item id="34">
+      <visible>!Skin.HasSetting(hide.plexbmc.4.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.4.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
@@ -2605,6 +2595,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.4.year)]</property>
     </item>
     <item id="35">
+      <visible>!Skin.HasSetting(hide.plexbmc.5.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.5.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.5.title)]</label>
@@ -2625,6 +2616,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.5.year)]</property>
     </item>
     <item id="36">
+      <visible>!Skin.HasSetting(hide.plexbmc.6.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.6.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
@@ -2645,6 +2637,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.6.year)]</property>
     </item>
     <item id="37">
+      <visible>!Skin.HasSetting(hide.plexbmc.7.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.7.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
@@ -2665,6 +2658,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.7.year)]</property>
     </item>
     <item id="38">
+      <visible>!Skin.HasSetting(hide.plexbmc.8.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.8.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
@@ -2685,6 +2679,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.8.year)]</property>
     </item>
     <item id="39">
+      <visible>!Skin.HasSetting(hide.plexbmc.9.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.9.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
@@ -2705,6 +2700,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.9.year)]</property>
     </item>
     <item id="40">
+      <visible>!Skin.HasSetting(hide.plexbmc.10.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.10.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
@@ -2725,6 +2721,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.10.year)]</property>
     </item>
     <item id="41">
+      <visible>!Skin.HasSetting(hide.plexbmc.11.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.11.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.11.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.11.title)]</label>
@@ -2745,6 +2742,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.11.year)]</property>
     </item>
     <item id="40">
+      <visible>!Skin.HasSetting(hide.plexbmc.12.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.12.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.12.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.12.title)]</label>
@@ -2765,6 +2763,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.12.year)]</property>
     </item>
     <item id="43">
+      <visible>!Skin.HasSetting(hide.plexbmc.13.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.13.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.13.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.13.title)]</label>
@@ -2785,6 +2784,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.13.year)]</property>
     </item>
     <item id="44">
+      <visible>!Skin.HasSetting(hide.plexbmc.14.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.14.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.14.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.14.title)]</label>
@@ -2805,6 +2805,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.14.year)]</property>
     </item>
     <item id="45">
+      <visible>!Skin.HasSetting(hide.plexbmc.15.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.15.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.15.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.15.title)]</label>
@@ -2825,6 +2826,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.15.year)]</property>
     </item>
     <item id="46">
+      <visible>!Skin.HasSetting(hide.plexbmc.16.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.16.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.16.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.16.title)]</label>
@@ -2845,6 +2847,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.16.year)]</property>
     </item>
     <item id="47">
+      <visible>!Skin.HasSetting(hide.plexbmc.17.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.17.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.17.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.17.title)]</label>
@@ -2865,6 +2868,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.17.year)]</property>
     </item>
     <item id="48">
+      <visible>!Skin.HasSetting(hide.plexbmc.18.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.18.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.18.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.18.title)]</label>
@@ -2885,6 +2889,7 @@
       <property name="year">$INFO[Window(Home).Property(plexbmc.18.year)]</property>
     </item>
     <item id="49">
+      <visible>!Skin.HasSetting(hide.plexbmc.19.title)</visible>
       <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.19.title))</visible>
       <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.19.shared),t)]</visible>
       <label>$INFO[Window(Home).Property(plexbmc.19.title)]</label>
@@ -2911,7 +2916,7 @@
       <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
     </item>
     <item id="49" description="Queue">
-      <visible>Skin.HasSetting(plexbmc)</visible>
+      <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Queue.Hide)</visible>
       <label>$LOCALIZE[31010]</label>
       <thumb fallback="special://skin/backgrounds/Network.jpg">$INFO[Skin.String(Network.Background)]</thumb>
       <onclick>$INFO[Window(Home).Property(plexbmc.queue)]</onclick>
