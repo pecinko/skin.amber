@@ -51,7 +51,7 @@
             <onclick>Skin.Reset(CustomMovie.1.Label)</onclick>
 			<onclick>Skin.Reset(CustomMovie.1.Path)</onclick>
 			<onclick>Skin.Reset(movie_entries)</onclick>
-            <selected>IsEmpty(Skin.String(movie_entries)) + IsEmpty(Skin.String(CustomMovie.1.Path)</selected>
+            <selected>IsEmpty(Skin.String(movie_entries)) + IsEmpty(Skin.String(CustomMovie.1.Path))</selected>
           </control>
           <control type="radiobutton" id="702" description="Playlists">
             <width>525</width>
