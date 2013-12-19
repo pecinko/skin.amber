@@ -1,4 +1,6 @@
-1.5.5
+Fix add ons settings 
+Add option to hide library sections - plexbmc profiles support 
+Increase plexbmc episode items
 Finally fix busy dialog
 Plexbmc add-on support improvements
 Add holiday snowfall effect
