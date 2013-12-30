@@ -246,7 +246,7 @@
   </include>
   <include name="ListWatchedOverlay">
     <control type="image">
-      <visible>!Container.Content(tvshows)</visible>
+      <visible>![Container.Content(tvshows) | container.content(seasons)]</visible>
       <posx>52r</posx>
       <posy>0</posy>
       <width>30</width>
@@ -255,7 +255,7 @@
       <aspectratio aligny="center">keep</aspectratio>
     </control>
     <control type="group">
-      <visible>Container.content(tvshows) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+      <visible>[Container.content(tvshows) | container.content(seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
       <control type="image" description="Label2 BG">
         <posx>84r</posx>
         <posy>15</posy>
