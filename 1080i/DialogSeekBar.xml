@@ -30,13 +30,13 @@
       <control type="label" description="End Time">
         <posx>30</posx>
         <posy>5</posy>
-        <width>330</width>
+        <width>300</width>
         <height>30</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>Details</font>
         <shadowcolor>Black</shadowcolor>
-		<scroll>false</scroll>
+		<scroll>true</scroll>
         <label>$INFO[Player.FinishTime][COLOR=Orange] • [/COLOR]$LOCALIZE[19127]</label>
       </control>
 	  <control type="group">
@@ -64,10 +64,10 @@
           <visible>true</visible>
         </control>
         <control type="label" description="Progress time label">
-          <posx>470</posx>
+          <posx>480</posx>
           <posy>-5</posy>
           <height>30</height>
-          <width>180</width>
+          <width>140</width>
           <align>right</align>
           <label>$INFO[Player.Time]</label>
           <font>Details</font>
