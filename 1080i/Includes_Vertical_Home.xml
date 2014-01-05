@@ -64,7 +64,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
+		<bordersize>-12</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -82,7 +82,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
+		<bordersize>-12</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -91,7 +91,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
+		<bordersize>-12</bordersize>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
@@ -121,7 +121,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
+		<bordersize>-12</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -147,7 +147,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
+		<bordersize>-12</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -156,7 +156,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<bordersize>-13</bordersize>
+		<bordersize>-12</bordersize>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
@@ -194,6 +194,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-12</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -229,6 +230,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-12</bordersize>
         <include>PosterThumbBG</include>
       </control>
       <control type="image">
@@ -237,6 +239,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
+		<bordersize>-12</bordersize>
         <include>PosterThumbFO</include>
       </control>
       <control type="image">
@@ -284,7 +287,8 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-        <include>PosterThumbBG</include>
+        <bordersize>-12</bordersize>
+		<include>PosterThumbBG</include>
       </control>
       <control type="image">
         <posx>21</posx>
@@ -319,7 +323,8 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-        <include>PosterThumbBG</include>
+        <bordersize>-12</bordersize>
+		<include>PosterThumbBG</include>
       </control>
       <control type="image">
         <visible>Control.HasFocus(413)</visible>
@@ -327,7 +332,8 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-        <include>PosterThumbFO</include>
+        <bordersize>-12</bordersize>
+		<include>PosterThumbFO</include>
       </control>
       <control type="image">
         <posx>21</posx>
@@ -373,7 +379,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
@@ -419,7 +425,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
@@ -428,7 +434,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbFO</include>
       </control>
       <control type="image">
@@ -486,7 +492,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
@@ -532,7 +538,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
@@ -541,7 +547,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbFO</include>
       </control>
       <control type="image">
@@ -597,7 +603,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
@@ -633,7 +639,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbBG</include>
       </control>
       <control type="image">
@@ -642,7 +648,7 @@
         <posy>21</posy>
         <width>198</width>
         <height>198</height>
-        <bordersize>-12</bordersize>
+        <bordersize>-10</bordersize>
         <include>SquareThumbFO</include>
       </control>
       <control type="image">
