@@ -401,7 +401,7 @@
         <posy>939</posy>
         <width>1920</width>
         <height>147</height>
-        <texture>img/DefaultGradient.png</texture>
+        <texture>img/GradientNew.png</texture>
       </control>
       <control type="image" description="Footer">
         <posx>0</posx>
