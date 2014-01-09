@@ -42,7 +42,7 @@
       <control type="list" id="52">
         <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(episodes) | container.content(songs) | Container.Content(albums) | Container.Content(artists) | Window.IsActive(MyPics.xml)</visible>
         <viewtype label="Large List">Large List</viewtype>
-        <posx>954</posx>
+        <posx>993</posx>
         <posy>120</posy>
         <width>930</width>
         <height>864</height>
@@ -342,7 +342,7 @@
             <posy>603</posy>
             <width>812</width>
             <height>522</height>
-            <texture>img/DefaultGradient.png</texture>
+            <texture>img/GradientNew.png</texture>
           </control>
         </control>
         <control type="group" description="Media info">
@@ -434,7 +434,7 @@
             <posy>603</posy>
             <width>812</width>
             <height>522</height>
-            <texture>img/DefaultGradient.png</texture>
+            <texture>img/GradientNew.png</texture>
           </control>
         </control>
         <control type="group" description="Media info">
@@ -516,7 +516,7 @@
             <posy>603</posy>
             <width>812</width>
             <height>522</height>
-            <texture>img/DefaultGradient.png</texture>
+            <texture>img/GradientNew.png</texture>
           </control>
         </control>
         <control type="group" id="5005" description="Media info">
@@ -574,7 +574,7 @@
           <posy>603</posy>
           <width>812</width>
           <height>522</height>
-          <texture>img/DefaultGradient.png</texture>
+          <texture>img/GradientNew.png</texture>
         </control>
         <control type="group" description="Media info">
           <posx>99</posx>
