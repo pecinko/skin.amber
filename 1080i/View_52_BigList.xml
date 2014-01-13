@@ -561,7 +561,7 @@
         </control>
         <control type="image" description="Thumb Reflection">
           <posx>93</posx>
-          <posy>604</posy>
+          <posy>585</posy>
           <width>816</width>
           <height>522</height>
           <include>Icon_Fade</include>
@@ -570,9 +570,9 @@
           <aspectratio aligny="top">keep</aspectratio>
         </control>
         <control type="image" description="Reflection fade">
-          <posx>54</posx>
+          <posx>87</posx>
           <posy>603</posy>
-          <width>812</width>
+          <width>822</width>
           <height>522</height>
           <texture>img/GradientRef.png</texture>
         </control>
