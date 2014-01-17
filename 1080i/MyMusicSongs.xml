@@ -12,8 +12,8 @@
     <include>View_53_Grid</include>
     <include>View_54_LowList</include>
     <include condition="Skin.HasSetting(plexbmc)">View_55_BigPanel</include>
-    <include>View_56_BannerList</include>
-    <include>View_59_Showcase</include>
+    <!-- Showcase 57 58 & 59 -->
+	<include>View_59_Showcase</include>
     <control type="group">
 		<include>VignetteFade</include>
 		<include>Time</include>

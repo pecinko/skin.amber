@@ -720,7 +720,8 @@
   </include>
   <include name="Pictures_Art">
     <control type="multiimage">
-      <include>BG.Defaults</include>
+      <visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55)]</visible>
+	  <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Pictures.Art]</imagepath>
     </control>
 	</include>

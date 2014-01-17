@@ -34,8 +34,7 @@
     <font>
       <name>SysInfo</name>
       <filename>UbuntuCondensed.ttf</filename>
-      <size>30</size>
-      <style>bold</style>
+      <size>28</size>
     </font>
     <font>
       <name>ExtProgressBar</name>
@@ -65,7 +64,7 @@
     <font>
       <name>info</name>
       <filename>UbuntuCaps.ttf</filename>
-      <size>30</size>
+      <size>29</size>
     </font>
     <font>
       <name>Year</name>
@@ -123,7 +122,7 @@
 	<font>
       <name>InfoDetails</name>
       <filename>UbuntuCaps.ttf</filename>
-      <size>32</size>
+      <size>31</size>
     </font>
     <font>
       <name>font13</name>
@@ -135,8 +134,8 @@
       <name>InfoPlot</name>
       <filename>Default.ttf</filename>
       <style>bold</style>
-      <size>30</size>
-      <linespacing>0.930</linespacing>
+      <size>28</size>
+      <linespacing>1.0</linespacing>
 	  <aspect>1.0</aspect>
     </font>
     <font>
@@ -147,7 +146,7 @@
     <font>
       <name>size22</name>
       <filename>UbuntuCaps.ttf</filename>
-      <size>36</size>
+      <size>34</size>
     </font>
     <font>
       <name>ViewMenu</name>
@@ -214,8 +213,7 @@
     <font>
       <name>SysInfo</name>
       <filename>UbuntuCondensed.ttf</filename>
-      <size>30</size>
-      <style>bold</style>
+      <size>28</size>
     </font>
     <font>
       <name>ExtProgressBar</name>
@@ -245,7 +243,7 @@
     <font>
       <name>info</name>
       <filename>UbuntuCondensed.ttf</filename>
-      <size>31</size>
+      <size>30</size>
     </font>
     <font>
       <name>Year</name>
@@ -302,7 +300,7 @@
     </font>
     <font>
       <name>InfoDetails</name>
-      <filename>UbuntuCaps.ttf</filename>
+      <filename>UbuntuCondensed.ttf</filename>
       <size>34</size>
     </font>
 	<font>
@@ -407,7 +405,7 @@
       <name>SysInfo</name>
       <filename>Arial.ttf</filename>
       <size>27</size>
-      <style>Bold uppercase</style>
+      <style>uppercase</style>
       <aspect>0.80</aspect>
     </font>
     <font>
@@ -638,7 +636,6 @@
       <name>SysInfo</name>
       <filename>Arial.ttf</filename>
       <size>27</size>
-      <style>bold</style>
       <aspect>0.80</aspect>
     </font>
     <font>
