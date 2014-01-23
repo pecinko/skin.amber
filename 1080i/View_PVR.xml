@@ -57,7 +57,7 @@
             <font>Details</font>
             <width>800</width>
             <scroll>false</scroll>
-            <textcolor>ListDetails</textcolor>
+            <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Title]</label>
           </control>
         </itemlayout>
@@ -97,7 +97,7 @@
             <height>60</height>
             <font>Details</font>
             <width>800</width>
-            <textcolor>ListDetails</textcolor>
+            <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Title]</label>
           </control>
         </focusedlayout>
