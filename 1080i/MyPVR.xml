@@ -88,8 +88,8 @@
           <aspectratio>keep</aspectratio>
         </control>
         <control type="label" description="Title above progress">
-          <posy>120</posy>
-          <width>660</width>
+          <posy>99</posy>
+          <width>700</width>
           <font>InfoTitle</font>
           <textcolor>Orange</textcolor>
           <aligny>center</aligny>
@@ -99,9 +99,9 @@
         </control>
         <control type="textbox" description="Plot Value for TV">
           <posx>0</posx>
-          <posy>189</posy>
-          <width>660</width>
-          <height>260</height>
+          <posy>161</posy>
+          <width>700</width>
+          <height>288</height>
           <align>justify</align>
           <pagecontrol>-</pagecontrol>
           <label>$INFO[Container(11).ListItem.Plot]</label>
@@ -109,14 +109,14 @@
         <control type="label">
           <visible>Container(11).ListItem.HasEpg</visible>
           <posy>480</posy>
-          <width>660</width>
+          <width>700</width>
           <height>36</height>
           <font>Details</font>
           <label>[COLOR=Grey]$LOCALIZE[142] [/COLOR]$INFO[Container(11).ListItem.StartTime,, / ]$INFO[Container(11).ListItem.EndTime]</label>
         </control>
         <control type="label">
           <posy>520</posy>
-          <width>660</width>
+          <width>700</width>
           <height>36</height>
           <font>Details</font>
           <label>[COLOR=Grey]$LOCALIZE[19031]: [/COLOR]$INFO[Container(11).ListItem.NextTitle]</label>
@@ -131,14 +131,14 @@
         <posy>480</posy>
         <control type="image" description="TV Logo">
           <posy>-36</posy>
-          <width>660</width>
+          <width>700</width>
           <height>120</height>
           <texture>$INFO[Container(12).ListItem.Icon]</texture>
           <aspectratio>keep</aspectratio>
         </control>
         <control type="label" description="Title above progress">
-          <posy>120</posy>
-          <width>660</width>
+          <posy>99</posy>
+          <width>700</width>
           <font>InfoTitle</font>
           <textcolor>Orange</textcolor>
           <aligny>center</aligny>
@@ -148,9 +148,9 @@
         </control>
         <control type="textbox" description="Plot Value for TV">
           <posx>0</posx>
-          <posy>189</posy>
-          <width>660</width>
-          <height>260</height>
+          <posy>161</posy>
+          <width>700</width>
+          <height>288</height>
           <align>justify</align>
           <pagecontrol>-</pagecontrol>
           <label>$INFO[Container(12).ListItem.Plot]</label>
@@ -158,14 +158,14 @@
         <control type="label">
           <visible>Container(12).ListItem.HasEpg</visible>
           <posy>480</posy>
-          <width>660</width>
+          <width>700</width>
           <height>36</height>
           <font>Details</font>
           <label>[COLOR=Grey]$LOCALIZE[142] [/COLOR]$INFO[Container(12).ListItem.StartTime,, / ]$INFO[Container(12).ListItem.EndTime]</label>
         </control>
         <control type="label">
           <posy>520</posy>
-          <width>660</width>
+          <width>700</width>
           <height>36</height>
           <font>Details</font>
           <label>[COLOR=Grey]$LOCALIZE[19031]: [/COLOR]$INFO[Container(12).ListItem.NextTitle]</label>
@@ -180,7 +180,7 @@
         <posy>480</posy>
         <control type="label" description="Title above progress">
           <posy>-12</posy>
-          <width>660</width>
+          <width>700</width>
           <font>InfoTitle</font>
           <textcolor>Orange</textcolor>
           <aligny>center</aligny>
@@ -190,16 +190,16 @@
         </control>
         <control type="textbox" description="Plot Value for TV">
           <posx>0</posx>
-          <posy>69</posy>
-          <width>660</width>
-          <height>387</height>
+          <posy>50</posy>
+          <width>700</width>
+          <height>411</height>
           <align>justify</align>
           <pagecontrol>-</pagecontrol>
           <label>$INFO[Container(13).ListItem.Plot]</label>
         </control>
         <control type="label">
           <posy>520</posy>
-          <width>660</width>
+          <width>700</width>
           <height>36</height>
           <font>Details</font>
           <label>[COLOR=Grey]$LOCALIZE[2050]: [/COLOR]$INFO[Container(13).ListItem.Duration]</label>
