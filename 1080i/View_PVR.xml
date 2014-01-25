@@ -60,6 +60,16 @@
             <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Title]</label>
           </control>
+		  <control type="progress">
+		    <posx>90</posx>
+			<posy>92</posy>
+			<width>800</width>
+			<height>1</height>
+	        <texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
+            <midtexture border="0,0,0,0">img/AmberDot.png</midtexture>
+			<info>ListItem.Progress</info>
+			<visible>ListItem.HasEpg</visible>
+		  </control>
         </itemlayout>
         <focusedlayout height="99">
           <control type="image">
@@ -100,6 +110,16 @@
             <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Title]</label>
           </control>
+		  <control type="progress">
+		    <posx>90</posx>
+			<posy>92</posy>
+			<width>800</width>
+			<height>1</height>
+	        <texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
+            <midtexture border="0,0,0,0">img/AmberDot.png</midtexture>
+			<info>ListItem.Progress</info>
+			<visible>ListItem.HasEpg</visible>
+		  </control>
         </focusedlayout>
       </control>
     </control>
