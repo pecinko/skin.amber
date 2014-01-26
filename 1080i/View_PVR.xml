@@ -421,7 +421,7 @@
             <width>60</width>
             <height>78</height>
             <bordersize>1</bordersize>
-            <texture>img/BlackDotT.png</texture>
+            <texture>pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
           </control>
           <control type="label" id="1">
             <posx>9</posx>
@@ -447,8 +447,8 @@
             <posy>0</posy>
             <width>60</width>
             <height>78</height>
-            <texture border="5">img/FrameSlim.png</texture>
-            <bordertexture>img/BlackDotT.png</bordertexture>
+            <texture>pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
+            <bordertexture border="5">img/FrameSlim.png</bordertexture>
           </control>
           <control type="label" id="1">
             <posx>9</posx>
