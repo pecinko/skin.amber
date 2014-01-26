@@ -81,8 +81,8 @@
         <posx>60</posx>
         <posy>480</posy>
         <control type="image" description="TV Logo">
-          <posy>-36</posy>
-          <width>660</width>
+          <posy>-34</posy>
+          <width>120</width>
           <height>120</height>
           <texture>$INFO[Container(11).ListItem.Icon]</texture>
           <aspectratio>keep</aspectratio>
