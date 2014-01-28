@@ -20,7 +20,7 @@
           <posy>240</posy>
           <control type="label" description="Title">
             <posy>-12</posy>
-            <width>660</width>
+            <width>1170</width>
             <font>InfoTitle</font>
             <textcolor>Orange</textcolor>
             <aligny>center</aligny>
