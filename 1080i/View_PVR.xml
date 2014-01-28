@@ -305,7 +305,7 @@
       <include>VisibleFadeEffect</include>
       <control type="epggrid" id="10" description="EPG Grid">
         <posx>60</posx>
-        <posy>420</posy>
+        <posy>230</posy>
         <width>1800</width>
         <height>546</height>
         <pagecontrol>10</pagecontrol>
@@ -451,12 +451,19 @@
       </control>
       <control type="image" description="Top split">
         <posx>60</posx>
-        <posy>483</posy>
+        <posy>295</posy>
         <width>1800</width>
         <height>2</height>
         <texture>img/LineST.png</texture>
       </control>
-      <control type="group">
+      <control type="image" description="Middle split">
+        <posx>60</posx>
+        <posy>777</posy>
+        <width>1800</width>
+        <height>2</height>
+        <texture>img/LineST.png</texture>
+      </control>
+    <control type="group">
         <posx>60</posx>
         <posy>1008</posy>
         <control type="image" description="Bottom split">
