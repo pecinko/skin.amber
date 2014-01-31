@@ -4,7 +4,6 @@
   <allowoverlay>no</allowoverlay>
   <controls>
     <control type="group" description="fanart">
-      <visible>!Player.HasVideo</visible>
       <include>Pvr_Art</include>
     </control>
     <control type="image" description="fa overlay">
