@@ -17,7 +17,7 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>10</posx>
+      	<posx>8</posx>
       	<posy>100</posy>
       	<width>680</width>
       	<height>320</height>
@@ -137,7 +137,7 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>10</posx>
+      	<posx>8</posx>
       	<posy>100</posy>
       	<width>680</width>
       	<height>320</height>
@@ -238,7 +238,7 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>10</posx>
+      	<posx>8</posx>
       	<posy>100</posy>
       	<width>680</width>
       	<height>320</height>
@@ -551,7 +551,7 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>10</posx>
+      	<posx>8</posx>
       	<posy>100</posy>
       	<width>680</width>
       	<height>320</height>
@@ -985,7 +985,7 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>10</posx>
+      	<posx>8</posx>
       	<posy>100</posy>
       	<width>680</width>
       	<height>320</height>
