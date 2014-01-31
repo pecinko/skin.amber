@@ -392,6 +392,14 @@
           </control>
         </channellayout>
         <focusedchannellayout height="78" width="420">
+        <control type="image" description="TV Logo">
+ 	    <posx>250</posx>
+            <posy>10</posy>
+            <width>80</width>
+            <height>60</height>
+ 	    <texture>$INFO[ListItem.Icon]</texture>
+	    <aspectratio>keep</aspectratio>
+          </control>
           <control type="image" id="1" description="Column 1">
             <posx>0</posx>
             <posy>0</posy>
