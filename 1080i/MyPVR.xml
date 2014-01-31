@@ -16,9 +16,9 @@
     </control>
     <control type="image" description="fa overlay">
 	  <posx>0</posx>
-      <posy>215</posy>
+      <posy>55</posy>
       <width>1920</width>
-      <height>965</height>
+      <height>1025</height>
       <texture border="0,30,0,0">OSD/OSDBackground.png</texture>
       <colordiffuse>FF9e9e9e</colordiffuse>
     </control>
