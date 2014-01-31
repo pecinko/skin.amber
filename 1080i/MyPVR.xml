@@ -37,15 +37,6 @@
     </control>
 	<control type="group" description="EPG Timeline Info">
 	<visible>Control.IsVisible(10)</visible>
-	<include>VisibleFadeEffect</include>
-	<control type="image" description="TV Logo">
-          <posx>80</posx>
-		  <posy>816</posy>
-          <width>150</width>
-          <height>150</height>
-          <texture>$INFO[Container(10).ListItem.Icon]</texture>
-          <aspectratio>keep</aspectratio>
-        </control>
 	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
       	<posx>60</posx>
