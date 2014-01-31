@@ -7,13 +7,6 @@
       <visible>!Player.HasVideo</visible>
       <include>Pvr_Art</include>
     </control>
-    <control type="videowindow" description="TV Channel Live BG">
-      <visible>Player.HasVideo</visible>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
-    </control>
     <control type="image" description="fa overlay">
 	  <posx>0</posx>
       <posy>55</posy>
@@ -53,10 +46,17 @@
           <texture>$INFO[Container(10).ListItem.Icon]</texture>
           <aspectratio>keep</aspectratio>
         </control>
+	<control type="videowindow" description="TV Channel Live BG">
+      	<visible>Player.HasVideo</visible>
+      	<posx>60</posx>
+      	<posy>785</posy>
+      	<width>370</width>
+      	<height>206</height>
+    </control>
 	  <control type="textbox">
-		<posx>270</posx>
+		<posx>480</posx>
 		<posy>808</posy>
-		<width>1590</width>
+		<width>1380</width>
 		<height>170</height>
 		<align>justify</align>
 		<textcolor>Label2</textcolor>
