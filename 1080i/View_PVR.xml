@@ -15,6 +15,13 @@
     <control type="group" description="TV Channels group">
       <visible>Control.IsVisible(11)</visible>
       <include>VisibleFadeEffect</include>
+      	<control type="videowindow" description="TV Channel Live BG">
+      	<visible>Player.HasVideo</visible>
+      	<posx>10</posx>
+      	<posy>100</posy>
+      	<width>680</width>
+      	<height>320</height>
+    </control>
       <control type="list" id="11" description="CHANNELS">
         <posx>940</posx>
         <posy>445</posy>
@@ -128,6 +135,13 @@
     <control type="group" description="Radio group">
       <visible>Control.IsVisible(12)</visible>
       <include>VisibleFadeEffect</include>
+      	<control type="videowindow" description="TV Channel Live BG">
+      	<visible>Player.HasVideo</visible>
+      	<posx>10</posx>
+      	<posy>100</posy>
+      	<width>680</width>
+      	<height>320</height>
+    </control>
       <control type="list" id="12" description="RADIO">
         <posx>940</posx>
         <posy>445</posy>
@@ -222,6 +236,13 @@
     <control type="group" description="REC group">
       <visible>Control.IsVisible(13)</visible>
       <include>VisibleFadeEffect</include>
+      	<control type="videowindow" description="TV Channel Live BG">
+      	<visible>Player.HasVideo</visible>
+      	<posx>10</posx>
+      	<posy>100</posy>
+      	<width>680</width>
+      	<height>320</height>
+    </control>
       <control type="list" id="13" description="REC">
         <posx>940</posx>
         <posy>445</posy>
@@ -528,6 +549,13 @@
       <description>Timers group</description>
       <visible>Control.IsVisible(14)</visible>
       <include>VisibleFadeEffect</include>
+      	<control type="videowindow" description="TV Channel Live BG">
+      	<visible>Player.HasVideo</visible>
+      	<posx>10</posx>
+      	<posy>100</posy>
+      	<width>680</width>
+      	<height>320</height>
+    </control>
       <control type="list" id="14" description="Timers">
         <posx>60</posx>
         <posy>490</posy>
@@ -955,6 +983,13 @@
       <description>Timers group</description>
       <visible>Control.IsVisible(17)</visible>
       <include>VisibleFadeEffect</include>
+      	<control type="videowindow" description="TV Channel Live BG">
+      	<visible>Player.HasVideo</visible>
+      	<posx>10</posx>
+      	<posy>100</posy>
+      	<width>680</width>
+      	<height>320</height>
+    </control>
       <control type="list" id="17" description="Search">
         <posx>60</posx>
         <posy>490</posy>
