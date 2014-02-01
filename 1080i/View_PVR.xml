@@ -17,10 +17,10 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>8</posx>
-      	<posy>100</posy>
-      	<width>680</width>
-      	<height>320</height>
+      	<posx>60</posx>
+      	<posy>10</posy>
+      	<width>600</width>
+      	<height>500</height>
     </control>
       <control type="list" id="11" description="CHANNELS">
         <posx>940</posx>
@@ -137,10 +137,10 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>8</posx>
-      	<posy>100</posy>
-      	<width>680</width>
-      	<height>320</height>
+      	<posx>60</posx>
+      	<posy>10</posy>
+      	<width>600</width>
+      	<height>500</height>
     </control>
       <control type="list" id="12" description="RADIO">
         <posx>940</posx>
@@ -238,10 +238,10 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>8</posx>
-      	<posy>100</posy>
-      	<width>680</width>
-      	<height>320</height>
+      	<posx>60</posx>
+      	<posy>10</posy>
+      	<width>600</width>
+      	<height>500</height>
     </control>
       <control type="list" id="13" description="REC">
         <posx>940</posx>
@@ -551,10 +551,10 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>8</posx>
-      	<posy>100</posy>
-      	<width>680</width>
-      	<height>320</height>
+      	<posx>60</posx>
+      	<posy>10</posy>
+      	<width>600</width>
+      	<height>500</height>
     </control>
       <control type="list" id="14" description="Timers">
         <posx>60</posx>
@@ -985,10 +985,10 @@
       <include>VisibleFadeEffect</include>
       	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
-      	<posx>8</posx>
-      	<posy>100</posy>
-      	<width>680</width>
-      	<height>320</height>
+      	<posx>60</posx>
+      	<posy>10</posy>
+      	<width>600</width>
+      	<height>500</height>
     </control>
       <control type="list" id="17" description="Search">
         <posx>60</posx>
