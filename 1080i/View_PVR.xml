@@ -356,14 +356,24 @@
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" id="1" description="Column 1 selected">
-            <posx>80</posx>
+            <visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
             <width>258</width>
             <height>78</height>
             <font>Details</font>
             <label>$INFO[ListItem.ChannelName]</label>
           </control>
-          <control type="image" description="Channel Logo">
-            <posx>345</posx>
+          <control type="label" id="1" description="Column 1 selected">
+            <visible>Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
+            <width>335</width>
+            <height>78</height>
+            <font>Details</font>
+            <label>$INFO[ListItem.ChannelName]</label>
+          </control>
+		  <control type="image" description="Channel Logo">
+            <visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>345</posx>
             <posy>4</posy>
 			<width>70</width>
 			<height>70</height>
@@ -392,7 +402,8 @@
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" id="1" description="Column 1 Focused">
-            <posx>80</posx>
+			<visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
             <width>258</width>
             <height>78</height>
             <font>Details</font>
@@ -401,8 +412,17 @@
             <align>left</align>
             <label>$INFO[ListItem.ChannelName]</label>
           </control>
+		  <control type="label" id="1" description="Column 1 selected">
+            <visible>Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
+            <width>335</width>
+            <height>78</height>
+            <font>Details</font>
+            <label>$INFO[ListItem.ChannelName]</label>
+          </control>
 		  <control type="image" description="Channel Logo">
-            <posx>345</posx>
+            <visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>345</posx>
             <posy>4</posy>
 			<width>70</width>
             <height>70</height>
