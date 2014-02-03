@@ -508,7 +508,7 @@
       </control>
       <control type="image" description="Top split">
         <posx>60</posx>
-        <posy>135</posy>
+        <posy>145</posy>
         <width>1800</width>
         <height>2</height>
         <texture>img/LineST.png</texture>
