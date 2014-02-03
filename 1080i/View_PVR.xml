@@ -305,14 +305,14 @@
       <include>VisibleFadeEffect</include>
       <control type="epggrid" id="10" description="EPG Grid">
         <posx>60</posx>
-        <posy>420</posy>
+        <posy>75</posy>
         <width>1800</width>
-        <height>546</height>
+        <height>705</height>
         <pagecontrol>10</pagecontrol>
         <scrolltime>350</scrolltime>
-        <timeblocks>20</timeblocks>
+        <timeblocks>40</timeblocks>
         <rulerunit>6</rulerunit>
-        <onleft>31</onleft>
+		<onleft>31</onleft>
         <onright>31</onright>
         <onup>10</onup>
         <ondown>10</ondown>
@@ -336,8 +336,9 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
         </rulerlayout>
-        <channellayout height="78" width="420">
-          <control type="image" id="1" description="Column 1">
+		<progresstexture border="0,96,18,14">img/EPGMarker.png</progresstexture>
+		<channellayout height="78" width="420">
+        <control type="image" id="1" description="Column 1">
             <posx>0</posx>
             <posy>0</posy>
             <width>420</width>
@@ -355,11 +356,29 @@
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" id="1" description="Column 1 selected">
-            <posx>80</posx>
-            <width>300</width>
+            <visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
+            <width>258</width>
             <height>78</height>
             <font>Details</font>
             <label>$INFO[ListItem.ChannelName]</label>
+          </control>
+          <control type="label" id="1" description="Column 1 selected">
+            <visible>Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
+            <width>335</width>
+            <height>78</height>
+            <font>Details</font>
+            <label>$INFO[ListItem.ChannelName]</label>
+          </control>
+		  <control type="image" description="Channel Logo">
+            <visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>345</posx>
+            <posy>4</posy>
+			<width>70</width>
+			<height>70</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.Icon]</texture>
           </control>
         </channellayout>
         <focusedchannellayout height="78" width="420">
@@ -383,14 +402,32 @@
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" id="1" description="Column 1 Focused">
-            <posx>80</posx>
-            <width>300</width>
+			<visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
+            <width>258</width>
             <height>78</height>
             <font>Details</font>
             <textcolor>White2</textcolor>
             <aligny>center</aligny>
             <align>left</align>
             <label>$INFO[ListItem.ChannelName]</label>
+          </control>
+		  <control type="label" id="1" description="Column 1 selected">
+            <visible>Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>80</posx>
+            <width>335</width>
+            <height>78</height>
+            <font>Details</font>
+            <label>$INFO[ListItem.ChannelName]</label>
+          </control>
+		  <control type="image" description="Channel Logo">
+            <visible>!Skin.HasSetting(HideEPGLogos)</visible>
+			<posx>345</posx>
+            <posy>4</posy>
+			<width>70</width>
+            <height>70</height>
+			<aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.Icon]</texture>
           </control>
         </focusedchannellayout>
         <itemlayout height="78" width="60">
@@ -400,7 +437,7 @@
             <width>60</width>
             <height>78</height>
             <bordersize>1</bordersize>
-            <texture>img/BlackDotT.png</texture>
+            <texture>pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
           </control>
           <control type="label" id="1">
             <posx>9</posx>
@@ -426,8 +463,8 @@
             <posy>0</posy>
             <width>60</width>
             <height>78</height>
-            <texture border="5">img/FrameSlim.png</texture>
-            <bordertexture>img/BlackDotT.png</bordertexture>
+            <texture>pvr_genres/$INFO[ListItem.Property(GenreType)].png</texture>
+            <bordertexture border="5">img/FrameSlim.png</bordertexture>
           </control>
           <control type="label" id="1">
             <posx>9</posx>
@@ -450,12 +487,19 @@
       </control>
       <control type="image" description="Top split">
         <posx>60</posx>
-        <posy>483</posy>
+        <posy>145</posy>
         <width>1800</width>
         <height>2</height>
         <texture>img/LineST.png</texture>
       </control>
-      <control type="group">
+      <control type="image" description="Middle split">
+        <posx>60</posx>
+        <posy>777</posy>
+        <width>1800</width>
+        <height>2</height>
+        <texture>img/LineST.png</texture>
+      </control>
+    <control type="group">
         <posx>60</posx>
         <posy>1008</posy>
         <control type="image" description="Bottom split">
@@ -473,7 +517,7 @@
           <aligny>center</aligny>
           <align>left</align>
           <scroll>false</scroll>
-          <label>[COLOR=Orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Duration,  -  ,  -  ]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
+          <label>[COLOR=Orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Genre,  -  ,  -]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
         </control>
       </control>
     </control>
