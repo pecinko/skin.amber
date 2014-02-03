@@ -8,9 +8,9 @@
     </control>
     <control type="image" description="fa overlay">
 	  <posx>0</posx>
-      <posy>65</posy>
+      <posy>55</posy>
       <width>1920</width>
-      <height>1015</height>
+      <height>1025</height>
       <texture border="0,30,0,0">OSD/OSDBackground.png</texture>
       <colordiffuse>FF9e9e9e</colordiffuse>
     </control>
@@ -36,6 +36,7 @@
     </control>
 	<control type="group" description="EPG Timeline Info">
 	<visible>Control.IsVisible(10)</visible>
+	<include>VisibleFadeEffect</include>
 	<control type="videowindow" description="TV Channel Live BG">
       	<visible>Player.HasVideo</visible>
       	<posx>60</posx>
