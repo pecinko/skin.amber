@@ -17,9 +17,9 @@
       <include>VisibleFadeEffect</include>
       <control type="list" id="11" description="CHANNELS">
         <posx>940</posx>
-        <posy>445</posy>
+        <posy>120</posy>
         <width>980</width>
-        <height>594</height>
+        <height>904</height>
         <onleft>9000</onleft>
         <onright>70</onright>
         <onup>11</onup>
@@ -130,9 +130,9 @@
       <include>VisibleFadeEffect</include>
       <control type="list" id="12" description="RADIO">
         <posx>940</posx>
-        <posy>445</posy>
+        <posy>120</posy>
         <width>980</width>
-        <height>594</height>
+        <height>904</height>
         <onleft>9000</onleft>
         <onright>70</onright>
         <onup>12</onup>

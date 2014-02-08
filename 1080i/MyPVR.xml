@@ -15,7 +15,7 @@
       <height>1080</height>
     </control>
     <control type="image" description="fa overlay">
-	  <visible>Control.IsVisible(10)</visible>
+	  <visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12)</visible>
 	  <posx>0</posx>
       <posy>65</posy>
       <width>1920</width>
@@ -24,7 +24,7 @@
       <colordiffuse>FF9e9e9e</colordiffuse>
     </control>
 	<control type="image" description="fa overlay">
-	  <visible>!Control.IsVisible(10)</visible>
+	  <visible>Control.IsVisible(13) | Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
 	  <posx>0</posx>
       <posy>215</posy>
       <width>1920</width>
