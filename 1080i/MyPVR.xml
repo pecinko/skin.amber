@@ -44,6 +44,27 @@
       	<width>370</width>
       	<height>206</height>
     </control>
+      <control type="image" description="Current video label bacground">
+          <visible>Player.HasVideo</visible>
+          <posx>85</posx>
+          <posy>785</posy>
+          <width>370</width>
+          <height>35</height>
+          <texture>img/BlackDot.png</texture>
+          <colordiffuse>DDFFFFFF</colordiffuse>
+      </control>
+        <control type="textbox" description="Current video label">
+	<posx>85</posx>
+	<posy>780</posy>
+	<width>370</width>
+	<height>35</height>
+    <font>Details</font>
+	<align>center</align>
+	<textcolor>White</textcolor>
+    <autoscroll delay="3000" time="3000" repeat="3000">true</autoscroll>
+	<label>$INFO[Player.Title]</label>
+	<visible>Player.HasVideo</visible>
+     </control>
         <control type="image" description="TV Logo located in description">
             <visible>!Player.HasVideo</visible>
             <posx>200</posx>
