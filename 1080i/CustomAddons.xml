@@ -72,13 +72,13 @@
         <item id="50" description="Channels">
           <visible>Skin.HasSetting(plexbmc)</visible>
           <label>$LOCALIZE[31003]</label>
-          <thumb>special://skin/backgrounds/Channels.jpg</thumb>
+          <thumb>special://skin/backgrounds/default/default.jpg</thumb>
           <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
         </item>
         <item id="2" description="Addons">
           <visible>!Skin.HasSetting(Addons.Hide)</visible>
           <label>$LOCALIZE[10040]</label>
-          <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+          <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
           <onclick>ActivateWindow(AddonBrowser,root)</onclick>
         </item>
       </content>
