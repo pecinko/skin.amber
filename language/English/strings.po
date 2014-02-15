@@ -462,5 +462,5 @@ msgid "Holiday snowfall theme"
 msgstr ""
 
 msgctxt "#31997"
-msgid "Hide channel logos in timeline EPG"
+msgid "Hide channel logos in PVR List/Timeline"
 msgstr ""
