@@ -1,6 +1,6 @@
 # XBMC Media Center language file
-# Addon Name: Amber
-# Addon id: skin.amber
+# Addon Name: AmberLight
+# Addon id: skin.amberlight
 # Addon Provider: Pecinko, Toiva
 msgid ""
 msgstr ""

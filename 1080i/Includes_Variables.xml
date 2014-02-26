@@ -145,11 +145,11 @@
   </variable>
   <variable name="Settings.Art" description="Calculate BG to show">
     <value condition="!IsEmpty(Skin.String(Settings.Background))">$INFO[Skin.String(Settings.Background)]</value>
-    <value>special://skin/backgrounds/System.jpg</value>
+    <value>special://skin/backgrounds/default/default.jpg</value>
   </variable>
   <variable name="Weather.Art" description="Calculate BG to show">
     <value condition="!IsEmpty(Skin.String(Weather.Background))">$INFO[Skin.String(Weather.Background)]</value>
-    <value>special://skin/backgrounds/Weather.jpg</value>
+    <value>special://skin/backgrounds/default/default.jpg</value>
   </variable>
   <variable name="Pvr.Art" description="Calculate BG to show">
     <value condition="!IsEmpty(Skin.String(Pvr.Background))">$INFO[Skin.String(Pvr.Background)]</value>

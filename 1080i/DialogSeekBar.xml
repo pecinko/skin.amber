@@ -25,7 +25,7 @@
         <aligny>center</aligny>
         <font>Details</font>
         <shadowcolor>Black</shadowcolor>
-        <label>$INFO[System.Time]</label>
+        <label>$INFO[System.Time][COLOR=Orange]  â€¢  [/COLOR]CPU: $INFO[System.CPUTemperature]</label>
       </control>
       <control type="label" description="End Time">
         <posx>30</posx>
