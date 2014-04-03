@@ -53,9 +53,9 @@
             </control>
             <control type="list" id="11" description="CHANNELS">
                 <posx>940</posx>
-                <posy>445</posy>
+                <posy>140</posy>
                 <width>980</width>
-                <height>594</height>
+                <height>900</height>
                 <onleft>9000</onleft>
                 <onright>70</onright>
                 <onup>11</onup>
