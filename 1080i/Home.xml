@@ -59,6 +59,75 @@
           <textcolor>Grey</textcolor>
         </control>
       </control>
+        <!--<weather on home screen-->
+    <control type="group">
+            <visible>!IsEmpty(Weather.Plugin)</visible>
+            <include>WeatherAni0</include>
+        <control type="image">
+            <description>Weather image</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>80</width>
+            <height>80</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[Weather.Conditions]</texture>
+        </control>
+        <control type="label">
+            <description>location label</description>
+            <posx>85</posx>
+            <posy>10</posy>
+            <width>500</width>
+            <height>10</height>
+            <align>left</align>
+            <aligny>center</aligny>
+            <font>RSS</font>
+            <textcolor>Orange</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <label>$INFO[Window(Weather).Property(Location)]</label>
+        </control>
+        <control type="grouplist">
+                <posx>85</posx>
+                <posy>40</posy>
+                <width>1000</width>
+                <height>30</height>
+                <orientation>horizontal</orientation>
+                <align>left</align>
+                <itemgap>0</itemgap>
+            <control type="label">
+                <description>Temp label</description>
+                <width min="0" max="300">auto</width>
+                <height>20</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>details</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
+            </control>
+            <control type="label">
+                <description>Temp Units</description>
+                <width min="0" max="100">auto</width>
+                <height>15</height>
+                <font>rss</font>
+                <aligny>center</aligny>
+                <label>$INFO[System.TemperatureUnits]</label>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+            </control>
+            <control type="label">
+                <description>Conditions Label</description>
+                <width>500</width>
+                <height>22</height>
+                <font>font10</font>
+                <aligny>center</aligny>
+                <label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
+                <textcolor>grey2</textcolor>
+                <shadowcolor>black</shadowcolor>
+        </control>
+            </control>
+    </control>
+        <!--<weather on home screen>-->
       <include>Time</include>
       <control type="group">
         <include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
@@ -74,7 +143,6 @@
             <textcolor>Orange</textcolor>
             <font>InfoTitle</font>
             <align>center</align>
-			
 		<label>20037</label>
 	  </control>
 	  <control type="textbox" description="Plot">
