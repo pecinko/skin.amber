@@ -113,7 +113,7 @@
             <width>33</width>
             <height>54</height>
             <aspectratio>keep</aspectratio>
-            <info>Listitem.Thumb</info>
+            <info>flags/$INFO[Listitem.Thumb].gif</info>
           </control>
           <control type="label">
             <posx>54</posx>
