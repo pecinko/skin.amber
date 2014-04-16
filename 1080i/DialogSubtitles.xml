@@ -164,7 +164,7 @@
             <height>54</height>
             <colordiffuse>Grey</colordiffuse>
             <aspectratio>keep</aspectratio>
-            <texture>badges/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+            <texture>badges/rating$INFO[ListItem.ActualIcon].png</texture>
           </control>
         </itemlayout>
         <focusedlayout width="1350" height="54">
@@ -237,7 +237,7 @@
             <width>120</width>
             <height>54</height>
             <aspectratio>keep</aspectratio>
-            <texture>badges/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+            <texture>badges/rating$INFO[ListItem.ActualIcon].png</texture>
           </control>
         </focusedlayout>
       </control>
