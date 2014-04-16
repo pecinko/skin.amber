@@ -132,7 +132,6 @@
     <posy>0</posy>
     <width>1920</width>
     <height>1080</height>
-    <aspectratio>scale</aspectratio>
   </include>
   <include name="Panel_Size">
     <posx>36</posx>
