@@ -463,13 +463,13 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
             </item>
-            <item id="15" description="Hide channel logos in timeline EPG">
+            <item id="15" description="Hide channel logos in PVR List/Timeline">
               <visible>Skin.HasSetting(HideEPGLogos)</visible>
               <label>$LOCALIZE[31997]</label>
               <label2>$LOCALIZE[107]</label2>
               <onclick>Skin.ToggleSetting(HideEPGLogos)</onclick>
             </item>
-            <item id="15" description="Hide channel logos in timeline EPG">
+            <item id="15" description="Hide channel logos in PVR List/Timeline">
               <visible>!Skin.HasSetting(HideEPGLogos)</visible>
               <label>$LOCALIZE[31997]</label>
               <label2>$LOCALIZE[106]</label2>
