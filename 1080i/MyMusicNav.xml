@@ -17,7 +17,7 @@
     <!-- Showcase 57 58 & 59 -->
     <include>View_59_Showcase</include>
     <control type="group" description="Showcase trigger">
-      <animation effect="slide" easing="out" start="0,0" end="0,-90" time="350" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
+      <animation effect="slide" easing="out" start="0,0" end="0,-90" time="350" delay="0" center="120,350" reversible="true" condition="!IsEmpty(Window.Property(gallery))">Conditional</animation>
       <include>VignetteFade</include>
 	  <include>Time</include>
     </control>
