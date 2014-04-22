@@ -1135,27 +1135,27 @@
     </item>
 	<item id="100" description="Tv Channels">
        <visible>Container(300).HasFocus(300)</visible>
-       <label>Tv Channels</label>
+       <label>19023</label>
      <onclick>ActivateWindowAndFocus(PVR, 32, 0, 11, 0)</onclick>
      </item>
  	    <item id="101" description="Radio Channels">
        <visible>Container(300).HasFocus(300)</visible>
-       <label>Radio Channels</label>
+       <label>19024</label>
       <onclick>ActivateWindowAndFocus(PVR, 33, 0, 12, 0)</onclick>
      </item>
  	    <item id="102" description="EPG Timeline">
        <visible>Container(300).HasFocus(300)</visible>
-       <label>EPG Timeline</label>
+       <label>$LOCALIZE[19069]</label>
      <onclick>ActivateWindowAndFocus(PVR, 31,0, 10,1)</onclick>
      </item>
  	    <item id="103" description="Recordings">
        <visible>Container(300).HasFocus(300)</visible>
-       <label>Recordings</label>
+       <label>19163</label>
        <onclick>ActivateWindowAndFocus(PVR, 34, 0, 13, 0)</onclick>
      </item>
  	    <item id="104" description="Timer">
        <visible>Container(300).HasFocus(300)</visible>
-       <label>Timer</label>
+       <label>19040</label>
        <onclick>ActivateWindowAndFocus(PVR, 35, 0, 14, 0)</onclick>
      </item>
     <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
