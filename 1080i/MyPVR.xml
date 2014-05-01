@@ -76,8 +76,9 @@
             <visible>Player.HasVideo</visible>
         </control>
 	<control type="image" description="TV Logo">
-          <posx>80</posx>
-		  <posy>816</posy>
+        <visible>!Player.HasVideo</visible>
+          <posx>200</posx>
+		  <posy>815</posy>
           <width>150</width>
           <height>150</height>
           <texture>$INFO[Container(10).ListItem.Icon]</texture>
