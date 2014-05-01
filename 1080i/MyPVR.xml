@@ -84,7 +84,7 @@
           <aspectratio>keep</aspectratio>
         </control>
 	  <control type="textbox">
-		<posx>270</posx>
+		<posx>480</posx>
 		<posy>808</posy>
 		<width>1590</width>
 		<height>170</height>
