@@ -752,7 +752,7 @@
           <font>Volume</font>
         </control>
         <control type="label">
-          <visible>![Skin.HasSetting(plexbmc) | Player.HasAudio]</visible>
+          <visible>![Skin.HasSetting(plexbmc) | Player.HasAudio] + IsEmpty(Weather.Plugin)</visible>
           <posx>50</posx>
           <posy>0</posy>
           <width>460</width>
