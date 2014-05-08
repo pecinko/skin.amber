@@ -87,7 +87,7 @@
 	  <control type="textbox">
 		<posx>480</posx>
 		<posy>808</posy>
-		<width>1590</width>
+		<width>1375</width>
 		<height>170</height>
 		<align>justify</align>
 		<textcolor>Label2</textcolor>
