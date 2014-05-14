@@ -694,6 +694,7 @@
         <texture border="0,40,0,40">home/OverlayRA2T.png</texture>
       </control>
       <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
+      <include condition="System.GetBool(pvrmanager.enabled)">PVR.List</include>
       <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Concerts.List</include>
@@ -751,7 +752,7 @@
           <font>Volume</font>
         </control>
         <control type="label">
-          <visible>![Skin.HasSetting(plexbmc) | Player.HasAudio]</visible>
+          <visible>![Skin.HasSetting(plexbmc) | Player.HasAudio] + IsEmpty(Weather.Plugin)</visible>
           <posx>50</posx>
           <posy>0</posy>
           <width>460</width>

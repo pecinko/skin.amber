@@ -4,17 +4,9 @@
   <allowoverlay>no</allowoverlay>
   <controls>
     <control type="group" description="fanart">
-      <visible>!Player.HasVideo</visible>
       <include>Pvr_Art</include>
     </control>
-    <control type="videowindow" description="TV Channel Live BG">
-      <visible>Player.HasVideo</visible>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
-    </control>
-    <control type="image" description="fa overlay">
+        <control type="image" description="fa overlay">
 	  <visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12)</visible>
 	  <posx>0</posx>
       <posy>65</posy>
@@ -26,9 +18,9 @@
 	<control type="image" description="fa overlay">
 	  <visible>Control.IsVisible(13) | Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)</visible>
 	  <posx>0</posx>
-      <posy>215</posy>
+      <posy>65</posy>
       <width>1920</width>
-      <height>965</height>
+      <height>1015</height>
       <texture border="0,30,0,0">OSD/OSDBackground.png</texture>
       <colordiffuse>FF9e9e9e</colordiffuse>
     </control>
@@ -55,18 +47,47 @@
 	<control type="group" description="EPG Timeline Info">
 	<visible>Control.IsVisible(10)</visible>
 	<include>VisibleFadeEffect</include>
+        <control type="videowindow" description="TV Channel Live window">
+            <visible>Player.HasVideo</visible>
+            <posx>85</posx>
+            <posy>785</posy>
+            <width>370</width>
+            <height>206</height>
+        </control>
+        <control type="image" description="Current video label bacground">
+            <visible>Player.HasVideo</visible>
+            <posx>85</posx>
+            <posy>785</posy>
+            <width>370</width>
+            <height>35</height>
+            <texture>img/BlackDot.png</texture>
+            <colordiffuse>DDFFFFFF</colordiffuse>
+        </control>
+        <control type="textbox" description="Current video label">
+            <posx>85</posx>
+            <posy>780</posy>
+            <width>370</width>
+            <height>35</height>
+            <font>Details</font>
+            <align>center</align>
+            <textcolor>White</textcolor>
+            <autoscroll delay="3000" time="3000" repeat="3000">true</autoscroll>
+            <label>$INFO[Player.Title]</label>
+            <visible>Player.HasVideo</visible>
+        </control>
 	<control type="image" description="TV Logo">
-          <posx>80</posx>
-		  <posy>816</posy>
+        <visible>!Player.HasVideo</visible>
+          <posx>200</posx>
+		  <posy>815</posy>
           <width>150</width>
           <height>150</height>
           <texture>$INFO[Container(10).ListItem.Icon]</texture>
           <aspectratio>keep</aspectratio>
         </control>
 	  <control type="textbox">
-		<posx>270</posx>
+		<posx>480</posx>
 		<posy>808</posy>
-		<width>1590</width>
+		<width>1375</width>
 		<height>170</height>
 		<align>justify</align>
 		<textcolor>Label2</textcolor>
