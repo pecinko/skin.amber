@@ -790,6 +790,7 @@
             <textcolor>Grey3</textcolor>
             <shadowcolor>ShadowDark</shadowcolor>
             <label>$INFO[ListItem.Label]</label>
+			<scroll>false</scroll>
             <font>MainMenuVertical</font>
           </control>
         </itemlayout>

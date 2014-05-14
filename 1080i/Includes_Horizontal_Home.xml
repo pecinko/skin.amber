@@ -139,6 +139,7 @@
               <align>center</align>
               <aligny>top</aligny>
               <textoffsety>2</textoffsety>
+			  <scroll>false</scroll>
               <label>$INFO[ListItem.Label]</label>
               <font>MainMenu</font>
             </control>
