@@ -434,10 +434,15 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Show_Player)</onclick>
             </item>
-            <item id="12" description="Movies entry points">
+            <item id="11" description="Movies entry points">
               <label>$LOCALIZE[31507]</label>
               <label2 fallback="31502">$VAR[MovieEntryPointLabel2]</label2>
               <onclick>ActivateWindow(1115)</onclick>
+            </item>
+			<item id="12" description="TV entry points">
+              <label>$LOCALIZE[31508]</label>
+              <label2 fallback="31499">$VAR[TVEntryPointLabel2]</label2>
+              <onclick>ActivateWindow(1120)</onclick>
             </item>
             <item id="13" description="Use artist view">
               <visible>Skin.HasSetting(ArtistView)</visible>

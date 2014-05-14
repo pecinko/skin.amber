@@ -83,6 +83,19 @@
     <value condition="StringCompare(Skin.String(movie_entries),files)">$LOCALIZE[744]</value>
     <value condition="StringCompare(Skin.String(movie_entries),library)">$LOCALIZE[15100]</value>
   </variable>
+  <variable name="TVEntryPoint" description="Action for TV home button">
+    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Path)]</value>
+	<value condition="StringCompare(Skin.String(tv_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
+    <value condition="StringCompare(Skin.String(tv_entries),files)">ActivateWindow(Videos,Files,return)</value>
+    <value condition="StringCompare(Skin.String(tv_entries),library)">ActivateWindow(Videos,TVShows,return)</value>
+    <value>ActivateWindow(VideoLibrary,TVShowTitles,return)</value>
+  </variable>
+  <variable name="TVEntryPointLabel2" description="Label2 for skin settings TV function item">
+    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Label)]</value>
+	<value condition="StringCompare(Skin.String(tv_entries),playlists)">$LOCALIZE[136]</value>
+    <value condition="StringCompare(Skin.String(tv_entries),files)">$LOCALIZE[744]</value>
+    <value condition="StringCompare(Skin.String(tv_entries),library)">$LOCALIZE[15100]</value>
+  </variable>
   <variable name="MusicPlayingFanartLabel2" description="Label2 for music playing FA">
     <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
     <value>$LOCALIZE[13113]</value>

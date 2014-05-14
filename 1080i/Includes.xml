@@ -9,6 +9,7 @@
 		_1117 ShelfCustomizer
 		_1118 Custom_FullscreenMusic * start fullscreen audio playback
 		_1119 CustomAddons * browse addons united under the same roof
+		_1115 CustomTVHomeButton.xml * define tv entry point
 		_50 Custom_Debug dialog * my favourite one
 
    -->
@@ -821,7 +822,7 @@
     <item id="4" description="MyMovies">
       <visible>!Skin.HasSetting(plexbmc)</visible>
       <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
-      <label>$LOCALIZE[20342]</label>
+      <label fallback="20342">$VAR[MovieEntryPointLabel2]</label>
       <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
       <onclick>$VAR[MovieEntryPoint]</onclick>
     </item>
@@ -834,9 +835,9 @@
     <item id="5" description="MyTV">
       <visible>!Skin.HasSetting(plexbmc)</visible>
       <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
-      <label>$LOCALIZE[20343]</label>
+      <label fallback="20343">$VAR[TVEntryPointLabel2]</label>
       <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
-      <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
+      <onclick>$VAR[TVEntryPoint]</onclick>
     </item>
     <item id="26" description="Custom.6">
       <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
@@ -945,7 +946,8 @@
     <item id="2" description="Program apps">
       <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons2)</visible>
       <label>$LOCALIZE[0]</label>
-      <onclick>XBMC.ActivateWindow(Programs,Addons,return)</onclick>
+      <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+	  <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
     </item>
     <item id="3" description="Video apps">
       <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons4)</visible>
