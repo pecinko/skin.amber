@@ -127,11 +127,19 @@
         </control>
             </control>
     </control>
-        <!--<weather on vertical home screen>-->
-        <control type="group">
-            <visible>!IsEmpty(Weather.Plugin) + Skin.HasSetting(VerticalHome)</visible>
+        <control type="group" description="Weather Info">
+			<posx>1500</posx>
+			<posy>60</posy>
+			<visible>!IsEmpty(Weather.Plugin) + Skin.HasSetting(VerticalHome) + Container(300).HasFocus(15)</visible>
             <include>WeatherAni0</include>
-            <control type="image">
+            <control type="image" description="BG">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>414</width>
+                <height>84</height>
+                <texture border="6">img/BlackRounded.png</texture>
+            </control>
+			<control type="image">
                 <description>Weather image</description>
                 <posx>20</posx>
                 <posy>0</posy>
@@ -150,7 +158,6 @@
                 <aligny>center</aligny>
                 <font>RSS</font>
                 <textcolor>Orange</textcolor>
-                <shadowcolor>black</shadowcolor>
                 <label>$INFO[Window(Weather).Property(Location)]</label>
             </control>
             <control type="grouplist">
@@ -167,9 +174,7 @@
                     <height>20</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>details</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <font>Details</font>
                     <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
                 </control>
                 <control type="label">
@@ -179,19 +184,16 @@
                     <font>rss</font>
                     <aligny>center</aligny>
                     <label>$INFO[System.TemperatureUnits]</label>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
                     <visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
                 </control>
                 <control type="label">
                     <description>Conditions Label</description>
                     <width>500</width>
-                    <height>22</height>
-                    <font>font10</font>
+                    <height>28</height>
+                    <font>ItemCount</font>
                     <aligny>center</aligny>
-                    <label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
-                    <textcolor>grey2</textcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <label>$INFO[Window(Weather).Property(Current.Condition),    ]</label>
+                    
                 </control>
             </control>
         </control>
