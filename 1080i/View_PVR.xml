@@ -430,7 +430,7 @@
 		<top>14</top>
 		<width>33</width>
 		<height>33</height>
-		<texture>img/OverlayStripe.png</texture>
+		<texture>OverlayInProgress.png</texture>
 		<visible>ListItem.IsResumable</visible>
 	</control>
         </itemlayout>
@@ -490,7 +490,7 @@
 		<top>14</top>
 		<width>33</width>
 		<height>33</height>
-		<texture>img/OverlayStripe.png</texture>
+		<texture>OverlayInProgress.png</texture>
 		<visible>ListItem.IsResumable</visible>
 	</control>
         </focusedlayout>
