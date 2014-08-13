@@ -415,6 +415,24 @@
             <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Date]</label>
           </control>
+	<control type="image">
+		<left>890</left>
+		<top>14</top>
+                <posx>9</posx>
+                <posy>9</posy>
+		<width>33</width>
+		<height>33</height>
+		<texture>$INFO[ListItem.Overlay]</texture>
+		<visible>!ListItem.IsResumable</visible>
+	</control>
+	<control type="image">
+		<left>890</left>
+		<top>14</top>
+		<width>33</width>
+		<height>33</height>
+		<texture>OverlayInProgress.png</texture>
+		<visible>ListItem.IsResumable</visible>
+	</control>
         </itemlayout>
         <focusedlayout height="99">
           <control type="image">
@@ -459,6 +477,22 @@
             <textcolor>Label2</textcolor>
             <label>$INFO[ListItem.Date]</label>
           </control>
+	<control type="image">
+		<left>890</left>
+		<top>14</top>
+		<width>33</width>
+		<height>33</height>
+		<texture>$INFO[ListItem.Overlay]</texture>
+		<visible>!ListItem.IsResumable</visible>
+	</control>
+	<control type="image">
+		<left>890</left>
+		<top>14</top>
+		<width>33</width>
+		<height>33</height>
+		<texture>OverlayInProgress.png</texture>
+		<visible>ListItem.IsResumable</visible>
+	</control>
         </focusedlayout>
       </control>
     </control>
