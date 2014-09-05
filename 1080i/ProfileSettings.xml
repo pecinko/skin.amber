@@ -15,7 +15,8 @@
         <height>660</height>
         <texture border="0,40,0,40">dialogs/SetContentBG.png</texture>
       </control>
-      <control type="label" id="1000" description="Profile name">
+      <control type="label" id="2">
+        <description>header label</description>
         <posx>0</posx>
         <posy>50</posy>
         <width>741</width>
@@ -23,7 +24,7 @@
         <align>center</align>
         <textcolor>Orange</textcolor>
       </control>
-      <control type="label" id="1001" description="Profile Directory">
+      <control type="label" id="103" description="Profile Directory">
         <posx>0</posx>
         <posy>90</posy>
         <width>741</width>
@@ -82,7 +83,7 @@
         <texture>unknown-user.png</texture>
         <aspectratio>scale</aspectratio>
       </control>
-      <control type="image" id="2" description="Profile image">
+      <control type="image" id="101" description="Profile image">
         <posx>753</posx>
         <posy>149</posy>
         <width>240</width>

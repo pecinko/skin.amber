@@ -92,10 +92,10 @@
             </control>
             <control type="label">
                 <description>Is Recording Header label</description>
-                <left>1385</left>
+                <left>1185</left>
                 <top>170</top>
                 <height>55</height>
-                <width>310</width>
+                <width>510</width>
                 <label>$LOCALIZE[19158]</label>
                 <textcolor>Orange</textcolor>
                 <align>right</align>
@@ -213,10 +213,10 @@
             </control>
             <control type="label">
                 <description>Is Recording Header label</description>
-                <left>1385</left>
+                <left>1185</left>
                 <top>70</top>
                 <height>55</height>
-                <width>310</width>
+                <width>510</width>
                 <label>$LOCALIZE[19158]</label>
                 <textcolor>Orange</textcolor>
                 <align>right</align>
@@ -251,7 +251,8 @@
       <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
     </control>
     <control type="label" description="Label">
-      <visible>Control.HasFocus(111)</visible>
+      <left>0</left>
+	  <visible>Control.HasFocus(111)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(111).ListItem.Label]</label>

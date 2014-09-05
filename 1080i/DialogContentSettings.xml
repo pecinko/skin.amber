@@ -34,7 +34,7 @@
         <label>$LOCALIZE[20344]</label>
         <textoffsetx>30</textoffsetx>
       </control>
-      <control type="spincontrolex" id="3">
+      <control type="spincontrolex" id="20">
         <description>Content Picker</description>
         <posx>-230</posx>
         <posy>57</posy>
@@ -75,7 +75,7 @@
         <font>SetContent</font>
         <textoffsetx>30</textoffsetx>
       </control>
-      <control type="list" id="4" description="Scrapers">
+      <control type="list" id="21" description="Scrapers">
         <posx>681</posx>
         <posy>120</posy>
         <width>354</width>
@@ -127,7 +127,7 @@
           <bordertexture border="3">thumbs/ThumbBorder3.png</bordertexture>
           <bordersize>1</bordersize>
         </control>
-        <control type="button" id="6">
+        <control type="button" id="22">
           <description>settings button</description>
           <posx>1000</posx>
           <posy>237</posy>

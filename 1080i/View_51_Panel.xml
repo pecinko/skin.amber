@@ -21,14 +21,14 @@
   <include name="View_51_Panel">
     <control type="image" description="fa overlay">
         <visible>Control.IsVisible(51)</visible>
-		<include>VignetteFade</include>
-		<posx>0</posx>
+    <include>VignetteFade</include>
+    <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
         <height>1080</height>
         <texture>common/Vignette.png</texture>
       </control>
-	<control type="group" description="Content">
+  <control type="group" description="Content">
       <visible>Control.IsVisible(51)</visible>
       <include>ContentFade</include>
       <control type="panel" id="51" description="Grid">
@@ -48,11 +48,11 @@
           <itemlayout condition="Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)" height="350" width="290">
             <control type="image">
               <include>MoviePanelThumbDimensions</include>
-    		  <include>PosterThumbBG</include>
-	        </control>
+          <include>PosterThumbBG</include>
+          </control>
             <control type="image">
               <include>MoviePanelThumbDimensions</include>
-			  <include>PosterThumb</include>
+        <include>PosterThumb</include>
             </control>
             <control type="image">
               <posx>190</posx>
@@ -65,11 +65,11 @@
           <focusedlayout condition="Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)" height="350" width="290">
             <control type="image">
               <include>MoviePanelThumbDimensions</include>
-    		  <include>PosterThumbFO</include>
-	        </control>
+          <include>PosterThumbFO</include>
+          </control>
             <control type="image">
               <include>MoviePanelThumbDimensions</include>
-			  <include>PosterThumb</include>
+        <include>PosterThumb</include>
             </control>
             <control type="image">
               <posx>190</posx>
@@ -89,7 +89,7 @@
               <include>SquareThumb</include>
             </control>
             <control type="label">
-              <posx>145</posx>
+              <posx>10</posx>
               <posy>312</posy>
               <width>270</width>
               <height>40</height>
@@ -109,7 +109,7 @@
               <include>SquareThumb</include>
             </control>
             <control type="label">
-              <posx>145</posx>
+              <posx>10</posx>
               <posy>312</posy>
               <width>290</width>
               <height>40</height>
@@ -121,8 +121,8 @@
           </focusedlayout>
           <itemlayout condition="![container.content(addons) | Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)]" height="350" width="386">
             <control type="group">
-			<posy>-10</posy>
-			<control type="image">
+      <posy>-10</posy>
+      <control type="image">
               <include>EpisodePanelThumbDimensions</include>
               <include>EpisodeThumbBG</include>
             </control>
@@ -131,7 +131,7 @@
               <include>EpisodeThumb</include>
             </control>
             </control>
-			<control type="group">
+      <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
               <posy>209</posy>
               <control type="image">
@@ -142,7 +142,7 @@
                 <texture>img/OverlayStripe.png</texture>
               </control>
               <control type="label">
-                <posx>30</posx>
+                <posx>22</posx>
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
@@ -156,19 +156,19 @@
                 <aspectratio>keep</aspectratio>
               </control>
             </control>
-			<control type="image" description="Label2 BG">
-				<posx>6</posx>
-				<posy>286</posy>
-				<width>348</width>
-				<height>54</height>
-				<texture>img/OverlayStripe.png</texture>
-			  </control>
+      <control type="image" description="Label2 BG">
+        <posx>6</posx>
+        <posy>286</posy>
+        <width>348</width>
+        <height>54</height>
+        <texture>img/OverlayStripe.png</texture>
+        </control>
             <control type="label">
-              <posx>180</posx>
+              <posx>9</posx>
               <posy>300</posy>
               <width>330</width>
               <height>30</height>
-			  <scroll>false</scroll>
+        <scroll>false</scroll>
               <font>ListDetails</font>
               <align>center</align>
               <label>$INFO[ListItem.Label]</label>
@@ -176,8 +176,8 @@
           </itemlayout>
           <focusedlayout condition="![container.content(addons) | Container.content(MusicVideos) | Container.Content(Movies) | container.content(TVshows) | container.content(seasons)]" height="350" width="386">
             <control type="group">
-			<posy>-10</posy>
-			<control type="image">
+      <posy>-10</posy>
+      <control type="image">
               <include>EpisodePanelThumbDimensions</include>
               <include>EpisodeThumbFO</include>
             </control>
@@ -185,7 +185,7 @@
               <include>EpisodePanelThumbDimensions</include>
               <include>EpisodeThumb</include>
             </control>
-			</control>
+      </control>
             <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
               <posy>209</posy>
@@ -197,7 +197,7 @@
                 <texture>img/OverlayStripe.png</texture>
               </control>
               <control type="label">
-                <posx>30</posx>
+                <posx>22</posx>
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
@@ -212,47 +212,47 @@
                 <aspectratio>keep</aspectratio>
               </control>
             </control>
-			<control type="image" description="Label2 BG">
-				<posx>6</posx>
-				<posy>286</posy>
-				<width>348</width>
-				<height>54</height>
-				<texture>img/OverlayStripe.png</texture>
-			  </control>
+      <control type="image" description="Label2 BG">
+        <posx>6</posx>
+        <posy>286</posy>
+        <width>348</width>
+        <height>54</height>
+        <texture>img/OverlayStripe.png</texture>
+        </control>
             <control type="label">
-              <posx>180</posx>
+              <posx>9</posx>
               <posy>300</posy>
               <width>330</width>
               <height>30</height>
-			  <font>ListDetails</font>
+        <font>ListDetails</font>
               <align>center</align>
-			  <textcolor>Orange</textcolor>
+        <textcolor>Orange</textcolor>
               <label>$INFO[ListItem.Label]</label>
             </control>
           </focusedlayout>
         </control>
-	  <control type="group" description="51 MediaInfo">
+    <control type="group" description="51 MediaInfo">
         <visible>Window.IsActive(MyVideoNav.xml)</visible>
-		<posx>30</posx>
+    <posx>30</posx>
         <posy>375</posy>
         <control type="label" description="Title Label">
           <visible>!Container.Content(episodes)</visible>
-		  <posy>0</posy>
+      <posy>0</posy>
           <width>630</width>
           <height>60</height>
           <font>InfoTitle</font>
           <textcolor>Orange</textcolor>
           <label>$INFO[ListItem.Label]</label>
         </control>
-		<control type="label" description="Title Label">
+    <control type="label" description="Title Label">
           <visible>Container.Content(episodes)</visible>
-		  <posy>24</posy>
+      <posy>24</posy>
           <width>630</width>
           <height>60</height>
           <font>InfoTitle</font>
           <textcolor>Orange</textcolor>
           <label>$INFO[ListItem.Label]</label>
-		  <wrapmultiline>true</wrapmultiline>
+      <wrapmultiline>true</wrapmultiline>
         </control>
         <control type="label" description="Details">
           <posy>87</posy>
@@ -268,28 +268,28 @@
           <font>InfoDetails</font>
           <label>$VAR[Details]</label>
         </control>
-		<control type="textbox" description="Plot51">
+    <control type="textbox" description="Plot51">
           <visible>Container.content(seasons) | Container.Content(Tvshows)</visible>
-		  <posx>0</posx>
+      <posx>0</posx>
           <posy>191</posy>
           <width>630</width>
           <height>462</height>
           <label>$VAR[Plots]</label>
         </control>
-		<control type="textbox" description="Plot51">
+    <control type="textbox" description="Plot51">
           <visible>![container.content(seasons) | Container.Content(Tvshows)]</visible>
-		  <posx>0</posx>
+      <posx>0</posx>
           <posy>191</posy>
           <width>630</width>
           <height>382</height>
           <label>$VAR[Plots]</label>
         </control>
         <control type="group" description="Flags">
-			<animation effect="slide" start="0,0" end="0,9" time="0" reversible="true" condition="![container.Content(Movies) | container.Content(MusicVideos)]">Conditional</animation>
-			<posx>0</posx>
-			<posy>615</posy>
-			<include>MediaFlags</include>
-			</control>
+      <animation effect="slide" start="0,0" end="0,9" time="0" reversible="true" condition="![container.Content(Movies) | container.Content(MusicVideos)]">Conditional</animation>
+      <posx>0</posx>
+      <posy>615</posy>
+      <include>MediaFlags</include>
+      </control>
         <control type="label" description="Addon version">
           <visible>Container.Content(addons)</visible>
           <posy>624</posy>
@@ -299,7 +299,7 @@
           <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
         </control>
       </control>
-	  <control type="scrollbar" id="60">
+    <control type="scrollbar" id="60">
         <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
         <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
         <posx>20r</posx>
@@ -360,7 +360,16 @@
             <height>288</height>
             <include>SquareThumb</include>
           </control>
-        </itemlayout>
+           <control type="label">
+            <posx>0</posx>
+            <posy>309</posy>
+            <width>360</width>
+            <height>45</height>
+            <font>Details</font>
+            <align>center</align>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+       </itemlayout>
         <focusedlayout height="360" width="360">
           <control type="image">
             <posx>36</posx>
@@ -377,7 +386,7 @@
             <include>SquareThumb</include>
           </control>
           <control type="label">
-            <posx>180</posx>
+            <posx>0</posx>
             <posy>309</posy>
             <width>360</width>
             <height>45</height>

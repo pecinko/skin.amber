@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.amber" version="1.6.1" name="Amber" provider-name="Pecinko">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.amber" version="1.7.0" name="Amber" provider-name="Pecinko">
   <requires>
-    <import addon="xbmc.gui" version="5.0.1"/>
+    <import addon="xbmc.gui" version="5.3.0"/>
     <import addon="script.favourites" version="3.2.0"/>
-	<import addon="service.skin.widgets" version="0.0.27"/>
+    <import addon="service.skin.widgets" version="0.0.27"/>
   </requires>
   <extension
     point="xbmc.gui.skin"

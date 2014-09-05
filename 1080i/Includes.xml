@@ -2,15 +2,15 @@
 <includes>
   <!--
 
-	  CUSTOM WINDOWS LIST
-		_1114 Quit * define Quit menu
-		_1115 CustomMoviesHomeButton.xml * define movies entry point
-		_1116 MenuCustomizer
-		_1117 ShelfCustomizer
-		_1118 Custom_FullscreenMusic * start fullscreen audio playback
-		_1119 CustomAddons * browse addons united under the same roof
-		_1115 CustomTVHomeButton.xml * define tv entry point
-		_50 Custom_Debug dialog * my favourite one
+    CUSTOM WINDOWS LIST
+    _1114 Quit * define Quit menu
+    _1115 CustomMoviesHomeButton.xml * define movies entry point
+    _1116 MenuCustomizer
+    _1117 ShelfCustomizer
+    _1118 Custom_FullscreenMusic * start fullscreen audio playback
+    _1119 CustomAddons * browse addons united under the same roof
+    _1115 CustomTVHomeButton.xml * define tv entry point
+    _50 Custom_Debug dialog * my favourite one
 
    -->
   <include file="Includes_Variables.xml" />
@@ -27,16 +27,17 @@
   <include file="View_55_BigPanel.xml" />
   <include file="View_56_BannerList.xml" />
   <include file="View_57_58_59_Showcase.xml" />
-  <include file="View_PVR.xml" />
+  <include file="IncludesPVR.xml" /> 
+  <include file="ViewsPVRGuide.xml" />
   <include name="ContentFade">
-  	<animation effect="fade" start="0" end="100" time="500" delay="0">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="200" delay="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="500" delay="0">Visible</animation>
-      <animation effect="fade" start="100" end="0" time="200" delay="0">Hidden</animation>
+    <animation effect="fade" start="0" end="100" time="500" delay="0">WindowOpen</animation>
+    <animation effect="fade" start="100" end="0" time="200" delay="0">WindowClose</animation>
+    <animation effect="fade" start="0" end="100" time="500" delay="0">Visible</animation>
+    <animation effect="fade" start="100" end="0" time="200" delay="0">Hidden</animation>
   </include>
   <include name="VignetteFade">
-  	<animation effect="fade" start="0" end="100" time="500" delay="0" condition="Window.Previous(home)">Conditional</animation>
-      <animation effect="fade" start="100" end="0" time="200" delay="0" condition="Window.Next(home)">Conditional</animation>
+    <animation effect="fade" start="0" end="100" time="500" delay="0" condition="Window.Previous(home)">Conditional</animation>
+    <animation effect="fade" start="100" end="0" time="200" delay="0" condition="Window.Next(home)">Conditional</animation>
   </include>
   <include name="VisibleFadeEffect">
     <animation effect="fade" time="200">Visible</animation>
@@ -143,7 +144,7 @@
   <include name="Time">
     <control type="group">
       <posy>0</posy>
-	  <!--<visible>![[Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]]</visible>-->
+      <!--<visible>![[Control.IsVisible(58) + Skin.HasSetting(Music_Info)] | [Control.IsVisible(57) + Skin.HasSetting(Episodes_Info)] | [Control.IsVisible(59) + Skin.HasSetting(Posters_Info)]]</visible>-->
       <control type="image">
         <visible>![Window.IsActive(home) | Window.IsActive(weather)]</visible>
         <include>VisibleFadeEffect</include>
@@ -276,9 +277,9 @@
         <texture border="3">img/WhiteRoundedT.png</texture>
       </control>
       <control type="label" description="l2">
-        <posx>54r</posx>
+        <posx>84r</posx>
         <height>72</height>
-        <width>100</width>
+        <width>60</width>
         <font>ListDetails</font>
         <align>center</align>
         <textcolor>Orange</textcolor>
@@ -313,12 +314,12 @@
   <include name="EpisodeThumbBG">
     <bordersize>-6</bordersize>
     <texture border="8">thumbs/EpisodeBG_NF2.png</texture>
-	<!--<texture border="8">img/WhiteRoundedT.png</texture>-->
+    <!--<texture border="8">img/WhiteRoundedT.png</texture>-->
   </include>
   <include name="EpisodeThumbFO">
     <bordersize>-6</bordersize>
     <texture border="8">thumbs/EpisodeBG_FO2.png</texture>
-	<!--<texture border="8">img/WhiteRoundedFO.png</texture>-->
+    <!--<texture border="8">img/WhiteRoundedFO.png</texture>-->
   </include>
   <!--<include name="SquareThumb">
     <texture background="true" diffuse="thumbs/SquareDiffuse.png">$VAR[Thumbs]</texture>
@@ -334,17 +335,18 @@
   </include>-->
   <include name="SquareThumb">
     <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
-    <aspectratio aligny="top">stretch</aspectratio>
+    <aspectratio aligny="top">scale</aspectratio>
   </include>
   <include name="SquareThumbBG">
     <bordersize>-6</bordersize>
     <!--<texture>thumbs/PosterBG_NF.png</texture>-->
-	<texture border="8">thumbs/SquareBG_NF2.png</texture>
+    <texture border="8">thumbs/SquareBG_NF2.png</texture>
   </include>
   <include name="SquareThumbFO">
     <bordersize>-6</bordersize>
     <!--<texture>thumbs/PosterBG_FO.png</texture>-->
-	<texture border="8">thumbs/SquareBG_FO2.png</texture>
+    <texture border="8">thumbs/SquareBG_FO2.png</texture>
+
   </include>
   <!--<include name="PosterThumb">
     <texture background="true" diffuse="thumbs/PosterDiffuse.png">$VAR[Thumbs]</texture>
@@ -364,7 +366,7 @@
   </include>
   <include name="PosterThumbBG">
     <bordersize>-6</bordersize>
-   <texture border="8">thumbs/PosterBG_NF2.png</texture>
+    <texture border="8">thumbs/PosterBG_NF2.png</texture>
   </include>
   <include name="PosterThumbFO">
     <bordersize>-6</bordersize>
@@ -762,12 +764,12 @@
   <include name="Pictures_Art">
     <control type="multiimage">
       <visible>![Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55)]</visible>
-	  <include>BG.Defaults</include>
+      <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Pictures.Art]</imagepath>
     </control>
-	</include>
-    <include name="Fanart_Art">
-	<control type="multiimage" description="FA fullscreen">
+  </include>
+  <include name="Fanart_Art">
+    <control type="multiimage" description="FA fullscreen">
       <visible>![Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(53)]</visible>
       <include>BG.Defaults</include>
       <imagepath background="true">$VAR[Fanart.Art]</imagepath>
@@ -881,11 +883,17 @@
       <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
       <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
     </item>
-    <item id="300" description="PVR">
-      <visible>System.GetBool(pvrmanager.enabled)</visible>
+    <item id="300" description="TV">
+      <visible>PVR.HasTVChannels</visible>
       <label>$LOCALIZE[31500]</label>
       <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
-      <onclick>ActivateWindowAndFocus(PVR)</onclick>
+      <onclick>ActivateWindowAndFocus(TVChannels)</onclick>
+    </item>
+    <item id="301" description="Radio">
+      <visible>PVR.HasRadioChannels</visible>
+      <label>$LOCALIZE[31509]</label>
+      <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
+      <onclick>ActivateWindowAndFocus(RadioChannels)</onclick>
     </item>
     <item id="7" description="Favorites">
       <visible>!Skin.HasSetting(Favourites.Hide)</visible>
@@ -947,7 +955,7 @@
       <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons2)</visible>
       <label>$LOCALIZE[0]</label>
       <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
-	  <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+      <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
     </item>
     <item id="3" description="Video apps">
       <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons4)</visible>
@@ -1135,31 +1143,46 @@
       <label>$LOCALIZE[20183]</label>
       <onclick>XBMC.ReloadSkin()</onclick>
     </item>
-	<item id="100" description="Tv Channels">
-       <visible>Container(300).HasFocus(300)</visible>
-       <label>19023</label>
-     <onclick>ActivateWindowAndFocus(PVR, 32, 0, 11, 0)</onclick>
-     </item>
- 	    <item id="101" description="Radio Channels">
-       <visible>Container(300).HasFocus(300)</visible>
-       <label>19024</label>
-      <onclick>ActivateWindowAndFocus(PVR, 33, 0, 12, 0)</onclick>
-     </item>
- 	    <item id="102" description="EPG Timeline">
-       <visible>Container(300).HasFocus(300)</visible>
-       <label>$LOCALIZE[19069]</label>
-     <onclick>ActivateWindowAndFocus(PVR, 31,0, 10,1)</onclick>
-     </item>
- 	    <item id="103" description="Recordings">
-       <visible>Container(300).HasFocus(300)</visible>
-       <label>19163</label>
-       <onclick>ActivateWindowAndFocus(PVR, 34, 0, 13, 0)</onclick>
-     </item>
- 	    <item id="104" description="Timer">
-       <visible>Container(300).HasFocus(300)</visible>
-       <label>19040</label>
-       <onclick>ActivateWindowAndFocus(PVR, 35, 0, 14, 0)</onclick>
-     </item>
+    <item id="100" description="TV Channels">
+      <visible>Container(300).HasFocus(300)</visible>
+      <label>19019</label>
+      <onclick>ActivateWindowAndFocus(TVChannels)</onclick>
+    </item>
+    <item id="101" description="TV Guide">
+      <visible>Container(300).HasFocus(300)</visible>
+      <label>22020</label>
+      <onclick>ActivateWindowAndFocus(TVGuide)</onclick>
+    </item>
+    <item id="102" description="TV Recordings">
+      <visible>Container(300).HasFocus(300)</visible>
+      <label>19163</label>
+      <onclick>ActivateWindowAndFocus(TVRecordings)</onclick>
+    </item>
+    <item id="103" description="TV Timer">
+      <visible>Container(300).HasFocus(300)</visible>
+      <label>19040</label>
+      <onclick>ActivateWindowAndFocus(TVTimers)</onclick>
+    </item>
+    <item id="108" description="Radio Channels">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>19024</label>
+      <onclick>ActivateWindowAndFocus(RadioChannels)</onclick>
+    </item>
+    <item id="109" description="Radio Guide">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>22020</label>
+      <onclick>ActivateWindowAndFocus(RadioGuide)</onclick>
+    </item>
+    <item id="110" description="Radio Recordings">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>19163</label>
+      <onclick>ActivateWindowAndFocus(TVRecordings)</onclick>
+    </item>
+    <item id="111" description="Radio Timer">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>19040</label>
+      <onclick>ActivateWindowAndFocus(TVTimers)</onclick>
+    </item>
     <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
   </include>
   <include name="Library_Count">
@@ -1581,52 +1604,52 @@
     </control>
   </include>
   <include name="MediaFlags">
-  	<control type="grouplist" description="Flags">
-          <visible>!ListItem.IsFolder</visible>
-          <width min="90" max="650">auto</width>
-          <height>120</height>
-          <itemgap>30</itemgap>
-          <orientation>horizontal</orientation>
-          <align>left</align>
-          <aligny>bottom</aligny>
-          <control type="image">
-            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
-            <height>45</height>
-            <width>90</width>
-            <bordersize>3</bordersize>
-            <aspectratio>keep</aspectratio>
-            <colordiffuse>Silver</colordiffuse>
-            <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
-          </control>
-          <control type="image">
-            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-            <height>45</height>
-            <width>90</width>
-            <bordersize>3</bordersize>
-            <aspectratio>keep</aspectratio>
-            <colordiffuse>Silver</colordiffuse>
-            <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
-          </control>
-          <control type="image">
-            <visible>!IsEmpty(ListItem.VideoCodec)</visible>
-            <height>45</height>
-            <width>90</width>
-            <bordersize>3</bordersize>
-            <aspectratio>keep</aspectratio>
-            <colordiffuse>Silver</colordiffuse>
-            <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
-          </control>
-          <control type="image">
-            <visible>!IsEmpty(ListItem.VideoResolution) + IntegerGreaterThan(ListItem.VideoResolution,710)</visible>
-            <height>45</height>
-            <width>90</width>
-            <posx>0</posx>
-            <posy>0</posy>
-            <bordersize>3</bordersize>
-            <aspectratio>keep</aspectratio>
-            <colordiffuse>Silver</colordiffuse>
-            <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
-          </control>
-        </control>
+    <control type="grouplist" description="Flags">
+      <visible>!ListItem.IsFolder</visible>
+      <width min="90" max="650">auto</width>
+      <height>120</height>
+      <itemgap>30</itemgap>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <aligny>bottom</aligny>
+      <control type="image">
+        <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+        <height>45</height>
+        <width>90</width>
+        <bordersize>3</bordersize>
+        <aspectratio>keep</aspectratio>
+        <colordiffuse>Silver</colordiffuse>
+        <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+      </control>
+      <control type="image">
+        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+        <height>45</height>
+        <width>90</width>
+        <bordersize>3</bordersize>
+        <aspectratio>keep</aspectratio>
+        <colordiffuse>Silver</colordiffuse>
+        <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
+      </control>
+      <control type="image">
+        <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+        <height>45</height>
+        <width>90</width>
+        <bordersize>3</bordersize>
+        <aspectratio>keep</aspectratio>
+        <colordiffuse>Silver</colordiffuse>
+        <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+      </control>
+      <control type="image">
+        <visible>!IsEmpty(ListItem.VideoResolution) + IntegerGreaterThan(ListItem.VideoResolution,710)</visible>
+        <height>45</height>
+        <width>90</width>
+        <posx>0</posx>
+        <posy>0</posy>
+        <bordersize>3</bordersize>
+        <aspectratio>keep</aspectratio>
+        <colordiffuse>Silver</colordiffuse>
+        <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+      </control>
+    </control>
   </include>
 </includes>

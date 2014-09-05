@@ -49,7 +49,7 @@
       <control type="spincontrolex" id="9">
         <textoffsetx>30</textoffsetx>
       </control>
-      <control type="sliderex" id="10">
+      <control type="sliderex" id="13">
         <textoffsetx>30</textoffsetx>
       </control>
       <control type="group" id="9000">

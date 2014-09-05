@@ -20,7 +20,7 @@
         <height>61</height>
         <font>Logo</font>
         <align>center</align>
-        <label>XBMC</label>
+        <label>Kodi</label>
       </control>
       <control type="label" id="2" description="Category label">
         <posx>650</posx>
@@ -60,15 +60,15 @@
         <pagecontrol>60</pagecontrol>
         <orientation>vertical</orientation>
       </control>
-	  <control type="textbox" id="6" description="Settings description">
-				<posx>420</posx>
-        		<posy>890</posy>
-        		<width>1407</width>
-        		<height>130</height>
-				<align>justify</align>
-				<textcolor>Orange</textcolor>
-				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-			</control>
+      <control type="textbox" id="6" description="Settings description">
+        <posx>420</posx>
+        <posy>890</posy>
+        <width>1407</width>
+        <height>130</height>
+        <align>justify</align>
+        <textcolor>Orange</textcolor>
+        <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+      </control>
       <control type="button" id="7" description="Button">
         <width>1467</width>
         <textoffsetx>42</textoffsetx>
@@ -81,15 +81,20 @@
         <width>1467</width>
         <textoffsetx>42</textoffsetx>
       </control>
+      <control type="sliderex" id="13">
+        <description>Default Slider</description>
+        <width>1467</width>
+        <textoffsetx>42</textoffsetx>
+      </control>
       <control type="label" description="Settings level label">
         <posx>66</posx>
         <posy>900</posy>
         <width>321</width>
         <height>60</height>
         <textoffsetx>10</textoffsetx>
-		<label>$LOCALIZE[31049]</label>
+        <label>$LOCALIZE[31049]</label>
       </control>
-	  <control type="button" id="20" description="Settings level button">
+      <control type="button" id="20" description="Settings level button">
         <posx>66</posx>
         <posy>960</posy>
         <width>321</width>
@@ -100,7 +105,7 @@
         <ondown>noop</ondown>
         <textoffsetx>10</textoffsetx>
         <textcolor>Orange</textcolor>
-		<focusedcolor>Orange</focusedcolor>
+        <focusedcolor>Orange</focusedcolor>
         <onclick>SettingsLevelChange</onclick>
       </control>
       <control type="scrollbar" id="60">
