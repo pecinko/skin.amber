@@ -5,7 +5,7 @@
   <onunload>ClearProperty(gallery)</onunload>
   <controls>
     <control type="group" description="fanart">
-	  <include>Fanart_Art</include>
+    <include>Fanart_Art</include>
     </control>
     <include>View_50</include>
     <include>View_51_Panel_Music</include>
@@ -19,12 +19,17 @@
     <control type="group" description="Showcase trigger">
       <animation effect="slide" easing="out" start="0,0" end="0,-90" time="350" delay="0" center="120,350" reversible="true" condition="!IsEmpty(Window.Property(gallery))">Conditional</animation>
       <include>VignetteFade</include>
-	  <include>Time</include>
+    <include>Time</include>
     </control>
     <control type="group" description="Side menu 9000 group">
       <include>9000Commons</include>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>
+         <control type="button" id="2">
+          <description>View As button</description>
+          <include>9000SysButtons</include>
+          <label>-</label>
+        </control>
         <control type="button" id="3" description="Sort">
           <include>9000SysButtons</include>
         </control>
@@ -41,17 +46,12 @@
           <include>9000SysButtons</include>
           <label>$LOCALIZE[589]</label>
         </control>
-		<control type="togglebutton" id="20" description="Library update">
-          <include>9000SysButtons</include>
-          <label>653</label>
-		  <altlabel>13353</altlabel>
-        </control>
         <control type="button" id="697" description="Files">
           <include>9000SysButtons</include>
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
           <onclick>ActivateWindow(MusicFiles,root)</onclick>
         </control>
-		<control type="button" id="698" description="Playlist">
+        <control type="button" id="698" description="Playlist">
           <include>9000SysButtons</include>
           <label>$LOCALIZE[20011]</label>
           <onclick>ActivateWindow(musicplaylist)</onclick>
@@ -62,7 +62,17 @@
           <label>$LOCALIZE[16003]</label>
           <onclick>fullscreen</onclick>
         </control>
-      </control>
+        <control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+          <altlabel>13353</altlabel>
+        </control>
+        <control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+          <altlabel>13353</altlabel>
+        </control>
+     </control>
     </control>
   </controls>
 </window>
