@@ -50,7 +50,7 @@
         <shadowcolor>Black</shadowcolor>
         <reverse>yes</reverse>
       </control>
-      <control type="sliderex" id="10">
+      <control type="sliderex" id="13">
         <align>left</align>
         <shadowcolor>Black</shadowcolor>
         <font>Details</font>
