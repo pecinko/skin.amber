@@ -13,14 +13,14 @@
         <include>Panel_Size</include>
         <texture>dialogs/AddonSettingsBG.png</texture>
       </control>
-      <control type="label" description="XBMC settings">
+      <control type="label" description="Kodi settings">
         <visible>Container(9000).HasFocus(1)</visible>
         <posx>650</posx>
         <posy>117</posy>
         <width>620</width>
         <height>72</height>
         <align>center</align>
-        <label>$LOCALIZE[5] - XBMC</label>
+        <label>$LOCALIZE[5] - Kodi</label>
         <font>InfoTitle</font>
         <textcolor>Orange</textcolor>
       </control>
@@ -83,7 +83,7 @@
         </focusedlayout>
         <content>
           <item id="1">
-            <label>XBMC</label>
+            <label>Kodi</label>
             <onclick>noop</onclick>
           </item>
           <item id="2" description="Options">
@@ -144,7 +144,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -183,7 +183,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -311,7 +311,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -350,7 +350,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -434,15 +434,10 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(Show_Player)</onclick>
             </item>
-            <item id="11" description="Movies entry points">
+            <item id="12" description="Movies entry points">
               <label>$LOCALIZE[31507]</label>
               <label2 fallback="31502">$VAR[MovieEntryPointLabel2]</label2>
               <onclick>ActivateWindow(1115)</onclick>
-            </item>
-			<item id="12" description="TV entry points">
-              <label>$LOCALIZE[31508]</label>
-              <label2 fallback="31499">$VAR[TVEntryPointLabel2]</label2>
-              <onclick>ActivateWindow(1120)</onclick>
             </item>
             <item id="13" description="Use artist view">
               <visible>Skin.HasSetting(ArtistView)</visible>
@@ -549,7 +544,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -576,7 +571,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -946,7 +941,7 @@
                 <label>$LOCALIZE[31110]</label>
               </control>
               <control type="label">
-                <posx>120r</posx>
+                <posx>1070r</posx>
                 <posy>0</posy>
                 <width>960</width>
                 <height>60</height>
@@ -1391,7 +1386,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1420,7 +1415,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1590,7 +1585,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1629,7 +1624,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1720,7 +1715,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1759,7 +1754,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1889,7 +1884,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1928,7 +1923,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -2048,7 +2043,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -2087,7 +2082,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <posx>630r</posx>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>

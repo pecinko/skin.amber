@@ -89,7 +89,7 @@
               <include>SquareThumb</include>
             </control>
             <control type="label">
-              <posx>145</posx>
+              <posx>10</posx>
               <posy>312</posy>
               <width>270</width>
               <height>40</height>
@@ -109,7 +109,7 @@
               <include>SquareThumb</include>
             </control>
             <control type="label">
-              <posx>145</posx>
+              <posx>10</posx>
               <posy>312</posy>
               <width>290</width>
               <height>40</height>
@@ -142,7 +142,7 @@
                 <texture>img/OverlayStripe.png</texture>
               </control>
               <control type="label">
-                <posx>30</posx>
+                <posx>22</posx>
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
@@ -164,7 +164,7 @@
 				<texture>img/OverlayStripe.png</texture>
 			  </control>
             <control type="label">
-              <posx>180</posx>
+              <posx>9</posx>
               <posy>300</posy>
               <width>330</width>
               <height>30</height>
@@ -197,7 +197,7 @@
                 <texture>img/OverlayStripe.png</texture>
               </control>
               <control type="label">
-                <posx>30</posx>
+                <posx>22</posx>
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
@@ -220,7 +220,7 @@
 				<texture>img/OverlayStripe.png</texture>
 			  </control>
             <control type="label">
-              <posx>180</posx>
+              <posx>9</posx>
               <posy>300</posy>
               <width>330</width>
               <height>30</height>
@@ -360,7 +360,16 @@
             <height>288</height>
             <include>SquareThumb</include>
           </control>
-        </itemlayout>
+           <control type="label">
+            <posx>0</posx>
+            <posy>309</posy>
+            <width>360</width>
+            <height>45</height>
+            <font>Details</font>
+            <align>center</align>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+       </itemlayout>
         <focusedlayout height="360" width="360">
           <control type="image">
             <posx>36</posx>
@@ -377,7 +386,7 @@
             <include>SquareThumb</include>
           </control>
           <control type="label">
-            <posx>180</posx>
+            <posx>0</posx>
             <posy>309</posy>
             <width>360</width>
             <height>45</height>
