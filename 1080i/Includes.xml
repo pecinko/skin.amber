@@ -433,32 +433,17 @@
 		<onback>50</onback>
 		<scrolltime>200</scrolltime>
 		<orientation>vertical</orientation>
-		<control type="label" id="9140">
+		<control type="label" id="200">
 			<textcolor>Orange</textcolor>
 			<textoffsetx>10</textoffsetx>
 			<align>left</align>
 			<include>9000ViewButtons</include>
-			<label>$LOCALIZE[582]</label>
+			<label>31015</label>
 		</control>
-		<control type="radiobutton" id="9145" description="View 50">
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(50)</onclick>
-			<selected>Control.IsVisible(50)</selected>
-			<label>$LOCALIZE[535]</label>
-		</control>
-		<control type="radiobutton" id="9146" description="View 56">
-			<visible>Container.Content(TVShows)</visible>
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(56)</onclick>
-			<selected>Control.IsVisible(56)</selected>
-			<label>$LOCALIZE[31965]</label>
-		</control>
-		<control type="radiobutton" id="9147" description="View 52">
-			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(episodes) | container.content(songs) | Container.Content(albums) | Container.Content(artists) | Window.IsActive(MyPics.xml)</visible>
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(52)</onclick>
-			<selected>Control.IsVisible(52)</selected>
-			<label>$LOCALIZE[537]</label>
+		<control type="button" id="2">
+			<description>View As button</description>
+			<include>9000SysButtons</include>
+			<label>-</label>
 		</control>
 		<control type="radiobutton" id="9148" description="View 52 Movies">
 			<visible>Control.IsVisible(52) + Container.Content(Movies)</visible>
@@ -500,24 +485,6 @@
 			<selected>Skin.HasSetting(52_Artists_UseFanart)</selected>
 			<label>- $LOCALIZE[20445]</label>
 		</control>
-		<control type="radiobutton" id="9153" description="View 51">
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(51)</onclick>
-			<selected>Control.IsVisible(51)</selected>
-			<label>$LOCALIZE[31963]</label>
-		</control>
-		<control type="radiobutton" id="9154" description="View 54">
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(54)</onclick>
-			<selected>Control.IsVisible(54)</selected>
-			<label>$LOCALIZE[31962]</label>
-		</control>
-		<control type="radiobutton" id="9155" description="View 53">
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(53)</onclick>
-			<selected>Control.IsVisible(53)</selected>
-			<label>$LOCALIZE[536]</label>
-		</control>
 		<control type="radiobutton" id="9156" description="View 53 Banners">
 			<visible>Control.IsVisible(53) + Container.Content(TVShows)</visible>
 			<font>ListDetails</font>
@@ -534,13 +501,6 @@
 			<selected>Skin.HasSetting(53_BigGrid)</selected>
 			<label>$LOCALIZE[491]</label>
 		</control>
-		<control type="radiobutton" id="9158" description="View 55 BigPanel">
-			<visible>Skin.HasSetting(plexbmc) | !Window.IsActive(MyMusicSongs.xml)</visible>
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(55)</onclick>
-			<selected>Control.IsVisible(55)</selected>
-			<label>$LOCALIZE[31958]</label>
-		</control>
 		<control type="radiobutton" id="9159" description="View 55 with fanart">
 			<visible>Control.IsVisible(55) + [Window.IsActive(MyVideoNav.xml) | Window.IsActive(MyMusicNav.xml)]</visible>
 			<font>ListDetails</font>
@@ -556,13 +516,6 @@
 			<onclick>Skin.ToggleSetting(55_UseBanners)</onclick>
 			<selected>Skin.HasSetting(55_UseBanners)</selected>
 			<label>- $LOCALIZE[31992]</label>
-		</control>
-		<control type="radiobutton" id="9161" description="View 57 EPISODES">
-			<visible>container.content(episodes)</visible>
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(57)</onclick>
-			<selected>Control.IsVisible(57)</selected>
-			<label>$LOCALIZE[20445]</label>
 		</control>
 		<control type="radiobutton" id="9162" description="View 57 Enable gallery for EPISODES">
 			<visible>Control.IsVisible(57) + container.content(episodes)</visible>
@@ -582,13 +535,6 @@
 			<selected>Skin.HasSetting(Episodes_Info)</selected>
 			<label>- $LOCALIZE[31968]</label>
 		</control>
-		<control type="radiobutton" id="9164" description="View 58 SQUARES">
-			<visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(58)</onclick>
-			<selected>Control.IsVisible(58)</selected>
-			<label>$LOCALIZE[20445]</label>
-		</control>
 		<control type="radiobutton" id="9165" description="View 58 Enable gallery for MUSIC">
 			<visible>Control.IsVisible(58) + [container.content(albums) | container.content(artists)]</visible>
 			<font>ListDetails</font>
@@ -606,13 +552,6 @@
 			<onclick>Skin.ToggleSetting(Music_Info)</onclick>
 			<selected>Skin.HasSetting(Music_Info)</selected>
 			<label>- $LOCALIZE[31968]</label>
-		</control>
-		<control type="radiobutton" id="9167" description="View 59 POSTERS">
-			<visible>[[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
-			<include>9000ViewButtons</include>
-			<onclick>Container.SetViewMode(59)</onclick>
-			<selected>Control.IsVisible(59)</selected>
-			<label>$LOCALIZE[20445]</label>
 		</control>
 		<control type="radiobutton" id="9168" description="View 59 Enable gallery for POSTERS">
 			<visible>Control.IsVisible(59) + [[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
@@ -632,6 +571,35 @@
 			<selected>Skin.HasSetting(Posters_Info)</selected>
 			<label>- $LOCALIZE[31968]</label>
 		</control>
+		<control type="togglebutton" id="14" description="Toggle Watched">
+			<include>9000SysButtons</include>
+			<label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
+			<altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
+		</control>
+		<control type="button" id="3" description="Sort">
+			<include>9000SysButtons</include>
+		</control>
+		<control type="togglebutton" id="4" description="Sort direction">
+			<include>9000SysButtons</include>
+			<label>$LOCALIZE[21429]:  $LOCALIZE[21430]</label>
+			<altlabel>$LOCALIZE[21429]:  $LOCALIZE[21431]</altlabel>
+		</control>
+		<control type="edit" id="19">
+			<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+			<description>Filter</description>
+			<textwidth>230</textwidth>
+			<include>9000SysButtons</include>
+			<label>587</label>
+		</control>
+		<control type="radiobutton" id="98">
+			<visible>Container.CanFilterAdvanced</visible>
+			<description>Filter</description>
+			<include>9000SysButtons</include>
+			<selected>Container.Filtered</selected>
+			<onclick>right</onclick>
+			<onclick>Filter</onclick>
+			<label>587</label>
+		</control>
 		<control type="label" id="9180" description="Spacer">
 			<height>36</height>
 			<textcolor>Orange</textcolor>
@@ -645,7 +613,7 @@
 			<align>left</align>
 			<textoffsetx>10</textoffsetx>
 			<include>9000ViewButtons</include>
-			<label>$LOCALIZE[581]</label>
+			<label>31016</label>
 		</control>
 	</include>
 	<include name="KeyboardButtons">
