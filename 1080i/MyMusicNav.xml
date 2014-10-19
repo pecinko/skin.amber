@@ -25,6 +25,11 @@
       <include>9000Commons</include>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>
+ 				<control type="button" id="2">
+					<description>View As button</description>
+          <include>9000SysButtons</include>
+					<label>-</label>
+				</control>
         <control type="button" id="3" description="Sort">
           <include>9000SysButtons</include>
         </control>
@@ -40,11 +45,6 @@
         <control type="radiobutton" id="16" description="PartyMode">
           <include>9000SysButtons</include>
           <label>$LOCALIZE[589]</label>
-        </control>
-		<control type="togglebutton" id="20" description="Library update">
-          <include>9000SysButtons</include>
-          <label>653</label>
-		  <altlabel>13353</altlabel>
         </control>
         <control type="button" id="697" description="Files">
           <include>9000SysButtons</include>
@@ -62,7 +62,17 @@
           <label>$LOCALIZE[16003]</label>
           <onclick>fullscreen</onclick>
         </control>
-      </control>
+ 		<control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+		  <altlabel>13353</altlabel>
+        </control>
+		<control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+		  <altlabel>13353</altlabel>
+        </control>
+     </control>
     </control>
   </controls>
 </window>

@@ -1,3 +1,11 @@
+1.7.1
+Added support for Advanced filtering
+Fixed menu alignement issue on Horizontal menu screen.
+
+1.7.0
+Support for Kodi 14.0\Helix Alpha 3, will not work on previous versions.
+Includes new PVR windows and international keyboard support
+
 1.6.1
 Fix opening add ons on Android
 Add possibility to define custom entry point for TV Shows

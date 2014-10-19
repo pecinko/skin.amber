@@ -27,28 +27,9 @@
       <include>9000Commons</include>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>
-        <control type="togglebutton" id="14" description="Toggle Watched">
-          <include>9000SysButtons</include>
-          <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
-          <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
-        </control>
-        <control type="button" id="3" description="Sort">
-          <include>9000SysButtons</include>
-        </control>
-        <control type="togglebutton" id="4" description="Sort direction">
-          <include>9000SysButtons</include>
-          <label>$LOCALIZE[21429]:  $LOCALIZE[21430]</label>
-          <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21431]</altlabel>
-        </control>
         <control type="button" id="8" description="Search">
           <include>9000SysButtons</include>
           <label>$LOCALIZE[137]</label>
-        </control>
-		<control type="togglebutton" id="20" description="Library update">
-          <include>9000SysButtons</include>
-          <label>653</label>
-		  <altlabel>13353</altlabel>
-		  <usealttexture>library.isscanningvideo</usealttexture>
         </control>
 		<control type="button" id="698" description="Playlist">
           <include>9000SysButtons</include>
@@ -61,7 +42,13 @@
           <label>$LOCALIZE[16003]</label>
           <onclick>fullscreen</onclick>
         </control>
-      </control>
+ 		<control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+		  <altlabel>13353</altlabel>
+		  <usealttexture>library.isscanningvideo</usealttexture>
+        </control>
+     </control>
     </control>
   </controls>
 </window>

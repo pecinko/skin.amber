@@ -50,7 +50,8 @@
             <texture flipy="true" border="3">list/ListNF.png</texture>
           </control>
           <control type="label" description="Number">
-            <posx>40</posx>
+ <left>0</left>
+ <posx>40</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
@@ -91,7 +92,8 @@
             <texture>list/ListFO.png</texture>
           </control>
           <control type="label" description="Number">
-            <posx>40</posx>
+  <left>0</left>
+  <posx>40</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
