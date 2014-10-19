@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <animation effect="fade" time="200">WindowClose</animation>
-  <onunload>Dialog.close(all,true)</onunload>
   <controls>
     <control type="group" id="0">
       <posx>0</posx>
