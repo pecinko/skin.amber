@@ -72,30 +72,30 @@
   </variable>
   <variable name="MovieEntryPoint" description="Action for Movie home button">
     <value condition="!IsEmpty(Skin.String(CustomMovie.1.Path))">$INFO[Skin.String(CustomMovie.1.Path)]</value>
-	<value condition="StringCompare(Skin.String(movie_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
+    <value condition="StringCompare(Skin.String(movie_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
     <value condition="StringCompare(Skin.String(movie_entries),files)">ActivateWindow(Videos,Files,return)</value>
     <value condition="StringCompare(Skin.String(movie_entries),library)">ActivateWindow(Videos,Movies,return)</value>
     <value>ActivateWindow(VideoLibrary,MovieTitles,return)</value>
   </variable>
   <variable name="MovieEntryPointLabel2" description="Label2 for skin settings Movies function item">
     <value condition="!IsEmpty(Skin.String(CustomMovie.1.Path))">$INFO[Skin.String(CustomMovie.1.Label)]</value>
-	<value condition="StringCompare(Skin.String(movie_entries),playlists)">$LOCALIZE[136]</value>
+    <value condition="StringCompare(Skin.String(movie_entries),playlists)">$LOCALIZE[136]</value>
     <value condition="StringCompare(Skin.String(movie_entries),files)">$LOCALIZE[744]</value>
     <value condition="StringCompare(Skin.String(movie_entries),library)">$LOCALIZE[15100]</value>
   </variable>
-  <variable name="TVEntryPoint" description="Action for TV home button">
-    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Path)]</value>
-	<value condition="StringCompare(Skin.String(tv_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
-    <value condition="StringCompare(Skin.String(tv_entries),files)">ActivateWindow(Videos,Files,return)</value>
-    <value condition="StringCompare(Skin.String(tv_entries),library)">ActivateWindow(Videos,TVShows,return)</value>
-    <value>ActivateWindow(VideoLibrary,TVShowTitles,return)</value>
-  </variable>
-  <variable name="TVEntryPointLabel2" description="Label2 for skin settings TV function item">
-    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Label)]</value>
-	<value condition="StringCompare(Skin.String(tv_entries),playlists)">$LOCALIZE[136]</value>
-    <value condition="StringCompare(Skin.String(tv_entries),files)">$LOCALIZE[744]</value>
-    <value condition="StringCompare(Skin.String(tv_entries),library)">$LOCALIZE[15100]</value>
-  </variable>
+  <variable name="TVEntryPoint" description="Action for TV home button"> 
+    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Path)]</value> 
+    <value condition="StringCompare(Skin.String(tv_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value> 
+    <value condition="StringCompare(Skin.String(tv_entries),files)">ActivateWindow(Videos,Files,return)</value> 
+    <value condition="StringCompare(Skin.String(tv_entries),library)">ActivateWindow(Videos,TVShows,return)</value> 
+    <value>ActivateWindow(VideoLibrary,TVShowTitles,return)</value> 
+  </variable> 
+  <variable name="TVEntryPointLabel2" description="Label2 for skin settings TV function item"> 
+    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Label)]</value> 
+    <value condition="StringCompare(Skin.String(tv_entries),playlists)">$LOCALIZE[136]</value> 
+    <value condition="StringCompare(Skin.String(tv_entries),files)">$LOCALIZE[744]</value> 
+    <value condition="StringCompare(Skin.String(tv_entries),library)">$LOCALIZE[15100]</value> 
+  </variable> 
   <variable name="MusicPlayingFanartLabel2" description="Label2 for music playing FA">
     <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
     <value>$LOCALIZE[13113]</value>
@@ -138,7 +138,7 @@
     <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
     <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
     <value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Title)">$INFO[ListItem.Plot]</value>
-	<value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot) + !IsEmpty(ListItem.Title)">$INFO[Container.ShowPlot]</value>
+    <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot) + !IsEmpty(ListItem.Title)">$INFO[Container.ShowPlot]</value>
     <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
     <value condition="Container.Content(albums) + IsEmpty(ListItem.Property(Album_Description))">$LOCALIZE[414]</value>
     <value condition="Container.Content(artists) + !IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>

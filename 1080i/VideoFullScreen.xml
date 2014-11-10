@@ -132,7 +132,7 @@
         <aligny>center</aligny>
         <font>SysInfo</font>
         <label>-</label>
-		<wrapmultiline>true</wrapmultiline>
+    <wrapmultiline>true</wrapmultiline>
       </control>
       <control type="label" id="11" description="row 2 sys label">
         <posx>40</posx>
@@ -143,18 +143,18 @@
         <aligny>center</aligny>
         <font>SysInfo</font>
         <label>-</label>
-		<wrapmultiline>true</wrapmultiline>
+    <wrapmultiline>true</wrapmultiline>
       </control>
       <control type="label" id="12" description="row 3 sys label">
         <posx>40</posx>
         <posy>130</posy>
         <width>1890</width>
-        <height>60</height>
+        <height>90</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>SysInfo</font>
         <label>-</label>
-		<wrapmultiline>true</wrapmultiline>
+    <wrapmultiline>true</wrapmultiline>
       </control>
       <control type="group">
         <posy>145</posy>

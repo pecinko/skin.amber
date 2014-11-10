@@ -69,13 +69,13 @@
             <include>SquareThumb</include>
           </control>
           <control type="label">
-            <posx>180</posx>
+            <posx>30</posx>
             <posy>330</posy>
             <width>300</width>
             <height>45</height>
             <align>center</align>
             <scroll>false</scroll>
-			<label>$INFO[ListItem.Label]</label>
+            <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>
         <focusedlayout height="420" width="360">
@@ -94,7 +94,7 @@
             <include>SquareThumb</include>
           </control>
           <control type="label">
-            <posx>180</posx>
+            <posx>30</posx>
             <posy>330</posy>
             <width>300</width>
             <height>45</height>

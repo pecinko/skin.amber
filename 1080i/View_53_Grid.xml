@@ -199,7 +199,7 @@
             <texture border="3">img/WhiteRoundedT.png</texture>
           </control>
           <control type="label">
-            <posx>179</posx>
+            <posx>40</posx>
             <posy>330</posy>
             <width>280</width>
             <height>45</height>
@@ -232,7 +232,7 @@
             <texture border="3">img/WhiteRoundedT.png</texture>
           </control>
           <control type="label">
-            <posx>179</posx>
+            <posx>40</posx>
             <posy>330</posy>
             <width>280</width>
             <height>45</height>
@@ -248,11 +248,11 @@
             <posy>15</posy>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumbBG</include>
+        <include>EpisodeThumbBG</include>
             </control>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumb</include>
+        <include>EpisodeThumb</include>
             </control>
             <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
@@ -266,7 +266,7 @@
                 <texture>img/OverlayStripe.png</texture>
               </control>
               <control type="label">
-                <posx>30</posx>
+                <posx>40</posx>
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
@@ -288,11 +288,11 @@
             <posy>15</posy>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumbFO</include>
+        <include>EpisodeThumbFO</include>
             </control>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumb</include>
+        <include>EpisodeThumb</include>
             </control>
             <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
@@ -306,7 +306,7 @@
                 <texture>img/OverlayStripe.png</texture>
               </control>
               <control type="label">
-                <posx>30</posx>
+                <posx>40</posx>
                 <width>300</width>
                 <height>70</height>
                 <font>Slider</font>
@@ -349,7 +349,7 @@
             <aspectratio>keep</aspectratio>
           </control>
           <control type="label">
-            <posx>225</posx>
+            <posx>30</posx>
             <posy>327</posy>
             <width>420</width>
             <height>45</height>
@@ -385,7 +385,7 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>225</posx>
+            <posx>30</posx>
             <posy>327</posy>
             <width>420</width>
             <height>45</height>
