@@ -16,20 +16,20 @@
         <posx>0</posx>
         <posy>-11</posy>
         <height>1000</height>
-        <width>462</width>
+        <width>480</width>
         <texture border="0,40,0,40">dialogs/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="996" description="Context menu container">
         <posx>0</posx>
         <posy>39</posy>
-        <width>462</width>
+        <width>480</width>
         <height max="900">auto</height>
         <itemgap>3</itemgap>
       </control>
       <control type="button" id="1000" description="Buttons">
         <posx>0</posx>
-		<posy>0</posy>
-        <width>462</width>
+        <posy>0</posy>
+        <width>480</width>
         <height>60</height>
         <textoffsetx>10</textoffsetx>
         <align>center</align>
