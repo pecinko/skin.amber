@@ -44,7 +44,7 @@
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40">
 					<control type="label">
-						<posx>750</posx>
+						<posx>0</posx>
 						<posy>0</posy>
 						<width>1500</width>
 						<height>40</height>
@@ -57,7 +57,7 @@
 				</itemlayout>
 				<focusedlayout height="40">
 					<control type="label">
-						<posx>750</posx>
+						<posx>0</posx>
 						<posy>0</posy>
 						<width>1500</width>
 						<height>40</height>

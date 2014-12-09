@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 <includes>
 	<variable name="Time" description="Date and time">
 		<value condition="Window.IsActive(home) | Window.IsActive(weather)">[COLOR=Grey2]$INFO[System.Date][/COLOR][COLOR=Orange]  •  [/COLOR]$INFO[System.Time]</value>

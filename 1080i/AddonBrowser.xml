@@ -66,9 +66,9 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>80r</posx>
+						<posx>0r</posx>
 						<posy>0</posy>
-						<width>870</width>
+						<width>795</width>
 						<height>60</height>
 						<font>ListDetails</font>
 						<textcolor>Grey</textcolor>
@@ -101,13 +101,14 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>1000r</posx>
+						<posx>0r</posx>
 						<posy>0</posy>
 						<width>795</width>
 						<height>60</height>
 						<font>ListDetails</font>
 						<textcolor>Grey2</textcolor>
 						<info>ListItem.Label2</info>
+						<align>right</align>
 					</control>
 				</focusedlayout>
 			</control>

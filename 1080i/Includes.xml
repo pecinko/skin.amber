@@ -642,7 +642,7 @@
 		<pagecontrol>-</pagecontrol>
 		<itemlayout height="42" width="999">
 			<control type="label">
-				<posx>200</posx>
+				<posx>0</posx>
 				<posy>0</posy>
 				<width>200</width>
 				<height>45</height>
