@@ -1,5 +1,10 @@
+1.7.2
+New layout for keyboard to improve usability.
+Fixed some dialogs due to amended id's for Kodi 14 e.g. Media Source configuration dialog.
+Fixed some more layout issues. 
+
 1.7.1
-Added support for Advanced filtering
+Added support for Advanced filtering.
 Fixed menu alignement issue on Horizontal menu screen.
 
 1.7.0
