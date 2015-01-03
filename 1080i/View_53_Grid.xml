@@ -192,16 +192,16 @@
             <include>SquareThumb</include>
           </control>
           <control type="image" description="Label2 BG">
-            <posx>36</posx>
+            <posx>30</posx>
             <posy>327</posy>
-            <width>288</width>
+            <width>300</width>
             <height>54</height>
             <texture border="3">img/WhiteRoundedT.png</texture>
           </control>
           <control type="label">
-            <posx>179</posx>
+            <posx>36</posx>
             <posy>330</posy>
-            <width>280</width>
+            <width>288</width>
             <height>45</height>
             <align>center</align>
             <font>GridItems</font>
@@ -225,16 +225,16 @@
             <include>SquareThumb</include>
           </control>
           <control type="image" description="Label2 BG">
-            <posx>36</posx>
+            <posx>30</posx>
             <posy>327</posy>
-            <width>288</width>
+            <width>300</width>
             <height>54</height>
             <texture border="3">img/WhiteRoundedT.png</texture>
           </control>
           <control type="label">
-            <posx>179</posx>
+            <posx>36</posx>
             <posy>330</posy>
-            <width>280</width>
+            <width>288</width>
             <height>45</height>
             <align>center</align>
             <font>GridItems</font>
@@ -248,11 +248,11 @@
             <posy>15</posy>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumbBG</include>
+              <include>EpisodeThumbBG</include>
             </control>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumb</include>
+              <include>EpisodeThumb</include>
             </control>
             <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
@@ -288,11 +288,11 @@
             <posy>15</posy>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumbFO</include>
+              <include>EpisodeThumbFO</include>
             </control>
             <control type="image">
               <include>EpisodeShowcaseThumbDimensions</include>
-			  <include>EpisodeThumb</include>
+              <include>EpisodeThumb</include>
             </control>
             <control type="group">
               <visible>!IsEmpty(ListItem.Episode)</visible>
@@ -349,9 +349,9 @@
             <aspectratio>keep</aspectratio>
           </control>
           <control type="label">
-            <posx>225</posx>
+            <posx>30</posx>
             <posy>327</posy>
-            <width>420</width>
+            <width>390</width>
             <height>45</height>
             <scroll>false</scroll>
             <align>center</align>
@@ -385,9 +385,9 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>225</posx>
+            <posx>30</posx>
             <posy>327</posy>
-            <width>420</width>
+            <width>390</width>
             <height>45</height>
             <textcolor>Orange</textcolor>
             <align>center</align>

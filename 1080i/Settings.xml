@@ -115,6 +115,7 @@
             <onclick>noop</onclick>
           </item>
           <item id="9" description="Plexbmc addon specific">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <label>PleXBMC</label>
             <!--Addon name-->
             <onclick>noop</onclick>
@@ -144,7 +145,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>3</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -165,7 +166,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>30</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -183,7 +184,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>3</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -204,7 +205,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>81</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -269,7 +270,7 @@
             <label>$LOCALIZE[138]</label>
             <onclick>activatewindow(systeminfo)</onclick>
           </control>
-		  <control type="button" id="502" description="Wether">
+          <control type="button" id="502" description="Wether">
             <font>ListDetails</font>
             <width>322</width>
             <label>$LOCALIZE[8]</label>
@@ -287,7 +288,6 @@
             <label>$LOCALIZE[10003]</label>
             <onclick>ActivateWindow(filemanager)</onclick>
           </control>
-          
         </control>
         <!--9000 2-->
         <control type="panel" id="9002">
@@ -311,7 +311,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -332,7 +332,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -350,7 +350,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -371,7 +371,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -439,7 +439,7 @@
               <label2 fallback="31502">$VAR[MovieEntryPointLabel2]</label2>
               <onclick>ActivateWindow(1115)</onclick>
             </item>
-			<item id="12" description="TV entry points">
+            <item id="12" description="TV entry points">
               <label>$LOCALIZE[31508]</label>
               <label2 fallback="31499">$VAR[TVEntryPointLabel2]</label2>
               <onclick>ActivateWindow(1120)</onclick>
@@ -549,7 +549,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -576,7 +576,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1391,7 +1391,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1420,7 +1420,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1590,7 +1590,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1611,7 +1611,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -1629,7 +1629,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1720,7 +1720,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1741,7 +1741,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -1759,7 +1759,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1780,7 +1780,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -1889,7 +1889,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1910,7 +1910,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -1928,7 +1928,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -1949,7 +1949,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -2048,7 +2048,7 @@
               <texture border="3">buttons/ButtonNF.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -2069,7 +2069,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -2087,7 +2087,7 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label" description="Label 2">
-              <posx>30r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>600</width>
@@ -2108,7 +2108,7 @@
             </control>
             <control type="image" description="Icon">
               <visible>!IsEmpty(ListItem.Icon)</visible>
-              <posx>81r</posx>
+              <right>18</right>
               <posy>0</posy>
               <height>60</height>
               <width>60</width>
@@ -2125,63 +2125,63 @@
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.0.title)</onclick>
             </item>
-			<item id="30" description="Disabled">
+            <item id="30" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.0.title)) + Skin.HasSetting(hide.plexbmc.0.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.0.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.0.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.0.title)</onclick>
             </item>
-			<item id="31" description="Enabled">
+            <item id="31" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.1.title)) + !Skin.HasSetting(hide.plexbmc.1.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.1.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.1.title)</onclick>
             </item>
-			<item id="31" description="Disabled">
+            <item id="31" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.1.title)) + Skin.HasSetting(hide.plexbmc.1.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.1.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.1.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.1.title)</onclick>
             </item>
-			<item id="32" description="Enabled">
+            <item id="32" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.2.title)) + !Skin.HasSetting(hide.plexbmc.2.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.2.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
               <label2>$LOCALIZE[305]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.2.title)</onclick>
             </item>
-			<item id="32" description="Disabled">
+            <item id="32" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.2.title)) + Skin.HasSetting(hide.plexbmc.2.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.2.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.2.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.2.title)</onclick>
             </item>
-			<item id="33" description="Enabled">
+            <item id="33" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.3.title)) + !Skin.HasSetting(hide.plexbmc.3.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.3.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.3.title)</onclick>
             </item>
-			<item id="33" description="Disabled">
+            <item id="33" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.3.title)) + Skin.HasSetting(hide.plexbmc.3.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.3.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.3.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.3.title)</onclick>
             </item>
-			<item id="34" description="Enabled">
+            <item id="34" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.4.title)) + !Skin.HasSetting(hide.plexbmc.4.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.4.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.4.title)</onclick>
             </item>
-			<item id="34" description="Disabled">
+            <item id="34" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.4.title)) + Skin.HasSetting(hide.plexbmc.4.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.4.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.4.title)][/COLOR]</label>
@@ -2195,231 +2195,231 @@
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.5.title)</onclick>
             </item>
-			<item id="35" description="Disabled">
+            <item id="35" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.5.title)) + Skin.HasSetting(hide.plexbmc.5.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.5.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.5.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.5.title)</onclick>
             </item>
-			<item id="36" description="Enabled">
+            <item id="36" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.6.title)) + !Skin.HasSetting(hide.plexbmc.6.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.6.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.6.title)</onclick>
             </item>
-			<item id="36" description="Disabled">
+            <item id="36" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.6.title)) + Skin.HasSetting(hide.plexbmc.6.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.6.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.6.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.6.title)</onclick>
             </item>
-			<item id="37" description="Enabled">
+            <item id="37" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.7.title)) + !Skin.HasSetting(hide.plexbmc.7.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.7.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.7.title)</onclick>
             </item>
-			<item id="37" description="Disabled">
+            <item id="37" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.7.title)) + Skin.HasSetting(hide.plexbmc.7.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.7.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.7.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.7.title)</onclick>
             </item>
-			<item id="38" description="Enabled">
+            <item id="38" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.8.title)) + !Skin.HasSetting(hide.plexbmc.8.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.8.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.8.title)</onclick>
             </item>
-			<item id="38" description="Disabled">
+            <item id="38" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.8.title)) + Skin.HasSetting(hide.plexbmc.8.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.8.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.8.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.8.title)</onclick>
             </item>
-			<item id="39" description="Enabled">
+            <item id="39" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.9.title)) + !Skin.HasSetting(hide.plexbmc.9.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.9.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.9.title)</onclick>
             </item>
-			<item id="39" description="Disabled">
+            <item id="39" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.9.title)) + Skin.HasSetting(hide.plexbmc.9.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.9.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.9.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.9.title)</onclick>
             </item>
-			<item id="40" description="Enabled">
+            <item id="40" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.10.title)) + !Skin.HasSetting(hide.plexbmc.10.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.10.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.10.title)</onclick>
             </item>
-			<item id="40" description="Disabled">
+            <item id="40" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.10.title)) + Skin.HasSetting(hide.plexbmc.10.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.10.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.10.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.10.title)</onclick>
             </item>
-			<item id="41" description="Enabled">
+            <item id="41" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.11.title)) + !Skin.HasSetting(hide.plexbmc.11.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.11.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.11.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.11.title)</onclick>
             </item>
-			<item id="41" description="Disabled">
+            <item id="41" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.11.title)) + Skin.HasSetting(hide.plexbmc.11.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.11.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.11.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.11.title)</onclick>
             </item>
-			<item id="42" description="Enabled">
+            <item id="42" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.12.title)) + !Skin.HasSetting(hide.plexbmc.12.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.12.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.12.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.12.title)</onclick>
             </item>
-			<item id="42" description="Disabled">
+            <item id="42" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.12.title)) + Skin.HasSetting(hide.plexbmc.12.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.12.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.12.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.12.title)</onclick>
             </item>
-			<item id="43" description="Enabled">
+            <item id="43" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.13.title)) + !Skin.HasSetting(hide.plexbmc.13.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.13.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.13.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.13.title)</onclick>
             </item>
-			<item id="43" description="Disabled">
+            <item id="43" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.13.title)) + Skin.HasSetting(hide.plexbmc.13.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.13.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.13.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.13.title)</onclick>
             </item>
-			<item id="44" description="Enabled">
+            <item id="44" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.14.title)) + !Skin.HasSetting(hide.plexbmc.14.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.14.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.14.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.14.title)</onclick>
             </item>
-			<item id="44" description="Disabled">
+            <item id="44" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.14.title)) + Skin.HasSetting(hide.plexbmc.14.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.14.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.14.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.14.title)</onclick>
             </item>
-			<item id="45" description="Enabled">
+            <item id="45" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.15.title)) + !Skin.HasSetting(hide.plexbmc.15.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.15.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.15.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.15.title)</onclick>
             </item>
-			<item id="45" description="Disabled">
+            <item id="45" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.15.title)) + Skin.HasSetting(hide.plexbmc.15.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.15.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.15.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.15.title)</onclick>
             </item>
-			<item id="46" description="Enabled">
+            <item id="46" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.16.title)) + !Skin.HasSetting(hide.plexbmc.16.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.16.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.16.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.16.title)</onclick>
             </item>
-			<item id="46" description="Disabled">
+            <item id="46" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.16.title)) + Skin.HasSetting(hide.plexbmc.16.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.16.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.16.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.16.title)</onclick>
             </item>
-			<item id="47" description="Enabled">
+            <item id="47" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.17.title)) + !Skin.HasSetting(hide.plexbmc.17.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.17.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.17.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.17.title)</onclick>
             </item>
-			<item id="47" description="Disabled">
+            <item id="47" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.17.title)) + Skin.HasSetting(hide.plexbmc.17.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.17.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.17.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.17.title)</onclick>
             </item>
-			<item id="48" description="Enabled">
+            <item id="48" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.18.title)) + !Skin.HasSetting(hide.plexbmc.18.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.18.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.18.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.18.title)</onclick>
             </item>
-			<item id="48" description="Disabled">
+            <item id="48" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.18.title)) + Skin.HasSetting(hide.plexbmc.18.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.18.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.18.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.18.title)</onclick>
             </item>
-			<item id="49" description="Enabled">
+            <item id="49" description="Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.19.title)) + !Skin.HasSetting(hide.plexbmc.19.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.19.shared),t)]</visible>
               <label>$INFO[Window(Home).Property(plexbmc.19.title)]</label>
               <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.19.title)</onclick>
             </item>
-			<item id="49" description="Disabled">
+            <item id="49" description="Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.19.title)) + Skin.HasSetting(hide.plexbmc.19.title)</visible>
               <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.19.shared),t)]</visible>
               <label>[COLOR=Grey]$INFO[Window(Home).Property(plexbmc.19.title)][/COLOR]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(hide.plexbmc.19.title)</onclick>
             </item>
-			<item id="50" description="Channels enabled">
+            <item id="50" description="Channels enabled">
               <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Channels.Hide)</visible>
               <label>$LOCALIZE[31975]</label>
               <label2>$LOCALIZE[449]</label2>
-			  <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
+              <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
             </item>
-			<item id="50" description="Channels disabled">
+            <item id="50" description="Channels disabled">
               <visible>Skin.HasSetting(plexbmc) + Skin.HasSetting(Channels.Hide)</visible>
               <label>[COLOR=Grey]$LOCALIZE[31975][/COLOR]</label>
-			  <label2>$LOCALIZE[1223]</label2>
+              <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
             </item>
             <item id="51" description="Queue Enabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex)) + !Skin.HasSetting(Queue.Hide)</visible>
               <label>$LOCALIZE[31010]</label>
-			  <label2>$LOCALIZE[449]</label2>
+              <label2>$LOCALIZE[449]</label2>
               <onclick>Skin.ToggleSetting(Queue.Hide)</onclick>
             </item>
-			<item id="51" description="Queue Disabled">
+            <item id="51" description="Queue Disabled">
               <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex)) + Skin.HasSetting(Queue.Hide)</visible>
               <label>[COLOR=Grey]$LOCALIZE[31010][/COLOR]</label>
-			  <label2>$LOCALIZE[1223]</label2>
+              <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(Queue.Hide)</onclick>
             </item>
           </content>
@@ -2428,7 +2428,7 @@
     </control>
     <control type="textbox">
       <visible>Control.IsVisible(9008)</visible>
-	  <visible>Container(9008).HasFocus(3)</visible>
+      <visible>Container(9008).HasFocus(3)</visible>
       <posx>1548</posx>
       <posy>210</posy>
       <width>294</width>
