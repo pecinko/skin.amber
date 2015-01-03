@@ -78,7 +78,7 @@
         <height>40</height>
         <label>$LOCALIZE[1022]</label>
       </control>
-      <control type="button" id="12" description="Path Buttons">
+      <control type="edit" id="12" description="Path Buttons">
         <posx>27</posx>
         <posy>386</posy>
         <width>980</width>
