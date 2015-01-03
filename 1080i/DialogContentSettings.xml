@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <defaultcontrol always="true">3</defaultcontrol>
+  <defaultcontrol always="true">20</defaultcontrol>
   <coordinates>
     <system>1</system>
     <posx>0</posx>
@@ -34,7 +34,7 @@
         <label>$LOCALIZE[20344]</label>
         <textoffsetx>30</textoffsetx>
       </control>
-      <control type="spincontrolex" id="3">
+      <control type="spincontrolex" id="20">
         <description>Content Picker</description>
         <posx>-230</posx>
         <posy>57</posy>
@@ -44,7 +44,7 @@
         <onup>5</onup>
         <ondown>5</ondown>
         <onleft>28</onleft>
-        <onright>4</onright>
+        <onright>21</onright>
         <aligny>center</aligny>
         <subtype>text</subtype>
       </control>
@@ -55,10 +55,10 @@
         <width>909</width>
         <height>310</height>
         <itemgap>0</itemgap>
-        <onup>3</onup>
-        <ondown>3</ondown>
+        <onup>20</onup>
+        <ondown>20</ondown>
         <onleft>28</onleft>
-        <onright>4</onright>
+        <onright>21</onright>
       </control>
       <control type="button" id="7">
         <description>Default Button</description>
@@ -75,14 +75,14 @@
         <font>SetContent</font>
         <textoffsetx>30</textoffsetx>
       </control>
-      <control type="list" id="4" description="Scrapers">
+      <control type="list" id="21" description="Scrapers">
         <posx>681</posx>
         <posy>120</posy>
         <width>354</width>
         <height>369</height>
-        <onup>4</onup>
-        <ondown>4</ondown>
-        <onleft>3</onleft>
+        <onup>21</onup>
+        <ondown>21</ondown>
+        <onleft>20</onleft>
         <onright>28</onright>
         <scrolltime>200</scrolltime>
         <itemlayout height="60">
@@ -127,15 +127,15 @@
           <bordertexture border="3">thumbs/ThumbBorder3.png</bordertexture>
           <bordersize>1</bordersize>
         </control>
-        <control type="button" id="6">
+        <control type="button" id="22">
           <description>settings button</description>
           <posx>1000</posx>
           <posy>237</posy>
           <width>315</width>
           <height>60</height>
           <label>$LOCALIZE[5]</label>
-          <onleft>4</onleft>
-          <onright>3</onright>
+          <onleft>21</onleft>
+          <onright>20</onright>
           <onup>28</onup>
           <ondown>29</ondown>
         </control>
@@ -146,10 +146,10 @@
           <width>315</width>
           <height>60</height>
           <label>$LOCALIZE[186]</label>
-          <onleft>4</onleft>
-          <onright>3</onright>
+          <onleft>21</onleft>
+          <onright>20</onright>
           <onup>29</onup>
-          <ondown>6</ondown>
+          <ondown>22</ondown>
         </control>
         <control type="button" id="29">
           <description>cancel button</description>
@@ -158,9 +158,9 @@
           <width>315</width>
           <height>62</height>
           <label>$LOCALIZE[222]</label>
-          <onleft>4</onleft>
-          <onright>3</onright>
-          <onup>6</onup>
+          <onleft>21</onleft>
+          <onright>20</onright>
+          <onup>22</onup>
           <ondown>28</ondown>
         </control>
       </control>
