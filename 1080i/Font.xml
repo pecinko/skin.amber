@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-  <fontset id="Default" unicode="true" idloc="31390">
+  <fontset id="Default" idloc="31390">
     <font>
       <name>MainMenu</name>
       <filename>BebasNeue.ttf</filename>
@@ -179,7 +179,7 @@
       <size>36</size>
     </font>
   </fontset>
-  <fontset id="Default no caps" unicode="true" idloc="31389">
+  <fontset id="Default no caps" idloc="31389">
     <font>
       <name>MainMenu</name>
       <filename>BebasNeue.ttf</filename>
@@ -358,7 +358,7 @@
       <size>39</size>
     </font>
   </fontset>
-  <fontset id="Arial" unicode="true" idloc="31392">
+  <fontset id="Arial" idloc="31392">
     <font>
       <name>MainMenu</name>
       <filename>Arial.ttf</filename>
@@ -590,7 +590,7 @@
       <style>uppercase</style>
     </font>
   </fontset>
-  <fontset id="Arial nocaps" unicode="true" idloc="31391">
+  <fontset id="Arial nocaps" idloc="31391">
     <font>
       <name>MainMenu</name>
       <filename>Arial.ttf</filename>
