@@ -130,7 +130,7 @@
           <orientation>horizontal</orientation>
           <itemlayout height="70" width="519">
             <control type="label">
-              <posx>260</posx>
+              <posx>0</posx>
               <posy>0</posy>
               <width>519</width>
               <textcolor>Grey</textcolor>
@@ -146,10 +146,10 @@
           </itemlayout>
           <focusedlayout height="70" width="519">
             <control type="label">
-              <posx>260</posx>
+              <posx>0</posx>
               <posy>0</posy>
               <width>519</width>
-              <textcolor>White2</textcolor>
+              <textcolor>Orange</textcolor>
               <shadowcolor>ShadowDark</shadowcolor>
               <height>70</height>
               <align>center</align>
@@ -182,10 +182,10 @@
           <ondown>700</ondown>
           <itemlayout width="256" height="50">
             <control type="label">
-              <posx>129</posx>
+              <posx>3</posx>
               <posy>1</posy>
               <height>50</height>
-              <width>240</width>
+              <width>250</width>
               <align>center</align>
               <aligny>center</aligny>
               <font>Sublist</font>
@@ -195,10 +195,10 @@
               <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">
-              <posx>128</posx>
+              <posx>3</posx>
               <posy>0</posy>
               <height>50</height>
-              <width>240</width>
+              <width>250</width>
               <align>center</align>
               <aligny>center</aligny>
               <font>Sublist</font>
@@ -210,10 +210,10 @@
           </itemlayout>
           <focusedlayout width="256" height="50">
             <control type="label">
-              <posx>129</posx>
+              <posx>3</posx>
               <posy>1</posy>
               <height>50</height>
-              <width>240</width>
+              <width>250</width>
               <align>center</align>
               <aligny>center</aligny>
               <font>Sublist</font>
@@ -223,10 +223,10 @@
             </control>
             <control type="label">
               <visible>!Control.HasFocus(9001)</visible>
-              <posx>128</posx>
+              <posx>3</posx>
               <posy>0</posy>
               <height>50</height>
-              <width>240</width>
+              <width>250</width>
               <align>center</align>
               <aligny>center</aligny>
               <font>Sublist</font>
@@ -236,10 +236,10 @@
             </control>
             <control type="label">
               <visible>Control.HasFocus(9001)</visible>
-              <posx>128</posx>
+              <posx>3</posx>
               <posy>0</posy>
               <height>50</height>
-              <width>240</width>
+              <width>250</width>
               <align>center</align>
               <aligny>center</aligny>
               <font>Sublist</font>
