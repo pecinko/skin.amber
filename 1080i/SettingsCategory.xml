@@ -47,7 +47,7 @@
         <textoffsetx>10</textoffsetx>
         <focusedcolor>Orange</focusedcolor>
       </control>
-      <control type="grouplist" id="5" description="Right - Control Area">
+			<control type="grouplist" id="5" description="Right - Control Area">
         <posx>390</posx>
         <posy>210</posy>
         <width>1467</width>
@@ -81,7 +81,11 @@
         <width>1467</width>
         <textoffsetx>42</textoffsetx>
       </control>
-      <control type="label" description="Settings level label">
+      <control type="sliderex" id="13" description="Slider control">
+        <width>1467</width>
+        <textoffsetx>42</textoffsetx>
+      </control>
+			<control type="label" description="Settings level label">
         <posx>66</posx>
         <posy>900</posy>
         <width>321</width>
