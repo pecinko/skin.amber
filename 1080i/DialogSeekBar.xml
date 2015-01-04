@@ -14,7 +14,6 @@
         <height>138</height>
         <texture flipy="true" border="0,30,0,30">OSD/OSDBackground.png</texture>
         <colordiffuse>FFE2E2E2</colordiffuse>
-        <!--<colordiffuse>BBFFFFFF</colordiffuse>-->
       </control>
       <control type="label" description="Clock">
         <posx>30r</posx>
@@ -131,7 +130,7 @@
 	  <control type="label" description="Seek time label">
         <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | [Player.Paused + System.IdleTime(4)]]</visible>
         <include>SeekbarLabels</include>
-        <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season,[COLOR=Orange]  •  [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
+        <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
       </control>
 	  <control type="label" description="Chapter Info with Player info">
         <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>

@@ -89,8 +89,8 @@
         <texturenofocus>-</texturenofocus>
         <label>-</label>
         <onup>10</onup>
-        <onleft>19</onleft>
-        <onright>19</onright>
+        <onleft>18</onleft>
+        <onright>18</onright>
         <ondown>10</ondown>
       </control>
       <control type="image">

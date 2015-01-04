@@ -665,16 +665,12 @@
     <posy>0</posy>
     <width>999</width>
     <height>504</height>
-    <onleft>noop</onleft>
-    <onright>noop</onright>
-    <onup>9000</onup>
-    <ondown>9000</ondown>
     <pagecontrol>-</pagecontrol>
     <itemlayout height="42" width="999">
       <control type="label">
-        <posx>200</posx>
+        <posx>0</posx>
         <posy>0</posy>
-        <width>200</width>
+        <width>250</width>
         <height>45</height>
         <font>Details</font>
         <align>right</align>
@@ -685,9 +681,9 @@
         <scroll>false</scroll>
       </control>
       <control type="label">
-        <posx>220</posx>
+        <posx>260</posx>
         <posy>0</posy>
-        <width>779</width>
+        <width>739</width>
         <height>45</height>
         <font>Details</font>
         <align>left</align>
@@ -700,9 +696,9 @@
     </itemlayout>
     <focusedlayout height="42" width="999">
       <control type="label">
-        <posx>200</posx>
+        <posx>0</posx>
         <posy>0</posy>
-        <width>200</width>
+        <width>250</width>
         <height>45</height>
         <font>Details</font>
         <align>right</align>
@@ -712,9 +708,9 @@
         <info>ListItem.Label</info>
       </control>
       <control type="label">
-        <posx>220</posx>
+        <posx>260</posx>
         <posy>0</posy>
-        <width>779</width>
+        <width>739</width>
         <height>45</height>
         <font>Details</font>
         <align>left</align>

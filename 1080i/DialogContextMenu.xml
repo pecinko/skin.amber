@@ -14,22 +14,22 @@
       </animation>
       <control type="image" id="999" description="Menu BG">
         <posx>0</posx>
-        <posy>-11</posy>
-        <height>1000</height>
-        <width>462</width>
+        <posy>-24</posy>
+        <height>1020</height>
+        <width>540</width>
         <texture border="0,40,0,40">dialogs/ContextMenu.png</texture>
       </control>
       <control type="grouplist" id="996" description="Context menu container">
         <posx>0</posx>
         <posy>39</posy>
-        <width>462</width>
+        <width>540</width>
         <height max="900">auto</height>
         <itemgap>3</itemgap>
       </control>
       <control type="button" id="1000" description="Buttons">
         <posx>0</posx>
-		<posy>0</posy>
-        <width>462</width>
+        <posy>0</posy>
+        <width>540</width>
         <height>60</height>
         <textoffsetx>10</textoffsetx>
         <align>center</align>

@@ -116,7 +116,7 @@
         <posx>1533</posx>
         <posy>177</posy>
         <width>324</width>
-        <height>240</height>
+        <height>300</height>
         <onleft>50</onleft>
         <onright>noop</onright>
         <onup>9000</onup>
@@ -141,6 +141,11 @@
         <control type="radiobutton" id="7">
           <width>330</width>
           <label>$LOCALIZE[25001]</label>
+          <font>ListDetails</font>
+        </control>
+				<control type="radiobutton" id="8">
+          <width>330</width>
+          <label>$LOCALIZE[24999]</label>
           <font>ListDetails</font>
         </control>
       </control>
