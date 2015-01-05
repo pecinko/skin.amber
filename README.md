@@ -1,4 +1,4 @@
 skin.amber
 ==========
 
-Amber skin for XBMC Gotham
+Amber skin for Kodi/Helix
