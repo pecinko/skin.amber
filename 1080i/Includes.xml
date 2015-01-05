@@ -881,7 +881,7 @@
       <visible>System.GetBool(pvrmanager.enabled)</visible>
       <label>$LOCALIZE[31500]</label>
       <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
-      <onclick>ActivateWindowAndFocus(PVR)</onclick>
+      <onclick>ActivateWindow(TVChannels)</onclick>
     </item>
     <item id="7" description="Favorites">
       <visible>!Skin.HasSetting(Favourites.Hide)</visible>
@@ -1133,28 +1133,28 @@
     </item>
     <item id="100" description="Tv Channels">
       <visible>Container(300).HasFocus(300)</visible>
-      <label>19023</label>
-      <onclick>ActivateWindowAndFocus(PVR, 32, 0, 11, 0)</onclick>
+      <label>19019</label>
+      <onclick>ActivateWindow(TVChannels)</onclick>
     </item>
     <item id="101" description="Radio Channels">
       <visible>Container(300).HasFocus(300)</visible>
       <label>19024</label>
-      <onclick>ActivateWindowAndFocus(PVR, 33, 0, 12, 0)</onclick>
+      <onclick>ActivateWindow(RadioChannels)</onclick>
     </item>
     <item id="102" description="EPG Timeline">
       <visible>Container(300).HasFocus(300)</visible>
-      <label>$LOCALIZE[19069]</label>
-      <onclick>ActivateWindowAndFocus(PVR, 31,0, 10,1)</onclick>
+      <label>$LOCALIZE[22020]</label>
+      <onclick>ActivateWindow(TVGuide)</onclick>
     </item>
     <item id="103" description="Recordings">
       <visible>Container(300).HasFocus(300)</visible>
       <label>19163</label>
-      <onclick>ActivateWindowAndFocus(PVR, 34, 0, 13, 0)</onclick>
+      <onclick>ActivateWindow(TVRecordings)</onclick>
     </item>
     <item id="104" description="Timer">
       <visible>Container(300).HasFocus(300)</visible>
       <label>19040</label>
-      <onclick>ActivateWindowAndFocus(PVR, 35, 0, 14, 0)</onclick>
+      <onclick>ActivateWindow(TVTimers)</onclick>
     </item>
     <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
   </include>
