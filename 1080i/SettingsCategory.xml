@@ -29,7 +29,7 @@
         <height>72</height>
         <align>center</align>
         <font>InfoTitle</font>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="grouplist" id="3" description="Left - Button Area">
         <posx>66</posx>
@@ -45,7 +45,7 @@
       </control>
       <control type="button" id="10" description="Category Button">
         <textoffsetx>10</textoffsetx>
-        <focusedcolor>Orange</focusedcolor>
+        <focusedcolor>Highlight</focusedcolor>
       </control>
 			<control type="grouplist" id="5" description="Right - Control Area">
         <posx>390</posx>
@@ -66,7 +66,7 @@
         		<width>1407</width>
         		<height>130</height>
 				<align>justify</align>
-				<textcolor>Orange</textcolor>
+				<textcolor>Highlight</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
       <control type="button" id="7" description="Button">
@@ -103,8 +103,8 @@
         <onup>3</onup>
         <ondown>noop</ondown>
         <textoffsetx>10</textoffsetx>
-        <textcolor>Orange</textcolor>
-		<focusedcolor>Orange</focusedcolor>
+        <textcolor>Highlight</textcolor>
+		<focusedcolor>Highlight</focusedcolor>
         <onclick>SettingsLevelChange</onclick>
       </control>
       <control type="scrollbar" id="60">

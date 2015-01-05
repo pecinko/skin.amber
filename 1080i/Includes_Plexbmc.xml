@@ -1497,7 +1497,7 @@
         <visible>Control.HasFocus(411)</visible>
         <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
         <include>RecentlyAdded_Label</include>
-        <label>$INFO[Container(411).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(411).ListItem.Label]</label>
+        <label>$INFO[Container(411).ListItem.Label2,,[COLOR=Highlight]  •  [/COLOR]]$INFO[Container(411).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="411" description="TV Shows PleXBMC">
         <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
@@ -2098,7 +2098,7 @@
         <visible>Control.HasFocus(413)</visible>
         <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
         <include>Recommended_Label</include>
-        <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
+        <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Highlight]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
       </control>
       <control type="fixedlist" id="413" description="OnDeck TV Shows PleXBMC">
         <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))</visible>

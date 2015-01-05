@@ -22,7 +22,7 @@
         <width>800</width>
         <height>40</height>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$LOCALIZE[10034]</label>
       </control>
       <control type="radiobutton" id="4" description="Enable Login Screen">

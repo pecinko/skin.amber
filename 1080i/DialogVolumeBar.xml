@@ -15,7 +15,7 @@
         <width>129</width>
         <height>129</height>
         <texture>volume/Volume.png</texture>
-        <colordiffuse>Orange</colordiffuse>
+        <colordiffuse>Highlight</colordiffuse>
       </control>
       <control type="image" description="Speaker passthrough">
         <visible>player.passthrough</visible>
@@ -24,7 +24,7 @@
         <width>129</width>
         <height>129</height>
         <texture>volume/VolumeMuted.png</texture>
-        <colordiffuse>Orange</colordiffuse>
+        <colordiffuse>Highlight</colordiffuse>
       </control>
       <control type="group">
         <visible>!player.passthrough</visible>

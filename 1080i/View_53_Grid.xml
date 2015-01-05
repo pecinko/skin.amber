@@ -163,7 +163,7 @@
             <posy>411</posy>
             <width>300</width>
             <height>45</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <align>center</align>
             <font>Details</font>
             <label>$INFO[ListItem.Label]</label>
@@ -238,7 +238,7 @@
             <height>45</height>
             <align>center</align>
             <font>GridItems</font>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </focusedlayout>
@@ -325,7 +325,7 @@
               <posy>291</posy>
               <width>450</width>
               <height>45</height>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <align>center</align>
               <font>Details</font>
               <label>$INFO[ListItem.Label]</label>
@@ -389,7 +389,7 @@
             <posy>327</posy>
             <width>390</width>
             <height>45</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <align>center</align>
             <font>Details</font>
             <label>$INFO[ListItem.Label]</label>

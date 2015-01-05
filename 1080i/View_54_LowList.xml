@@ -68,7 +68,7 @@
                 <width>800</width>
                 <height>33</height>
                 <font>InfoTitle</font>
-                <textcolor>Orange</textcolor>
+                <textcolor>Highlight</textcolor>
                 <shadowcolor>Black</shadowcolor>
                 <align>left</align>
                 <scroll>false</scroll>
@@ -128,7 +128,7 @@
                 <width>570</width>
                 <height>33</height>
                 <font>InfoTitle</font>
-                <textcolor>Orange</textcolor>
+                <textcolor>Highlight</textcolor>
                 <shadowcolor>Black</shadowcolor>
                 <align>left</align>
                 <scroll>false</scroll>

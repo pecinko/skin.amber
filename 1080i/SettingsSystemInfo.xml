@@ -22,7 +22,7 @@
         <height>50</height>
         <label>$LOCALIZE[130]</label>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="group">
         <posy>60</posy>

@@ -9,7 +9,7 @@
     <posy>339</posy>
     <height>45</height>
     <width>400</width>
-    <textcolor>Orange</textcolor>
+    <textcolor>Highlight</textcolor>
     <font>ListDetails</font>
   </include>
   <include name="Recommended_Header">
@@ -21,7 +21,7 @@
     <posy>339</posy>
     <height>45</height>
     <width>400</width>
-    <textcolor>Orange</textcolor>
+    <textcolor>Highlight</textcolor>
     <font>ListDetails</font>
   </include>
   <include name="RecentlyAdded_Label">
@@ -32,7 +32,7 @@
     <height>45</height>
     <width>1080</width>
     <align>left</align>
-    <textcolor>Orange</textcolor>
+    <textcolor>Highlight</textcolor>
     <font>ListDetails</font>
   </include>
   <include name="Recommended_Label">
@@ -43,7 +43,7 @@
     <height>45</height>
     <width>1080</width>
     <align>left</align>
-    <textcolor>Orange</textcolor>
+    <textcolor>Highlight</textcolor>
     <font>ListDetails</font>
   </include>
   <include name="RecentlyAdded_Posters">
@@ -802,7 +802,7 @@
             <height>80</height>
             <align>right</align>
             <aligny>center</aligny>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <shadowcolor>ShadowDark</shadowcolor>
             <label>$INFO[ListItem.Label]</label>
             <font>MainMenuVerticalFO</font>
@@ -869,7 +869,7 @@
           <posy>0</posy>
           <width>360</width>
           <height>60</height>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <label>$INFO[ListItem.Label]</label>
         </control>
       </focusedlayout>

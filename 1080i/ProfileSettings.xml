@@ -21,7 +21,7 @@
         <width>741</width>
         <height>40</height>
         <align>center</align>
-				<textcolor>Orange</textcolor>
+				<textcolor>Highlight</textcolor>
       </control>
       <control type="label" id="102" description="Profile name">
         <posx>0</posx>
@@ -29,7 +29,7 @@
         <width>741</width>
         <height>40</height>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="label" id="103" description="Profile Directory">
         <font>SetContent</font>

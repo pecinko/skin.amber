@@ -21,7 +21,7 @@
         <posy>155</posy>
         <width>630</width>
         <height>36</height>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <font>InfoTitle</font>
         <align>center</align>
         <label>$LOCALIZE[19019] • $INFO[VideoPlayer.ChannelGroup]</label>
@@ -31,7 +31,7 @@
         <posy>190</posy>
         <width>630</width>
         <height>36</height>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <font>Label2</font>
         <align>center</align>
         <label>$INFO[System.Date] • $INFO[System.Time]</label>

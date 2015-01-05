@@ -29,7 +29,7 @@
 				<label>$ADDON[script.cu.lrclyrics 32199]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>Orange</textcolor>
+				<textcolor>Highlight</textcolor>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 			<control type="list" id="110">
@@ -63,7 +63,7 @@
 						<height>40</height>
 						<aligny>center</aligny>
 						<align>center</align>
-						<textcolor>Orange</textcolor>
+						<textcolor>Highlight</textcolor>
 						<shadowcolor>ShadowDark</shadowcolor>
 						<label fallback="- -">[B]$INFO[ListItem.Label][/B]</label>
 					</control>

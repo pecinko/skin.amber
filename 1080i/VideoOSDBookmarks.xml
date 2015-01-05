@@ -20,7 +20,7 @@
         <width>1140</width>
         <align>center</align>
         <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="panel" id="11">
         <posx>66</posx>

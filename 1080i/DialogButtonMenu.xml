@@ -78,7 +78,7 @@
             <posy>0</posy>
             <width>400</width>
             <height>60</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="image">

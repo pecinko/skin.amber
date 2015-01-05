@@ -452,7 +452,7 @@
         <control type="label" id="9001" description="Provider">
           <textoffsetx>10</textoffsetx>
           <align>center</align>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <include>9000ViewButtons</include>
           <label>$INFO[Window.Property(WeatherProvider)]</label>
         </control>

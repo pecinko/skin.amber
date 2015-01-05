@@ -352,7 +352,7 @@
             <posy>240</posy>
             <width>800</width>
             <height>60</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
@@ -444,7 +444,7 @@
             <posy>240</posy>
             <width>800</width>
             <height>60</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
@@ -527,7 +527,7 @@
             <posy>240</posy>
             <width>800</width>
             <height>60</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
@@ -584,7 +584,7 @@
             <width>800</width>
             <height>33</height>
             <font>InfoTitle</font>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <shadowcolor>Black</shadowcolor>
             <align>center</align>
             <scroll>false</scroll>
@@ -623,7 +623,7 @@
             <width>800</width>
             <height>33</height>
             <font>Details</font>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <align>center</align>
             <label>$INFO[ListItem.Label2]</label>
           </control>

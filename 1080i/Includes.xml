@@ -193,7 +193,7 @@
           <height>27</height>
           <aspectratio>keep</aspectratio>
           <texture>img/NowPlayingFO.png</texture>
-          <colordiffuse>Orange</colordiffuse>
+          <colordiffuse>Highlight</colordiffuse>
         </control>
         <control type="label">
           <visible>Player.HasAudio</visible>
@@ -203,7 +203,7 @@
           <width>1200</width>
           <height>35</height>
           <font>Details</font>
-          <label>$INFO[MusicPlayer.Artist,,[COLOR=Orange]  •  [/COLOR]]$INFO[MusicPlayer.Title,,[COLOR=Orange]  •  [/COLOR]][COLOR=Grey3]$INFO[MusicPlayer.TimeSpeed]$INFO[MusicPlayer.Duration, - ][/COLOR]</label>
+          <label>$INFO[MusicPlayer.Artist,,[COLOR=Highlight]  •  [/COLOR]]$INFO[MusicPlayer.Title,,[COLOR=Highlight]  •  [/COLOR]][COLOR=Grey3]$INFO[MusicPlayer.TimeSpeed]$INFO[MusicPlayer.Duration, - ][/COLOR]</label>
         </control>
       </control>
       <control type="label">
@@ -281,7 +281,7 @@
         <width>100</width>
         <font>ListDetails</font>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
       </control>
     </control>
@@ -318,6 +318,7 @@
   <include name="EpisodeThumbFO">
     <bordersize>-6</bordersize>
     <texture border="8">thumbs/EpisodeBG_FO2.png</texture>
+		<colordiffuse>Highlight</colordiffuse>
     <!--<texture border="8">img/WhiteRoundedFO.png</texture>-->
   </include>
   <!--<include name="SquareThumb">
@@ -345,6 +346,7 @@
     <bordersize>-6</bordersize>
     <!--<texture>thumbs/PosterBG_FO.png</texture>-->
     <texture border="8">thumbs/SquareBG_FO2.png</texture>
+		<colordiffuse>Highlight</colordiffuse>
   </include>
   <!--<include name="PosterThumb">
     <texture background="true" diffuse="thumbs/PosterDiffuse.png">$VAR[Thumbs]</texture>
@@ -369,6 +371,7 @@
   <include name="PosterThumbFO">
     <bordersize>-6</bordersize>
     <texture border="8">thumbs/PosterBG_FO2.png</texture>
+		<colordiffuse>Highlight</colordiffuse>
   </include>
   <include name="FullscreenInfoLabelMain">
     <posx>300</posx>
@@ -432,7 +435,7 @@
     <scrolltime>200</scrolltime>
     <orientation>vertical</orientation>
     <control type="label" id="9140">
-      <textcolor>Orange</textcolor>
+      <textcolor>Highlight</textcolor>
       <textoffsetx>10</textoffsetx>
       <align>left</align>
       <include>9000ViewButtons</include>
@@ -632,14 +635,14 @@
     </control>
     <control type="label" id="9180" description="Spacer">
       <height>36</height>
-      <textcolor>Orange</textcolor>
+      <textcolor>Highlight</textcolor>
       <align>left</align>
       <textoffsetx>10</textoffsetx>
       <include>9000ViewButtons</include>
       <label></label>
     </control>
     <control type="label" id="9181">
-      <textcolor>Orange</textcolor>
+      <textcolor>Highlight</textcolor>
       <align>left</align>
       <textoffsetx>10</textoffsetx>
       <include>9000ViewButtons</include>
@@ -653,7 +656,7 @@
     <width>87</width>
     <height>87</height>
     <font>Keyboard</font>
-    <focusedcolor>Orange</focusedcolor>
+    <focusedcolor>Highlight</focusedcolor>
     <textoffsety>-3</textoffsety>
     <texturefocus border="16,0,16,0">common/KeyButtonFO.png</texturefocus>
     <texturenofocus border="16,0,16,0">common/KeyButtonNF.png</texturenofocus>

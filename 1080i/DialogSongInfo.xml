@@ -26,7 +26,7 @@
         <posy>80</posy>
         <width>837</width>
         <height>60</height>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <textoffsetx>30</textoffsetx>
         <label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
       </control>
@@ -68,7 +68,7 @@
         <width>909</width>
         <height>60</height>
         <font>Slider</font>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <textoffsetx>30</textoffsetx>
         <label>$INFO[ListItem.FileExtension]</label>
       </control>

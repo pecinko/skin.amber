@@ -149,7 +149,7 @@
               <posx>0</posx>
               <posy>0</posy>
               <width>519</width>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <shadowcolor>ShadowDark</shadowcolor>
               <height>70</height>
               <align>center</align>

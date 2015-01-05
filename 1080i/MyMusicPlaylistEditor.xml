@@ -24,7 +24,7 @@
         <posy>54</posy>
         <width>837</width>
         <height>60</height>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <textoffsetx>20</textoffsetx>
         <label>$LOCALIZE[1033]</label>
       </control>
@@ -196,7 +196,7 @@
         <posy>54</posy>
         <width>837</width>
         <height>60</height>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <textoffsetx>20</textoffsetx>
         <label>$LOCALIZE[559]</label>
       </control>
@@ -205,7 +205,7 @@
         <posy>50</posy>
         <width>600</width>
         <align>right</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="list" id="100">
         <posx>450</posx>

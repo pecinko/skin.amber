@@ -12,7 +12,7 @@
         <posx>358</posx>
         <posy>90</posy>
         <width>1491</width>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$INFO[ListItem.Property(Addon.Name),$LOCALIZE[24003] - ]</label>
         <align>center</align>
       </control>
@@ -127,7 +127,7 @@
             <width>1380</width>
             <height>60</height>
             <font>Details</font>
-            <label>$INFO[ListItem.Property(Addon.Disclaimer),[COLOR=Orange]$LOCALIZE[24052]: [/COLOR]]</label>
+            <label>$INFO[ListItem.Property(Addon.Disclaimer),[COLOR=Highlight]$LOCALIZE[24052]: [/COLOR]]</label>
             <scroll>true</scroll>
             <wrapmultiline>true</wrapmultiline>
           </control>
@@ -138,7 +138,7 @@
             <width>1380</width>
             <height>60</height>
             <font>Details</font>
-            <label>$INFO[ListItem.Property(Addon.broken),[COLOR=Orange]$LOCALIZE[24096]: [/COLOR]]</label>
+            <label>$INFO[ListItem.Property(Addon.broken),[COLOR=Highlight]$LOCALIZE[24096]: [/COLOR]]</label>
             <scroll>true</scroll>
             <wrapmultiline>true</wrapmultiline>
           </control>
@@ -158,42 +158,42 @@
           <label>$LOCALIZE[5]</label>
           <width>324</width>
           <align>right</align>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="8" description="update">
           <label>$LOCALIZE[24069]</label>
           <width>324</width>
           <align>right</align>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="10" description="changelog">
           <label>$LOCALIZE[24036]</label>
           <width>324</width>
           <align>right</align>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="7" description="enable">
           <label>$LOCALIZE[24021]</label>
           <width>324</width>
           <align>right</align>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="11" description="rollback">
           <label>$LOCALIZE[24048]</label>
           <width>324</width>
           <align>right</align>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <textoffsetx>20</textoffsetx>
         </control>
         <control type="button" id="6" description="install">
           <label>$LOCALIZE[24022]</label>
           <width>324</width>
           <align>right</align>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <textoffsetx>20</textoffsetx>
         </control>
       </control>

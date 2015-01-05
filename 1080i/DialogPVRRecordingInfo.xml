@@ -20,7 +20,7 @@
         <width>1400</width>
         <label>$LOCALIZE[19053]</label>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="label">
         <description>Title label</description>

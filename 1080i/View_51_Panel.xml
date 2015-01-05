@@ -224,7 +224,7 @@
             <width>330</width>
             <height>30</height>
             <font>ListDetails</font>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <label>$INFO[ListItem.Title]</label>
           </control>
         </focusedlayout>
@@ -239,7 +239,7 @@
           <width>630</width>
           <height>60</height>
           <font>InfoTitle</font>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <label>$INFO[ListItem.Label]</label>
         </control>
         <control type="label" description="Title Label">
@@ -248,7 +248,7 @@
           <width>630</width>
           <height>60</height>
           <font>InfoTitle</font>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <label>$INFO[ListItem.Label]</label>
           <wrapmultiline>true</wrapmultiline>
         </control>
@@ -380,7 +380,7 @@
             <width>340</width>
             <height>45</height>
             <font>Details</font>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <align>center</align>
             <label>$INFO[ListItem.Label]</label>
           </control>

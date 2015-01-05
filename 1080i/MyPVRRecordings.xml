@@ -127,7 +127,7 @@
           <posy>-12</posy>
           <width>700</width>
           <font>InfoTitle</font>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <aligny>center</aligny>
           <height>60</height>
           <wrapmultiline>true</wrapmultiline>

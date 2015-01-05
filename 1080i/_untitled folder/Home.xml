@@ -81,7 +81,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <font>RSS</font>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <shadowcolor>black</shadowcolor>
             <label>$INFO[Window(Weather).Property(Location)]</label>
         </control>
@@ -157,7 +157,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>RSS</font>
-                <textcolor>Orange</textcolor>
+                <textcolor>Highlight</textcolor>
                 <label>$INFO[Window(Weather).Property(Location)]</label>
             </control>
             <control type="grouplist">
@@ -209,7 +209,7 @@
 		<posy>90</posy>
 		<width>429</width>
 		<height>120</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <font>InfoTitle</font>
             <align>center</align>
 			

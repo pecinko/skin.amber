@@ -34,7 +34,7 @@
         <textoffsetx>10</textoffsetx>
         <align>center</align>
         <texturefocus>dialogs/ContextFO.png</texturefocus>
-        <focusedcolor>Orange</focusedcolor>
+        <focusedcolor>Highlight</focusedcolor>
         <shadowcolor>ShadowDark</shadowcolor>
       </control>
     </control>

@@ -25,14 +25,14 @@
         <posy>0</posy>
         <width>324</width>
         <align>right</align>
-        <focusedcolor>Orange</focusedcolor>
+        <focusedcolor>Highlight</focusedcolor>
         <textoffsetx>10</textoffsetx>
       </control>
       <control type="label" id="20" description="Header">
         <posx>0</posx>
         <posy>90</posy>
         <width>1920</width>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <align>center</align>
       </control>
       <control type="grouplist" id="2" description="Controls for settings">

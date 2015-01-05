@@ -20,7 +20,7 @@
         <posx>396</posx>
         <posy>45</posy>
         <width>1005</width>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>-</label>
         <align>center</align>
       </control>

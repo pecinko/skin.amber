@@ -26,7 +26,7 @@
         <width>840</width>
         <label>$LOCALIZE[31048]</label>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="fixedlist" id="2">
         <description>Preset List</description>
@@ -46,7 +46,7 @@
             <posx>30</posx>
             <width>810</width>
             <height>69</height>
-            <selectedcolor>Orange</selectedcolor>
+            <selectedcolor>Highlight</selectedcolor>
             <info>ListItem.Label</info>
             <scroll>false</scroll>
           </control>
@@ -63,7 +63,7 @@
             <posx>30</posx>
             <height>69</height>
             <width>810</width>
-            <selectedcolor>Orange</selectedcolor>
+            <selectedcolor>Highlight</selectedcolor>
             <info>ListItem.Label</info>
           </control>
         </focusedlayout>

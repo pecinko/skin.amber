@@ -21,7 +21,7 @@
         <posy>0</posy>
         <width>810</width>
         <font>InfoTitle</font>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <shadowcolor>Black</shadowcolor>
         <align>center</align>
       </control>

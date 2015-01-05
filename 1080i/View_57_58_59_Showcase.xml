@@ -703,7 +703,7 @@
           <posy>87</posy>
           <width>900</width>
           <height>60</height>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <font>InfoTitle</font>
           <scroll>false</scroll>
           <label>$INFO[ListItem.Label]</label>

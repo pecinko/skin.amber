@@ -98,7 +98,7 @@
             <posy>330</posy>
             <width>300</width>
             <height>45</height>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <align>center</align>
             <label>$INFO[ListItem.Label]</label>
           </control>

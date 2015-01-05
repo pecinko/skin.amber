@@ -32,7 +32,7 @@
             <control type="label" description="Main label">
               <include>FullscreenInfoLabelMain</include>
               <wrapmultiline>true</wrapmultiline>
-              <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season,[COLOR=Orange]  •  [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
+              <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season,[COLOR=Highlight]  •  [/COLOR]$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Highlight]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
             </control>
             <control type="textbox">
               <posx>300</posx>

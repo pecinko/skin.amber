@@ -37,7 +37,7 @@
                 <height>55</height>
                 <width>310</width>
                 <label>$LOCALIZE[19157]</label>
-                <textcolor>Orange</textcolor>
+                <textcolor>Highlight</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
             </control>
@@ -59,7 +59,7 @@
                 <align>right</align>
                 <font>Details</font>
                 <textcolor>White</textcolor>
-                <label>[COLOR=White]$INFO[PVR.NextRecordingTitle][/COLOR][COLOR=Orange] ([/COLOR]$INFO[PVR.NextRecordingChannel][COLOR=Orange])[/COLOR]</label>
+                <label>[COLOR=White]$INFO[PVR.NextRecordingTitle][/COLOR][COLOR=Highlight] ([/COLOR]$INFO[PVR.NextRecordingChannel][COLOR=Highlight])[/COLOR]</label>
             </control>
         </control>
         <!--horizontal home currently recording label-->
@@ -97,7 +97,7 @@
                 <height>55</height>
                 <width>310</width>
                 <label>$LOCALIZE[19158]</label>
-                <textcolor>Orange</textcolor>
+                <textcolor>Highlight</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
             </control>
@@ -119,7 +119,7 @@
                 <align>right</align>
                 <font>Details</font>
                 <textcolor>White</textcolor>
-                <label>[COLOR=White]$INFO[PVR.NowRecordingTitle][/COLOR][COLOR=Orange] ([/COLOR]$INFO[PVR.NowRecordingChannel][COLOR=Orange])[/COLOR]</label>
+                <label>[COLOR=White]$INFO[PVR.NowRecordingTitle][/COLOR][COLOR=Highlight] ([/COLOR]$INFO[PVR.NowRecordingChannel][COLOR=Highlight])[/COLOR]</label>
             </control>
         </control>
         <!-- vertical home next recording label-->
@@ -158,7 +158,7 @@
                 <height>55</height>
                 <width>310</width>
                 <label>$LOCALIZE[19157]</label>
-                <textcolor>Orange</textcolor>
+                <textcolor>Highlight</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
             </control>
@@ -180,7 +180,7 @@
                 <align>right</align>
                 <font>Details</font>
                 <textcolor>White</textcolor>
-                <label>[COLOR=White]$INFO[PVR.NextRecordingTitle][/COLOR][COLOR=Orange] ([/COLOR]$INFO[PVR.NextRecordingChannel][COLOR=Orange])[/COLOR]</label>
+                <label>[COLOR=White]$INFO[PVR.NextRecordingTitle][/COLOR][COLOR=Highlight] ([/COLOR]$INFO[PVR.NextRecordingChannel][COLOR=Highlight])[/COLOR]</label>
             </control>
         </control>
         <!--vertical home currently recording label-->
@@ -218,7 +218,7 @@
                 <height>55</height>
                 <width>310</width>
                 <label>$LOCALIZE[19158]</label>
-                <textcolor>Orange</textcolor>
+                <textcolor>Highlight</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
             </control>
@@ -240,7 +240,7 @@
                 <align>right</align>
                 <font>Details</font>
                 <textcolor>White</textcolor>
-                <label>[COLOR=White]$INFO[PVR.NowRecordingTitle][/COLOR][COLOR=Orange] ([/COLOR]$INFO[PVR.NowRecordingChannel][COLOR=Orange])[/COLOR]</label>
+                <label>[COLOR=White]$INFO[PVR.NowRecordingTitle][/COLOR][COLOR=Highlight] ([/COLOR]$INFO[PVR.NowRecordingChannel][COLOR=Highlight])[/COLOR]</label>
             </control>
         </control>
     </include>
@@ -450,7 +450,7 @@
       <visible>Control.HasFocus(413)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>Recommended_Label</include>
-      <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
+      <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Highlight]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
     </control>
     <control type="fixedlist" id="413" description="TV Shows XBMC Widgets">
       <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>

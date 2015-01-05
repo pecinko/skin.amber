@@ -223,7 +223,7 @@
 						<aligny>center</aligny>
 						<align>left</align>
 						<scroll>false</scroll>
-						<label>[COLOR=Orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Duration,  -  ,  -  ]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
+						<label>[COLOR=Highlight]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Duration,  -  ,  -  ]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
 					</control>
 					<control type="label">
 						<description>Next timer date</description>

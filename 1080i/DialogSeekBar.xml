@@ -36,7 +36,7 @@
         <font>Details</font>
         <shadowcolor>Black</shadowcolor>
 		<scroll>false</scroll>
-        <label>$INFO[Player.FinishTime][COLOR=Orange] • [/COLOR]$LOCALIZE[19127]</label>
+        <label>$INFO[Player.FinishTime][COLOR=Highlight] • [/COLOR]$LOCALIZE[19127]</label>
       </control>
 	  <control type="group">
         <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Player.Caching | Player.Paused | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Window.IsActive(videoosd.xml)]</visible>
@@ -58,7 +58,7 @@
           <height>18</height>
           <texturebg border="15,0,15,0">VideoOSD/ProgressBG.png</texturebg>
           <midtexture border="15,0,15,0">VideoOSD/ProgressBar.png</midtexture>
-          <colordiffuse>Yellow</colordiffuse>
+          <colordiffuse>Highlight</colordiffuse>
           <info>Player.Progress</info>
           <visible>true</visible>
         </control>
@@ -130,7 +130,7 @@
 	  <control type="label" description="Seek time label">
         <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | [Player.Paused + System.IdleTime(4)]]</visible>
         <include>SeekbarLabels</include>
-        <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Orange]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
+        <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=Highlight]  •  [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Highlight]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
       </control>
 	  <control type="label" description="Chapter Info with Player info">
         <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>

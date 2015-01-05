@@ -34,7 +34,7 @@
         <width>504</width>
         <height>70</height>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$LOCALIZE[31979]$INFO[Control.GetLabel(10), ,%]</label>
       </control>
 	  <control type="label" description="Progress label">
@@ -44,7 +44,7 @@
         <width>504</width>
         <height>70</height>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$LOCALIZE[31979]</label>
       </control>
     </control>

@@ -47,7 +47,7 @@
             <control type="label" id="130" description="Notification Local subtitle available">
               <width>1245</width>
               <height>60</height>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <label>31357</label>
               <font>size22</font>
               <align>center</align>
@@ -71,7 +71,7 @@
           <height>60</height>
           <font>FManager</font>
           <label>$INFO[Player.Filename]</label>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <align>center</align>
           <aligny>center</aligny>
           <wrapmultiline>true</wrapmultiline>

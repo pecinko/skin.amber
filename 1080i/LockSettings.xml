@@ -21,7 +21,7 @@
         <width>1010</width>
         <height>40</height>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
       </control>
       <control type="grouplist" id="5">
         <description>Control Area</description>

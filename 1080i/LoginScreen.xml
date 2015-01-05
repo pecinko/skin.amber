@@ -24,7 +24,7 @@
         <width>608</width>
         <height>40</height>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$LOCALIZE[13200]</label>
       </control>
       <control type="label" description="Profile Directory">

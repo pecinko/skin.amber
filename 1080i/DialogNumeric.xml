@@ -26,7 +26,7 @@
         <posx>620</posx>
         <posy>405</posy>
         <width>692</width>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <align>center</align>
       </control>
       <control type="group">

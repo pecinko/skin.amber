@@ -24,7 +24,7 @@
         <posx>400</posx>
         <posy>405</posy>
         <width>1120</width>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <align>center</align>
       </control>
       <control type="group">
@@ -155,7 +155,7 @@
             <width>120</width>
             <aspectratio>keep</aspectratio>
             <include>KeyboardButtons</include>
-            <texture colordiffuse="Orange">common/KeyButtonDel.png</texture>
+            <texture colordiffuse="Highlight">common/KeyButtonDel.png</texture>
           </control>
           <control type="image" description="Delete Backspace img">
             <visible>!Control.HasFocus(8)</visible>
@@ -175,7 +175,7 @@
               <description>Symbols button</description>
               <width>150</width>
               <label>@#!*</label>
-              <altlabel>[COLOR=Orange][UPPERCASE]@ ? , # ; ) ![/UPPERCASE][/COLOR]</altlabel>
+              <altlabel>[COLOR=Highlight][UPPERCASE]@ ? , # ; ) ![/UPPERCASE][/COLOR]</altlabel>
               <onup>305</onup>
               <ondown>303</ondown>
               <font>ListDetails</font>
@@ -275,7 +275,7 @@
               <ondown>302</ondown>
               <font>ListDetails</font>
               <label>20179</label>
-              <altlabel>[COLOR=Orange][UPPERCASE]$LOCALIZE[20179][/UPPERCASE][/COLOR]</altlabel>
+              <altlabel>[COLOR=Highlight][UPPERCASE]$LOCALIZE[20179][/UPPERCASE][/COLOR]</altlabel>
               <include>KeyboardButtons</include>
             </control>
             <control type="button" id="140">
@@ -362,7 +362,7 @@
               <ondown>300</ondown>
               <font>ListDetails</font>
               <label>20178</label>
-              <altlabel>[COLOR=Orange][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/COLOR]</altlabel>
+              <altlabel>[COLOR=Highlight][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/COLOR]</altlabel>
               <include>KeyboardButtons</include>
             </control>
             <control type="button" id="160">

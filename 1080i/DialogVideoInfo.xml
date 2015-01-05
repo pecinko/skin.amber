@@ -469,7 +469,7 @@
           <font>Details</font>
           <label>$LOCALIZE[31005]</label>
           <textcolor>White</textcolor>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <texturefocus>-</texturefocus>
           <onclick>Dialog.Close(all,true)</onclick>
           <onclick>Playlist.Clear</onclick>
@@ -483,7 +483,7 @@
           <label>$LOCALIZE[208]</label>
           <altlabel>$LOCALIZE[1024]</altlabel>
           <textcolor>White</textcolor>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <texturefocus>-</texturefocus>
           <alttexturefocus>-</alttexturefocus>
           <usealttexture>Container.Content(TVShows)</usealttexture>
@@ -495,7 +495,7 @@
           <align>center</align>
           <label>$LOCALIZE[20410]</label>
           <textcolor>White</textcolor>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <texturefocus>-</texturefocus>
           <visible>!IsEmpty(ListItem.Trailer)</visible>
           <pulseonselect>true</pulseonselect>
@@ -507,7 +507,7 @@
           <align>center</align>
           <font>Details</font>
           <textcolor>White</textcolor>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <label>$LOCALIZE[344]</label>
           <onclick>Control.SetFocus(50)</onclick>
           <texturefocus>-</texturefocus>
@@ -519,7 +519,7 @@
           <align>center</align>
           <font>Details</font>
           <textcolor>White</textcolor>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <label>$LOCALIZE[184]</label>
           <texturefocus>-</texturefocus>
         </control>
@@ -529,7 +529,7 @@
           <align>center</align>
           <font>Details</font>
           <textcolor>White</textcolor>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <label>$LOCALIZE[13511]</label>
           <texturefocus>-</texturefocus>
         </control>
@@ -540,7 +540,7 @@
           <align>center</align>
           <font>Details</font>
           <textcolor>White</textcolor>
-          <focusedcolor>Orange</focusedcolor>
+          <focusedcolor>Highlight</focusedcolor>
           <label>$LOCALIZE[31956]</label>
           <texturefocus>-</texturefocus>
           <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
@@ -600,7 +600,7 @@
             <font>InfoPlot</font>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <info>ListItem.Label</info>
           </control>
         </focusedlayout>

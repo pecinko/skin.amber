@@ -33,7 +33,7 @@
           <align>center</align>
           <haspath>true</haspath>
           <font>FManager</font>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <shadowcolor>-</shadowcolor>
         </control>
         <control type="panel" id="20" description="Left File List">
@@ -128,7 +128,7 @@
           <align>center</align>
           <haspath>true</haspath>
           <font>FManager</font>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <shadowcolor>-</shadowcolor>
         </control>
         <control type="panel" id="21" description="Right File List">

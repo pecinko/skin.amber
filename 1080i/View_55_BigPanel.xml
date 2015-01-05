@@ -279,7 +279,7 @@
             <height>30</height>
             <align>center</align>
             <font>ListDetails</font>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </focusedlayout>
@@ -295,7 +295,7 @@
             <width>630</width>
             <height>50</height>
             <aligny>bottom</aligny>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <font>InfoTitle</font>
             <wrapmultiline>true</wrapmultiline>
             <label>$INFO[ListItem.Label]</label>
@@ -366,7 +366,7 @@
               <width>630</width>
               <height>50</height>
               <aligny>bottom</aligny>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <font>InfoTitle</font>
               <wrapmultiline>true</wrapmultiline>
               <label>$INFO[ListItem.Label]</label>
@@ -394,7 +394,7 @@
               <width>630</width>
               <height>50</height>
               <aligny>bottom</aligny>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <font>InfoTitle</font>
               <wrapmultiline>true</wrapmultiline>
               <label>$INFO[ListItem.Label]</label>
@@ -467,7 +467,7 @@
               <width>720</width>
               <height>50</height>
               <aligny>bottom</aligny>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <font>InfoTitle</font>
               <wrapmultiline>true</wrapmultiline>
               <label>$INFO[ListItem.Label]</label>
@@ -495,7 +495,7 @@
               <width>720</width>
               <height>50</height>
               <aligny>bottom</aligny>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <font>InfoTitle</font>
               <wrapmultiline>true</wrapmultiline>
               <label>$INFO[ListItem.Label]</label>
@@ -553,7 +553,7 @@
             <width>600</width>
             <height>50</height>
             <aligny>bottom</aligny>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <font>InfoTitle</font>
             <wrapmultiline>true</wrapmultiline>
             <label>$INFO[ListItem.Label]</label>
@@ -597,7 +597,7 @@
               <width>600</width>
               <height>50</height>
               <aligny>bottom</aligny>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <font>InfoTitle</font>
               <wrapmultiline>true</wrapmultiline>
               <label>$INFO[ListItem.Label]</label>
@@ -618,7 +618,7 @@
               <width>600</width>
               <height>50</height>
               <aligny>bottom</aligny>
-              <textcolor>Orange</textcolor>
+              <textcolor>Highlight</textcolor>
               <font>InfoTitle</font>
               <wrapmultiline>true</wrapmultiline>
               <label>$INFO[ListItem.Label]</label>
@@ -644,7 +644,7 @@
             <width>600</width>
             <height>50</height>
             <aligny>bottom</aligny>
-            <textcolor>Orange</textcolor>
+            <textcolor>Highlight</textcolor>
             <font>InfoTitle</font>
             <wrapmultiline>true</wrapmultiline>
             <label>$INFO[ListItem.Label]</label>
@@ -686,7 +686,7 @@
           <width>630</width>
           <height>50</height>
           <aligny>bottom</aligny>
-          <textcolor>Orange</textcolor>
+          <textcolor>Highlight</textcolor>
           <font>InfoTitle</font>
           <wrapmultiline>true</wrapmultiline>
           <label>$INFO[ListItem.Label]</label>

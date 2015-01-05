@@ -24,7 +24,7 @@
         <width>1010</width>
         <height>40</height>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$LOCALIZE[5] - $LOCALIZE[35000]</label>
       </control>
       <control type="grouplist" id="5">

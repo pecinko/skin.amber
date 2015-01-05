@@ -18,7 +18,7 @@
         <posy>40</posy>
         <width>1010</width>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$ADDON[pvr.wmc 30120]</label>
       </control>
       <control type="label" description="program title" id="20">

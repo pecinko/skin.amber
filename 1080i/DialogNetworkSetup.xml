@@ -19,7 +19,7 @@
         <posy>40</posy>
         <width>1010</width>
         <align>center</align>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$LOCALIZE[1007]</label>
       </control>
       <control type="group" id="9001">

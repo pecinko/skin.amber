@@ -22,7 +22,7 @@
         <posy>122</posy>
         <width>846</width>
         <height>40</height>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <label>$LOCALIZE[35000]</label>
         <align>center</align>
       </control>

@@ -21,7 +21,7 @@
         <posy>170</posy>
         <width>630</width>
         <height>36</height>
-        <textcolor>Orange</textcolor>
+        <textcolor>Highlight</textcolor>
         <font>InfoTitle</font>
         <align>center</align>
         <label>[B]$INFO[VideoPlayer.ChannelName][/B] - $INFO[Container(11).ListItem.StartDate]</label>
