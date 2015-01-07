@@ -2,28 +2,19 @@
 # Addon Name: Amber
 # Addon id: skin.amber
 # Addon Provider: Pecinko
-# Translators:
-# CutSickAss <cutsickass@yahoo.com>, 2013-2014
-# panos <bleo8onhs@hotmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-01-03 22:44+0000\n"
-"Last-Translator: TeamXBMC <xbmctranslations@gmail.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/xbmc-skins/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-msgctxt "Addon Description"
-msgid ""
-"No bloatware, just your media with easy to navigate interface.[CR]Uses some "
-"textures from Mediastream and Aeon skin."
-msgstr "Χωρίς περιττά πράγματα, μόνο τα πολυμέσα σας με ένα απλό περιβάλλον εργασίας για πλοήγηση.[CR]Χρησιμοποιήθηκαν κάποιες εικόνες από τα κελύφη Mediastream και Aeon."
 
 msgctxt "#31000"
 msgid "Picture Channels"
@@ -261,7 +252,6 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Πρόγνωση 10 ημερών"
 
-#. "S" Season
 msgctxt "#31954"
 msgid "S"
 msgstr "Ν"
@@ -278,7 +268,6 @@ msgctxt "#31957"
 msgid "Hide Update library button from home submenu"
 msgstr "Απόκρυψη του πλήκτρου 'Ενημέρωση Συλλογής' από το υπομενού αρχ. οθόνης"
 
-#. view label
 msgctxt "#31958"
 msgid "Big Panel"
 msgstr "Μεγάλο Πάνελ"
@@ -295,12 +284,10 @@ msgctxt "#31961"
 msgid "Recently added"
 msgstr "Προστέθηκαν πρόσφατα"
 
-#. view label
 msgctxt "#31962"
 msgid "Low List"
 msgstr "Χαμηλή Λίστα"
 
-#. view label
 msgctxt "#31963"
 msgid "Panel"
 msgstr "Πάνελ"
@@ -309,7 +296,6 @@ msgctxt "#31964"
 msgid "Configure shelf items"
 msgstr "Διαμόρφωση αντικειμένων Ραφιού"
 
-#. view label
 msgctxt "#31965"
 msgid "Banner List"
 msgstr "Λίστα Πανό"
@@ -342,7 +328,6 @@ msgctxt "#31972"
 msgid "Clips"
 msgstr "Κλιπ"
 
-#. "E" Episode
 msgctxt "#31973"
 msgid "E"
 msgstr "Α"
@@ -380,11 +365,7 @@ msgid "Hide watched marks"
 msgstr "Απόκρυψη σημαιών προβληθέντων"
 
 msgctxt "#31982"
-msgid ""
-"Shelf items populate more slowly on some systems. By default, skin waits for"
-" them to be ready and presents Home screen afterwards.[CR][CR]This option "
-"skips this step and presents Home page immediately. Shelf items will appear "
-"with a delay, depending on a speed of your system."
+msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
 msgstr "Τα αντικείμενα του Ραφιού συμπληρώνονται πιο αργά σε ορισμένα συστήματα. Το κέλυφος κανονικά αναμένει μέχρις ότου ετοιμαστούν και έπειτα εμφανίζει την Αρχική Οθόνη.[CR][CR]Αυτή η επιλογή παρακάμπτει αυτό το βήμα και παρουσιάζει άμεσα την Αρχική Οθόνη. Τα αντικείμενα του Ραφιού θα εμφανιστούν με μια καθυστέρηση, αναλόγως της ταχύτητας του συστήματός σας."
 
 msgctxt "#31983"

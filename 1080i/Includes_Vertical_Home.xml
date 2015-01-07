@@ -776,8 +776,9 @@
         <onright>700</onright>
         <onback>9001</onback>
         <pagecontrol>-</pagecontrol>
-        <focusposition>5</focusposition>
+        <focusposition>4</focusposition>
         <movement>0</movement>
+				<!--<defaultcontrol always="true">1</defaultcontrol>-->
         <preloaditems>4</preloaditems>
         <itemlayout height="80" width="460">
           <control type="label">
