@@ -55,7 +55,7 @@
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
 				<control type="label" id="200">
-					<textcolor>Orange</textcolor>
+					<textcolor>Highlight</textcolor>
 					<textoffsetx>10</textoffsetx>
 					<align>left</align>
 					<include>9000ViewButtons</include>
@@ -99,7 +99,7 @@
 					<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick> 
 				</control>
 				<control type="label" id="201">
-					<textcolor>Orange</textcolor>
+					<textcolor>Highlight</textcolor>
 					<textoffsetx>10</textoffsetx>
 					<align>left</align>
 					<include>9000ViewButtons</include>
@@ -842,7 +842,7 @@
 					<aligny>center</aligny>
 					<align>left</align>
 					<scroll>false</scroll>
-					<label>[COLOR=Orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Genre,  -  ,  -]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
+					<label>[COLOR=Highlight]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Genre,  -  ,  -]  [COLOR=Grey]$INFO[ListItem.StartTime,( ,  -  ]$INFO[ListItem.EndTime,, )][/COLOR]</label>
 				</control>
 			</control>
 		</control>

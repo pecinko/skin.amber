@@ -2,29 +2,19 @@
 # Addon Name: Amber
 # Addon id: skin.amber
 # Addon Provider: Pecinko
-# Translators:
-# Cajetan Bouchard <cajetan.bouchard@gmail.com>, 2014
-# vikenti <francois@xrepli.ca>, 2014
-# yahoe.001, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2015-01-03 22:44+0000\n"
-"Last-Translator: yahoe.001\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
 "Language-Team: French (Canada) (http://www.transifex.com/projects/p/xbmc-skins/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr_CA\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-msgctxt "Addon Description"
-msgid ""
-"No bloatware, just your media with easy to navigate interface.[CR]Uses some "
-"textures from Mediastream and Aeon skin."
-msgstr "Pas d'inflagiciel, juste vos médias avec une interface facile à naviguer.[CR]Utilise des textures des habillages Mediastream et Aeon."
 
 msgctxt "#31000"
 msgid "Picture Channels"
@@ -262,7 +252,6 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Prévisions sur 10 jours"
 
-#. "S" Season
 msgctxt "#31954"
 msgid "S"
 msgstr "S"
@@ -279,7 +268,6 @@ msgctxt "#31957"
 msgid "Hide Update library button from home submenu"
 msgstr "Cacher le bouton de mise à jour de la médiathèque du sous-menu de l’accueil"
 
-#. view label
 msgctxt "#31958"
 msgid "Big Panel"
 msgstr "Grand panneau"
@@ -296,12 +284,10 @@ msgctxt "#31961"
 msgid "Recently added"
 msgstr "Ajouté récemment"
 
-#. view label
 msgctxt "#31962"
 msgid "Low List"
 msgstr "Liste basse"
 
-#. view label
 msgctxt "#31963"
 msgid "Panel"
 msgstr "Panneau"
@@ -310,7 +296,6 @@ msgctxt "#31964"
 msgid "Configure shelf items"
 msgstr "Configurer les éléments sur la tablette"
 
-#. view label
 msgctxt "#31965"
 msgid "Banner List"
 msgstr "Liste de bannières"
@@ -343,7 +328,6 @@ msgctxt "#31972"
 msgid "Clips"
 msgstr "Clips"
 
-#. "E" Episode
 msgctxt "#31973"
 msgid "E"
 msgstr "E"
@@ -381,11 +365,7 @@ msgid "Hide watched marks"
 msgstr "Cacher les marques Regardé"
 
 msgctxt "#31982"
-msgid ""
-"Shelf items populate more slowly on some systems. By default, skin waits for"
-" them to be ready and presents Home screen afterwards.[CR][CR]This option "
-"skips this step and presents Home page immediately. Shelf items will appear "
-"with a delay, depending on a speed of your system."
+msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
 msgstr "Les éléments de la tablette apparaissent plus lentement sur ​​certains systèmes. Par défaut, l'habillage attend qu'ils soient prêts et présente l'écran d'accueil par la suite.[CR][CR]Cette option saute cette étape et présente l'écran d'accueil immédiatement. Les éléments de la tablette apparaîtront avec un retard, selon la vitesse de votre système."
 
 msgctxt "#31983"
