@@ -71,11 +71,12 @@
           <control type="label">
             <posx>36</posx>
             <posy>330</posy>
-            <width>300</width>
+            <width>288</width>
             <height>45</height>
             <align>center</align>
             <scroll>false</scroll>
-			<label>$INFO[ListItem.Label]</label>
+            <font>ListDetails</font>
+            <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>
         <focusedlayout height="420" width="360">
@@ -96,9 +97,10 @@
           <control type="label">
             <posx>36</posx>
             <posy>330</posy>
-            <width>300</width>
+            <width>288</width>
             <height>45</height>
             <textcolor>Highlight</textcolor>
+            <font>ListDetails</font>
             <align>center</align>
             <label>$INFO[ListItem.Label]</label>
           </control>
