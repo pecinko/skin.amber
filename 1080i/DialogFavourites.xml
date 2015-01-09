@@ -27,7 +27,7 @@
         <label>$VAR[GlobalHeadings]</label>
       </control>
       <control type="label">
-        <posx>50r</posx>
+        <posx>20r</posx>
         <posy>0</posy>
         <width>500</width>
         <height>40</height>
@@ -69,7 +69,7 @@
             <include>SquareThumb</include>
           </control>
           <control type="label">
-            <posx>180</posx>
+            <posx>36</posx>
             <posy>330</posy>
             <width>300</width>
             <height>45</height>
@@ -94,7 +94,7 @@
             <include>SquareThumb</include>
           </control>
           <control type="label">
-            <posx>180</posx>
+            <posx>36</posx>
             <posy>330</posy>
             <width>300</width>
             <height>45</height>
