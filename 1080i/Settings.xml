@@ -20,7 +20,7 @@
         <width>620</width>
         <height>72</height>
         <align>center</align>
-        <label>$LOCALIZE[5] - XBMC</label>
+        <label>$LOCALIZE[5] - KODI</label>
         <font>InfoTitle</font>
         <textcolor>Highlight</textcolor>
       </control>
@@ -83,7 +83,7 @@
         </focusedlayout>
         <content>
           <item id="1">
-            <label>XBMC</label>
+            <label>KODI</label>
             <onclick>noop</onclick>
           </item>
           <item id="2" description="Options">

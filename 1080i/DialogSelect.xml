@@ -81,7 +81,7 @@
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-              <posx>990</posx>
+              <right>20</right>
               <posy>0</posy>
               <width>800</width>
               <height>60</height>
@@ -111,7 +111,7 @@
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-              <posx>990</posx>
+              <right>20</right>
               <posy>0</posy>
               <width>800</width>
               <height>60</height>
@@ -143,14 +143,23 @@
         <control type="label" description="Author">
           <visible>Control.HasFocus(6) + !IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
           <posx>18</posx>
-          <posy>276</posy>
+          <posy>339</posy>
           <width>220</width>
           <height>150</height>
           <wrapmultiline>true</wrapmultiline>
           <align>center</align>
           <font>ListDetails</font>
-          <textcolor>White2</textcolor>
           <label>$INFO[Container(6).ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
+        </control>
+				<control type="label" description="Author">
+          <visible>Control.HasFocus(6) + !IsEmpty(Container(6).ListItem.Property(Addon.Version))</visible>
+          <posx>18</posx>
+          <posy>220</posy>
+          <width>220</width>
+          <height>150</height>
+          <align>center</align>
+          <font>ListDetails</font>
+          <label>$INFO[Container(6).ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
         </control>
       </control>
       <control type="group" description="Group 3 Plain list">
