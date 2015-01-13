@@ -760,7 +760,7 @@
           <aligny>center</aligny>
           <textcolor>Grey3</textcolor>
           <shadowcolor>ShadowDark</shadowcolor>
-          <label>XBMC</label>
+          <label>KODI</label>
           <font>Volume</font>
         </control>
       </control>

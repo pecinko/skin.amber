@@ -45,7 +45,7 @@ msgid "Shared"
 msgstr ""
 
 msgctxt "#31007"
-msgid "PleKodi settings"
+msgid "PleXBMC settings"
 msgstr ""
 
 msgctxt "#31008"
