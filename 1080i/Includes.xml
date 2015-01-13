@@ -1626,6 +1626,18 @@
         <colordiffuse>Silver</colordiffuse>
         <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
       </control>
+			<control type="image">
+        <visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+				<visible>ListItem.IsStereoscopic</visible>
+        <height>45</height>
+        <width>90</width>
+        <posx>0</posx>
+        <posy>0</posy>
+        <bordersize>3</bordersize>
+        <aspectratio>keep</aspectratio>
+        <colordiffuse>Silver</colordiffuse>
+        <texture>badges/video/3d.png</texture>
+      </control>
     </control>
   </include>
 </includes>
