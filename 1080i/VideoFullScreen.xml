@@ -66,6 +66,18 @@
                 <texturefocus>badges/video/ResFrame.png</texturefocus>
                 <label>$INFO[VideoPlayer.VideoResolution]</label>
               </control>
+              <control type="button">
+                <visible>VideoPlayer.IsStereoscopic</visible>
+                <height>36</height>
+                <width>102</width>
+                <font>Flags</font>
+                <align>center</align>
+                <textoffsetx>0</textoffsetx>
+                <colordiffuse>Silver</colordiffuse>
+                <texturenofocus>badges/video/ResFrame.png</texturenofocus>
+                <texturefocus>badges/video/ResFrame.png</texturefocus>
+                <label>3D</label>
+              </control>
               <control type="image">
                 <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
                 <height>36</height>

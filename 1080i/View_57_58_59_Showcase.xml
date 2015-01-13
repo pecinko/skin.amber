@@ -71,6 +71,15 @@
         <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
       </control>
       <control type="image">
+        <visible>ListItem.IsStereoscopic</visible>
+        <height>45</height>
+        <width>90</width>
+        <bordersize>3</bordersize>
+        <aspectratio>keep</aspectratio>
+        <colordiffuse>Silver</colordiffuse>
+        <texture>badges/video/3d.png</texture>
+      </control>
+      <control type="image">
         <visible>container.content(albums) | container.content(songs)</visible>
         <height>45</height>
         <width>174</width>
