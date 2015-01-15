@@ -946,7 +946,7 @@
                 <label>$LOCALIZE[31110]</label>
               </control>
               <control type="label">
-                <posx>120r</posx>
+                <right>120</right>
                 <posy>0</posy>
                 <width>960</width>
                 <height>60</height>
