@@ -7,7 +7,7 @@
   </requires>
   <extension
     point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false">
-    <res width="1920" height="1080" aspect="16:9" default="false" folder="1080i" />
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
   </extension>
   <extension point="xbmc.addon.metadata">
     <description lang="de">Keine Bloatware, nur Ihre Medien mit einer einfach zu navigierenden Oberfläche.[CR]Benutzt Texturen aus den Skins Mediastream und Aeon.</description>
