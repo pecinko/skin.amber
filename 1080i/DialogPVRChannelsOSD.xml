@@ -57,7 +57,7 @@
           </control>
           <include>RecOverlay</include>
           <control type="label" description="Number">
-            <posx>40</posx>
+            <posx>15</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
@@ -80,6 +80,24 @@
             <scroll>false</scroll>
             <textcolor>ListDetails</textcolor>
             <label>$INFO[ListItem.Title]</label>
+          </control>
+          <control type="progress">
+	    			<posx>90</posx>
+            <posy>92</posy>
+            <width>800</width>
+            <height>1</height>
+            <texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
+            <midtexture border="0,0,0,0">img/AmberDot.png</midtexture>
+            <info>ListItem.Progress</info>
+            <visible>ListItem.HasEpg</visible>
+          </control>
+          <control type="image">
+            <left>420</left>
+            <top>4</top>
+            <width>70</width>
+            <height>70</height>
+            <texture>$INFO[ListItem.Icon]</texture>
+            <aspectratio>keep</aspectratio>
           </control>
         </itemlayout>
         <focusedlayout height="99">
@@ -99,7 +117,7 @@
           </control>
           <include>RecOverlay</include>
           <control type="label" description="Number">
-            <posx>40</posx>
+            <posx>15</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
@@ -120,6 +138,24 @@
             <width>500</width>
             <textcolor>ListDetails</textcolor>
             <label>$INFO[ListItem.Title]</label>
+          </control>
+          <control type="progress">
+		        <posx>90</posx>
+            <posy>92</posy>
+            <width>800</width>
+            <height>1</height>
+            <texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
+            <midtexture border="0,0,0,0">img/AmberDot.png</midtexture>
+            <info>ListItem.Progress</info>
+            <visible>ListItem.HasEpg</visible>
+          </control>
+          <control type="image">
+            <left>420</left>
+            <top>4</top>
+            <width>70</width>
+            <height>70</height>
+            <texture>$INFO[ListItem.Icon]</texture>
+            <aspectratio>keep</aspectratio>
           </control>
         </focusedlayout>
       </control>
