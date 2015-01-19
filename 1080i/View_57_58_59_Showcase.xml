@@ -78,6 +78,14 @@
         <colordiffuse>Silver</colordiffuse>
         <texture>$INFO[ListItem.StarRating]</texture>
       </control>
+			<control type="image">
+					<visible>ListItem.IsStereoscopic</visible>
+					<height>36</height>
+					<width>102</width>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>Silver</colordiffuse>
+					<texture>badges/video/3d.png</texture>
+				</control>
     </control>
     <control type="grouplist" description="Right Flags">
       <include>ContentFade</include>

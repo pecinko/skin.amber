@@ -26,7 +26,7 @@
           <posy>171</posy>
           <width>460</width>
           <height>460</height>
-          <bordersize>-24</bordersize>
+          <bordersize>-6</bordersize>
           <include>SquareThumbBG</include>
         </control>
         <control type="image" description="Item Thumb">
@@ -66,9 +66,9 @@
             <info>ListItem.Label</info>
           </control>
           <control type="label">
-            <posx>800</posx>
+            <posx>0</posx>
             <posy>0</posy>
-            <width>795</width>
+            <width>800</width>
             <height>60</height>
             <font>ListDetails</font>
             <textcolor>Grey</textcolor>
@@ -81,7 +81,7 @@
             <posx>0</posx>
             <posy>0</posy>
             <height>60</height>
-            <width>820</width>
+            <width>800</width>
             <texture flipy="true" border="3">list/ListNF.png</texture>
           </control>
           <control type="image">
@@ -101,9 +101,9 @@
             <info>ListItem.Label</info>
           </control>
           <control type="label">
-            <posx>800</posx>
+            <posx>0</posx>
             <posy>0</posy>
-            <width>795</width>
+            <width>800</width>
             <height>60</height>
             <font>ListDetails</font>
             <textcolor>Grey2</textcolor>

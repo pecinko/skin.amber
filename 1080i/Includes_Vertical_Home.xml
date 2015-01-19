@@ -760,7 +760,7 @@
           <aligny>center</aligny>
           <textcolor>Grey3</textcolor>
           <shadowcolor>ShadowDark</shadowcolor>
-          <label>XBMC</label>
+          <label>KODI</label>
           <font>Volume</font>
         </control>
       </control>
@@ -776,7 +776,7 @@
         <onright>700</onright>
         <onback>9001</onback>
         <pagecontrol>-</pagecontrol>
-        <focusposition>4</focusposition>
+        <focusposition>5</focusposition>
         <movement>0</movement>
 				<!--<defaultcontrol always="true">1</defaultcontrol>-->
         <preloaditems>4</preloaditems>

@@ -53,10 +53,10 @@
               <texture border="3">list/ListNF.png</texture>
             </control>
             <control type="label">
-              <posx>850</posx>
+              <posx>0</posx>
               <posy>0</posy>
               <height>60</height>
-              <width>800</width>
+              <width>850</width>
               <align>right</align>
               <font>FManager2</font>
               <info>ListItem.Label2</info>
@@ -78,10 +78,10 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label">
-              <posx>850</posx>
+              <posx>0</posx>
               <posy>0</posy>
               <height>60</height>
-              <width>800</width>
+              <width>850</width>
               <align>right</align>
               <font>FManager2</font>
               <info>ListItem.Label2</info>

@@ -251,9 +251,9 @@
             <aspectratio>keep</aspectratio>
           </control>
           <control type="label" description="Title Label">
-            <posx>177</posx>
+            <posx>27</posx>
             <posy>270</posy>
-            <width>320</width>
+            <width>300</width>
             <height>30</height>
             <align>center</align>
             <font>ListDetails</font>
@@ -273,9 +273,9 @@
             <aspectratio>keep</aspectratio>
           </control>
           <control type="label" description="Title Label">
-            <posx>177</posx>
+            <posx>27</posx>
             <posy>270</posy>
-            <width>320</width>
+            <width>300</width>
             <height>30</height>
             <align>center</align>
             <font>ListDetails</font>

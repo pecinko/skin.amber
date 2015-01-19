@@ -20,7 +20,7 @@
         <height>61</height>
         <font>Logo</font>
         <align>center</align>
-        <label>XBMC</label>
+        <label>KODI</label>
       </control>
       <control type="label" id="2" description="Category label">
         <posx>650</posx>
