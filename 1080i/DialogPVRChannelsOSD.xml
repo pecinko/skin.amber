@@ -57,7 +57,7 @@
           </control>
           <include>RecOverlay</include>
           <control type="label" description="Number">
-            <posx>40</posx>
+            <posx>15</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
@@ -82,7 +82,7 @@
             <label>$INFO[ListItem.Title]</label>
           </control>
           <control type="progress">
-		        <posx>90</posx>
+	    			<posx>90</posx>
             <posy>92</posy>
             <width>800</width>
             <height>1</height>
@@ -117,7 +117,7 @@
           </control>
           <include>RecOverlay</include>
           <control type="label" description="Number">
-            <posx>40</posx>
+            <posx>15</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
