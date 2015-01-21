@@ -65,14 +65,14 @@
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" description="Main Label">
-            <posx>90</posx>
+            <posx>160</posx>
             <height>73</height>
             <width>500</width>
             <scroll>false</scroll>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label" description="Label2">
-            <posx>90</posx>
+            <posx>160</posx>
             <posy>63</posy>
             <height>30</height>
             <font>Label2</font>
@@ -82,9 +82,9 @@
             <label>$INFO[ListItem.Title]</label>
           </control>
           <control type="progress">
-	    			<posx>90</posx>
+	    <posx>160</posx>
             <posy>92</posy>
-            <width>800</width>
+            <width>500</width>
             <height>1</height>
             <texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
             <midtexture border="0,0,0,0">img/AmberDot.png</midtexture>
@@ -92,8 +92,8 @@
             <visible>ListItem.HasEpg</visible>
           </control>
           <control type="image">
-            <left>420</left>
-            <top>4</top>
+            <left>80</left>
+            <top>16</top>
             <width>70</width>
             <height>70</height>
             <texture>$INFO[ListItem.Icon]</texture>
@@ -125,13 +125,13 @@
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" description="Main Label">
-            <posx>90</posx>
+            <posx>160</posx>
             <height>73</height>
             <width>500</width>
             <label>$INFO[ListItem.Label]</label>
           </control>
           <control type="label" description="Label2">
-            <posx>90</posx>
+            <posx>160</posx>
             <posy>63</posy>
             <height>30</height>
             <font>Label2</font>
@@ -140,9 +140,9 @@
             <label>$INFO[ListItem.Title]</label>
           </control>
           <control type="progress">
-		        <posx>90</posx>
+            <posx>160</posx>
             <posy>92</posy>
-            <width>800</width>
+            <width>500</width>
             <height>1</height>
             <texturebg border="0,0,0,0">img/AmberDotBG.png</texturebg>
             <midtexture border="0,0,0,0">img/AmberDot.png</midtexture>
@@ -150,8 +150,8 @@
             <visible>ListItem.HasEpg</visible>
           </control>
           <control type="image">
-            <left>420</left>
-            <top>4</top>
+            <left>80</left>
+            <top>16</top>
             <width>70</width>
             <height>70</height>
             <texture>$INFO[ListItem.Icon]</texture>
