@@ -1,3 +1,21 @@
+2.0.11
+Fix addon.xml default setting
+
+2.0.10
+Fix add-on browser for Helix
+
+2.0.9
+Remove skin debug info
+
+2.0.8
+Fix label in settings for custom background images
+
+2.0.7
+More Helix Cosmectics
+
+2.0.6
+More Fixes for Helix
+
 2.0.5
 Fix Favourites Text Position
 
