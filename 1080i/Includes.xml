@@ -1017,7 +1017,7 @@
     </item>
     <item id="15" description="Library">
       <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies4)</visible>
-      <label>$LOCALIZE[14022]</label>
+      <label>$LOCALIZE[1024]</label>
       <onclick>ActivateWindow(Videolibrary,root)</onclick>
     </item>
     <item id="16" description="Search">
