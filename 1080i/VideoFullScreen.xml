@@ -13,7 +13,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1920</width>
-				<height>261</height> <!-- 261 -->
+				<height>261</height>
 				<texture border="0,30,0,30">OSD/OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
 			</control>
@@ -22,7 +22,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1920</width>
-				<height>361</height> <!-- 261 -->
+				<height>361</height>
 				<texture border="0,30,0,30">OSD/OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
 			</control>			
