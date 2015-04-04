@@ -3,7 +3,14 @@
   <defaultcontrol always="true">50</defaultcontrol>
   <controls>
     <control type="group" description="fanart">
-      <include>Pictures_Art</include>
+	  <include condition="![Player.HasVideo + Skin.HasSetting(Show_Player)] + !Skin.HasSetting(Home_DefaultBG)">Pictures_Art</include>
+	  <control type="videowindow">
+	    <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
+	    <posx>0</posx>
+	    <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+	  </control>
     </control>
     <include>View_50</include>
     <include>View_51_Panel_Music</include>

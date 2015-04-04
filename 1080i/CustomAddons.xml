@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="1119">
+<window id="1119" description="add-ons">
   <defaultcontrol always="true">50</defaultcontrol>
-  <include>OpenClose</include>
+  <include>VignetteFade</include>
   <controls>
-    <control type="group" description="fanart">
-      <include>Fanart_Art</include>
+    <control type="group" description="background">
+	  <control type="multiimage" description="FA fullscreen">
+        <visible>Control.IsVisible(50)</visible>
+        <include>BG.Defaults</include>
+        <imagepath background="true" fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</imagepath>
+      </control>
+	  <control type="videowindow">
+	    <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
+	    <posx>0</posx>
+	    <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+	  </control>
     </control>
     <control type="image" description="fa overlay">
       <visible>Control.IsVisible(50)</visible>

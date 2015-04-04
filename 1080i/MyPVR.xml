@@ -4,9 +4,9 @@
   <allowoverlay>no</allowoverlay>
   <controls>
     <control type="group" description="fanart">
-      <include>Pvr_Art</include>
+       <include>Pvr_Art</include>
     </control>
-        <control type="image" description="fa overlay">
+    <control type="image" description="fa overlay">
 	  <visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12)</visible>
 	  <posx>0</posx>
       <posy>65</posy>

@@ -3,7 +3,14 @@
   <defaultcontrol always="true">50</defaultcontrol>
   <animation delay="600" effect="fade" time="250">WindowClose</animation>
   <controls>
-    <include>Weather_Art</include>
+    <include condition="![Player.HasVideo + Skin.HasSetting(Show_Player)] + !Skin.HasSetting(Home_DefaultBG)">Weather_Art</include>
+	  <control type="videowindow">
+	    <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
+	    <posx>0</posx>
+	    <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+	  </control>
     <include>Time</include>
     <control type="button" id="50">
       <include>HiddenButton</include>
