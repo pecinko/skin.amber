@@ -3018,6 +3018,20 @@
       <onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
       <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
     </item>
+    <item id="66" description="PleXBMC: Sign in">
+      <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+      <visible>Container(300).HasFocus(10)</visible>
+      <label>$LOCALIZE[31015]</label>
+      <onclick>XBMC.RunScript(plugin.video.plexbmc,signin)</onclick>
+      <visible>substring(Window(Home).Property(plexbmc.myplex_signedin),false)</visible>
+    </item>
+    <item id="67" description="PleXBMC: Sign Out">
+      <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+      <visible>Container(300).HasFocus(10)</visible>
+      <label>$LOCALIZE[31016]</label>
+      <onclick>XBMC.RunScript(plugin.video.plexbmc,signout)</onclick>
+      <visible>substring(Window(Home).Property(plexbmc.myplex_signedin),true)</visible>
+    </item>
     <item id="54" description="PleXBMC Settings">
       <visible>System.HasAddon(plugin.video.plexbmc)</visible>
       <visible>Container(300).HasFocus(10)</visible>
@@ -3043,6 +3057,13 @@
       <visible>Container(300).HasFocus(10)</visible>
       <label>$LOCALIZE[184]</label>
       <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
+    </item>
+    <item id="68" description="PleXBMC: Switch User">
+      <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+      <visible>Container(300).HasFocus(10)</visible>
+      <label>$LOCALIZE[31017]</label>
+      <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
+      <visible>substring(Window(Home).Property(plexbmc.plexhome_enabled),true)</visible>
     </item>
     <item id="58" description="PleXBMC: search">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
