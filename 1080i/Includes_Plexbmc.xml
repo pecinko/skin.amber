@@ -3062,7 +3062,7 @@
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
       <visible>Container(300).HasFocus(10)</visible>
       <label>$LOCALIZE[31017]</label>
-      <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
+      <onclick>XBMC.RunScript(plugin.video.plexbmc,switchuser)</onclick>
       <visible>substring(Window(Home).Property(plexbmc.plexhome_enabled),true)</visible>
     </item>
     <item id="58" description="PleXBMC: search">
