@@ -6,10 +6,11 @@
     <import addon="service.skin.widgets" version="0.0.27"/>
   </requires>
   <extension
-    point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false">
+    point="xbmc.gui.skin" debugging="false">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
   </extension>
   <extension point="xbmc.addon.metadata">
+    <summary lang="en">No bloatware, just your media with easy to navigate interface</summary>
     <description lang="de">Keine Bloatware, nur Ihre Medien mit einer einfach zu navigierenden Oberfläche.[CR]Benutzt Texturen aus den Skins Mediastream und Aeon.</description>
     <description lang="el">Χωρίς περιττά πράγματα, μόνο τα πολυμέσα σας με ένα απλό περιβάλλον εργασίας για πλοήγηση.[CR]Χρησιμοποιήθηκαν κάποιες εικόνες από τα κελύφη Mediastream και Aeon.</description>
     <description lang="en">No bloatware, just your media with easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skin.</description>
@@ -33,5 +34,8 @@
     <description lang="sv">Inget överflödigt, bara dina media med enkelt navigeringsinterface.[CR]Använder texturer från skalen Mediastream och Aeon.</description>
     <description lang="zh">没有花里胡哨的东西，只是你的媒体和易于浏览的界面。[CR]使用了一些来自 Mediastream 和 Aeon 皮肤的纹理材料.</description>
     <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <source>https://github.com/pecinko/skin.amber</source>
+    <forum>http://forum.kodi.tv/showthread.php?tid=203708</forum>
   </extension>
 </addon>
