@@ -362,7 +362,7 @@ msgstr "Убрать отметки \"просмотрено\""
 
 msgctxt "#31982"
 msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
-msgstr "Элементы полки заполняют более медленно на некоторых системах. По-умолчанию обложка ожидает пока все они будут готовы и только затем отображает Главное меню.[CR][CR]Данная опция пропускает этот шаг и отображает Главное меню сразу. Элементы полки отобразятся с задержкой в зависимости от мощности вашей системы."
+msgstr "Элементы полки заполняются более медленно на некоторых системах. По-умолчанию обложка ожидает пока все они будут готовы и только затем отображает Главное меню.[CR][CR]Данная опция пропускает этот шаг и отображает Главное меню сразу. Элементы полки отобразятся с задержкой в зависимости от мощности вашей системы."
 
 msgctxt "#31983"
 msgid "Choose from menu"
