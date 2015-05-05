@@ -1,3 +1,13 @@
+2.0.15
+Update german translation, exit Timeline with "Back-Key", no overlapping of Backgrounds for Video Controls from VideoOSD.xml,
+Hide Background of Video Controls when in Live TV as Background from VideoFullScreen.xml is used, Added Plex User Display 
+
+2.0.14
+Undefined Includes fix, fixed EPG Guide view (now, next, channel), Picture dialog alignment error fixed
+
+2.0.13
+Add seekbar buffer amount, Plexbmc fixes, add license/forum/source to addon.xml
+
 2.0.12
 Add Live-TV OSD and add "Launch" button to DialogAddonInfo
 
@@ -36,10 +46,9 @@ Re-wamp media covers
 Add videoplaylist link to side menu
 Fix settings descriptions
 
-
 1.5.8
-Fix add ons settings 
-Add option to hide library sections - plexbmc profiles support 
+Fix add ons settings
+Add option to hide library sections - plexbmc profiles support
 Increase plexbmc episode items
 Finally fix busy dialog
 Plexbmc add-on support improvements

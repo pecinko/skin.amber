@@ -29,8 +29,8 @@
 		<control type="group" id="50">
 			<include>OpenClose</include>
 			<include>EPGTimelineView</include>
-			<include>LiveTVGuideNowView</include>
-			<include>LiveTVGuideNextView</include>
+			<include>LiveTVGuideNowNextView</include>
+			<include>LiveTVGuideChannelView</include>
 		</control>
 		<control type="group" description="EPG Timeline Info">
 			<visible>Control.IsVisible(10)</visible>
