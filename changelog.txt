@@ -1,3 +1,6 @@
+2.0.13
+Plexbmc fixes, add license/forum/source to addon.xml
+
 2.0.12
 Add Live-TV OSD and add "Launch" button to DialogAddonInfo
 
