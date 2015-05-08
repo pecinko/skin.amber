@@ -1,7 +1,7 @@
 # Kodi Media Center language file
 # Addon Name: Amber
 # Addon id: skin.amber
-# Addon Provider: Pecinko
+# Addon Provider: Pecinko, Jester
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
