@@ -289,13 +289,13 @@
             <control type="button" id="147">
               <description>(2,7) button</description>
               <onup>127</onup>
-              <ondown>305</ondown>
+              <ondown>166</ondown>
               <include>KeyboardButtons</include>
             </control>
             <control type="button" id="148">
               <description>(2,8) button</description>
               <onup>128</onup>
-              <ondown>306</ondown>
+              <ondown>166</ondown>
               <include>KeyboardButtons</include>
             </control>
             <control type="button" id="149">
@@ -358,7 +358,7 @@
             <control type="button" id="164">
               <description>(3,4) button</description>
               <onup>144</onup>
-              <ondown>45</ondown>
+              <ondown>32</ondown>
               <include>KeyboardButtons</include>
             </control>
             <control type="button" id="165">
@@ -430,7 +430,7 @@
 			<control type="button" id="305">
               <description>previous button</description>
               <label>&lt;</label>
-              <onup>147</onup>
+              <onup>166</onup>
               <ondown>32</ondown>
               <font>ListDetails</font>
               <include>KeyboardButtons</include>
@@ -438,7 +438,7 @@
             <control type="button" id="306">
               <description>next button</description>
               <label>&gt;</label>
-              <onup>148</onup>
+              <onup>166</onup>
               <ondown>32</ondown>
               <font>ListDetails</font>
               <include>KeyboardButtons</include>
@@ -446,7 +446,7 @@
             <control type="button" id="8">
               <description>BACKSPACE button</description>
               <label>Backspace</label>
-              <onup>148</onup>
+              <onup>166</onup>
               <ondown>32</ondown>
               <width>175</width>
               <font>ListDetails</font>

@@ -259,9 +259,9 @@
           <height>98</height>
           <label>$LOCALIZE[31355]</label>
           <font>-</font>
-          <texturefocus>VideoOSD/OSDDVDFO.png</texturefocus>
-          <texturenofocus>VideoOSD/OSDDVDNF.png</texturenofocus>
-          <alttexturenofocus>VideoOSD/OSDDVDDisabled.png</alttexturenofocus>
+          <texturefocus>VideoOSD/OSDDvdFO.png</texturefocus>
+          <texturenofocus>VideoOSD/OSDDvdNF.png</texturenofocus>
+          <alttexturenofocus>VideoOSD/OSDDvdDisabled.png</alttexturenofocus>
           <usealttexture>!VideoPlayer.HasMenu</usealttexture>
           <onleft>704</onleft>
           <onright>701</onright>
