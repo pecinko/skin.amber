@@ -438,7 +438,7 @@
       </control>
     </control>
   <control type="grouplist" id="500">
-   <visible>videoplayer.isstereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)] + [Control.HasFocus(699) | ControlGroup(500).HasFocus | Control.HasFocus(520)]</visible>
+   <visible>videoplayer.isstereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)] + [Control.HasFocus(699) | ControlGroup(500).HasFocus | Control.HasFocus(699)]</visible>
    <animation effect="fade" time="150">VisibleChange</animation>
    <animation effect="slide" start="0,0" end="55,0" time="0" condition="VideoPlayer.Content(LiveTV)">Conditional</animation>
      <left>667</left>
@@ -482,7 +482,7 @@
 	 <textoffsetx>30</textoffsetx>
 	 <aligny>center</aligny>
 	 <font>font13</font>
-	 <label>Enabled</label>
+	 <label>31362</label>
 	 <radioposx>300</radioposx>
 	 <texturefocus border="25,5,25,5">VideoOSD/SubMenuBack-MiddleFO.png</texturefocus>
 	 <texturenofocus border="25,5,25,5">VideoOSD/SubMenuBack-MiddleNF.png</texturenofocus>
@@ -499,7 +499,7 @@
 	 <texturefocus border="25,5,25,5">VideoOSD/SubMenuBack-MiddleFO.png</texturefocus>
 	 <texturenofocus border="25,5,25,5">VideoOSD/SubMenuBack-MiddleNF.png</texturenofocus>
 	 <pulseonselect>false</pulseonselect>
-	 <label>Change Mode</label>
+	 <label>31361</label>
 	 <onclick>StereoMode</onclick>
 	</control>
 	 <control type="button" id="501">
@@ -508,7 +508,7 @@
 	  <textoffsetx>30</textoffsetx>
 	  <aligny>center</aligny>
 	  <font>font13</font>
-	  <label>Watch as 2D</label>
+	  <label>31360</label>
 	  <texturefocus border="25,5,25,5">VideoOSD/SubMenuBack-MiddleFO.png</texturefocus>
 	  <texturenofocus border="25,5,25,5">VideoOSD/SubMenuBack-MiddleNF.png</texturenofocus>
 	  <onclick>StereoModeToMono</onclick>
