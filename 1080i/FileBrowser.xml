@@ -240,7 +240,7 @@
             <control type="radiobutton" id="416">
               <width>330</width>
               <label>$LOCALIZE[749]</label>
-              <textureradiofocus>-</textureradiofocus>
+              <textureradioonfocus>-</textureradioonfocus>
               <onleft>450</onleft>
               <onright>60</onright>
             </control>

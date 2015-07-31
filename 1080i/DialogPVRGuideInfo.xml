@@ -72,7 +72,6 @@
           <width>300</width>
           <align>center</align>
           <label>$LOCALIZE[19165]</label>
-          <altlabel>$LOCALIZE[1024]</altlabel>
         </control>
         <control type="button" id="6" description="Record">
           <width>300</width>

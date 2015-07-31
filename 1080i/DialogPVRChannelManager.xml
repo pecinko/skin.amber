@@ -170,7 +170,7 @@
           <width>600</width>
           <label>$LOCALIZE[19205]</label>
         </control>
-        <control type="button" id="33" description="New channel">
+        <control type="button" id="31" description="New channel">
           <font>Details</font>
           <label>$LOCALIZE[19204]</label>
         </control>
@@ -207,16 +207,6 @@
           <label>$LOCALIZE[222]</label>
           <width>324</width>
           <font>Details</font>
-        </control>
-        <control type="button" id="31" description="Edit">
-          <font>Details</font>
-          <width>324</width>
-          <label>$LOCALIZE[19203]</label>
-        </control>
-        <control type="button" id="32" description="Delete">
-          <font>Details</font>
-          <width>324</width>
-          <label>$LOCALIZE[19211]</label>
         </control>
       </control>
     </control>

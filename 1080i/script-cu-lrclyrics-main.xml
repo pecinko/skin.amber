@@ -75,7 +75,6 @@
 				<posx>520</posx>
 				<posy>650</posy>
 				<subtype>page</subtype>
-				<font>font12</font>
 				<onleft>110</onleft>
 				<onright>110</onright>
 				<ondown>110</ondown>
@@ -165,7 +164,6 @@
 				<posx>520</posx>
 				<posy>650</posy>
 				<subtype>page</subtype>
-				<font>font12</font>
 				<onleft>120</onleft>
 				<onright>120</onright>
 				<ondown>120</ondown>

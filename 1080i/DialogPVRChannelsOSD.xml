@@ -32,7 +32,6 @@
         <width>630</width>
         <height>36</height>
         <textcolor>Highlight</textcolor>
-        <font>Label2</font>
         <align>center</align>
         <label>$INFO[System.Date] • $INFO[System.Time]</label>
       </control>
@@ -75,7 +74,6 @@
             <posx>160</posx>
             <posy>58</posy>
             <height>30</height>
-            <font>Label2</font>
             <width>500</width>
             <scroll>false</scroll>
             <textcolor>ListDetails</textcolor>
@@ -134,7 +132,6 @@
             <posx>160</posx>
             <posy>58</posy>
             <height>30</height>
-            <font>Label2</font>
             <width>500</width>
             <textcolor>ListDetails</textcolor>
             <label>$INFO[ListItem.Title]</label>

@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>10,11,12</views>
+	<views>10</views>
 	<controls>
 		<control type="group" description="fanart"> 
 			<include>Pvr_Art</include> 
@@ -29,8 +29,6 @@
 		<control type="group" id="50">
 			<include>OpenClose</include>
 			<include>EPGTimelineView</include>
-			<include>LiveTVGuideNowNextView</include>
-			<include>LiveTVGuideChannelView</include>
 		</control>
 		<control type="group" description="EPG Timeline Info">
 			<visible>Control.IsVisible(10)</visible>

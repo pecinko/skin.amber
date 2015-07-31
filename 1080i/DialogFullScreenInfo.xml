@@ -68,7 +68,7 @@
               <width>102</width>
               <aspectratio>keep</aspectratio>
               <colordiffuse>Silver</colordiffuse>
-              <texture aligny="top">$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
+              <texture>$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
             </control>
             <control type="image">
               <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
