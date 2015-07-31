@@ -229,25 +229,6 @@
     <shadowcolor>Black</shadowcolor>
     <animation effect="fade" time="50">VisibleChange</animation>
   </include>
-  <include name="OSDSeekbarLabels">
-    <posx>440</posx>
-    <posy>21</posy>
-    <height>40</height>
-    <width>600</width>
-    <align>center</align>
-    <font>ListDetails</font>
-    <shadowcolor>Black</shadowcolor>
-    <animation effect="fade" time="50">VisibleChange</animation>
-  </include>
-  <include name="MiniBackground">
-    <control type="image" description="Default BG">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>img/BlackDot.png</texture>
-    </control>
-  </include>
   <include name="Stars">
     <visible>!IsEmpty(ListItem.StarRating)</visible>
     <height>24</height>
@@ -880,13 +861,13 @@
       <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
       <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
     </item>
-    <item id="300" description="PVR">
+    <item id="300" description="Live TV">
       <visible>PVR.HasTVChannels</visible>
       <label>$LOCALIZE[31500]</label>
       <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
       <onclick>ActivateWindow(TVChannels)</onclick>
     </item>
-    <item id="301" description="PVR">
+    <item id="301" description="Live Radio">
       <visible>PVR.HasRadioChannels</visible>
       <label>$LOCALIZE[31509]</label>
       <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
@@ -975,6 +956,11 @@
       <label>$LOCALIZE[136]</label>
       <onclick>ActivateWindow(Videos,playlists,return)</onclick>
     </item>
+    <item id="36" description="MyMovies">
+      <visible>Container(300).HasFocus(5)</visible>
+      <label>$LOCALIZE[135]</label>
+      <onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
+    </item>
     <item id="7" description="RA TV">
       <visible>Container(300).HasFocus(5)</visible>
       <label>$LOCALIZE[575]</label>
@@ -1001,7 +987,7 @@
       <label>$LOCALIZE[136]</label>
       <onclick>ActivateWindow(Videos,playlists,return)</onclick>
     </item>
-    <item id="11" description="MyMovies">
+    <item id="35" description="MyMovies">
       <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies1)</visible>
       <label>$LOCALIZE[135]</label>
       <onclick>ActivateWindow(Videos,Moviegenres,return)</onclick>
@@ -1091,13 +1077,13 @@
       <onclick>SendClick(8)</onclick>
     </item>
     <item id="27" description="Master mode button">
-      <visible>Container(300).HasFocus(8)</visible>
+      <visible>Container(300).HasFocus(10)</visible>
       <visible>System.HasLocks + System.IsMaster</visible>
       <label>$LOCALIZE[12332]</label>
       <onclick>xbmc.mastermode</onclick>
     </item>
     <item id="28" description="Master mode button">
-      <visible>Container(300).HasFocus(8)</visible>
+      <visible>Container(300).HasFocus(10)</visible>
       <visible>System.HasLocks + !System.IsMaster</visible>
       <label>$LOCALIZE[12333]</label>
       <onclick>xbmc.mastermode</onclick>
@@ -1107,29 +1093,29 @@
       <label>$LOCALIZE[133]</label>
       <onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
     </item>
-    <item id="29" description="Recent concerts">
+    <item id="30" description="Recent concerts">
       <visible>Container(300).HasFocus(14)</visible>
       <label>$LOCALIZE[31020]</label>
       <onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
     </item>
-    <item id="29" description="Concerts genres">
+    <item id="31" description="Concerts genres">
       <visible>Container(300).HasFocus(14)</visible>
       <label>$LOCALIZE[135]</label>
       <onclick>ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
     </item>
-    <item id="30" description="Clips albums">
+    <item id="32" description="Clips albums">
       <visible>Container(300).HasFocus(13)</visible>
       <label>$LOCALIZE[132]</label>
       <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/5")</onclick>
       <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/5")</onclick>
     </item>
-    <item id="30" description="Clips artists">
+    <item id="33" description="Clips artists">
       <visible>Container(300).HasFocus(13)</visible>
       <label>$LOCALIZE[133]</label>
       <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/4")</onclick>
       <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/4")</onclick>
     </item>
-    <item id="30" description="Clips genres">
+    <item id="34" description="Clips genres">
       <visible>Container(300).HasFocus(13)</visible>
       <label>$LOCALIZE[135]</label>
       <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/1")</onclick>
@@ -1145,25 +1131,40 @@
       <label>19019</label>
       <onclick>ActivateWindow(TVChannels)</onclick>
     </item>
-    <item id="101" description="Radio Channels">
-      <visible>Container(300).HasFocus(300)</visible>
-      <label>19024</label>
-      <onclick>ActivateWindow(RadioChannels)</onclick>
-    </item>
-    <item id="102" description="EPG Timeline">
+    <item id="102" description="TV Timeline">
       <visible>Container(300).HasFocus(300)</visible>
       <label>$LOCALIZE[22020]</label>
       <onclick>ActivateWindow(TVGuide)</onclick>
     </item>
-    <item id="103" description="Recordings">
+    <item id="103" description="TV Recordings">
       <visible>Container(300).HasFocus(300)</visible>
       <label>19163</label>
       <onclick>ActivateWindow(TVRecordings)</onclick>
     </item>
-    <item id="104" description="Timer">
+    <item id="104" description="TV Timer">
       <visible>Container(300).HasFocus(300)</visible>
       <label>19040</label>
       <onclick>ActivateWindow(TVTimers)</onclick>
+    </item>
+    <item id="100" description="Radio Channels">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>19019</label>
+      <onclick>ActivateWindow(RadioChannels)</onclick>
+    </item>
+    <item id="102" description="Radio Timeline">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>$LOCALIZE[22020]</label>
+      <onclick>ActivateWindow(RadioGuide)</onclick>
+    </item>
+    <item id="103" description="Radio Recordings">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>19163</label>
+      <onclick>ActivateWindow(RadioRecordings)</onclick>
+    </item>
+    <item id="104" description="Radio Timer">
+      <visible>Container(300).HasFocus(301)</visible>
+      <label>19040</label>
+      <onclick>ActivateWindow(RadioTimers)</onclick>
     </item>
     <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
   </include>

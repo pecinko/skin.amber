@@ -26,10 +26,6 @@
     <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
     <value>$INFO[ListItem.Art(thumb)]</value>
   </variable>
-  <variable name="Playlist" description="Side menu label">
-    <value condition="Player.HasAudio">$LOCALIZE[13350]</value>
-    <value>$LOCALIZE[559]</value>
-  </variable>
   <variable name="LibraryStats" description="Home page library statistics">
     <value condition="IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,[COLOR=Highlight]  •  [/COLOR]]$LOCALIZE[16101]$INFO[Window(Home).Property(MusicVideos.Unwatched), ]</value>
     <value condition="!IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,[COLOR=Highlight]  •  [/COLOR]]</value>
@@ -41,7 +37,6 @@
   </variable>
   <variable name="GlobalHeadings" description="Global Headings">
     <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading),,[COLOR=Highlight]  •  [/COLOR]]$INFO[Window.Property(heading2),,[COLOR=Highlight]  •  [/COLOR]]$INFO[Container.NumItems]</value>
-    <value condition="Window.IsActive(56) | Window.IsActive(SkinSettings.xml)">$LOCALIZE[20077]</value>
     <value condition="Window.IsActive(Settings.xml) | Window.IsActive(SettingsCategory.xml)">$LOCALIZE[5]</value>
     <value condition="Window.IsActive(AddonBrowser.xml) + IsEmpty(Container.FolderName)">$LOCALIZE[31291]</value>
     <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
@@ -103,10 +98,6 @@
   <variable name="PVROverlay" description="PVR Overlay image">
     <value condition="ListItem.IsRecording">OverlayRecording.png</value>
     <value condition="ListItem.HasTimer">OverlayTimer.png</value>
-  </variable>
-  <variable name="PVR_Headings" description="PVR Headings">
-    <value condition="Control.IsVisible(16) | Control.IsVisible(15) | Control.IsVisible(10)">$INFO[Control.GetLabel(31)]</value>
-    <value>$INFO[Container.FolderName]</value>
   </variable>
   <variable name="Details" description="Shown Above Plots and descriptions">
     <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
@@ -178,4 +169,9 @@
     <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
     <value>special://skin/backgrounds/default/</value>
   </variable>  
+  <variable name="SeekLabel">
+    <value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[31046][COLOR=grey] $INFO[Player.SeekStepSize][/COLOR]</value>
+    <value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[31046][COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</value>
+    <value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[31046]</value>
+  </variable>
 </includes>

@@ -95,7 +95,6 @@
           <font>InfoTitle</font>
           <textcolor>White2</textcolor>
           <align>left</align>
-          <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
           <info>ListItem.Label</info>
         </control>
         <control type="label" description="Path Label">
@@ -407,7 +406,7 @@
             <width>102</width>
             <aspectratio>keep</aspectratio>
             <colordiffuse>Silver</colordiffuse>
-            <texture aligny="top">$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+            <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
           </control>
           <control type="image">
             <visible>!IsEmpty(ListItem.AudioChannels)</visible>
@@ -519,7 +518,6 @@
           <label>$LOCALIZE[344]</label>
           <onclick>Control.SetFocus(50)</onclick>
           <texturefocus>-</texturefocus>
-          <alttexturefocus>-</alttexturefocus>
         </control>
         <control type="button" id="6" description="Refresh">
           <height>54</height>
@@ -609,7 +607,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>Highlight</textcolor>
-            <info>ListItem.Label</info>
+            <info>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</info>
           </control>
         </focusedlayout>
       </control>
