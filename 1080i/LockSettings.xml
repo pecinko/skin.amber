@@ -45,6 +45,10 @@
       <control type="spincontrolex" id="9">
         <textoffsetx>30</textoffsetx>
       </control>
+      <control type="label" id="14">
+        <shadowcolor>Black</shadowcolor>
+        <font>Details</font>
+      </control>
       <control type="group" id="9000">
         <posx>1011</posx>
         <control type="button" id="28" description="OK">

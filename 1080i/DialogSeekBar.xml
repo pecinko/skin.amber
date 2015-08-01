@@ -3,7 +3,6 @@
   <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
   <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(videoosd.xml) | [Window.IsVisible(FullScreenVideo) + !System.IdleTime(20) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
   <include>OSDFade</include>
-  <zorder>2</zorder>
   <controls>
     <control type="group" description="Top Bar">
       <control type="image" description="Background">
@@ -123,10 +122,8 @@
         <label>32 X</label>
       </control>
       <control type="label" description="Seek time label">
-        <visible>![player.forwarding | player.rewinding]</visible>
-        <visible>Player.DisplayAfterSeek</visible>
         <include>SeekbarLabels</include>
-        <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
+        <label>$VAR[SeekLabel]</label>
       </control>
 	  <control type="label" description="Seek time label">
         <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | [Player.Paused + System.IdleTime(4)]]</visible>

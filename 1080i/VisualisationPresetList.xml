@@ -20,15 +20,15 @@
         <height>720</height>
         <texture>dialogs/DialogBG.png</texture>
       </control>
-      <control type="label" description="Header Label">
+      <control type="label" id="2" description="Header Label">
         <posx>525</posx>
         <posy>150</posy>
         <width>840</width>
-        <label>$LOCALIZE[31048]</label>
+        <label>-</label>
         <align>center</align>
         <textcolor>Highlight</textcolor>
       </control>
-      <control type="fixedlist" id="2">
+      <control type="fixedlist" id="5">
         <description>Preset List</description>
         <posx>525</posx>
         <posy>270</posy>
@@ -80,7 +80,7 @@
         <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
-        <onleft>2</onleft>
+        <onleft>5</onleft>
         <onright>noop</onright>
       </control>
     </control>

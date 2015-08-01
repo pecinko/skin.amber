@@ -133,6 +133,11 @@
           <label>$LOCALIZE[24063]</label>
           <font>ListDetails</font>
         </control>
+        <control type="button" id="9">
+          <width>330</width>
+          <label>$LOCALIZE[24034]</label>
+          <font>ListDetails</font>
+        </control>
         <control type="radiobutton" id="6">
           <width>330</width>
           <label>$LOCALIZE[25000]</label>

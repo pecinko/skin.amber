@@ -38,7 +38,6 @@
           <height>60</height>
           <textcolor>White2</textcolor>
           <font>Keyboard</font>
-          <scroll>true</scroll>
           <texturefocus>-</texturefocus>
           <texturenofocus>-</texturenofocus>
         </control>

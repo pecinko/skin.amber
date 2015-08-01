@@ -59,7 +59,6 @@
             <posy>0</posy>
             <width>495</width>
             <height>75</height>
-            <posx>128</posx>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>

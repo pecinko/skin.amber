@@ -18,14 +18,14 @@
         <height>720</height>
         <texture border="55">dialogs/DialogRightSmall.png</texture>
       </control>
-      <control type="label" description="Title">
+      <control type="label" description="Title" id="2">
         <posx>0</posx>
         <posy>50</posy>
         <width>1010</width>
         <height>40</height>
         <align>center</align>
         <textcolor>Highlight</textcolor>
-        <label>$LOCALIZE[5] - $LOCALIZE[35000]</label>
+        <label>-</label>
       </control>
       <control type="grouplist" id="5">
         <description>Control Area</description>
@@ -48,6 +48,10 @@
       </control>
       <control type="spincontrolex" id="9">
         <textoffsetx>30</textoffsetx>
+      </control>
+      <control type="label" id="14">
+        <shadowcolor>Black</shadowcolor>
+        <font>Details</font>
       </control>
       <control type="sliderex" id="13">
         <textoffsetx>30</textoffsetx>
