@@ -1,3 +1,7 @@
+2.1.0
+Update to Kodi 15 Isengard, add Genre to TV Shows, SublimeKodi fixes, Add Settings and Shutdown sub-menu entries,
+Removed outdated TvTunes hooks
+
 2.0.17
 Fix missing keyboard layout button, Fix missing iso/dvd disc icon, Fix pointers, Add 3D Icon and Menu
 

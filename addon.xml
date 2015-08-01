@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.amber" version="2.0.17" name="Amber" provider-name="Pecinko, Jester">
+<addon id="skin.amber" version="2.1.0" name="Amber" provider-name="Pecinko, Jester">
   <requires>
-    <import addon="xbmc.gui" version="5.3.0"/>
-    <import addon="script.favourites" version="3.2.0"/>
-    <import addon="service.skin.widgets" version="0.0.27"/>
+    <import addon="xbmc.gui" version="5.9.0"/>
+    <import addon="script.favourites" version="6.0.0"/>
+    <import addon="service.skin.widgets" version="0.0.29"/>
   </requires>
   <extension
     point="xbmc.gui.skin" debugging="false">
@@ -36,6 +36,6 @@
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
     <source>https://github.com/jester-xbmc/skin.amber</source>
-    <forum>http://forum.kodi.tv/showthread.php?tid=203708</forum>
+    <forum>http://forum.kodi.tv/forumdisplay.php?fid=203</forum>
   </extension>
 </addon>

@@ -1121,11 +1121,60 @@
       <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/1")</onclick>
       <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/1")</onclick>
     </item>
-    <item id="50" description="Reload skin">
+	<item id="41" description="Add-ons">
+	  <visible>Container(300).HasFocus(10)</visible>
+	  <label>$LOCALIZE[24001]</label>
+      <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+    </item>
+    <item id="42" description="Appearance">
+		<visible>Container(300).HasFocus(10)</visible>
+        <label>$LOCALIZE[480]</label>
+        <onclick>activatewindow(AppearanceSettings)</onclick>
+    </item>
+    <item id="43" description="System">
+		<visible>Container(300).HasFocus(10)</visible>
+        <label>$LOCALIZE[13000]</label>
+        <onclick>ActivateWindow(SystemSettings)</onclick>
+    </item>
+    <item id="44" description="System information">
+		<visible>Container(300).HasFocus(10)</visible>
+        <label>$LOCALIZE[130]</label>
+        <onclick>ActivateWindow(SystemInfo)</onclick>
+	</item>
+	<item id="50" description="Reload skin">
       <visible>Container(300).HasFocus(10)</visible>
       <label>$LOCALIZE[20183]</label>
       <onclick>XBMC.ReloadSkin()</onclick>
     </item>
+	<item id="51" description="Hibernate">
+		<enable>System.CanHibernate</enable>
+		<visible>Container(300).HasFocus(11)</visible>
+        <label>$LOCALIZE[13010]</label>
+        <onclick>Hibernate()</onclick>
+	    </item>
+	<item id="52" description="Suspend">
+		<enable>System.CanSuspend</enable>
+		<visible>Container(300).HasFocus(11)</visible>
+        <label>$LOCALIZE[13011]</label>
+        <onclick>Suspend()</onclick>
+		</item>
+	<item id="53" description="Shutdown">
+        <enable>System.CanPowerdown</enable>
+        <visible>Container(300).HasFocus(11)</visible>
+        <label>$LOCALIZE[13005]</label>
+        <onclick>ShutDown()</onclick>
+        </item>
+	<item id="54" description="Reboot">
+        <enable>System.CanReboot</enable>
+        <visible>Container(300).HasFocus(11)</visible>
+        <label>$LOCALIZE[13013]</label>
+        <onclick>Reboot()</onclick>
+        </item>
+	<item id="55" description="Quit">
+		<visible>Container(300).HasFocus(11)</visible>
+		<label>$LOCALIZE[13009]</label>
+        <onclick>Quit()</onclick>
+        </item>    
     <item id="100" description="Tv Channels">
       <visible>Container(300).HasFocus(300)</visible>
       <label>19019</label>
