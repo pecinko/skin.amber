@@ -606,8 +606,8 @@
             <font>InfoPlot</font>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>Highlight</textcolor>
-            <info>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</info>
+            <selectedcolor>white</selectedcolor>
+            <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
           </control>
         </focusedlayout>
       </control>
