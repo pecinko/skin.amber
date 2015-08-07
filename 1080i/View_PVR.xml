@@ -218,7 +218,7 @@
 						<height>78</height>
 						<font>Details</font>
 						<align>center</align>
-						<info>ListItem.ChannelNumber</info>
+						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="label" id="1" description="Column 1 selected">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>
@@ -265,7 +265,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>White2</textcolor>
-						<info>ListItem.ChannelNumber</info>
+						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="label" id="1" description="Column 1 Focused">
 						<visible>!Skin.HasSetting(HideEPGLogos)</visible>

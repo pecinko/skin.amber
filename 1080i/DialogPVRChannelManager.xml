@@ -55,7 +55,7 @@
             <width>80</width>
             <align>center</align>
             <aligny>center</aligny>
-            <info>ListItem.ChannelNumber</info>
+            <info>ListItem.ChannelNumberLabel</info>
           </control>
           <control type="label" description="Main Label">
             <posx>90</posx>
@@ -97,7 +97,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <textcolor>White2</textcolor>
-            <info>ListItem.ChannelNumber</info>
+            <info>ListItem.ChannelNumberLabel</info>
           </control>
           <control type="label" description="Main Label">
             <posx>90</posx>
