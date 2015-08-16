@@ -1,5 +1,10 @@
+2.1.1
+First release for Kodi 15 Isengard, migrate sounds to add-on, remove outdated MyPVR.xml, fix masked actor selector bar,
+support ATSC subchannels, fix Visualisation preset lists, update subtitle flags and fix sr crash, 
+update default background to 1080
+
 2.1.0
-Update to Kodi 15 Isengard, add Genre to TV Shows, SublimeKodi fixes, Add Settings and Shutdown sub-menu entries,
+Updates for Kodi 15 Isengard (internal), add Genre to TV Shows, SublimeKodi fixes, Add Settings and Shutdown sub-menu entries,
 Removed outdated TvTunes hooks
 
 2.0.17
