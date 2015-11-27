@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">9000</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
   <backgroundcolor>0</backgroundcolor>
   <controls>
     <include>Settings_Art</include>
@@ -287,6 +286,13 @@
             <width>322</width>
             <label>$LOCALIZE[10003]</label>
             <onclick>ActivateWindow(filemanager)</onclick>
+          </control>
+            <control type="button" id="505" description="Events">
+            <font>ListDetails</font>
+            <width>322</width>
+            <label>$LOCALIZE[14111]</label>
+            <onclick>ActivateWindow(EventLog,events://,return)</onclick>
+            <visible>system.getbool(eventlog.enabled)</visible>
           </control>
         </control>
         <!--9000 2-->

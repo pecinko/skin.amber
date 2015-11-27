@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="50">
-  <zorder>3</zorder>
   <coordinates>
     <posx>0</posx>
     <posy>0</posy>
@@ -563,26 +562,6 @@
         <align>left</align>
         <label>DialogKaiToast.xml</label>
         <visible>Window.IsVisible(DialogKaiToast.xml)</visible>
-      </control>
-      <control type="label">
-        <width>1170</width>
-        <height>32</height>
-        <textcolor>FFFF0000</textcolor>
-        <shadowcolor>FF000000</shadowcolor>
-        <font>SysInfo</font>
-        <align>left</align>
-        <label>DialogKaraokeSongSelector.xml</label>
-        <visible>Window.IsVisible(DialogKaraokeSongSelector.xml)</visible>
-      </control>
-      <control type="label">
-        <width>1170</width>
-        <height>32</height>
-        <textcolor>FFFF0000</textcolor>
-        <shadowcolor>FF000000</shadowcolor>
-        <font>SysInfo</font>
-        <align>left</align>
-        <label>DialogKaraokeSongSelectorLarge.xml</label>
-        <visible>Window.IsVisible(DialogKaraokeSongSelectorLarge.xml)</visible>
       </control>
       <control type="label">
         <width>1170</width>
