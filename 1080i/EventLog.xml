@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">50</defaultcontrol>
-	<views>50</views>
+	<defaultcontrol always="true">570</defaultcontrol>
+	<menucontrol>9000</menucontrol>
+	<views>570</views>
 	<controls>
-    <control type="group" description="fanart"> 
-       <include>Pvr_Art</include> 
-     </control> 
-       <control type="image" description="fa overlay"> 
- 	  <visible>Control.IsVisible(50)</visible> 
- 	  <posx>0</posx> 
-      <posy>65</posy> 
+  	  <posx>0</posx> 
+      <posy>65</posy>
+      <control type="image"> 
        <width>1920</width> 
        <height>1015</height> 
        <texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture> 
@@ -18,55 +15,20 @@
 		<include>Time</include>
 		<control type="group">
 			<include>OpenClose</include>
-			<control type="group" description="TV Channels group">
+			<control type="group"> 
 				<include>VisibleFadeEffect</include>
-				<visible>Control.IsVisible(50)</visible>
-				<control type="image" description="video window background"> 
-					<visible>Player.HasVideo</visible> 
-					<posx>60</posx> 
-					<posy>100</posy> 
-					<width>600</width> 
-					<height>340</height> 
-					<texture>img/BlackDot.png</texture> 
-				</control> 
-				<control type="videowindow" description="TV Channel Live BG"> 
-					<visible>Player.HasVideo</visible> 
-					<posx>60</posx> 
-					<posy>20</posy> 
-					<width>600</width> 
-					<height>500</height> 
-				</control> 
-				<control type="image" description="Current video label background"> 
-					<visible>Player.HasVideo</visible> 
-					<posx>60</posx> 
-					<posy>100</posy> 
-					<width>600</width> 
-					<height>40</height> 
-					<texture>img/BlackDot.png</texture> 
-					<colordiffuse>DDFFFFFF</colordiffuse> 
-				</control> 
-				<control type="textbox" description="Current video label"> 
-					<posx>60</posx> 
-					<posy>100</posy> 
-					<width>600</width> 
-					<height>40</height> 
-					<font>Details</font> 
-					<align>center</align> 
-					<textcolor>White</textcolor> 
-					<autoscroll delay="3000" time="3000" repeat="3000">true</autoscroll> 
-					<label>$INFO[Player.Title]</label> 
-					<visible>Player.HasVideo</visible> 
-				</control> 
-				<control type="list" id="50" description="CHANNELS">
-					<posx>844</posx>
+				<visible>Control.IsVisible(570)</visible>
+				<control type="list" id="570"> 
+					<posx>144</posx>
 					<posy>120</posy>
-					<width>1076</width>
+					<width>1776</width>
 					<height>892</height>
-					<onleft>100</onleft>
+					<onleft>9000</onleft>
 					<onright>60</onright>
-					<onup>50</onup>
-					<ondown>50</ondown>
+					<onup>570</onup>
+					<ondown>570</ondown>
 					<pagecontrol>60</pagecontrol>
+					<viewtype label="535">list</viewtype>
 					<scrolltime tween="sine" easing="inout">280</scrolltime>
 					<itemlayout height="99">
 						<control type="image">
@@ -208,7 +170,7 @@
 				</control>
 			</control>
 		</control>
-		<control type="group" description="Info group">
+		<control type="group" description="TV Channels group">
 			<visible>Control.IsVisible(50)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="group" description="INFO">
@@ -257,24 +219,66 @@
 				</control>
 			</control>
 		</control>
-      <control type="scrollbar" id="60">
-        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-        <posx>21r</posx>
-        <posy>99</posy>
-        <width>36</width>
-        <height>900</height>
-        <texturesliderbackground>-</texturesliderbackground>
-        <texturesliderbar>-</texturesliderbar>
-        <texturesliderbarfocus>-</texturesliderbarfocus>
-        <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
-        <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
-        <showonepage>false</showonepage>
-        <orientation>vertical</orientation>
-        <onleft>50</onleft>
-        <onright>9000</onright>
-      </control>
-		<include>PVRSideBlade</include>
+		<control type="group">
+			<left>-250</left>
+			<include>SideBladeLeft</include>
+			<control type="grouplist" id="9000">
+				<left>0</left>
+				<top>110</top>
+				<width>250</width>
+				<height>600</height>
+				<onleft>9000</onleft>
+				<onright>570</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<onback>570</onback>
+				<itemgap>0</itemgap>
+				<control type="label" id="200">
+					<width>250</width>
+					<height>35</height>
+					<font>font12</font>
+					<label>31006</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Sort asc</description>
+					<include>ButtonCommonValues</include>
+					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<label>31051</label>
+					<altlabel>31050</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+				</control>
+				<control type="label" id="201">
+					<width>250</width>
+					<height>35</height>
+					<font>font12</font>
+					<label>31026</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="21">
+					<description>Level button</description>
+					<textwidth>235</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>-</label>
+				</control>
+				<control type="radiobutton" id="22">
+					<description>Only show current level</description>
+					<include>ButtonCommonValues</include>
+					<label>-</label>
+				</control>
+				<control type="button" id="20">
+					<description>Clear button</description>
+					<include>ButtonCommonValues</include>
+					<label>192</label>
+				</control>
+				<include>CommonNowPlaying_Controls</include>
+			</control>
+		</control>
 
 	</controls>
 </window>

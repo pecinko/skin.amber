@@ -63,10 +63,10 @@
         <width>980</width>
         <height>892</height>
         <onleft>102</onleft>
-        <onright>72</onright>
+        <onright>60</onright>
         <onup>50</onup>
         <ondown>50</ondown>
-        <pagecontrol>72</pagecontrol>
+        <pagecontrol>60</pagecontrol>
         <scrolltime tween="sine" easing="inout">280</scrolltime>
         <itemlayout height="99">
           <control type="image">
@@ -186,6 +186,23 @@
         </control>
       </control>
     </control>
+      <control type="scrollbar" id="60">
+        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+        <posx>21r</posx>
+        <posy>99</posy>
+        <width>36</width>
+        <height>900</height>
+        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbar>-</texturesliderbar>
+        <texturesliderbarfocus>-</texturesliderbarfocus>
+        <textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+        <textureslidernibfocus border="18">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+        <showonepage>false</showonepage>
+        <orientation>vertical</orientation>
+        <onleft>50</onleft>
+        <onright>9000</onright>
+      </control>
 	<include>PVRSideBlade</include>
   </controls>
 </window>
