@@ -100,7 +100,11 @@ msgctxt "#31025"
 msgid "Items"
 msgstr ""
 
-#empty strings from id 31026 to 31037
+msgctxt "#31026"
+msgid "Misc options"
+msgstr ""
+
+#empty strings from id 31027 to 31037
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -116,7 +120,15 @@ msgctxt "#31049"
 msgid "Settings Level"
 msgstr ""
 
-#empty strings from id 31050 to 31109
+msgctxt "#31050"
+msgid "Sort: Ascending"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Sort: Descending"
+msgstr ""
+
+#empty strings from id 31052 to 31109
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
