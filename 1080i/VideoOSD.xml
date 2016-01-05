@@ -44,7 +44,21 @@
         <onup>noop</onup>
         <ondown>702</ondown>
         <defaultcontrol always="true">602</defaultcontrol>
-        <control type="button" id="600">
+        <control type="slider" id="87">
+          <description>Seek Slider</description>
+          <posx>-123</posx>
+          <posy>-950</posy>
+          <width>720</width>
+          <height>18</height>
+          <onup>noop</onup>
+          <ondown>602</ondown>
+          <action>seek</action>
+          <texturesliderbar>OSD/seekslider.png</texturesliderbar>
+          <textureslidernib>OSD/ScrollbarNibNF.png</textureslidernib>
+          <textureslidernibfocus>OSD/ScrollbarNibFO.png</textureslidernibfocus>
+           <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
+        </control>
+          <control type="button" id="600">
           <posx>0</posx>
           <posy>0</posy>
           <width>90</width>
@@ -55,7 +69,7 @@
           <texturenofocus>VideoOSD/OSDPreviousNF.png</texturenofocus>
           <onleft>605</onleft>
           <onright>601</onright>
-          <onup>noop</onup>
+          <onup>87</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Previous)</onclick>
         </control>
@@ -70,7 +84,7 @@
           <texturenofocus>VideoOSD/OSDRWNF.png</texturenofocus>
           <onleft>600</onleft>
           <onright>602</onright>
-          <onup>noop</onup>
+          <onup>87</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Rewind)</onclick>
         </control>
@@ -90,7 +104,7 @@
           <onleft>601</onleft>
           <onright>603</onright>
           <ondown>702</ondown>
-          <onup>noop</onup>
+          <onup>87</onup>
           <onclick>PlayerControl(Play)</onclick>
         </control>
         <control type="button" id="603">
@@ -104,7 +118,7 @@
           <texturenofocus>VideoOSD/OSDStopNF.png</texturenofocus>
           <onleft>602</onleft>
           <onright>604</onright>
-          <onup>noop</onup>
+          <onup>87</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Stop)</onclick>
         </control>
@@ -134,7 +148,7 @@
           <texturenofocus>VideoOSD/OSDNextNF.png</texturenofocus>
           <onleft>604</onleft>
           <onright>600</onright>
-          <onup>noop</onup>
+          <onup>87</onup>
           <ondown>702</ondown>
           <onclick>PlayerControl(Next)</onclick>
         </control>
@@ -309,6 +323,7 @@
           <onleft>701</onleft>
           <onright>703</onright>
           <onup>400</onup>
+          <onclick>ShowSubtitles</onclick>
         </control>
         <control type="button" id="703">
           <posx>233</posx>
@@ -441,6 +456,7 @@
       <onup>702</onup>
       <ondown>702</ondown>
       <orientation>vertical</orientation>
+      <visible>!VideoPlayer.Content(LiveTV)</visible>
       <visible>Control.HasFocus(702) | ControlGroup(400).HasFocus</visible>
       <include>VisibleFadeEffect</include>
       <control type="group">
