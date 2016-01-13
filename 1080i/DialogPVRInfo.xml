@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog">
-  <defaultcontrol always="true">10</defaultcontrol>
+<window>
+  <defaultcontrol always="true">7</defaultcontrol>
   <include>OpenClose</include>
   <controls>
     <include>DimBG</include>
     <control type="group" description="Content">
       <include>DialogOpenClose</include>
       <control type="image">
-        <posx>290</posx>
+        <posx>190</posx>
         <posy>12</posy>
-        <width>1340</width>
+        <width>1540</width>
         <height>1008</height>
         <texture>dialogs/DialogBG.png</texture>
       </control>
@@ -96,9 +96,9 @@
         <label fallback="161">$INFO[ListItem.Plot]</label>
       </control>
       <control type="grouplist" id="9000">
-        <posx>810</posx>
+        <posx>290</posx>
         <posy>900</posy>
-        <width>300</width>
+        <width>1340</width>
         <height>60</height>
         <itemgap>8</itemgap>
         <align>center</align>
@@ -107,7 +107,35 @@
         <onright>9000</onright>
         <onup>60</onup>
         <ondown>60</ondown>
-        <control type="button" id="10">
+        <control type="button" id="4">
+          <description>Find Similar</description>
+          <width>300</width>
+          <label>$LOCALIZE[19003]</label>
+          <align>center</align>
+          <visible>Window.IsActive(PVRGuideInfo)</visible>
+        </control>
+        <control type="button" id="5">
+          <description>Switch to Channel</description>
+          <width>300</width>
+          <label>$LOCALIZE[19165]</label>
+          <align>center</align>
+          <visible>Window.IsActive(PVRGuideInfo)</visible>
+        </control>
+        <control type="button" id="8">
+          <description>Play recording</description>
+          <width>300</width>
+          <label>$LOCALIZE[19687]</label>
+          <align>center</align>
+          <visible>Window.IsActive(PVRGuideInfo)</visible>
+        </control>
+        <control type="button" id="6">
+          <description>Record</description>
+          <width>300</width>
+          <label>-</label>
+          <align>center</align>
+          <visible>Window.IsActive(PVRGuideInfo)</visible>
+        </control>
+        <control type="button" id="7">
           <description>OK</description>
           <width>300</width>
           <label>$LOCALIZE[186]</label>

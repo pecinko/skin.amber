@@ -3015,8 +3015,7 @@
     <item id="53" description="Plexbmc Music channels">
       <visible>Container(300).HasFocus(50)</visible>
       <label>$LOCALIZE[2]</label>
-      <onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
-      <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
+     <onclick condition="Library.HasContent(music)">ActivateWindow(Music,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
     </item>
     <item id="66" description="PleXBMC: Sign in">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>

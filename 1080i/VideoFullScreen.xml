@@ -64,19 +64,18 @@
 				<control type="label" id="1">
 					<description>LiveTV Info labelChannel</description>
 					<posx>340</posx>
-					<posy>-40</posy>
+					<posy>-5</posy>
 					<width>720</width>
 					<height>125</height>
-					<font>MainLabelBigTitle</font>
 					<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
+          <font>InfoTitle</font>
+          <textcolor>orange</textcolor>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label" id="1">
 					<description>Clock label</description>
 					<posx>-250</posx>
-					<posy>10</posy>
+					<posy>110</posy>
 					<width>800</width>
 					<height>25</height>
 					<font>InfoTitle</font>
@@ -85,8 +84,8 @@
 				</control>
 				<control type="label" id="1">
 					<description>Date label</description>
-					<posx>-300</posx>
-					<posy>80</posy>
+					<posx>-200</posx>
+					<posy>220</posy>
 					<width>800</width>
 					<height>25</height>
 					<font>ListDetails</font>
