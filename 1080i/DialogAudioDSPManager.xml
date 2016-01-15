@@ -498,7 +498,6 @@
           <texturefocus border="5">buttons/ButtonFO.png</texturefocus>
           <texturenofocus border="5">buttons/ButtonNF.png</texturenofocus>
           <label>15064</label>
-          <include>ButtonCommonValues</include>
         </control>
         <control type="button" id="23">
           <description>Apply changes button</description>
