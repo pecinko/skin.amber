@@ -515,3 +515,7 @@ msgstr ""
 msgctxt "#31997"
 msgid "Hide channel logos in PVR List/Timeline"
 msgstr ""
+
+msgctxt "#31998"
+msgid "Show lock/master mode status in title bar"
+msgstr ""
