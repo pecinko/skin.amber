@@ -482,7 +482,7 @@
             </control>
             <control type="button" id="8">
               <description>BACKSPACE button</description>
-              <label>Backspace</label>
+              <label>20181</label>
               <onup>166</onup>
               <ondown>32</ondown>
               <width>175</width>
