@@ -370,7 +370,6 @@
     <control type="fixedlist" id="514" description="Recent concerts">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))</visible>
       <visible>Container(300).HasFocus(14)</visible>
-      <visible></visible>
       <onright>514</onright>
       <onup>300</onup>
       <ondown condition="Control.IsVisible(515)">515</ondown>
@@ -483,7 +482,6 @@
     <control type="fixedlist" id="511" description="TOP Shortcuts">
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
       <visible>Container(300).HasFocus(6)</visible>
-      <visible></visible>
       <onright>511</onright>
       <onup>300</onup>
       <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>

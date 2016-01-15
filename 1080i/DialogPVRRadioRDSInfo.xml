@@ -382,7 +382,7 @@
           <aligny>center</aligny>
           <font>font13</font>
           <textcolor>white</textcolor>
-          <label>INFO[RDS.ProgStyle]</label>
+          <label>$INFO[RDS.ProgStyle]</label>
           <visible>!IsEmpty(RDS.Conductor)+!IsEmpty(RDS.ProgStyle)</visible>
         </control>
       </control>
@@ -533,7 +533,7 @@
           <height>25</height>
           <align>right</align>
           <aligny>center</aligny>
-          <font>font13caps</font>
+          <font>Details</font>
           <textcolor>blue</textcolor>
           <label>$LOCALIZE[29908]:</label>
           <visible>!IsEmpty(RDS.ProgNow) | !IsEmpty(RDS.ProgNext)</visible>
@@ -553,7 +553,7 @@
           <height>25</height>
           <align>right</align>
           <aligny>center</aligny>
-          <font>font13caps</font>
+          <font>Details</font>
           <textcolor>blue</textcolor>
           <label>$LOCALIZE[29909]:</label>
           <visible>!IsEmpty(RDS.PhoneStudio) | !IsEmpty(RDS.EmailStudio) | !IsEmpty(RDS.SMSStudio)</visible>
@@ -709,7 +709,7 @@
           <height>25</height>
           <align>right</align>
           <aligny>center</aligny>
-          <font>font13caps</font>
+          <font>Details</font>
           <textcolor>blue</textcolor>
           <label>$LOCALIZE[29913]:</label>
           <visible>!IsEmpty(RDS.PhoneHotline) | !IsEmpty(RDS.EmailHotline)</visible>
@@ -847,7 +847,7 @@
           <height>25</height>
           <align>right</align>
           <aligny>center</aligny>
-          <font>font13caps</font>
+          <font>Details</font>
           <textcolor>blue</textcolor>
           <label>$LOCALIZE[29915]:</label>
         </control>
@@ -884,7 +884,7 @@
           <top>30</top>
           <width>800</width>
           <height>120</height>
-          <font>font11</font>
+          <font>Details</font>
           <align>justify</align>
           <pagecontrol>60</pagecontrol>
           <label>-</label>
@@ -904,8 +904,7 @@
         <ondown>21</ondown>
         <control type="button" id="10">
           <description>OK</description>
-          <include>ButtonInfoDialogsCommonValues</include>
-          <label>186</label>
+           <label>186</label>
         </control>
       </control>
     </control>
