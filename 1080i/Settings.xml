@@ -12,7 +12,7 @@
         <include>Panel_Size</include>
         <texture>dialogs/AddonSettingsBG.png</texture>
       </control>
-      <control type="label" description="XBMC settings">
+      <control type="label" description="Kodi settings">
         <visible>Container(9000).HasFocus(1)</visible>
         <posx>650</posx>
         <posy>117</posy>
@@ -486,19 +486,31 @@
               <label2>$LOCALIZE[106]</label2>
               <onclick>Skin.ToggleSetting(HideEPGLogos)</onclick>
             </item>
-            <item id="16" description="Holiday">
+            <item id="16" description="Show lock\master status in title bar">
+              <visible>Skin.HasSetting(ShowMasterLockTitle)</visible>
+              <label>$LOCALIZE[31998]</label>
+              <label2>$LOCALIZE[107]</label2>
+              <onclick>Skin.ToggleSetting(ShowMasterLockTitle)</onclick>
+            </item>
+            <item id="16" description="Show lock\master status in title bar">
+              <visible>!Skin.HasSetting(ShowMasterLockTitle)</visible>
+              <label>$LOCALIZE[31998]</label>
+              <label2>$LOCALIZE[106]</label2>
+              <onclick>Skin.ToggleSetting(ShowMasterLockTitle)</onclick>
+            </item>
+            <item id="17" description="Holiday">
               <visible>Skin.HasSetting(holiday)</visible>
               <label>$LOCALIZE[31996]</label>
               <label2>[COLOR=Highlight]$LOCALIZE[305][/COLOR]</label2>
               <onclick>Skin.ToggleSetting(holiday)</onclick>
             </item>
-            <item id="16" description="Holiday">
+            <item id="17" description="Holiday">
               <visible>!Skin.HasSetting(holiday)</visible>
               <label>$LOCALIZE[31996]</label>
               <label2>$LOCALIZE[1223]</label2>
               <onclick>Skin.ToggleSetting(holiday)</onclick>
             </item>
-            <item id="17" description="Reset Skin">
+            <item id="18" description="Reset Skin">
               <label>$LOCALIZE[31038]</label>
               <onclick>Skin.ResetSettings</onclick>
               <onclick>XBMC.ReloadSkin()</onclick>
