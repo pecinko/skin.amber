@@ -3,7 +3,7 @@
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.favourites" version="6.0.3"/>
-    <import addon="service.skin.widgets" version="0.0.30"/>
+    <import addon="service.skin.widgets" version="0.0.31"/>
     <import addon="resource.uisounds.amber" version="1.0.0"/>
   </requires>
   <extension
