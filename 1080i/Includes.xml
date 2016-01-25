@@ -219,17 +219,15 @@
         <control type="image">
           <width>25</width>
           <height>35</height>
-          <texture>img/Lock-Closed.png</texture>
+          <texture>NoMasterNF.png</texture>
           <aspectratio align="center">keep</aspectratio>
-          <colordiffuse>White</colordiffuse>
           <visible>Skin.HasSetting(ShowMasterLockTitle) + System.HasLocks + !System.IsMaster</visible>
         </control>
          <control type="image">
           <width>25</width>
           <height>35</height>
-          <texture>img/Lock-Open.png</texture>
+          <texture>MasterFO.png</texture>
           <aspectratio align="center">keep</aspectratio>
-          <colordiffuse>Highlight</colordiffuse>
           <visible>Skin.HasSetting(ShowMasterLockTitle) + System.HasLocks + System.IsMaster</visible>
         </control>
         <control type="label">
