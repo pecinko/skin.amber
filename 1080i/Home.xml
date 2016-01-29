@@ -85,6 +85,8 @@
       <control type="group" description="Weather on Horizontal home screen">
         <visible>!IsEmpty(Weather.Plugin) + !Skin.HasSetting(VerticalHome)</visible>
         <include>WeatherAni0</include>
+        <top>990</top>
+        <left>10</left>
         <control type="image">
           <description>Weather image</description>
           <posx>0</posx>

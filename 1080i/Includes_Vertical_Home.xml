@@ -692,7 +692,15 @@
         <texture border="0,40,0,40">home/OverlayRA2T.png</texture>
       </control>
       <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
-      <include condition="System.GetBool(pvrmanager.enabled)">PVR.List</include>
+      <control type="group">
+        <include>PVR.List</include>
+        <visible>IsEmpty(Weather.Plugin) + System.GetBool(pvrmanager.enabled)</visible>
+      </control>
+      <control type="group">
+        <top>100</top>
+        <include>PVR.List</include>
+        <visible>!IsEmpty(Weather.Plugin) + System.GetBool(pvrmanager.enabled)</visible>
+      </control>
       <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>
       <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Concerts.List</include>
