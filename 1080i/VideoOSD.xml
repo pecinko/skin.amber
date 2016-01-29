@@ -29,6 +29,8 @@
       <align>right</align>
       <orientation>horizontal</orientation>
       <itemgap>-20</itemgap>
+      <animation effect="fade" time="150">VisibleChange</animation>
+      <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
       <control type="button" id="655">
         <enable>VideoPlayer.IsStereoscopic</enable>
         <width>98</width>
@@ -123,7 +125,8 @@
       <onup>100</onup>
       <ondown>Close</ondown>
       <orientation>horizontal</orientation>
-<visible>!Player.ChannelPreviewActive</visible>
+      <animation effect="fade" time="150">VisibleChange</animation>
+      <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
       <control type="button" id="300">
         <width>80</width>
         <height>98</height>
