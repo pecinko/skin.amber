@@ -41,6 +41,7 @@
         <texturenofocus aligny="center">VideoOSD/OSDStereoscopicNF.png</texturenofocus>
         <onup>501</onup>
         <ondown>101</ondown>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="656">
         <width>98</width>
@@ -52,6 +53,7 @@
         <onup>400</onup>
         <ondown>101</ondown>        
         <onclick>ShowSubtitles</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="657">
         <width>98</width>
@@ -63,6 +65,7 @@
         <onup>87</onup>
         <ondown>101</ondown>
         <onclick>ActivateWindow(OSDVideoSettings)</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="658">
         <width>98</width>
@@ -74,6 +77,7 @@
         <onup>87</onup>
         <ondown>101</ondown>
         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
        <control type="button" id="659">
         <width>98</width>
@@ -86,6 +90,7 @@
         <ondown>101</ondown>
         <onclick>ActivateWindow(VideoBookmarks)</onclick>
         <visible>!VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="togglebutton" id="660">
         <width>98</width>
@@ -100,6 +105,7 @@
         <ondown>101</ondown>
         <onclick>PlayerControl(ShowVideoMenu)</onclick>
         <visible>!VideoPlayer.Content(LiveTV) + VideoPlayer.HasMenu</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="700">
         <enable>Player.CanRecord</enable>
@@ -114,6 +120,22 @@
         <ondown>101</ondown>
         <onclick>PlayerControl(Record)</onclick>
         <animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
+      </control>
+      <control type="togglebutton" id="701">
+        <width>98</width>
+        <height>98</height>
+        <label>$LOCALIZE[31355]</label>
+        <font>-</font>
+        <texturefocus>VideoOSD/OSDInfoOnFO.png</texturefocus>
+        <texturenofocus>VideoOSD/OSDInfoOnNF.png</texturenofocus>
+        <alttexturefocus>VideoOSD/OSDInfoOffFO.png</alttexturefocus>
+        <alttexturenofocus>VideoOSD/OSDInfoOffNF.png</alttexturenofocus>
+        <usealttexture>Skin.HasSetting(OSDInfo)</usealttexture>
+        <onup>87</onup>
+        <ondown>101</ondown>
+        <onclick>Skin.ToggleSetting(OSDInfo)</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
     </control>
     <control type="grouplist" id="101">
@@ -138,6 +160,7 @@
         <ondown>Close</ondown>
         <onclick>PlayerControl(Previous)</onclick>
         <visible>VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="301">
         <width>80</width>
@@ -150,6 +173,7 @@
         <ondown>Close</ondown>
         <onclick>PlayerControl(Next)</onclick>
         <visible>VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="600">
         <width>80</width>
@@ -162,6 +186,7 @@
         <ondown>Close</ondown>
         <onclick>PlayerControl(Previous)</onclick>
         <visible>!VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="601">
         <width>80</width>
@@ -174,6 +199,7 @@
         <ondown>Close</ondown>
         <enable>Player.SeekEnabled</enable>
         <onclick>PlayerControl(Rewind)</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="togglebutton" id="602">
         <width>80</width>
@@ -189,6 +215,7 @@
         <onup>100</onup>
         <ondown>Close</ondown>
         <onclick>PlayerControl(Play)</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="603">
         <width>80</width>
@@ -200,6 +227,7 @@
         <onup>100</onup>
         <ondown>Close</ondown>
         <onclick>PlayerControl(Stop)</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="604">
         <width>80</width>
@@ -212,6 +240,7 @@
         <ondown>Close</ondown>
         <enable>Player.SeekEnabled</enable>
         <onclick>PlayerControl(Forward)</onclick>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="605">
         <width>80</width>
@@ -224,6 +253,7 @@
         <ondown>Close</ondown>
         <onclick>PlayerControl(Next)</onclick>
         <visible>!VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="606">
         <width>80</width>
@@ -237,6 +267,7 @@
         <onclick>ActivateWindow(PVROSDChannels)</onclick>
         <onclick>Dialog.Close(VideoOSD)</onclick>
         <visible>VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="607">
         <width>80</width>
@@ -250,6 +281,7 @@
         <onclick>ActivateWindow(PVROSDGuide)</onclick>
         <onclick>Dialog.Close(VideoOSD)</onclick>
         <visible>VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
       <control type="button" id="650">
         <width>80</width>
@@ -263,6 +295,7 @@
         <onclick>Dialog.Close(VideoOSD)</onclick>
         <onclick>ActivateWindow(Teletext)</onclick>
         <visible>VideoPlayer.Content(LiveTV)</visible>
+        <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>      
       </control>
     </control>
     <control type="grouplist" id="400">

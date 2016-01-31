@@ -14,7 +14,36 @@
 				<height>260</height>
 				<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
+				<visible>Skin.HasSetting(OSDInfo)</visible>
 			</control>
+			<control type="image" id="1">
+				<posx>0</posx>
+				<posy>-150</posy>
+				<width>1920</width>
+				<height>410</height>
+				<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
+				<colordiffuse>FFE2E2E2</colordiffuse>
+				<visible>!Skin.HasSetting(OSDInfo)</visible>
+			</control>
+        <control type="image" id="1">
+          <posx>30</posx>
+          <posy>25</posy>
+          <width>1305</width>
+          <height>1</height>
+          <texture>img/LineST.png</texture>
+				<visible>!Skin.HasSetting(OSDInfo)</visible>
+        </control>
+      <control type="textbox" description="Plot" id="1">
+        <posx>30</posx>
+        <posy>-110</posy>
+        <width>1305</width>
+        <height>120</height>
+        <align>justify</align>
+        <font>InfoPlot</font>
+        <autoscroll delay="10000" time="5000" repeat="10000">true</autoscroll>
+        <label>$INFO[VideoPlayer.Plot]</label>
+ 				<visible>!Skin.HasSetting(OSDInfo)</visible>
+      </control>
 			<control type="image" id="1">
 				<posx>555r</posx>
 				<posy>432r</posy>
