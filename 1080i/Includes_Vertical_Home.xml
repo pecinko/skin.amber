@@ -46,7 +46,7 @@
   </include>
   <include name="RecentlyAdded_Posters">
     <animation effect="slide" start="0,0" end="0,-162" time="0" condition="!Skin.HasSetting(plexbmc) + [Control.IsVisible(312) | Control.IsVisible(515)]">Conditional</animation>
-	<animation effect="slide" start="0,0" end="0,-162" time="0" condition="Skin.HasSetting(plexbmc) + IntegerGreaterThan(Container(312).NumItems,0)">Conditional</animation>
+	  <animation effect="slide" start="0,0" end="0,-162" time="0" condition="Skin.HasSetting(plexbmc) + IntegerGreaterThan(Container(312).NumItems,0)">Conditional</animation>
     <include>VisibleFadeEffectDelayShelf</include>
     <posx>540</posx>
     <posy>378</posy>
@@ -65,7 +65,6 @@
         <include>PosterThumb</include>
       </control>
       <control type="image">
-        <visible>Control.IsVisible(311)</visible>
         <posx>175</posx>
         <posy>273</posy>
         <width>33</width>
@@ -80,7 +79,7 @@
         <posy>21</posy>
         <width>189</width>
         <height>285</height>
-		<include>PosterThumbFO</include>
+		    <include>PosterThumbFO</include>
       </control>
       <control type="image">
         <posx>21</posx>
@@ -90,7 +89,6 @@
         <include>PosterThumb</include>
       </control>
       <control type="image">
-        <visible>Control.IsVisible(311)</visible>
         <posx>175</posx>
         <posy>273</posy>
         <width>33</width>
@@ -101,7 +99,7 @@
   </include>
   <include name="Recommended_Posters">
     <animation effect="slide" start="0,0" end="0,162" time="0" condition="!Skin.HasSetting(plexbmc) + [Control.IsVisible(311) | Control.IsVisible(514)]">Conditional</animation>
-	<animation effect="slide" start="0,0" end="0,162" time="0" condition="Skin.HasSetting(plexbmc) + IntegerGreaterThan(Container(311).NumItems,0)">Conditional</animation>
+	  <animation effect="slide" start="0,0" end="0,162" time="0" condition="Skin.HasSetting(plexbmc) + IntegerGreaterThan(Container(311).NumItems,0)">Conditional</animation>
     <include>VisibleFadeEffectDelayShelf</include>
     <posx>540</posx>
     <posy>378</posy>
@@ -120,7 +118,6 @@
         <include>PosterThumb</include>
       </control>
   	  <control type="image">
-    		<visible>Control.IsVisible(312)</visible>
     		<posx>175</posx>
     		<posy>273</posy>
     		<width>33</width>
@@ -145,7 +142,6 @@
         <include>PosterThumb</include>
       </control>
       <control type="image">
-        <visible>Control.IsVisible(312)</visible>
         <posx>175</posx>
         <posy>273</posy>
         <width>33</width>
