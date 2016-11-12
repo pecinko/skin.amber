@@ -3044,6 +3044,7 @@
       <label>$LOCALIZE[31008]</label>
       <onclick>Skin.ToggleSetting(plexbmc)</onclick>
       <onclick>XBMC.ReloadSkin()</onclick>
+      <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>    
     </item>
     <item id="56" description="go XBMC">
       <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
