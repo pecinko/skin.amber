@@ -651,8 +651,8 @@
         <shadowcolor>FF000000</shadowcolor>
         <font>SysInfo</font>
         <align>left</align>
-        <label>DialogOk.xml</label>
-        <visible>Window.IsVisible(DialogOk.xml)</visible>
+        <label>DialogOK.xml</label>
+        <visible>Window.IsVisible(DialogOK.xml)</visible>
       </control>
       <control type="label">
         <width>1170</width>
