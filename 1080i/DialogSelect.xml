@@ -57,7 +57,6 @@
           <posy>60</posy>
           <width>1010</width>
           <height>600</height>
-          <itemgap>0</itemgap>
           <orientation>vertical</orientation>
           <onleft>5</onleft>
           <onright>60</onright>
@@ -169,7 +168,6 @@
           <posy>60</posy>
           <width>810</width>
           <height>600</height>
-          <itemgap>0</itemgap>
           <orientation>vertical</orientation>
           <onleft>5</onleft>
           <onright>60</onright>

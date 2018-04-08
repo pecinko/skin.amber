@@ -50,12 +50,12 @@
             <texture flipy="true" border="3">list/ListNF.png</texture>
           </control>
           <control type="label" description="Number">
-            <posx>40</posx>
+            <posx>0</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
             <aligny>center</aligny>
-            <info>ListItem.ChannelNumber</info>
+            <info>ListItem.ChannelNumberLabel</info>
           </control>
           <control type="label" description="Main Label">
             <posx>90</posx>
@@ -91,13 +91,13 @@
             <texture>list/ListFO.png</texture>
           </control>
           <control type="label" description="Number">
-            <posx>40</posx>
+            <posx>0</posx>
             <height>99</height>
             <width>80</width>
             <align>center</align>
             <aligny>center</aligny>
             <textcolor>White2</textcolor>
-            <info>ListItem.ChannelNumber</info>
+            <info>ListItem.ChannelNumberLabel</info>
           </control>
           <control type="label" description="Main Label">
             <posx>90</posx>
@@ -162,6 +162,10 @@
           <width>600</width>
           <label>$LOCALIZE[19200]</label>
         </control>
+        <control type="radiobutton" id="14" description="Parental Lock">
+          <width>600</width>
+          <label>$LOCALIZE[19267]</label>
+        </control>
         <control type="label" id="29" description="spacer">
           <width>600</width>
           <label></label>
@@ -170,7 +174,7 @@
           <width>600</width>
           <label>$LOCALIZE[19205]</label>
         </control>
-        <control type="button" id="33" description="New channel">
+        <control type="button" id="31" description="New channel">
           <font>Details</font>
           <label>$LOCALIZE[19204]</label>
         </control>
@@ -207,16 +211,6 @@
           <label>$LOCALIZE[222]</label>
           <width>324</width>
           <font>Details</font>
-        </control>
-        <control type="button" id="31" description="Edit">
-          <font>Details</font>
-          <width>324</width>
-          <label>$LOCALIZE[19203]</label>
-        </control>
-        <control type="button" id="32" description="Delete">
-          <font>Details</font>
-          <width>324</width>
-          <label>$LOCALIZE[19211]</label>
         </control>
       </control>
     </control>

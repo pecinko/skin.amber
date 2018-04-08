@@ -1,7 +1,7 @@
 # Kodi Media Center language file
 # Addon Name: Amber
 # Addon id: skin.amber
-# Addon Provider: Pecinko
+# Addon Provider: Pecinko, Jester
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -100,13 +100,23 @@ msgctxt "#31025"
 msgid "Items"
 msgstr ""
 
-#empty strings from id 31026 to 31037
+msgctxt "#31026"
+msgid "Misc options"
+msgstr ""
+
+#empty strings from id 31027 to 31037
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
 msgstr ""
 
-#empty strings from id 31039 to 31047
+#empty strings from id 31039 to 31045
+
+msgctxt "#31046"
+msgid "SEEKING"
+msgstr ""
+
+#empty strings from id 31047 to 31047
 
 msgctxt "#31048"
 msgid "Visualization Presets"
@@ -116,13 +126,31 @@ msgctxt "#31049"
 msgid "Settings Level"
 msgstr ""
 
-#empty strings from id 31050 to 31109
+msgctxt "#31050"
+msgid "Sort: Ascending"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Sort: Descending"
+msgstr ""
+
+#: /xml/VideoOSD.xml
+msgctxt "#31052"
+msgid "Toggle language"
+msgstr ""
+
+#empty strings from id 31053 to 31109
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr ""
 
-#empty strings from id 31111 to 31112
+#empty strings from id 31111 to 31111
+
+#: /xml/VideoOSD.xml
+msgctxt "#31112"
+msgid "Toggle audio stream"
+msgstr ""
 
 msgctxt "#31113"
 msgid "Single Image"
@@ -150,7 +178,19 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr ""
 
-#empty strings from id 31134 to 31290
+#empty strings from id 31134 to 31202
+
+msgctxt "#31203"
+msgid "Choose your song"
+msgstr ""
+
+#empty string with id 31204
+
+msgctxt "#31205"
+msgid "Lyrics source"
+msgstr ""
+
+#empty strings from id 31206 to 31290
 
 msgctxt "#31291"
 msgid "Add-on manager"
@@ -213,26 +253,47 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr ""
 
-#empty strings from id 31358 to 31388
+# Stereoscopic labels
+msgctxt "#31360"
+msgid "Watch as 2D"
+msgstr ""
+
+msgctxt "#31361"
+msgid "Change mode"
+msgstr ""
+
+msgctxt "#31362"
+msgid "Enabled"
+msgstr ""
+
+msgctxt "#31363"
+msgid "Static Vertical Menu"
+msgstr ""
+
+#empty strings from id 31364 to 31388
 #Skin Fontsets
 
 msgctxt "#31389"
-msgid "(2/4) Skin default - no caps"
+msgid "(2/5) Skin default - no caps"
 msgstr ""
 
 msgctxt "#31390"
-msgid "(1/4) Skin default"
+msgid "(1/5) Skin default"
 msgstr ""
 
 msgctxt "#31391"
-msgid "(4/4) Arial - no caps"
+msgid "(4/5) Arial - no caps"
 msgstr ""
 
 msgctxt "#31392"
-msgid "(3/4) Arial based"
+msgid "(3/5) Arial based"
 msgstr ""
 
-#empty strings from id 31393 to 31498
+msgctxt "#31393"
+msgid "(5/5) Unicode based"
+msgstr ""
+
+#empty strings from id 31394 to 31498
 #Extra Unified PVR labels
 
 msgctxt "#31499"
@@ -240,7 +301,7 @@ msgid "All TV Shows"
 msgstr ""
 
 msgctxt "#31500"
-msgid "Live TV"
+msgid "TV"
 msgstr ""
 
 msgctxt "#31501"
@@ -275,7 +336,9 @@ msgctxt "#31508"
 msgid "TV Shows homescreen button opens:"
 msgstr ""
 
-#empty string with id 31509
+msgctxt "#31509"
+msgid "Radio"
+msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
@@ -483,4 +546,8 @@ msgstr ""
 
 msgctxt "#31997"
 msgid "Hide channel logos in PVR List/Timeline"
+msgstr ""
+
+msgctxt "#31998"
+msgid "Show lock/master mode status in title bar"
 msgstr ""

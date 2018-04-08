@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <backgroundcolor>0</backgroundcolor>
-  <allowoverlay>no</allowoverlay>
   <defaultcontrol always="true">3</defaultcontrol>
   <controls>
     <include>Settings_Art</include>
@@ -20,7 +19,7 @@
         <height>61</height>
         <font>Logo</font>
         <align>center</align>
-        <label>KODI</label>
+        <label>MrMC</label>
       </control>
       <control type="label" id="2" description="Category label">
         <posx>650</posx>
@@ -80,10 +79,14 @@
       <control type="spincontrolex" id="9" description="Spin control">
         <width>1467</width>
         <textoffsetx>42</textoffsetx>
-      </control>
+      </control>      
       <control type="sliderex" id="13" description="Slider control">
         <width>1467</width>
         <textoffsetx>42</textoffsetx>
+      </control>
+      <control type="label" id="14">
+        <shadowcolor>Black</shadowcolor>
+        <font>Details</font>
       </control>
 			<control type="label" description="Settings level label">
         <posx>66</posx>

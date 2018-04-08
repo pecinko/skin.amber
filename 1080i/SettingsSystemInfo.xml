@@ -37,35 +37,35 @@
           <onup>9001</onup>
           <ondown>9001</ondown>
           <control type="button" id="95" description="Summary">
-            <texture border="3" flipy="true">list/ListNF.png</texture>
+            <texturenofocus border="3" flipy="true">list/ListNF.png</texturenofocus>
             <width>324</width>
             <label>$LOCALIZE[20037]</label>
           </control>
           <control type="button" id="94" description="Storage">
             <width>324</width>
             <label>$LOCALIZE[13277]</label>
-            <texture border="3" flipy="true">list/ListNF.png</texture>
+            <texturenofocus border="3" flipy="true">list/ListNF.png</texturenofocus>
           </control>
           <control type="button" id="96" description="Network">
             <width>324</width>
             <label>$LOCALIZE[13279]</label>
-            <texture border="3" flipy="true">list/ListNF.png</texture>
+            <texturenofocus border="3" flipy="true">list/ListNF.png</texturenofocus>
           </control>
           <control type="button" id="97" description="Video">
             <width>324</width>
             <label>$LOCALIZE[13280]</label>
-            <texture border="3" flipy="true">list/ListNF.png</texture>
+            <texturenofocus border="3" flipy="true">list/ListNF.png</texturenofocus>
           </control>
           <control type="button" id="98" description="Hardware">
             <width>324</width>
             <label>$LOCALIZE[13281]</label>
-            <texture border="3" flipy="true">list/ListNF.png</texture>
+            <texturenofocus border="3" flipy="true">list/ListNF.png</texturenofocus>
           </control>
           <control type="button" id="99" description="Hardware">
             <visible>Skin.HasSetting(PVR_Enabled)</visible>
             <width>324</width>
             <label>$LOCALIZE[19191]</label>
-            <texture border="3" flipy="true">list/ListNF.png</texture>
+            <texturenofocus border="3" flipy="true">list/ListNF.png</texturenofocus>
           </control>
         </control>
         <control type="grouplist" description="Right panel">

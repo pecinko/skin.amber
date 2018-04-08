@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="50">
-  <zorder>3</zorder>
   <coordinates>
     <posx>0</posx>
     <posy>0</posy>
@@ -56,7 +55,7 @@
         <textcolor>Highlight</textcolor>
         <font>SysInfo</font>
         <align>left</align>
-        <label>$INFO[ListItem.property(IsResumable),RESUMABLE: ] $INFO[ListItem.property(overlay),PLEXBMC OVERLAY:] $INFO[Window(Home).Property(plexbmc.2.sectionID)] DDD $INFO[Container(300).ListItem.Property(uuid)]</label>
+        <label>$INFO[ListItem.property(IsResumable),RESUMABLE: ] DDD $INFO[Container(300).ListItem.Property(uuid)]</label>
       </control>
       <control type="label">
         <visible>Window.IsActive(home)</visible>
@@ -67,7 +66,7 @@
         <shadowcolor>FF000000</shadowcolor>
         <font>SysInfo</font>
         <align>left</align>
-        <label>RECENT: $INFO[Window(Home).Property(SkinWidgets_RecentItems)] - $INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
+        <label>RECENT: $INFO[Window(Home).Property(SkinWidgets_RecentItems)] - $INFO[Window.Property(LatestMovie.1.Title)]</label>
       </control>
       <control type="label">
         <visible>Window.IsActive(home)</visible>

@@ -24,6 +24,7 @@
         <textcolor>Highlight</textcolor>
         <shadowcolor>Black</shadowcolor>
         <align>center</align>
+        <label>-</label>
       </control>
       <control type="grouplist" id="5" description="Control Area">
         <posx>117</posx>

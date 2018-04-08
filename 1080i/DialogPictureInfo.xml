@@ -37,10 +37,10 @@
           <scrolltime tween="sine" easing="inout">280</scrolltime>
           <itemlayout height="60">
             <control type="label">
-              <posx>1100</posx>
+              <posx>300</posx>
               <height>70</height>
               <width>800</width>
-              <align>right</align>
+              <align>left</align>
               <scroll>false</scroll>
               <font>ListDetails</font>
               <info>ListItem.Label2</info>
@@ -60,10 +60,10 @@
               <texture border="2">buttons/ButtonFO.png</texture>
             </control>
             <control type="label">
-              <posx>1100</posx>
+              <posx>300</posx>
               <height>70</height>
               <width>800</width>
-              <align>right</align>
+              <align>left</align>
               <font>ListDetails</font>
               <info>ListItem.Label2</info>
             </control>

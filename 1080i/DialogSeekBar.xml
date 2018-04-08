@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-  <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(videoosd.xml) | [Window.IsVisible(FullScreenVideo) + !System.IdleTime(20) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
+  <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(videoosd.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
   <include>OSDFade</include>
-  <zorder>2</zorder>
+  <onunload>Dialog.Close(osdsettings)</onunload>
   <controls>
     <control type="group" description="Top Bar">
       <control type="image" description="Background">
@@ -48,8 +48,9 @@
           <height>18</height>
           <texturebg border="15,0,15,0">VideoOSD/ProgressBG.png</texturebg>
           <midtexture border="15,0,15,0">VideoOSD/ProgressBar.png</midtexture>
-          <info>Player.CacheLevel</info>
-          <visible>Player.Caching</visible>
+          <colordiffuse>Diffuse2</colordiffuse>
+          <info>Player.ProgressCache</info>
+          <visible>true</visible>
         </control>
         <control type="progress" id="23" description="Progress Bar">
           <posx>600</posx>
@@ -62,7 +63,18 @@
           <info>Player.Progress</info>
           <visible>true</visible>
         </control>
-        <control type="label" description="Progress time label">
+        <control type="slider" id="401">
+          <description>Seek Slider</description>
+          <posx>600</posx>
+          <posy>-20</posy>
+          <width>720</width>
+          <height>18</height>
+          <texturesliderbar>OSD/seekslider.png</texturesliderbar>
+        <textureslidernib>OSD/ScrollbarNibNF.png</textureslidernib>
+        <textureslidernibfocus>OSD/ScrollbarNibFO.png</textureslidernibfocus>
+          <visible>!VideoPlayer.Content(livetv)</visible>
+        </control>
+      <control type="label" description="Progress time label">
           <posx>580</posx>
           <posy>-5</posy>
           <height>30</height>
@@ -122,15 +134,14 @@
         <label>32 X</label>
       </control>
       <control type="label" description="Seek time label">
-        <visible>![player.forwarding | player.rewinding]</visible>
-        <visible>Player.DisplayAfterSeek</visible>
+        <visible>!Player.Caching</visible>
         <include>SeekbarLabels</include>
-        <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
+        <label>$VAR[SeekLabel]</label>
       </control>
 	  <control type="label" description="Seek time label">
         <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | [Player.Paused + System.IdleTime(4)]]</visible>
         <include>SeekbarLabels</include>
-        <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=Highlight]  •  [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Highlight]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
+        <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=Highlight]  •  [/COLOR]]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,[COLOR=Highlight]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumberLabel,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
       </control>
 	  <control type="label" description="Chapter Info with Player info">
         <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
