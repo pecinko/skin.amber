@@ -1,4 +1,4 @@
 skin.amber
 ==========
 
-Amber skin for Kodi/XBMC
+Amber skin for Mrmc
